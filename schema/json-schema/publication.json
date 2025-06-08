@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Publication",
+  "description": "A publication relevant to the planetary health movement",
+  "type": "object",
+  "required": ["id", "title", "year"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the publication (UUID v4)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the publication"
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Subtitle of the publication (if applicable)"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Journal Article", 
+        "Book", 
+        "Book Chapter", 
+        "Conference Paper", 
+        "Report", 
+        "Policy Brief", 
+        "White Paper", 
+        "Thesis", 
+        "Preprint",
+        "Commentary",
+        "Review",
+        "Editorial",
+        "Other"
+      ],
+      "description": "Type of publication"
+    },
+    "author_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to actor IDs who authored this publication"
+    },
+    "year": {
+      "type": "integer",
+      "description": "Year of publication"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Specific publication date (if known, ISO 8601 format)"
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Publisher of the publication"
+    },
+    "journal": {
+      "type": "string",
+      "description": "Journal name (for journal articles)"
+    },
+    "volume": {
+      "type": "string",
+      "description": "Volume number (for journal articles)"
+    },
+    "issue": {
+      "type": "string",
+      "description": "Issue number (for journal articles)"
+    },
+    "pages": {
+      "type": "string",
+      "description": "Page range (e.g., '123-145')"
+    },
+    "doi": {
+      "type": "string",
+      "description": "Digital Object Identifier"
+    },
+    "isbn": {
+      "type": "string",
+      "description": "International Standard Book Number (for books)"
+    },
+    "issn": {
+      "type": "string",
+      "description": "International Standard Serial Number (for journals)"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL where the publication can be accessed"
+    },
+    "abstract": {
+      "type": "string",
+      "description": "Abstract or summary of the publication"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Keywords associated with the publication"
+    },
+    "language": {
+      "type": "string",
+      "description": "Language of the publication (ISO 639-1 code)"
+    },
+    "citation_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of citations (if known)"
+    },
+    "concept_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to concept IDs discussed in this publication"
+    },
+    "location_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to location IDs relevant to this publication"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "publication_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "citation_text": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "References cited by this publication"
+    },
+    "cited_by": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to publication IDs that cite this publication"
+    },
+    "significance": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Significance rating (1-5 scale, where 5 is most significant)"
+    },
+    "open_access": {
+      "type": "boolean",
+      "description": "Whether the publication is open access"
+    },
+    "license": {
+      "type": "string",
+      "description": "License under which the publication is available"
+    },
+    "funding": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "funder": {
+            "type": "string"
+          },
+          "grant_id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Funding information for the research"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags or categories associated with this publication"
+    }
+  },
+  "additionalProperties": false
+}

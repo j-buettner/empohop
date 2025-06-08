@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Event",
+  "description": "An event in the planetary health movement timeline",
+  "type": "object",
+  "required": ["id", "year", "title", "description"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the event (UUID v4)"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1800,
+      "maximum": 2100,
+      "description": "Year when the event occurred"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Short descriptive title of the event"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the event, with markdown support"
+    },
+    "significance": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Significance rating (1-5 scale, where 5 is most significant)"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["Publication", "Conference", "Policy", "Research", "Movement", "Organization", "Other"],
+      "description": "Type categorization of the event"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Specific start date of the event (if known, ISO 8601 format)"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Specific end date of the event (if applicable, ISO 8601 format)"
+    },
+    "location_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to location IDs associated with this event"
+    },
+    "actor_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to actor IDs associated with this event"
+    },
+    "concept_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to concept IDs associated with this event"
+    },
+    "publication_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to publication IDs associated with this event"
+    },
+    "related_event_ids": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["event_id", "relationship_type"],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "relationship_type": {
+            "type": "string",
+            "enum": ["Precedes", "Follows", "Influences", "IsInfluencedBy", "References", "IsReferencedBy"]
+          },
+          "relationship_description": {
+            "type": "string",
+            "description": "Description of how the events are related"
+          }
+        }
+      },
+      "description": "References to related events with relationship types"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Sources of information for this event (citations, references)"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags or keywords associated with this event"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Health Event Entry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .form-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .required::after {
+            content: " *";
+            color: red;
+        }
+        .help-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .relationship-entry {
+            border-left: 3px solid #3498db;
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .reference-search {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .reference-search input {
+            flex-grow: 1;
+        }
+        .reference-search button {
+            flex-shrink: 0;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .tag {
+            background-color: #e1f0fa;
+            border: 1px solid #3498db;
+            border-radius: 3px;
+            padding: 3px 8px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .tag button {
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 0 0 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Planetary Health Event Entry Form</h1>
+    <p>Use this form to enter information about significant events in the planetary health movement. Required fields are marked with an asterisk (*).</p>
+    
+    <form id="eventForm">
+        <div class="form-section">
+            <h2>Basic Information</h2>
+            
+            <div class="form-group">
+                <label for="title" class="required">Event Title</label>
+                <input type="text" id="title" name="title" required maxlength="100">
+                <div class="help-text">A concise, descriptive title (max 100 characters)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="year" class="required">Year</label>
+                <input type="number" id="year" name="year" required min="1800" max="2100">
+                <div class="help-text">Year when the event occurred (1800-2100)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="start_date">Start Date</label>
+                <input type="date" id="start_date" name="start_date">
+                <div class="help-text">Specific start date (if known)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="end_date">End Date</label>
+                <input type="date" id="end_date" name="end_date">
+                <div class="help-text">Specific end date (if applicable)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="type" class="required">Event Type</label>
+                <select id="type" name="type" required>
+                    <option value="">-- Select Type --</option>
+                    <option value="Publication">Publication</option>
+                    <option value="Conference">Conference</option>
+                    <option value="Policy">Policy</option>
+                    <option value="Research">Research</option>
+                    <option value="Movement">Movement</option>
+                    <option value="Organization">Organization</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="significance">Significance</label>
+                <select id="significance" name="significance">
+                    <option value="">-- Select Significance --</option>
+                    <option value="1">1 - Minor significance</option>
+                    <option value="2">2 - Moderate significance</option>
+                    <option value="3">3 - Important</option>
+                    <option value="4">4 - Very significant</option>
+                    <option value="5">5 - Transformative</option>
+                </select>
+                <div class="help-text">Rate the event's significance to the planetary health movement</div>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Description</h2>
+            
+            <div class="form-group">
+                <label for="description" class="required">Detailed Description</label>
+                <textarea id="description" name="description" required></textarea>
+                <div class="help-text">Provide a detailed description of the event, its context, and its significance to planetary health</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="sources">Sources</label>
+                <textarea id="sources" name="sources"></textarea>
+                <div class="help-text">List sources of information about this event (citations, page numbers, etc.)</div>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Location</h2>
+            
+            <div class="form-group">
+                <label for="location_search">Search Locations</label>
+                <div class="reference-search">
+                    <input type="text" id="location_search" placeholder="Search for a location...">
+                    <button type="button" onclick="searchLocations()">Search</button>
+                </div>
+                <div id="location_results"></div>
+            </div>
+            
+            <div class="form-group">
+                <label>Selected Locations</label>
+                <div id="selected_locations" class="tag-container">
+                    <!-- Selected locations will appear here -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Actors</h2>
+            
+            <div class="form-group">
+                <label for="actor_search">Search Actors</label>
+                <div class="reference-search">
+                    <input type="text" id="actor_search" placeholder="Search for individuals or organizations...">
+                    <button type="button" onclick="searchActors()">Search</button>
+                </div>
+                <div id="actor_results"></div>
+            </div>
+            
+            <div class="form-group">
+                <label>Selected Actors</label>
+                <div id="selected_actors" class="tag-container">
+                    <!-- Selected actors will appear here -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Concepts</h2>
+            
+            <div class="form-group">
+                <label for="concept_search">Search Concepts</label>
+                <div class="reference-search">
+                    <input type="text" id="concept_search" placeholder="Search for concepts or ideas...">
+                    <button type="button" onclick="searchConcepts()">Search</button>
+                </div>
+                <div id="concept_results"></div>
+            </div>
+            
+            <div class="form-group">
+                <label>Selected Concepts</label>
+                <div id="selected_concepts" class="tag-container">
+                    <!-- Selected concepts will appear here -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Related Events</h2>
+            
+            <div class="form-group">
+                <label for="event_search">Search Events</label>
+                <div class="reference-search">
+                    <input type="text" id="event_search" placeholder="Search for related events...">
+                    <button type="button" onclick="searchEvents()">Search</button>
+                </div>
+                <div id="event_results"></div>
+            </div>
+            
+            <div class="form-group">
+                <label>Related Events</label>
+                <div id="related_events">
+                    <!-- Related events will appear here -->
+                </div>
+                
+                <div class="relationship-entry">
+                    <div class="form-group">
+                        <label for="related_event_type">Relationship Type</label>
+                        <select id="related_event_type">
+                            <option value="Influences">Influences</option>
+                            <option value="IsInfluencedBy">Is Influenced By</option>
+                            <option value="Precedes">Precedes</option>
+                            <option value="Follows">Follows</option>
+                            <option value="References">References</option>
+                            <option value="IsReferencedBy">Is Referenced By</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="relationship_description">Relationship Description</label>
+                        <textarea id="relationship_description" placeholder="Describe how these events are related..."></textarea>
+                    </div>
+                    
+                    <button type="button" onclick="addRelationship()">Add Relationship</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Tags</h2>
+            
+            <div class="form-group">
+                <label for="tag_input">Add Tags</label>
+                <div class="reference-search">
+                    <input type="text" id="tag_input" placeholder="Enter a tag and press Add">
+                    <button type="button" onclick="addTag()">Add</button>
+                </div>
+                
+                <div class="tag-container" id="tags_container">
+                    <!-- Tags will appear here -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button type="button" onclick="saveAsDraft()">Save as Draft</button>
+            <button type="button" onclick="validateAndSubmit()">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        // This is a placeholder for the actual JavaScript implementation
+        // In a real implementation, these functions would interact with your database
+        
+        function searchLocations() {
+            // Placeholder for location search functionality
+            alert("Location search would query your database for matching locations");
+        }
+        
+        function searchActors() {
+            // Placeholder for actor search functionality
+            alert("Actor search would query your database for matching actors");
+        }
+        
+        function searchConcepts() {
+            // Placeholder for concept search functionality
+            alert("Concept search would query your database for matching concepts");
+        }
+        
+        function searchEvents() {
+            // Placeholder for event search functionality
+            alert("Event search would query your database for matching events");
+        }
+        
+        function addRelationship() {
+            // Placeholder for adding a relationship
+            alert("This would add a relationship between the current event and the selected event");
+        }
+        
+        function addTag() {
+            const tagInput = document.getElementById('tag_input');
+            const tagsContainer = document.getElementById('tags_container');
+            
+            if (tagInput.value.trim() !== '') {
+                const tag = document.createElement('div');
+                tag.className = 'tag';
+                tag.innerHTML = `
+                    ${tagInput.value}
+                    <button type="button" onclick="this.parentElement.remove()">×</button>
+                `;
+                tagsContainer.appendChild(tag);
+                tagInput.value = '';
+            }
+        }
+        
+        function saveAsDraft() {
+            // Placeholder for saving as draft
+            alert("This would save the current form data as a draft");
+        }
+        
+        function validateAndSubmit() {
+            // Basic validation
+            const form = document.getElementById('eventForm');
+            const requiredFields = form.querySelectorAll('[required]');
+            let valid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    valid = false;
+                    field.style.borderColor = 'red';
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+            
+            if (valid) {
+                // Placeholder for form submission
+                alert("Form is valid! This would submit the event data to your database");
+                // In a real implementation, you would collect all form data and send it to your backend
+            } else {
+                alert("Please fill in all required fields");
+            }
+        }
+    </script>
+</body>
+</html>

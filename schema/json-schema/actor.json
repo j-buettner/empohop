@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Actor",
+  "description": "An actor (individual, organization, or institution) in the planetary health movement",
+  "type": "object",
+  "required": ["id", "name", "type"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the actor (UUID v4)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full name of the actor"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["Individual", "Institution", "Government", "NGO", "Coalition", "Other"],
+      "description": "Type of actor"
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code"
+    },
+    "description": {
+      "type": "string",
+      "description": "Biographical information or description of the actor"
+    },
+    "affiliation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to other actor IDs this actor is affiliated with"
+    },
+    "role": {
+      "type": "string",
+      "description": "Primary role or position of the actor in the planetary health movement"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when the actor began involvement (for organizations, founding date)"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when the actor's involvement ended (if applicable)"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri",
+      "description": "Official website URL"
+    },
+    "identifiers": {
+      "type": "object",
+      "properties": {
+        "orcid": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{4}-\\d{4}-\\d{3}[0-9X]$",
+          "description": "ORCID identifier for individuals"
+        },
+        "grid": {
+          "type": "string",
+          "description": "GRID identifier for research organizations"
+        },
+        "ror": {
+          "type": "string",
+          "description": "ROR identifier for research organizations"
+        },
+        "wikidata": {
+          "type": "string",
+          "description": "Wikidata Q identifier"
+        }
+      },
+      "description": "Standard identifiers for this actor from authority databases"
+    },
+    "contact_info": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        }
+      },
+      "description": "Contact information for the actor"
+    },
+    "social_media": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Social media profiles (key: platform name, value: profile URL)"
+    },
+    "expertise": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Areas of expertise or focus"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Sources of information about this actor"
+    }
+  },
+  "additionalProperties": false
+}

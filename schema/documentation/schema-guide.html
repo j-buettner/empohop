@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Health Knowledge Graph: Schema Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #2c3e50;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #e74c3c;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .back-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Planetary Health Knowledge Graph: Schema Guide</h1>
+        
+        <p>This guide provides comprehensive documentation for the Planetary Health Knowledge Graph schema, including entity definitions, relationship types, data validation rules, and usage examples.</p>
+        
+        <h2>Table of Contents</h2>
+        
+        <ol>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#entity-types">Entity Types</a></li>
+            <li><a href="#relationship-types">Relationship Types</a></li>
+            <li><a href="#data-validation">Data Validation</a></li>
+            <li><a href="#identifiers-and-references">Identifiers and References</a></li>
+            <li><a href="#querying-examples">Querying Examples</a></li>
+            <li><a href="#data-entry-guidelines">Data Entry Guidelines</a></li>
+            <li><a href="#schema-evolution">Schema Evolution</a></li>
+        </ol>
+        
+        <h2 id="introduction">Introduction</h2>
+        
+        <p>The Planetary Health Knowledge Graph is designed to capture and represent the complex relationships between events, actors, locations, concepts, and publications in the planetary health movement. This schema enables:</p>
+        
+        <ul>
+            <li>Tracking the historical development of planetary health concepts and practices</li>
+            <li>Identifying key influencers and their relationships</li>
+            <li>Mapping geographical patterns in planetary health activities</li>
+            <li>Analyzing citation networks and concept evolution</li>
+            <li>Discovering connections between seemingly disparate events and ideas</li>
+        </ul>
+        
+        <h2 id="entity-types">Entity Types</h2>
+        
+        <h3>Event</h3>
+        
+        <p>Events represent significant occurrences in the planetary health movement, such as conferences, policy adoptions, research milestones, or organizational formations.</p>
+        
+        <h4>Key Properties:</h4>
+        <ul>
+            <li><code>id</code>: Unique identifier (UUID v4)</li>
+            <li><code>year</code>: Year when the event occurred (required)</li>
+            <li><code>title</code>: Short descriptive title (required)</li>
+            <li><code>description</code>: Detailed description (required)</li>
+            <li><code>significance</code>: Importance rating (1-5 scale)</li>
+            <li><code>type</code>: Categorization (Publication, Conference, Policy, Research, etc.)</li>
+            <li><code>start_date</code>/<code>end_date</code>: Specific dates (ISO 8601 format)</li>
+        </ul>
+        
+        <h4>Usage Notes:</h4>
+        <ul>
+            <li>Events should be discrete, identifiable occurrences</li>
+            <li>The <code>year</code> property is required for chronological ordering</li>
+            <li>Use <code>significance</code> to indicate the event's impact on planetary health</li>
+        </ul>
+        
+        <h3>Actor</h3>
+        
+        <p>Actors represent individuals, organizations, institutions, or other entities that participate in the planetary health movement.</p>
+        
+        <h4>Key Properties:</h4>
+        <ul>
+            <li><code>id</code>: Unique identifier (UUID v4)</li>
+            <li><code>name</code>: Full name (required)</li>
+            <li><code>type</code>: Actor type (Individual, Institution, Government, NGO, etc.) (required)</li>
+            <li><code>country</code>: ISO 3166-1 alpha-2 country code</li>
+            <li><code>description</code>: Biographical information</li>
+            <li><code>role</code>: Primary role in planetary health</li>
+            <li><code>affiliation_ids</code>: References to other affiliated actors</li>
+        </ul>
+        
+        <h4>Usage Notes:</h4>
+        <ul>
+            <li>Use standardized naming conventions for consistency</li>
+            <li>Link to external identifiers (ORCID, GRID, ROR) when available</li>
+            <li>Capture hierarchical relationships through affiliations</li>
+        </ul>
+        
+        <h3>Location</h3>
+        
+        <p>Locations represent geographical places relevant to planetary health events and activities.</p>
+        
+        <h4>Key Properties:</h4>
+        <ul>
+            <li><code>id</code>: Unique identifier (UUID v4)</li>
+            <li><code>name</code>: Location name (required)</li>
+            <li><code>type</code>: Location type (City, Country, Region, etc.) (required)</li>
+            <li><code>coordinates</code>: GeoJSON Point format [longitude, latitude]</li>
+            <li><code>country</code>: ISO 3166-1 alpha-2 country code</li>
+            <li><code>geoname_id</code>: GeoNames database identifier</li>
+        </ul>
+        
+        <h4>Usage Notes:</h4>
+        <ul>
+            <li>Use standardized geographical references (GeoNames, Wikidata)</li>
+            <li>Capture hierarchical relationships (e.g., city within country)</li>
+            <li>Include environmental features relevant to planetary health</li>
+        </ul>
+        
+        <h3>Concept</h3>
+        
+        <p>Concepts represent theories, ideas, frameworks, or terms relevant to planetary health.</p>
+        
+        <h4>Key Properties:</h4>
+        <ul>
+            <li><code>id</code>: Unique identifier (UUID v4)</li>
+            <li><code>name</code>: Concept name (required)</li>
+            <li><code>definition</code>: Definition or explanation (required)</li>
+            <li><code>alternative_names</code>: Synonyms or alternative terms</li>
+            <li><code>parent_concept_id</code>: Reference to parent concept</li>
+            <li><code>domain</code>: Field categories (Ecology, PublicHealth, etc.)</li>
+            <li><code>significance</code>: Importance rating (1-5 scale)</li>
+        </ul>
+        
+        <h4>Usage Notes:</h4>
+        <ul>
+            <li>Organize concepts hierarchically when appropriate</li>
+            <li>Document the evolution of concepts over time</li>
+            <li>Link concepts to their key proponents and publications</li>
+        </ul>
+        
+        <h3>Publication</h3>
+        
+        <p>Publications represent books, articles, reports, or other published materials relevant to planetary health.</p>
+        
+        <h4>Key Properties:</h4>
+        <ul>
+            <li><code>id</code>: Unique identifier (UUID v4)</li>
+            <li><code>title</code>: Publication title (required)</li>
+            <li><code>type</code>: Publication type (Journal Article, Book, Report, etc.)</li>
+            <li><code>year</code>: Publication year (required)</li>
+            <li><code>author_ids</code>: References to actor IDs</li>
+            <li><code>doi</code>: Digital Object Identifier</li>
+            <li><code>isbn</code>: International Standard Book Number</li>
+            <li><code>abstract</code>: Summary of the publication</li>
+        </ul>
+        
+        <h4>Usage Notes:</h4>
+        <ul>
+            <li>Use standard identifiers (DOI, ISBN) when available</li>
+            <li>Capture citation relationships between publications</li>
+            <li>Link publications to the concepts they discuss and events they document</li>
+        </ul>
+        
+        <h2 id="relationship-types">Relationship Types</h2>
+        
+        <p>Relationships connect entities in the knowledge graph, representing how they interact, influence, or relate to each other.</p>
+        
+        <h3>Event Relationships</h3>
+        
+        <ul>
+            <li><strong>INFLUENCES</strong>: An event influences another event
+                <ul>
+                    <li>Properties: strength, description</li>
+                    <li>Example: <code>(Climate_Paris_Agreement)-[:INFLUENCES]->(WHO_Planetary_Health_Initiative)</code></li>
+                </ul>
+            </li>
+            
+            <li><strong>PRECEDES/FOLLOWS</strong>: Chronological relationship between events
+                <ul>
+                    <li>Properties: time_gap (in years)</li>
+                    <li>Example: <code>(First_Planetary_Health_Conference)-[:PRECEDES]->(Second_Planetary_Health_Conference)</code></li>
+                </ul>
+            </li>
+            
+            <li><strong>TAKES_PLACE_AT</strong>: Event occurs at a location
+                <ul>
+                    <li>Properties: description</li>
+                    <li>Example: <code>(Lancet_Commission_Formation)-[:TAKES_PLACE_AT]->(London)</code></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Actor Relationships</h3>
+        
+        <ul>
+            <li><strong>PARTICIPATES_IN</strong>: Actor participates in an event
+                <ul>
+                    <li>Properties: role, description</li>
+                    <li>Example: <code>(WHO)-[:PARTICIPATES_IN {role: "Organizer"}]->(Global_Health_Summit)</code></li>
+                </ul>
+            </li>
+            
+            <li><strong>AUTHORS</strong>: Actor authors a publication
+                <ul>
+                    <li>Properties: role (Lead Author, Contributor, etc.)</li>
+                    <li>Example: <code>(Jane_Smith)-[:AUTHORS {role: "Lead Author"}]->(Planetary_Boundaries_Paper)</code></li>
+                </ul>
+            </li>
+            
+            <li><strong>DEVELOPS</strong>: Actor develops a concept
+                <ul>
+                    <li>Properties: description, year</li>
+                    <li>Example: <code>(Rockefeller_Foundation)-[:DEVELOPS]->(Planetary_Health_Concept)</code></li>
+                </ul>
+            </li>
+            
+            <li><strong>COLLABORATES_WITH</strong>: Actor collaborates with another actor
+                <ul>
+                    <li>Properties: start_date, end_date, description</li>
+                    <li>Example: <code>(Harvard_University)-[:COLLABORATES_WITH]->(London_School_Hygiene)</code></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Publication Relationships</h3>
+        
+        <ul>
+            <li><strong>CITES</strong>: Publication cites another publication
+                <ul>
+                    <li>Properties: context, page_number</li>
+                    <li>Example: <code>(Recent_Climate_Paper)-[:CITES]->(Original_Planetary_Boundaries_Paper)</code></li>
+                </ul>
+            </li>
+            
+            <li><strong>DISCUSSES</strong>: Publication discusses a concept
+                <ul>
+                    <li>Properties: significance, context</li>
+                    <li>Example: <code>(Lancet_Report)-[:DISCUSSES {significance: 5}]->(One_Health_Approach)</code></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Concept Relationships</h3>
+        
+        <ul>
+            <li><strong>RELATES_TO</strong>: Concept relates to another concept
+                <ul>
+                    <li>Properties: relationship_type, description</li>
+                    <li>Example: <code>(Planetary_Boundaries)-[:RELATES_TO {relationship_type: "Builds Upon"}]->(Sustainability)</code></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2 id="data-validation">Data Validation</h2>
+        
+        <p>The schema includes validation rules to ensure data quality and consistency:</p>
+        
+        <h3>Required Properties</h3>
+        
+        <ul>
+            <li>Events: id, year, title, description</li>
+            <li>Actors: id, name, type</li>
+            <li>Locations: id, name, type</li>
+            <li>Concepts: id, name, definition</li>
+            <li>Publications: id, title, year</li>
+        </ul>
+        
+        <h3>Value Constraints</h3>
+        
+        <ul>
+            <li>Years must be between 1800 and 2100</li>
+            <li>Significance ratings must be between 1 and 5</li>
+            <li>Country codes must follow ISO 3166-1 alpha-2 format</li>
+            <li>Coordinates must follow GeoJSON Point format</li>
+        </ul>
+        
+        <h3>Referential Integrity</h3>
+        
+        <ul>
+            <li>All referenced IDs must exist in the database</li>
+            <li>Relationship endpoints must be of the correct entity types</li>
+            <li>Hierarchical references must not create cycles</li>
+        </ul>
+        
+        <h2 id="identifiers-and-references">Identifiers and References</h2>
+        
+        <h3>UUID Generation</h3>
+        
+        <p>All entities use UUID v4 identifiers to ensure global uniqueness. Generate these using standard UUID libraries:</p>
+        
+        <pre><code>import uuid
+entity_id = str(uuid.uuid4())</code></pre>
+        
+        <h3>External Identifiers</h3>
+        
+        <p>Link to standardized external identifiers whenever possible:</p>
+        
+        <ul>
+            <li>Actors: ORCID (individuals), GRID/ROR (institutions), Wikidata QIDs</li>
+            <li>Locations: GeoNames IDs, Wikidata QIDs</li>
+            <li>Publications: DOIs, ISBNs, ISSNs</li>
+            <li>Concepts: Wikidata QIDs</li>
+        </ul>
+        
+        <h2 id="querying-examples">Querying Examples</h2>
+        
+        <h3>Neo4j Cypher Queries</h3>
+        
+        <p><strong>Find events influenced by a specific event:</strong></p>
+        
+        <pre><code>MATCH (e:Event {title: "Lancet Commission on Planetary Health"})-[:INFLUENCES]->(influenced:Event)
+RETURN influenced.title, influenced.year, influenced.significance
+ORDER BY influenced.year;</code></pre>
+        
+        <p><strong>Find key actors in the development of a concept:</strong></p>
+        
+        <pre><code>MATCH (a:Actor)-[:DEVELOPS]->(c:Concept {name: "Planetary Health"})
+RETURN a.name, a.type, a.country
+ORDER BY a.significance DESC;</code></pre>
+        
+        <p><strong>Find the evolution of a concept over time:</strong></p>
+        
+        <pre><code>MATCH (e:Event)-[:INTRODUCES]->(c:Concept {name: "Planetary Boundaries"})
+WITH c, e ORDER BY e.year ASC LIMIT 1
+MATCH path = (e)-[:PRECEDES*]->(later:Event)-[:DISCUSSES]->(c)
+RETURN path
+LIMIT 10;</code></pre>
+        
+        <h2 id="data-entry-guidelines">Data Entry Guidelines</h2>
+        
+        <h3>Best Practices</h3>
+        
+        <ol>
+            <li><strong>Consistency</strong>: Use consistent naming conventions and formatting</li>
+            <li><strong>Completeness</strong>: Fill in all relevant fields, not just required ones</li>
+            <li><strong>Precision</strong>: Be specific in descriptions and relationship characterizations</li>
+            <li><strong>Evidence</strong>: Include sources and citations for all information</li>
+            <li><strong>Neutrality</strong>: Maintain objective descriptions, especially for significance ratings</li>
+        </ol>
+        
+        <h3>Workflow</h3>
+        
+        <ol>
+            <li>Start by entering foundational entities (major events, key actors, core concepts)</li>
+            <li>Add relationships between existing entities</li>
+            <li>Expand with more specific or peripheral entities</li>
+            <li>Continuously review and refine the knowledge graph</li>
+        </ol>
+        
+        <h2 id="schema-evolution">Schema Evolution</h2>
+        
+        <p>The schema may evolve over time to accommodate new requirements:</p>
+        
+        <ol>
+            <li><strong>Backward Compatibility</strong>: Changes should maintain compatibility with existing data</li>
+            <li><strong>Versioning</strong>: Major schema changes should be versioned</li>
+            <li><strong>Documentation</strong>: All changes must be documented</li>
+            <li><strong>Migration</strong>: Provide migration scripts for significant changes</li>
+        </ol>
+        
+        <hr>
+        
+        <p>This guide is a living document and will be updated as the schema evolves and as best practices emerge from its use.</p>
+        
+        <div class="back-link">
+            <a href="../../index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+        
+        <div class="footer">
+            <p>Planetary Health Knowledge Graph &copy; 2025</p>
+        </div>
+    </div>
+</body>
+</html>

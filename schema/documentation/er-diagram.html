@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Health Knowledge Graph: Entity-Relationship Diagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .mermaid {
+            margin: 30px 0;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .back-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Planetary Health Knowledge Graph: Entity-Relationship Diagram</h1>
+        
+        <p>This diagram illustrates the entities and relationships in the Planetary Health Knowledge Graph.</p>
+        
+        <div class="mermaid">
+erDiagram
+    EVENT {
+        string id PK "UUID v4"
+        int year "Required"
+        string title "Required"
+        string description "Required"
+        int significance "1-5 scale"
+        string type "Enum"
+        date start_date "ISO 8601"
+        date end_date "ISO 8601"
+    }
+    
+    ACTOR {
+        string id PK "UUID v4"
+        string name "Required"
+        string type "Required, Enum"
+        string country "ISO 3166-1 alpha-2"
+        string description "Bio/description"
+        string role "Primary role"
+        date start_date "Involvement start"
+        date end_date "Involvement end"
+    }
+    
+    LOCATION {
+        string id PK "UUID v4"
+        string name "Required"
+        string type "Required, Enum"
+        object coordinates "GeoJSON Point"
+        string country "ISO 3166-1 alpha-2"
+        string region "State/province"
+        int geoname_id "GeoNames reference"
+        string wikidata_id "Wikidata Q ID"
+    }
+    
+    CONCEPT {
+        string id PK "UUID v4"
+        string name "Required"
+        string definition "Required"
+        array alternative_names "Synonyms"
+        string parent_concept_id FK "Hierarchical parent"
+        array domain "Field categories"
+        int significance "1-5 scale"
+        string wikidata_id "Wikidata Q ID"
+    }
+    
+    PUBLICATION {
+        string id PK "UUID v4"
+        string title "Required"
+        string subtitle "Optional"
+        string type "Publication type"
+        int year "Required"
+        date date "Specific date"
+        string publisher "Publisher name"
+        string journal "For articles"
+        string doi "Digital Object Identifier"
+        string isbn "For books"
+        string abstract "Summary"
+    }
+    
+    ACTOR ||--o{ EVENT : "PARTICIPATES_IN"
+    ACTOR ||--o{ PUBLICATION : "AUTHORS"
+    ACTOR ||--o{ CONCEPT : "DEVELOPS"
+    ACTOR ||--o{ ACTOR : "COLLABORATES_WITH"
+    ACTOR }|--|| LOCATION : "BASED_IN"
+    
+    EVENT ||--o{ EVENT : "INFLUENCES"
+    EVENT }|--|| LOCATION : "TAKES_PLACE_AT"
+    EVENT ||--o{ CONCEPT : "INTRODUCES"
+    
+    PUBLICATION ||--o{ PUBLICATION : "CITES"
+    PUBLICATION ||--o{ CONCEPT : "DISCUSSES"
+    PUBLICATION ||--o{ EVENT : "DOCUMENTS"
+    
+    CONCEPT ||--o{ CONCEPT : "RELATES_TO"
+    
+    LOCATION ||--o{ LOCATION : "CONTAINS"
+        </div>
+        
+        <h2>Key Relationship Types</h2>
+        
+        <h3>Event Relationships</h3>
+        <ul>
+            <li><strong>INFLUENCES</strong>: An event influences another event</li>
+            <li><strong>PRECEDES/FOLLOWS</strong>: Chronological relationship between events</li>
+            <li><strong>TAKES_PLACE_AT</strong>: Event occurs at a location</li>
+        </ul>
+        
+        <h3>Actor Relationships</h3>
+        <ul>
+            <li><strong>PARTICIPATES_IN</strong>: Actor participates in an event</li>
+            <li><strong>AUTHORS</strong>: Actor authors a publication</li>
+            <li><strong>DEVELOPS</strong>: Actor develops a concept</li>
+            <li><strong>COLLABORATES_WITH</strong>: Actor collaborates with another actor</li>
+            <li><strong>BASED_IN</strong>: Actor is based in a location</li>
+        </ul>
+        
+        <h3>Publication Relationships</h3>
+        <ul>
+            <li><strong>CITES</strong>: Publication cites another publication</li>
+            <li><strong>DISCUSSES</strong>: Publication discusses a concept</li>
+            <li><strong>DOCUMENTS</strong>: Publication documents an event</li>
+        </ul>
+        
+        <h3>Concept Relationships</h3>
+        <ul>
+            <li><strong>RELATES_TO</strong>: Concept relates to another concept</li>
+            <li><strong>BUILDS_UPON</strong>: Concept builds upon another concept</li>
+            <li><strong>CONTRADICTS</strong>: Concept contradicts another concept</li>
+        </ul>
+        
+        <h3>Location Relationships</h3>
+        <ul>
+            <li><strong>CONTAINS</strong>: Location contains another location (e.g., country contains city)</li>
+        </ul>
+        
+        <div class="back-link">
+            <a href="../../index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+        
+        <div class="footer">
+            <p>Planetary Health Knowledge Graph &copy; 2025</p>
+        </div>
+    </div>
+    
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+            flowchart: {
+                useMaxWidth: false,
+                htmlLabels: true
+            }
+        });
+    </script>
+</body>
+</html>

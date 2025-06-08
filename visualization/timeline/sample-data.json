@@ -1,0 +1,128 @@
+{
+  "events": [
+    {
+      "id": "sample1",
+      "year": 1962,
+      "title": "Publication of 'Silent Spring'",
+      "description": "Rachel Carson's book documented the detrimental effects of pesticides on the environment.",
+      "significance": 5,
+      "type": "Publication",
+      "tags": ["environmental movement", "ecology"]
+    },
+    {
+      "id": "sample2",
+      "year": 1972,
+      "title": "UN Conference on Human Environment",
+      "description": "First major conference on international environmental issues.",
+      "significance": 4,
+      "type": "Conference",
+      "tags": ["United Nations", "policy"]
+    },
+    {
+      "id": "sample3",
+      "year": 1987,
+      "title": "Brundtland Report",
+      "description": "Introduced the concept of sustainable development.",
+      "significance": 4,
+      "type": "Publication",
+      "tags": ["sustainable development", "policy"]
+    },
+    {
+      "id": "sample4",
+      "year": 1992,
+      "title": "Earth Summit in Rio",
+      "description": "UN Conference on Environment and Development that led to Agenda 21.",
+      "significance": 5,
+      "type": "Conference",
+      "tags": ["United Nations", "policy", "climate change"]
+    },
+    {
+      "id": "sample5",
+      "year": 2000,
+      "title": "Millennium Ecosystem Assessment",
+      "description": "Global assessment of ecosystem changes and their impact on human well-being.",
+      "significance": 4,
+      "type": "Research",
+      "tags": ["ecosystem", "biodiversity"]
+    },
+    {
+      "id": "sample6",
+      "year": 2008,
+      "title": "One Health Initiative",
+      "description": "Collaborative effort to integrate human, animal, and environmental health.",
+      "significance": 3,
+      "type": "Movement",
+      "tags": ["one health", "interdisciplinary"]
+    },
+    {
+      "id": "sample7",
+      "year": 2015,
+      "title": "Lancet Commission on Planetary Health",
+      "description": "Introduced the concept of planetary health.",
+      "significance": 5,
+      "type": "Publication",
+      "tags": ["planetary health", "Anthropocene"]
+    },
+    {
+      "id": "sample8",
+      "year": 2015,
+      "title": "Paris Agreement",
+      "description": "International treaty on climate change mitigation and adaptation.",
+      "significance": 5,
+      "type": "Legal",
+      "tags": ["climate change", "policy"]
+    },
+    {
+      "id": "sample9",
+      "year": 2019,
+      "title": "Planetary Health Alliance Formation",
+      "description": "Consortium of universities, NGOs, and other organizations focused on planetary health.",
+      "significance": 3,
+      "type": "Organization",
+      "tags": ["planetary health", "collaboration"]
+    },
+    {
+      "id": "sample10",
+      "year": 2023,
+      "title": "UN Biodiversity Conference (COP15)",
+      "description": "Agreement on the Global Biodiversity Framework.",
+      "significance": 4,
+      "type": "Conference",
+      "tags": ["biodiversity", "policy"]
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "sample1",
+      "source_type": "Event",
+      "target_id": "sample2",
+      "target_type": "Event",
+      "relationship_type": "Influences",
+      "description": "Silent Spring influenced the creation of the UN Conference on Human Environment."
+    },
+    {
+      "source_id": "sample2",
+      "source_type": "Event",
+      "target_id": "sample3",
+      "target_type": "Event",
+      "relationship_type": "Precedes",
+      "description": "The UN Conference set the stage for the Brundtland Report."
+    },
+    {
+      "source_id": "sample3",
+      "source_type": "Event",
+      "target_id": "sample4",
+      "target_type": "Event",
+      "relationship_type": "Influences",
+      "description": "The Brundtland Report influenced the Earth Summit in Rio."
+    },
+    {
+      "source_id": "sample7",
+      "source_type": "Event",
+      "target_id": "sample9",
+      "target_type": "Event",
+      "relationship_type": "Influences",
+      "description": "The Lancet Commission led to the formation of the Planetary Health Alliance."
+    }
+  ]
+}

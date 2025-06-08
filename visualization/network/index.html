@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Health Knowledge Graph Visualization</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .network-container {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .controls {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+        
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        
+        .node-tooltip {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+            font-size: 14px;
+            max-width: 300px;
+            display: none;
+        }
+        
+        .node-tooltip h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        
+        .node-tooltip p {
+            margin-bottom: 5px;
+        }
+        
+        .filter-section {
+            margin-bottom: 15px;
+        }
+        
+        .filter-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .search-box {
+            margin-bottom: 15px;
+        }
+        
+        .search-results {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 10px;
+            display: none;
+        }
+        
+        .search-result-item {
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+        
+        .search-result-item:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        
+        .node-details-panel {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+            font-size: 14px;
+            max-height: 580px;
+            overflow-y: auto;
+            display: none;
+        }
+        
+        .node-details-panel h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        
+        .node-details-panel .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .node-details-panel .close-btn:hover {
+            color: #333;
+        }
+        
+        .related-entities {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+        
+        .related-entity-link {
+            display: block;
+            color: #3498db;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        
+        .related-entity-link:hover {
+            text-decoration: underline;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        
+        .tag {
+            background-color: #e1f0fa;
+            border: 1px solid #3498db;
+            border-radius: 3px;
+            padding: 2px 6px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Planetary Health Knowledge Graph</h1>
+        
+        <div class="controls">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="filter-section">
+                        <div class="filter-label">Entity Types:</div>
+                        <div class="filter-options" id="entity-type-filters">
+                            <!-- Entity type filters will be generated here -->
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <div class="filter-label">Relationship Types:</div>
+                        <div class="filter-options" id="relationship-type-filters">
+                            <!-- Relationship type filters will be generated here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="search-box">
+                        <div class="filter-label">Search Entities:</div>
+                        <input type="text" class="form-control" id="search-input" placeholder="Search by name or type...">
+                        <div class="search-results" id="search-results">
+                            <!-- Search results will appear here -->
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <div class="filter-label">Graph Layout:</div>
+                        <div class="filter-options">
+                            <label class="btn btn-sm btn-outline-primary active">
+                                <input type="radio" name="layout" value="force" checked> Force-Directed
+                            </label>
+                            <label class="btn btn-sm btn-outline-primary">
+                                <input type="radio" name="layout" value="radial"> Radial
+                            </label>
+                            <label class="btn btn-sm btn-outline-primary">
+                                <input type="radio" name="layout" value="hierarchical"> Hierarchical
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="network-container" id="network-container">
+            <!-- D3.js network visualization will be rendered here -->
+        </div>
+        
+        <div class="node-tooltip" id="node-tooltip">
+            <h3 id="tooltip-title"></h3>
+            <p id="tooltip-type"></p>
+            <p id="tooltip-description"></p>
+        </div>
+        
+        <div class="node-details-panel" id="node-details-panel">
+            <span class="close-btn">&times;</span>
+            <h3 id="detail-title"></h3>
+            <p><strong>Type:</strong> <span id="detail-type"></span></p>
+            <div id="detail-year-container">
+                <p><strong>Year:</strong> <span id="detail-year"></span></p>
+            </div>
+            <p id="detail-description"></p>
+            <div id="detail-properties"></div>
+            <div class="tags" id="detail-tags"></div>
+            <div class="related-entities" id="related-entities"></div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #e74c3c;"></div>
+                <span>Event</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #3498db;"></div>
+                <span>Actor</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #2ecc71;"></div>
+                <span>Concept</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #f39c12;"></div>
+                <span>Publication</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #9b59b6;"></div>
+                <span>Location</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let graph = { nodes: [], links: [] };
+        let simulation;
+        let svg;
+        let nodeElements;
+        let linkElements;
+        let textElements;
+        let width;
+        let height;
+        let entitiesById = {};
+        let selectedNode = null;
+        
+        // Load the data
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load data from the processed directory with cache-busting parameter
+            console.log("Attempting to load data from processed directory...");
+            fetch('../../data/processed/book_9780262366601-compressed_knowledge_graph.json?v=' + new Date().getTime())
+                .then(response => {
+                    console.log("Response status:", response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Loaded data:", data);
+                    initializeGraph(data);
+                })
+                .catch(error => {
+                    console.error('Error loading data:', error);
+                    // For demo purposes, load sample data if file not found
+                    loadSampleData();
+                });
+                
+            // Set up event listeners
+            document.querySelector('.close-btn').addEventListener('click', function() {
+                document.getElementById('node-details-panel').style.display = 'none';
+                if (selectedNode) {
+                    d3.select(selectedNode).classed('selected', false);
+                    selectedNode = null;
+                }
+            });
+            
+            document.querySelectorAll('input[name="layout"]').forEach(input => {
+                input.addEventListener('change', function() {
+                    updateLayout(this.value);
+                });
+            });
+            
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', function() {
+                searchEntities(this.value);
+            });
+        });
+        
+        function loadSampleData() {
+            // This is a fallback if the data file isn't found
+            fetch('sample-data.json')
+                .then(response => response.json())
+                .then(data => {
+                    initializeGraph(data);
+                })
+                .catch(error => {
+                    console.error('Error loading sample data:', error);
+                    // Create minimal sample data
+                    const sampleData = {
+                        events: [
+                            {
+                                id: "e1",
+                                year: 1962,
+                                title: "Publication of 'Silent Spring'",
+                                description: "Rachel Carson's book documented the detrimental effects of pesticides on the environment.",
+                                type: "Publication"
+                            },
+                            {
+                                id: "e2",
+                                year: 2015,
+                                title: "Lancet Commission on Planetary Health",
+                                description: "Introduced the concept of planetary health.",
+                                type: "Publication"
+                            }
+                        ],
+                        actors: [
+                            {
+                                id: "a1",
+                                name: "Rachel Carson",
+                                type: "Individual",
+                                description: "American marine biologist and author."
+                            }
+                        ],
+                        concepts: [
+                            {
+                                id: "c1",
+                                name: "Planetary Health",
+                                definition: "The health of human civilization and the state of the natural systems on which it depends."
+                            }
+                        ],
+                        relationships: [
+                            {
+                                source_id: "a1",
+                                source_type: "Actor",
+                                target_id: "e1",
+                                target_type: "Event",
+                                relationship_type: "Authors"
+                            },
+                            {
+                                source_id: "e2",
+                                source_type: "Event",
+                                target_id: "c1",
+                                target_type: "Concept",
+                                relationship_type: "Introduces"
+                            }
+                        ]
+                    };
+                    initializeGraph(sampleData);
+                });
+        }
+        
+        function initializeGraph(data) {
+            // Process the data into a graph structure
+            processData(data);
+            
+            // Create the visualization
+            createVisualization();
+            
+            // Create filters
+            createFilters();
+        }
+        
+        function processData(data) {
+            // Clear existing data
+            graph.nodes = [];
+            graph.links = [];
+            entitiesById = {};
+            
+            // Process events
+            if (data.events) {
+                data.events.forEach(event => {
+                    const node = {
+                        id: event.id,
+                        name: event.title,
+                        type: 'Event',
+                        subtype: event.type || 'Other',
+                        description: event.description,
+                        year: event.year,
+                        tags: event.tags || [],
+                        significance: event.significance || 3,
+                        sources: event.sources || [],
+                        originalData: event
+                    };
+                    graph.nodes.push(node);
+                    entitiesById[event.id] = node;
+                });
+            }
+            
+            // Process actors
+            if (data.actors) {
+                data.actors.forEach(actor => {
+                    const node = {
+                        id: actor.id,
+                        name: actor.name,
+                        type: 'Actor',
+                        subtype: actor.type || 'Other',
+                        description: actor.description,
+                        country: actor.country,
+                        role: actor.role,
+                        expertise: actor.expertise || [],
+                        originalData: actor
+                    };
+                    graph.nodes.push(node);
+                    entitiesById[actor.id] = node;
+                });
+            }
+            
+            // Process concepts
+            if (data.concepts) {
+                data.concepts.forEach(concept => {
+                    const node = {
+                        id: concept.id,
+                        name: concept.name,
+                        type: 'Concept',
+                        description: concept.definition,
+                        alternative_names: concept.alternative_names || [],
+                        domain: concept.domain || [],
+                        significance: concept.significance || 3,
+                        originalData: concept
+                    };
+                    graph.nodes.push(node);
+                    entitiesById[concept.id] = node;
+                });
+            }
+            
+            // Process publications
+            if (data.publications) {
+                data.publications.forEach(publication => {
+                    const node = {
+                        id: publication.id,
+                        name: publication.title,
+                        type: 'Publication',
+                        subtype: publication.type || 'Other',
+                        description: publication.abstract,
+                        year: publication.year,
+                        publisher: publication.publisher,
+                        journal: publication.journal,
+                        doi: publication.doi,
+                        isbn: publication.isbn,
+                        significance: publication.significance || 3,
+                        originalData: publication
+                    };
+                    graph.nodes.push(node);
+                    entitiesById[publication.id] = node;
+                });
+            }
+            
+            // Process locations
+            if (data.locations) {
+                data.locations.forEach(location => {
+                    const node = {
+                        id: location.id,
+                        name: location.name,
+                        type: 'Location',
+                        subtype: location.type || 'Other',
+                        description: location.description,
+                        country: location.country,
+                        region: location.region,
+                        coordinates: location.coordinates,
+                        originalData: location
+                    };
+                    graph.nodes.push(node);
+                    entitiesById[location.id] = node;
+                });
+            }
+            
+            // Process relationships
+            if (data.relationships) {
+                data.relationships.forEach(rel => {
+                    // Check if both source and target exist
+                    if (entitiesById[rel.source_id] && entitiesById[rel.target_id]) {
+                        const link = {
+                            source: rel.source_id,
+                            target: rel.target_id,
+                            type: rel.relationship_type,
+                            description: rel.description,
+                            strength: rel.strength || 1,
+                            originalData: rel
+                        };
+                        graph.links.push(link);
+                    }
+                });
+            }
+        }
+        
+        function createVisualization() {
+            // Get container dimensions
+            const container = document.getElementById('network-container');
+            width = container.clientWidth;
+            height = container.clientHeight;
+            
+            // Create SVG element
+            svg = d3.select('#network-container')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+            
+            // Define arrow markers for links
+            svg.append('defs').append('marker')
+                .attr('id', 'arrowhead')
+                .attr('viewBox', '-0 -5 10 10')
+                .attr('refX', 20)
+                .attr('refY', 0)
+                .attr('orient', 'auto')
+                .attr('markerWidth', 6)
+                .attr('markerHeight', 6)
+                .attr('xoverflow', 'visible')
+                .append('svg:path')
+                .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
+                .attr('fill', '#999')
+                .style('stroke', 'none');
+            
+            // Create the simulation
+            simulation = d3.forceSimulation()
+                .force('link', d3.forceLink().id(d => d.id).distance(100))
+                .force('charge', d3.forceManyBody().strength(-300))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(50));
+            
+            // Create the links
+            linkElements = svg.append('g')
+                .attr('class', 'links')
+                .selectAll('line')
+                .data(graph.links)
+                .enter().append('line')
+                .attr('stroke-width', d => Math.sqrt(d.strength || 1))
+                .attr('stroke', '#999')
+                .attr('marker-end', 'url(#arrowhead)');
+            
+            // Create the nodes
+            nodeElements = svg.append('g')
+                .attr('class', 'nodes')
+                .selectAll('circle')
+                .data(graph.nodes)
+                .enter().append('circle')
+                .attr('r', d => getNodeRadius(d))
+                .attr('fill', d => getNodeColor(d))
+                .call(d3.drag()
+                    .on('start', dragstarted)
+                    .on('drag', dragged)
+                    .on('end', dragended));
+            
+            // Add node labels
+            textElements = svg.append('g')
+                .attr('class', 'texts')
+                .selectAll('text')
+                .data(graph.nodes)
+                .enter().append('text')
+                .text(d => d.name)
+                .attr('font-size', 10)
+                .attr('dx', 15)
+                .attr('dy', 4);
+            
+            // Add tooltips on hover
+            nodeElements
+                .on('mouseover', showTooltip)
+                .on('mouseout', hideTooltip)
+                .on('click', showNodeDetails);
+            
+            // Update the simulation
+            simulation
+                .nodes(graph.nodes)
+                .on('tick', ticked);
+            
+            simulation.force('link')
+                .links(graph.links);
+            
+            // Add zoom behavior
+            const zoom = d3.zoom()
+                .scaleExtent([0.1, 4])
+                .on('zoom', zoomed);
+            
+            svg.call(zoom);
+            
+            function zoomed(event) {
+                svg.selectAll('g').attr('transform', event.transform);
+            }
+            
+            // Tick function to update positions
+            function ticked() {
+                linkElements
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+                
+                nodeElements
+                    .attr('cx', d => d.x)
+                    .attr('cy', d => d.y);
+                
+                textElements
+                    .attr('x', d => d.x)
+                    .attr('y', d => d.y);
+            }
+            
+            // Drag functions
+            function dragstarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
+            
+            function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+            }
+            
+            function dragended(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
+        }
+        
+        function getNodeRadius(node) {
+            // Base radius
+            let radius = 8;
+            
+            // Adjust based on node type and significance
+            if (node.type === 'Event' || node.type === 'Concept' || node.type === 'Publication') {
+                radius += (node.significance || 3) - 3;
+            }
+            
+            return radius;
+        }
+        
+        function getNodeColor(node) {
+            switch (node.type) {
+                case 'Event': return '#e74c3c';
+                case 'Actor': return '#3498db';
+                case 'Concept': return '#2ecc71';
+                case 'Publication': return '#f39c12';
+                case 'Location': return '#9b59b6';
+                default: return '#95a5a6';
+            }
+        }
+        
+        function showTooltip(event, d) {
+            const tooltip = document.getElementById('node-tooltip');
+            
+            // Set tooltip content
+            document.getElementById('tooltip-title').textContent = d.name;
+            document.getElementById('tooltip-type').textContent = `${d.type}${d.subtype ? ` (${d.subtype})` : ''}`;
+            document.getElementById('tooltip-description').textContent = d.description || 'No description available';
+            
+            // Position the tooltip near the mouse
+            tooltip.style.left = `${event.pageX + 10}px`;
+            tooltip.style.top = `${event.pageY + 10}px`;
+            
+            // Show the tooltip
+            tooltip.style.display = 'block';
+        }
+        
+        function hideTooltip() {
+            document.getElementById('node-tooltip').style.display = 'none';
+        }
+        
+        function showNodeDetails(event, d) {
+            // Hide tooltip
+            hideTooltip();
+            
+            // Highlight selected node
+            if (selectedNode) {
+                d3.select(selectedNode).classed('selected', false);
+            }
+            d3.select(this).classed('selected', true);
+            selectedNode = this;
+            
+            const detailsPanel = document.getElementById('node-details-panel');
+            
+            // Set details content
+            document.getElementById('detail-title').textContent = d.name;
+            document.getElementById('detail-type').textContent = `${d.type}${d.subtype ? ` (${d.subtype})` : ''}`;
+            
+            // Show/hide year based on node type
+            const yearContainer = document.getElementById('detail-year-container');
+            if (d.year) {
+                document.getElementById('detail-year').textContent = d.year;
+                yearContainer.style.display = 'block';
+            } else {
+                yearContainer.style.display = 'none';
+            }
+            
+            document.getElementById('detail-description').textContent = d.description || 'No description available';
+            
+            // Set additional properties
+            const propertiesContainer = document.getElementById('detail-properties');
+            propertiesContainer.innerHTML = '';
+            
+            // Add type-specific properties
+            switch (d.type) {
+                case 'Event':
+                    if (d.significance) {
+                        addProperty(propertiesContainer, 'Significance', d.significance);
+                    }
+                    if (d.sources && d.sources.length > 0) {
+                        addListProperty(propertiesContainer, 'Sources', d.sources);
+                    }
+                    break;
+                    
+                case 'Actor':
+                    if (d.country) {
+                        addProperty(propertiesContainer, 'Country', d.country);
+                    }
+                    if (d.role) {
+                        addProperty(propertiesContainer, 'Role', d.role);
+                    }
+                    if (d.expertise && d.expertise.length > 0) {
+                        addListProperty(propertiesContainer, 'Expertise', d.expertise);
+                    }
+                    break;
+                    
+                case 'Concept':
+                    if (d.alternative_names && d.alternative_names.length > 0) {
+                        addListProperty(propertiesContainer, 'Alternative Names', d.alternative_names);
+                    }
+                    if (d.domain && d.domain.length > 0) {
+                        addListProperty(propertiesContainer, 'Domains', d.domain);
+                    }
+                    break;
+                    
+                case 'Publication':
+                    if (d.publisher) {
+                        addProperty(propertiesContainer, 'Publisher', d.publisher);
+                    }
+                    if (d.journal) {
+                        addProperty(propertiesContainer, 'Journal', d.journal);
+                    }
+                    if (d.doi) {
+                        addProperty(propertiesContainer, 'DOI', d.doi);
+                    }
+                    if (d.isbn) {
+                        addProperty(propertiesContainer, 'ISBN', d.isbn);
+                    }
+                    break;
+                    
+                case 'Location':
+                    if (d.country) {
+                        addProperty(propertiesContainer, 'Country', d.country);
+                    }
+                    if (d.region) {
+                        addProperty(propertiesContainer, 'Region', d.region);
+                    }
+                    break;
+            }
+            
+            // Set tags
+            const tagsContainer = document.getElementById('detail-tags');
+            tagsContainer.innerHTML = '';
+            
+            if (d.tags && d.tags.length > 0) {
+                d.tags.forEach(tag => {
+                    const tagElement = document.createElement('span');
+                    tagElement.className = 'tag';
+                    tagElement.textContent = tag;
+                    tagsContainer.appendChild(tagElement);
+                });
+            } else if (d.expertise && d.expertise.length > 0) {
+                d.expertise.forEach(exp => {
+                    const tagElement = document.createElement('span');
+                    tagElement.className = 'tag';
+                    tagElement.textContent = exp;
+                    tagsContainer.appendChild(tagElement);
+                });
+            } else if (d.domain && d.domain.length > 0) {
+                d.domain.forEach(domain => {
+                    const tagElement = document.createElement('span');
+                    tagElement.className = 'tag';
+                    tagElement.textContent = domain;
+                    tagsContainer.appendChild(tagElement);
+                });
+            }
+            
+            // Set related entities
+            const relatedEntitiesContainer = document.getElementById('related-entities');
+            relatedEntitiesContainer.innerHTML = '';
+            
+            // Find all links connected to this node
+            const connectedLinks = graph.links.filter(link => 
+                link.source.id === d.id || link.target.id === d.id
+            );
+            
+            if (connectedLinks.length > 0) {
+                const relatedTitle = document.createElement('p');
+                relatedTitle.innerHTML = '<strong>Related Entities:</strong>';
+                relatedEntitiesContainer.appendChild(relatedTitle);
+                
+                connectedLinks.forEach(link => {
+                    const isSource = link.source.id === d.id;
+                    const relatedNode = isSource ? link.target : link.source;
+                    const relationshipType = isSource ? link.type : getReverseRelationshipType(link.type);
+                    
+                    const linkElement = document.createElement('a');
+                    linkElement.className = 'related-entity-link';
+                    linkElement.textContent = `${relationshipType}: ${relatedNode.name} (${relatedNode.type})`;
+                    linkElement.addEventListener('click', function() {
+                        // Find the node element and trigger a click
+                        const nodeElement = nodeElements.filter(n => n.id === relatedNode.id).node();
+                        if (nodeElement) {
+                            const event = new MouseEvent('click', {
+                                bubbles: true,
+                                cancelable: true,
+                                view: window
+                            });
+                            nodeElement.dispatchEvent(event);
+                        }
+                    });
+                    relatedEntitiesContainer.appendChild(linkElement);
+                });
+            }
+            
+            // Show the panel
+            detailsPanel.style.display = 'block';
+        }
+        
+        function addProperty(container, label, value) {
+            const element = document.createElement('p');
+            element.innerHTML = `<strong>${label}:</strong> ${value}`;
+            container.appendChild(element);
+        }
+        
+        function addListProperty(container, label, items) {
+            const titleElement = document.createElement('p');
+            titleElement.innerHTML = `<strong>${label}:</strong>`;
+            container.appendChild(titleElement);
+            
+            const listElement = document.createElement('ul');
+            listElement.style.fontSize = '14px';
+            listElement.style.paddingLeft = '20px';
+            listElement.style.marginTop = '5px';
+            
+            items.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = item;
+                listElement.appendChild(listItem);
+            });
+            
+            container.appendChild(listElement);
+        }
+        
+        function getReverseRelationshipType(type) {
+            // Determine the reverse relationship type
+            switch (type) {
+                case 'Influences': return 'Influenced By';
+                case 'IsInfluencedBy': return 'Influences';
+                case 'Precedes': return 'Follows';
+                case 'Follows': return 'Precedes';
+                case 'References': return 'Referenced By';
+                case 'IsReferencedBy': return 'References';
+                case 'Introduces': return 'Introduced By';
+                case 'Develops': return 'Developed By';
+                case 'Authors': return 'Authored By';
+                case 'Participates_In': return 'Has Participant';
+                case 'Takes_Place_At': return 'Hosts';
+                case 'Contains': return 'Is Part Of';
+                case 'Relates_To': return 'Related To';
+                default: return 'Related To';
+            }
+        }
+        
+        function createFilters() {
+            // Get unique entity types
+            const entityTypes = [...new Set(graph.nodes.map(n => n.type))];
+            
+            // Create entity type filters
+            const entityTypeFiltersContainer = document.getElementById('entity-type-filters');
+            entityTypeFiltersContainer.innerHTML = '';
+            
+            // Add "All" option
+            const allEntityTypeLabel = document.createElement('label');
+            allEntityTypeLabel.className = 'btn btn-sm btn-outline-primary active';
+            allEntityTypeLabel.innerHTML = `
+                <input type="checkbox" name="entity-type-filter" value="all" checked> All
+            `;
+            entityTypeFiltersContainer.appendChild(allEntityTypeLabel);
+            
+            // Add each entity type
+            entityTypes.forEach(type => {
+                const label = document.createElement('label');
+                label.className = 'btn btn-sm btn-outline-primary active';
+                label.innerHTML = `
+                    <input type="checkbox" name="entity-type-filter" value="${type}" checked> ${type}
+                `;
+                entityTypeFiltersContainer.appendChild(label);
+            });
+            
+            // Get unique relationship types
+            const relationshipTypes = [...new Set(graph.links.map(l => l.type))];
+            
+            // Create relationship type filters
+            const relationshipTypeFiltersContainer = document.getElementById('relationship-type-filters');
+            relationshipTypeFiltersContainer.innerHTML = '';
+            
+            // Add "All" option
+            const allRelationshipTypeLabel = document.createElement('label');
+            allRelationshipTypeLabel.className = 'btn btn-sm btn-outline-primary active';
+            allRelationshipTypeLabel.innerHTML = `
+                <input type="checkbox" name="relationship-type-filter" value="all" checked> All
+            `;
+            relationshipTypeFiltersContainer.appendChild(allRelationshipTypeLabel);
+            
+            // Add each relationship type
+            relationshipTypes.forEach(type => {
+                const label = document.createElement('label');
+                label.className = 'btn btn-sm btn-outline-primary active';
+                label.innerHTML = `
+                    <input type="checkbox" name="relationship-type-filter" value="${type}" checked> ${type}
+                `;
+                relationshipTypeFiltersContainer.appendChild(label);
+            });
+            
+            // Add filter functionality
+            document.querySelectorAll('input[name="entity-type-filter"]').forEach(input => {
+                input.addEventListener('change', applyFilters);
+            });
+            
+            document.querySelectorAll('input[name="relationship-type-filter"]').forEach(input => {
+                input.addEventListener('change', applyFilters);
+            });
+            
+            // Handle "All" checkbox for entity types
+            const allEntityTypeCheckbox = document.querySelector('input[name="entity-type-filter"][value="all"]');
+            allEntityTypeCheckbox.addEventListener('change', function() {
+                const isChecked = this.checked;
+                document.querySelectorAll('input[name="entity-type-filter"]:not([value="all"])').forEach(checkbox => {
+                    checkbox.checked = isChecked;
+                    checkbox.parentElement.classList.toggle('active', isChecked);
+                });
+                applyFilters();
+            });
+            
+            // Handle individual entity type checkboxes
+            document.querySelectorAll('input[name="entity-type-filter"]:not([value="all"])').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    this.parentElement.classList.toggle('active', this.checked);
+                    
+                    // Update "All" checkbox based on individual checkboxes
+                    const allChecked = Array.from(
+                        document.querySelectorAll('input[name="entity-type-filter"]:not([value="all"])')
+                    ).every(cb => cb.checked);
+                    
+                    allEntityTypeCheckbox.checked = allChecked;
+                    allEntityTypeCheckbox.parentElement.classList.toggle('active', allChecked);
+                    
+                    applyFilters();
+                });
+            });
+            
+            // Handle "All" checkbox for relationship types
+            const allRelationshipTypeCheckbox = document.querySelector('input[name="relationship-type-filter"][value="all"]');
+            allRelationshipTypeCheckbox.addEventListener('change', function() {
+                const isChecked = this.checked;
+                document.querySelectorAll('input[name="relationship-type-filter"]:not([value="all"])').forEach(checkbox => {
+                    checkbox.checked = isChecked;
+                    checkbox.parentElement.classList.toggle('active', isChecked);
+                });
+                applyFilters();
+            });
+            
+            // Handle individual relationship type checkboxes
+            document.querySelectorAll('input[name="relationship-type-filter"]:not([value="all"])').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    this.parentElement.classList.toggle('active', this.checked);
+                    
+                    // Update "All" checkbox based on individual checkboxes
+                    const allChecked = Array.from(
+                        document.querySelectorAll('input[name="relationship-type-filter"]:not([value="all"])')
+                    ).every(cb => cb.checked);
+                    
+                    allRelationshipTypeCheckbox.checked = allChecked;
+                    allRelationshipTypeCheckbox.parentElement.classList.toggle('active', allChecked);
+                    
+                    applyFilters();
+                });
+            });
+        }
+        
+        function applyFilters() {
+            // Get selected entity types
+            const selectedEntityTypes = Array.from(
+                document.querySelectorAll('input[name="entity-type-filter"]:checked')
+            ).map(cb => cb.value);
+            
+            const allEntityTypesSelected = selectedEntityTypes.includes('all');
+            
+            // Get selected relationship types
+            const selectedRelationshipTypes = Array.from(
+                document.querySelectorAll('input[name="relationship-type-filter"]:checked')
+            ).map(cb => cb.value);
+            
+            const allRelationshipTypesSelected = selectedRelationshipTypes.includes('all');
+            
+            // Filter nodes
+            nodeElements.style('display', d => {
+                return (allEntityTypesSelected || selectedEntityTypes.includes(d.type)) ? 'block' : 'none';
+            });
+            
+            // Filter links
+            linkElements.style('display', d => {
+                const sourceVisible = allEntityTypesSelected || selectedEntityTypes.includes(d.source.type);
+                const targetVisible = allEntityTypesSelected || selectedEntityTypes.includes(d.target.type);
+                const relationshipVisible = allRelationshipTypesSelected || selectedRelationshipTypes.includes(d.type);
+                
+                return (sourceVisible && targetVisible && relationshipVisible) ? 'block' : 'none';
+            });
+            
+            // Filter text labels
+            textElements.style('display', d => {
+                return (allEntityTypesSelected || selectedEntityTypes.includes(d.type)) ? 'block' : 'none';
+            });
+            
+            // Hide details panel when filters change
+            document.getElementById('node-details-panel').style.display = 'none';
+            if (selectedNode) {
+                d3.select(selectedNode).classed('selected', false);
+                selectedNode = null;
+            }
+        }
+        
+        function searchEntities(query) {
+            if (!query || query.trim() === '') {
+                document.getElementById('search-results').style.display = 'none';
+                return;
+            }
+            
+            query = query.toLowerCase();
+            
+            // Find matching nodes
+            const matchingNodes = graph.nodes.filter(node => 
+                node.name.toLowerCase().includes(query) || 
+                node.type.toLowerCase().includes(query) ||
+                (node.subtype && node.subtype.toLowerCase().includes(query))
+            );
+            
+            // Display results
+            const resultsContainer = document.getElementById('search-results');
+            resultsContainer.innerHTML = '';
+            
+            if (matchingNodes.length === 0) {
+                const noResults = document.createElement('div');
+                noResults.className = 'search-result-item';
+                noResults.textContent = 'No matching entities found';
+                resultsContainer.appendChild(noResults);
+            } else {
+                matchingNodes.forEach(node => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'search-result-item';
+                    resultItem.textContent = `${node.name} (${node.type}${node.subtype ? `, ${node.subtype}` : ''})`;
+                    
+                    resultItem.addEventListener('click', function() {
+                        // Find the node element and trigger a click
+                        const nodeElement = nodeElements.filter(n => n.id === node.id).node();
+                        if (nodeElement) {
+                            // Center the view on this node
+                            const transform = d3.zoomTransform(svg.node());
+                            const scale = transform.k;
+                            const x = -node.x * scale + width / 2;
+                            const y = -node.y * scale + height / 2;
+                            
+                            svg.transition().duration(750).call(
+                                d3.zoom().transform,
+                                d3.zoomIdentity.translate(x, y).scale(scale)
+                            );
+                            
+                            // Trigger click event
+                            const event = new MouseEvent('click', {
+                                bubbles: true,
+                                cancelable: true,
+                                view: window
+                            });
+                            nodeElement.dispatchEvent(event);
+                            
+                            // Hide search results
+                            resultsContainer.style.display = 'none';
+                        }
+                    });
+                    
+                    resultsContainer.appendChild(resultItem);
+                });
+            }
+            
+            resultsContainer.style.display = 'block';
+        }
+        
+        function updateLayout(layoutType) {
+            // Stop current simulation
+            simulation.stop();
+            
+            // Apply the selected layout
+            switch (layoutType) {
+                case 'force':
+                    simulation
+                        .force('link', d3.forceLink().id(d => d.id).distance(100))
+                        .force('charge', d3.forceManyBody().strength(-300))
+                        .force('center', d3.forceCenter(width / 2, height / 2))
+                        .force('collision', d3.forceCollide().radius(50));
+                    break;
+                    
+                case 'radial':
+                    // Group nodes by type
+                    const nodesByType = {};
+                    graph.nodes.forEach(node => {
+                        if (!nodesByType[node.type]) {
+                            nodesByType[node.type] = [];
+                        }
+                        nodesByType[node.type].push(node);
+                    });
+                    
+                    // Assign radial positions based on type
+                    const types = Object.keys(nodesByType);
+                    const radius = Math.min(width, height) * 0.35;
+                    
+                    types.forEach((type, i) => {
+                        const angle = (i / types.length) * 2 * Math.PI;
+                        const typeX = width / 2 + radius * Math.cos(angle);
+                        const typeY = height / 2 + radius * Math.sin(angle);
+                        
+                        nodesByType[type].forEach((node, j) => {
+                            const nodeRadius = 50 + j * 10;
+                            const nodeAngle = angle + (j / nodesByType[type].length) * Math.PI / 2;
+                            node.fx = typeX + nodeRadius * Math.cos(nodeAngle);
+                            node.fy = typeY + nodeRadius * Math.sin(nodeAngle);
+                        });
+                    });
+                    
+                    simulation
+                        .force('link', d3.forceLink().id(d => d.id).distance(50))
+                        .force('charge', d3.forceManyBody().strength(-50))
+                        .force('center', null)
+                        .force('collision', d3.forceCollide().radius(20));
+                    break;
+                    
+                case 'hierarchical':
+                    // Create a hierarchical structure
+                    // Events at the top, then actors, concepts, etc.
+                    const levelHeight = height / 6;
+                    const levelPositions = {
+                        'Event': levelHeight,
+                        'Actor': levelHeight * 2,
+                        'Concept': levelHeight * 3,
+                        'Publication': levelHeight * 4,
+                        'Location': levelHeight * 5
+                    };
+                    
+                    // Group nodes by type
+                    const nodesByTypeHierarchical = {};
+                    graph.nodes.forEach(node => {
+                        if (!nodesByTypeHierarchical[node.type]) {
+                            nodesByTypeHierarchical[node.type] = [];
+                        }
+                        nodesByTypeHierarchical[node.type].push(node);
+                    });
+                    
+                    // Position nodes in rows by type
+                    Object.entries(nodesByTypeHierarchical).forEach(([type, nodes]) => {
+                        const y = levelPositions[type] || levelHeight * 3;
+                        const xStep = width / (nodes.length + 1);
+                        
+                        nodes.forEach((node, i) => {
+                            node.fx = (i + 1) * xStep;
+                            node.fy = y;
+                        });
+                    });
+                    
+                    simulation
+                        .force('link', d3.forceLink().id(d => d.id).distance(100))
+                        .force('charge', d3.forceManyBody().strength(-50))
+                        .force('center', null)
+                        .force('collision', d3.forceCollide().radius(20));
+                    break;
+            }
+            
+            // Restart simulation
+            simulation.alpha(1).restart();
+            
+            // If not using force layout, release fixed positions after initial positioning
+            if (layoutType !== 'force') {
+                setTimeout(() => {
+                    if (layoutType === 'force') {
+                        graph.nodes.forEach(node => {
+                            node.fx = null;
+                            node.fy = null;
+                        });
+                    }
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+</html>

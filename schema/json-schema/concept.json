@@ -1,0 +1,153 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Concept",
+  "description": "A concept, theory, or idea relevant to the planetary health movement",
+  "type": "object",
+  "required": ["id", "name", "definition"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the concept (UUID v4)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the concept"
+    },
+    "definition": {
+      "type": "string",
+      "description": "Definition or explanation of the concept"
+    },
+    "alternative_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Alternative names or synonyms for this concept"
+    },
+    "parent_concept_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Reference to a parent concept (for hierarchical organization)"
+    },
+    "related_concept_ids": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["concept_id", "relationship_type"],
+        "properties": {
+          "concept_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "relationship_type": {
+            "type": "string",
+            "enum": ["Similar", "Opposite", "Broader", "Narrower", "HistoricalPrecursor", "Evolution"]
+          },
+          "relationship_description": {
+            "type": "string",
+            "description": "Description of how the concepts are related"
+          }
+        }
+      },
+      "description": "References to related concepts with relationship types"
+    },
+    "first_appearance": {
+      "type": "object",
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "publication_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the first appearance context"
+        }
+      },
+      "description": "Information about when and where this concept first appeared"
+    },
+    "key_proponents": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "References to actor IDs who are key proponents of this concept"
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Ecology", 
+          "PublicHealth", 
+          "Medicine", 
+          "EnvironmentalScience", 
+          "SocialScience", 
+          "Policy", 
+          "Economics", 
+          "Ethics", 
+          "Sustainability",
+          "ClimateScience",
+          "Biodiversity",
+          "OneHealth",
+          "PlanetaryBoundaries",
+          "Other"
+        ]
+      },
+      "description": "Domain or field to which this concept primarily belongs"
+    },
+    "significance": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Significance rating (1-5 scale, where 5 is most significant)"
+    },
+    "evolution": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "integer"
+          },
+          "description": {
+            "type": "string"
+          },
+          "event_id": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "required": ["year", "description"]
+      },
+      "description": "Timeline of how this concept has evolved over time"
+    },
+    "wikidata_id": {
+      "type": "string",
+      "description": "Wikidata Q identifier"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Sources of information about this concept"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags or keywords associated with this concept"
+    }
+  },
+  "additionalProperties": false
+}

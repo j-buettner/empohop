@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Health Timeline Visualization</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .timeline-container {
+            position: relative;
+            margin: 40px 0;
+            padding: 60px 0;
+            overflow-x: auto;
+            overflow-y: visible;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+            min-height: 250px;
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(52, 152, 219, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            z-index: 5;
+            cursor: pointer;
+            animation: fadeInOut 2s infinite;
+        }
+        
+        @keyframes fadeInOut {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+        
+        .timeline-axis {
+            height: 4px;
+            background-color: #3498db;
+            position: relative;
+            margin: 60px 0 60px 0;
+            min-width: 100%;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-tick {
+            position: absolute;
+            width: 2px;
+            height: 12px;
+            background-color: #3498db;
+            bottom: -12px;
+            border-radius: 1px;
+        }
+        
+        .timeline-label {
+            position: absolute;
+            font-size: 12px;
+            color: #555;
+            bottom: -30px;
+            transform: translateX(-50%);
+            text-align: center;
+            font-weight: 500;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 1px 3px;
+            border-radius: 2px;
+        }
+        
+        .event-point {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #3498db;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.2s ease;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            border: 2px solid white;
+        }
+        
+        .event-point:hover {
+            width: 24px;
+            height: 24px;
+            background-color: #2980b9;
+            box-shadow: 0 0 8px rgba(0,0,0,0.5);
+            z-index: 20;
+        }
+        
+        .event-point[data-significance="5"] {
+            background-color: #e74c3c;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .event-point[data-significance="4"] {
+            background-color: #f39c12;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .event-point[data-significance="3"] {
+            background-color: #3498db;
+        }
+        
+        .event-point[data-significance="2"] {
+            background-color: #2ecc71;
+            width: 14px;
+            height: 14px;
+        }
+        
+        .event-point[data-significance="1"] {
+            background-color: #95a5a6;
+            width: 12px;
+            height: 12px;
+        }
+        
+        .event-label {
+            position: absolute;
+            font-size: 12px;
+            color: #333;
+            transform: translateX(-50%);
+            text-align: center;
+            max-width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2px 5px;
+            border-radius: 3px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+            z-index: 5;
+        }
+        
+        .event-label:hover {
+            max-width: 300px;
+            font-weight: bold;
+            z-index: 20;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        .event-label.top {
+            bottom: 15px;
+        }
+        
+        .event-label.bottom {
+            top: 15px;
+        }
+        
+        .event-details {
+            display: none;
+            position: absolute;
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+            font-size: 14px;
+        }
+        
+        .event-details h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        
+        .event-details p {
+            margin-bottom: 8px;
+        }
+        
+        .event-details .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .event-details .close-btn:hover {
+            color: #333;
+        }
+        
+        .event-details .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        
+        .event-details .tag {
+            background-color: #e1f0fa;
+            border: 1px solid #3498db;
+            border-radius: 3px;
+            padding: 2px 6px;
+            font-size: 12px;
+        }
+        
+        .filters {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        
+        .type-filter, .significance-filter {
+            margin-bottom: 10px;
+        }
+        
+        .filter-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .related-events {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+        
+        .related-event-link {
+            display: block;
+            color: #3498db;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        
+        .related-event-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Planetary Health Timeline</h1>
+        
+        <div class="filters">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="type-filter">
+                        <div class="filter-label">Event Type:</div>
+                        <div class="filter-options" id="type-filters">
+                            <!-- Event type filters will be generated here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="significance-filter">
+                        <div class="filter-label">Significance:</div>
+                        <div class="filter-options" id="significance-filters">
+                            <!-- Significance filters will be generated here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline-container" id="timeline-container">
+            <div class="timeline-axis" id="timeline-axis"></div>
+            <!-- Events will be placed here -->
+        </div>
+        
+        <div class="event-details" id="event-details">
+            <span class="close-btn">&times;</span>
+            <h3 id="detail-title"></h3>
+            <p><strong>Year:</strong> <span id="detail-year"></span></p>
+            <p><strong>Type:</strong> <span id="detail-type"></span></p>
+            <p><strong>Significance:</strong> <span id="detail-significance"></span></p>
+            <p id="detail-description"></p>
+            <div id="detail-sources"></div>
+            <div class="tags" id="detail-tags"></div>
+            <div class="related-events" id="related-events"></div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #e74c3c;"></div>
+                <span>Transformative (5)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #f39c12;"></div>
+                <span>Very Significant (4)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #3498db;"></div>
+                <span>Important (3)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #2ecc71;"></div>
+                <span>Moderate (2)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #95a5a6;"></div>
+                <span>Minor (1)</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load the data
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load data from the processed directory with cache-busting parameter
+            console.log("Attempting to load data from processed directory...");
+            fetch('../../data/processed/book_9780262366601-compressed_knowledge_graph.json?v=' + new Date().getTime())
+                .then(response => {
+                    console.log("Response status:", response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Loaded data:", data);
+                    initializeTimeline(data);
+                })
+                .catch(error => {
+                    console.error('Error loading data:', error);
+                    // For demo purposes, load sample data if file not found
+                    loadSampleData();
+                });
+        });
+        
+        function loadSampleData() {
+            console.log("Loading sample data from sample-data.json");
+            fetch('sample-data.json')
+                .then(response => {
+                    console.log("Sample data response status:", response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Sample data loaded successfully:", data);
+                    initializeTimeline(data);
+                })
+                .catch(error => {
+                    console.error('Error loading sample data:', error);
+                    // Create minimal sample data as a last resort
+                    console.log("Creating fallback sample data");
+                    const sampleData = {
+                        events: [
+                            {
+                                id: "fallback1",
+                                year: 1962,
+                                title: "Publication of 'Silent Spring'",
+                                description: "Rachel Carson's book documented the detrimental effects of pesticides on the environment.",
+                                significance: 5,
+                                type: "Publication",
+                                tags: ["environmental movement", "ecology"]
+                            },
+                            {
+                                id: "fallback2",
+                                year: 1972,
+                                title: "UN Conference on Human Environment",
+                                description: "First major conference on international environmental issues.",
+                                significance: 4,
+                                type: "Conference",
+                                tags: ["United Nations", "policy"]
+                            },
+                            {
+                                id: "fallback3",
+                                year: 2015,
+                                title: "Lancet Commission on Planetary Health",
+                                description: "Introduced the concept of planetary health.",
+                                significance: 5,
+                                type: "Publication",
+                                tags: ["planetary health", "Anthropocene"]
+                            }
+                        ]
+                    };
+                    initializeTimeline(sampleData);
+                });
+        }
+        
+        function initializeTimeline(data) {
+            const events = data.events || [];
+            const relationships = data.relationships || [];
+            
+            if (events.length === 0) {
+                document.getElementById('timeline-container').innerHTML = '<p class="text-center">No events found in the dataset.</p>';
+                return;
+            }
+            
+            // Filter out events with non-numeric years
+            const eventsWithValidYears = events.filter(event => {
+                const year = parseInt(event.year);
+                return !isNaN(year);
+            });
+            
+            if (eventsWithValidYears.length === 0) {
+                document.getElementById('timeline-container').innerHTML = '<p class="text-center">No events with valid years found in the dataset.</p>';
+                return;
+            }
+            
+            // Sort events by year
+            eventsWithValidYears.sort((a, b) => parseInt(a.year) - parseInt(b.year));
+            
+            // Find min and max years for the timeline
+            const minYear = Math.min(...eventsWithValidYears.map(e => parseInt(e.year)));
+            const maxYear = Math.max(...eventsWithValidYears.map(e => parseInt(e.year)));
+            
+            console.log("Valid events count:", eventsWithValidYears.length);
+            console.log("Events with invalid years:", events.length - eventsWithValidYears.length);
+            
+            // Create a map of events by ID for quick lookup
+            const eventsById = {};
+            events.forEach(event => {
+                eventsById[event.id] = event;
+            });
+            
+            // Create a map of related events
+            const relatedEvents = {};
+            relationships.forEach(rel => {
+                if (rel.source_type === 'Event' && rel.target_type === 'Event') {
+                    if (!relatedEvents[rel.source_id]) {
+                        relatedEvents[rel.source_id] = [];
+                    }
+                    relatedEvents[rel.source_id].push({
+                        eventId: rel.target_id,
+                        relationshipType: rel.relationship_type,
+                        description: rel.description
+                    });
+                    
+                    // Add the reverse relationship too
+                    if (!relatedEvents[rel.target_id]) {
+                        relatedEvents[rel.target_id] = [];
+                    }
+                    
+                    // Determine the reverse relationship type
+                    let reverseType = 'Related To';
+                    if (rel.relationship_type === 'Influences') reverseType = 'Influenced By';
+                    if (rel.relationship_type === 'Precedes') reverseType = 'Follows';
+                    if (rel.relationship_type === 'Follows') reverseType = 'Precedes';
+                    if (rel.relationship_type === 'References') reverseType = 'Referenced By';
+                    if (rel.relationship_type === 'IsReferencedBy') reverseType = 'References';
+                    
+                    relatedEvents[rel.target_id].push({
+                        eventId: rel.source_id,
+                        relationshipType: reverseType,
+                        description: rel.description
+                    });
+                }
+            });
+            
+            // Create the timeline axis
+            createTimelineAxis(minYear, maxYear);
+            
+            // Create event points
+            createEventPoints(events, eventsById, relatedEvents);
+            
+            // Create filters
+            createFilters(events);
+        }
+        
+        function createTimelineAxis(minYear, maxYear) {
+            const timelineAxis = document.getElementById('timeline-axis');
+            const timelineContainer = document.getElementById('timeline-container');
+            
+            console.log("Min Year:", minYear, "Max Year:", maxYear);
+            
+            // Add some padding to the years
+            const paddedMinYear = minYear - 2;
+            const paddedMaxYear = maxYear + 2;
+            const yearRange = paddedMaxYear - paddedMinYear;
+            
+            console.log("Padded Min Year:", paddedMinYear, "Padded Max Year:", paddedMaxYear, "Year Range:", yearRange);
+            
+            // Calculate a good width for the timeline based on the number of years
+            // Each year should have at least 200px of space (increased from 100px)
+            const minWidth = Math.max(yearRange * 200, timelineContainer.offsetWidth);
+            timelineAxis.style.width = `${minWidth}px`;
+            console.log("Initial timeline width:", minWidth);
+            
+            // Add scroll indicator with click functionality
+            const scrollIndicator = document.createElement('div');
+            scrollIndicator.className = 'scroll-indicator';
+            scrollIndicator.textContent = 'Scroll →';
+            scrollIndicator.addEventListener('click', function() {
+                console.log("Scroll indicator clicked");
+                // Scroll the timeline container to the right by 300px
+                timelineContainer.scrollLeft += 300;
+                console.log("Scrolled to:", timelineContainer.scrollLeft);
+            });
+            timelineContainer.appendChild(scrollIndicator);
+            
+            // Add zoom controls
+            const zoomControls = document.createElement('div');
+            zoomControls.className = 'zoom-controls';
+            zoomControls.style.position = 'absolute';
+            zoomControls.style.right = '10px';
+            zoomControls.style.top = '10px';
+            zoomControls.style.zIndex = '5';
+            zoomControls.style.display = 'flex';
+            zoomControls.style.gap = '5px';
+            
+            const zoomInBtn = document.createElement('button');
+            zoomInBtn.textContent = '+';
+            zoomInBtn.style.backgroundColor = '#3498db';
+            zoomInBtn.style.color = 'white';
+            zoomInBtn.style.border = 'none';
+            zoomInBtn.style.borderRadius = '4px';
+            zoomInBtn.style.width = '30px';
+            zoomInBtn.style.height = '30px';
+            zoomInBtn.style.fontSize = '16px';
+            zoomInBtn.style.cursor = 'pointer';
+            zoomInBtn.addEventListener('click', function() {
+                console.log("Zoom in clicked");
+                // Get the current width, fallback to the offsetWidth if style.width is not set
+                let currentWidth = parseInt(timelineAxis.style.width);
+                if (isNaN(currentWidth)) {
+                    currentWidth = timelineAxis.offsetWidth;
+                    console.log("Using offsetWidth instead:", currentWidth);
+                }
+                console.log("Current width:", currentWidth);
+                const newWidth = currentWidth * 1.2;
+                console.log("New width:", newWidth);
+                timelineAxis.style.width = `${newWidth}px`;
+                // Reposition events after zooming
+                repositionEvents();
+                console.log("Events repositioned after zoom in");
+                
+                // Show a visual indicator that zooming occurred
+                const zoomIndicator = document.createElement('div');
+                zoomIndicator.textContent = 'Zoomed In';
+                zoomIndicator.style.position = 'absolute';
+                zoomIndicator.style.top = '50px';
+                zoomIndicator.style.left = '50%';
+                zoomIndicator.style.transform = 'translateX(-50%)';
+                zoomIndicator.style.backgroundColor = 'rgba(52, 152, 219, 0.7)';
+                zoomIndicator.style.color = 'white';
+                zoomIndicator.style.padding = '5px 10px';
+                zoomIndicator.style.borderRadius = '4px';
+                zoomIndicator.style.zIndex = '10';
+                timelineContainer.appendChild(zoomIndicator);
+                
+                // Remove the indicator after 2 seconds
+                setTimeout(() => {
+                    timelineContainer.removeChild(zoomIndicator);
+                }, 2000);
+            });
+            
+            const zoomOutBtn = document.createElement('button');
+            zoomOutBtn.textContent = '−';
+            zoomOutBtn.style.backgroundColor = '#3498db';
+            zoomOutBtn.style.color = 'white';
+            zoomOutBtn.style.border = 'none';
+            zoomOutBtn.style.borderRadius = '4px';
+            zoomOutBtn.style.width = '30px';
+            zoomOutBtn.style.height = '30px';
+            zoomOutBtn.style.fontSize = '16px';
+            zoomOutBtn.style.cursor = 'pointer';
+            zoomOutBtn.addEventListener('click', function() {
+                console.log("Zoom out clicked");
+                // Get the current width, fallback to the offsetWidth if style.width is not set
+                let currentWidth = parseInt(timelineAxis.style.width);
+                if (isNaN(currentWidth)) {
+                    currentWidth = timelineAxis.offsetWidth;
+                    console.log("Using offsetWidth instead:", currentWidth);
+                }
+                console.log("Current width:", currentWidth);
+                const newWidth = Math.max(currentWidth / 1.2, timelineContainer.offsetWidth);
+                console.log("New width:", newWidth);
+                timelineAxis.style.width = `${newWidth}px`;
+                // Reposition events after zooming
+                repositionEvents();
+                console.log("Events repositioned after zoom out");
+                
+                // Show a visual indicator that zooming occurred
+                const zoomIndicator = document.createElement('div');
+                zoomIndicator.textContent = 'Zoomed Out';
+                zoomIndicator.style.position = 'absolute';
+                zoomIndicator.style.top = '50px';
+                zoomIndicator.style.left = '50%';
+                zoomIndicator.style.transform = 'translateX(-50%)';
+                zoomIndicator.style.backgroundColor = 'rgba(52, 152, 219, 0.7)';
+                zoomIndicator.style.color = 'white';
+                zoomIndicator.style.padding = '5px 10px';
+                zoomIndicator.style.borderRadius = '4px';
+                zoomIndicator.style.zIndex = '10';
+                timelineContainer.appendChild(zoomIndicator);
+                
+                // Remove the indicator after 2 seconds
+                setTimeout(() => {
+                    timelineContainer.removeChild(zoomIndicator);
+                }, 2000);
+            });
+            
+            zoomControls.appendChild(zoomInBtn);
+            zoomControls.appendChild(zoomOutBtn);
+            timelineContainer.appendChild(zoomControls);
+            
+            // Create tick marks for each decade
+            const startDecade = Math.floor(paddedMinYear / 10) * 10;
+            const endDecade = Math.ceil(paddedMaxYear / 10) * 10;
+            
+            for (let year = startDecade; year <= endDecade; year += 10) {
+                if (year >= paddedMinYear && year <= paddedMaxYear) {
+                    const position = ((year - paddedMinYear) / yearRange) * 100;
+                    
+                    // Create tick mark
+                    const tick = document.createElement('div');
+                    tick.className = 'timeline-tick';
+                    tick.style.left = `${position}%`;
+                    timelineAxis.appendChild(tick);
+                    
+                    // Create label
+                    const label = document.createElement('div');
+                    label.className = 'timeline-label';
+                    label.textContent = year;
+                    label.style.left = `${position}%`;
+                    timelineAxis.appendChild(label);
+                }
+            }
+            
+            // Store the year range for event positioning
+            timelineAxis.dataset.minYear = paddedMinYear;
+            timelineAxis.dataset.maxYear = paddedMaxYear;
+            timelineAxis.dataset.yearRange = yearRange;
+        }
+        
+        function createEventPoints(events, eventsById, relatedEvents) {
+            const timelineContainer = document.getElementById('timeline-container');
+            const timelineAxis = document.getElementById('timeline-axis');
+            const paddedMinYear = parseFloat(timelineAxis.dataset.minYear);
+            const yearRange = parseFloat(timelineAxis.dataset.yearRange);
+            
+            // Get the position of the timeline axis for vertical positioning
+            const axisRect = timelineAxis.getBoundingClientRect();
+            const containerRect = timelineContainer.getBoundingClientRect();
+            const axisTop = axisRect.top - containerRect.top;
+            
+            console.log("Timeline axis position:", axisTop);
+            
+            // Filter out events with non-numeric years
+            const eventsWithValidYears = events.filter(event => {
+                const year = parseInt(event.year);
+                return !isNaN(year);
+            });
+            
+            console.log("Creating event points for", eventsWithValidYears.length, "events with valid years");
+            
+            // Group events by year to handle multiple events in the same year
+            const eventsByYear = {};
+            eventsWithValidYears.forEach(event => {
+                const year = parseInt(event.year);
+                if (!eventsByYear[year]) {
+                    eventsByYear[year] = [];
+                }
+                eventsByYear[year].push(event);
+            });
+            
+            // Process events by year
+            Object.keys(eventsByYear).sort((a, b) => a - b).forEach(year => {
+                const yearEvents = eventsByYear[year];
+                // Calculate position based on the year (as percentage of the timeline width)
+                const yearPosition = ((parseInt(year) - paddedMinYear) / yearRange) * 100;
+                console.log(`Year: ${year}, Position: ${yearPosition}%`);
+                
+                // Calculate vertical offset for multiple events in the same year
+                const eventsCount = yearEvents.length;
+                
+                yearEvents.forEach((event, eventIndex) => {
+                    // Create event point
+                    const eventPoint = document.createElement('div');
+                    eventPoint.className = 'event-point';
+                    eventPoint.dataset.id = event.id;
+                    eventPoint.dataset.significance = event.significance || 3;
+                    eventPoint.dataset.type = event.type || 'Other';
+                    eventPoint.dataset.year = event.year;
+                    eventPoint.style.left = `${yearPosition}%`;
+                    
+                    // Position the event point on the timeline axis
+                    // Stagger points vertically if there are multiple events in the same year
+                    if (eventsCount > 1) {
+                        // Calculate vertical position based on index
+                        const verticalOffset = (eventIndex - (eventsCount - 1) / 2) * 20;
+                        eventPoint.style.top = `${axisTop + verticalOffset}px`;
+                    } else {
+                        eventPoint.style.top = `${axisTop}px`;
+                    }
+                    
+                    timelineContainer.appendChild(eventPoint);
+                    
+                    // Create event label with alternating top/bottom position
+                    const position = eventIndex % 2 === 0 ? 'top' : 'bottom';
+                    const eventLabel = document.createElement('div');
+                    eventLabel.className = `event-label ${position}`;
+                    eventLabel.textContent = event.title;
+                    eventLabel.style.left = `${yearPosition}%`;
+                    
+                    // Adjust vertical position of labels to avoid overlap
+                    if (position === 'top') {
+                        // For top labels, position them above the timeline
+                        const bottomOffset = axisTop + 15 + (Math.floor(eventIndex / 2) * 20);
+                        eventLabel.style.bottom = `${bottomOffset}px`;
+                    } else {
+                        // For bottom labels, position them below the timeline
+                        const topOffset = axisTop + 15 + (Math.floor(eventIndex / 2) * 20);
+                        eventLabel.style.top = `${topOffset}px`;
+                    }
+                    
+                    timelineContainer.appendChild(eventLabel);
+                    
+                    // Add click event to show details
+                    eventPoint.addEventListener('click', function(e) {
+                        showEventDetails(event, e, eventsById, relatedEvents);
+                    });
+                    
+                    eventLabel.addEventListener('click', function(e) {
+                        showEventDetails(event, e, eventsById, relatedEvents);
+                    });
+                });
+            });
+        }
+        
+        function showEventDetails(event, clickEvent, eventsById, relatedEvents) {
+            const detailsPanel = document.getElementById('event-details');
+            
+            // Set details content
+            document.getElementById('detail-title').textContent = event.title;
+            document.getElementById('detail-year').textContent = event.year;
+            document.getElementById('detail-type').textContent = event.type || 'Not specified';
+            document.getElementById('detail-significance').textContent = event.significance || 'Not specified';
+            document.getElementById('detail-description').textContent = event.description || 'No description available.';
+            
+            // Set sources
+            const sourcesContainer = document.getElementById('detail-sources');
+            sourcesContainer.innerHTML = '';
+            if (event.sources && event.sources.length > 0) {
+                const sourcesTitle = document.createElement('p');
+                sourcesTitle.innerHTML = '<strong>Sources:</strong>';
+                sourcesContainer.appendChild(sourcesTitle);
+                
+                const sourcesList = document.createElement('ul');
+                sourcesList.style.fontSize = '12px';
+                sourcesList.style.paddingLeft = '20px';
+                
+                event.sources.forEach(source => {
+                    const sourceItem = document.createElement('li');
+                    sourceItem.textContent = source;
+                    sourcesList.appendChild(sourceItem);
+                });
+                
+                sourcesContainer.appendChild(sourcesList);
+            }
+            
+            // Set tags
+            const tagsContainer = document.getElementById('detail-tags');
+            tagsContainer.innerHTML = '';
+            if (event.tags && event.tags.length > 0) {
+                event.tags.forEach(tag => {
+                    const tagElement = document.createElement('span');
+                    tagElement.className = 'tag';
+                    tagElement.textContent = tag;
+                    tagsContainer.appendChild(tagElement);
+                });
+            }
+            
+            // Set related events
+            const relatedEventsContainer = document.getElementById('related-events');
+            relatedEventsContainer.innerHTML = '';
+            
+            if (relatedEvents[event.id] && relatedEvents[event.id].length > 0) {
+                const relatedTitle = document.createElement('p');
+                relatedTitle.innerHTML = '<strong>Related Events:</strong>';
+                relatedEventsContainer.appendChild(relatedTitle);
+                
+                relatedEvents[event.id].forEach(relation => {
+                    const relatedEvent = eventsById[relation.eventId];
+                    if (relatedEvent) {
+                        const link = document.createElement('a');
+                        link.className = 'related-event-link';
+                        link.textContent = `${relation.relationshipType}: ${relatedEvent.title} (${relatedEvent.year})`;
+                        link.addEventListener('click', function() {
+                            showEventDetails(relatedEvent, null, eventsById, relatedEvents);
+                        });
+                        relatedEventsContainer.appendChild(link);
+                    }
+                });
+            } else {
+                relatedEventsContainer.style.display = 'none';
+            }
+            
+            // Position the details panel
+            if (clickEvent) {
+                const rect = clickEvent.target.getBoundingClientRect();
+                const containerRect = document.querySelector('.container').getBoundingClientRect();
+                
+                // Calculate position relative to the container
+                let left = rect.left - containerRect.left + rect.width / 2;
+                let top = rect.top - containerRect.top + rect.height / 2;
+                
+                // Adjust to keep within container
+                if (left < 150) left = 150;
+                if (left > containerRect.width - 150) left = containerRect.width - 150;
+                
+                detailsPanel.style.left = `${left - 150}px`; // Center the 300px wide panel
+                detailsPanel.style.top = `${top + 20}px`;
+            }
+            
+            // Show the panel
+            detailsPanel.style.display = 'block';
+            
+            // Add close button functionality
+            document.querySelector('.close-btn').addEventListener('click', function() {
+                detailsPanel.style.display = 'none';
+            });
+        }
+        
+        function createFilters(events) {
+            // Get unique event types
+            const eventTypes = [...new Set(events.map(e => e.type || 'Other'))];
+            
+            // Create type filters
+            const typeFiltersContainer = document.getElementById('type-filters');
+            typeFiltersContainer.innerHTML = '';
+            
+            // Add "All" option
+            const allTypeLabel = document.createElement('label');
+            allTypeLabel.className = 'btn btn-sm btn-outline-primary active';
+            allTypeLabel.innerHTML = `
+                <input type="radio" name="type-filter" value="all" checked> All
+            `;
+            typeFiltersContainer.appendChild(allTypeLabel);
+            
+            // Add each event type
+            eventTypes.forEach(type => {
+                const label = document.createElement('label');
+                label.className = 'btn btn-sm btn-outline-primary';
+                label.innerHTML = `
+                    <input type="radio" name="type-filter" value="${type}"> ${type}
+                `;
+                typeFiltersContainer.appendChild(label);
+            });
+            
+            // Create significance filters
+            const significanceFiltersContainer = document.getElementById('significance-filters');
+            significanceFiltersContainer.innerHTML = '';
+            
+            // Add "All" option
+            const allSignificanceLabel = document.createElement('label');
+            allSignificanceLabel.className = 'btn btn-sm btn-outline-primary active';
+            allSignificanceLabel.innerHTML = `
+                <input type="radio" name="significance-filter" value="all" checked> All
+            `;
+            significanceFiltersContainer.appendChild(allSignificanceLabel);
+            
+            // Add each significance level
+            for (let i = 5; i >= 1; i--) {
+                const label = document.createElement('label');
+                label.className = 'btn btn-sm btn-outline-primary';
+                
+                let significanceText = '';
+                switch (i) {
+                    case 5: significanceText = 'Transformative'; break;
+                    case 4: significanceText = 'Very Significant'; break;
+                    case 3: significanceText = 'Important'; break;
+                    case 2: significanceText = 'Moderate'; break;
+                    case 1: significanceText = 'Minor'; break;
+                }
+                
+                label.innerHTML = `
+                    <input type="radio" name="significance-filter" value="${i}"> ${significanceText} (${i})
+                `;
+                significanceFiltersContainer.appendChild(label);
+            }
+            
+            // Add filter functionality
+            document.querySelectorAll('input[name="type-filter"]').forEach(input => {
+                input.addEventListener('change', applyFilters);
+            });
+            
+            document.querySelectorAll('input[name="significance-filter"]').forEach(input => {
+                input.addEventListener('change', applyFilters);
+            });
+            
+            // Update button active states
+            document.querySelectorAll('input[name="type-filter"]').forEach(input => {
+                input.addEventListener('change', function() {
+                    document.querySelectorAll('label.btn').forEach(label => {
+                        if (label.contains(this)) {
+                            label.classList.add('active');
+                        } else if (label.querySelector('input[name="type-filter"]')) {
+                            label.classList.remove('active');
+                        }
+                    });
+                });
+            });
+            
+            document.querySelectorAll('input[name="significance-filter"]').forEach(input => {
+                input.addEventListener('change', function() {
+                    document.querySelectorAll('label.btn').forEach(label => {
+                        if (label.contains(this)) {
+                            label.classList.add('active');
+                        } else if (label.querySelector('input[name="significance-filter"]')) {
+                            label.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        }
+        
+        function repositionEvents() {
+            // Reposition all event points and labels based on the current timeline width
+            const timelineAxis = document.getElementById('timeline-axis');
+            const timelineContainer = document.getElementById('timeline-container');
+            const paddedMinYear = parseFloat(timelineAxis.dataset.minYear);
+            const paddedMaxYear = parseFloat(timelineAxis.dataset.maxYear);
+            const yearRange = paddedMaxYear - paddedMinYear;
+            
+            // Get the current timeline width
+            const timelineWidth = timelineAxis.offsetWidth;
+            console.log("Repositioning events. Min Year:", paddedMinYear, "Max Year:", paddedMaxYear, "Year Range:", yearRange, "Timeline Width:", timelineWidth);
+            
+            // Get the position of the timeline axis for vertical positioning
+            const axisRect = timelineAxis.getBoundingClientRect();
+            const containerRect = timelineContainer.getBoundingClientRect();
+            const axisTop = axisRect.top - containerRect.top;
+            
+            console.log("Timeline axis position:", axisTop);
+            
+            // Get all event points and their corresponding labels
+            const eventPoints = document.querySelectorAll('.event-point');
+            const eventLabels = document.querySelectorAll('.event-label');
+            
+            // Create a map to group event points by year
+            const pointsByYear = {};
+            eventPoints.forEach((point) => {
+                const year = parseFloat(point.dataset.year);
+                if (!pointsByYear[year]) {
+                    pointsByYear[year] = [];
+                }
+                pointsByYear[year].push(point);
+            });
+            
+            // Reposition each event point and label
+            Object.keys(pointsByYear).forEach(year => {
+                const yearPoints = pointsByYear[year];
+                const eventsCount = yearPoints.length;
+                
+                // Calculate the horizontal position based on the year
+                const yearFraction = (parseFloat(year) - paddedMinYear) / yearRange;
+                const pixelPosition = yearFraction * timelineWidth;
+                console.log(`Repositioning year ${year} to position ${yearFraction * 100}% (${pixelPosition}px)`);
+                
+                yearPoints.forEach((point, eventIndex) => {
+                    // Update the horizontal position
+                    point.style.left = `${pixelPosition}px`;
+                    
+                    // Update the vertical position
+                    if (eventsCount > 1) {
+                        // Calculate vertical position based on index
+                        const verticalOffset = (eventIndex - (eventsCount - 1) / 2) * 20;
+                        point.style.top = `${axisTop + verticalOffset}px`;
+                    } else {
+                        point.style.top = `${axisTop}px`;
+                    }
+                    
+                    // Find the corresponding label
+                    const labelIndex = Array.from(eventPoints).indexOf(point);
+                    if (labelIndex >= 0 && labelIndex < eventLabels.length) {
+                        const label = eventLabels[labelIndex];
+                        
+                        // Update the horizontal position of the label
+                        label.style.left = `${pixelPosition}px`;
+                        
+                        // Update the vertical position of the label
+                        const position = label.classList.contains('top') ? 'top' : 'bottom';
+                        if (position === 'top') {
+                            // For top labels, position them above the timeline
+                            const bottomOffset = axisTop + 15 + (Math.floor(eventIndex / 2) * 20);
+                            label.style.bottom = `${bottomOffset}px`;
+                        } else {
+                            // For bottom labels, position them below the timeline
+                            const topOffset = axisTop + 15 + (Math.floor(eventIndex / 2) * 20);
+                            label.style.top = `${topOffset}px`;
+                        }
+                    }
+                });
+            });
+            
+            // Also update the tick marks and labels
+            const timelineTicks = document.querySelectorAll('.timeline-tick');
+            const timelineLabels = document.querySelectorAll('.timeline-label');
+            
+            timelineTicks.forEach((tick, index) => {
+                if (index < timelineLabels.length) {
+                    const year = parseFloat(timelineLabels[index].textContent);
+                    const yearFraction = (year - paddedMinYear) / yearRange;
+                    const pixelPosition = yearFraction * timelineWidth;
+                    
+                    tick.style.left = `${pixelPosition}px`;
+                    timelineLabels[index].style.left = `${pixelPosition}px`;
+                }
+            });
+        }
+        
+        function applyFilters() {
+            const selectedType = document.querySelector('input[name="type-filter"]:checked').value;
+            const selectedSignificance = document.querySelector('input[name="significance-filter"]:checked').value;
+            
+            const eventPoints = document.querySelectorAll('.event-point');
+            const eventLabels = document.querySelectorAll('.event-label');
+            
+            eventPoints.forEach((point, index) => {
+                const typeMatch = selectedType === 'all' || point.dataset.type === selectedType;
+                const significanceMatch = selectedSignificance === 'all' || point.dataset.significance === selectedSignificance;
+                
+                if (typeMatch && significanceMatch) {
+                    point.style.display = 'block';
+                    eventLabels[index].style.display = 'block';
+                } else {
+                    point.style.display = 'none';
+                    eventLabels[index].style.display = 'none';
+                }
+            });
+            
+            // Hide details panel when filters change
+            document.getElementById('event-details').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

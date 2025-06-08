@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Location",
+  "description": "A geographical location relevant to the planetary health movement",
+  "type": "object",
+  "required": ["id", "name", "type"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the location (UUID v4)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the location"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["City", "Country", "Region", "Virtual", "Natural", "Institution", "Other"],
+      "description": "Type of location"
+    },
+    "coordinates": {
+      "type": "object",
+      "required": ["type", "coordinates"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["Point"],
+          "default": "Point"
+        },
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          },
+          "description": "Longitude and latitude in GeoJSON format [longitude, latitude]"
+        }
+      },
+      "description": "Geographical coordinates in GeoJSON format"
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "ISO 3166-1 alpha-2 country code"
+    },
+    "region": {
+      "type": "string",
+      "description": "Region or state/province within a country"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the location and its significance to planetary health"
+    },
+    "geoname_id": {
+      "type": "integer",
+      "description": "GeoNames database identifier for standardized geographical reference"
+    },
+    "wikidata_id": {
+      "type": "string",
+      "description": "Wikidata Q identifier"
+    },
+    "parent_location_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Reference to a parent location (e.g., a city's country)"
+    },
+    "population": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Population of the location (if applicable)"
+    },
+    "area": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Area in square kilometers (if applicable)"
+    },
+    "timezone": {
+      "type": "string",
+      "description": "IANA timezone identifier (e.g., 'Europe/London')"
+    },
+    "environmental_features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Notable environmental features of the location"
+    },
+    "health_indicators": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Health-related indicators specific to this location"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Sources of information about this location"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "caption": {
+            "type": "string"
+          },
+          "credit": {
+            "type": "string"
+          }
+        },
+        "required": ["url"]
+      },
+      "description": "Images of the location"
+    }
+  },
+  "additionalProperties": false
+}

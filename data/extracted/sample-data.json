@@ -1,0 +1,364 @@
+{
+  "events": [
+    {
+      "id": "e1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c",
+      "year": 1962,
+      "title": "Publication of 'Silent Spring' by Rachel Carson",
+      "description": "Rachel Carson's book 'Silent Spring' documented the detrimental effects of pesticides on the environment, particularly on birds. The book is widely credited with helping launch the environmental movement and raised public awareness about the interconnections between environmental pollution and human health.",
+      "significance": 5,
+      "type": "Publication",
+      "start_date": "1962-09-27",
+      "sources": [
+        "Carson, R. (1962). Silent Spring. Houghton Mifflin.",
+        "Griswold, E. (2012). How 'Silent Spring' Ignited the Environmental Movement. New York Times Magazine."
+      ],
+      "tags": ["pesticides", "environmental movement", "ecology", "public health"]
+    },
+    {
+      "id": "f6g7h8i9-j0k1-4l2m-3n4o-5p6q7r8s9t0u",
+      "year": 1972,
+      "title": "United Nations Conference on the Human Environment (Stockholm Conference)",
+      "description": "The first major conference on international environmental issues, marking a turning point in the development of international environmental politics. The conference led to the creation of the United Nations Environment Programme (UNEP) and highlighted the links between environmental protection and human well-being.",
+      "significance": 5,
+      "type": "Conference",
+      "start_date": "1972-06-05",
+      "end_date": "1972-06-16",
+      "sources": [
+        "United Nations. (1972). Report of the United Nations Conference on the Human Environment.",
+        "Sohn, L. B. (1973). The Stockholm Declaration on the Human Environment. Harvard International Law Journal, 14(3), 423-515."
+      ],
+      "tags": ["United Nations", "international policy", "environmental governance"]
+    },
+    {
+      "id": "v1w2x3y4-z5a6-4b7c-8d9e-0f1g2h3i4j5k",
+      "year": 1987,
+      "title": "Publication of 'Our Common Future' (Brundtland Report)",
+      "description": "The report, published by the World Commission on Environment and Development, introduced and defined the concept of sustainable development as 'development that meets the needs of the present without compromising the ability of future generations to meet their own needs.' This definition established the three pillars of sustainability: economic growth, environmental protection, and social equality.",
+      "significance": 5,
+      "type": "Publication",
+      "start_date": "1987-04-20",
+      "sources": [
+        "World Commission on Environment and Development. (1987). Our Common Future. Oxford University Press.",
+        "Borowy, I. (2014). Defining Sustainable Development for Our Common Future: A History of the World Commission on Environment and Development (Brundtland Commission). Routledge."
+      ],
+      "tags": ["sustainable development", "intergenerational equity", "United Nations"]
+    },
+    {
+      "id": "l6m7n8o9-p0q1-4r2s-3t4u-5v6w7x8y9z0a",
+      "year": 2015,
+      "title": "Publication of 'Safeguarding Human Health in the Anthropocene Epoch' by The Rockefeller Foundation–Lancet Commission",
+      "description": "This landmark report formally introduced the concept of 'planetary health' as a field that focuses on the human health impacts of human-caused disruptions of Earth's natural systems. The Commission brought together 15 leading academics and policymakers to articulate the scientific foundation for planetary health and outline strategies for action.",
+      "significance": 5,
+      "type": "Publication",
+      "start_date": "2015-07-16",
+      "sources": [
+        "Whitmee, S., Haines, A., Beyrer, C., Boltz, F., Capon, A. G., de Souza Dias, B. F., ... & Yach, D. (2015). Safeguarding human health in the Anthropocene epoch: report of The Rockefeller Foundation–Lancet Commission on planetary health. The Lancet, 386(10007), 1973-2028."
+      ],
+      "tags": ["planetary health", "Anthropocene", "Lancet Commission", "Rockefeller Foundation"]
+    },
+    {
+      "id": "b1c2d3e4-f5g6-4h7i-8j9k-0l1m2n3o4p5q",
+      "year": 2016,
+      "title": "Formation of the Planetary Health Alliance",
+      "description": "The Planetary Health Alliance (PHA) was established as a consortium of universities, NGOs, and other partners committed to advancing planetary health research, education, and policy. The Alliance was initially supported by The Rockefeller Foundation and housed at Harvard University's T.H. Chan School of Public Health.",
+      "significance": 4,
+      "type": "Organization",
+      "start_date": "2016-01-01",
+      "sources": [
+        "Planetary Health Alliance. (2016). About the Planetary Health Alliance. Retrieved from https://planetaryhealthalliance.org/about",
+        "Myers, S. S. (2017). Planetary health: protecting human health on a rapidly changing planet. The Lancet, 390(10114), 2860-2868."
+      ],
+      "tags": ["planetary health", "research network", "education", "policy"]
+    }
+  ],
+  "actors": [
+    {
+      "id": "a1b2c3d4-e5f6-4g7h-8i9j-0k1l2m3n4o5p",
+      "name": "Rachel Carson",
+      "type": "Individual",
+      "country": "US",
+      "description": "Rachel Carson (1907-1964) was an American marine biologist, author, and conservationist whose book 'Silent Spring' (1962) is credited with advancing the global environmental movement. Her work highlighted the interconnections between environmental pollution and human health.",
+      "role": "Author and Scientist",
+      "start_date": "1907-05-27",
+      "end_date": "1964-04-14",
+      "expertise": ["Marine Biology", "Ecology", "Environmental Toxicology", "Science Writing"]
+    },
+    {
+      "id": "q1r2s3t4-u5v6-4w7x-8y9z-0a1b2c3d4e5f",
+      "name": "The Rockefeller Foundation",
+      "type": "Institution",
+      "country": "US",
+      "description": "The Rockefeller Foundation is a private foundation established in 1913 that has played a significant role in public health, medical education, and scientific research globally. In the 2010s, the foundation became a key supporter of the emerging field of planetary health.",
+      "role": "Funder and Advocate",
+      "start_date": "1913-05-14",
+      "website": "https://www.rockefellerfoundation.org"
+    },
+    {
+      "id": "g1h2i3j4-k5l6-4m7n-8o9p-0q1r2s3t4u5v",
+      "name": "The Lancet",
+      "type": "Institution",
+      "country": "GB",
+      "description": "The Lancet is one of the world's oldest and most prestigious medical journals, founded in 1823. It has played a significant role in advancing the field of planetary health through special commissions, series, and dedicated content.",
+      "role": "Scientific Publisher",
+      "start_date": "1823-10-05",
+      "website": "https://www.thelancet.com"
+    },
+    {
+      "id": "w1x2y3z4-a5b6-4c7d-8e9f-0g1h2i3j4k5l",
+      "name": "Gro Harlem Brundtland",
+      "type": "Individual",
+      "country": "NO",
+      "description": "Gro Harlem Brundtland is a Norwegian physician, diplomat, and politician who served as the Director-General of the World Health Organization from 1998 to 2003. She is known for chairing the World Commission on Environment and Development, which produced the influential Brundtland Report ('Our Common Future') in 1987.",
+      "role": "Policy Leader",
+      "start_date": "1939-04-20",
+      "expertise": ["Public Health", "Sustainable Development", "International Policy"]
+    },
+    {
+      "id": "m1n2o3p4-q5r6-4s7t-8u9v-0w1x2y3z4a5b",
+      "name": "Planetary Health Alliance",
+      "type": "Coalition",
+      "country": "US",
+      "description": "The Planetary Health Alliance (PHA) is a consortium of universities, NGOs, and other partners committed to advancing planetary health research, education, and policy. It was established in 2016 with support from The Rockefeller Foundation.",
+      "role": "Research Network",
+      "start_date": "2016-01-01",
+      "website": "https://planetaryhealthalliance.org"
+    }
+  ],
+  "locations": [
+    {
+      "id": "c1d2e3f4-g5h6-4i7j-8k9l-0m1n2o3p4q5r",
+      "name": "Stockholm",
+      "type": "City",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [18.0686, 59.3293]
+      },
+      "country": "SE",
+      "region": "Stockholm County",
+      "description": "Stockholm, the capital of Sweden, hosted the first United Nations Conference on the Human Environment in 1972, a landmark event in international environmental governance."
+    },
+    {
+      "id": "s1t2u3v4-w5x6-4y7z-8a9b-0c1d2e3f4g5h",
+      "name": "United States",
+      "type": "Country",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [-95.7129, 37.0902]
+      },
+      "country": "US",
+      "description": "The United States has been a significant location for the development of environmental and planetary health concepts, with many key institutions and individuals based there."
+    },
+    {
+      "id": "i1j2k3l4-m5n6-4o7p-8q9r-0s1t2u3v4w5x",
+      "name": "Harvard University",
+      "type": "Institution",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [-71.1167, 42.3770]
+      },
+      "country": "US",
+      "region": "Massachusetts",
+      "description": "Harvard University, particularly its T.H. Chan School of Public Health, has been a hub for planetary health research and education, hosting the Planetary Health Alliance since its formation in 2016."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "y1z2a3b4-c5d6-4e7f-8g9h-0i1j2k3l4m5n",
+      "name": "Planetary Health",
+      "definition": "Planetary health is defined as the health of human civilization and the state of the natural systems on which it depends. It represents an interdisciplinary field focused on understanding and addressing the human health impacts of anthropogenic disruptions of Earth's natural systems.",
+      "alternative_names": ["Planetary Wellbeing", "Earth System Health"],
+      "domain": ["PublicHealth", "EnvironmentalScience", "Sustainability"],
+      "significance": 5,
+      "evolution": [
+        {
+          "year": 2015,
+          "description": "Formal introduction of the concept in The Rockefeller Foundation–Lancet Commission report"
+        },
+        {
+          "year": 2016,
+          "description": "Establishment of the Planetary Health Alliance to advance the field"
+        },
+        {
+          "year": 2017,
+          "description": "Launch of The Lancet Planetary Health journal"
+        }
+      ]
+    },
+    {
+      "id": "o1p2q3r4-s5t6-4u7v-8w9x-0y1z2a3b4c5d",
+      "name": "Sustainable Development",
+      "definition": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs. It encompasses three interconnected pillars: economic development, social equity, and environmental protection.",
+      "alternative_names": ["Sustainability"],
+      "parent_concept_id": null,
+      "domain": ["Economics", "EnvironmentalScience", "SocialScience", "Policy"],
+      "significance": 5,
+      "evolution": [
+        {
+          "year": 1987,
+          "description": "Concept formally defined in the Brundtland Report 'Our Common Future'"
+        },
+        {
+          "year": 1992,
+          "description": "Adopted as a guiding principle at the Earth Summit in Rio de Janeiro"
+        },
+        {
+          "year": 2015,
+          "description": "Formalized in the UN Sustainable Development Goals (SDGs)"
+        }
+      ]
+    },
+    {
+      "id": "e1f2g3h4-i5j6-4k7l-8m9n-0o1p2q3r4s5t",
+      "name": "One Health",
+      "definition": "One Health is an approach that recognizes that the health of people is closely connected to the health of animals and our shared environment. It involves the collaborative efforts of multiple disciplines working locally, nationally, and globally to achieve optimal health outcomes for people, animals, plants, and the environment.",
+      "alternative_names": ["One Medicine", "One World, One Health"],
+      "domain": ["PublicHealth", "VeterinaryMedicine", "Ecology", "EnvironmentalScience"],
+      "significance": 4,
+      "evolution": [
+        {
+          "year": 2004,
+          "description": "The term 'One Health' begins to gain prominence following the Wildlife Conservation Society's conference on emerging diseases"
+        },
+        {
+          "year": 2008,
+          "description": "Major international organizations develop a strategic framework for reducing risks of infectious diseases at the animal-human-ecosystems interface"
+        },
+        {
+          "year": 2016,
+          "description": "Recognized as complementary to planetary health, with a stronger focus on infectious disease and veterinary aspects"
+        }
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "id": "u1v2w3x4-y5z6-4a7b-8c9d-0e1f2g3h4i5j",
+      "title": "Silent Spring",
+      "type": "Book",
+      "year": 1962,
+      "date": "1962-09-27",
+      "publisher": "Houghton Mifflin",
+      "author_ids": ["a1b2c3d4-e5f6-4g7h-8i9j-0k1l2m3n4o5p"],
+      "isbn": "9780618249060",
+      "abstract": "Silent Spring is an environmental science book documenting the detrimental effects on the environment—particularly on birds—of the indiscriminate use of pesticides. The book was instrumental in launching the environmental movement and raising awareness about the interconnections between environmental pollution and human health.",
+      "significance": 5,
+      "open_access": false
+    },
+    {
+      "id": "k1l2m3n4-o5p6-4q7r-8s9t-0u1v2w3x4y5z",
+      "title": "Our Common Future",
+      "subtitle": "Report of the World Commission on Environment and Development",
+      "type": "Report",
+      "year": 1987,
+      "date": "1987-04-20",
+      "publisher": "Oxford University Press",
+      "author_ids": ["w1x2y3z4-a5b6-4c7d-8e9f-0g1h2i3j4k5l"],
+      "isbn": "9780192820808",
+      "abstract": "Our Common Future, also known as the Brundtland Report, introduced and defined the concept of sustainable development as 'development that meets the needs of the present without compromising the ability of future generations to meet their own needs.' The report provided a key statement on sustainable development, seeking to reconcile economic development with environmental protection.",
+      "significance": 5,
+      "open_access": true,
+      "url": "https://sustainabledevelopment.un.org/content/documents/5987our-common-future.pdf"
+    },
+    {
+      "id": "a1b2c3d4-e5f6-4g7h-8i9j-0k1l2m3n4o5p",
+      "title": "Safeguarding human health in the Anthropocene epoch: report of The Rockefeller Foundation–Lancet Commission on planetary health",
+      "type": "Journal Article",
+      "year": 2015,
+      "date": "2015-07-16",
+      "publisher": "Elsevier",
+      "journal": "The Lancet",
+      "volume": "386",
+      "issue": "10007",
+      "pages": "1973-2028",
+      "author_ids": [],
+      "doi": "10.1016/S0140-6736(15)60901-1",
+      "abstract": "This report outlines the findings of The Rockefeller Foundation–Lancet Commission on planetary health, which was established to review the scientific basis for linking human health to the underlying integrity of Earth's natural systems, and to develop a public health case for the safeguarding and sustainable stewardship of natural systems. The report introduces the concept of planetary health and discusses the extent to which the degradation of natural systems threatens human health and wellbeing.",
+      "significance": 5,
+      "open_access": true,
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60901-1/fulltext"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "q1r2s3t4-u5v6-4w7x-8y9z-0a1b2c3d4e5f",
+      "source_id": "e1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c",
+      "source_type": "Event",
+      "target_id": "f6g7h8i9-j0k1-4l2m-3n4o-5p6q7r8s9t0u",
+      "target_type": "Event",
+      "relationship_type": "Influences",
+      "description": "Rachel Carson's 'Silent Spring' significantly influenced the environmental awareness that led to the Stockholm Conference, which was the first major international gathering focused on human interactions with the environment.",
+      "strength": 4
+    },
+    {
+      "id": "g1h2i3j4-k5l6-4m7n-8o9p-0q1r2s3t4u5v",
+      "source_id": "a1b2c3d4-e5f6-4g7h-8i9j-0k1l2m3n4o5p",
+      "source_type": "Actor",
+      "target_id": "e1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c",
+      "target_type": "Event",
+      "relationship_type": "Participates",
+      "description": "Rachel Carson authored 'Silent Spring', which was a pivotal publication in the environmental movement.",
+      "role": "Author",
+      "strength": 5
+    },
+    {
+      "id": "w1x2y3z4-a5b6-4c7d-8e9f-0g1h2i3j4k5l",
+      "source_id": "q1r2s3t4-u5v6-4w7x-8y9z-0a1b2c3d4e5f",
+      "source_type": "Actor",
+      "target_id": "l6m7n8o9-p0q1-4r2s-3t4u-5v6w7x8y9z0a",
+      "target_type": "Event",
+      "relationship_type": "Funds",
+      "description": "The Rockefeller Foundation funded and co-organized the Lancet Commission on Planetary Health, which produced the landmark report.",
+      "strength": 5
+    },
+    {
+      "id": "m1n2o3p4-q5r6-4s7t-8u9v-0w1x2y3z4a5b",
+      "source_id": "l6m7n8o9-p0q1-4r2s-3t4u-5v6w7x8y9z0a",
+      "source_type": "Event",
+      "target_id": "y1z2a3b4-c5d6-4e7f-8g9h-0i1j2k3l4m5n",
+      "target_type": "Concept",
+      "relationship_type": "Introduces",
+      "description": "The Rockefeller Foundation–Lancet Commission report formally introduced and defined the concept of planetary health.",
+      "strength": 5
+    },
+    {
+      "id": "c1d2e3f4-g5h6-4i7j-8k9l-0m1n2o3p4q5r",
+      "source_id": "v1w2x3y4-z5a6-4b7c-8d9e-0f1g2h3i4j5k",
+      "source_type": "Event",
+      "target_id": "o1p2q3r4-s5t6-4u7v-8w9x-0y1z2a3b4c5d",
+      "target_type": "Concept",
+      "relationship_type": "Introduces",
+      "description": "The publication of the Brundtland Report 'Our Common Future' introduced and defined the concept of sustainable development.",
+      "strength": 5
+    },
+    {
+      "id": "s1t2u3v4-w5x6-4y7z-8a9b-0c1d2e3f4g5h",
+      "source_id": "o1p2q3r4-s5t6-4u7v-8w9x-0y1z2a3b4c5d",
+      "source_type": "Concept",
+      "target_id": "y1z2a3b4-c5d6-4e7f-8g9h-0i1j2k3l4m5n",
+      "target_type": "Concept",
+      "relationship_type": "Influences",
+      "description": "The concept of sustainable development significantly influenced the development of planetary health, which incorporates sustainability principles in the context of human health.",
+      "strength": 4
+    },
+    {
+      "id": "i1j2k3l4-m5n6-4o7p-8q9r-0s1t2u3v4w5x",
+      "source_id": "b1c2d3e4-f5g6-4h7i-8j9k-0l1m2n3o4p5q",
+      "source_type": "Event",
+      "target_id": "i1j2k3l4-m5n6-4o7p-8q9r-0s1t2u3v4w5x",
+      "target_type": "Location",
+      "relationship_type": "Takes_Place_At",
+      "description": "The Planetary Health Alliance was initially based at Harvard University.",
+      "strength": 5
+    },
+    {
+      "id": "y1z2a3b4-c5d6-4e7f-8g9h-0i1j2k3l4m5n",
+      "source_id": "e1f2g3h4-i5j6-4k7l-8m9n-0o1p2q3r4s5t",
+      "source_type": "Concept",
+      "target_id": "y1z2a3b4-c5d6-4e7f-8g9h-0i1j2k3l4m5n",
+      "target_type": "Concept",
+      "relationship_type": "Relates_To",
+      "relationship_description": "One Health is closely related to Planetary Health, with One Health having a stronger focus on infectious diseases and veterinary aspects, while Planetary Health takes a broader view of human health impacts from Earth system changes.",
+      "strength": 4
+    }
+  ]
+}

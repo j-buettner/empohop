@@ -1,0 +1,38 @@
+{
+  "name": "planetary-health-knowledge-graph",
+  "version": "1.0.0",
+  "description": "A knowledge graph for tracking the planetary health movement",
+  "main": "index.js",
+  "scripts": {
+    "validate": "node tools/validation/validate.js",
+    "start-neo4j": "docker run --name neo4j -p 7474:7474 -p 7687:7687 -e NEO4J_AUTH=neo4j/password -e NEO4J_ACCEPT_LICENSE_AGREEMENT=yes neo4j:latest",
+    "init-db": "cat schema/neo4j/constraints.cypher schema/neo4j/indexes.cypher | cypher-shell -u neo4j -p password",
+    "test": "jest"
+  },
+  "keywords": [
+    "planetary-health",
+    "knowledge-graph",
+    "neo4j",
+    "graph-database"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "neo4j-driver": "^5.3.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

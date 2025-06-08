@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Relationship",
+  "description": "A relationship between two entities in the planetary health knowledge graph",
+  "type": "object",
+  "required": ["id", "source_id", "source_type", "target_id", "target_type", "relationship_type"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the relationship (UUID v4)"
+    },
+    "source_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "ID of the source entity"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": ["Event", "Actor", "Location", "Concept", "Publication"],
+      "description": "Type of the source entity"
+    },
+    "target_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "ID of the target entity"
+    },
+    "target_type": {
+      "type": "string",
+      "enum": ["Event", "Actor", "Location", "Concept", "Publication"],
+      "description": "Type of the target entity"
+    },
+    "relationship_type": {
+      "type": "string",
+      "enum": [
+        "Influences", 
+        "IsInfluencedBy", 
+        "Precedes", 
+        "Follows", 
+        "References", 
+        "IsReferencedBy", 
+        "Participates", 
+        "Develops", 
+        "IsLocatedIn",
+        "Contains",
+        "Publishes",
+        "IsPublishedBy",
+        "Advocates",
+        "Criticizes",
+        "Collaborates",
+        "Funds",
+        "IsFundedBy",
+        "Implements",
+        "IsImplementedBy",
+        "Builds",
+        "IsBuiltOn",
+        "Extends",
+        "IsExtendedBy",
+        "Other"
+      ],
+      "description": "Type of relationship between the entities"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Start date of the relationship (if applicable, ISO 8601 format)"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "End date of the relationship (if applicable, ISO 8601 format)"
+    },
+    "strength": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Strength of the relationship (1-5 scale, where 5 is strongest)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the relationship"
+    },
+    "evidence": {
+      "type": "string",
+      "description": "Evidence supporting this relationship (citations, references)"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Confidence score for this relationship (0-1, where 1 is highest confidence)"
+    },
+    "bidirectional": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the relationship is bidirectional"
+    },
+    "properties": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Additional properties specific to this relationship type"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Sources of information about this relationship"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this relationship was created in the database"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this relationship was last updated in the database"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "User or process that created this relationship"
+    }
+  },
+  "additionalProperties": false
+}
