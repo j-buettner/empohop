@@ -356,6 +356,24 @@
                 <span>Minor (1)</span>
             </div>
         </div>
+        
+        <h2 class="mt-5">Events Without Dates</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" id="undated-events-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Significance</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="undated-events-body">
+                    <!-- Undated events will be populated here -->
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script>
@@ -438,11 +456,21 @@
                 return;
             }
             
-            // Filter out events with non-numeric years
-            const eventsWithValidYears = events.filter(event => {
+            // Filter events into those with and without valid years
+            const eventsWithValidYears = [];
+            const eventsWithoutYears = [];
+            
+            events.forEach(event => {
                 const year = parseInt(event.year);
-                return !isNaN(year);
+                if (!isNaN(year)) {
+                    eventsWithValidYears.push(event);
+                } else {
+                    eventsWithoutYears.push(event);
+                }
             });
+            
+            console.log("Events with valid years:", eventsWithValidYears.length);
+            console.log("Events without years:", eventsWithoutYears.length);
             
             if (eventsWithValidYears.length === 0) {
                 document.getElementById('timeline-container').innerHTML = '<p class="text-center">No events with valid years found in the dataset.</p>';
@@ -507,6 +535,9 @@
             
             // Create filters
             createFilters(events);
+            
+            // Create table for events without years
+            createUndatedEventsTable(eventsWithoutYears, eventsById, relatedEvents);
         }
         
         function createTimelineAxis(minYear, maxYear) {
@@ -1056,6 +1087,7 @@
             const selectedType = document.querySelector('input[name="type-filter"]:checked').value;
             const selectedSignificance = document.querySelector('input[name="significance-filter"]:checked').value;
             
+            // Apply filters to timeline events
             const eventPoints = document.querySelectorAll('.event-point');
             const eventLabels = document.querySelectorAll('.event-label');
             
@@ -1072,8 +1104,112 @@
                 }
             });
             
+            // Apply filters to undated events table
+            const tableRows = document.querySelectorAll('#undated-events-body tr');
+            tableRows.forEach(row => {
+                const rowType = row.dataset.type;
+                const rowSignificance = row.dataset.significance;
+                
+                const typeMatch = selectedType === 'all' || rowType === selectedType;
+                const significanceMatch = selectedSignificance === 'all' || rowSignificance === selectedSignificance;
+                
+                if (typeMatch && significanceMatch) {
+                    row.style.display = 'table-row';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+            
             // Hide details panel when filters change
             document.getElementById('event-details').style.display = 'none';
+        }
+        
+        function createUndatedEventsTable(events, eventsById, relatedEvents) {
+            const tableBody = document.getElementById('undated-events-body');
+            
+            if (events.length === 0) {
+                const emptyRow = document.createElement('tr');
+                emptyRow.innerHTML = '<td colspan="5" class="text-center">No events without dates found</td>';
+                tableBody.appendChild(emptyRow);
+                return;
+            }
+            
+            // Sort events by significance (highest first)
+            events.sort((a, b) => {
+                const sigA = parseInt(a.significance) || 0;
+                const sigB = parseInt(b.significance) || 0;
+                return sigB - sigA;
+            });
+            
+            // Create a row for each event
+            events.forEach(event => {
+                const row = document.createElement('tr');
+                row.dataset.id = event.id;
+                row.dataset.type = event.type || 'Other';
+                row.dataset.significance = event.significance || '3';
+                row.style.cursor = 'pointer';
+                
+                // Add significance color indicator
+                const titleCell = document.createElement('td');
+                const colorIndicator = document.createElement('span');
+                colorIndicator.style.display = 'inline-block';
+                colorIndicator.style.width = '12px';
+                colorIndicator.style.height = '12px';
+                colorIndicator.style.borderRadius = '50%';
+                colorIndicator.style.marginRight = '8px';
+                
+                // Set color based on significance
+                switch(parseInt(event.significance) || 3) {
+                    case 5: colorIndicator.style.backgroundColor = '#e74c3c'; break;
+                    case 4: colorIndicator.style.backgroundColor = '#f39c12'; break;
+                    case 3: colorIndicator.style.backgroundColor = '#3498db'; break;
+                    case 2: colorIndicator.style.backgroundColor = '#2ecc71'; break;
+                    case 1: colorIndicator.style.backgroundColor = '#95a5a6'; break;
+                    default: colorIndicator.style.backgroundColor = '#3498db';
+                }
+                
+                titleCell.appendChild(colorIndicator);
+                titleCell.appendChild(document.createTextNode(event.title));
+                
+                // Create other cells
+                const typeCell = document.createElement('td');
+                typeCell.textContent = event.type || 'Other';
+                
+                const significanceCell = document.createElement('td');
+                significanceCell.textContent = event.significance || '3';
+                
+                const descriptionCell = document.createElement('td');
+                // Truncate description if it's too long
+                const description = event.description || 'No description available';
+                descriptionCell.textContent = description.length > 100 ? 
+                    description.substring(0, 100) + '...' : 
+                    description;
+                
+                const actionsCell = document.createElement('td');
+                const viewButton = document.createElement('button');
+                viewButton.className = 'btn btn-sm btn-outline-primary';
+                viewButton.textContent = 'View Details';
+                viewButton.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent row click event
+                    showEventDetails(event, e, eventsById, relatedEvents);
+                });
+                actionsCell.appendChild(viewButton);
+                
+                // Add cells to row
+                row.appendChild(titleCell);
+                row.appendChild(typeCell);
+                row.appendChild(significanceCell);
+                row.appendChild(descriptionCell);
+                row.appendChild(actionsCell);
+                
+                // Add click event to row
+                row.addEventListener('click', function(e) {
+                    showEventDetails(event, e, eventsById, relatedEvents);
+                });
+                
+                // Add row to table
+                tableBody.appendChild(row);
+            });
         }
     </script>
 </body>

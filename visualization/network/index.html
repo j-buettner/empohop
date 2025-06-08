@@ -246,6 +246,15 @@
                             </label>
                         </div>
                     </div>
+                    
+                    <div class="filter-section">
+                        <div class="filter-label">Entity Options:</div>
+                        <div class="filter-options">
+                            <label class="btn btn-sm btn-outline-primary active">
+                                <input type="checkbox" id="show-auto-generated" checked> Show Auto-Generated Entities
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,6 +302,12 @@
             <div class="legend-item">
                 <div class="legend-color" style="background-color: #9b59b6;"></div>
                 <span>Location</span>
+            </div>
+            <div style="width: 100%; margin-top: 10px; text-align: center;">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #f8a5a0;"></div>
+                    <span>Auto-Generated Entity (lighter color)</span>
+                </div>
             </div>
         </div>
     </div>
@@ -347,6 +362,11 @@
             const searchInput = document.getElementById('search-input');
             searchInput.addEventListener('input', function() {
                 searchEntities(this.value);
+            });
+            
+            // Add event listener for auto-generated entities toggle
+            document.getElementById('show-auto-generated').addEventListener('change', function() {
+                applyFilters();
             });
         });
         
@@ -443,6 +463,7 @@
                         tags: event.tags || [],
                         significance: event.significance || 3,
                         sources: event.sources || [],
+                        auto_generated: event.auto_created_from_relationship || false,
                         originalData: event
                     };
                     graph.nodes.push(node);
@@ -462,6 +483,7 @@
                         country: actor.country,
                         role: actor.role,
                         expertise: actor.expertise || [],
+                        auto_generated: actor.auto_created_from_relationship || false,
                         originalData: actor
                     };
                     graph.nodes.push(node);
@@ -480,6 +502,7 @@
                         alternative_names: concept.alternative_names || [],
                         domain: concept.domain || [],
                         significance: concept.significance || 3,
+                        auto_generated: concept.auto_created_from_relationship || false,
                         originalData: concept
                     };
                     graph.nodes.push(node);
@@ -502,6 +525,7 @@
                         doi: publication.doi,
                         isbn: publication.isbn,
                         significance: publication.significance || 3,
+                        auto_generated: publication.auto_created_from_relationship || false,
                         originalData: publication
                     };
                     graph.nodes.push(node);
@@ -521,6 +545,7 @@
                         country: location.country,
                         region: location.region,
                         coordinates: location.coordinates,
+                        auto_generated: location.auto_created_from_relationship || false,
                         originalData: location
                     };
                     graph.nodes.push(node);
@@ -615,11 +640,16 @@
                 .attr('dx', 15)
                 .attr('dy', 4);
             
-            // Add tooltips on hover
+            // Add tooltips on hover for nodes
             nodeElements
-                .on('mouseover', showTooltip)
+                .on('mouseover', showNodeTooltip)
                 .on('mouseout', hideTooltip)
                 .on('click', showNodeDetails);
+                
+            // Add tooltips on hover for edges
+            linkElements
+                .on('mouseover', showLinkTooltip)
+                .on('mouseout', hideTooltip);
             
             // Update the simulation
             simulation
@@ -689,22 +719,54 @@
         }
         
         function getNodeColor(node) {
-            switch (node.type) {
-                case 'Event': return '#e74c3c';
-                case 'Actor': return '#3498db';
-                case 'Concept': return '#2ecc71';
-                case 'Publication': return '#f39c12';
-                case 'Location': return '#9b59b6';
-                default: return '#95a5a6';
+            // If the node is auto-generated, use a lighter color variant
+            if (node.auto_generated) {
+                switch (node.type) {
+                    case 'Event': return '#f8a5a0'; // Lighter red
+                    case 'Actor': return '#a8d2f0'; // Lighter blue
+                    case 'Concept': return '#a8ecc0'; // Lighter green
+                    case 'Publication': return '#f9d199'; // Lighter orange
+                    case 'Location': return '#d2a8e0'; // Lighter purple
+                    default: return '#d5dbdb'; // Lighter gray
+                }
+            } else {
+                switch (node.type) {
+                    case 'Event': return '#e74c3c';
+                    case 'Actor': return '#3498db';
+                    case 'Concept': return '#2ecc71';
+                    case 'Publication': return '#f39c12';
+                    case 'Location': return '#9b59b6';
+                    default: return '#95a5a6';
+                }
             }
         }
         
-        function showTooltip(event, d) {
+        function showNodeTooltip(event, d) {
             const tooltip = document.getElementById('node-tooltip');
             
             // Set tooltip content
             document.getElementById('tooltip-title').textContent = d.name;
             document.getElementById('tooltip-type').textContent = `${d.type}${d.subtype ? ` (${d.subtype})` : ''}`;
+            document.getElementById('tooltip-description').textContent = d.description || 'No description available';
+            
+            // Position the tooltip near the mouse
+            tooltip.style.left = `${event.pageX + 10}px`;
+            tooltip.style.top = `${event.pageY + 10}px`;
+            
+            // Show the tooltip
+            tooltip.style.display = 'block';
+        }
+        
+        function showLinkTooltip(event, d) {
+            const tooltip = document.getElementById('node-tooltip');
+            
+            // Get source and target node names
+            const sourceName = d.source.name || 'Unknown';
+            const targetName = d.target.name || 'Unknown';
+            
+            // Set tooltip content
+            document.getElementById('tooltip-title').textContent = d.type || 'Relationship';
+            document.getElementById('tooltip-type').textContent = `${sourceName} → ${targetName}`;
             document.getElementById('tooltip-description').textContent = d.description || 'No description available';
             
             // Position the tooltip near the mouse
@@ -734,7 +796,13 @@
             
             // Set details content
             document.getElementById('detail-title').textContent = d.name;
-            document.getElementById('detail-type').textContent = `${d.type}${d.subtype ? ` (${d.subtype})` : ''}`;
+            
+            // Add auto-generated indicator if applicable
+            let typeText = `${d.type}${d.subtype ? ` (${d.subtype})` : ''}`;
+            if (d.auto_generated) {
+                typeText += ' [Auto-Generated]';
+            }
+            document.getElementById('detail-type').textContent = typeText;
             
             // Show/hide year based on node type
             const yearContainer = document.getElementById('detail-year-container');
@@ -1054,9 +1122,14 @@
             
             const allRelationshipTypesSelected = selectedRelationshipTypes.includes('all');
             
+            // Check if auto-generated entities should be shown
+            const showAutoGenerated = document.getElementById('show-auto-generated').checked;
+            
             // Filter nodes
             nodeElements.style('display', d => {
-                return (allEntityTypesSelected || selectedEntityTypes.includes(d.type)) ? 'block' : 'none';
+                const typeMatch = allEntityTypesSelected || selectedEntityTypes.includes(d.type);
+                const autoGeneratedMatch = showAutoGenerated || !d.auto_generated;
+                return (typeMatch && autoGeneratedMatch) ? 'block' : 'none';
             });
             
             // Filter links

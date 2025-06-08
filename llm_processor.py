@@ -7,6 +7,7 @@ import uuid
 from typing import Dict, List, Optional, Any, Union
 import time
 import re
+from relationship_processor import RelationshipProcessor
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -237,7 +238,8 @@ class LLMProcessor:
         """
         self.llm_client = llm_client
         self.critic_llm_client = critic_llm_client or llm_client
-        logger.info("Initialized LLMProcessor with supporting text extraction")
+        self.relationship_processor = RelationshipProcessor(llm_client, critic_llm_client)
+        logger.info("Initialized LLMProcessor with supporting text extraction and relationship processing")
     
     def process_chunk(self, chunk: Dict, prompt_template: str) -> Dict:
         """
@@ -501,11 +503,16 @@ class LLMProcessor:
         logger.info("Resolving and deduplicating entities")
         resolved_entities = resolve_entities(all_entities)
         
-        # Simple relationship processing (without the separated RelationshipProcessor)
+        # Process relationships using RelationshipProcessor
         resolved_relationships = []
         if extract_relationships and all_relationships:
-            logger.info("Processing relationships")
-            resolved_relationships = all_relationships  # Keep relationships as-is for now
+            logger.info("Processing relationships with RelationshipProcessor")
+            resolved_relationships = self.relationship_processor.resolve_relationships_with_entities(all_relationships, resolved_entities)
+            
+            # Deduplicate relationships
+            if resolved_relationships:
+                logger.info("Deduplicating relationships")
+                resolved_relationships = self.relationship_processor.deduplicate_relationships(resolved_relationships)
         
         # Return the results
         return {

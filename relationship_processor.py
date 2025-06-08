@@ -246,7 +246,8 @@ class RelationshipProcessor:
     
     def resolve_relationships_with_entities(self, relationships: List[Dict], entities_by_type: Dict[str, List[Dict]]) -> List[Dict]:
         """
-        Resolve relationships by mapping entity names to IDs using fuzzy matching
+        Resolve relationships by mapping entity names to IDs using fuzzy matching.
+        If an entity doesn't exist, it will be created with a flag indicating it was extracted from a relationship.
         
         Args:
             relationships: List of relationships to resolve
@@ -259,6 +260,9 @@ class RelationshipProcessor:
         entity_map = self._build_entity_map_with_fuzzy_keys(entities_by_type)
         
         resolved_relationships = []
+        # Initialize created_entities with all possible entity types, not just the ones in entities_by_type
+        all_entity_types = ["event", "actor", "concept", "publication", "location"]
+        created_entities = {entity_type: [] for entity_type in all_entity_types}
         
         logger.info(f"Resolving {len(relationships)} relationships with fuzzy matching")
         logger.info(f"Entity map keys: {list(entity_map.keys())}")
@@ -282,10 +286,46 @@ class RelationshipProcessor:
             source_id = self._find_entity_id(source_name, source_type, entity_map, entities_by_type)
             target_id = self._find_entity_id(target_name, target_type, entity_map, entities_by_type)
             
-            # Skip if either ID is missing
-            if not source_id or not target_id:
-                logger.debug(f"Skipping relationship - missing IDs (source: {source_id}, target: {target_id})")
-                continue
+            # Create missing entities if needed
+            if not source_id:
+                logger.info(f"Creating new entity for source: {source_name} ({source_type})")
+                source_entity = self._create_entity_from_relationship(source_name, source_type, rel, "source")
+                
+                # Ensure the entity type exists in all dictionaries
+                if source_type not in created_entities:
+                    created_entities[source_type] = []
+                created_entities[source_type].append(source_entity)
+                
+                # Update entity map with the new entity
+                source_id = source_entity["id"]
+                if source_type not in entity_map:
+                    entity_map[source_type] = {}
+                entity_map[source_type][source_name.lower()] = source_id
+                
+                # Add to entities_by_type
+                if source_type not in entities_by_type:
+                    entities_by_type[source_type] = []
+                entities_by_type[source_type].append(source_entity)
+            
+            if not target_id:
+                logger.info(f"Creating new entity for target: {target_name} ({target_type})")
+                target_entity = self._create_entity_from_relationship(target_name, target_type, rel, "target")
+                
+                # Ensure the entity type exists in all dictionaries
+                if target_type not in created_entities:
+                    created_entities[target_type] = []
+                created_entities[target_type].append(target_entity)
+                
+                # Update entity map with the new entity
+                target_id = target_entity["id"]
+                if target_type not in entity_map:
+                    entity_map[target_type] = {}
+                entity_map[target_type][target_name.lower()] = target_id
+                
+                # Add to entities_by_type
+                if target_type not in entities_by_type:
+                    entities_by_type[target_type] = []
+                entities_by_type[target_type].append(target_entity)
             
             # Create resolved relationship
             resolved_rel = {
@@ -306,6 +346,11 @@ class RelationshipProcessor:
                 resolved_rel["review_task_id"] = rel.get("review_task_id")
             
             resolved_relationships.append(resolved_rel)
+        
+        # Log summary of created entities
+        for entity_type, entities in created_entities.items():
+            if entities:
+                logger.info(f"Created {len(entities)} new {entity_type} entities from relationships")
         
         logger.info(f"Successfully resolved: {len(resolved_relationships)}/{len(relationships)} relationships")
         return resolved_relationships
@@ -348,6 +393,67 @@ class RelationshipProcessor:
         
         # Try fuzzy matching
         return self._find_best_entity_match(entity_name, entity_type, entities_by_type)
+    
+    def _create_entity_from_relationship(self, entity_name: str, entity_type: str, relationship: Dict, role: str) -> Dict:
+        """
+        Create a new entity from relationship data when an entity doesn't exist
+        
+        Args:
+            entity_name: Name of the entity to create
+            entity_type: Type of the entity (event, actor, concept, etc.)
+            relationship: The relationship containing this entity
+            role: Role of the entity in the relationship (source or target)
+            
+        Returns:
+            Newly created entity
+        """
+        entity_id = str(uuid.uuid4())
+        
+        # Base entity with common fields
+        entity = {
+            "id": entity_id,
+            "auto_created_from_relationship": True,
+            "needs_review": True,
+            "source_chunk": relationship.get("source_chunk"),
+            "relationship_context": {
+                "relationship_type": relationship.get("relationship_type"),
+                "relationship_description": relationship.get("description", ""),
+                "relationship_strength": relationship.get("strength", 3),
+                "entity_role": role
+            }
+        }
+        
+        # Add type-specific fields
+        if entity_type == "event":
+            entity["title"] = entity_name
+            entity["description"] = f"Auto-created event from relationship: {relationship.get('description', '')}"
+            # Try to extract year if it's in the name
+            year_match = re.search(r'\b(19|20)\d{2}\b', entity_name)
+            if year_match:
+                entity["year"] = int(year_match.group(0))
+            entity["type"] = "Other"
+            entity["significance"] = 3  # Medium significance by default
+        else:
+            entity["name"] = entity_name
+            entity["description"] = f"Auto-created {entity_type} from relationship: {relationship.get('description', '')}"
+            
+            # Type-specific additional fields
+            if entity_type == "actor":
+                entity["type"] = "Other"
+                entity["role"] = "Extracted from relationship"
+            elif entity_type == "concept":
+                entity["definition"] = f"Concept extracted from relationship with {relationship.get('source' if role == 'target' else 'target', '')}"
+                entity["significance"] = 3
+            elif entity_type == "publication":
+                entity["type"] = "Other"
+                # Try to extract year if it's in the name
+                year_match = re.search(r'\b(19|20)\d{2}\b', entity_name)
+                if year_match:
+                    entity["year"] = int(year_match.group(0))
+            elif entity_type == "location":
+                entity["type"] = "Other"
+        
+        return entity
     
     def _find_best_entity_match(self, target_name: str, target_type: str, entities_by_type: Dict[str, List[Dict]], threshold: float = 0.6) -> Optional[str]:
         """
