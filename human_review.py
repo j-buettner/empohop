@@ -831,3 +831,161 @@ class ReviewServer(BaseHTTPRequestHandler):
                         <h3>Extracted Data</h3>
                         <div class="mb-4">
                             <textarea id="extracted-data" class="json-editor" readonly>{extracted_data_json}</textarea>
+                        </div>
+                        
+                        <h3>Corrected Data</h3>
+                        <div class="mb-4">
+                            <textarea id="corrected-data" class="json-editor" {is_editable and '' or 'readonly'}>{corrected_data_json}</textarea>
+                        </div>
+                        
+                        {reviewer_notes_section}
+                    </div>
+                </div>
+            </div>
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+                {save_button_js}
+            </script>
+        </body>
+        </html>
+        """
+        
+        self.send_response(200)
+        self.send_header("Content-type", "text/html")
+        self.end_headers()
+        self.wfile.write(html.encode())
+    
+    def serve_static_file(self, file_path: str):
+        """
+        Serve a static file
+        
+        Args:
+            file_path: Path to the static file
+        """
+        # Map file extensions to MIME types
+        mime_types = {
+            ".html": "text/html",
+            ".css": "text/css",
+            ".js": "application/javascript",
+            ".json": "application/json",
+            ".png": "image/png",
+            ".jpg": "image/jpeg",
+            ".jpeg": "image/jpeg",
+            ".gif": "image/gif",
+            ".svg": "image/svg+xml",
+            ".ico": "image/x-icon"
+        }
+        
+        # Get the file extension
+        _, ext = os.path.splitext(file_path)
+        
+        # Get the MIME type
+        mime_type = mime_types.get(ext, "application/octet-stream")
+        
+        try:
+            # Get the static file path
+            static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
+            file_path = os.path.join(static_dir, file_path)
+            
+            # Check if the file exists
+            if not os.path.isfile(file_path):
+                self.send_error(404, "File not found")
+                return
+            
+            # Read the file
+            with open(file_path, 'rb') as f:
+                content = f.read()
+            
+            # Send the response
+            self.send_response(200)
+            self.send_header("Content-type", mime_type)
+            self.end_headers()
+            self.wfile.write(content)
+            
+        except Exception as e:
+            logger.error(f"Error serving static file: {str(e)}")
+            self.send_error(500, "Internal Server Error")
+    
+    def serve_api_endpoint(self, endpoint: str, query_params: Dict[str, List[str]]):
+        """
+        Serve an API endpoint
+        
+        Args:
+            endpoint: API endpoint
+            query_params: Query parameters
+        """
+        # Export endpoint
+        if endpoint == "export":
+            output_path = self.review_manager.export_all_corrected_data()
+            
+            if output_path:
+                # Redirect to the tasks page
+                self.send_response(302)
+                self.send_header("Location", "/tasks")
+                self.end_headers()
+                
+                # Show a message
+                message = f"Data exported to {output_path}"
+                self.wfile.write(f"""
+                <script>
+                    alert("{message}");
+                    window.location.href = "/tasks";
+                </script>
+                """.encode())
+            else:
+                self.send_error(500, "Error exporting data")
+        
+        # 404 Not Found
+        else:
+            self.send_error(404, "API endpoint not found")
+
+
+def run_server(tasks_file: str, output_dir: str, port: int = 8000):
+    """
+    Run the review server
+    
+    Args:
+        tasks_file: Path to the review tasks file
+        output_dir: Directory to save reviewed tasks
+        port: Port to run the server on
+    """
+    # Create the review manager
+    review_manager = ReviewManager(tasks_file, output_dir)
+    
+    # Set the review manager for the server
+    ReviewServer.review_manager = review_manager
+    
+    # Create the server
+    server = HTTPServer(('localhost', port), ReviewServer)
+    
+    # Print the server URL
+    print(f"Server running at http://localhost:{port}")
+    
+    # Open the browser
+    webbrowser.open(f"http://localhost:{port}")
+    
+    try:
+        # Run the server
+        server.serve_forever()
+    except KeyboardInterrupt:
+        # Shutdown the server
+        server.server_close()
+        print("Server stopped")
+
+
+def main():
+    """Main function"""
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Human review interface for the Planetary Health Knowledge Graph')
+    parser.add_argument('--tasks', type=str, default='data/review_tasks.json', help='Path to the review tasks file')
+    parser.add_argument('--output', type=str, default='data/processed', help='Directory to save reviewed tasks')
+    parser.add_argument('--port', type=int, default=8000, help='Port to run the server on')
+    args = parser.parse_args()
+    
+    # Run the server
+    run_server(args.tasks, args.output, args.port)
+
+
+if __name__ == "__main__":
+    main()

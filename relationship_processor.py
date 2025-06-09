@@ -21,6 +21,8 @@ Focus on these relationship types:
 - Concept relates to Concept
 - Event takes place at Location
 
+For each relationship, include supporting text that evidences this relationship.
+
 Text to analyze:
 {text}
 
@@ -34,7 +36,8 @@ Respond in the following JSON format:
       "target_type": "Event|Actor|Concept|Publication|Location",
       "relationship_type": "Influences|Participates|Develops|etc.",
       "description": "Description of the relationship",
-      "strength": 1-5
+      "strength": 1-5,
+      "supporting_text": "The exact text excerpt that supports this relationship"
     }}
   ]
 }}
@@ -45,16 +48,14 @@ class RelationshipProcessor:
     Handles extraction, resolution, and processing of relationships between entities
     """
     
-    def __init__(self, llm_client, critic_llm_client=None):
+    def __init__(self, llm_client):
         """
         Initialize the relationship processor
         
         Args:
             llm_client: Client for the primary LLM
-            critic_llm_client: Client for the critic LLM (optional)
         """
         self.llm_client = llm_client
-        self.critic_llm_client = critic_llm_client or llm_client
         logger.info("Initialized RelationshipProcessor")
     
     def extract_relationships_from_chunk(self, chunk: Dict) -> List[Dict]:
@@ -73,7 +74,7 @@ class RelationshipProcessor:
             
             # Call LLM API
             response = self.llm_client.messages.create(
-                model="claude-3-5-sonnet-20241022",
+                model="claude-sonnet-4-20250514",
                 max_tokens=8000,
                 system="You are an expert in extracting relationships between entities in planetary health texts.",
                 messages=[
@@ -145,6 +146,14 @@ class RelationshipProcessor:
             logger.info(f"Processing chunk {i+1}/{len(chunks)} for relationships")
             
             chunk_relationships = self.extract_relationships_from_chunk(chunk)
+            
+            # Add chunk index for tracking
+            for rel in chunk_relationships:
+                if isinstance(rel, dict):
+                    rel["source_chunk"] = i
+                    if "id" not in rel:
+                        rel["id"] = str(uuid.uuid4())
+            
             all_relationships.extend(chunk_relationships)
             
             # Add a short delay to avoid rate limiting
@@ -152,97 +161,6 @@ class RelationshipProcessor:
         
         logger.info(f"Extracted {len(all_relationships)} relationships from all chunks")
         return all_relationships
-    
-    def evaluate_relationship(self, relationship: Dict, original_text: str) -> Dict:
-        """
-        Evaluate a single relationship using the critic LLM
-        
-        Args:
-            relationship: The relationship to evaluate
-            original_text: The original text chunk
-            
-        Returns:
-            Evaluation results for this specific relationship
-        """
-        # Create relationship-specific critic prompt
-        critic_prompt = f"""
-        You are an expert reviewer of relationship extraction for a planetary health knowledge graph.
-        
-        Below is an original text excerpt, followed by a single RELATIONSHIP that was extracted from it.
-        Your job is to critically evaluate this specific relationship extraction.
-        
-        ORIGINAL TEXT:
-        {original_text}
-        
-        EXTRACTED RELATIONSHIP:
-        {json.dumps(relationship, indent=2)}
-        
-        Please evaluate the following aspects for this specific relationship:
-        1. Evidence: Is there clear evidence for this relationship in the text?
-        2. Accuracy: Are the source and target entities correctly identified?
-        3. Type: Is the relationship type appropriate and accurate?
-        4. Direction: Is the relationship direction correct (if applicable)?
-        5. Strength: Is the relationship strength rating appropriate?
-        6. Relevance: Is this relationship relevant to planetary health?
-        
-        Respond in the following JSON format:
-        {{
-          "relationship_id": "{relationship.get('id', 'unknown')}",
-          "evaluation": {{
-            "evidence_score": 1-5,
-            "accuracy_score": 1-5,
-            "type_score": 1-5,
-            "direction_score": 1-5,
-            "strength_score": 1-5,
-            "relevance_score": 1-5,
-            "confidence_score": 1-5,
-            "issues_identified": [
-              {{
-                "issue_type": "evidence|accuracy|type|direction|strength|relevance",
-                "description": "Specific description of the issue",
-                "severity": 1-5,
-                "suggested_correction": "suggested fix (if applicable)"
-              }}
-            ],
-            "human_review_recommended": true|false,
-            "human_review_reason": "Explanation (if applicable)",
-            "extraction_quality": "excellent|good|fair|poor"
-          }}
-        }}
-        """
-        
-        try:
-            # Call the critic LLM
-            response = self.critic_llm_client.messages.create(
-                model="claude-3-5-sonnet-20241022",
-                max_tokens=4000,
-                system="You are a critical evaluator of relationship extractions for knowledge graph construction.",
-                messages=[
-                    {"role": "user", "content": critic_prompt}
-                ],
-                temperature=0.2
-            )
-
-            try:
-                evaluation = json.loads(response.content[0].text)
-                return evaluation.get("evaluation", {})
-            except json.JSONDecodeError:
-                logger.warning("Failed to parse critic LLM response for relationship")
-                return {
-                    "human_review_recommended": True,
-                    "human_review_reason": "Failed to parse critic LLM response",
-                    "confidence_score": 1,
-                    "extraction_quality": "poor"
-                }
-                
-        except Exception as e:
-            logger.error(f"Error calling critic LLM for relationship: {str(e)}")
-            return {
-                "human_review_recommended": True,
-                "human_review_reason": f"Error calling critic LLM: {str(e)}",
-                "confidence_score": 1,
-                "extraction_quality": "poor"
-            }
     
     def resolve_relationships_with_entities(self, relationships: List[Dict], entities_by_type: Dict[str, List[Dict]]) -> List[Dict]:
         """
@@ -337,13 +255,9 @@ class RelationshipProcessor:
                 "relationship_type": rel.get("relationship_type"),
                 "description": rel.get("description", ""),
                 "strength": rel.get("strength", 3),
+                "supporting_text": rel.get("supporting_text", ""),
                 "source_chunk": rel.get("source_chunk")
             }
-            
-            # Preserve review flags if they exist
-            if rel.get("needs_review"):
-                resolved_rel["needs_review"] = True
-                resolved_rel["review_task_id"] = rel.get("review_task_id")
             
             resolved_relationships.append(resolved_rel)
         
@@ -413,7 +327,6 @@ class RelationshipProcessor:
         entity = {
             "id": entity_id,
             "auto_created_from_relationship": True,
-            "needs_review": True,
             "source_chunk": relationship.get("source_chunk"),
             "relationship_context": {
                 "relationship_type": relationship.get("relationship_type"),
@@ -497,7 +410,7 @@ class RelationshipProcessor:
         
         # Remove common prefixes/suffixes
         normalized = re.sub(r'^(the|a|an)\s+', '', normalized)
-        normalized = re.sub(r'\s+(movement|laws?|concept|theory|model)s?$', '', normalized)
+        normalized = re.sub(r'\s+(movements?|laws?|concepts?|theories|theorys?|models?)$', '', normalized)
         
         # Replace common abbreviations
         abbreviation_map = {

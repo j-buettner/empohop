@@ -180,40 +180,6 @@ Respond in the following JSON format:
 }}
 """
 
-RELATIONSHIP_EXTRACTION_PROMPT = """
-Analyze the following text and identify relationships between entities in the planetary health domain.
-Focus on these relationship types:
-- Event influences Event
-- Actor participates in Event
-- Event introduces Concept
-- Publication cites Publication
-- Actor develops Concept
-- Actor collaborates with Actor
-- Concept relates to Concept
-- Event takes place at Location
-
-For each relationship, include the supporting text that evidences this relationship.
-
-Text to analyze:
-{text}
-
-Respond in the following JSON format:
-{{
-  "relationships": [
-    {{
-      "source": "Source entity name",
-      "source_type": "Event|Actor|Concept|Publication|Location",
-      "target": "Target entity name",
-      "target_type": "Event|Actor|Concept|Publication|Location",
-      "relationship_type": "Influences|Participates|Develops|etc.",
-      "description": "Description of the relationship",
-      "strength": 1-5,
-      "supporting_text": "The exact text excerpt that supports this relationship"
-    }}
-  ]
-}}
-"""
-
 # Define entity types and their corresponding prompts
 ENTITY_PROMPTS = {
     "event": EVENT_EXTRACTION_PROMPT,
@@ -228,17 +194,15 @@ class LLMProcessor:
     Process document chunks with an LLM to extract entities with supporting text
     """
     
-    def __init__(self, llm_client, critic_llm_client=None):
+    def __init__(self, llm_client):
         """
         Initialize the LLM processor
         
         Args:
             llm_client: Client for the primary LLM
-            critic_llm_client: Client for the critic LLM (optional)
         """
         self.llm_client = llm_client
-        self.critic_llm_client = critic_llm_client or llm_client
-        self.relationship_processor = RelationshipProcessor(llm_client, critic_llm_client)
+        self.relationship_processor = RelationshipProcessor(llm_client)
         logger.info("Initialized LLMProcessor with supporting text extraction and relationship processing")
     
     def process_chunk(self, chunk: Dict, prompt_template: str) -> Dict:
@@ -383,7 +347,7 @@ class LLMProcessor:
         return chunk_text[:200] + "..."
     
     def process_chunks(self, chunks: List[Dict], entity_types: List[str] = None, extract_relationships: bool = True, 
-                      use_critic: bool = True, update_after_each: bool = False, output_dir: str = None, 
+                      update_after_each: bool = False, output_dir: str = None, 
                       base_filename: str = None) -> Dict:
         """
         Process a list of document chunks to extract entities and relationships using a 3-phase approach
@@ -392,13 +356,12 @@ class LLMProcessor:
             chunks: List of document chunks
             entity_types: List of entity types to extract (default: all)
             extract_relationships: Whether to extract relationships
-            use_critic: Whether to use the critic LLM for evaluation
             update_after_each: Whether to write/update output files after each chunk
             output_dir: Output directory for intermediate results
             base_filename: Base filename for intermediate results
             
         Returns:
-            Dictionary with extracted entities, relationships, and review tasks
+            Dictionary with extracted entities, relationships, and statistics
         """
         # Check if update_after_each is enabled but required parameters are missing
         if update_after_each and (not output_dir or not base_filename):
@@ -415,7 +378,6 @@ class LLMProcessor:
         # Initialize results
         all_entities = {entity_type: [] for entity_type in entity_types}
         all_relationships = []
-        human_review_tasks = []
         
         logger.info("=== PHASE 1: EXTRACTING ENTITIES FROM ALL CHUNKS ===")
         
@@ -458,7 +420,6 @@ class LLMProcessor:
                 intermediate_results = {
                     "entities": all_entities,
                     "relationships": [],
-                    "human_review_tasks": [],
                     "stats": {
                         "total_chunks": len(chunks),
                         "chunks_processed": i + 1,
@@ -479,23 +440,7 @@ class LLMProcessor:
         
         # PHASE 2: Extract relationships if requested
         if extract_relationships:
-            for i, chunk in enumerate(chunks):
-                logger.info(f"Phase 2 - Processing chunk {i+1}/{len(chunks)} for relationships")
-                
-                rel_result = self.process_chunk(chunk, RELATIONSHIP_EXTRACTION_PROMPT)
-                chunk_relationships = rel_result.get("relationships", [])
-                
-                # Add chunk info and IDs to relationships for tracking
-                for rel in chunk_relationships:
-                    if isinstance(rel, dict):
-                        rel["source_chunk"] = i
-                        if "id" not in rel:
-                            rel["id"] = str(uuid.uuid4())
-                
-                all_relationships.extend(chunk_relationships)
-                
-                # Add a short delay to avoid rate limiting
-                time.sleep(0.5)
+            all_relationships = self.relationship_processor.extract_relationships_from_chunks(chunks)
         
         logger.info("=== PHASE 3: ENTITY RESOLUTION AND FINAL PROCESSING ===")
         
@@ -518,11 +463,9 @@ class LLMProcessor:
         return {
             "entities": resolved_entities,
             "relationships": resolved_relationships,
-            "human_review_tasks": human_review_tasks,
             "stats": {
                 "total_chunks": len(chunks),
                 "chunks_processed": len(chunks),
-                "chunks_needing_review": len(human_review_tasks),
                 "entity_counts": {entity_type: len(entities) for entity_type, entities in resolved_entities.items()},
                 "relationship_count": len(resolved_relationships)
             }
@@ -712,7 +655,6 @@ def main():
     parser.add_argument("--entity-types", nargs="+", default=["event", "actor", "concept", "publication", "location"], 
                         help="Entity types to extract")
     parser.add_argument("--no-relationships", action="store_true", help="Skip relationship extraction")
-    parser.add_argument("--no-critic", action="store_true", help="Skip critic evaluation")
     parser.add_argument("--max-chunks", type=int, default=None, help="Maximum number of chunks to process")
     parser.add_argument("--chunk-index", type=int, default=None, help="Process only the chunk at this index (0-based)")
     parser.add_argument("--chunk-range", type=str, default=None, help="Process chunks in this range (e.g., '0-5')")
@@ -770,23 +712,19 @@ def main():
                 
             client = anthropic.Anthropic(api_key=api_key)
             
-            # Initialize LLM processor with supporting text
-            processor = LLMProcessor(
-                llm_client=client,
-                critic_llm_client=client if not args.no_critic else None
-            )
+            # Initialize LLM processor
+            processor = LLMProcessor(llm_client=client)
             
             # Get base filename for outputs
             base_filename = os.path.splitext(os.path.basename(args.chunks_file))[0]
             if base_filename.endswith("_chunks"):
                 base_filename = base_filename[:-7]  # Remove "_chunks" suffix
             
-            # Process chunks with supporting text extraction
+            # Process chunks
             results = processor.process_chunks(
                 chunks=chunks,
                 entity_types=args.entity_types,
                 extract_relationships=not args.no_relationships,
-                use_critic=not args.no_critic,
                 update_after_each=args.update_after_each,
                 output_dir=args.output_dir,
                 base_filename=base_filename
