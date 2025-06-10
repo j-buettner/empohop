@@ -146,6 +146,27 @@
             height: 12px;
         }
         
+        /* Critic assessment indicators */
+        .event-point.has-critic-assessment {
+            border: 2px dashed #e74c3c;
+        }
+        
+        .event-point.critic-excellent {
+            border: 2px solid #2ecc71;
+        }
+        
+        .event-point.critic-good {
+            border: 2px solid #3498db;
+        }
+        
+        .event-point.critic-fair {
+            border: 2px solid #f39c12;
+        }
+        
+        .event-point.critic-poor {
+            border: 2px solid #e74c3c;
+        }
+        
         .event-label {
             position: absolute;
             font-size: 12px;
@@ -298,7 +319,7 @@
         
         <div class="filters">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="type-filter">
                         <div class="filter-label">Event Type:</div>
                         <div class="filter-options" id="type-filters">
@@ -306,11 +327,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="significance-filter">
                         <div class="filter-label">Significance:</div>
                         <div class="filter-options" id="significance-filters">
                             <!-- Significance filters will be generated here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="critic-filter">
+                        <div class="filter-label">Critic Assessment:</div>
+                        <div class="filter-options">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="show-critic-toggle">
+                                <label class="form-check-label" for="show-critic-toggle">Show Critic Assessments</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -331,6 +363,10 @@
             <p id="detail-description"></p>
             <div id="detail-sources"></div>
             <div class="tags" id="detail-tags"></div>
+            <div id="critic-assessment" style="display: none; margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee;">
+                <p><strong>Critic Assessment:</strong></p>
+                <div id="critic-details"></div>
+            </div>
             <div class="related-events" id="related-events"></div>
         </div>
         
@@ -355,6 +391,29 @@
                 <div class="legend-color" style="background-color: #95a5a6;"></div>
                 <span>Minor (1)</span>
             </div>
+            
+            <!-- Critic assessment legend (hidden by default) -->
+            <div id="critic-legend" style="width: 100%; margin-top: 15px; display: none;">
+                <h6 class="text-center">Critic Assessment Quality</h6>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #2ecc71;"></div>
+                        <span>Excellent</span>
+                    </div>
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #3498db;"></div>
+                        <span>Good</span>
+                    </div>
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #f39c12;"></div>
+                        <span>Fair</span>
+                    </div>
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #e74c3c;"></div>
+                        <span>Poor</span>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <h2 class="mt-5">Events Without Dates</h2>
@@ -377,18 +436,37 @@
     </div>
 
     <script>
+        // Global variables for critic data
+        let criticData = null;
+        let showCriticAssessments = false;
+        
         // Load the data
         document.addEventListener('DOMContentLoaded', function() {
             // Load data from the processed directory with cache-busting parameter
             console.log("Attempting to load data from processed directory...");
+            
+            // First load the knowledge graph data
             fetch('../../data/processed/book_9780262366601-compressed_knowledge_graph.json?v=' + new Date().getTime())
                 .then(response => {
                     console.log("Response status:", response.status);
                     return response.json();
                 })
                 .then(data => {
-                    console.log("Loaded data:", data);
-                    initializeTimeline(data);
+                    console.log("Loaded knowledge graph data:", data);
+                    
+                    // Then try to load critic data
+                    fetch('../../data/critic_results/book_9780262366601-compressed_critic_evaluation.json?v=' + new Date().getTime())
+                        .then(response => response.json())
+                        .then(criticDataResponse => {
+                            console.log("Loaded critic data successfully");
+                            criticData = criticDataResponse;
+                            initializeTimeline(data);
+                        })
+                        .catch(error => {
+                            console.warn('Critic data not available:', error);
+                            criticData = null;
+                            initializeTimeline(data);
+                        });
                 })
                 .catch(error => {
                     console.error('Error loading data:', error);
@@ -844,6 +922,107 @@
                 });
             }
             
+            // Set critic assessment if available and enabled
+            const criticAssessmentContainer = document.getElementById('critic-assessment');
+            const criticDetailsContainer = document.getElementById('critic-details');
+            criticDetailsContainer.innerHTML = '';
+            
+            if (showCriticAssessments && criticData && criticData.entity_evaluations && criticData.entity_evaluations.event) {
+                // Find the critic assessment for this event
+                const eventEvaluation = criticData.entity_evaluations.event.find(eval => eval.entity_id === event.id);
+                
+                if (eventEvaluation) {
+                    criticAssessmentContainer.style.display = 'block';
+                    
+                    // Create quality badge
+                    const qualityBadge = document.createElement('div');
+                    qualityBadge.style.display = 'inline-block';
+                    qualityBadge.style.padding = '3px 8px';
+                    qualityBadge.style.borderRadius = '4px';
+                    qualityBadge.style.marginBottom = '10px';
+                    qualityBadge.style.fontWeight = 'bold';
+                    
+                    // Set color based on extraction quality
+                    switch(eventEvaluation.extraction_quality) {
+                        case 'excellent':
+                            qualityBadge.style.backgroundColor = '#d4edda';
+                            qualityBadge.style.color = '#155724';
+                            qualityBadge.textContent = 'Excellent';
+                            break;
+                        case 'good':
+                            qualityBadge.style.backgroundColor = '#cce5ff';
+                            qualityBadge.style.color = '#004085';
+                            qualityBadge.textContent = 'Good';
+                            break;
+                        case 'fair':
+                            qualityBadge.style.backgroundColor = '#fff3cd';
+                            qualityBadge.style.color = '#856404';
+                            qualityBadge.textContent = 'Fair';
+                            break;
+                        case 'poor':
+                            qualityBadge.style.backgroundColor = '#f8d7da';
+                            qualityBadge.style.color = '#721c24';
+                            qualityBadge.textContent = 'Poor';
+                            break;
+                        default:
+                            qualityBadge.style.backgroundColor = '#e9ecef';
+                            qualityBadge.style.color = '#495057';
+                            qualityBadge.textContent = 'Unknown';
+                    }
+                    
+                    criticDetailsContainer.appendChild(qualityBadge);
+                    
+                    // Add confidence score
+                    if (eventEvaluation.overall_confidence) {
+                        const confidenceElement = document.createElement('p');
+                        confidenceElement.innerHTML = `<strong>Confidence:</strong> ${eventEvaluation.overall_confidence}/5`;
+                        criticDetailsContainer.appendChild(confidenceElement);
+                    }
+                    
+                    // Add issues if any
+                    if (eventEvaluation.issues_identified && eventEvaluation.issues_identified.length > 0) {
+                        const issuesTitle = document.createElement('p');
+                        issuesTitle.innerHTML = '<strong>Issues:</strong>';
+                        criticDetailsContainer.appendChild(issuesTitle);
+                        
+                        const issuesList = document.createElement('ul');
+                        issuesList.style.fontSize = '12px';
+                        issuesList.style.paddingLeft = '20px';
+                        
+                        eventEvaluation.issues_identified.forEach(issue => {
+                            const issueItem = document.createElement('li');
+                            issueItem.innerHTML = `<strong>${issue.issue_type}:</strong> ${issue.description}`;
+                            issuesList.appendChild(issueItem);
+                        });
+                        
+                        criticDetailsContainer.appendChild(issuesList);
+                    }
+                    
+                    // Add strengths if any
+                    if (eventEvaluation.strengths && eventEvaluation.strengths.length > 0) {
+                        const strengthsTitle = document.createElement('p');
+                        strengthsTitle.innerHTML = '<strong>Strengths:</strong>';
+                        criticDetailsContainer.appendChild(strengthsTitle);
+                        
+                        const strengthsList = document.createElement('ul');
+                        strengthsList.style.fontSize = '12px';
+                        strengthsList.style.paddingLeft = '20px';
+                        
+                        eventEvaluation.strengths.forEach(strength => {
+                            const strengthItem = document.createElement('li');
+                            strengthItem.textContent = strength;
+                            strengthsList.appendChild(strengthItem);
+                        });
+                        
+                        criticDetailsContainer.appendChild(strengthsList);
+                    }
+                } else {
+                    criticAssessmentContainer.style.display = 'none';
+                }
+            } else {
+                criticAssessmentContainer.style.display = 'none';
+            }
+            
             // Set related events
             const relatedEventsContainer = document.getElementById('related-events');
             relatedEventsContainer.innerHTML = '';
@@ -953,6 +1132,16 @@
                 significanceFiltersContainer.appendChild(label);
             }
             
+            // Add critic assessment toggle functionality
+            const criticToggle = document.getElementById('show-critic-toggle');
+            criticToggle.addEventListener('change', function() {
+                showCriticAssessments = this.checked;
+                document.getElementById('critic-legend').style.display = showCriticAssessments ? 'block' : 'none';
+                
+                // Apply critic assessment indicators to event points
+                applyEventCriticAssessments();
+            });
+            
             // Add filter functionality
             document.querySelectorAll('input[name="type-filter"]').forEach(input => {
                 input.addEventListener('change', applyFilters);
@@ -985,6 +1174,51 @@
                         }
                     });
                 });
+            });
+        }
+        
+        function applyEventCriticAssessments() {
+            if (!criticData) return;
+            
+            const eventPoints = document.querySelectorAll('.event-point');
+            
+            // Reset all event points
+            eventPoints.forEach(point => {
+                point.classList.remove('has-critic-assessment', 'critic-excellent', 'critic-good', 'critic-fair', 'critic-poor');
+            });
+            
+            if (!showCriticAssessments) return;
+            
+            // Find event evaluations in critic data
+            const eventEvaluations = criticData.entity_evaluations?.event || [];
+            
+            // Create a map of event evaluations by entity_id
+            const evaluationsByEntityId = {};
+            eventEvaluations.forEach(evaluation => {
+                if (evaluation.entity_id) {
+                    evaluationsByEntityId[evaluation.entity_id] = evaluation;
+                }
+            });
+            
+            // Apply critic assessment classes to event points
+            eventPoints.forEach(point => {
+                const eventId = point.dataset.id;
+                const evaluation = evaluationsByEntityId[eventId];
+                
+                if (evaluation) {
+                    point.classList.add('has-critic-assessment');
+                    
+                    // Add class based on extraction quality
+                    if (evaluation.extraction_quality === 'excellent') {
+                        point.classList.add('critic-excellent');
+                    } else if (evaluation.extraction_quality === 'good') {
+                        point.classList.add('critic-good');
+                    } else if (evaluation.extraction_quality === 'fair') {
+                        point.classList.add('critic-fair');
+                    } else if (evaluation.extraction_quality === 'poor') {
+                        point.classList.add('critic-poor');
+                    }
+                }
             });
         }
         

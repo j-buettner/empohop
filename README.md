@@ -108,6 +108,25 @@ Then open a web browser and navigate to http://localhost:8080 to access the visu
 
 The visualizations will load data from the processed directory, showing the extracted entities and relationships.
 
+### Critic Assessment Visualization
+
+Both the network and timeline visualizations now support displaying critic assessments from the data/critic_results directory. This feature allows you to visualize the quality of extracted entities and relationships as determined by the critic system.
+
+To use this feature:
+
+1. Run the critic system to generate assessment data:
+   ```
+   python run_critic.py data/processed/your_knowledge_graph.json
+   ```
+
+2. In the visualizations, toggle the "Show Critic Assessments" option to display quality indicators:
+   - Entities are color-coded based on their extraction quality (Excellent, Good, Fair, Poor)
+   - Detailed critic assessments are shown in entity detail panels
+   - The timeline visualization shows quality indicators on event points
+   - The network visualization shows quality indicators on entity nodes
+
+This integration helps identify potential issues in the knowledge graph and prioritize human review efforts.
+
 ## Schema
 
 The knowledge graph schema includes the following entity types:

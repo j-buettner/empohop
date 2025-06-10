@@ -199,6 +199,42 @@
             padding: 2px 6px;
             font-size: 12px;
         }
+        
+        /* Critic assessment styles */
+        circle.has-critic-assessment {
+            stroke-width: 2px;
+            stroke-dasharray: 3;
+        }
+        
+        circle.critic-excellent {
+            stroke: #2ecc71;
+            stroke-width: 2px;
+            stroke-dasharray: none;
+        }
+        
+        circle.critic-good {
+            stroke: #3498db;
+            stroke-width: 2px;
+            stroke-dasharray: none;
+        }
+        
+        circle.critic-fair {
+            stroke: #f39c12;
+            stroke-width: 2px;
+            stroke-dasharray: none;
+        }
+        
+        circle.critic-poor {
+            stroke: #e74c3c;
+            stroke-width: 2px;
+            stroke-dasharray: none;
+        }
+        
+        .critic-assessment {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
     </style>
 </head>
 <body>
@@ -252,6 +288,9 @@
                         <div class="filter-options">
                             <label class="btn btn-sm btn-outline-primary active">
                                 <input type="checkbox" id="show-auto-generated" checked> Show Auto-Generated Entities
+                            </label>
+                            <label class="btn btn-sm btn-outline-primary">
+                                <input type="checkbox" id="show-critic-toggle"> Show Critic Assessments
                             </label>
                         </div>
                     </div>
@@ -309,6 +348,29 @@
                     <span>Auto-Generated Entity (lighter color)</span>
                 </div>
             </div>
+            
+            <!-- Critic assessment legend (hidden by default) -->
+            <div id="critic-legend" style="width: 100%; margin-top: 15px; display: none;">
+                <h6 class="text-center">Critic Assessment Quality</h6>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #2ecc71;"></div>
+                        <span>Excellent</span>
+                    </div>
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #3498db;"></div>
+                        <span>Good</span>
+                    </div>
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #f39c12;"></div>
+                        <span>Fair</span>
+                    </div>
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #e74c3c;"></div>
+                        <span>Poor</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -324,19 +386,36 @@
         let height;
         let entitiesById = {};
         let selectedNode = null;
+        let criticData = null;
+        let showCriticAssessments = false;
         
         // Load the data
         document.addEventListener('DOMContentLoaded', function() {
             // Load data from the processed directory with cache-busting parameter
             console.log("Attempting to load data from processed directory...");
+            
+            // First load the knowledge graph data
             fetch('../../data/processed/book_9780262366601-compressed_knowledge_graph.json?v=' + new Date().getTime())
                 .then(response => {
                     console.log("Response status:", response.status);
                     return response.json();
                 })
                 .then(data => {
-                    console.log("Loaded data:", data);
-                    initializeGraph(data);
+                    console.log("Loaded knowledge graph data:", data);
+                    
+                    // Then try to load critic data
+                    fetch('../../data/critic_results/book_9780262366601-compressed_critic_evaluation.json?v=' + new Date().getTime())
+                        .then(response => response.json())
+                        .then(criticDataResponse => {
+                            console.log("Loaded critic data successfully");
+                            criticData = criticDataResponse;
+                            initializeGraph(data);
+                        })
+                        .catch(error => {
+                            console.warn('Critic data not available:', error);
+                            criticData = null;
+                            initializeGraph(data);
+                        });
                 })
                 .catch(error => {
                     console.error('Error loading data:', error);
@@ -367,6 +446,15 @@
             // Add event listener for auto-generated entities toggle
             document.getElementById('show-auto-generated').addEventListener('change', function() {
                 applyFilters();
+            });
+            
+            // Add event listener for critic assessment toggle
+            document.getElementById('show-critic-toggle').addEventListener('change', function() {
+                showCriticAssessments = this.checked;
+                document.getElementById('critic-legend').style.display = showCriticAssessments ? 'block' : 'none';
+                
+                // Apply critic assessment indicators to nodes
+                applyNodeCriticAssessments();
             });
         });
         
@@ -442,6 +530,11 @@
             
             // Create filters
             createFilters();
+            
+            // Apply critic assessment indicators if enabled
+            if (showCriticAssessments && criticData) {
+                applyNodeCriticAssessments();
+            }
         }
         
         function processData(data) {
@@ -815,6 +908,123 @@
             
             document.getElementById('detail-description').textContent = d.description || 'No description available';
             
+            // Add critic assessment if available and enabled
+            if (showCriticAssessments && criticData) {
+                // Find the critic assessment for this entity
+                let entityEvaluation = null;
+                
+                // Check the appropriate entity type collection in critic data
+                if (d.type === 'Event' && criticData.entity_evaluations && criticData.entity_evaluations.event) {
+                    entityEvaluation = criticData.entity_evaluations.event.find(eval => eval.entity_id === d.id);
+                } else if (d.type === 'Actor' && criticData.entity_evaluations && criticData.entity_evaluations.actor) {
+                    entityEvaluation = criticData.entity_evaluations.actor.find(eval => eval.entity_id === d.id);
+                } else if (d.type === 'Concept' && criticData.entity_evaluations && criticData.entity_evaluations.concept) {
+                    entityEvaluation = criticData.entity_evaluations.concept.find(eval => eval.entity_id === d.id);
+                } else if (d.type === 'Location' && criticData.entity_evaluations && criticData.entity_evaluations.location) {
+                    entityEvaluation = criticData.entity_evaluations.location.find(eval => eval.entity_id === d.id);
+                } else if (d.type === 'Publication' && criticData.entity_evaluations && criticData.entity_evaluations.publication) {
+                    entityEvaluation = criticData.entity_evaluations.publication.find(eval => eval.entity_id === d.id);
+                }
+                
+                // If we found an evaluation, add it to the properties
+                if (entityEvaluation) {
+                    // Add a critic assessment section
+                    const criticSection = document.createElement('div');
+                    criticSection.className = 'critic-assessment';
+                    
+                    // Add a title
+                    const criticTitle = document.createElement('p');
+                    criticTitle.innerHTML = '<strong>Critic Assessment:</strong>';
+                    criticSection.appendChild(criticTitle);
+                    
+                    // Add quality badge
+                    const qualityBadge = document.createElement('div');
+                    qualityBadge.style.display = 'inline-block';
+                    qualityBadge.style.padding = '3px 8px';
+                    qualityBadge.style.borderRadius = '4px';
+                    qualityBadge.style.marginBottom = '10px';
+                    qualityBadge.style.fontWeight = 'bold';
+                    
+                    // Set color based on extraction quality
+                    switch(entityEvaluation.extraction_quality) {
+                        case 'excellent':
+                            qualityBadge.style.backgroundColor = '#d4edda';
+                            qualityBadge.style.color = '#155724';
+                            qualityBadge.textContent = 'Excellent';
+                            break;
+                        case 'good':
+                            qualityBadge.style.backgroundColor = '#cce5ff';
+                            qualityBadge.style.color = '#004085';
+                            qualityBadge.textContent = 'Good';
+                            break;
+                        case 'fair':
+                            qualityBadge.style.backgroundColor = '#fff3cd';
+                            qualityBadge.style.color = '#856404';
+                            qualityBadge.textContent = 'Fair';
+                            break;
+                        case 'poor':
+                            qualityBadge.style.backgroundColor = '#f8d7da';
+                            qualityBadge.style.color = '#721c24';
+                            qualityBadge.textContent = 'Poor';
+                            break;
+                        default:
+                            qualityBadge.style.backgroundColor = '#e9ecef';
+                            qualityBadge.style.color = '#495057';
+                            qualityBadge.textContent = 'Unknown';
+                    }
+                    
+                    criticSection.appendChild(qualityBadge);
+                    
+                    // Add confidence score
+                    if (entityEvaluation.overall_confidence) {
+                        const confidenceElement = document.createElement('p');
+                        confidenceElement.innerHTML = `<strong>Confidence:</strong> ${entityEvaluation.overall_confidence}/5`;
+                        criticSection.appendChild(confidenceElement);
+                    }
+                    
+                    // Add issues if any
+                    if (entityEvaluation.issues_identified && entityEvaluation.issues_identified.length > 0) {
+                        const issuesTitle = document.createElement('p');
+                        issuesTitle.innerHTML = '<strong>Issues:</strong>';
+                        criticSection.appendChild(issuesTitle);
+                        
+                        const issuesList = document.createElement('ul');
+                        issuesList.style.fontSize = '12px';
+                        issuesList.style.paddingLeft = '20px';
+                        
+                        entityEvaluation.issues_identified.forEach(issue => {
+                            const issueItem = document.createElement('li');
+                            issueItem.innerHTML = `<strong>${issue.issue_type}:</strong> ${issue.description}`;
+                            issuesList.appendChild(issueItem);
+                        });
+                        
+                        criticSection.appendChild(issuesList);
+                    }
+                    
+                    // Add strengths if any
+                    if (entityEvaluation.strengths && entityEvaluation.strengths.length > 0) {
+                        const strengthsTitle = document.createElement('p');
+                        strengthsTitle.innerHTML = '<strong>Strengths:</strong>';
+                        criticSection.appendChild(strengthsTitle);
+                        
+                        const strengthsList = document.createElement('ul');
+                        strengthsList.style.fontSize = '12px';
+                        strengthsList.style.paddingLeft = '20px';
+                        
+                        entityEvaluation.strengths.forEach(strength => {
+                            const strengthItem = document.createElement('li');
+                            strengthItem.textContent = strength;
+                            strengthsList.appendChild(strengthItem);
+                        });
+                        
+                        criticSection.appendChild(strengthsList);
+                    }
+                    
+                    // Add the critic section to the properties container
+                    propertiesContainer.appendChild(criticSection);
+                }
+            }
+            
             // Set additional properties
             const propertiesContainer = document.getElementById('detail-properties');
             propertiesContainer.innerHTML = '';
@@ -1152,6 +1362,54 @@
                 d3.select(selectedNode).classed('selected', false);
                 selectedNode = null;
             }
+        }
+        
+        function applyNodeCriticAssessments() {
+            if (!criticData) return;
+            
+            // Reset all node classes
+            nodeElements.classed('has-critic-assessment', false)
+                .classed('critic-excellent', false)
+                .classed('critic-good', false)
+                .classed('critic-fair', false)
+                .classed('critic-poor', false);
+            
+            if (!showCriticAssessments) return;
+            
+            // Create maps of entity evaluations by entity_id for each entity type
+            const evaluationsByEntityId = {};
+            
+            // Process each entity type in critic data
+            if (criticData.entity_evaluations) {
+                Object.entries(criticData.entity_evaluations).forEach(([entityType, evaluations]) => {
+                    evaluations.forEach(evaluation => {
+                        if (evaluation.entity_id) {
+                            evaluationsByEntityId[evaluation.entity_id] = evaluation;
+                        }
+                    });
+                });
+            }
+            
+            // Apply critic assessment classes to nodes
+            nodeElements.each(function(d) {
+                const node = d3.select(this);
+                const evaluation = evaluationsByEntityId[d.id];
+                
+                if (evaluation) {
+                    node.classed('has-critic-assessment', true);
+                    
+                    // Add class based on extraction quality
+                    if (evaluation.extraction_quality === 'excellent') {
+                        node.classed('critic-excellent', true);
+                    } else if (evaluation.extraction_quality === 'good') {
+                        node.classed('critic-good', true);
+                    } else if (evaluation.extraction_quality === 'fair') {
+                        node.classed('critic-fair', true);
+                    } else if (evaluation.extraction_quality === 'poor') {
+                        node.classed('critic-poor', true);
+                    }
+                }
+            });
         }
         
         function searchEntities(query) {
