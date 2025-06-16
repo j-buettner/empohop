@@ -8,6 +8,7 @@ from typing import Dict, List, Optional, Any, Union
 import time
 import re
 from relationship_processor import RelationshipProcessor
+from entity_resolver import resolve_entities, merge_entities, create_disambiguation_report, EXAMPLE_MANUAL_MAPPINGS
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -194,15 +195,17 @@ class LLMProcessor:
     Process document chunks with an LLM to extract entities with supporting text
     """
     
-    def __init__(self, llm_client):
+    def __init__(self, llm_client, manual_mappings=None):
         """
         Initialize the LLM processor
         
         Args:
             llm_client: Client for the primary LLM
+            manual_mappings: Optional dictionary of manual entity mappings
         """
         self.llm_client = llm_client
         self.relationship_processor = RelationshipProcessor(llm_client)
+        self.manual_mappings = manual_mappings or {}
         logger.info("Initialized LLMProcessor with supporting text extraction and relationship processing")
     
     def process_chunk(self, chunk: Dict, prompt_template: str) -> Dict:
@@ -216,17 +219,38 @@ class LLMProcessor:
         Returns:
             LLM response parsed as a dictionary
         """
-        # Format prompt with chunk text
+        # Format prompt with chunk text, ensuring proper Unicode handling
         try:
-            prompt = prompt_template.format(text=chunk["text"])
+            # Clean the text to handle Unicode characters properly
+            chunk_text = chunk["text"]
+            if isinstance(chunk_text, str):
+                # Replace problematic Unicode characters with ASCII equivalents
+                chunk_text = chunk_text.replace('\u201c', '"').replace('\u201d', '"')
+                chunk_text = chunk_text.replace('\u2018', "'").replace('\u2019', "'")
+                chunk_text = chunk_text.replace('\u2013', '-').replace('\u2014', '--')
+                chunk_text = chunk_text.replace('\u00a0', ' ')  # Non-breaking space
+                chunk_text = chunk_text.replace('\u2026', '...')  # Ellipsis
+                chunk_text = chunk_text.replace('\u00ad', '')  # Soft hyphen
+                chunk_text = chunk_text.replace('\u200b', '')  # Zero-width space
+                chunk_text = chunk_text.replace('\u00a9', '(c)')  # Copyright
+                chunk_text = chunk_text.replace('\u00ae', '(R)')  # Registered
+                chunk_text = chunk_text.replace('\u2122', 'TM')  # Trademark
+                
+                # Remove any remaining non-ASCII characters
+                chunk_text = chunk_text.encode('ascii', 'ignore').decode('ascii')
+            
+            prompt = prompt_template.format(text=chunk_text)
         except KeyError as e:
             logger.error(f"Error formatting prompt: {str(e)}")
             return {"error": f"Error formatting prompt: {str(e)}"}
+        except UnicodeEncodeError as e:
+            logger.error(f"Unicode encoding error: {str(e)}")
+            return {"error": f"Unicode encoding error: {str(e)}"}
         
         try:
             # Call LLM API
             response = self.llm_client.messages.create(
-                model="claude-sonnet-4-20250514",
+                model="claude-3-5-sonnet-20241022",
                 max_tokens=8000,
                 system="You are an expert in extracting structured information about planetary health from academic texts. Always include supporting text that justifies each extraction.",
                 messages=[
@@ -295,8 +319,14 @@ class LLMProcessor:
                     return {"error": "Failed to parse LLM response", "raw_response": content[:500] + "..." if len(content) > 500 else content}
                 
         except Exception as e:
-            logger.error(f"Error calling LLM API: {str(e)}")
-            return {"error": str(e)}
+            # Handle Unicode issues in error messages
+            error_msg = str(e)
+            try:
+                error_msg = error_msg.encode('ascii', 'ignore').decode('ascii')
+            except:
+                error_msg = "LLM API error (encoding issue)"
+            logger.error(f"Error calling LLM API: {error_msg}")
+            return {"error": error_msg}
     
     def _find_supporting_text(self, entity: Dict, entity_type: str, chunk_text: str) -> str:
         """
@@ -348,7 +378,7 @@ class LLMProcessor:
     
     def process_chunks(self, chunks: List[Dict], entity_types: List[str] = None, extract_relationships: bool = True, 
                       update_after_each: bool = False, output_dir: str = None, 
-                      base_filename: str = None) -> Dict:
+                      base_filename: str = None, create_report: bool = True) -> Dict:
         """
         Process a list of document chunks to extract entities and relationships using a 3-phase approach
         
@@ -359,6 +389,7 @@ class LLMProcessor:
             update_after_each: Whether to write/update output files after each chunk
             output_dir: Output directory for intermediate results
             base_filename: Base filename for intermediate results
+            create_report: Whether to create a disambiguation report
             
         Returns:
             Dictionary with extracted entities, relationships, and statistics
@@ -430,7 +461,7 @@ class LLMProcessor:
                 }
                 
                 # Resolve and deduplicate entities so far
-                resolved_entities = resolve_entities(intermediate_results["entities"])
+                resolved_entities = resolve_entities(intermediate_results["entities"], manual_mappings=self.manual_mappings)
                 intermediate_results["entities"] = resolved_entities
                 
                 logger.info(f"Saving intermediate entity results after chunk {i+1}/{len(chunks)}")
@@ -446,7 +477,17 @@ class LLMProcessor:
         
         # Resolve and deduplicate entities
         logger.info("Resolving and deduplicating entities")
-        resolved_entities = resolve_entities(all_entities)
+        resolved_entities = resolve_entities(all_entities, manual_mappings=self.manual_mappings)
+        
+        # Create disambiguation report if requested
+        if create_report and output_dir and base_filename:
+            report_path = os.path.join(output_dir, f"{base_filename}_disambiguation_report.json")
+            # Re-run resolution with report generation
+            resolved_entities = create_disambiguation_report(
+                all_entities, 
+                report_path, 
+                manual_mappings=self.manual_mappings
+            )
         
         # Process relationships using RelationshipProcessor
         resolved_relationships = []
@@ -471,75 +512,6 @@ class LLMProcessor:
             }
         }
 
-
-def resolve_entities(entities: Dict[str, List[Dict]]) -> Dict[str, List[Dict]]:
-    """
-    Resolve and deduplicate entities based on name and attributes
-    """
-    resolved_entities = {entity_type: [] for entity_type in entities.keys()}
-    
-    for entity_type, entity_list in entities.items():
-        # Create a map to track entities by name
-        entity_map = {}
-        
-        for entity in entity_list:
-            # Generate a normalized key for comparison
-            if entity_type == "event":
-                name = entity.get("title", "").lower()
-                year = entity.get("year")
-                key = f"{name}_{year}" if year else name
-            else:
-                key = entity.get("name", "").lower()
-            
-            # Skip empty keys
-            if not key:
-                continue
-            
-            # If entity already exists, merge attributes
-            if key in entity_map:
-                entity_map[key] = merge_entities(entity_map[key], entity)
-            else:
-                # Add ID if not present
-                if "id" not in entity:
-                    entity["id"] = str(uuid.uuid4())
-                entity_map[key] = entity
-        
-        # Convert map back to list
-        resolved_entities[entity_type] = list(entity_map.values())
-    
-    return resolved_entities
-
-def merge_entities(entity1: Dict, entity2: Dict) -> Dict:
-    """
-    Merge two entities, combining their attributes
-    """
-    # Start with the first entity
-    merged = entity1.copy()
-    
-    # Merge scalar fields (take non-empty values from entity2)
-    for key, value in entity2.items():
-        if key not in merged or not merged[key]:
-            merged[key] = value
-        elif key == "description" and value and merged[key] != value:
-            # For descriptions, concatenate if different
-            merged[key] = f"{merged[key]} {value}"
-        elif key == "significance" and value:
-            # For significance, take the max
-            merged[key] = max(merged[key], value) if merged[key] else value
-        elif key == "supporting_text" and value and merged.get("supporting_text") != value:
-            # For supporting text, concatenate if different
-            merged[key] = f"{merged.get('supporting_text', '')} | {value}"
-    
-    # Merge list fields
-    for key in ["locations", "actors", "concepts", "expertise", "domain", "alternative_names", "authors"]:
-        if key in entity2 and entity2[key]:
-            if key not in merged:
-                merged[key] = entity2[key]
-            else:
-                # Combine lists and remove duplicates
-                merged[key] = list(set(merged[key] + entity2[key]))
-    
-    return merged
 
 def save_results(results: Dict, output_dir: str, base_filename: str) -> Dict[str, str]:
     """
@@ -659,6 +631,9 @@ def main():
     parser.add_argument("--chunk-index", type=int, default=None, help="Process only the chunk at this index (0-based)")
     parser.add_argument("--chunk-range", type=str, default=None, help="Process chunks in this range (e.g., '0-5')")
     parser.add_argument("--update-after-each", action="store_true", help="Write/update output files after each chunk is processed")
+    parser.add_argument("--manual-mappings", type=str, default=None, help="Path to JSON file with manual entity mappings")
+    parser.add_argument("--use-example-mappings", action="store_true", help="Use built-in example manual mappings")
+    parser.add_argument("--no-disambiguation-report", action="store_true", help="Skip creating disambiguation report")
     args = parser.parse_args()
     
     try:
@@ -673,6 +648,16 @@ def main():
             chunks = chunks_data.get("chunks", [])
         
         logger.info(f"Loaded {len(chunks)} chunks from {args.chunks_file}")
+        
+        # Load manual mappings if provided
+        manual_mappings = {}
+        if args.manual_mappings:
+            with open(args.manual_mappings, 'r', encoding='utf-8') as f:
+                manual_mappings = json.load(f)
+            logger.info(f"Loaded manual mappings from {args.manual_mappings}")
+        elif args.use_example_mappings:
+            manual_mappings = EXAMPLE_MANUAL_MAPPINGS
+            logger.info("Using built-in example manual mappings")
         
         # Process only a specific chunk if requested
         if args.chunk_index is not None:
@@ -712,8 +697,8 @@ def main():
                 
             client = anthropic.Anthropic(api_key=api_key)
             
-            # Initialize LLM processor
-            processor = LLMProcessor(llm_client=client)
+            # Initialize LLM processor with manual mappings
+            processor = LLMProcessor(llm_client=client, manual_mappings=manual_mappings)
             
             # Get base filename for outputs
             base_filename = os.path.splitext(os.path.basename(args.chunks_file))[0]
@@ -727,7 +712,8 @@ def main():
                 extract_relationships=not args.no_relationships,
                 update_after_each=args.update_after_each,
                 output_dir=args.output_dir,
-                base_filename=base_filename
+                base_filename=base_filename,
+                create_report=not args.no_disambiguation_report
             )
             
             # Save results
@@ -744,6 +730,10 @@ def main():
             logger.info(f"  - Relationships: {output_paths['relationships']}")
             logger.info(f"  - Knowledge Graph: {output_paths['knowledge_graph']}")
             logger.info(f"  - Stats: {output_paths['stats']}")
+            
+            if not args.no_disambiguation_report:
+                report_path = os.path.join(args.output_dir, f"{base_filename}_disambiguation_report.json")
+                logger.info(f"  - Disambiguation Report: {report_path}")
             
             # Print summary statistics
             logger.info("Extraction Summary:")

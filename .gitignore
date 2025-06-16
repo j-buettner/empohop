@@ -51,6 +51,7 @@ data/processed/*
 !data/processed/.gitkeep
 data/review/*
 !data/review/.gitkeep
+data/extracted_old/*
 
 # Large files
 *.pdf

@@ -24,19 +24,148 @@ class ReviewTask:
         Args:
             task_data: Task data from the review tasks file
         """
-        self.task_id = task_data.get("task_id", str(uuid.uuid4()))
-        self.priority = task_data.get("priority", "medium")
-        self.original_text = task_data.get("original_text", "")
-        self.document_metadata = task_data.get("document_metadata", {})
-        self.extracted_data = task_data.get("extracted_data", {})
-        self.critic_evaluation = task_data.get("critic_evaluation", {})
-        self.highlighted_issues = task_data.get("highlighted_issues", [])
-        self.review_questions = task_data.get("review_questions", [])
-        self.status = task_data.get("status", "pending_review")
-        self.created_at = task_data.get("created_at", time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
-        self.reviewed_at = task_data.get("reviewed_at")
-        self.reviewer_notes = task_data.get("reviewer_notes", "")
-        self.corrected_data = task_data.get("corrected_data", {})
+        # Handle both original critic format and converted format
+        if "id" in task_data:
+            # Original critic format
+            self.task_id = task_data.get("id", str(uuid.uuid4()))
+            
+            # Map priority (numeric in critic format, string in review format)
+            priority_value = task_data.get("priority", 5)
+            if isinstance(priority_value, int):
+                self.priority = "high" if priority_value >= 7 else "medium" if priority_value >= 4 else "low"
+            else:
+                self.priority = str(priority_value).lower()
+            
+            # Get entity information
+            self.entity_type = task_data.get("entity_type", "")
+            self.entity_id = task_data.get("entity_id", "")
+            self.relationship_id = task_data.get("relationship_id", "")
+            
+            # Get supporting text if available
+            self.original_text = task_data.get("supporting_text", task_data.get("original_text", ""))
+            
+            # Create document metadata
+            self.document_metadata = {
+                "section_title": f"{self.entity_type.capitalize() if self.entity_type else 'Relationship'} Review",
+                "source": task_data.get("source", ""),
+                "confidence": task_data.get("confidence", 3)
+            }
+            
+            # Load the full entity data from the knowledge graph file
+            self.extracted_data = self.load_entity_from_knowledge_graph()
+            
+            # Map critic evaluation
+            self.critic_evaluation = {
+                "confidence": task_data.get("confidence", 3),
+                "quality": task_data.get("quality", "fair"),
+                "reason": task_data.get("reason", "")
+            }
+            
+            # Store the original task data for reference
+            self.original_task_data = task_data
+            
+            # Map issues
+            self.highlighted_issues = task_data.get("issues", [])
+            
+            # Create review questions
+            self.review_questions = [
+                f"Is this {self.entity_type if self.entity_type else 'relationship'} accurately extracted?",
+                "Are there any missing or incorrect attributes?",
+                "Does the extraction match the original text?"
+            ]
+            
+            # Other fields
+            self.status = task_data.get("status", "pending_review")
+            self.created_at = task_data.get("created_at", time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+            self.reviewed_at = task_data.get("reviewed_at")
+            self.reviewer_notes = task_data.get("reviewer_notes", "")
+            self.corrected_data = task_data.get("corrected_data", {})
+        else:
+            # Converted format or standard format
+            self.task_id = task_data.get("task_id", str(uuid.uuid4()))
+            self.priority = task_data.get("priority", "medium")
+            self.original_text = task_data.get("original_text", "")
+            self.document_metadata = task_data.get("document_metadata", {})
+            self.extracted_data = task_data.get("extracted_data", {})
+            self.critic_evaluation = task_data.get("critic_evaluation", {})
+            self.highlighted_issues = task_data.get("highlighted_issues", [])
+            self.review_questions = task_data.get("review_questions", [])
+            self.status = task_data.get("status", "pending_review")
+            self.created_at = task_data.get("created_at", time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+            self.reviewed_at = task_data.get("reviewed_at")
+            self.reviewer_notes = task_data.get("reviewer_notes", "")
+            self.corrected_data = task_data.get("corrected_data", {})
+    
+    def load_entity_from_knowledge_graph(self) -> Dict:
+        """
+        Load the full entity data from the knowledge graph file
+        
+        Returns:
+            Dictionary containing the entity data
+        """
+        try:
+            # Path to the knowledge graph file
+            kg_file = "data/processed/book_9780262366601-compressed_knowledge_graph.json"
+            
+            # Load the knowledge graph data
+            with open(kg_file, 'r', encoding='utf-8') as f:
+                kg_data = json.load(f)
+            
+            # Initialize the extracted data structure
+            extracted_data = {
+                "entities": {},
+                "relationships": []
+            }
+            
+            # Find the entity in the knowledge graph
+            if self.entity_type and self.entity_id:
+                # Map entity type to the corresponding key in the knowledge graph
+                entity_type_map = {
+                    "event": "events",
+                    "actor": "actors",
+                    "concept": "concepts",
+                    "location": "locations",
+                    "publication": "publications"
+                }
+                
+                kg_entity_type = entity_type_map.get(self.entity_type, self.entity_type)
+                
+                # Find the entity in the knowledge graph
+                if kg_entity_type in kg_data:
+                    for entity in kg_data[kg_entity_type]:
+                        if entity.get("id") == self.entity_id:
+                            # Add the entity to the extracted data
+                            extracted_data["entities"][self.entity_type] = [entity]
+                            
+                            # Update the original text with the supporting text from the entity
+                            if entity.get("supporting_text"):
+                                self.original_text = entity.get("supporting_text")
+                            
+                            break
+            
+            # Find the relationship in the knowledge graph
+            if self.relationship_id:
+                for relationship in kg_data.get("relationships", []):
+                    if relationship.get("id") == self.relationship_id:
+                        # Add the relationship to the extracted data
+                        extracted_data["relationships"].append(relationship)
+                        
+                        # Update the original text with the supporting text from the relationship
+                        if relationship.get("supporting_text"):
+                            self.original_text = relationship.get("supporting_text")
+                        
+                        break
+            
+            return extracted_data
+        except Exception as e:
+            logger.error(f"Error loading entity from knowledge graph: {str(e)}")
+            # Return a basic structure if there's an error
+            return {
+                "entities": {
+                    self.entity_type: [{"id": self.entity_id}] if self.entity_type and self.entity_id else []
+                } if self.entity_type else {},
+                "relationships": [{"id": self.relationship_id}] if self.relationship_id else []
+            }
     
     def to_dict(self) -> Dict:
         """Convert to dictionary"""
@@ -627,7 +756,7 @@ class ReviewServer(BaseHTTPRequestHandler):
         is_editable = task.status == "pending_review"
         
         # Format the corrected data if available
-        corrected_data_json = json.dumps(task.corrected_data, indent=2) if task.corrected_data else extracted_data_json
+        corrected_data_json = json.dumps(task.corrected_data, indent=2) if task.corrected_data and task.status == "reviewed" else extracted_data_json
         
         # Create the reviewer notes section if the task is editable
         reviewer_notes_section = ""
@@ -835,7 +964,7 @@ class ReviewServer(BaseHTTPRequestHandler):
                         
                         <h3>Corrected Data</h3>
                         <div class="mb-4">
-                            <textarea id="corrected-data" class="json-editor" {is_editable and '' or 'readonly'}>{corrected_data_json}</textarea>
+                            <textarea id="corrected-data" class="json-editor">{corrected_data_json}</textarea>
                         </div>
                         
                         {reviewer_notes_section}
@@ -980,7 +1109,7 @@ def main():
     parser = argparse.ArgumentParser(description='Human review interface for the Planetary Health Knowledge Graph')
     parser.add_argument('--tasks', type=str, default='data/review_tasks.json', help='Path to the review tasks file')
     parser.add_argument('--output', type=str, default='data/processed', help='Directory to save reviewed tasks')
-    parser.add_argument('--port', type=int, default=8000, help='Port to run the server on')
+    parser.add_argument('--port', type=int, default=8081, help='Port to run the server on')
     args = parser.parse_args()
     
     # Run the server

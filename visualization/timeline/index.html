@@ -33,14 +33,15 @@
         .timeline-container {
             position: relative;
             margin: 40px 0;
-            padding: 60px 0;
+            padding: 80px 0;
             overflow-x: auto;
             overflow-y: visible;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             background-color: #f9f9f9;
-            min-height: 250px;
+            min-height: 600px;
+            height: 600px;
         }
         
         .scroll-indicator {
@@ -68,7 +69,7 @@
             height: 4px;
             background-color: #3498db;
             position: relative;
-            margin: 60px 0 60px 0;
+            margin: 280px auto 280px auto;
             min-width: 100%;
             border-radius: 2px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -445,8 +446,8 @@
             // Load data from the processed directory with cache-busting parameter
             console.log("Attempting to load data from processed directory...");
             
-            // First load the knowledge graph data
-            fetch('../../data/processed/book_9780262366601-compressed_knowledge_graph.json?v=' + new Date().getTime())
+            // First load the knowledge graph data from the API endpoint
+            fetch('/api/knowledge-graph?v=' + new Date().getTime())
                 .then(response => {
                     console.log("Response status:", response.status);
                     return response.json();
@@ -455,7 +456,7 @@
                     console.log("Loaded knowledge graph data:", data);
                     
                     // Then try to load critic data
-                    fetch('../../data/critic_results/book_9780262366601-compressed_critic_evaluation.json?v=' + new Date().getTime())
+                    fetch('../../data/critic_results/politics_of_ron_core_chunks_clean_critic_evaluation.json?v=' + new Date().getTime())
                         .then(response => response.json())
                         .then(criticDataResponse => {
                             console.log("Loaded critic data successfully");
@@ -649,15 +650,20 @@
             });
             timelineContainer.appendChild(scrollIndicator);
             
-            // Add zoom controls
+            // Add zoom controls to the document body so they're always visible
             const zoomControls = document.createElement('div');
             zoomControls.className = 'zoom-controls';
-            zoomControls.style.position = 'absolute';
-            zoomControls.style.right = '10px';
+            zoomControls.style.position = 'fixed';
+            zoomControls.style.left = '10px';
             zoomControls.style.top = '10px';
-            zoomControls.style.zIndex = '5';
+            zoomControls.style.zIndex = '1000';
             zoomControls.style.display = 'flex';
             zoomControls.style.gap = '5px';
+            zoomControls.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            zoomControls.style.padding = '8px';
+            zoomControls.style.borderRadius = '6px';
+            zoomControls.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
+            zoomControls.style.border = '1px solid #ddd';
             
             const zoomInBtn = document.createElement('button');
             zoomInBtn.textContent = '+';
@@ -665,10 +671,11 @@
             zoomInBtn.style.color = 'white';
             zoomInBtn.style.border = 'none';
             zoomInBtn.style.borderRadius = '4px';
-            zoomInBtn.style.width = '30px';
-            zoomInBtn.style.height = '30px';
-            zoomInBtn.style.fontSize = '16px';
+            zoomInBtn.style.width = '35px';
+            zoomInBtn.style.height = '35px';
+            zoomInBtn.style.fontSize = '18px';
             zoomInBtn.style.cursor = 'pointer';
+            zoomInBtn.style.fontWeight = 'bold';
             zoomInBtn.addEventListener('click', function() {
                 console.log("Zoom in clicked");
                 // Get the current width, fallback to the offsetWidth if style.width is not set
@@ -711,10 +718,11 @@
             zoomOutBtn.style.color = 'white';
             zoomOutBtn.style.border = 'none';
             zoomOutBtn.style.borderRadius = '4px';
-            zoomOutBtn.style.width = '30px';
-            zoomOutBtn.style.height = '30px';
-            zoomOutBtn.style.fontSize = '16px';
+            zoomOutBtn.style.width = '35px';
+            zoomOutBtn.style.height = '35px';
+            zoomOutBtn.style.fontSize = '18px';
             zoomOutBtn.style.cursor = 'pointer';
+            zoomOutBtn.style.fontWeight = 'bold';
             zoomOutBtn.addEventListener('click', function() {
                 console.log("Zoom out clicked");
                 // Get the current width, fallback to the offsetWidth if style.width is not set
@@ -833,7 +841,11 @@
                     eventPoint.dataset.significance = event.significance || 3;
                     eventPoint.dataset.type = event.type || 'Other';
                     eventPoint.dataset.year = event.year;
-                    eventPoint.style.left = `${yearPosition}%`;
+                    
+                    // Calculate pixel position instead of percentage
+                    const timelineWidth = timelineAxis.offsetWidth;
+                    const pixelPosition = (yearPosition / 100) * timelineWidth;
+                    eventPoint.style.left = `${pixelPosition}px`;
                     
                     // Position the event point on the timeline axis
                     // Stagger points vertically if there are multiple events in the same year
@@ -852,7 +864,7 @@
                     const eventLabel = document.createElement('div');
                     eventLabel.className = `event-label ${position}`;
                     eventLabel.textContent = event.title;
-                    eventLabel.style.left = `${yearPosition}%`;
+                    eventLabel.style.left = `${pixelPosition}px`;
                     
                     // Adjust vertical position of labels to avoid overlap
                     if (position === 'top') {

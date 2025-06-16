@@ -394,8 +394,8 @@
             // Load data from the processed directory with cache-busting parameter
             console.log("Attempting to load data from processed directory...");
             
-            // First load the knowledge graph data
-            fetch('../../data/processed/book_9780262366601-compressed_knowledge_graph.json?v=' + new Date().getTime())
+            // First load the knowledge graph data from the API endpoint
+            fetch('/api/knowledge-graph?v=' + new Date().getTime())
                 .then(response => {
                     console.log("Response status:", response.status);
                     return response.json();
@@ -404,7 +404,7 @@
                     console.log("Loaded knowledge graph data:", data);
                     
                     // Then try to load critic data
-                    fetch('../../data/critic_results/book_9780262366601-compressed_critic_evaluation.json?v=' + new Date().getTime())
+                    fetch('../../data/critic_results/politics_of_ron_core_chunks_clean_critic_evaluation.json?v=' + new Date().getTime())
                         .then(response => response.json())
                         .then(criticDataResponse => {
                             console.log("Loaded critic data successfully");

@@ -5,15 +5,38 @@ import os
 import sys
 from typing import Dict, List, Optional, Any
 
-from extractor import DocumentExtractor
-
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+def get_extractor(use_docling: bool = False, **kwargs):
+    """
+    Get the appropriate document extractor
+    
+    Args:
+        use_docling: Whether to use Docling-based extractor
+        **kwargs: Additional arguments for the extractor
+        
+    Returns:
+        Document extractor instance
+    """
+    if use_docling:
+        try:
+            from extractor_docling import DocumentExtractor
+            logger.info("Using Docling-based extractor")
+        except ImportError:
+            logger.error("Docling not installed. Install with: pip install docling transformers")
+            logger.info("Falling back to original extractor")
+            from extractor import DocumentExtractor
+    else:
+        from extractor import DocumentExtractor
+        logger.info("Using original extractor")
+    
+    return DocumentExtractor(**kwargs)
+
 def analyze_chunks(chunks: List[Dict]) -> Dict[str, Any]:
     """
-    Analyze document chunks to extract statistics and insights
+    Analyze document chunks to extract basic statistics
     
     Args:
         chunks: List of document chunks
@@ -27,20 +50,22 @@ def analyze_chunks(chunks: List[Dict]) -> Dict[str, Any]:
         "total_tokens": 0,
         "avg_tokens_per_chunk": 0,
         "section_distribution": {},
-        "potential_entities": {
-            "events": [],
-            "actors": [],
-            "concepts": [],
-            "publications": [],
-            "locations": []
-        }
+        "chunk_size_distribution": {
+            "min": 0,
+            "max": 0,
+            "median": 0
+        },
+        "page_distribution": {}
     }
+    
+    chunk_sizes = []
     
     # Analyze chunks
     for chunk in chunks:
         # Count tokens (rough approximation)
         token_count = len(chunk["text"].split())
         analysis["total_tokens"] += token_count
+        chunk_sizes.append(token_count)
         
         # Track section distribution
         section_title = chunk["metadata"].get("section_title", "Unknown")
@@ -49,161 +74,31 @@ def analyze_chunks(chunks: List[Dict]) -> Dict[str, Any]:
         else:
             analysis["section_distribution"][section_title] = 1
         
-        # Simple entity detection (very basic, just for illustration)
-        # In a real system, you would use NER or other techniques
-        text = chunk["text"].lower()
+        # Track page distribution
+        page_info = "Unknown"
+        if "page" in chunk["metadata"]:
+            page_info = f"Page {chunk['metadata']['page']}"
+        elif "page_start" in chunk["metadata"] and "page_end" in chunk["metadata"]:
+            page_info = f"Pages {chunk['metadata']['page_start']}-{chunk['metadata']['page_end']}"
         
-        # Look for potential events (years followed by text)
-        import re
-        year_pattern = r'\b(19|20)\d{2}\b'
-        years = re.findall(year_pattern, text)
-        for year in years:
-            # Get context around the year
-            year_index = text.find(year)
-            start = max(0, year_index - 50)
-            end = min(len(text), year_index + 50)
-            context = text[start:end]
-            
-            # Add to potential events
-            if len(analysis["potential_entities"]["events"]) < 10:  # Limit to 10 examples
-                analysis["potential_entities"]["events"].append({
-                    "year": year,
-                    "context": context
-                })
-        
-        # Look for potential actors (organizations, people)
-        org_indicators = ["university", "institute", "organization", "association", "society", "foundation"]
-        for indicator in org_indicators:
-            if indicator in text:
-                # Get context around the indicator
-                indicator_index = text.find(indicator)
-                start = max(0, indicator_index - 50)
-                end = min(len(text), indicator_index + 50)
-                context = text[start:end]
-                
-                # Add to potential actors
-                if len(analysis["potential_entities"]["actors"]) < 10:  # Limit to 10 examples
-                    analysis["potential_entities"]["actors"].append({
-                        "type": "organization",
-                        "indicator": indicator,
-                        "context": context
-                    })
+        if page_info in analysis["page_distribution"]:
+            analysis["page_distribution"][page_info] += 1
+        else:
+            analysis["page_distribution"][page_info] = 1
     
-    # Calculate average tokens per chunk
+    # Calculate statistics
     if len(chunks) > 0:
         analysis["avg_tokens_per_chunk"] = analysis["total_tokens"] / len(chunks)
+        analysis["chunk_size_distribution"]["min"] = min(chunk_sizes)
+        analysis["chunk_size_distribution"]["max"] = max(chunk_sizes)
+        chunk_sizes.sort()
+        median_index = len(chunk_sizes) // 2
+        if len(chunk_sizes) % 2 == 0:
+            analysis["chunk_size_distribution"]["median"] = (chunk_sizes[median_index - 1] + chunk_sizes[median_index]) / 2
+        else:
+            analysis["chunk_size_distribution"]["median"] = chunk_sizes[median_index]
     
     return analysis
-
-def extract_entities_simple(chunks: List[Dict]) -> Dict[str, List[Dict]]:
-    """
-    Simple entity extraction from document chunks
-    
-    Args:
-        chunks: List of document chunks
-        
-    Returns:
-        Dictionary with extracted entities
-    """
-    # Initialize entities
-    entities = {
-        "events": [],
-        "actors": [],
-        "concepts": [],
-        "publications": [],
-        "locations": []
-    }
-    
-    # Extract entities from chunks
-    for chunk in chunks:
-        text = chunk["text"].lower()
-        
-        # Extract events (years followed by text)
-        import re
-        year_pattern = r'\b(19|20)\d{2}\b'
-        years = re.findall(year_pattern, text)
-        for year in years:
-            # Get context around the year
-            year_index = text.find(year)
-            start = max(0, year_index - 50)
-            end = min(len(text), year_index + 100)
-            context = text[start:end]
-            
-            # Try to extract a title
-            title = "Unknown Event"
-            if "conference" in context:
-                title = "Conference"
-            elif "publication" in context:
-                title = "Publication"
-            elif "established" in context or "founded" in context:
-                title = "Organization Founding"
-            elif "report" in context:
-                title = "Report"
-            
-            # Add to events
-            entities["events"].append({
-                "title": title,
-                "year": int(year),
-                "description": context,
-                "type": "Unknown",
-                "significance": 3
-            })
-        
-        # Extract actors (organizations)
-        org_indicators = ["university", "institute", "organization", "association", "society", "foundation"]
-        for indicator in org_indicators:
-            if indicator in text:
-                # Get context around the indicator
-                indicator_index = text.find(indicator)
-                start = max(0, indicator_index - 50)
-                end = min(len(text), indicator_index + 100)
-                context = text[start:end]
-                
-                # Try to extract a name
-                name = "Unknown Organization"
-                words = context.split()
-                indicator_word_index = -1
-                for i, word in enumerate(words):
-                    if indicator in word:
-                        indicator_word_index = i
-                        break
-                
-                if indicator_word_index > 0:
-                    # Look for capitalized words before the indicator
-                    name_words = []
-                    for i in range(indicator_word_index - 1, max(0, indicator_word_index - 5), -1):
-                        if words[i][0].isupper() if words[i] else False:
-                            name_words.insert(0, words[i])
-                        else:
-                            break
-                    
-                    if name_words:
-                        name_words.append(words[indicator_word_index])
-                        name = " ".join(name_words)
-                
-                # Add to actors
-                entities["actors"].append({
-                    "name": name,
-                    "type": "Institution",
-                    "description": context,
-                    "role": "Unknown"
-                })
-    
-    # Deduplicate entities
-    for entity_type in entities:
-        unique_entities = {}
-        for entity in entities[entity_type]:
-            if entity_type == "events":
-                key = f"{entity['title']}_{entity['year']}"
-            else:
-                key = entity["name"]
-            
-            if key not in unique_entities:
-                unique_entities[key] = entity
-        
-        entities[entity_type] = list(unique_entities.values())
-    
-    return entities
 
 def main():
     """Main function to extract text and metadata from a document"""
@@ -214,22 +109,42 @@ def main():
     parser.add_argument("--chunk-size", type=int, default=1000, help="Maximum number of tokens per chunk")
     parser.add_argument("--chunk-overlap", type=int, default=100, help="Number of overlapping tokens between chunks")
     parser.add_argument("--analyze", action="store_true", help="Analyze document chunks")
-    parser.add_argument("--extract-entities", action="store_true", help="Extract entities from document chunks")
     parser.add_argument("--export-markdown", action="store_true", help="Export document to Markdown")
+    parser.add_argument("--use-docling", action="store_true", help="Use Docling for extraction (better OCR support)")
+    parser.add_argument("--ocr", action="store_true", help="Enable OCR for scanned documents (requires --use-docling)")
+    parser.add_argument("--embed-model", default="sentence-transformers/all-MiniLM-L6-v2", 
+                       help="Embedding model for Docling chunking")
+    parser.add_argument("--filter-sections", action="store_true", 
+                       help="Filter out References and Index sections and save as *_core_chunks.json")
     args = parser.parse_args()
+    
+    # Validate arguments
+    if args.ocr and not args.use_docling:
+        logger.warning("OCR requires Docling. Adding --use-docling flag.")
+        args.use_docling = True
     
     try:
         # Create output directory if it doesn't exist
         os.makedirs(args.output_dir, exist_ok=True)
         
         # Initialize document extractor
-        extractor = DocumentExtractor(
-            chunk_size=args.chunk_size,
-            chunk_overlap=args.chunk_overlap
-        )
+        extractor_kwargs = {
+            "chunk_size": args.chunk_size,
+            "chunk_overlap": args.chunk_overlap
+        }
+        
+        # Add Docling-specific arguments
+        if args.use_docling:
+            extractor_kwargs["use_ocr"] = args.ocr
+            extractor_kwargs["embed_model"] = args.embed_model
+        
+        extractor = get_extractor(use_docling=args.use_docling, **extractor_kwargs)
         
         # Extract text and metadata from document
         logger.info(f"Extracting text and metadata from {args.source}")
+        if args.ocr:
+            logger.info("OCR enabled for scanned document processing")
+        
         result = extractor.extract_and_chunk(args.source)
         
         # Get base filename for outputs
@@ -238,11 +153,33 @@ def main():
         # Save chunks to JSON
         chunks_path = os.path.join(args.output_dir, f"{base_filename}_chunks.json")
         extractor.save_chunks_to_json(result["chunks"], chunks_path)
+        logger.info(f"Saved {len(result['chunks'])} chunks to {chunks_path}")
+        
+        # Filter sections if requested
+        if args.filter_sections:
+            exclude_sections = ["REFERENCES", "I NDEX"]
+            filtered_chunks = []
+            excluded_count = 0
+            
+            for chunk in result["chunks"]:
+                section_title = chunk.get("metadata", {}).get("section_title", "")
+                if section_title in exclude_sections:
+                    excluded_count += 1
+                    continue
+                filtered_chunks.append(chunk)
+            
+            # Save filtered chunks
+            core_chunks_path = os.path.join(args.output_dir, f"{base_filename}_core_chunks.json")
+            extractor.save_chunks_to_json(filtered_chunks, core_chunks_path)
+            logger.info(f"Filtered {len(result['chunks'])} chunks -> {len(filtered_chunks)} chunks")
+            logger.info(f"Excluded {excluded_count} chunks from sections: {exclude_sections}")
+            logger.info(f"Saved core chunks to {core_chunks_path}")
         
         # Save metadata to JSON
         metadata_path = os.path.join(args.output_dir, f"{base_filename}_metadata.json")
         with open(metadata_path, 'w', encoding='utf-8') as f:
-            json.dump(result["metadata"], f, indent=2)
+            json.dump(result["metadata"], f, indent=2, ensure_ascii=False)
+        logger.info(f"Saved metadata to {metadata_path}")
         
         # Export to Markdown if requested
         if args.export_markdown:
@@ -263,30 +200,27 @@ def main():
             logger.info(f"Saved analysis to {analysis_path}")
             
             # Print summary
-            logger.info(f"Document Summary:")
+            logger.info("Document Summary:")
             logger.info(f"  - Chunks: {analysis['chunk_count']}")
             logger.info(f"  - Total Tokens: {analysis['total_tokens']}")
             logger.info(f"  - Avg Tokens per Chunk: {analysis['avg_tokens_per_chunk']:.2f}")
+            logger.info(f"  - Token Range: {analysis['chunk_size_distribution']['min']} - {analysis['chunk_size_distribution']['max']}")
             logger.info(f"  - Sections: {len(analysis['section_distribution'])}")
-            logger.info(f"  - Potential Events: {len(analysis['potential_entities']['events'])}")
-            logger.info(f"  - Potential Actors: {len(analysis['potential_entities']['actors'])}")
-        
-        # Extract entities if requested
-        if args.extract_entities:
-            logger.info("Extracting entities from document chunks")
-            entities = extract_entities_simple(result["chunks"])
             
-            # Save entities to JSON
-            entities_path = os.path.join(args.output_dir, f"{base_filename}_entities.json")
-            with open(entities_path, 'w', encoding='utf-8') as f:
-                json.dump(entities, f, indent=2)
+            # Show section distribution
+            if analysis['section_distribution']:
+                logger.info("  - Section Distribution:")
+                for section, count in sorted(analysis['section_distribution'].items(), 
+                                           key=lambda x: x[1], reverse=True)[:5]:
+                    logger.info(f"    - {section}: {count} chunks")
+                if len(analysis['section_distribution']) > 5:
+                    logger.info(f"    - ... and {len(analysis['section_distribution']) - 5} more sections")
             
-            logger.info(f"Saved entities to {entities_path}")
-            
-            # Print summary
-            logger.info(f"Entity Extraction Summary:")
-            for entity_type, entity_list in entities.items():
-                logger.info(f"  - {entity_type.capitalize()}: {len(entity_list)}")
+            # Show page distribution summary
+            if analysis['page_distribution'] and len(analysis['page_distribution']) < 20:
+                logger.info("  - Page Distribution:")
+                for page_info, count in sorted(analysis['page_distribution'].items()):
+                    logger.info(f"    - {page_info}: {count} chunks")
         
         logger.info("Extraction complete")
         
