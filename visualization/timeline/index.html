@@ -455,9 +455,15 @@
                 .then(data => {
                     console.log("Loaded knowledge graph data:", data);
                     
-                    // Then try to load critic data
-                    fetch('../../data/critic_results/politics_of_ron_core_chunks_clean_critic_evaluation.json?v=' + new Date().getTime())
-                        .then(response => response.json())
+                    // Then try to load critic data from API endpoint
+                    fetch('/api/critic-data?v=' + new Date().getTime())
+                        .then(response => {
+                            if (response.ok) {
+                                return response.json();
+                            } else {
+                                throw new Error('Critic data not available');
+                            }
+                        })
                         .then(criticDataResponse => {
                             console.log("Loaded critic data successfully");
                             criticData = criticDataResponse;
