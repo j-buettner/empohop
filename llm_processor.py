@@ -14,146 +14,135 @@ from entity_resolver import resolve_entities, merge_entities, create_disambiguat
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+# Define context strings for prompts
+#CONTEXT_SENTENCE = "Analyze the following text from a book about mobilizations towards living in harmony with nature, specifically through legal actions, I.e. eco-jurisprudence."
+#CONTEXT_PHRASE = "eco-jurisprudence and living in harmony with nature"
+CONTEXT_SENTENCE = "Analyze the following text from a book about mobilizations towards living in harmony with nature, specifically through ecpnomic activities beyond GDP."
+CONTEXT_PHRASE = "beyond GDP and living in harmony with nature"
+
 # Define entity extraction prompts with supporting text
-EVENT_EXTRACTION_PROMPT = """
-Analyze the following text from a document about planetary health and identify any EVENTS mentioned.
+EVENT_EXTRACTION_PROMPT = f"""
+
+{CONTEXT_SENTENCE} Identify any EVENTS and PROCESSES mentioned.
 For each event, extract:
 1. Title (required)
-2. Year (required)
-3. Description (required)
-4. Type (Publication, Conference, Policy, Research, Movement, Organization, Other)
-5. Significance (1-5 scale)
-6. Start/end dates (if mentioned)
-7. Associated locations
-8. Key actors involved
-9. Related concepts
-10. Supporting text (required) - the exact excerpt from the text that supports this event extraction
+2. Year or period
+3. Description
+4. Type (Publication, Conference, Meeting, Policy, Research, Movement, Organization, Court decision, Other)
+5. Juridical significance, I.e. significance concerning recognizing the rights of nature (1-5 scale)
+6. Harmony significance, I.e. significance concerning living in harmony with nature (1-5 scale)
+7. Start/end dates (if mentioned)
+8. Associated locations
+9. Key actors involved
+10. Related concepts
+11. Supporting text (required) - the exact excerpt from the text that supports this event extraction
 
 Text to analyze:
-{text}
+{{text}}
 
 Respond in the following JSON format:
-{{
+{{{{
   "events": [
-    {{
+    {{{{
       "title": "Event title",
       "year": YYYY,
       "description": "Detailed description",
       "type": "Event type",
-      "significance": N,
-      "dates": {{"start": "YYYY-MM-DD", "end": "YYYY-MM-DD"}},
+      "juridical significance": N,
+      "harmony significance": N,
+      "dates": {{{{"start": "YYYY-MM-DD", "end": "YYYY-MM-DD"}}}},
       "locations": ["Location names"],
       "actors": ["Actor names"],
       "concepts": ["Concept names"],
       "supporting_text": "The exact text excerpt that mentions and supports this event extraction"
-    }}
+    }}}}
   ]
-}}
+}}}}
 """
 
-ACTOR_EXTRACTION_PROMPT = """
-Analyze the following text from a document about planetary health and identify any ACTORS mentioned.
-Actors can be individuals, organizations, institutions, or other entities that participate in the planetary health movement.
+ACTOR_EXTRACTION_PROMPT = f"""
+{CONTEXT_SENTENCE} Actors can be individuals, organizations, institutions, or other entities that participate in the planetary health movement.
+
 For each actor, extract:
 1. Name (required)
-2. Type (Individual, Institution, Government, NGO, Coalition, Other)
+2. Type (Individual, Organizations, Government, NGO, Coalition, Indigenous and local communities, Other)
 3. Description
-4. Role in planetary health
+4. Role in {CONTEXT_PHRASE} 
 5. Country/location
-6. Expertise/fields
-7. Affiliations
-8. Supporting text (required) - the exact excerpt from the text that mentions this actor
+6. Supporting text (required) - the exact excerpt from the text that mentions this actor
 
 Text to analyze:
-{text}
+{{text}}
 
 Respond in the following JSON format:
-{{
+{{{{
   "actors": [
-    {{
+    {{{{
       "name": "Actor name",
       "type": "Actor type",
       "description": "Description of the actor",
-      "role": "Role in planetary health",
+      "role": "Role in eco-jurisprudence and living in harmony with nature",
       "country": "Country code or name",
-      "expertise": ["Field 1", "Field 2"],
-      "affiliations": ["Affiliated organization 1", "Affiliated organization 2"],
       "supporting_text": "The exact text excerpt that mentions this actor"
-    }}
+    }}}}
   ]
-}}
+}}}}
 """
 
-CONCEPT_EXTRACTION_PROMPT = """
-Analyze the following text from a document about planetary health and identify any CONCEPTS mentioned.
-Concepts can be theories, ideas, frameworks, or terms relevant to planetary health.
+CONCEPT_EXTRACTION_PROMPT = f"""
+{CONTEXT_SENTENCE} Identify any CONCEPTS mentioned.
+Concepts can be theories, ideas, frameworks, or terms relevant to {CONTEXT_PHRASE}.
 For each concept, extract:
 1. Name (required)
 2. Definition/explanation (required)
-3. Alternative names/synonyms
-4. Related domains/fields
-5. Significance (1-5 scale)
-6. Related concepts
-7. Key proponents
-8. Supporting text (required) - the exact excerpt from the text that mentions this concept
+3. Proponents
+4. Supporting text (required) - the exact excerpt from the text that mentions this concept
 
 Text to analyze:
-{text}
+{{text}}
 
 Respond in the following JSON format:
-{{
+{{{{
   "concepts": [
-    {{
+    {{{{
       "name": "Concept name",
       "definition": "Definition or explanation",
-      "alternative_names": ["Synonym 1", "Synonym 2"],
-      "domain": ["Field 1", "Field 2"],
-      "significance": N,
-      "related_concepts": ["Related concept 1", "Related concept 2"],
       "key_proponents": ["Proponent 1", "Proponent 2"],
       "supporting_text": "The exact text excerpt that mentions this concept"
-    }}
+    }}}}
   ]
-}}
+}}}}
 """
 
-PUBLICATION_EXTRACTION_PROMPT = """
-Analyze the following text from a document about planetary health and identify any PUBLICATIONS mentioned.
-Publications can be books, articles, reports, or other published materials.
+EXPRESSION_EXTRACTION_PROMPT = f"""
+{CONTEXT_SENTENCE} Identify any EXPRESSION mentioned. Such expression can for instance be important publications, speeches, material symbols, cultural practices, legal documents, rules, regulations.
+
 For each publication, extract:
 1. Title (required)
-2. Type (Journal Article, Book, Report, Policy Document, Other)
+2. Type
 3. Year (required if mentioned)
-4. Authors
-5. Publisher/journal
-6. DOI/ISBN (if mentioned)
-7. Abstract/summary
-8. Significance (1-5 scale)
-9. Supporting text (required) - the exact excerpt from the text that mentions this publication
+4. Related actors
+5. Supporting text (required) - the exact excerpt from the text that mentions this publication
 
 Text to analyze:
-{text}
+{{text}}
 
 Respond in the following JSON format:
-{{
+{{{{
   "publications": [
-    {{
-      "title": "Publication title",
-      "type": "Publication type",
+    {{{{
+      "title": "Expression title",
+      "type": "Expression type",
       "year": YYYY,
-      "authors": ["Author 1", "Author 2"],
-      "publisher": "Publisher or journal name",
-      "identifier": "DOI or ISBN",
-      "abstract": "Brief summary",
-      "significance": N,
+      "actors": ["Actor 1", "Actor 2"],
       "supporting_text": "The exact text excerpt that mentions this publication"
-    }}
+    }}}}
   ]
-}}
+}}}}
 """
 
-LOCATION_EXTRACTION_PROMPT = """
-Analyze the following text from a document about planetary health and identify any LOCATIONS mentioned.
+LOCATION_EXTRACTION_PROMPT = f"""
+{CONTEXT_SENTENCE} Identify any LOCATIONS mentioned.
 Locations can be countries, cities, regions, or specific places relevant to planetary health events.
 For each location, extract:
 1. Name (required)
@@ -164,21 +153,21 @@ For each location, extract:
 6. Supporting text (required) - the exact excerpt from the text that mentions this location
 
 Text to analyze:
-{text}
+{{text}}
 
 Respond in the following JSON format:
-{{
+{{{{
   "locations": [
-    {{
+    {{{{
       "name": "Location name",
       "type": "Location type",
       "country": "Country name or code",
       "description": "Description or context",
       "significance": "Why this location is significant to planetary health",
       "supporting_text": "The exact text excerpt that mentions this location"
-    }}
+    }}}}
   ]
-}}
+}}}}
 """
 
 # Define entity types and their corresponding prompts
@@ -186,7 +175,7 @@ ENTITY_PROMPTS = {
     "event": EVENT_EXTRACTION_PROMPT,
     "actor": ACTOR_EXTRACTION_PROMPT,
     "concept": CONCEPT_EXTRACTION_PROMPT,
-    "publication": PUBLICATION_EXTRACTION_PROMPT,
+    "expression": EXPRESSION_EXTRACTION_PROMPT,
     "location": LOCATION_EXTRACTION_PROMPT
 }
 
@@ -250,9 +239,9 @@ class LLMProcessor:
         try:
             # Call LLM API
             response = self.llm_client.messages.create(
-                model="claude-3-5-sonnet-20241022",
+                model="claude-sonnet-4-20250514",
                 max_tokens=8000,
-                system="You are an expert in extracting structured information about planetary health from academic texts. Always include supporting text that justifies each extraction.",
+                system="You are an expert in extracting structured information about eco-eco-jurisprudence and living in harmony with nature from academic texts. Always include supporting text that justifies each extraction.",
                 messages=[
                     {"role": "user", "content": prompt}
                 ],

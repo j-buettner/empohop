@@ -8,39 +8,47 @@ import time
 # Configure logging
 logger = logging.getLogger(__name__)
 
+# Define context strings for prompts
+#CONTEXT_SENTENCE = "Analyze the following text from a book about mobilizations towards living in harmony with nature, specifically through legal actions, I.e. eco-jurisprudence."
+#CONTEXT_PHRASE = "eco-jurisprudence and living in harmony with nature"
+CONTEXT_SENTENCE = "Analyze the following text from a book about mobilizations towards living in harmony with nature, specifically through ecpnomic activities beyond GDP."
+CONTEXT_PHRASE = "beyond GDP and living in harmony with nature"
 # Relationship extraction prompt
-RELATIONSHIP_EXTRACTION_PROMPT = """
-Analyze the following text and identify relationships between entities in the planetary health domain.
-Focus on these relationship types:
+RELATIONSHIP_EXTRACTION_PROMPT = f"""
+{CONTEXT_SENTENCE} Identify RELATIONSHIPS between entities in the domain of {CONTEXT_PHRASE}.
+Focus on these relationship between the following tives of entities: EVENTS ((Publication, Conference, Meeting, Policy, Research, Movement, Organization, Court decision, etc.), ACTORS (Individual, Organizations, Government, NGO, Coalition, Indigenous and local communities, etc.), LOCATIONS, EXPRESSIONS ( important publications, speeches, material symbols, cultural practices, legal documents, rules, regulations, etc.), CONCEPTS (theories, ideas, frameworks, or terms relevant to {CONTEXT_PHRASE})
+For insatance
 - Event influences Event
+- Event creates Expression
+- Actor creates Expression
 - Actor participates in Event
 - Event introduces Concept
-- Publication cites Publication
+- Expression refers to Expression
 - Actor develops Concept
 - Actor collaborates with Actor
 - Concept relates to Concept
 - Event takes place at Location
+- Expression takes place or relates to Location
 
 For each relationship, include supporting text that evidences this relationship.
 
 Text to analyze:
-{text}
+{{text}}
 
 Respond in the following JSON format:
-{{
+{{{{
   "relationships": [
-    {{
+    {{{{
       "source": "Source entity name",
       "source_type": "Event|Actor|Concept|Publication|Location",
       "target": "Target entity name",
       "target_type": "Event|Actor|Concept|Publication|Location",
       "relationship_type": "Influences|Participates|Develops|etc.",
       "description": "Description of the relationship",
-      "strength": 1-5,
       "supporting_text": "The exact text excerpt that supports this relationship"
-    }}
+    }}}}
   ]
-}}
+}}}}
 """
 
 class RelationshipProcessor:
@@ -76,7 +84,7 @@ class RelationshipProcessor:
             response = self.llm_client.messages.create(
                 model="claude-sonnet-4-20250514",
                 max_tokens=8000,
-                system="You are an expert in extracting relationships between entities in planetary health texts.",
+                system="You are an expert in extracting structured information about eco-eco-jurisprudence and living in harmony with nature from academic texts.",
                 messages=[
                     {"role": "user", "content": prompt}
                 ],

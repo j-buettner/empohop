@@ -232,12 +232,46 @@ class DoclingExtractor:
         except:
             pass
         
-        # Add text statistics
+        # Try to extract title from document content
         full_text = doc.export_to_markdown()
+        extracted_title = self._extract_title_from_content(full_text)
+        if extracted_title:
+            metadata["title"] = extracted_title
+        
+        # Add text statistics
         metadata["text_length"] = len(full_text)
         metadata["word_count"] = len(full_text.split())
         
         return metadata
+    
+    def _extract_title_from_content(self, text: str) -> Optional[str]:
+        """Extract title from document content"""
+        lines = text.split('\n')
+        
+        # Look for the first substantial heading or title
+        for line in lines[:20]:  # Check first 20 lines
+            line = line.strip()
+            if not line:
+                continue
+                
+            # Remove markdown formatting and clean up
+            clean_line = re.sub(r'^#+\s*', '', line)  # Remove markdown headers
+            clean_line = re.sub(r'\*\*([^*]+)\*\*', r'\1', clean_line)  # Remove bold
+            clean_line = re.sub(r'\*([^*]+)\*', r'\1', clean_line)  # Remove italic
+            clean_line = clean_line.strip()
+            
+            # Skip very short lines, common headers, or lines with special characters
+            if (len(clean_line) < 10 or 
+                clean_line.lower() in ['contents', 'table of contents', 'index', 'preface', 'abstract'] or
+                clean_line.startswith('<!--') or
+                len(clean_line.split()) < 3):
+                continue
+            
+            # If it looks like a title (reasonable length, not too long)
+            if 10 <= len(clean_line) <= 200 and not clean_line.endswith('.'):
+                return clean_line
+        
+        return None
     
     def _get_file_type(self, source: str) -> str:
         """Determine file type from source"""
@@ -351,6 +385,8 @@ class DoclingExtractor:
         current_chunk = ""
         current_tokens = 0
         text_position = 0
+        current_section_title = None
+        section_start_chunk_index = 0
         
         for paragraph in paragraphs:
             if not paragraph.strip():
@@ -366,16 +402,25 @@ class DoclingExtractor:
             else:
                 paragraph_tokens = len(paragraph.split()) * 1.3
             
+            # Find the section for this paragraph
+            paragraph_section = self._find_section_for_position(text_position, section_map)
+            
             # Check if adding this paragraph would exceed chunk size
             if current_tokens + paragraph_tokens > self.chunk_size and current_chunk:
                 # Find the section for this chunk
                 section_title = self._find_section_for_position(text_position - len(current_chunk), section_map)
                 
+                # Determine if this chunk was split due to max tokens within the same section
+                is_max_token_chunked = (current_section_title == paragraph_section and 
+                                      current_section_title is not None)
+                
                 chunk_metadata = {
+                    "chunk_number": len(chunks) + 1,  # Add chunk number
                     "section_title": section_title,
                     "source": metadata["source"],
                     "title": metadata["title"],
-                    "type": metadata["type"]
+                    "type": metadata["type"],
+                    "is_max_token_chunked": is_max_token_chunked
                 }
                 
                 chunks.append({
@@ -385,11 +430,13 @@ class DoclingExtractor:
                 
                 current_chunk = paragraph
                 current_tokens = paragraph_tokens
+                current_section_title = paragraph_section
             else:
                 if current_chunk:
                     current_chunk += "\n\n" + paragraph
                 else:
                     current_chunk = paragraph
+                    current_section_title = paragraph_section
                 current_tokens += paragraph_tokens
             
             text_position += len(paragraph) + 2  # +2 for \n\n
@@ -399,10 +446,12 @@ class DoclingExtractor:
             section_title = self._find_section_for_position(text_position - len(current_chunk), section_map)
             
             chunk_metadata = {
+                "chunk_number": len(chunks) + 1,  # Add chunk number
                 "section_title": section_title,
                 "source": metadata["source"],
                 "title": metadata["title"],
-                "type": metadata["type"]
+                "type": metadata["type"],
+                "is_max_token_chunked": False  # Last chunk is never split
             }
             
             chunks.append({
@@ -463,11 +512,14 @@ class DoclingExtractor:
             paragraph_tokens = len(paragraph.split()) * 1.3  # Rough token estimate
             
             if current_tokens + paragraph_tokens > self.chunk_size and current_chunk:
+                # In fallback mode, we consider chunks as max-token chunked since we're splitting by size
                 chunk_metadata = {
+                    "chunk_number": len(chunks) + 1,  # Add chunk number
                     "section_title": "Content",
                     "source": metadata["source"],
                     "title": metadata["title"],
-                    "type": metadata["type"]
+                    "type": metadata["type"],
+                    "is_max_token_chunked": True
                 }
                 
                 chunks.append({
@@ -486,10 +538,12 @@ class DoclingExtractor:
         # Add last chunk
         if current_chunk:
             chunk_metadata = {
+                "chunk_number": len(chunks) + 1,  # Add chunk number
                 "section_title": "Content",
                 "source": metadata["source"],
                 "title": metadata["title"],
-                "type": metadata["type"]
+                "type": metadata["type"],
+                "is_max_token_chunked": False  # Last chunk is never split
             }
             
             chunks.append({
@@ -502,7 +556,10 @@ class DoclingExtractor:
     def export_to_markdown(self, document: Dict[str, Any], output_path: str) -> str:
         """Export a document to Markdown"""
         try:
-            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            # Only create directories if there's a directory path
+            dir_path = os.path.dirname(output_path)
+            if dir_path:
+                os.makedirs(dir_path, exist_ok=True)
             
             markdown_content = document["text"]
             
@@ -529,7 +586,10 @@ class DoclingExtractor:
     def save_chunks_to_json(self, chunks: List[Dict[str, Any]], output_path: str) -> str:
         """Save chunks to a JSON file"""
         try:
-            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            # Only create directories if there's a directory path
+            dir_path = os.path.dirname(output_path)
+            if dir_path:
+                os.makedirs(dir_path, exist_ok=True)
             
             with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(chunks, f, indent=2, ensure_ascii=False)
@@ -539,6 +599,104 @@ class DoclingExtractor:
             
         except Exception as e:
             logger.error(f"Error saving chunks to JSON: {str(e)}")
+            raise
+    
+    def export_to_markdown_with_chunks(self, document: Dict[str, Any], chunks: List[Dict[str, Any]], output_path: str) -> str:
+        """
+        Export a document to Markdown with chunk break indicators
+        
+        Args:
+            document: The document dictionary containing text and metadata
+            chunks: List of chunks with their text and metadata
+            output_path: Path where to save the markdown file
+            
+        Returns:
+            Path to the saved markdown file
+        """
+        try:
+            # Only create directories if there's a directory path
+            dir_path = os.path.dirname(output_path)
+            if dir_path:
+                os.makedirs(dir_path, exist_ok=True)
+            
+            # Start with metadata header
+            markdown_content = f"# {document['metadata']['title']}\n\n"
+            markdown_content += "## Metadata\n\n"
+            for key, value in document["metadata"].items():
+                if key != "title":
+                    markdown_content += f"- **{key}**: {value}\n"
+            markdown_content += "\n---\n\n"
+            
+            # Add chunk summary
+            total_chunks = len(chunks)
+            max_token_chunks = sum(1 for chunk in chunks if chunk['metadata'].get('is_max_token_chunked', False))
+            markdown_content += f"## Chunking Summary\n\n"
+            markdown_content += f"- **Total chunks**: {total_chunks}\n"
+            markdown_content += f"- **Max-token chunked sections**: {max_token_chunks}\n"
+            markdown_content += f"- **Natural section breaks**: {total_chunks - max_token_chunks}\n\n"
+            markdown_content += "---\n\n"
+            
+            # Build the content with chunk indicators
+            full_text = document["text"]
+            
+            # Create a mapping of chunk text to chunk numbers and metadata
+            chunk_positions = []
+            for i, chunk in enumerate(chunks):
+                chunk_text = chunk["text"].strip()
+                # Find the position of this chunk in the full text
+                start_pos = full_text.find(chunk_text)
+                if start_pos != -1:
+                    chunk_positions.append({
+                        'start': start_pos,
+                        'end': start_pos + len(chunk_text),
+                        'chunk_num': i + 1,
+                        'is_max_token_chunked': chunk['metadata'].get('is_max_token_chunked', False),
+                        'section_title': chunk['metadata'].get('section_title', 'Unknown')
+                    })
+            
+            # Sort by position
+            chunk_positions.sort(key=lambda x: x['start'])
+            
+            # Build the final markdown with chunk indicators
+            result_content = ""
+            last_pos = 0
+            
+            for chunk_info in chunk_positions:
+                # Add any text before this chunk (shouldn't happen in normal cases)
+                if chunk_info['start'] > last_pos:
+                    result_content += full_text[last_pos:chunk_info['start']]
+                
+                # Add chunk indicator
+                chunk_indicator = f"\n\n{'#' * 12} CHUNK {chunk_info['chunk_num']} {'#' * 12}\n"
+                chunk_indicator += f"**Section**: {chunk_info['section_title']}\n"
+                chunk_indicator += f"**Max-token chunked**: {'Yes' if chunk_info['is_max_token_chunked'] else 'No'}\n"
+                chunk_indicator += f"{'#' * (24 + len(str(chunk_info['chunk_num'])))}\n\n"
+                
+                result_content += chunk_indicator
+                
+                # Add the chunk content
+                chunk_content = full_text[chunk_info['start']:chunk_info['end']]
+                result_content += chunk_content
+                
+                last_pos = chunk_info['end']
+            
+            # Add any remaining text
+            if last_pos < len(full_text):
+                result_content += full_text[last_pos:]
+            
+            # Combine header and content
+            final_markdown = markdown_content + result_content
+            
+            # Write to file
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(final_markdown)
+            
+            logger.info(f"Exported document with chunk indicators to Markdown: {output_path}")
+            logger.info(f"Total chunks: {total_chunks}, Max-token chunked: {max_token_chunks}")
+            return output_path
+            
+        except Exception as e:
+            logger.error(f"Error exporting to Markdown with chunks: {str(e)}")
             raise
 
 

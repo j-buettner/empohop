@@ -55,7 +55,12 @@ def analyze_chunks(chunks: List[Dict]) -> Dict[str, Any]:
             "max": 0,
             "median": 0
         },
-        "page_distribution": {}
+        "page_distribution": {},
+        "chunking_strategy": {
+            "max_token_chunked": 0,
+            "natural_section_breaks": 0,
+            "max_token_percentage": 0.0
+        }
     }
     
     chunk_sizes = []
@@ -66,6 +71,13 @@ def analyze_chunks(chunks: List[Dict]) -> Dict[str, Any]:
         token_count = len(chunk["text"].split())
         analysis["total_tokens"] += token_count
         chunk_sizes.append(token_count)
+        
+        # Track chunking strategy (new feature)
+        is_max_token_chunked = chunk["metadata"].get("is_max_token_chunked", False)
+        if is_max_token_chunked:
+            analysis["chunking_strategy"]["max_token_chunked"] += 1
+        else:
+            analysis["chunking_strategy"]["natural_section_breaks"] += 1
         
         # Track section distribution
         section_title = chunk["metadata"].get("section_title", "Unknown")
@@ -97,6 +109,11 @@ def analyze_chunks(chunks: List[Dict]) -> Dict[str, Any]:
             analysis["chunk_size_distribution"]["median"] = (chunk_sizes[median_index - 1] + chunk_sizes[median_index]) / 2
         else:
             analysis["chunk_size_distribution"]["median"] = chunk_sizes[median_index]
+        
+        # Calculate chunking strategy percentage
+        total_chunks = analysis["chunking_strategy"]["max_token_chunked"] + analysis["chunking_strategy"]["natural_section_breaks"]
+        if total_chunks > 0:
+            analysis["chunking_strategy"]["max_token_percentage"] = (analysis["chunking_strategy"]["max_token_chunked"] / total_chunks) * 100
     
     return analysis
 
@@ -116,6 +133,8 @@ def main():
                        help="Embedding model for Docling chunking")
     parser.add_argument("--filter-sections", action="store_true", 
                        help="Filter out References and Index sections and save as *_core_chunks.json")
+    parser.add_argument("--export-markdown-with-chunks", action="store_true", 
+                       help="Export document to Markdown with chunk break indicators (requires --use-docling)")
     args = parser.parse_args()
     
     # Validate arguments
@@ -187,6 +206,15 @@ def main():
             extractor.export_to_markdown(result["document"], markdown_path)
             logger.info(f"Exported document to Markdown: {markdown_path}")
         
+        # Export to Markdown with chunk indicators if requested (Docling only)
+        if args.export_markdown_with_chunks:
+            if args.use_docling and hasattr(extractor, 'export_to_markdown_with_chunks'):
+                chunks_markdown_path = os.path.join(args.output_dir, f"{base_filename}_with_chunks.md")
+                extractor.export_to_markdown_with_chunks(result["document"], result["chunks"], chunks_markdown_path)
+                logger.info(f"Exported document with chunk indicators to Markdown: {chunks_markdown_path}")
+            else:
+                logger.warning("Markdown with chunk indicators requires --use-docling flag and Docling extractor")
+        
         # Analyze chunks if requested
         if args.analyze:
             logger.info("Analyzing document chunks")
@@ -206,6 +234,13 @@ def main():
             logger.info(f"  - Avg Tokens per Chunk: {analysis['avg_tokens_per_chunk']:.2f}")
             logger.info(f"  - Token Range: {analysis['chunk_size_distribution']['min']} - {analysis['chunk_size_distribution']['max']}")
             logger.info(f"  - Sections: {len(analysis['section_distribution'])}")
+            
+            # Show chunking strategy analysis (new feature)
+            if 'chunking_strategy' in analysis:
+                logger.info(f"  - Chunking Strategy:")
+                logger.info(f"    - Max-token chunked: {analysis['chunking_strategy']['max_token_chunked']}")
+                logger.info(f"    - Natural section breaks: {analysis['chunking_strategy']['natural_section_breaks']}")
+                logger.info(f"    - Max-token percentage: {analysis['chunking_strategy']['max_token_percentage']:.1f}%")
             
             # Show section distribution
             if analysis['section_distribution']:
