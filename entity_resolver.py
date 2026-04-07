@@ -11,6 +11,7 @@ import time
 from typing import Dict, List, Tuple, Set, Optional
 from difflib import SequenceMatcher
 from collections import defaultdict
+from config import SIMILARITY_THRESHOLDS
 
 logger = logging.getLogger(__name__)
 
@@ -48,14 +49,8 @@ class EntityResolver:
             "Prof": "Professor"
         }
         
-        # Entity type specific settings
-        self.similarity_thresholds = {
-            "event": 0.85,      # Higher threshold for events (title + year matching)
-            "actor": 0.80,      # Medium threshold for actors
-            "concept": 0.90,    # High threshold for concepts (avoid merging similar but distinct concepts)
-            "publication": 0.85, # High threshold for publications
-            "location": 0.75    # Lower threshold for locations (handle variations)
-        }
+        # Entity type specific settings (values defined in config.py)
+        self.similarity_thresholds = SIMILARITY_THRESHOLDS
         
         # Context keywords for disambiguation
         self.context_keywords = {

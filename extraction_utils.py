@@ -3,8 +3,90 @@ import json
 import logging
 from typing import Dict, List, Optional, Any
 import pandas as pd
+from config import SCHEMA_DIR
 
 logger = logging.getLogger(__name__)
+
+# ---------------------------------------------------------------------------
+# Schema validation helpers
+# ---------------------------------------------------------------------------
+
+# Map pipeline entity-type keys to their JSON schema files.
+# "expression" is extracted under the key "publications" by the LLM prompts.
+_SCHEMA_FILE_MAP = {
+    "event": "event.json",
+    "actor": "actor.json",
+    "concept": "concept.json",
+    "publication": "publication.json",
+    "location": "location.json",
+    "relationship": "relationship.json",
+}
+
+_schema_cache: Dict[str, Dict] = {}
+
+
+def _load_schema(entity_type: str) -> Optional[Dict]:
+    """Load and cache a JSON schema for the given entity type."""
+    if entity_type in _schema_cache:
+        return _schema_cache[entity_type]
+    filename = _SCHEMA_FILE_MAP.get(entity_type)
+    if not filename:
+        return None
+    path = os.path.join(SCHEMA_DIR, filename)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            schema = json.load(f)
+        _schema_cache[entity_type] = schema
+        return schema
+    except Exception as e:
+        logger.warning(f"Could not load schema for '{entity_type}' from {path}: {e}")
+        return None
+
+
+def validate_extracted_entities(
+    entity_type: str,
+    entities: List[Dict],
+) -> List[Dict]:
+    """
+    Soft-validate a list of extracted entities against the JSON schema's
+    *required* fields only.  Invalid entities are logged as warnings and
+    returned unchanged so they stay in the pipeline for human review.
+
+    Args:
+        entity_type: One of "event", "actor", "concept", "publication", "location".
+        entities: The list of entity dicts returned by the LLM.
+
+    Returns:
+        The original list (unmodified — validation is advisory only).
+    """
+    schema = _load_schema(entity_type)
+    if schema is None:
+        return entities  # No schema available — skip silently
+
+    required_fields = schema.get("required", [])
+    if not required_fields:
+        return entities
+
+    # "id" is always assigned by the pipeline after extraction; skip it here.
+    check_fields = [f for f in required_fields if f != "id"]
+
+    invalid_count = 0
+    for i, entity in enumerate(entities):
+        missing = [f for f in check_fields if f not in entity or entity[f] is None]
+        if missing:
+            name = entity.get("title") or entity.get("name") or f"index {i}"
+            logger.warning(
+                f"[schema] {entity_type} '{name}' is missing required fields: {missing}"
+            )
+            invalid_count += 1
+
+    if invalid_count:
+        logger.warning(
+            f"[schema] {invalid_count}/{len(entities)} extracted {entity_type}(s) "
+            f"are missing required fields — check warnings above."
+        )
+
+    return entities
 
 def analyze_chunks(chunks: List[Dict]) -> Dict[str, Any]:
     """

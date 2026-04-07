@@ -229,9 +229,9 @@ class DoclingExtractor:
                     metadata["author"] = doc_meta.author
                 if hasattr(doc_meta, 'pages'):
                     metadata["pages"] = doc_meta.pages
-        except:
-            pass
-        
+        except Exception as e:
+            logger.debug(f"Could not read document metadata fields: {e}")
+
         # Try to extract title from document content
         full_text = doc.export_to_markdown()
         extracted_title = self._extract_title_from_content(full_text)
@@ -346,7 +346,8 @@ class DoclingExtractor:
                     "page_number": 1,
                     "text": doc.export_to_markdown()
                 })
-        except:
+        except Exception as e:
+            logger.warning(f"Could not extract page data: {e}")
             pages.append({
                 "page_number": 1,
                 "text": doc.export_to_markdown()
@@ -397,7 +398,7 @@ class DoclingExtractor:
             if self.tokenizer:
                 try:
                     paragraph_tokens = len(self.tokenizer.encode(paragraph))
-                except:
+                except Exception:
                     paragraph_tokens = len(paragraph.split()) * 1.3
             else:
                 paragraph_tokens = len(paragraph.split()) * 1.3

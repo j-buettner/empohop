@@ -10,6 +10,7 @@ import os
 import sys
 from pathlib import Path
 from critic import KnowledgeGraphCritic, save_critic_results
+from config import DEFAULT_MODEL
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -131,9 +132,9 @@ Examples:
     )
     
     parser.add_argument(
-        "--critic-model", 
-        default="claude-sonnet-4-20250514",
-        help="LLM model to use for critic evaluation (default: claude-sonnet-4-20250514)"
+        "--critic-model",
+        default=DEFAULT_MODEL,
+        help=f"LLM model to use for critic evaluation (default: {DEFAULT_MODEL})"
     )
     
     parser.add_argument(

@@ -9,6 +9,7 @@ import uuid
 import webbrowser
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import urllib.parse
+from config import DEFAULT_KG_FILE_REVIEW
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -104,8 +105,8 @@ class ReviewTask:
             Dictionary containing the entity data
         """
         try:
-            # Path to the knowledge graph file
-            kg_file = "data/processed/book_9780262366601-compressed_knowledge_graph.json"
+            # Path to the knowledge graph file (configured in config.py / KG_FILE_REVIEW env var)
+            kg_file = DEFAULT_KG_FILE_REVIEW
             
             # Load the knowledge graph data
             with open(kg_file, 'r', encoding='utf-8') as f:

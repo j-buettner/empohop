@@ -9,16 +9,12 @@ import time
 import re
 from relationship_processor import RelationshipProcessor
 from entity_resolver import resolve_entities, merge_entities, create_disambiguation_report, EXAMPLE_MANUAL_MAPPINGS
+from config import DEFAULT_MODEL, MAX_TOKENS, CONTEXT_SENTENCE, CONTEXT_PHRASE
+from extraction_utils import validate_extracted_entities
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
-
-# Define context strings for prompts
-#CONTEXT_SENTENCE = "Analyze the following text from a book about mobilizations towards living in harmony with nature, specifically through legal actions, I.e. eco-jurisprudence."
-#CONTEXT_PHRASE = "eco-jurisprudence and living in harmony with nature"
-CONTEXT_SENTENCE = "Analyze the following text from a book about mobilizations towards living in harmony with nature, specifically through ecpnomic activities beyond GDP."
-CONTEXT_PHRASE = "beyond GDP and living in harmony with nature"
 
 # Define entity extraction prompts with supporting text
 EVENT_EXTRACTION_PROMPT = f"""
@@ -210,24 +206,19 @@ class LLMProcessor:
         """
         # Format prompt with chunk text, ensuring proper Unicode handling
         try:
-            # Clean the text to handle Unicode characters properly
+            # Normalise typographic Unicode to their plain equivalents so the
+            # LLM prompt is clean, but preserve all other Unicode (accented
+            # characters, CJK, etc.) — the Claude API handles UTF-8 natively.
             chunk_text = chunk["text"]
             if isinstance(chunk_text, str):
-                # Replace problematic Unicode characters with ASCII equivalents
                 chunk_text = chunk_text.replace('\u201c', '"').replace('\u201d', '"')
                 chunk_text = chunk_text.replace('\u2018', "'").replace('\u2019', "'")
                 chunk_text = chunk_text.replace('\u2013', '-').replace('\u2014', '--')
-                chunk_text = chunk_text.replace('\u00a0', ' ')  # Non-breaking space
+                chunk_text = chunk_text.replace('\u00a0', ' ')   # Non-breaking space
                 chunk_text = chunk_text.replace('\u2026', '...')  # Ellipsis
-                chunk_text = chunk_text.replace('\u00ad', '')  # Soft hyphen
-                chunk_text = chunk_text.replace('\u200b', '')  # Zero-width space
-                chunk_text = chunk_text.replace('\u00a9', '(c)')  # Copyright
-                chunk_text = chunk_text.replace('\u00ae', '(R)')  # Registered
-                chunk_text = chunk_text.replace('\u2122', 'TM')  # Trademark
-                
-                # Remove any remaining non-ASCII characters
-                chunk_text = chunk_text.encode('ascii', 'ignore').decode('ascii')
-            
+                chunk_text = chunk_text.replace('\u00ad', '')     # Soft hyphen
+                chunk_text = chunk_text.replace('\u200b', '')     # Zero-width space
+
             prompt = prompt_template.format(text=chunk_text)
         except KeyError as e:
             logger.error(f"Error formatting prompt: {str(e)}")
@@ -239,9 +230,9 @@ class LLMProcessor:
         try:
             # Call LLM API
             response = self.llm_client.messages.create(
-                model="claude-sonnet-4-20250514",
-                max_tokens=8000,
-                system="You are an expert in extracting structured information about eco-eco-jurisprudence and living in harmony with nature from academic texts. Always include supporting text that justifies each extraction.",
+                model=DEFAULT_MODEL,
+                max_tokens=MAX_TOKENS,
+                system="You are an expert in extracting structured information about eco-jurisprudence and living in harmony with nature from academic texts. Always include supporting text that justifies each extraction.",
                 messages=[
                     {"role": "user", "content": prompt}
                 ],
@@ -277,13 +268,16 @@ class LLMProcessor:
                 # Parse the JSON
                 result = json.loads(content)
                 
-                # Add fallback supporting text for any entities missing it
+                # Add fallback supporting text and soft-validate against schemas
                 for entity_type, entities in result.items():
                     if isinstance(entities, list):
                         for entity in entities:
                             if isinstance(entity, dict) and not entity.get("supporting_text"):
                                 entity["supporting_text"] = self._find_supporting_text(entity, entity_type, chunk["text"])
-                
+                        # Strip trailing 's' to get the singular type key used in schemas
+                        singular = entity_type.rstrip("s")
+                        validate_extracted_entities(singular, entities)
+
                 return result
             except json.JSONDecodeError as e:
                 logger.warning(f"Failed to parse LLM response as JSON: {str(e)}")
@@ -308,12 +302,7 @@ class LLMProcessor:
                     return {"error": "Failed to parse LLM response", "raw_response": content[:500] + "..." if len(content) > 500 else content}
                 
         except Exception as e:
-            # Handle Unicode issues in error messages
             error_msg = str(e)
-            try:
-                error_msg = error_msg.encode('ascii', 'ignore').decode('ascii')
-            except:
-                error_msg = "LLM API error (encoding issue)"
             logger.error(f"Error calling LLM API: {error_msg}")
             return {"error": error_msg}
     

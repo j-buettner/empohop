@@ -4,15 +4,10 @@ import re
 import uuid
 from typing import Dict, List, Optional, Any
 import time
+from config import DEFAULT_MODEL, MAX_TOKENS, CONTEXT_SENTENCE, CONTEXT_PHRASE
 
 # Configure logging
 logger = logging.getLogger(__name__)
-
-# Define context strings for prompts
-#CONTEXT_SENTENCE = "Analyze the following text from a book about mobilizations towards living in harmony with nature, specifically through legal actions, I.e. eco-jurisprudence."
-#CONTEXT_PHRASE = "eco-jurisprudence and living in harmony with nature"
-CONTEXT_SENTENCE = "Analyze the following text from a book about mobilizations towards living in harmony with nature, specifically through ecpnomic activities beyond GDP."
-CONTEXT_PHRASE = "beyond GDP and living in harmony with nature"
 # Relationship extraction prompt
 RELATIONSHIP_EXTRACTION_PROMPT = f"""
 {CONTEXT_SENTENCE} Identify RELATIONSHIPS between entities in the domain of {CONTEXT_PHRASE}.
@@ -40,9 +35,9 @@ Respond in the following JSON format:
   "relationships": [
     {{{{
       "source": "Source entity name",
-      "source_type": "Event|Actor|Concept|Publication|Location",
+      "source_type": "Event|Actor|Concept|Expression|Location",
       "target": "Target entity name",
-      "target_type": "Event|Actor|Concept|Publication|Location",
+      "target_type": "Event|Actor|Concept|Expression|Location",
       "relationship_type": "Influences|Participates|Develops|etc.",
       "description": "Description of the relationship",
       "supporting_text": "The exact text excerpt that supports this relationship"
@@ -82,9 +77,9 @@ class RelationshipProcessor:
             
             # Call LLM API
             response = self.llm_client.messages.create(
-                model="claude-sonnet-4-20250514",
-                max_tokens=8000,
-                system="You are an expert in extracting structured information about eco-eco-jurisprudence and living in harmony with nature from academic texts.",
+                model=DEFAULT_MODEL,
+                max_tokens=MAX_TOKENS,
+                system="You are an expert in extracting structured information about eco-jurisprudence and living in harmony with nature from academic texts.",
                 messages=[
                     {"role": "user", "content": prompt}
                 ],

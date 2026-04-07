@@ -3,6 +3,7 @@ import logging
 import uuid
 from typing import Dict, List, Optional, Any, Tuple
 import time
+from config import DEFAULT_MODEL
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -344,7 +345,7 @@ Respond in the following JSON format:
         """Call the critic LLM and parse the response"""
         try:
             response = self.critic_llm_client.messages.create(
-                model="claude-sonnet-4-20250514",
+                model=DEFAULT_MODEL,
                 max_tokens=4000,
                 system="You are a critical evaluator of knowledge graph extractions. Provide detailed, constructive evaluation with specific scores and actionable feedback.",
                 messages=[

@@ -10,11 +10,10 @@ import os
 import sys
 import argparse
 import json
+from config import DEFAULT_KG_FILE
 
 # Default port
 PORT = 8080
-# Default knowledge graph file
-DEFAULT_KG_FILE = "data/processed/politics_of_ron_core_chunks_clean_knowledge_graph.json"
 
 class CORSHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     """
