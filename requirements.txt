@@ -1,6 +1,12 @@
 # LLM client
 anthropic>=0.49.0
 
+# Production WSGI server (run Flask apps with: gunicorn -w 1 server:app)
+gunicorn>=21.2.0
+
+# Testing
+pytest>=7.4.0
+
 # Document extraction
 python-docx>=0.8.11
 PyPDF2>=2.0.0

@@ -7,13 +7,13 @@ import webbrowser
 from http.server import HTTPServer
 
 from human_review import ReviewManager, ReviewServer
+from logging_config import configure_logging
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 def main():
     """Main function to run the human review interface"""
+    configure_logging()
     # Parse command line arguments
     parser = argparse.ArgumentParser(description="Run the human review interface for planetary health knowledge graph")
     parser.add_argument("--tasks-file", default="data/review/review_tasks.json", help="Path to the review tasks file")

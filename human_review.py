@@ -11,8 +11,6 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 import urllib.parse
 from config import DEFAULT_KG_FILE_REVIEW
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 class ReviewTask:

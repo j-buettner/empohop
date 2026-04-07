@@ -5,6 +5,7 @@ import uuid
 from typing import Dict, List, Optional, Any
 import time
 from config import DEFAULT_MODEL, MAX_TOKENS, CONTEXT_SENTENCE, CONTEXT_PHRASE
+from extraction_utils import retry_api_call
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -75,15 +76,14 @@ class RelationshipProcessor:
             # Format prompt with chunk text
             prompt = RELATIONSHIP_EXTRACTION_PROMPT.format(text=chunk["text"])
             
-            # Call LLM API
-            response = self.llm_client.messages.create(
+            # Call LLM API with retry/backoff on transient errors
+            response = retry_api_call(
+                self.llm_client.messages.create,
                 model=DEFAULT_MODEL,
                 max_tokens=MAX_TOKENS,
                 system="You are an expert in extracting structured information about eco-jurisprudence and living in harmony with nature from academic texts.",
-                messages=[
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.1
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.1,
             )
 
             # Get the raw response content

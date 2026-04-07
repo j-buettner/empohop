@@ -17,9 +17,8 @@ import os
 import time
 from datetime import datetime
 from typing import Dict, List, Any, Optional
+from logging_config import configure_logging
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 class KnowledgeGraphConsolidator:
@@ -281,7 +280,7 @@ class KnowledgeGraphConsolidator:
 
 def main():
     """Main function"""
-    # Parse command line arguments
+    configure_logging()
     parser = argparse.ArgumentParser(description='Consolidate human review changes into the main knowledge graph')
     parser.add_argument('--kg', type=str, default='data/processed/book_9780262366601-compressed_knowledge_graph.json',
                         help='Path to the main knowledge graph file')

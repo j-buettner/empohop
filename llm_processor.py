@@ -10,10 +10,9 @@ import re
 from relationship_processor import RelationshipProcessor
 from entity_resolver import resolve_entities, merge_entities, create_disambiguation_report, EXAMPLE_MANUAL_MAPPINGS
 from config import DEFAULT_MODEL, MAX_TOKENS, CONTEXT_SENTENCE, CONTEXT_PHRASE
-from extraction_utils import validate_extracted_entities
+from extraction_utils import validate_extracted_entities, retry_api_call
+from logging_config import configure_logging
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 # Define entity extraction prompts with supporting text
@@ -228,15 +227,14 @@ class LLMProcessor:
             return {"error": f"Unicode encoding error: {str(e)}"}
         
         try:
-            # Call LLM API
-            response = self.llm_client.messages.create(
+            # Call LLM API with retry/backoff on transient errors
+            response = retry_api_call(
+                self.llm_client.messages.create,
                 model=DEFAULT_MODEL,
                 max_tokens=MAX_TOKENS,
                 system="You are an expert in extracting structured information about eco-jurisprudence and living in harmony with nature from academic texts. Always include supporting text that justifies each extraction.",
-                messages=[
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.1  # Low temperature for more deterministic extraction
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.1,
             )
 
             # Get the raw response content
@@ -598,7 +596,7 @@ def create_entity_csv(entities: List[Dict], entity_type: str, csv_path: str):
 
 def main():
     """Main function to process document chunks with an LLM"""
-    # Parse command line arguments
+    configure_logging()
     parser = argparse.ArgumentParser(description="Process document chunks with an LLM to extract entities with supporting text")
     parser.add_argument("chunks_file", help="Path to JSON file with document chunks")
     parser.add_argument("--output-dir", default="data/processed", help="Directory to save output files")

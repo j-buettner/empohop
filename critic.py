@@ -4,6 +4,7 @@ import uuid
 from typing import Dict, List, Optional, Any, Tuple
 import time
 from config import DEFAULT_MODEL
+from extraction_utils import retry_api_call
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -344,14 +345,13 @@ Respond in the following JSON format:
     def _call_critic_llm(self, prompt: str, task_description: str) -> Dict:
         """Call the critic LLM and parse the response"""
         try:
-            response = self.critic_llm_client.messages.create(
+            response = retry_api_call(
+                self.critic_llm_client.messages.create,
                 model=DEFAULT_MODEL,
                 max_tokens=4000,
                 system="You are a critical evaluator of knowledge graph extractions. Provide detailed, constructive evaluation with specific scores and actionable feedback.",
-                messages=[
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.2
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.2,
             )
 
             content = response.content[0].text.strip()

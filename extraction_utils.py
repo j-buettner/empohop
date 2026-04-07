@@ -1,7 +1,9 @@
 import os
 import json
 import logging
-from typing import Dict, List, Optional, Any
+import random
+import time
+from typing import Any, Callable, Dict, List, Optional
 import pandas as pd
 from config import SCHEMA_DIR
 
@@ -87,6 +89,78 @@ def validate_extracted_entities(
         )
 
     return entities
+
+
+# ---------------------------------------------------------------------------
+# API retry helper
+# ---------------------------------------------------------------------------
+
+# Error patterns that indicate a transient (retryable) failure.
+_RETRYABLE_PATTERNS = (
+    "429", "529",                    # Rate limit / overloaded
+    "500", "502", "503", "504",      # Server errors
+    "rate_limit", "overloaded",      # Anthropic-specific strings
+    "connection", "timeout",         # Network transients
+)
+
+
+def retry_api_call(
+    func: Callable,
+    *args: Any,
+    max_retries: int = 3,
+    base_delay: float = 2.0,
+    **kwargs: Any,
+) -> Any:
+    """
+    Call ``func(*args, **kwargs)`` with exponential backoff on transient errors.
+
+    Retries on rate-limit (429/529) and server errors (5xx/connection).
+    Raises immediately for any other exception type (permanent errors).
+
+    Args:
+        func: Callable to invoke.
+        *args: Positional arguments forwarded to *func*.
+        max_retries: Maximum number of retry attempts after the first call.
+        base_delay: Initial delay in seconds; doubles each attempt (plus jitter).
+        **kwargs: Keyword arguments forwarded to *func*.
+
+    Returns:
+        Whatever *func* returns on success.
+
+    Raises:
+        The last exception raised by *func* after all retries are exhausted.
+    """
+    last_exc: Optional[Exception] = None
+    for attempt in range(max_retries + 1):
+        try:
+            return func(*args, **kwargs)
+        except Exception as exc:
+            last_exc = exc
+            if attempt == max_retries:
+                break
+
+            error_str = str(exc).lower()
+            type_name = type(exc).__name__.lower()
+            is_retryable = any(
+                p in error_str or p in type_name for p in _RETRYABLE_PATTERNS
+            )
+
+            if not is_retryable:
+                raise  # Permanent error — propagate immediately
+
+            delay = base_delay * (2 ** attempt) + random.uniform(0, 1)
+            logger.warning(
+                "[retry] API call failed (attempt %d/%d), retrying in %.1fs: %s: %s",
+                attempt + 1,
+                max_retries + 1,
+                delay,
+                type(exc).__name__,
+                exc,
+            )
+            time.sleep(delay)
+
+    raise last_exc  # type: ignore[misc]
+
 
 def analyze_chunks(chunks: List[Dict]) -> Dict[str, Any]:
     """

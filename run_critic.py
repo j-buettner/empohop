@@ -12,8 +12,7 @@ from pathlib import Path
 from critic import KnowledgeGraphCritic, save_critic_results
 from config import DEFAULT_MODEL
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+from logging_config import configure_logging
 logger = logging.getLogger(__name__)
 
 def load_extraction_results(kg_file: str) -> tuple:
@@ -80,6 +79,7 @@ def load_chunks(chunks_file: str) -> list:
 
 def main():
     """Main function for running the critic system"""
+    configure_logging()
     parser = argparse.ArgumentParser(
         description="Evaluate extracted knowledge graph entities and relationships using the KnowledgeGraphCritic",
         formatter_class=argparse.RawDescriptionHelpFormatter,

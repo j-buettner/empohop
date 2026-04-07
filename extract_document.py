@@ -5,8 +5,7 @@ import os
 import sys
 from typing import Dict, List, Optional, Any
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+from logging_config import configure_logging
 logger = logging.getLogger(__name__)
 
 def get_extractor(use_docling: bool = False, **kwargs):
@@ -119,7 +118,7 @@ def analyze_chunks(chunks: List[Dict]) -> Dict[str, Any]:
 
 def main():
     """Main function to extract text and metadata from a document"""
-    # Parse command line arguments
+    configure_logging()
     parser = argparse.ArgumentParser(description="Extract text and metadata from a document")
     parser.add_argument("source", help="Path to document or URL")
     parser.add_argument("--output-dir", default="data/extracted", help="Directory to save output files")
