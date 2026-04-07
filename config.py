@@ -7,22 +7,10 @@ Override any value via environment variable where noted.
 import os
 
 # ---------------------------------------------------------------------------
-# LLM backend selection
-# ---------------------------------------------------------------------------
-
-# Which backend to use: "anthropic" (default) or "external"
-# Set LLM_BACKEND=external to use the AcademicCloud OpenAI-compatible API.
-LLM_BACKEND: str = os.environ.get("LLM_BACKEND", "anthropic").lower()
-
-# ---------------------------------------------------------------------------
-# Anthropic backend
+# LLM backend defaults
 # ---------------------------------------------------------------------------
 
 ANTHROPIC_DEFAULT_MODEL = "claude-sonnet-4-20250514"
-
-# ---------------------------------------------------------------------------
-# External OpenAI-compatible backend (AcademicCloud)
-# ---------------------------------------------------------------------------
 
 EXTERNAL_API_URL = "https://chat-ai.academiccloud.de/v1"
 EXTERNAL_API_MODELS = [
@@ -32,14 +20,10 @@ EXTERNAL_API_MODELS = [
 ]
 EXTERNAL_DEFAULT_MODEL = "qwen3-235b-a22b"
 
-# ---------------------------------------------------------------------------
-# Active model — resolved from KG_MODEL env var or per-backend default
-# ---------------------------------------------------------------------------
-
-if LLM_BACKEND == "external":
-    DEFAULT_MODEL: str = os.environ.get("KG_MODEL", EXTERNAL_DEFAULT_MODEL)
-else:
-    DEFAULT_MODEL = os.environ.get("KG_MODEL", ANTHROPIC_DEFAULT_MODEL)
+# DEFAULT_MODEL is kept as a module-level fallback (used if no client is
+# available, e.g. in tests).  The active model is resolved per-client by
+# create_llm_client() and stored on UnifiedLLMClient.model.
+DEFAULT_MODEL: str = os.environ.get("KG_MODEL", ANTHROPIC_DEFAULT_MODEL)
 
 MAX_TOKENS = int(os.environ.get("KG_MAX_TOKENS", "8000"))
 

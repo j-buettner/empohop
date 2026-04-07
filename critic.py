@@ -3,7 +3,6 @@ import logging
 import uuid
 from typing import Dict, List, Optional, Any, Tuple
 import time
-from config import DEFAULT_MODEL
 from extraction_utils import retry_api_call
 
 # Configure logging
@@ -347,7 +346,7 @@ Respond in the following JSON format:
         try:
             response = retry_api_call(
                 self.critic_llm_client.messages.create,
-                model=DEFAULT_MODEL,
+                model=self.critic_llm_client.model,
                 max_tokens=4000,
                 system="You are a critical evaluator of knowledge graph extractions. Provide detailed, constructive evaluation with specific scores and actionable feedback.",
                 messages=[{"role": "user", "content": prompt}],

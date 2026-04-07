@@ -112,28 +112,40 @@ class UnifiedLLMClient:
     """
     Unified LLM client.  Use ``client.messages.create(...)`` exactly as you
     would with the Anthropic SDK; responses always expose ``.content[0].text``.
+
+    Attributes:
+        model   — the model name that will be used for API calls
+        backend — "anthropic" or "external"
     """
 
-    def __init__(self, backend: str, raw_client: Any) -> None:
+    def __init__(self, backend: str, raw_client: Any, model: str) -> None:
         self._backend = backend
+        self.model = model
         self.messages = _UnifiedMessages(backend, raw_client)
 
     def __repr__(self) -> str:
-        return f"UnifiedLLMClient(backend={self._backend!r}, model={DEFAULT_MODEL!r})"
+        return f"UnifiedLLMClient(backend={self._backend!r}, model={self.model!r})"
 
 
 # ---------------------------------------------------------------------------
 # Factory
 # ---------------------------------------------------------------------------
 
-def create_llm_client() -> UnifiedLLMClient:
+def create_llm_client(backend: str = None, model: str = None) -> UnifiedLLMClient:
     """
-    Create and return a ``UnifiedLLMClient`` based on the ``LLM_BACKEND``
-    environment variable (default: ``"anthropic"``).
+    Create and return a ``UnifiedLLMClient``.
 
-    Exits with a helpful error message if required credentials are missing.
+    Args:
+        backend: ``"anthropic"`` or ``"external"``.  Falls back to the
+                 ``LLM_BACKEND`` environment variable, then ``"anthropic"``.
+        model:   Model name to use.  Falls back to the ``KG_MODEL`` environment
+                 variable, then the per-backend default.
+
+    Exits with a clear error message if required credentials are missing.
     """
-    backend = LLM_BACKEND
+    # Resolve backend
+    if backend is None:
+        backend = os.environ.get("LLM_BACKEND", "anthropic").lower()
 
     if backend == "anthropic":
         try:
@@ -150,9 +162,10 @@ def create_llm_client() -> UnifiedLLMClient:
             )
             sys.exit(1)
 
+        resolved_model = model or os.environ.get("KG_MODEL", ANTHROPIC_DEFAULT_MODEL)
         raw = anthropic.Anthropic(api_key=api_key)
-        logger.info("LLM backend: Anthropic  |  model: %s", DEFAULT_MODEL)
-        return UnifiedLLMClient("anthropic", raw)
+        logger.info("LLM backend: anthropic  |  model: %s", resolved_model)
+        return UnifiedLLMClient("anthropic", raw, resolved_model)
 
     if backend == "external":
         try:
@@ -169,21 +182,20 @@ def create_llm_client() -> UnifiedLLMClient:
             )
             sys.exit(1)
 
-        if DEFAULT_MODEL not in EXTERNAL_API_MODELS:
+        resolved_model = model or os.environ.get("KG_MODEL", EXTERNAL_DEFAULT_MODEL)
+        if resolved_model not in EXTERNAL_API_MODELS:
             logger.warning(
-                "KG_MODEL=%r is not in the known external model list %s. "
+                "model=%r is not in the known external model list %s. "
                 "Proceeding anyway — check the model name if you get errors.",
-                DEFAULT_MODEL,
+                resolved_model,
                 EXTERNAL_API_MODELS,
             )
 
         raw = OpenAI(base_url=EXTERNAL_API_URL, api_key=api_key)
-        logger.info(
-            "LLM backend: external (%s)  |  model: %s", EXTERNAL_API_URL, DEFAULT_MODEL
-        )
-        return UnifiedLLMClient("external", raw)
+        logger.info("LLM backend: external (%s)  |  model: %s", EXTERNAL_API_URL, resolved_model)
+        return UnifiedLLMClient("external", raw, resolved_model)
 
     logger.error(
-        "Unknown LLM_BACKEND=%r. Valid values: 'anthropic', 'external'.", backend
+        "Unknown backend=%r. Valid values: 'anthropic', 'external'.", backend
     )
     sys.exit(1)

@@ -4,7 +4,7 @@ import re
 import uuid
 from typing import Dict, List, Optional, Any
 import time
-from config import DEFAULT_MODEL, MAX_TOKENS, CONTEXT_SENTENCE, CONTEXT_PHRASE
+from config import MAX_TOKENS, CONTEXT_SENTENCE, CONTEXT_PHRASE
 from extraction_utils import retry_api_call
 
 # Configure logging
@@ -79,7 +79,7 @@ class RelationshipProcessor:
             # Call LLM API with retry/backoff on transient errors
             response = retry_api_call(
                 self.llm_client.messages.create,
-                model=DEFAULT_MODEL,
+                model=self.llm_client.model,
                 max_tokens=MAX_TOKENS,
                 system="You are an expert in extracting structured information about eco-jurisprudence and living in harmony with nature from academic texts.",
                 messages=[{"role": "user", "content": prompt}],

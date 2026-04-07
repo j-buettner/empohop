@@ -10,7 +10,6 @@ import os
 import sys
 from pathlib import Path
 from critic import KnowledgeGraphCritic, save_critic_results
-from config import DEFAULT_MODEL
 
 from logging_config import configure_logging
 logger = logging.getLogger(__name__)
@@ -132,13 +131,20 @@ Examples:
     )
     
     parser.add_argument(
-        "--critic-model",
-        default=DEFAULT_MODEL,
-        help=f"LLM model to use for critic evaluation (default: {DEFAULT_MODEL})"
+        "--backend", choices=["anthropic", "external"], default=None,
+        help="LLM backend: 'anthropic' (default) or 'external' (AcademicCloud). "
+             "Falls back to LLM_BACKEND env var, then 'anthropic'."
     )
-    
+
     parser.add_argument(
-        "--min-confidence", 
+        "--critic-model", default=None,
+        help="Model to use for critic evaluation. Falls back to KG_MODEL env var, "
+             "then the per-backend default. "
+             "External models: openai-gpt-oss-120b, qwen3-235b-a22b, glm-4.7"
+    )
+
+    parser.add_argument(
+        "--min-confidence",
         type=float, 
         default=3.0,
         help="Minimum confidence threshold for flagging items for review (1-5, default: 3.0)"
@@ -170,7 +176,7 @@ Examples:
     
     try:
         from llm_client import create_llm_client
-        client = create_llm_client()
+        client = create_llm_client(backend=args.backend, model=args.critic_model)
 
         # Initialize critic system
         logger.info("Initializing KnowledgeGraphCritic...")

@@ -9,7 +9,7 @@ import time
 import re
 from relationship_processor import RelationshipProcessor
 from entity_resolver import resolve_entities, merge_entities, create_disambiguation_report, EXAMPLE_MANUAL_MAPPINGS
-from config import DEFAULT_MODEL, MAX_TOKENS, CONTEXT_SENTENCE, CONTEXT_PHRASE
+from config import MAX_TOKENS, CONTEXT_SENTENCE, CONTEXT_PHRASE
 from extraction_utils import validate_extracted_entities, retry_api_call
 from logging_config import configure_logging
 
@@ -230,7 +230,7 @@ class LLMProcessor:
             # Call LLM API with retry/backoff on transient errors
             response = retry_api_call(
                 self.llm_client.messages.create,
-                model=DEFAULT_MODEL,
+                model=self.llm_client.model,
                 max_tokens=MAX_TOKENS,
                 system="You are an expert in extracting structured information about eco-jurisprudence and living in harmony with nature from academic texts. Always include supporting text that justifies each extraction.",
                 messages=[{"role": "user", "content": prompt}],
@@ -610,6 +610,16 @@ def main():
     parser.add_argument("--manual-mappings", type=str, default=None, help="Path to JSON file with manual entity mappings")
     parser.add_argument("--use-example-mappings", action="store_true", help="Use built-in example manual mappings")
     parser.add_argument("--no-disambiguation-report", action="store_true", help="Skip creating disambiguation report")
+    parser.add_argument(
+        "--backend", choices=["anthropic", "external"], default=None,
+        help="LLM backend to use: 'anthropic' (default) or 'external' (AcademicCloud). "
+             "Falls back to LLM_BACKEND env var, then 'anthropic'."
+    )
+    parser.add_argument(
+        "--model", default=None,
+        help="Model name to use (overrides KG_MODEL env var and per-backend default). "
+             "External models: openai-gpt-oss-120b, qwen3-235b-a22b, glm-4.7"
+    )
     args = parser.parse_args()
     
     try:
@@ -663,7 +673,7 @@ def main():
         
         try:
             from llm_client import create_llm_client
-            client = create_llm_client()
+            client = create_llm_client(backend=args.backend, model=args.model)
 
             # Initialize LLM processor with manual mappings
             processor = LLMProcessor(llm_client=client, manual_mappings=manual_mappings)
