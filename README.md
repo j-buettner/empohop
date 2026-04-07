@@ -1,253 +1,314 @@
-# Planetary Health Knowledge Graph Extraction
+# Planetary Health Knowledge Graph
 
-This project provides a comprehensive pipeline for extracting structured information about planetary health from academic documents and building a knowledge graph. It includes tools for document extraction, entity recognition with advanced disambiguation, relationship extraction, human review, and visualization.
+A pipeline for extracting structured knowledge from academic documents about planetary health — specifically mobilisations towards living in harmony with nature through economic activities beyond GDP.
 
-## Project Structure
+The pipeline identifies **Events**, **Actors**, **Concepts**, **Publications**, and **Locations**, resolves duplicate entities, scores extraction quality, and exposes the result as a browsable knowledge graph.
+
+---
+
+## Quick start
+
+```bash
+# 1. Install dependencies
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+
+# 2. Configure credentials
+cp .env.example .env          # then fill in ANTHROPIC_API_KEY
+
+# 3. Extract a document
+python extract_document.py path/to/document.pdf --output-dir data/extracted
+
+# 4. Run entity + relationship extraction
+python llm_processor.py data/extracted/document_chunks.json --output-dir data/processed
+
+# 5. Evaluate quality
+python run_critic.py data/processed/document_knowledge_graph.json
+
+# 6. Start the human review interface
+python main.py --tasks-file data/review/review_tasks.json
+
+# 7. Apply corrections
+python consolidate_reviews.py --kg data/processed/document_knowledge_graph.json
+
+# 8. Browse the result
+python server.py data/processed/document_knowledge_graph.json
+# open http://localhost:8080
+```
+
+---
+
+## Pipeline overview
 
 ```
-.
-├── data/                      # Data storage
-│   ├── extracted/             # Extracted document chunks
-│   ├── processed/             # Processed entities and relationships
-│   ├── review/                # Human review tasks and corrections
-│   └── critic_results/        # Critic system assessment results
-├── schema/                    # Schema definitions
-│   ├── documentation/         # Schema documentation
-│   ├── json-schema/           # JSON Schema definitions
-│   └── neo4j/                 # Neo4j database schema
-├── tools/                     # Utility tools
-│   ├── data-entry/            # Data entry forms
-│   ├── import-export/         # Import/export utilities
-│   └── validation/            # Data validation tools
-├── visualization/             # Visualization tools
-│   ├── network/               # Network visualization
-│   └── timeline/              # Timeline visualization
-├── extractor.py               # Document extraction module
-├── extraction_utils.py        # Extraction utilities
-├── extract_document.py        # Document extraction script
-├── llm_processor.py           # LLM-based entity extraction
-├── entity_resolver.py         # Advanced entity resolution and disambiguation
-├── relationship_processor.py  # Relationship extraction and processing
-├── human_review.py            # Human review interface
-├── main.py                    # Main entry point
-├── requirements.txt           # Project dependencies
-└── setup.py                   # Package setup script
+PDF / DOCX
+    │
+    ▼
+extract_document.py        →  data/extracted/*_chunks.json
+    │
+    ▼
+llm_processor.py           →  data/processed/*_knowledge_graph.json
+    │                         data/processed/*_disambiguation_report.json
+    ▼
+run_critic.py              →  data/critic_results/*_critic_evaluation.json
+    │
+    ▼
+main.py  (human review UI) →  data/review/corrected/*.json
+    │
+    ▼
+consolidate_reviews.py     →  data/processed/*_reviewed_<timestamp>.json
+    │
+    ▼
+server.py  (visualisation)
 ```
 
-## Features
-
-- **Document Extraction**: Extract text and metadata from PDF, DOCX, and other document formats
-- **Entity Recognition**: Identify events, actors, concepts, publications, and locations with supporting text evidence
-- **Advanced Entity Resolution**: 
-  - Fuzzy matching for entity disambiguation
-  - Abbreviation and acronym detection
-  - Manual mapping support for known variations
-  - Detailed disambiguation reports
-- **Relationship Extraction**: Detect and validate relationships between entities
-- **Human Review Interface**: Web-based interface for reviewing and correcting extracted information
-- **Knowledge Graph Construction**: Build a knowledge graph from the extracted entities and relationships
-- **Visualization**: Visualize the knowledge graph as a network or timeline
-- **Quality Assessment**: Integration with critic system for extraction quality evaluation
+---
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/planetary-health-kg.git
-   cd planetary-health-kg
-   ```
-
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Set up API keys:
-   ```bash
-   # For Anthropic Claude (primary LLM)
-   export ANTHROPIC_API_KEY=your_api_key  # On Windows: set ANTHROPIC_API_KEY=your_api_key
-   
-   # For OpenAI (optional, for fallback)
-   export OPENAI_API_KEY=your_api_key  # On Windows: set OPENAI_API_KEY=your_api_key
-   ```
-
-## Usage
-
-### Document Extraction
-
-Extract text and metadata from a document:
-
 ```bash
-python extract_document.py path/to/document.pdf --output-dir data/extracted --analyze --extract-entities
+python -m venv venv
+source venv/bin/activate        # Windows: venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-### Entity Extraction with LLM
+**Python 3.8+ required.**
 
-Process extracted chunks with an LLM to identify entities and relationships:
+### Environment variables
+
+Copy `.env.example` to `.env` and set your values. The only required variable is:
+
+```
+ANTHROPIC_API_KEY=sk-ant-...
+```
+
+Optional variables (with defaults shown):
+
+| Variable | Default | Description |
+|---|---|---|
+| `KG_MODEL` | `claude-sonnet-4-20250514` | Claude model used for extraction and critic |
+| `KG_MAX_TOKENS` | `8000` | Max tokens per LLM response |
+| `KG_FILE` | *(see `.env.example`)* | Knowledge graph file served by `server.py` |
+| `KG_FILE_REVIEW` | *(see `.env.example`)* | Knowledge graph file used by the review UI |
+| `LOG_LEVEL` | `INFO` | `DEBUG` / `INFO` / `WARNING` / `ERROR` |
+| `LOG_FORMAT` | plain text | Set to `json` for structured log output |
+
+---
+
+## Step-by-step usage
+
+### Step 1 — Extract a document
 
 ```bash
-# Basic usage
+# Basic extraction (standard PDF parser)
+python extract_document.py path/to/document.pdf
+
+# With Docling (better layout and OCR support)
+python extract_document.py path/to/document.pdf --use-docling
+
+# Enable OCR for scanned documents
+python extract_document.py path/to/document.pdf --use-docling --ocr
+
+# Filter out References and Index sections
+python extract_document.py path/to/document.pdf --use-docling --filter-sections
+
+# Control chunk size (tokens per chunk, default 1000)
+python extract_document.py path/to/document.pdf --chunk-size 2000
+
+# Export a readable Markdown version with chunk boundaries marked
+python extract_document.py path/to/document.pdf --use-docling --export-markdown-with-chunks
+```
+
+Output: `data/extracted/<document>_chunks.json`
+
+---
+
+### Step 2 — Extract entities and relationships
+
+```bash
+# Full extraction (all entity types + relationships)
 python llm_processor.py data/extracted/document_chunks.json --output-dir data/processed
 
-# With specific entity types
+# Limit to specific entity types
 python llm_processor.py data/extracted/document_chunks.json \
-  --entity-types event actor concept \
-  --output-dir data/processed
+  --entity-types event actor concept
 
-# With manual entity mappings
-python llm_processor.py data/extracted/document_chunks.json \
-  --manual-mappings mappings/planetary_health_mappings.json \
-  --output-dir data/processed
+# Process only a subset of chunks (useful for testing)
+python llm_processor.py data/extracted/document_chunks.json --chunk-range 0-10
 
-# Using built-in example mappings
+# Apply manual entity mappings to normalise known variants
 python llm_processor.py data/extracted/document_chunks.json \
-  --use-example-mappings \
-  --output-dir data/processed
+  --manual-mappings my_mappings.json
 
-# Process specific chunks
+# Write intermediate results after each chunk (resumable)
 python llm_processor.py data/extracted/document_chunks.json \
-  --chunk-range 0-10 \
-  --output-dir data/processed
-
-# Without disambiguation report
-python llm_processor.py data/extracted/document_chunks.json \
-  --no-disambiguation-report \
-  --output-dir data/processed
+  --update-after-each --output-dir data/processed
 ```
 
-### Entity Resolution and Manual Mappings
+Output: `data/processed/<document>_knowledge_graph.json` and per-entity CSVs.
 
-Create a template for manual entity mappings:
-
-```bash
-python -c "from entity_resolver import create_manual_mappings_template; create_manual_mappings_template()"
-```
-
-Edit the generated `manual_mappings_template.json` to add your custom mappings:
+**Manual mappings** tell the resolver that two names refer to the same entity:
 
 ```json
 {
   "event": {
-    "Rio Summit": "United Nations Conference on Environment and Development",
-    "Earth Summit": "United Nations Conference on Environment and Development"
+    "Rio Summit": "United Nations Conference on Environment and Development"
   },
   "actor": {
-    "WHO": "World Health Organization",
-    "UN": "United Nations"
+    "WWF": "World Wildlife Fund"
   }
 }
 ```
 
-### Reviewing Disambiguation Reports
+---
 
-After processing, review the disambiguation report to understand how entities were merged:
-
-```bash
-# View summary statistics
-cat data/processed/document_disambiguation_report.json | jq '.summary'
-
-# Find low-confidence merges
-cat data/processed/document_disambiguation_report.json | jq '.merges[] | select(.confidence < 0.8)'
-
-# See entities that were manually mapped
-cat data/processed/document_disambiguation_report.json | jq '.merges[] | select(.manual_mappings | length > 0)'
-```
-
-### Human Review Interface
-
-Start the human review interface:
+### Step 3 — Quality assessment (critic)
 
 ```bash
-python main.py --tasks-file data/review/review_tasks.json --output-dir data/review/corrected
+python run_critic.py data/processed/document_knowledge_graph.json
 ```
 
-Then open a web browser and navigate to http://localhost:8000 to access the interface.
+Flags:
 
-### Viewing Visualizations
+| Flag | Default | Description |
+|---|---|---|
+| `--critic-model` | *(from `KG_MODEL`)* | Model used for critic evaluation |
+| `--min-confidence` | `3.0` | Flag entities below this score (1–5) |
+| `--batch-size` | `50` | Items evaluated per API call batch |
+| `--verbose` | off | Enable DEBUG logging |
 
-To view the visualizations (network graph and timeline), run the included HTTP server:
+Output: `data/critic_results/<document>_critic_evaluation.json`
+
+---
+
+### Step 4 — Human review
 
 ```bash
-python server.py
+# Start the review server
+python main.py --tasks-file data/review/review_tasks.json \
+               --output-dir data/review/corrected
+
+# Open http://localhost:8000 in your browser
 ```
 
-Then open a web browser and navigate to http://localhost:8080 to access:
-- Main interface: http://localhost:8080/index.html
-- Network visualization: http://localhost:8080/visualization/network/index.html
-- Timeline visualization: http://localhost:8080/visualization/timeline/index.html
+The interface shows each flagged entity alongside its confidence score, extracted supporting text, and suggested corrections.
 
-### Critic Assessment
+---
 
-Run the critic system to assess extraction quality:
+### Step 5 — Apply corrections
 
 ```bash
-python run_critic.py data/processed/your_knowledge_graph.json
+python consolidate_reviews.py \
+  --kg data/processed/document_knowledge_graph.json \
+  --review data/review
 ```
 
-The visualizations support displaying critic assessments:
-- Toggle "Show Critic Assessments" to display quality indicators
-- Entities are color-coded by extraction quality (Excellent, Good, Fair, Poor)
-- Detailed assessments appear in entity detail panels
+Output: `data/processed/<document>_reviewed_<timestamp>.json`
 
-## Schema
+---
 
-The knowledge graph schema includes the following entity types:
+### Step 6 — Browse the knowledge graph
 
-- **Events**: Significant events in the planetary health movement
-  - Title, year, description, type, significance, dates, locations, actors, concepts
-- **Actors**: Individuals, organizations, and institutions involved in planetary health
-  - Name, type, description, role, country, expertise, affiliations
-- **Concepts**: Theories, ideas, and frameworks related to planetary health
-  - Name, definition, alternative names, domain, significance, related concepts
-- **Publications**: Books, articles, reports, and other published materials
-  - Title, type, year, authors, publisher, identifier, abstract, significance
-- **Locations**: Countries, cities, regions, and other geographical entities
-  - Name, type, country, description, significance
+**Development:**
+```bash
+python server.py data/processed/document_knowledge_graph.json --port 8080
+```
 
-All entities include:
-- Supporting text evidence from source documents
-- Source chunk references
-- Unique identifiers
-- Merge confidence scores (when applicable)
+**Production (gunicorn):**
+```bash
+KG_FILE=data/processed/document_knowledge_graph.json gunicorn -w 1 server:app
+```
 
-Relationships between entities capture connections and interactions in the planetary health domain.
+Then open:
+- `http://localhost:8080/` — main dashboard
+- `http://localhost:8080/visualization/network/index.html` — entity network
+- `http://localhost:8080/visualization/timeline/index.html` — event timeline
+- `http://localhost:8080/api/health` — health check
 
-## Advanced Features
+---
 
-### Entity Resolution
+## Project structure
 
-The system uses advanced entity resolution techniques:
-- **Fuzzy String Matching**: Handles spelling variations and typos
-- **Abbreviation Detection**: Recognizes acronyms and common abbreviations
-- **Context-Aware Disambiguation**: Uses supporting text to verify matches
-- **Type-Specific Rules**: Different matching strategies for different entity types
-- **Confidence Scoring**: Tracks merge confidence for quality assurance
+```
+code_base/
+├── config.py                  # Central config: model, paths, thresholds
+├── logging_config.py          # Structured logging (plain text or JSON)
+│
+├── extract_document.py        # Step 1 — chunk a PDF/DOCX into JSON
+├── extractor.py               # Standard document extractor
+├── extractor_docling.py       # Docling-based extractor (better OCR)
+│
+├── llm_processor.py           # Step 2 — LLM entity + relationship extraction
+├── relationship_processor.py  # Relationship extraction logic
+├── entity_resolver.py         # Fuzzy entity deduplication and merging
+├── extraction_utils.py        # Shared helpers (retry, schema validation)
+│
+├── critic.py                  # Quality evaluation logic
+├── run_critic.py              # Step 3 — run critic from CLI
+│
+├── human_review.py            # Review UI server logic
+├── main.py                    # Step 4 — start the review interface
+├── consolidate_reviews.py     # Step 5 — apply review corrections
+│
+├── server.py                  # Step 6 — Flask visualisation server
+│
+├── tests/                     # Pytest test suite (run: pytest tests/ -v)
+│   ├── test_entity_resolver.py
+│   └── test_extraction_utils.py
+│
+├── schema/
+│   ├── json-schema/           # JSON Schema definitions for each entity type
+│   ├── neo4j/                 # Cypher scripts for Neo4j setup
+│   └── documentation/         # ER diagrams and schema guides
+│
+├── visualization/
+│   ├── network/               # D3.js network graph
+│   └── timeline/              # D3.js event timeline
+│
+├── data/
+│   ├── extracted/             # Output of Step 1
+│   ├── processed/             # Output of Steps 2 and 5
+│   ├── review/                # Review tasks and corrections (Step 4)
+│   └── critic_results/        # Output of Step 3
+│
+├── .env.example               # Template for environment variables
+└── requirements.txt
+```
 
-### Relationship Processing
+---
 
-The relationship extraction includes:
-- Multi-phase extraction process
-- Entity-relationship resolution
-- Relationship deduplication
-- Supporting text evidence for all relationships
+## Entity schema
 
-### Quality Assurance
+| Entity | Required fields | Key optional fields |
+|--------|----------------|---------------------|
+| **Event** | `title`, `year`, `description` | `type`, `juridical_significance`, `harmony_significance`, `locations`, `actors` |
+| **Actor** | `name`, `type` | `country`, `description`, `role` |
+| **Concept** | `name`, `definition` | `key_proponents` |
+| **Publication** | `title` | `type`, `year`, `actors` |
+| **Location** | `name`, `type` | `country`, `description`, `significance` |
 
-- Disambiguation reports for all entity merges
-- Critic system integration for quality assessment
-- Human review interface for corrections
-- Validation tools for data consistency
+All entities also carry:
+- `id` — UUID assigned during resolution
+- `supporting_text` — the exact passage from the source document
+- `source_chunk` — index of the originating chunk
+- `variations` / `merge_confidence` — set when entities were deduplicated
 
-## Contributing
+---
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## Running tests
 
-## License
+```bash
+pytest tests/ -v
+```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+49 tests covering entity resolution logic, retry/backoff behaviour, and schema validation. No API calls are made.
+
+---
+
+## Configuration reference
+
+All tunable values live in `config.py`. The most likely things to change:
+
+- **`DEFAULT_MODEL`** — Claude model for extraction (overridable via `KG_MODEL` env var)
+- **`SIMILARITY_THRESHOLDS`** — per-entity-type merge thresholds (0–1); raise to merge more conservatively
+- **`CONTEXT_SENTENCE` / `CONTEXT_PHRASE`** — domain framing injected into every LLM prompt
