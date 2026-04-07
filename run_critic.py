@@ -169,16 +169,9 @@ Examples:
         sys.exit(1)
     
     try:
-        # Initialize Anthropic client
-        import anthropic
-        
-        api_key = os.environ.get("ANTHROPIC_API_KEY")
-        if not api_key:
-            logger.error("ANTHROPIC_API_KEY environment variable not set")
-            sys.exit(1)
-        
-        client = anthropic.Anthropic(api_key=api_key)
-        
+        from llm_client import create_llm_client
+        client = create_llm_client()
+
         # Initialize critic system
         logger.info("Initializing KnowledgeGraphCritic...")
         critic = KnowledgeGraphCritic(

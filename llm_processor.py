@@ -662,17 +662,9 @@ def main():
             chunks = chunks[:args.max_chunks]
         
         try:
-            import anthropic
-            import os
-            
-            # Initialize Anthropic client using environment variable
-            api_key = os.environ.get("ANTHROPIC_API_KEY")
-            if not api_key:
-                logger.error("ANTHROPIC_API_KEY environment variable not set")
-                sys.exit(1)
-                
-            client = anthropic.Anthropic(api_key=api_key)
-            
+            from llm_client import create_llm_client
+            client = create_llm_client()
+
             # Initialize LLM processor with manual mappings
             processor = LLMProcessor(llm_client=client, manual_mappings=manual_mappings)
             

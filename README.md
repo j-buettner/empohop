@@ -76,17 +76,33 @@ pip install -r requirements.txt
 
 ### Environment variables
 
-Copy `.env.example` to `.env` and set your values. The only required variable is:
+Copy `.env.example` to `.env` and fill in your credentials.
 
-```
-ANTHROPIC_API_KEY=sk-ant-...
+#### Choosing a backend
+
+| `LLM_BACKEND` | Credential needed | Default model |
+|---|---|---|
+| `anthropic` *(default)* | `ANTHROPIC_API_KEY` | `claude-sonnet-4-20250514` |
+| `external` | `EXTERNAL_API_TOKEN` | `qwen3-235b-a22b` |
+
+The `external` backend points to the AcademicCloud OpenAI-compatible API (`https://chat-ai.academiccloud.de/v1`). Available models: `openai-gpt-oss-120b`, `qwen3-235b-a22b`, `glm-4.7`.
+
+```bash
+# Use Anthropic (default)
+ANTHROPIC_API_KEY=sk-ant-... python llm_processor.py ...
+
+# Use external API
+LLM_BACKEND=external EXTERNAL_API_TOKEN=... python llm_processor.py ...
+
+# External with a specific model
+LLM_BACKEND=external KG_MODEL=openai-gpt-oss-120b EXTERNAL_API_TOKEN=... python llm_processor.py ...
 ```
 
-Optional variables (with defaults shown):
+All other variables (with defaults shown):
 
 | Variable | Default | Description |
 |---|---|---|
-| `KG_MODEL` | `claude-sonnet-4-20250514` | Claude model used for extraction and critic |
+| `KG_MODEL` | *(backend default)* | Model name — overrides the per-backend default |
 | `KG_MAX_TOKENS` | `8000` | Max tokens per LLM response |
 | `KG_FILE` | *(see `.env.example`)* | Knowledge graph file served by `server.py` |
 | `KG_FILE_REVIEW` | *(see `.env.example`)* | Knowledge graph file used by the review UI |
