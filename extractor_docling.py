@@ -306,7 +306,8 @@ class DoclingExtractor:
                     if current_section["content"].strip():
                         sections.append(current_section)
                     
-                    title = line.lstrip('#').strip()
+                    # Collapse runs of whitespace (e.g. "I NDEX" → "INDEX")
+                    title = " ".join(line.lstrip('#').split())
                     current_section = {
                         "title": title,
                         "content": "",

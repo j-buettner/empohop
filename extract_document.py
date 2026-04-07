@@ -175,7 +175,7 @@ def main():
         
         # Filter sections if requested
         if args.filter_sections:
-            exclude_sections = ["REFERENCES", "I NDEX"]
+            exclude_sections = ["REFERENCES", "INDEX"]
             filtered_chunks = []
             excluded_count = 0
             
