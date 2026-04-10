@@ -77,7 +77,8 @@ def create_app(kg_file: str = DEFAULT_KG_FILE) -> Flask:
     Args:
         kg_file: Path to the knowledge-graph JSON file to expose via the API.
     """
-    flask_app = Flask(__name__, static_folder=_BASE_DIR, static_url_path="")
+    _UI_DIR = os.path.join(_BASE_DIR, "ui")
+    flask_app = Flask(__name__, static_folder=_UI_DIR, static_url_path="")
     CORS(flask_app)
 
     critic_file = _infer_critic_file(kg_file)
@@ -120,7 +121,12 @@ def create_app(kg_file: str = DEFAULT_KG_FILE) -> Flask:
 
     @flask_app.route("/")
     def index():
-        return send_from_directory(_BASE_DIR, "index.html")
+        return send_from_directory(_UI_DIR, "index.html")
+
+    # Expose schema JSON files (used by both the pipeline and the UI)
+    @flask_app.route("/schema/json-schema/<path:filename>")
+    def schema_json(filename):
+        return send_from_directory(os.path.join(_BASE_DIR, "schema", "json-schema"), filename)
 
     logger.info("Knowledge graph file : %s", kg_file)
     if critic_file:
