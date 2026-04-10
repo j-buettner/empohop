@@ -565,8 +565,8 @@
                     }
                     relatedEvents[rel.source_id].push({
                         eventId: rel.target_id,
-                        relationshipType: rel.relationship_type,
-                        description: rel.description
+                        relationshipType: rel.relation_type,
+                        description: rel.supporting_text
                     });
                     
                     // Add the reverse relationship too
@@ -576,16 +576,16 @@
                     
                     // Determine the reverse relationship type
                     let reverseType = 'Related To';
-                    if (rel.relationship_type === 'Influences') reverseType = 'Influenced By';
-                    if (rel.relationship_type === 'Precedes') reverseType = 'Follows';
-                    if (rel.relationship_type === 'Follows') reverseType = 'Precedes';
-                    if (rel.relationship_type === 'References') reverseType = 'Referenced By';
-                    if (rel.relationship_type === 'IsReferencedBy') reverseType = 'References';
+                    if (rel.relation_type === 'Influences') reverseType = 'Influenced By';
+                    if (rel.relation_type === 'Precedes') reverseType = 'Follows';
+                    if (rel.relation_type === 'Follows') reverseType = 'Precedes';
+                    if (rel.relation_type === 'References') reverseType = 'Referenced By';
+                    if (rel.relation_type === 'IsReferencedBy') reverseType = 'References';
                     
                     relatedEvents[rel.target_id].push({
                         eventId: rel.source_id,
                         relationshipType: reverseType,
-                        description: rel.description
+                        description: rel.supporting_text
                     });
                 }
             });
