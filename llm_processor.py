@@ -15,22 +15,147 @@ from logging_config import configure_logging
 
 logger = logging.getLogger(__name__)
 
-# Define entity extraction prompts with supporting text
-EVENT_EXTRACTION_PROMPT = f"""
+# ---------------------------------------------------------------------------
+# Shared knowledge-graph context preamble
+# ---------------------------------------------------------------------------
 
-{CONTEXT_SENTENCE} Identify any EVENTS and PROCESSES mentioned.
-For each event, extract:
+_KG_PREAMBLE = """\
+You are contributing to a structured knowledge graph about the planetary health \
+movement — specifically mobilisations towards living in harmony with nature and \
+economic activities beyond GDP.
+
+The source text is processed in FIVE separate, focused extraction passes:
+  Pass 1 — EVENTS & PROCESSES (conferences, policy adoptions, court decisions, …)
+  Pass 2 — ACTORS (individuals, organisations, governments, NGOs, coalitions, …)
+  Pass 3 — CONCEPTS (theories, frameworks, ideas, terms, …)
+  Pass 4 — EXPRESSIONS (publications, speeches, legal documents, regulations, \
+cultural practices, symbols, …)
+  Pass 5 — LOCATIONS (countries, cities, regions, institutions, …)
+
+A separate relationship extraction pass will then link entities across all categories.
+
+YOUR TASK: Extract ONLY the category indicated below. Do not extract entities \
+that belong to other categories — they will be captured in their own dedicated pass.\
+"""
+
+# ---------------------------------------------------------------------------
+# Protocol-aligned definitions and cues (from research protocol)
+# ---------------------------------------------------------------------------
+
+_EVENT_DEFINITION = (
+    "Events are defined as a single occurrence or occasion that contributes to a coherent "
+    "chronicle of an initiative when ordered in time. Ideally includes a time reference "
+    "(year/month/date). Events must be discrete (not spanning multiple years/decades) and "
+    "must fall within 1925–2025 (exclude projections/predictions)."
+)
+_EVENT_CUES = (
+    "Events can be (but are not always) identified by words such as: movement, negotiation, "
+    "formal recognition, workshop, meeting, summit, conference, adoption of resolution or agenda, "
+    "endorsement of a resolution or agenda, court ruling, forum, formal ban or moratorium, "
+    "intergovernmental dialogue, lawsuit, symposium, agreement, alliance formation, seminar, "
+    "assembly, convention, ratification, and opening of a first site."
+)
+_PROCESS_DEFINITION = (
+    "Processes are defined as a longer-running sequence of activities or developments explicitly "
+    "described in the text, which may span multiple years. Extract only when the text clearly "
+    "describes an extended process (e.g., multi-year review, decade-long reform)."
+)
+_PROCESS_CUES = (
+    "Processes can be (but are not always) identified by words such as: long-term process, "
+    "ongoing, gradual, over time, over the following years/decades, multi-year review, "
+    "consultation process, drafting process, negotiation process, reform, restructuring, "
+    "transition, institutionalisation, mainstreaming, implementation, roll-out, scaling up, "
+    "expansion, proliferation, diffusion/spread, harmonisation/standardisation, "
+    "capacity-building, monitoring and reporting, policy integration, governance shift."
+)
+
+_ACTOR_DEFINITION = (
+    "An actor is defined as any set of living bodies (individual or collective) to which "
+    "observers attribute coherent intention to partake in an initiative. Actors should be "
+    "concrete — prefer proper names (e.g., 'Aldo Leopold', 'Greenpeace', 'World Health "
+    "Organisation'). Accept specific attributed groups anchored to a place or field "
+    "(e.g., 'Ecuadorian judges', 'environmental lawyers'). Exclude overly general groups "
+    "(e.g., 'humans', 'society', 'young people', 'activists' without further specification)."
+)
+_ACTOR_CUES = (
+    "Actors can be (but are not always) identified by words such as: Government, indigenous "
+    "community, scholar, academic, lawyer, institution, organisation, community, network, "
+    "thinker, advocate, scientist, international community, local community, negotiator, "
+    "politician, activist, global hub, NGO, transnational network, business leaders, city "
+    "officials, state leaders, provincial government, religious leaders, expert, tribunal, "
+    "civil society groups, tribes, companies, universities, judge, philanthropic organisation, "
+    "broker, founder, co-founder, community leaders, committee, international agency, panel, "
+    "researcher, coalition, council, taskforce, associations, policymakers, artists and poets."
+)
+
+_CONCEPT_DEFINITION = (
+    "A concept is defined as a set of mental representations signifying actors' cognition when "
+    "partaking in an initiative. Prefer concrete named concepts (e.g., 'sustainable development', "
+    "'Buen Vivir', 'planetary boundaries'). Accept attributed concept categories anchored to a "
+    "place, field or established concept (e.g., 'earth-centered approach', 'indigenous "
+    "cosmovision'). Note: if the text introduces or quotes a formal definition/standard/rule in "
+    "a named document (e.g., 'the Guidelines define…'), extract that as an EXPRESSION instead."
+)
+_CONCEPT_CUES = (
+    "Concepts can be (but are not always) identified by words such as: argument, idea, "
+    "terminology, term, principle, paradigm, approach, common understanding, norm, critique, "
+    "vision, framing, models, values, view, worldview, doctrine, emerging field, knowledge "
+    "system, theory, methodology, conception, theme, philosophy, and metaphor."
+)
+
+_EXPRESSION_DEFINITION = (
+    "An expression is defined as a tangible, named output created or modified by actors to "
+    "record and communicate ideas and practices relevant to an initiative. Prefer concrete "
+    "named titles (e.g., 'Treaty of Waitangi', 'Silent Spring', 'Laudato Si'). Do NOT "
+    "describe the act of adopting/publishing/holding — those belong in EVENTS."
+)
+_EXPRESSION_CUES = (
+    "Expressions can be (but are not always) identified by words such as: treaty, regulation, "
+    "framework, book, policy, declaration, report, resolution, ordinance, law, agreement, "
+    "encyclical, rights, statute, statute amendment, court decision, constitution, legal "
+    "provision, agenda, document, publication, programme, paper, strategies and action plans, "
+    "assessment, journal, protocol, global goals, indicator, editorial, widely referenced text, "
+    "study, documentation, practice, regulatory act, decision, metrics, poems, songs, "
+    "pictures, and sites."
+)
+
+_LOCATION_DEFINITION = (
+    "A location is defined as a place-based entity (country, city, region, ecosystem, "
+    "protected area, institution, etc.) relevant to the initiative."
+)
+
+# ---------------------------------------------------------------------------
+# Entity extraction prompts
+# ---------------------------------------------------------------------------
+
+EVENT_EXTRACTION_PROMPT = f"""{_KG_PREAMBLE}
+
+--- CURRENT PASS: EVENTS & PROCESSES ---
+
+{CONTEXT_SENTENCE}
+
+Definition: {_EVENT_DEFINITION}
+Cues: {_EVENT_CUES}
+Process definition: {_PROCESS_DEFINITION}
+Process cues: {_PROCESS_CUES}
+
+Rules:
+- Cue words are hints, not triggers. Do not extract an event unless the text clearly describes a specific occurrence and you can quote exact supporting_text.
+- Time bounds (EVENTS only): extract events only if they fall between 1925 and 2025 (inclusive). Exclude projections/predictions.
+- Discreteness (EVENTS only): exclude events that span multiple years/decades — treat such multi-year developments as PROCESSES if explicitly described.
+- Event titles should be action-based when applicable (e.g., "Publication of X", "Adoption of Y", "Establishment of A").
+- If a field is not mentioned, use null or an empty list.
+
+For each event/process, extract:
 1. Title (required)
-2. Year or period
+2. Year or period (required if mentioned)
 3. Description
-4. Type (Publication, Conference, Meeting, Policy, Research, Movement, Organization, Court decision, Other)
-5. Juridical significance, I.e. significance concerning recognizing the rights of nature (1-5 scale)
-6. Harmony significance, I.e. significance concerning living in harmony with nature (1-5 scale)
-7. Start/end dates (if mentioned)
-8. Associated locations
-9. Key actors involved
-10. Related concepts
-11. Supporting text (required) - the exact excerpt from the text that supports this event extraction
+4. Type (Process, Publication, Conference, Meeting, Policy, Research, Movement, Organization, Court decision, Other)
+5. Start/end dates (if mentioned)
+6. Associated locations
+7. Key actors involved
+8. Related concepts
+9. Supporting text (required) — exact excerpt from the text supporting this extraction
 
 Text to analyze:
 {{text}}
@@ -43,40 +168,51 @@ Respond in the following JSON format:
       "year": YYYY,
       "description": "Detailed description",
       "type": "Event type",
-      "juridical significance": N,
-      "harmony significance": N,
       "dates": {{{{"start": "YYYY-MM-DD", "end": "YYYY-MM-DD"}}}},
       "locations": ["Location names"],
       "actors": ["Actor names"],
       "concepts": ["Concept names"],
-      "supporting_text": "The exact text excerpt that mentions and supports this event extraction"
+      "supporting_text": "The exact text excerpt that supports this extraction"
     }}}}
   ]
 }}}}
 """
 
-ACTOR_EXTRACTION_PROMPT = f"""
-{CONTEXT_SENTENCE} Actors can be individuals, organizations, institutions, or other entities that participate in the planetary health movement.
+ACTOR_EXTRACTION_PROMPT = f"""{_KG_PREAMBLE}
+
+--- CURRENT PASS: ACTORS ---
+
+{CONTEXT_SENTENCE}
+
+Definition: {_ACTOR_DEFINITION}
+Cues: {_ACTOR_CUES}
+
+Rules:
+- Actors must be concrete and attributable. Prefer proper names; accept specific attributed groups (e.g., 'Ecuadorian judges').
+- Cue words are hints, not triggers. Do not extract an actor unless the text clearly describes a specific actor and you can quote exact supporting_text.
+- Exclude general/ambiguous groups (e.g., 'humans', 'society', 'young people', 'activists') unless made specific by a place, field, or attribution.
+- IMPORTANT: All actor subtypes MUST be returned under the single key "actors". Do NOT use separate keys like "organizations", "movements", "individuals", etc.
+- If a field is not mentioned, use null or an empty list.
 
 For each actor, extract:
 1. Name (required)
-2. Type (Individual, Organizations, Government, NGO, Coalition, Indigenous and local communities, Other)
+2. Type (Individual, Organization, Government, NGO, Coalition, Indigenous and local communities, Other)
 3. Description
-4. Role in {CONTEXT_PHRASE} 
+4. Role in {CONTEXT_PHRASE}
 5. Country/location
-6. Supporting text (required) - the exact excerpt from the text that mentions this actor
+6. Supporting text (required) — exact excerpt from the text mentioning this actor
 
 Text to analyze:
 {{text}}
 
-Respond in the following JSON format:
+Respond in the following JSON format — ALL actors in the single "actors" array:
 {{{{
   "actors": [
     {{{{
       "name": "Actor name",
       "type": "Actor type",
       "description": "Description of the actor",
-      "role": "Role in eco-jurisprudence and living in harmony with nature",
+      "role": "Role in the initiative",
       "country": "Country code or name",
       "supporting_text": "The exact text excerpt that mentions this actor"
     }}}}
@@ -84,14 +220,25 @@ Respond in the following JSON format:
 }}}}
 """
 
-CONCEPT_EXTRACTION_PROMPT = f"""
-{CONTEXT_SENTENCE} Identify any CONCEPTS mentioned.
-Concepts can be theories, ideas, frameworks, or terms relevant to {CONTEXT_PHRASE}.
+CONCEPT_EXTRACTION_PROMPT = f"""{_KG_PREAMBLE}
+
+--- CURRENT PASS: CONCEPTS ---
+
+{CONTEXT_SENTENCE}
+
+Definition: {_CONCEPT_DEFINITION}
+Cues: {_CONCEPT_CUES}
+
+Rules:
+- Cue words are hints, not triggers. Do not extract a concept unless the text clearly describes a specific concept and you can quote exact supporting_text.
+- If the text introduces or quotes a formal definition/standard/rule in a named document, extract it as an EXPRESSION (not a concept).
+- If a field is not mentioned, use null or an empty list.
+
 For each concept, extract:
 1. Name (required)
-2. Definition/explanation (required)
-3. Proponents
-4. Supporting text (required) - the exact excerpt from the text that mentions this concept
+2. Definition/explanation (required; based on the text)
+3. Key proponents (if mentioned)
+4. Supporting text (required) — exact excerpt from the text mentioning this concept
 
 Text to analyze:
 {{text}}
@@ -109,43 +256,62 @@ Respond in the following JSON format:
 }}}}
 """
 
-EXPRESSION_EXTRACTION_PROMPT = f"""
-{CONTEXT_SENTENCE} Identify any EXPRESSION mentioned. Such expression can for instance be important publications, speeches, material symbols, cultural practices, legal documents, rules, regulations.
+EXPRESSION_EXTRACTION_PROMPT = f"""{_KG_PREAMBLE}
 
-For each publication, extract:
+--- CURRENT PASS: EXPRESSIONS ---
+
+{CONTEXT_SENTENCE}
+
+Definition: {_EXPRESSION_DEFINITION}
+Cues: {_EXPRESSION_CUES}
+
+Rules:
+- Extract only named artefacts (title + type). Do NOT describe the act of adopting/publishing/holding — those belong in EVENTS.
+- When the text introduces or quotes a formal definition/standard/rule (e.g., 'Part I sets out a definition…'), extract that definitional statement as an EXPRESSION; the implications belong in CONCEPTS.
+- Cue words are hints, not triggers. Do not extract an expression unless the text clearly names a specific artefact and you can quote exact supporting_text.
+- If a field is not mentioned, use null or an empty list.
+
+For each expression, extract:
 1. Title (required)
-2. Type
-3. Year (required if mentioned)
+2. Type (Book, Report, Guideline, Law, Policy, Declaration, Treaty, Speech, Recommendation, Standard, Programme, Other)
+3. Year or period (if mentioned)
 4. Related actors
-5. Supporting text (required) - the exact excerpt from the text that mentions this publication
+5. Supporting text (required) — exact excerpt from the text mentioning this expression
 
 Text to analyze:
 {{text}}
 
 Respond in the following JSON format:
 {{{{
-  "publications": [
+  "expressions": [
     {{{{
       "title": "Expression title",
       "type": "Expression type",
       "year": YYYY,
       "actors": ["Actor 1", "Actor 2"],
-      "supporting_text": "The exact text excerpt that mentions this publication"
+      "supporting_text": "The exact text excerpt that mentions this expression"
     }}}}
   ]
 }}}}
 """
 
-LOCATION_EXTRACTION_PROMPT = f"""
-{CONTEXT_SENTENCE} Identify any LOCATIONS mentioned.
-Locations can be countries, cities, regions, or specific places relevant to planetary health events.
+LOCATION_EXTRACTION_PROMPT = f"""{_KG_PREAMBLE}
+
+--- CURRENT PASS: LOCATIONS ---
+
+{CONTEXT_SENTENCE}
+
+Definition: {_LOCATION_DEFINITION}
+
+Rules:
+- If a field is not mentioned, use null or an empty list.
+
 For each location, extract:
 1. Name (required)
 2. Type (Country, City, Region, Institution, Other)
 3. Country (if not a country itself)
 4. Description/context
-5. Significance to planetary health
-6. Supporting text (required) - the exact excerpt from the text that mentions this location
+5. Supporting text (required) — exact excerpt from the text mentioning this location
 
 Text to analyze:
 {{text}}
@@ -158,7 +324,6 @@ Respond in the following JSON format:
       "type": "Location type",
       "country": "Country name or code",
       "description": "Description or context",
-      "significance": "Why this location is significant to planetary health",
       "supporting_text": "The exact text excerpt that mentions this location"
     }}}}
   ]
@@ -232,9 +397,9 @@ class LLMProcessor:
                 self.llm_client.messages.create,
                 model=self.llm_client.model,
                 max_tokens=MAX_TOKENS,
-                system="You are an expert in extracting structured information about eco-jurisprudence and living in harmony with nature from academic texts. Always include supporting text that justifies each extraction.",
+                system="You are an expert knowledge graph builder specialising in eco-jurisprudence and the planetary health movement. You extract one category of entities per pass from academic texts, contributing to a shared structured knowledge graph. Always include supporting text that justifies each extraction.",
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.1,
+                temperature=0.0,
             )
 
             # Get the raw response content
@@ -265,7 +430,20 @@ class LLMProcessor:
                 
                 # Parse the JSON
                 result = json.loads(content)
-                
+
+                # Collapse any actor sub-type keys the model may have invented
+                # (e.g. "organizations", "movements", "individuals") into "actors"
+                _ACTOR_ALIASES = {
+                    "organizations", "organisation", "organisations", "organization",
+                    "movements", "movement", "individuals", "individual",
+                    "ngos", "ngo", "governments", "government",
+                    "coalitions", "coalition", "institutions", "institution",
+                }
+                for key in list(result.keys()):
+                    if key.lower() in _ACTOR_ALIASES:
+                        logger.warning("Merging unexpected key %r into 'actors'", key)
+                        result.setdefault("actors", []).extend(result.pop(key))
+
                 # Add fallback supporting text and soft-validate against schemas
                 for entity_type, entities in result.items():
                     if isinstance(entities, list):
@@ -284,7 +462,7 @@ class LLMProcessor:
                 content = response.content[0].text
                 
                 # Look for entity type keys in the response
-                entity_types = ["events", "actors", "concepts", "publications", "locations", "relationships"]
+                entity_types = ["events", "actors", "concepts", "expressions", "locations", "relationships"]
                 extracted_data = {}
                 
                 for entity_type in entity_types:
@@ -385,44 +563,83 @@ class LLMProcessor:
         # Initialize results
         all_entities = {entity_type: [] for entity_type in entity_types}
         all_relationships = []
+        all_significance = {"item_significance": [], "relation_significance": []}
         
-        logger.info("=== PHASE 1: EXTRACTING ENTITIES FROM ALL CHUNKS ===")
-        
-        # PHASE 1: Extract all entities from all chunks
+        logger.info("=== PHASE 1: EXTRACTING ENTITIES AND RELATIONS FROM ALL CHUNKS ===")
+
+        # _TITLE_TYPES: entity types that use "title" as their primary name field
+        _TITLE_TYPES = {"event", "expression"}
+
+        # PHASE 1: Extract entities (+ per-chunk relations) from every chunk
         for i, chunk in enumerate(chunks):
-            logger.info(f"Phase 1 - Processing chunk {i+1}/{len(chunks)} for entities")
-            
+            logger.info(f"Phase 1 - Processing chunk {i+1}/{len(chunks)}")
+
             chunk_entities = {entity_type: [] for entity_type in entity_types}
-            
-            # Extract entities from the chunk
+
+            # --- 5 entity extraction passes ---
             for entity_type, prompt in prompts.items():
-                logger.info(f"Extracting {entity_type}s from chunk {i+1}")
+                logger.info(f"  Extracting {entity_type}s from chunk {i+1}")
                 result = self.process_chunk(chunk, prompt)
-                
-                # Get the plural form of the entity type (e.g., "event" -> "events")
+
                 entity_type_plural = f"{entity_type}s"
-                
-                # Extract entities from the result
                 extracted_entities = result.get(entity_type_plural, [])
-                
-                # Add chunk info and IDs to entities for tracking
+
+                # Drop entities missing their primary name field
+                _name_field = "name" if entity_type not in _TITLE_TYPES else "title"
+                valid_entities = []
                 for entity in extracted_entities:
-                    if isinstance(entity, dict):
-                        entity["source_chunk"] = i
-                        if "id" not in entity:
-                            entity["id"] = str(uuid.uuid4())
-                
-                # Add to chunk entities
+                    if isinstance(entity, dict) and entity.get(_name_field, "").strip():
+                        valid_entities.append(entity)
+                    else:
+                        logger.warning(
+                            "Dropping %s entity with empty %r field: %s",
+                            entity_type, _name_field, entity
+                        )
+                extracted_entities = valid_entities
+
+                # Assign UUID and chunk metadata
+                for entity in extracted_entities:
+                    entity["source_chunk"] = i
+                    if "id" not in entity:
+                        entity["id"] = str(uuid.uuid4())
+
                 chunk_entities[entity_type].extend(extracted_entities)
-                
-                # Add a short delay to avoid rate limiting
                 time.sleep(0.5)
-            
-            # Add to our overall collection
+
+            # Accumulate entities
             for entity_type, entities in chunk_entities.items():
                 all_entities[entity_type].extend(entities)
-            
-            # Save intermediate entity results if requested
+
+            # --- 6th pass: relation extraction (per-chunk, uses extracted items) ---
+            chunk_items = []
+            for entity_type in ["event", "expression", "concept", "actor", "location"]:
+                entities = chunk_entities.get(entity_type, [])
+                name_field = "title" if entity_type in _TITLE_TYPES else "name"
+                for entity in entities:
+                    chunk_items.append({
+                        "id": entity["id"],
+                        "item_type": entity_type,
+                        "name": entity.get(name_field, ""),
+                    })
+
+            chunk_relations = []
+            if extract_relationships:
+                logger.info(f"  Extracting relations from chunk {i+1} ({len(chunk_items)} items)")
+                chunk_relations = self.relationship_processor.extract_relations_from_chunk(chunk, chunk_items)
+                all_relationships.extend(chunk_relations)
+                time.sleep(0.5)
+
+            # --- 7th pass: significance attribution (per-chunk, uses items + relations) ---
+            if extract_relationships:
+                logger.info(f"  Attributing significance from chunk {i+1}")
+                chunk_sig = self.relationship_processor.extract_significance_from_chunk(
+                    chunk, chunk_items, chunk_relations
+                )
+                all_significance["item_significance"].extend(chunk_sig["item_significance"])
+                all_significance["relation_significance"].extend(chunk_sig["relation_significance"])
+                time.sleep(0.5)
+
+            # Save intermediate results if requested
             if update_after_each:
                 intermediate_results = {
                     "entities": all_entities,
@@ -431,55 +648,97 @@ class LLMProcessor:
                         "total_chunks": len(chunks),
                         "chunks_processed": i + 1,
                         "phase": "entities_only",
-                        "entity_counts": {entity_type: len(entities) for entity_type, entities in all_entities.items()},
+                        "entity_counts": {et: len(ents) for et, ents in all_entities.items()},
                         "relationship_count": 0
                     }
                 }
-                
-                # Resolve and deduplicate entities so far
-                resolved_entities = resolve_entities(intermediate_results["entities"], manual_mappings=self.manual_mappings)
-                intermediate_results["entities"] = resolved_entities
-                
-                logger.info(f"Saving intermediate entity results after chunk {i+1}/{len(chunks)}")
+                resolved_intermediate = resolve_entities(
+                    intermediate_results["entities"], manual_mappings=self.manual_mappings
+                )
+                intermediate_results["entities"] = resolved_intermediate
+                logger.info(f"Saving intermediate results after chunk {i+1}/{len(chunks)}")
                 save_results(intermediate_results, output_dir, f"{base_filename}_entities_phase1_{i+1}")
-        
-        logger.info("=== PHASE 2: EXTRACTING RELATIONSHIPS FROM ALL CHUNKS ===")
-        
-        # PHASE 2: Extract relationships if requested
-        if extract_relationships:
-            all_relationships = self.relationship_processor.extract_relationships_from_chunks(chunks)
-        
-        logger.info("=== PHASE 3: ENTITY RESOLUTION AND FINAL PROCESSING ===")
-        
+
+        # Save raw (pre-merge) results so the user can inspect what the LLM extracted
+        # before any deduplication is applied.
+        if output_dir and base_filename:
+            raw_dir = os.path.join(output_dir, "raw")
+            os.makedirs(raw_dir, exist_ok=True)
+            # Per-type entity files
+            for et, ents in all_entities.items():
+                raw_entity_path = os.path.join(raw_dir, f"{base_filename}_{et}s.json")
+                with open(raw_entity_path, "w", encoding="utf-8") as f:
+                    json.dump({f"{et}s": ents}, f, indent=2, ensure_ascii=False)
+                csv_path = os.path.join(raw_dir, f"{base_filename}_{et}s.csv")
+                create_entity_csv(ents, et, csv_path)
+            # Relationships
+            raw_rel_path = os.path.join(raw_dir, f"{base_filename}_relationships.json")
+            with open(raw_rel_path, "w", encoding="utf-8") as f:
+                json.dump({"relationships": all_relationships}, f, indent=2, ensure_ascii=False)
+            # Combined KG
+            raw_kg = {f"{et}s": ents for et, ents in all_entities.items()}
+            raw_kg["relationships"] = all_relationships
+            raw_kg_path = os.path.join(raw_dir, f"{base_filename}_knowledge_graph.json")
+            with open(raw_kg_path, "w", encoding="utf-8") as f:
+                json.dump(raw_kg, f, indent=2, ensure_ascii=False)
+            logger.info("Raw (pre-merge) output saved to %s/", raw_dir)
+
+        logger.info("=== PHASE 2: ENTITY RESOLUTION ===")
+
+        # Build pre-resolution UUID → (type, name) map for relation remapping
+        _name_field_for = lambda t: "title" if t in _TITLE_TYPES else "name"
+        pre_resolution = {
+            entity["id"]: (entity_type, entity.get(_name_field_for(entity_type), ""))
+            for entity_type, entities in all_entities.items()
+            for entity in entities
+        }
+
         # Resolve and deduplicate entities
         logger.info("Resolving and deduplicating entities")
         resolved_entities = resolve_entities(all_entities, manual_mappings=self.manual_mappings)
-        
+
         # Create disambiguation report if requested
         if create_report and output_dir and base_filename:
+            os.makedirs(output_dir, exist_ok=True)
             report_path = os.path.join(output_dir, f"{base_filename}_disambiguation_report.json")
-            # Re-run resolution with report generation
             resolved_entities = create_disambiguation_report(
-                all_entities, 
-                report_path, 
+                all_entities,
+                report_path,
                 manual_mappings=self.manual_mappings
             )
-        
-        # Process relationships using RelationshipProcessor
+
+        logger.info("=== PHASE 3: RELATION REMAPPING AND DEDUPLICATION ===")
+
+        # Build post-resolution (type, name) → UUID map
+        post_resolution = {
+            (entity_type, entity.get(_name_field_for(entity_type), "")): entity["id"]
+            for entity_type, entities in resolved_entities.items()
+            for entity in entities
+        }
+
+        # Build original UUID → canonical UUID remap
+        uuid_map = {}
+        for orig_uuid, (entity_type, name) in pre_resolution.items():
+            canonical = post_resolution.get((entity_type, name))
+            uuid_map[orig_uuid] = canonical if canonical else orig_uuid
+
         resolved_relationships = []
+        resolved_significance = {"item_significance": [], "relation_significance": []}
         if extract_relationships and all_relationships:
-            logger.info("Processing relationships with RelationshipProcessor")
-            resolved_relationships = self.relationship_processor.resolve_relationships_with_entities(all_relationships, resolved_entities)
-            
-            # Deduplicate relationships
-            if resolved_relationships:
-                logger.info("Deduplicating relationships")
-                resolved_relationships = self.relationship_processor.deduplicate_relationships(resolved_relationships)
-        
+            logger.info("Remapping relation UUIDs after entity resolution")
+            resolved_relationships = self.relationship_processor.remap_relation_uuids(all_relationships, uuid_map)
+            logger.info("Deduplicating relations")
+            resolved_relationships = self.relationship_processor.deduplicate_relationships(resolved_relationships)
+
+        if extract_relationships and (all_significance["item_significance"] or all_significance["relation_significance"]):
+            logger.info("Remapping significance UUIDs after entity resolution")
+            resolved_significance = self.relationship_processor.remap_significance_uuids(all_significance, uuid_map)
+
         # Return the results
         return {
             "entities": resolved_entities,
             "relationships": resolved_relationships,
+            "significance": resolved_significance,
             "stats": {
                 "total_chunks": len(chunks),
                 "chunks_processed": len(chunks),
@@ -489,12 +748,53 @@ class LLMProcessor:
         }
 
 
+def _attach_significance(results: Dict) -> Dict:
+    """
+    Merge significance data into each entity and relation in-place.
+
+    item_significance entries are matched to entities by UUID and attached as
+    a "significance" field.  relation_significance entries are matched to
+    relationships the same way.  The top-level "significance" key is removed
+    so consumers always find significance on the item itself.
+    """
+    sig = results.get("significance", {})
+    item_sig_map = {s["id"]: s for s in sig.get("item_significance", []) if "id" in s}
+    rel_sig_map  = {s["id"]: s for s in sig.get("relation_significance", []) if "id" in s}
+
+    for entities in results["entities"].values():
+        for entity in entities:
+            if entity.get("id") in item_sig_map:
+                entry = item_sig_map[entity["id"]]
+                entity["significance"] = {
+                    "primary_category": entry.get("primary_category"),
+                    "justification":    entry.get("justification"),
+                    "supporting_text":  entry.get("supporting_text"),
+                }
+
+    for rel in results["relationships"]:
+        if rel.get("id") in rel_sig_map:
+            entry = rel_sig_map[rel["id"]]
+            rel["significance"] = {
+                "primary_category": entry.get("primary_category"),
+                "justification":    entry.get("justification"),
+                "supporting_text":  entry.get("supporting_text"),
+            }
+
+    results.pop("significance", None)
+    return results
+
+
 def save_results(results: Dict, output_dir: str, base_filename: str) -> Dict[str, str]:
     """
-    Save extraction results to files
+    Save extraction results to files.
+
+    Significance is attached to each entity/relation before writing so that
+    consumers never need a separate join.
     """
     os.makedirs(output_dir, exist_ok=True)
-    
+
+    results = _attach_significance(results)
+
     # Save entities by type
     entity_paths = {}
     for entity_type, entities in results["entities"].items():
@@ -502,30 +802,29 @@ def save_results(results: Dict, output_dir: str, base_filename: str) -> Dict[str
         with open(entity_path, 'w', encoding='utf-8') as f:
             json.dump({f"{entity_type}s": entities}, f, indent=2, ensure_ascii=False)
         entity_paths[entity_type] = entity_path
-        
+
         # Also create CSV for each entity type
         csv_path = os.path.join(output_dir, f"{base_filename}_{entity_type}s.csv")
         create_entity_csv(entities, entity_type, csv_path)
         entity_paths[f"{entity_type}_csv"] = csv_path
-    
+
     # Save relationships
     relationships_path = os.path.join(output_dir, f"{base_filename}_relationships.json")
     with open(relationships_path, 'w', encoding='utf-8') as f:
         json.dump({"relationships": results["relationships"]}, f, indent=2, ensure_ascii=False)
-    
+
     # Save combined knowledge graph
     kg_path = os.path.join(output_dir, f"{base_filename}_knowledge_graph.json")
     kg_entities = {f"{entity_type}s": entities for entity_type, entities in results["entities"].items()}
     kg_entities["relationships"] = results["relationships"]
-    
     with open(kg_path, 'w', encoding='utf-8') as f:
         json.dump(kg_entities, f, indent=2, ensure_ascii=False)
-    
+
     # Save stats
     stats_path = os.path.join(output_dir, f"{base_filename}_extraction_stats.json")
     with open(stats_path, 'w', encoding='utf-8') as f:
         json.dump(results["stats"], f, indent=2, ensure_ascii=False)
-    
+
     return {
         "entities": entity_paths,
         "relationships": relationships_path,
@@ -573,16 +872,15 @@ def create_entity_csv(entities: List[Dict], entity_type: str, csv_path: str):
                 supporting_text = entity.get("supporting_text", "").replace('"', '""')[:300] + "..." if len(entity.get("supporting_text", "")) > 300 else entity.get("supporting_text", "")
                 f.write(f'"{name}","{definition}",{significance},"{domain}","{supporting_text}"\n')
         
-        elif entity_type == "publication":
-            f.write("Title,Year,Type,Authors,Publisher,Supporting_Text\n")
+        elif entity_type == "expression":
+            f.write("Title,Year,Type,Actors,Supporting_Text\n")
             for entity in entities:
                 title = entity.get("title", "").replace('"', '""')
                 year = entity.get("year", "")
-                pub_type = entity.get("type", "")
-                authors = ", ".join(entity.get("authors", [])) if entity.get("authors") else ""
-                publisher = entity.get("publisher", "").replace('"', '""')
+                exp_type = entity.get("type", "")
+                actors = ", ".join(entity.get("actors", [])) if entity.get("actors") else ""
                 supporting_text = entity.get("supporting_text", "").replace('"', '""')[:300] + "..." if len(entity.get("supporting_text", "")) > 300 else entity.get("supporting_text", "")
-                f.write(f'"{title}",{year},"{pub_type}","{authors}","{publisher}","{supporting_text}"\n')
+                f.write(f'"{title}",{year},"{exp_type}","{actors}","{supporting_text}"\n')
         
         elif entity_type == "location":
             f.write("Name,Type,Country,Description,Supporting_Text\n")
@@ -600,13 +898,14 @@ def main():
     parser = argparse.ArgumentParser(description="Process document chunks with an LLM to extract entities with supporting text")
     parser.add_argument("chunks_file", help="Path to JSON file with document chunks")
     parser.add_argument("--output-dir", default="data/processed", help="Directory to save output files")
-    parser.add_argument("--entity-types", nargs="+", default=["event", "actor", "concept", "publication", "location"], 
+    parser.add_argument("--entity-types", nargs="+", default=["event", "actor", "concept", "expression", "location"],
                         help="Entity types to extract")
     parser.add_argument("--no-relationships", action="store_true", help="Skip relationship extraction")
     parser.add_argument("--max-chunks", type=int, default=None, help="Maximum number of chunks to process")
     parser.add_argument("--chunk-index", type=int, default=None, help="Process only the chunk at this index (0-based)")
     parser.add_argument("--chunk-range", type=str, default=None, help="Process chunks in this range (e.g., '0-5')")
     parser.add_argument("--update-after-each", action="store_true", help="Write/update output files after each chunk is processed")
+    parser.add_argument("--reverse", action="store_true", help="Process chunks in reverse order")
     parser.add_argument("--manual-mappings", type=str, default=None, help="Path to JSON file with manual entity mappings")
     parser.add_argument("--use-example-mappings", action="store_true", help="Use built-in example manual mappings")
     parser.add_argument("--no-disambiguation-report", action="store_true", help="Skip creating disambiguation report")
@@ -670,6 +969,10 @@ def main():
         elif args.max_chunks and args.max_chunks < len(chunks):
             logger.info(f"Limiting to {args.max_chunks} chunks")
             chunks = chunks[:args.max_chunks]
+
+        if args.reverse:
+            logger.info("Processing chunks in reverse order")
+            chunks = list(reversed(chunks))
         
         try:
             from llm_client import create_llm_client

@@ -39,7 +39,10 @@ _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 def _infer_critic_file(kg_file: str) -> Optional[str]:
     """
     Derive the critic-evaluation file path from the knowledge-graph file path.
-    Returns ``None`` if the inferred file does not exist.
+    Searches for a matching critic file in:
+      1. data/critic_results_<suffix>/ — sibling of the KG output dir
+      2. data/critic_results/           — default location
+    Returns ``None`` if no matching file exists.
     """
     if kg_file.endswith("_knowledge_graph.json"):
         base = kg_file[: -len("_knowledge_graph.json")]
@@ -47,8 +50,20 @@ def _infer_critic_file(kg_file: str) -> Optional[str]:
         base = os.path.splitext(kg_file)[0]
         if base.endswith("_knowledge_graph"):
             base = base[: -len("_knowledge_graph")]
-    candidate = f"data/critic_results/{os.path.basename(base)}_critic_evaluation.json"
-    return candidate if os.path.exists(candidate) else None
+
+    stem = os.path.basename(base)
+
+    # Derive sibling critic dir from KG dir (e.g. data/processed_v2 → data/critic_results_v2)
+    kg_dir = os.path.dirname(kg_file)
+    kg_dir_name = os.path.basename(kg_dir)  # e.g. "processed_v2"
+    suffix = kg_dir_name[len("processed"):] if kg_dir_name.startswith("processed") else ""
+    sibling_critic_dir = os.path.join(os.path.dirname(kg_dir), f"critic_results{suffix}")
+
+    for critic_dir in [sibling_critic_dir, "data/critic_results"]:
+        candidate = os.path.join(critic_dir, f"{stem}_critic_evaluation.json")
+        if os.path.exists(candidate):
+            return candidate
+    return None
 
 
 # ---------------------------------------------------------------------------

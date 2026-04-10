@@ -162,16 +162,22 @@
             </div>
             
             <div class="form-group">
-                <label for="significance">Significance</label>
-                <select id="significance" name="significance">
-                    <option value="">-- Select Significance --</option>
-                    <option value="1">1 - Minor significance</option>
-                    <option value="2">2 - Moderate significance</option>
-                    <option value="3">3 - Important</option>
-                    <option value="4">4 - Very significant</option>
-                    <option value="5">5 - Transformative</option>
+                <label for="significance_category">Significance Category</label>
+                <select id="significance_category" name="significance_category">
+                    <option value="">-- Select Category --</option>
+                    <option value="fostering_collective_action">Fostering Collective Action</option>
+                    <option value="revealing_potential_for_system_change">Revealing System Change Potential</option>
+                    <option value="exposing_prevailing_condition">Exposing Prevailing Condition</option>
+                    <option value="impacting_salience_and_social_acceptance">Impacting Salience &amp; Social Acceptance</option>
+                    <option value="undermining_changes_and_progress">Undermining Changes and Progress</option>
+                    <option value="unclear">Unclear</option>
                 </select>
-                <div class="help-text">Rate the event's significance to the planetary health movement</div>
+                <div class="help-text">Classify the event's significance to the planetary health initiative</div>
+            </div>
+            <div class="form-group">
+                <label for="significance_justification">Significance Justification</label>
+                <textarea id="significance_justification" name="significance_justification" style="height:60px;"></textarea>
+                <div class="help-text">Brief explanation for the chosen category (1–2 sentences)</div>
             </div>
         </div>
         

@@ -16,7 +16,7 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1600px;
             margin: 0 auto;
             background-color: white;
             padding: 30px;
@@ -33,15 +33,15 @@
         .timeline-container {
             position: relative;
             margin: 40px 0;
-            padding: 80px 0;
+            padding: 20px 0;
             overflow-x: auto;
             overflow-y: visible;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             background-color: #f9f9f9;
-            min-height: 600px;
-            height: 600px;
+            min-height: 320px;
+            height: 320px;
         }
         
         .scroll-indicator {
@@ -69,7 +69,7 @@
             height: 4px;
             background-color: #3498db;
             position: relative;
-            margin: 280px auto 280px auto;
+            margin: 140px auto;
             min-width: 100%;
             border-radius: 2px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -119,32 +119,28 @@
             z-index: 20;
         }
         
-        .event-point[data-significance="5"] {
-            background-color: #e74c3c;
-            width: 20px;
-            height: 20px;
+        .event-point[data-significance="fostering_collective_action"] {
+            background-color: #2ecc71;
         }
-        
-        .event-point[data-significance="4"] {
-            background-color: #f39c12;
-            width: 18px;
-            height: 18px;
+
+        .event-point[data-significance="revealing_potential_for_system_change"] {
+            background-color: #9b59b6;
         }
-        
-        .event-point[data-significance="3"] {
+
+        .event-point[data-significance="exposing_prevailing_condition"] {
+            background-color: #e67e22;
+        }
+
+        .event-point[data-significance="impacting_salience_and_social_acceptance"] {
             background-color: #3498db;
         }
-        
-        .event-point[data-significance="2"] {
-            background-color: #2ecc71;
-            width: 14px;
-            height: 14px;
+
+        .event-point[data-significance="undermining_changes_and_progress"] {
+            background-color: #e74c3c;
         }
-        
-        .event-point[data-significance="1"] {
+
+        .event-point[data-significance="unclear"] {
             background-color: #95a5a6;
-            width: 12px;
-            height: 12px;
         }
         
         /* Critic assessment indicators */
@@ -361,6 +357,7 @@
             <p><strong>Year:</strong> <span id="detail-year"></span></p>
             <p><strong>Type:</strong> <span id="detail-type"></span></p>
             <p><strong>Significance:</strong> <span id="detail-significance"></span></p>
+            <p id="detail-significance-justification" style="display:none; font-size:12px; color:#555; font-style:italic; margin-top:-8px;"></p>
             <p id="detail-description"></p>
             <div id="detail-sources"></div>
             <div class="tags" id="detail-tags"></div>
@@ -371,27 +368,8 @@
             <div class="related-events" id="related-events"></div>
         </div>
         
-        <div class="legend">
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #e74c3c;"></div>
-                <span>Transformative (5)</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #f39c12;"></div>
-                <span>Very Significant (4)</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #3498db;"></div>
-                <span>Important (3)</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #2ecc71;"></div>
-                <span>Moderate (2)</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #95a5a6;"></div>
-                <span>Minor (1)</span>
-            </div>
+        <div class="legend" id="sig-legend">
+            <!-- Populated dynamically by buildLegend() -->
             
             <!-- Critic assessment legend (hidden by default) -->
             <div id="critic-legend" style="width: 100%; margin-top: 15px; display: none;">
@@ -504,7 +482,7 @@
                                 year: 1962,
                                 title: "Publication of 'Silent Spring'",
                                 description: "Rachel Carson's book documented the detrimental effects of pesticides on the environment.",
-                                significance: 5,
+                                significance: { primary_category: "impacting_salience_and_social_acceptance", justification: "Shifted public discourse on pesticides and environmental harm." },
                                 type: "Publication",
                                 tags: ["environmental movement", "ecology"]
                             },
@@ -513,7 +491,7 @@
                                 year: 1972,
                                 title: "UN Conference on Human Environment",
                                 description: "First major conference on international environmental issues.",
-                                significance: 4,
+                                significance: { primary_category: "fostering_collective_action", justification: "Enabled international coordination on environmental governance." },
                                 type: "Conference",
                                 tags: ["United Nations", "policy"]
                             },
@@ -522,7 +500,7 @@
                                 year: 2015,
                                 title: "Lancet Commission on Planetary Health",
                                 description: "Introduced the concept of planetary health.",
-                                significance: 5,
+                                significance: { primary_category: "revealing_potential_for_system_change", justification: "Introduced the planetary health framework linking human and natural system health." },
                                 type: "Publication",
                                 tags: ["planetary health", "Anthropocene"]
                             }
@@ -656,115 +634,44 @@
             });
             timelineContainer.appendChild(scrollIndicator);
             
-            // Add zoom controls to the document body so they're always visible
+            // Zoom controls — positioned inside the timeline box, top-right corner
             const zoomControls = document.createElement('div');
-            zoomControls.className = 'zoom-controls';
-            zoomControls.style.position = 'fixed';
-            zoomControls.style.left = '10px';
-            zoomControls.style.top = '10px';
-            zoomControls.style.zIndex = '1000';
-            zoomControls.style.display = 'flex';
-            zoomControls.style.gap = '5px';
-            zoomControls.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-            zoomControls.style.padding = '8px';
-            zoomControls.style.borderRadius = '6px';
-            zoomControls.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
-            zoomControls.style.border = '1px solid #ddd';
-            
-            const zoomInBtn = document.createElement('button');
-            zoomInBtn.textContent = '+';
-            zoomInBtn.style.backgroundColor = '#3498db';
-            zoomInBtn.style.color = 'white';
-            zoomInBtn.style.border = 'none';
-            zoomInBtn.style.borderRadius = '4px';
-            zoomInBtn.style.width = '35px';
-            zoomInBtn.style.height = '35px';
-            zoomInBtn.style.fontSize = '18px';
-            zoomInBtn.style.cursor = 'pointer';
-            zoomInBtn.style.fontWeight = 'bold';
+            zoomControls.style.cssText = `
+                position: absolute; top: 8px; right: 8px; z-index: 20;
+                display: flex; gap: 4px;
+                background: rgba(255,255,255,0.9);
+                padding: 4px 6px; border-radius: 6px;
+                box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+                border: 1px solid #ddd;
+            `;
+
+            function makeZoomBtn(label) {
+                const btn = document.createElement('button');
+                btn.textContent = label;
+                btn.style.cssText = `
+                    background: #3498db; color: white; border: none;
+                    border-radius: 4px; width: 28px; height: 28px;
+                    font-size: 16px; font-weight: bold; cursor: pointer; line-height: 1;
+                `;
+                btn.onmouseover = () => btn.style.background = '#2980b9';
+                btn.onmouseout  = () => btn.style.background = '#3498db';
+                return btn;
+            }
+
+            const zoomInBtn = makeZoomBtn('+');
             zoomInBtn.addEventListener('click', function() {
-                console.log("Zoom in clicked");
-                // Get the current width, fallback to the offsetWidth if style.width is not set
-                let currentWidth = parseInt(timelineAxis.style.width);
-                if (isNaN(currentWidth)) {
-                    currentWidth = timelineAxis.offsetWidth;
-                    console.log("Using offsetWidth instead:", currentWidth);
-                }
-                console.log("Current width:", currentWidth);
-                const newWidth = currentWidth * 1.2;
-                console.log("New width:", newWidth);
-                timelineAxis.style.width = `${newWidth}px`;
-                // Reposition events after zooming
+                const currentWidth = parseInt(timelineAxis.style.width) || timelineAxis.offsetWidth;
+                timelineAxis.style.width = `${currentWidth * 1.3}px`;
                 repositionEvents();
-                console.log("Events repositioned after zoom in");
-                
-                // Show a visual indicator that zooming occurred
-                const zoomIndicator = document.createElement('div');
-                zoomIndicator.textContent = 'Zoomed In';
-                zoomIndicator.style.position = 'absolute';
-                zoomIndicator.style.top = '50px';
-                zoomIndicator.style.left = '50%';
-                zoomIndicator.style.transform = 'translateX(-50%)';
-                zoomIndicator.style.backgroundColor = 'rgba(52, 152, 219, 0.7)';
-                zoomIndicator.style.color = 'white';
-                zoomIndicator.style.padding = '5px 10px';
-                zoomIndicator.style.borderRadius = '4px';
-                zoomIndicator.style.zIndex = '10';
-                timelineContainer.appendChild(zoomIndicator);
-                
-                // Remove the indicator after 2 seconds
-                setTimeout(() => {
-                    timelineContainer.removeChild(zoomIndicator);
-                }, 2000);
             });
-            
-            const zoomOutBtn = document.createElement('button');
-            zoomOutBtn.textContent = '−';
-            zoomOutBtn.style.backgroundColor = '#3498db';
-            zoomOutBtn.style.color = 'white';
-            zoomOutBtn.style.border = 'none';
-            zoomOutBtn.style.borderRadius = '4px';
-            zoomOutBtn.style.width = '35px';
-            zoomOutBtn.style.height = '35px';
-            zoomOutBtn.style.fontSize = '18px';
-            zoomOutBtn.style.cursor = 'pointer';
-            zoomOutBtn.style.fontWeight = 'bold';
+
+            const zoomOutBtn = makeZoomBtn('−');
             zoomOutBtn.addEventListener('click', function() {
-                console.log("Zoom out clicked");
-                // Get the current width, fallback to the offsetWidth if style.width is not set
-                let currentWidth = parseInt(timelineAxis.style.width);
-                if (isNaN(currentWidth)) {
-                    currentWidth = timelineAxis.offsetWidth;
-                    console.log("Using offsetWidth instead:", currentWidth);
-                }
-                console.log("Current width:", currentWidth);
-                const newWidth = Math.max(currentWidth / 1.2, timelineContainer.offsetWidth);
-                console.log("New width:", newWidth);
-                timelineAxis.style.width = `${newWidth}px`;
-                // Reposition events after zooming
+                const currentWidth = parseInt(timelineAxis.style.width) || timelineAxis.offsetWidth;
+                timelineAxis.style.width = `${Math.max(currentWidth / 1.3, timelineContainer.clientWidth)}px`;
                 repositionEvents();
-                console.log("Events repositioned after zoom out");
-                
-                // Show a visual indicator that zooming occurred
-                const zoomIndicator = document.createElement('div');
-                zoomIndicator.textContent = 'Zoomed Out';
-                zoomIndicator.style.position = 'absolute';
-                zoomIndicator.style.top = '50px';
-                zoomIndicator.style.left = '50%';
-                zoomIndicator.style.transform = 'translateX(-50%)';
-                zoomIndicator.style.backgroundColor = 'rgba(52, 152, 219, 0.7)';
-                zoomIndicator.style.color = 'white';
-                zoomIndicator.style.padding = '5px 10px';
-                zoomIndicator.style.borderRadius = '4px';
-                zoomIndicator.style.zIndex = '10';
-                timelineContainer.appendChild(zoomIndicator);
-                
-                // Remove the indicator after 2 seconds
-                setTimeout(() => {
-                    timelineContainer.removeChild(zoomIndicator);
-                }, 2000);
             });
-            
+
             zoomControls.appendChild(zoomInBtn);
             zoomControls.appendChild(zoomOutBtn);
             timelineContainer.appendChild(zoomControls);
@@ -829,67 +736,67 @@
                 eventsByYear[year].push(event);
             });
             
+            // The axis sits at margin-top:140px inside the 320px container (padding:20px)
+            // So axisCenter = 20 (padding) + 140 (margin) = 160px from container top
+            const AXIS_CENTER = 160;
+            const LABEL_GAP = 12;   // px between dot edge and label
+            const LABEL_STEP = 22;  // px between stacked labels on same side
+
             // Process events by year
             Object.keys(eventsByYear).sort((a, b) => a - b).forEach(year => {
                 const yearEvents = eventsByYear[year];
-                // Calculate position based on the year (as percentage of the timeline width)
+                const timelineWidth = timelineAxis.offsetWidth;
                 const yearPosition = ((parseInt(year) - paddedMinYear) / yearRange) * 100;
-                console.log(`Year: ${year}, Position: ${yearPosition}%`);
-                
-                // Calculate vertical offset for multiple events in the same year
+                const pixelPosition = (yearPosition / 100) * timelineWidth;
+
                 const eventsCount = yearEvents.length;
-                
+
                 yearEvents.forEach((event, eventIndex) => {
+                    // Use the qualitative significance category for coloring.
+                    const sig = (event.significance && event.significance.primary_category) || 'unclear';
+
+                    // Alternate: even indices go above axis, odd below
+                    const isTop = eventIndex % 2 === 0;
+                    const stackLevel = Math.floor(eventIndex / 2);
+                    const DOT_RADIUS = 8;
+
+                    // Spread dots vertically around axis centre
+                    const dotVertOffset = isTop
+                        ? -(DOT_RADIUS + stackLevel * (DOT_RADIUS * 2 + 4))
+                        :  (DOT_RADIUS + stackLevel * (DOT_RADIUS * 2 + 4));
+                    const dotTop = AXIS_CENTER + dotVertOffset;
+
                     // Create event point
                     const eventPoint = document.createElement('div');
                     eventPoint.className = 'event-point';
                     eventPoint.dataset.id = event.id;
-                    eventPoint.dataset.significance = event.significance || 3;
+                    eventPoint.dataset.significance = sig;
                     eventPoint.dataset.type = event.type || 'Other';
                     eventPoint.dataset.year = event.year;
-                    
-                    // Calculate pixel position instead of percentage
-                    const timelineWidth = timelineAxis.offsetWidth;
-                    const pixelPosition = (yearPosition / 100) * timelineWidth;
                     eventPoint.style.left = `${pixelPosition}px`;
-                    
-                    // Position the event point on the timeline axis
-                    // Stagger points vertically if there are multiple events in the same year
-                    if (eventsCount > 1) {
-                        // Calculate vertical position based on index
-                        const verticalOffset = (eventIndex - (eventsCount - 1) / 2) * 20;
-                        eventPoint.style.top = `${axisTop + verticalOffset}px`;
-                    } else {
-                        eventPoint.style.top = `${axisTop}px`;
-                    }
-                    
+                    eventPoint.style.top = `${dotTop}px`;
                     timelineContainer.appendChild(eventPoint);
-                    
-                    // Create event label with alternating top/bottom position
-                    const position = eventIndex % 2 === 0 ? 'top' : 'bottom';
+
+                    // Labels continue outward from the dot
                     const eventLabel = document.createElement('div');
-                    eventLabel.className = `event-label ${position}`;
+                    eventLabel.className = `event-label ${isTop ? 'top' : 'bottom'}`;
                     eventLabel.textContent = event.title;
                     eventLabel.style.left = `${pixelPosition}px`;
-                    
-                    // Adjust vertical position of labels to avoid overlap
-                    if (position === 'top') {
-                        // For top labels, position them above the timeline
-                        const bottomOffset = axisTop + 15 + (Math.floor(eventIndex / 2) * 20);
-                        eventLabel.style.bottom = `${bottomOffset}px`;
+
+                    if (isTop) {
+                        const bottomFromContainer = (320 - dotTop) + DOT_RADIUS + LABEL_GAP;
+                        eventLabel.style.bottom = `${bottomFromContainer}px`;
+                        eventLabel.style.top = 'auto';
                     } else {
-                        // For bottom labels, position them below the timeline
-                        const topOffset = axisTop + 15 + (Math.floor(eventIndex / 2) * 20);
-                        eventLabel.style.top = `${topOffset}px`;
+                        eventLabel.style.top = `${dotTop + DOT_RADIUS + LABEL_GAP}px`;
+                        eventLabel.style.bottom = 'auto';
                     }
-                    
+
                     timelineContainer.appendChild(eventLabel);
-                    
-                    // Add click event to show details
+
                     eventPoint.addEventListener('click', function(e) {
                         showEventDetails(event, e, eventsById, relatedEvents);
                     });
-                    
                     eventLabel.addEventListener('click', function(e) {
                         showEventDetails(event, e, eventsById, relatedEvents);
                     });
@@ -904,7 +811,16 @@
             document.getElementById('detail-title').textContent = event.title;
             document.getElementById('detail-year').textContent = event.year;
             document.getElementById('detail-type').textContent = event.type || 'Not specified';
-            document.getElementById('detail-significance').textContent = event.significance || 'Not specified';
+            const sigObj = event.significance;
+            if (sigObj && typeof sigObj === 'object' && sigObj.primary_category) {
+                document.getElementById('detail-significance').textContent = sigObj.primary_category.replace(/_/g, ' ');
+                document.getElementById('detail-significance-justification').textContent = sigObj.justification || '';
+                document.getElementById('detail-significance-justification').style.display = 'block';
+            } else {
+                document.getElementById('detail-significance').textContent = 'Not specified';
+                document.getElementById('detail-significance-justification').textContent = '';
+                document.getElementById('detail-significance-justification').style.display = 'none';
+            }
             document.getElementById('detail-description').textContent = event.description || 'No description available.';
             
             // Set sources
@@ -1130,25 +1046,37 @@
             `;
             significanceFiltersContainer.appendChild(allSignificanceLabel);
             
-            // Add each significance level
-            for (let i = 5; i >= 1; i--) {
+            // Count events per significance category — split dated vs undated
+            const sigCounts = {};       // dated only (shown on timeline)
+            const sigCountsAll = {};    // all events (dated + undated table)
+            events.forEach(e => {
+                const cat = (e.significance && e.significance.primary_category) || 'unclear';
+                sigCountsAll[cat] = (sigCountsAll[cat] || 0) + 1;
+                if (!isNaN(parseInt(e.year))) {
+                    sigCounts[cat] = (sigCounts[cat] || 0) + 1;
+                }
+            });
+
+            // Add each significance category that appears in the data
+            const sigCategories = [
+                ['fostering_collective_action',            'Fostering Collective Action'],
+                ['revealing_potential_for_system_change',  'Revealing System Change Potential'],
+                ['exposing_prevailing_condition',          'Exposing Prevailing Condition'],
+                ['impacting_salience_and_social_acceptance','Impacting Salience & Acceptance'],
+                ['undermining_changes_and_progress',       'Undermining Progress'],
+                ['unclear',                                'Unclear'],
+            ];
+            sigCategories.forEach(([val, text]) => {
+                const total = sigCountsAll[val] || 0;
+                if (total === 0) return;
                 const label = document.createElement('label');
                 label.className = 'btn btn-sm btn-outline-primary';
-                
-                let significanceText = '';
-                switch (i) {
-                    case 5: significanceText = 'Transformative'; break;
-                    case 4: significanceText = 'Very Significant'; break;
-                    case 3: significanceText = 'Important'; break;
-                    case 2: significanceText = 'Moderate'; break;
-                    case 1: significanceText = 'Minor'; break;
-                }
-                
-                label.innerHTML = `
-                    <input type="radio" name="significance-filter" value="${i}"> ${significanceText} (${i})
-                `;
+                label.innerHTML = `<input type="radio" name="significance-filter" value="${val}"> ${text}`;
                 significanceFiltersContainer.appendChild(label);
-            }
+            });
+
+            // Build the legend: show timeline count + undated count separately
+            buildLegend(sigCounts, sigCountsAll);
             
             // Add critic assessment toggle functionality
             const criticToggle = document.getElementById('show-critic-toggle');
@@ -1241,94 +1169,66 @@
         }
         
         function repositionEvents() {
-            // Reposition all event points and labels based on the current timeline width
             const timelineAxis = document.getElementById('timeline-axis');
-            const timelineContainer = document.getElementById('timeline-container');
             const paddedMinYear = parseFloat(timelineAxis.dataset.minYear);
             const paddedMaxYear = parseFloat(timelineAxis.dataset.maxYear);
             const yearRange = paddedMaxYear - paddedMinYear;
-            
-            // Get the current timeline width
             const timelineWidth = timelineAxis.offsetWidth;
-            console.log("Repositioning events. Min Year:", paddedMinYear, "Max Year:", paddedMaxYear, "Year Range:", yearRange, "Timeline Width:", timelineWidth);
-            
-            // Get the position of the timeline axis for vertical positioning
-            const axisRect = timelineAxis.getBoundingClientRect();
-            const containerRect = timelineContainer.getBoundingClientRect();
-            const axisTop = axisRect.top - containerRect.top;
-            
-            console.log("Timeline axis position:", axisTop);
-            
-            // Get all event points and their corresponding labels
+
+            const AXIS_CENTER = 160;
+            const LABEL_GAP = 12;
+            const LABEL_STEP = 22;
+            const DOT_RADIUS = 8;
+
             const eventPoints = document.querySelectorAll('.event-point');
             const eventLabels = document.querySelectorAll('.event-label');
-            
-            // Create a map to group event points by year
+
             const pointsByYear = {};
-            eventPoints.forEach((point) => {
+            eventPoints.forEach(point => {
                 const year = parseFloat(point.dataset.year);
-                if (!pointsByYear[year]) {
-                    pointsByYear[year] = [];
-                }
+                if (!pointsByYear[year]) pointsByYear[year] = [];
                 pointsByYear[year].push(point);
             });
-            
-            // Reposition each event point and label
+
             Object.keys(pointsByYear).forEach(year => {
                 const yearPoints = pointsByYear[year];
-                const eventsCount = yearPoints.length;
-                
-                // Calculate the horizontal position based on the year
                 const yearFraction = (parseFloat(year) - paddedMinYear) / yearRange;
                 const pixelPosition = yearFraction * timelineWidth;
-                console.log(`Repositioning year ${year} to position ${yearFraction * 100}% (${pixelPosition}px)`);
-                
+
                 yearPoints.forEach((point, eventIndex) => {
-                    // Update the horizontal position
+                    const isTop = eventIndex % 2 === 0;
+                    const stackLevel = Math.floor(eventIndex / 2);
+                    const dotVertOffset = isTop
+                        ? -(DOT_RADIUS + stackLevel * (DOT_RADIUS * 2 + 4))
+                        :  (DOT_RADIUS + stackLevel * (DOT_RADIUS * 2 + 4));
+                    const dotTop = AXIS_CENTER + dotVertOffset;
+
                     point.style.left = `${pixelPosition}px`;
-                    
-                    // Update the vertical position
-                    if (eventsCount > 1) {
-                        // Calculate vertical position based on index
-                        const verticalOffset = (eventIndex - (eventsCount - 1) / 2) * 20;
-                        point.style.top = `${axisTop + verticalOffset}px`;
-                    } else {
-                        point.style.top = `${axisTop}px`;
-                    }
-                    
-                    // Find the corresponding label
+                    point.style.top = `${dotTop}px`;
+
                     const labelIndex = Array.from(eventPoints).indexOf(point);
                     if (labelIndex >= 0 && labelIndex < eventLabels.length) {
                         const label = eventLabels[labelIndex];
-                        
-                        // Update the horizontal position of the label
                         label.style.left = `${pixelPosition}px`;
-                        
-                        // Update the vertical position of the label
-                        const position = label.classList.contains('top') ? 'top' : 'bottom';
-                        if (position === 'top') {
-                            // For top labels, position them above the timeline
-                            const bottomOffset = axisTop + 15 + (Math.floor(eventIndex / 2) * 20);
-                            label.style.bottom = `${bottomOffset}px`;
+                        if (isTop) {
+                            label.style.bottom = `${(320 - dotTop) + DOT_RADIUS + LABEL_GAP}px`;
+                            label.style.top = 'auto';
                         } else {
-                            // For bottom labels, position them below the timeline
-                            const topOffset = axisTop + 15 + (Math.floor(eventIndex / 2) * 20);
-                            label.style.top = `${topOffset}px`;
+                            label.style.top = `${dotTop + DOT_RADIUS + LABEL_GAP}px`;
+                            label.style.bottom = 'auto';
                         }
                     }
                 });
             });
-            
-            // Also update the tick marks and labels
+
+            // Update tick marks
             const timelineTicks = document.querySelectorAll('.timeline-tick');
             const timelineLabels = document.querySelectorAll('.timeline-label');
-            
             timelineTicks.forEach((tick, index) => {
                 if (index < timelineLabels.length) {
                     const year = parseFloat(timelineLabels[index].textContent);
                     const yearFraction = (year - paddedMinYear) / yearRange;
                     const pixelPosition = yearFraction * timelineWidth;
-                    
                     tick.style.left = `${pixelPosition}px`;
                     timelineLabels[index].style.left = `${pixelPosition}px`;
                 }
@@ -1345,7 +1245,7 @@
             
             eventPoints.forEach((point, index) => {
                 const typeMatch = selectedType === 'all' || point.dataset.type === selectedType;
-                const significanceMatch = selectedSignificance === 'all' || point.dataset.significance === selectedSignificance;
+                const significanceMatch = selectedSignificance === 'all' || String(point.dataset.significance) === String(selectedSignificance);
                 
                 if (typeMatch && significanceMatch) {
                     point.style.display = 'block';
@@ -1386,21 +1286,27 @@
                 return;
             }
             
-            // Sort events by significance (highest first)
+            function resolveSig(e) {
+                return (e.significance && e.significance.primary_category) || 'unclear';
+            }
+
+            // Sort events alphabetically by significance category, unclear last
             events.sort((a, b) => {
-                const sigA = parseInt(a.significance) || 0;
-                const sigB = parseInt(b.significance) || 0;
-                return sigB - sigA;
+                const sa = resolveSig(a), sb = resolveSig(b);
+                if (sa === 'unclear' && sb !== 'unclear') return 1;
+                if (sb === 'unclear' && sa !== 'unclear') return -1;
+                return sa.localeCompare(sb);
             });
-            
+
             // Create a row for each event
             events.forEach(event => {
+                const sig = resolveSig(event);
                 const row = document.createElement('tr');
                 row.dataset.id = event.id;
                 row.dataset.type = event.type || 'Other';
-                row.dataset.significance = event.significance || '3';
+                row.dataset.significance = sig;
                 row.style.cursor = 'pointer';
-                
+
                 // Add significance color indicator
                 const titleCell = document.createElement('td');
                 const colorIndicator = document.createElement('span');
@@ -1409,16 +1315,9 @@
                 colorIndicator.style.height = '12px';
                 colorIndicator.style.borderRadius = '50%';
                 colorIndicator.style.marginRight = '8px';
-                
-                // Set color based on significance
-                switch(parseInt(event.significance) || 3) {
-                    case 5: colorIndicator.style.backgroundColor = '#e74c3c'; break;
-                    case 4: colorIndicator.style.backgroundColor = '#f39c12'; break;
-                    case 3: colorIndicator.style.backgroundColor = '#3498db'; break;
-                    case 2: colorIndicator.style.backgroundColor = '#2ecc71'; break;
-                    case 1: colorIndicator.style.backgroundColor = '#95a5a6'; break;
-                    default: colorIndicator.style.backgroundColor = '#3498db';
-                }
+
+                // Set color based on significance category
+                colorIndicator.style.backgroundColor = SIG_COLORS[sig] || SIG_COLORS['unclear'];
                 
                 titleCell.appendChild(colorIndicator);
                 titleCell.appendChild(document.createTextNode(event.title));
@@ -1428,7 +1327,7 @@
                 typeCell.textContent = event.type || 'Other';
                 
                 const significanceCell = document.createElement('td');
-                significanceCell.textContent = event.significance || '3';
+                significanceCell.textContent = sig ? sig.replace(/_/g, ' ') : '—';
                 
                 const descriptionCell = document.createElement('td');
                 // Truncate description if it's too long
@@ -1461,6 +1360,44 @@
                 
                 // Add row to table
                 tableBody.appendChild(row);
+            });
+        }
+
+        const SIG_COLORS = {
+            'fostering_collective_action':            '#2ecc71',
+            'revealing_potential_for_system_change':  '#9b59b6',
+            'exposing_prevailing_condition':          '#e67e22',
+            'impacting_salience_and_social_acceptance': '#3498db',
+            'undermining_changes_and_progress':       '#e74c3c',
+            'unclear':                                '#95a5a6',
+        };
+        const SIG_LABELS = {
+            'fostering_collective_action':            'Fostering Collective Action',
+            'revealing_potential_for_system_change':  'Revealing System Change Potential',
+            'exposing_prevailing_condition':          'Exposing Prevailing Condition',
+            'impacting_salience_and_social_acceptance': 'Impacting Salience & Acceptance',
+            'undermining_changes_and_progress':       'Undermining Progress',
+            'unclear':                                'Unclear',
+        };
+
+        function buildLegend(sigCounts, sigCountsAll) {
+            const legend = document.getElementById('sig-legend');
+            const criticLegend = document.getElementById('critic-legend');
+
+            Object.keys(SIG_COLORS).forEach(cat => {
+                const dated = sigCounts[cat] || 0;
+                const total = sigCountsAll[cat] || 0;
+                if (total === 0) return;
+                const undated = total - dated;
+                let countText = `${dated} on timeline`;
+                if (undated > 0) countText += `, ${undated} undated`;
+                const item = document.createElement('div');
+                item.className = 'legend-item';
+                item.innerHTML = `
+                    <div class="legend-color" style="background-color:${SIG_COLORS[cat]};"></div>
+                    <span>${SIG_LABELS[cat]} — ${countText}</span>
+                `;
+                legend.insertBefore(item, criticLegend);
             });
         }
     </script>

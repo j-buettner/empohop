@@ -240,22 +240,27 @@
 <body>
     <div class="container">
         <h1>Planetary Health Knowledge Graph</h1>
-        
+        <h2 class="text-center text-muted mb-4" style="font-size:1.2rem; font-weight:400;">Knowledge Graph</h2>
+
         <div class="controls">
             <div class="row">
                 <div class="col-md-6">
                     <div class="filter-section">
-                        <div class="filter-label">Entity Types:</div>
-                        <div class="filter-options" id="entity-type-filters">
-                            <!-- Entity type filters will be generated here -->
-                        </div>
+                        <details>
+                            <summary class="filter-label" style="cursor:pointer; user-select:none;">Entity Types</summary>
+                            <div class="filter-options mt-2" id="entity-type-filters">
+                                <!-- Entity type filters will be generated here -->
+                            </div>
+                        </details>
                     </div>
-                    
+
                     <div class="filter-section">
-                        <div class="filter-label">Relationship Types:</div>
-                        <div class="filter-options" id="relationship-type-filters">
-                            <!-- Relationship type filters will be generated here -->
-                        </div>
+                        <details>
+                            <summary class="filter-label" style="cursor:pointer; user-select:none;">Relationship Types</summary>
+                            <div class="filter-options mt-2" id="relationship-type-filters">
+                                <!-- Relationship type filters will be generated here -->
+                            </div>
+                        </details>
                     </div>
                 </div>
                 
@@ -337,6 +342,10 @@
             <div class="legend-item">
                 <div class="legend-color" style="background-color: #f39c12;"></div>
                 <span>Publication</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #e91e63;"></div>
+                <span>Expression</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color" style="background-color: #9b59b6;"></div>
@@ -560,7 +569,7 @@
                         description: event.description,
                         year: event.year,
                         tags: event.tags || [],
-                        significance: event.significance || 3,
+                        significance: event.significance || null,
                         sources: event.sources || [],
                         auto_generated: event.auto_created_from_relationship || false,
                         originalData: event
@@ -600,7 +609,7 @@
                         description: concept.definition,
                         alternative_names: concept.alternative_names || [],
                         domain: concept.domain || [],
-                        significance: concept.significance || 3,
+                        significance: concept.significance || null,
                         auto_generated: concept.auto_created_from_relationship || false,
                         originalData: concept
                     };
@@ -623,12 +632,28 @@
                         journal: publication.journal,
                         doi: publication.doi,
                         isbn: publication.isbn,
-                        significance: publication.significance || 3,
+                        significance: publication.significance || null,
                         auto_generated: publication.auto_created_from_relationship || false,
                         originalData: publication
                     };
                     graph.nodes.push(node);
                     entitiesById[publication.id] = node;
+                });
+            }
+            
+            // Process expressions
+            if (data.expressions) {
+                data.expressions.forEach(expression => {
+                    const node = {
+                        id: expression.id,
+                        name: expression.name,
+                        type: 'Expression',
+                        description: expression.description,
+                        auto_generated: expression.auto_created_from_relationship || false,
+                        originalData: expression
+                    };
+                    graph.nodes.push(node);
+                    entitiesById[expression.id] = node;
                 });
             }
             
@@ -806,15 +831,8 @@
         }
         
         function getNodeRadius(node) {
-            // Base radius
-            let radius = 8;
-            
-            // Adjust based on node type and significance
-            if (node.type === 'Event' || node.type === 'Concept' || node.type === 'Publication') {
-                radius += (node.significance || 3) - 3;
-            }
-            
-            return radius;
+            // Flat radius — significance is now qualitative and shown in the details panel
+            return 8;
         }
         
         function getNodeColor(node) {
@@ -825,6 +843,7 @@
                     case 'Actor': return '#a8d2f0'; // Lighter blue
                     case 'Concept': return '#a8ecc0'; // Lighter green
                     case 'Publication': return '#f9d199'; // Lighter orange
+                    case 'Expression': return '#f5c6cb'; // Lighter pink
                     case 'Location': return '#d2a8e0'; // Lighter purple
                     default: return '#d5dbdb'; // Lighter gray
                 }
@@ -834,6 +853,7 @@
                     case 'Actor': return '#3498db';
                     case 'Concept': return '#2ecc71';
                     case 'Publication': return '#f39c12';
+                    case 'Expression': return '#e91e63'; // Pink
                     case 'Location': return '#9b59b6';
                     default: return '#95a5a6';
                 }
@@ -930,6 +950,8 @@
                     entityEvaluation = criticData.entity_evaluations.location.find(eval => eval.entity_id === d.id);
                 } else if (d.type === 'Publication' && criticData.entity_evaluations && criticData.entity_evaluations.publication) {
                     entityEvaluation = criticData.entity_evaluations.publication.find(eval => eval.entity_id === d.id);
+                } else if (d.type === 'Expression' && criticData.entity_evaluations && criticData.entity_evaluations.expression) {
+                    entityEvaluation = criticData.entity_evaluations.expression.find(eval => eval.entity_id === d.id);
                 }
                 
                 // If we found an evaluation, add it to the properties
@@ -1038,8 +1060,11 @@
             // Add type-specific properties
             switch (d.type) {
                 case 'Event':
-                    if (d.significance) {
-                        addProperty(propertiesContainer, 'Significance', d.significance);
+                    if (d.significance && typeof d.significance === 'object' && d.significance.primary_category) {
+                        addProperty(propertiesContainer, 'Significance', d.significance.primary_category.replace(/_/g, ' '));
+                        if (d.significance.justification) {
+                            addProperty(propertiesContainer, 'Why', d.significance.justification);
+                        }
                     }
                     if (d.sources && d.sources.length > 0) {
                         addListProperty(propertiesContainer, 'Sources', d.sources);
@@ -1089,6 +1114,10 @@
                     if (d.region) {
                         addProperty(propertiesContainer, 'Region', d.region);
                     }
+                    break;
+                    
+                case 'Expression':
+                    // Expressions typically don't have additional properties beyond name and description
                     break;
             }
             
@@ -1419,60 +1448,80 @@
         }
         
         function searchEntities(query) {
+            console.log('searchEntities called with query:', query);
+            
             if (!query || query.trim() === '') {
+                console.log('Empty query, hiding search results');
                 document.getElementById('search-results').style.display = 'none';
                 return;
             }
             
             query = query.toLowerCase();
+            console.log('Searching for:', query);
+            console.log('Total nodes available:', graph.nodes.length);
             
             // Find matching nodes
             const matchingNodes = graph.nodes.filter(node => 
-                node.name.toLowerCase().includes(query) || 
-                node.type.toLowerCase().includes(query) ||
+                (node.name && node.name.toLowerCase().includes(query)) || 
+                (node.type && node.type.toLowerCase().includes(query)) ||
                 (node.subtype && node.subtype.toLowerCase().includes(query))
             );
             
+            console.log('Matching nodes found:', matchingNodes.length, matchingNodes);
+            
             // Display results
             const resultsContainer = document.getElementById('search-results');
+            console.log('Results container:', resultsContainer);
             resultsContainer.innerHTML = '';
             
             if (matchingNodes.length === 0) {
+                console.log('No matches, showing no results message');
                 const noResults = document.createElement('div');
                 noResults.className = 'search-result-item';
                 noResults.textContent = 'No matching entities found';
                 resultsContainer.appendChild(noResults);
             } else {
-                matchingNodes.forEach(node => {
+                console.log('Creating result items for', matchingNodes.length, 'matches');
+                matchingNodes.forEach((node, index) => {
+                    console.log(`Creating result item ${index}:`, node.name, node.type);
                     const resultItem = document.createElement('div');
                     resultItem.className = 'search-result-item';
                     resultItem.textContent = `${node.name} (${node.type}${node.subtype ? `, ${node.subtype}` : ''})`;
                     
                     resultItem.addEventListener('click', function() {
+                        console.log('Search result clicked:', node.name, node.id);
+                        
                         // Find the node element and trigger a click
                         const nodeElement = nodeElements.filter(n => n.id === node.id).node();
+                        console.log('Found node element:', nodeElement);
+                        
                         if (nodeElement) {
+                            console.log('Node element found, proceeding with actions');
+                            
+                            // Make sure the node is visible first by temporarily showing it
+                            d3.select(nodeElement).style('display', 'block');
+                            
                             // Center the view on this node
                             const transform = d3.zoomTransform(svg.node());
                             const scale = transform.k;
                             const x = -node.x * scale + width / 2;
                             const y = -node.y * scale + height / 2;
                             
+                            console.log('Centering view on node at:', x, y, 'scale:', scale);
+                            
                             svg.transition().duration(750).call(
                                 d3.zoom().transform,
                                 d3.zoomIdentity.translate(x, y).scale(scale)
                             );
                             
-                            // Trigger click event
-                            const event = new MouseEvent('click', {
-                                bubbles: true,
-                                cancelable: true,
-                                view: window
-                            });
-                            nodeElement.dispatchEvent(event);
+                            // Trigger click event to show details
+                            console.log('Showing node details');
+                            showNodeDetails({ pageX: 0, pageY: 0 }, node);
                             
                             // Hide search results
                             resultsContainer.style.display = 'none';
+                        } else {
+                            console.error('Node element not found for node:', node.id);
                         }
                     });
                     
@@ -1480,6 +1529,7 @@
                 });
             }
             
+            console.log('Showing results container');
             resultsContainer.style.display = 'block';
         }
         
@@ -1534,13 +1584,14 @@
                 case 'hierarchical':
                     // Create a hierarchical structure
                     // Events at the top, then actors, concepts, etc.
-                    const levelHeight = height / 6;
+                    const levelHeight = height / 7;
                     const levelPositions = {
                         'Event': levelHeight,
                         'Actor': levelHeight * 2,
                         'Concept': levelHeight * 3,
                         'Publication': levelHeight * 4,
-                        'Location': levelHeight * 5
+                        'Expression': levelHeight * 5,
+                        'Location': levelHeight * 6
                     };
                     
                     // Group nodes by type

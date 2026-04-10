@@ -105,10 +105,13 @@
       "description": "Domain or field to which this concept primarily belongs"
     },
     "significance": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 5,
-      "description": "Significance rating (1-5 scale, where 5 is most significant)"
+      "type": "object",
+      "description": "Qualitative significance attributed by the 7th LLM pass",
+      "properties": {
+        "primary_category": {"type": "string"},
+        "justification":    {"type": "string"},
+        "supporting_text":  {"type": "string"}
+      }
     },
     "evolution": {
       "type": "array",

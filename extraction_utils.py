@@ -14,12 +14,11 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 # Map pipeline entity-type keys to their JSON schema files.
-# "expression" is extracted under the key "publications" by the LLM prompts.
 _SCHEMA_FILE_MAP = {
     "event": "event.json",
     "actor": "actor.json",
     "concept": "concept.json",
-    "publication": "publication.json",
+    "expression": "expression.json",
     "location": "location.json",
     "relationship": "relationship.json",
 }
@@ -55,7 +54,7 @@ def validate_extracted_entities(
     returned unchanged so they stay in the pipeline for human review.
 
     Args:
-        entity_type: One of "event", "actor", "concept", "publication", "location".
+        entity_type: One of "event", "actor", "concept", "expression", "location".
         entities: The list of entity dicts returned by the LLM.
 
     Returns:
@@ -109,31 +108,38 @@ def retry_api_call(
     *args: Any,
     max_retries: int = 3,
     base_delay: float = 2.0,
+    empty_response_retries: int = 3,
+    empty_response_delay: float = 15.0,
     **kwargs: Any,
 ) -> Any:
     """
-    Call ``func(*args, **kwargs)`` with exponential backoff on transient errors.
+    Call ``func(*args, **kwargs)`` with exponential backoff on transient errors
+    and separate retry logic for empty responses.
 
-    Retries on rate-limit (429/529) and server errors (5xx/connection).
-    Raises immediately for any other exception type (permanent errors).
+    Retries on:
+    - Rate-limit (429/529) and server errors (5xx/connection) — exponential backoff.
+    - Empty response content (model timed out server-side) — fixed delay retries.
 
     Args:
         func: Callable to invoke.
         *args: Positional arguments forwarded to *func*.
-        max_retries: Maximum number of retry attempts after the first call.
-        base_delay: Initial delay in seconds; doubles each attempt (plus jitter).
+        max_retries: Maximum number of retry attempts on HTTP/network errors.
+        base_delay: Initial delay in seconds for error retries (doubles each attempt).
+        empty_response_retries: Maximum retries when the response body is empty.
+        empty_response_delay: Seconds to wait between empty-response retries.
         **kwargs: Keyword arguments forwarded to *func*.
 
     Returns:
         Whatever *func* returns on success.
 
     Raises:
-        The last exception raised by *func* after all retries are exhausted.
+        The last exception on error, or RuntimeError after empty-response retries
+        are exhausted.
     """
     last_exc: Optional[Exception] = None
     for attempt in range(max_retries + 1):
         try:
-            return func(*args, **kwargs)
+            response = func(*args, **kwargs)
         except Exception as exc:
             last_exc = exc
             if attempt == max_retries:
@@ -158,6 +164,41 @@ def retry_api_call(
                 exc,
             )
             time.sleep(delay)
+            continue
+
+        # Check for empty response body (model server-side timeout)
+        try:
+            content = response.content[0].text
+        except (AttributeError, IndexError):
+            content = ""
+
+        if content.strip():
+            return response
+
+        # Empty response — retry with a pause to let the server recover
+        for empty_attempt in range(empty_response_retries):
+            logger.warning(
+                "[retry] Empty response received (attempt %d/%d), "
+                "waiting %.1fs before retry.",
+                empty_attempt + 1,
+                empty_response_retries,
+                empty_response_delay,
+            )
+            time.sleep(empty_response_delay)
+            try:
+                response = func(*args, **kwargs)
+                content = response.content[0].text
+                if content.strip():
+                    return response
+            except Exception as exc:
+                last_exc = exc
+                logger.warning("[retry] Error during empty-response retry: %s", exc)
+
+        logger.error(
+            "[retry] Response remained empty after %d retries — giving up.",
+            empty_response_retries,
+        )
+        return response  # Return the empty response; caller handles gracefully
 
     raise last_exc  # type: ignore[misc]
 
@@ -291,7 +332,7 @@ def find_potential_entities(chunks: List[Dict], entity_types: List[str]) -> Dict
         "actor": r'(?:[A-Z][a-zA-Z]*\s+){1,2}(?:University|Organization|Association|Foundation|Institute|Agency)',
         "person": r'(?:[A-Z][a-zA-Z]*\s+){1,2}(?:[A-Z][a-zA-Z]*)',
         "concept": r'(?:concept of|framework of|theory of|approach to)\s+([a-zA-Z]*(?:\s+[a-zA-Z]*){1,3})',
-        "publication": r'(?:titled|entitled|publication|book|article|report)\s+"([^"]*)"',
+        "expression": r'(?:titled|entitled|publication|speech|document|regulation|symbol)\s+"([^"]*)"',
         "location": r'(?:in|at|from)\s+([A-Z][a-zA-Z]*(?:,\s+[A-Z][a-zA-Z]*)?)'
     }
     

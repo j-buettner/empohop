@@ -57,8 +57,8 @@ class EntityResolver:
             "actor": ["organization", "institution", "person", "individual", "group", "coalition"],
             "location": ["country", "city", "region", "state", "province", "continent"],
             "concept": ["theory", "framework", "approach", "model", "principle", "concept"],
-            "event": ["conference", "summit", "meeting", "publication", "launch", "announcement"],
-            "publication": ["journal", "book", "report", "article", "paper", "study"]
+            "event": ["conference", "summit", "meeting", "expression", "launch", "announcement"],
+            "expression": ["publication", "speech", "legal document", "regulation", "symbol", "journal", "book", "report", "article"]
         }
     
     def resolve_entities(self, entities: Dict[str, List[Dict]]) -> Dict[str, List[Dict]]:
@@ -317,7 +317,11 @@ class EntityResolver:
         else:
             name1 = entity1.get("name", "")
             name2 = entity2.get("name", "")
-        
+
+        # Shortcut: identical names (case-insensitive) are always the same entity
+        if name1 and name2 and name1.strip().lower() == name2.strip().lower():
+            return 1.0
+
         # 1. Name similarity
         name_sim = self._string_similarity(name1, name2)
         scores.append(name_sim)
@@ -366,8 +370,8 @@ class EntityResolver:
                 scores.append(country_sim)
                 weights.append(0.1)
         
-        elif entity_type == "publication":
-            # For publications, check year and authors
+        elif entity_type == "expression":
+            # For expressions, check year and actors
             year1 = entity1.get("year")
             year2 = entity2.get("year")
             if year1 and year2:
@@ -568,8 +572,13 @@ class EntityResolver:
         # Track all variations and sources
         merged["variations"] = []
         merged["source_chunks"] = set()
+        merged["supporting_texts"] = []  # all supporting texts from all cluster members
         merged["confidence"] = 1.0
-        
+
+        # Seed supporting_texts with the representative's text (if present)
+        if merged.get("supporting_text"):
+            merged["supporting_texts"].append(merged["supporting_text"])
+
         # Merge information from all entities
         for entity in cluster:
             # Track variations
@@ -577,41 +586,39 @@ class EntityResolver:
                 name = entity.get("title", "")
             else:
                 name = entity.get("name", "")
-            
+
             if name and name not in merged["variations"]:
                 merged["variations"].append(name)
-            
+
             # Track source chunks
             if "source_chunk" in entity:
                 merged["source_chunks"].add(entity["source_chunk"])
-            
+
+            # Collect supporting text from every cluster member
+            st = entity.get("supporting_text", "")
+            if st and st not in merged["supporting_texts"]:
+                merged["supporting_texts"].append(st)
+
             # Merge scalar fields
             for key, value in entity.items():
-                if key in ["id", "source_chunk", "variations", "source_chunks"]:
+                if key in ["id", "source_chunk", "variations", "source_chunks",
+                           "supporting_text", "supporting_texts"]:
                     continue
-                
+
                 if key not in merged or not merged[key]:
                     merged[key] = value
                 elif key == "description" and value and merged[key] != value:
                     # Merge descriptions intelligently
                     merged[key] = self._merge_descriptions(merged[key], value)
-                elif key == "significance" and value:
-                    # Average significance scores
-                    if isinstance(merged[key], (int, float)) and isinstance(value, (int, float)):
-                        merged[key] = (merged[key] + value) / 2
-                elif key == "supporting_text" and value:
-                    # Collect all supporting text
-                    if "all_supporting_text" not in merged:
-                        merged["all_supporting_text"] = [merged.get("supporting_text", "")]
-                    if value not in merged["all_supporting_text"]:
-                        merged["all_supporting_text"].append(value)
-                
-                # Merge list fields
+                elif key == "significance" and value and not merged[key]:
+                    # Keep first non-null significance (object or scalar)
+                    merged[key] = value
                 elif isinstance(value, list) and isinstance(merged.get(key, []), list):
                     merged[key] = self._merge_lists(merged[key], value)
-        
-        # Convert source_chunks set to list
-        merged["source_chunks"] = list(merged["source_chunks"])
+
+        # Convert source_chunks set to sorted list; drop singular source_chunk
+        merged["source_chunks"] = sorted(merged["source_chunks"])
+        merged.pop("source_chunk", None)
         
         # Calculate merge confidence
         merged["merge_confidence"] = self._calculate_merge_confidence(cluster, entity_type)
@@ -655,8 +662,8 @@ class EntityResolver:
             if name and name.upper() != name:  # Not all caps
                 score += 3.0
             
-            # For publications, prefer entries with DOI/ISBN
-            if entity_type == "publication" and entity.get("identifier"):
+            # For expressions, prefer entries with more metadata
+            if entity_type == "expression" and entity.get("identifier"):
                 score += 10.0
             
             scores.append((score, entity))
@@ -769,7 +776,7 @@ def merge_entities(entity1: Dict, entity2: Dict) -> Dict:
     elif "name" in entity1:
         # Try to determine type from other fields
         if "authors" in entity1:
-            entity_type = "publication"
+            entity_type = "expression"
         elif "country" in entity1 and "role" in entity1:
             entity_type = "actor"
         elif "definition" in entity1:
@@ -859,7 +866,7 @@ def create_manual_mappings_template(output_path: str = "manual_mappings_template
             "# Example mappings for concepts": "# Delete this line",
             "SDGs": "Sustainable Development Goals"
         },
-        "publication": {
+        "expression": {
             "# Example mappings for publications": "# Delete this line"
         },
         "location": {

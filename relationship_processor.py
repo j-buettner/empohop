@@ -1,6 +1,5 @@
 import json
 import logging
-import re
 import uuid
 from typing import Dict, List, Optional, Any
 import time
@@ -9,39 +8,162 @@ from extraction_utils import retry_api_call
 
 # Configure logging
 logger = logging.getLogger(__name__)
-# Relationship extraction prompt
-RELATIONSHIP_EXTRACTION_PROMPT = f"""
-{CONTEXT_SENTENCE} Identify RELATIONSHIPS between entities in the domain of {CONTEXT_PHRASE}.
-Focus on these relationship between the following tives of entities: EVENTS ((Publication, Conference, Meeting, Policy, Research, Movement, Organization, Court decision, etc.), ACTORS (Individual, Organizations, Government, NGO, Coalition, Indigenous and local communities, etc.), LOCATIONS, EXPRESSIONS ( important publications, speeches, material symbols, cultural practices, legal documents, rules, regulations, etc.), CONCEPTS (theories, ideas, frameworks, or terms relevant to {CONTEXT_PHRASE})
-For insatance
-- Event influences Event
-- Event creates Expression
-- Actor creates Expression
-- Actor participates in Event
-- Event introduces Concept
-- Expression refers to Expression
-- Actor develops Concept
-- Actor collaborates with Actor
-- Concept relates to Concept
-- Event takes place at Location
-- Expression takes place or relates to Location
 
-For each relationship, include supporting text that evidences this relationship.
+# ---------------------------------------------------------------------------
+# Relation extraction prompt (6th pass — receives items extracted in passes 1-5)
+# ---------------------------------------------------------------------------
+
+RELATION_EXTRACTION_PROMPT = f"""
+{CONTEXT_SENTENCE}
+
+Identify RELATIONS explicitly evidenced in the text between the extracted items: EVENTS, ACTORS, EXPRESSIONS, CONCEPTS, and LOCATIONS.
+
+A relation is defined as a stated or suggested linkage between items, supported by an exact excerpt.
+
+Rules:
+- Cue words are hints, not triggers. Do not extract a relation unless the text clearly links two specific items and you can quote supporting_text.
+- Do NOT invent new items. source_id and target_id MUST be IDs that exist in the items table.
+- If the relation is directly stated, modality="asserted". If hedged, modality="suggested". If disputed, modality="contested".
+- Use directional relations whenever one item acts on/produces/defines/recommends another.
+- Assign each relation a unique relation_id in the format "R1", "R2", ... in the order listed.
+- If an optional field is not applicable, use null.
+- Focus only on relations that are DIRECTLY AND CLEARLY evidenced in the text with an exact quote. Skip weak inferences. Extract at most 20 of the most important relations.
+
+For each relation, provide:
+1. relation_id (required)
+2. relation_category (required):
+   - "associative": linkage via inspiration, influence, framing, momentum, or encouragement — without a clearly described mechanism
+   - "intervening": linkage that produces an effect through coordination, resource allocation, formal decision, implementation, or enforcement
+3. directionality: "A_to_B", "B_to_A", "bidirectional", or "unclear"
+4. modality: "asserted", "suggested", or "contested"
+5. polarity: "enabling", "undermining", or "neutral"
+6. relation_type (required), e.g.:
+   - "involved_in"            (Actor -> Event)
+   - "led_by"                 (Event -> Actor)
+   - "funded_by"              (Event -> Actor)
+   - "published_by"           (Expression -> Actor)
+   - "adopted_by"             (Expression -> Actor)
+   - "calls_on"               (Actor/Expression -> Actor)
+   - "recommends_to"          (Expression/Event -> Actor)
+   - "informed_by"            (Event -> Expression/Actor)
+   - "based_on"               (Expression -> Expression/Concept)
+   - "revises_or_updates"     (Expression -> Expression)
+   - "defines"                (Expression -> Concept)
+   - "applies_to"             (Concept/Expression -> Location)
+   - "associated_with"        (any <-> any; use only if none above fit)
+   - "other"                  (explain in short_relation_label)
+7. short_relation_label: 1–5 words describing the relation (e.g., "funded", "adopted by", "defines concept")
+8. source_id — UUID of the source item from items_json
+9. target_id — UUID of the target item from items_json
+10. supporting_text (required) — exact excerpt from the text
 
 Text to analyze:
 {{text}}
 
+Extracted items to link — format: id | type | name
+Type codes: E=event  A=actor  X=expression  C=concept  L=location
+Use IDs exactly as given — do not invent new ones.
+{{items_table}}
+
 Respond in the following JSON format:
 {{{{
-  "relationships": [
+  "relations": [
     {{{{
-      "source": "Source entity name",
-      "source_type": "Event|Actor|Concept|Expression|Location",
-      "target": "Target entity name",
-      "target_type": "Event|Actor|Concept|Expression|Location",
-      "relationship_type": "Influences|Participates|Develops|etc.",
-      "description": "Description of the relationship",
-      "supporting_text": "The exact text excerpt that supports this relationship"
+      "relation_id": "R1",
+      "relation_category": "associative|intervening",
+      "directionality": "A_to_B|B_to_A|bidirectional|unclear",
+      "modality": "asserted|suggested|contested",
+      "polarity": "enabling|undermining|neutral",
+      "relation_type": "",
+      "short_relation_label": "",
+      "source_id": "",
+      "target_id": "",
+      "supporting_text": ""
+    }}}}
+  ]
+}}}}
+"""
+
+# ---------------------------------------------------------------------------
+# Significance attribution prompt (7th pass — receives items + relations)
+# ---------------------------------------------------------------------------
+
+_SIGNIFICANCE_CATEGORY_DEFINITIONS = {
+    "exposing_prevailing_condition": (
+        "Highlights prevailing economic/political processes or interests that perpetuate "
+        "disharmony with nature (diagnostic or critical role)."
+    ),
+    "revealing_potential_for_system_change": (
+        "Reveals interdependencies, cross-scale dynamics, or the potential for non-linear "
+        "shifts in system dynamics towards living in harmony with nature."
+    ),
+    "fostering_collective_action": (
+        "Builds or enables human agency, values, coordination, resource allocation, or "
+        "implementation capacity to advance the initiative."
+    ),
+    "impacting_salience_and_social_acceptance": (
+        "Shifts discourse, political relevance, legitimacy, or broad social acceptance "
+        "for changes towards living in harmony with nature."
+    ),
+    "undermining_changes_and_progress": (
+        "Weakens, delays, reverses, or delegitimizes progress — intended or unintended."
+    ),
+    "unclear": (
+        "The text does not provide enough basis to classify significance."
+    ),
+}
+
+SIGNIFICANCE_ATTRIBUTION_PROMPT = f"""
+{CONTEXT_SENTENCE}
+
+For each extracted ITEM and each extracted RELATION provided below, attribute one significance category based on the following definition:
+
+Item/relation significance is defined as the degree to which an item or relation, in itself or through its interaction with other items, contributes to improvement or advancement of an initiative towards living in harmony with nature (quantitatively or qualitatively).
+
+Significance categories (choose ONE per item/relation):
+- exposing_prevailing_condition: {_SIGNIFICANCE_CATEGORY_DEFINITIONS["exposing_prevailing_condition"]}
+- revealing_potential_for_system_change: {_SIGNIFICANCE_CATEGORY_DEFINITIONS["revealing_potential_for_system_change"]}
+- fostering_collective_action: {_SIGNIFICANCE_CATEGORY_DEFINITIONS["fostering_collective_action"]}
+- impacting_salience_and_social_acceptance: {_SIGNIFICANCE_CATEGORY_DEFINITIONS["impacting_salience_and_social_acceptance"]}
+- undermining_changes_and_progress: {_SIGNIFICANCE_CATEGORY_DEFINITIONS["undermining_changes_and_progress"]}
+- unclear: {_SIGNIFICANCE_CATEGORY_DEFINITIONS["unclear"]}
+
+Rules:
+- Do not infer significance that is not supported by the text.
+- If significance is unclear or not supported, choose "unclear" and briefly explain why in justification.
+- Do not invent items or relations. Reference ONLY id values provided in items_json and relations_json.
+- ID integrity (ITEMS): For each item_significance entry, id MUST exist in the items table AND name MUST exactly match the name column.
+- ID integrity (RELATIONS): For each relation_significance entry, id MUST exist in relations_json.
+- Keep justification concise (1–2 sentences). Keep supporting_text short (under 30 words).
+
+Text to analyze:
+{{text}}
+
+Extracted items to attribute significance to — format: id | type | name
+Type codes: E=event  A=actor  X=expression  C=concept  L=location
+{{items_table}}
+
+Extracted relations to attribute significance to:
+{{relations_json}}
+
+Respond in the following JSON format:
+{{{{
+  "item_significance": [
+    {{{{
+      "item_type": "event|actor|expression|concept|location",
+      "id": "",
+      "name": "",
+      "primary_category": "exposing_prevailing_condition|revealing_potential_for_system_change|fostering_collective_action|impacting_salience_and_social_acceptance|undermining_changes_and_progress|unclear",
+      "justification": "",
+      "supporting_text": "Exact excerpt supporting the significance claim"
+    }}}}
+  ],
+  "relation_significance": [
+    {{{{
+      "id": "",
+      "primary_category": "exposing_prevailing_condition|revealing_potential_for_system_change|fostering_collective_action|impacting_salience_and_social_acceptance|undermining_changes_and_progress|unclear",
+      "justification": "",
+      "supporting_text": "Exact excerpt supporting the significance claim"
     }}}}
   ]
 }}}}
@@ -49,502 +171,316 @@ Respond in the following JSON format:
 
 class RelationshipProcessor:
     """
-    Handles extraction, resolution, and processing of relationships between entities
+    Handles extraction and processing of relations between entities (6th pass).
+    Relations are extracted per-chunk using the already-extracted items as input,
+    so no fuzzy name matching or entity creation is needed.
     """
-    
+
     def __init__(self, llm_client):
-        """
-        Initialize the relationship processor
-        
-        Args:
-            llm_client: Client for the primary LLM
-        """
         self.llm_client = llm_client
         logger.info("Initialized RelationshipProcessor")
-    
-    def extract_relationships_from_chunk(self, chunk: Dict) -> List[Dict]:
+
+    def extract_relations_from_chunk(self, chunk: Dict, items: List[Dict]) -> List[Dict]:
         """
-        Extract relationships from a single document chunk
-        
+        Extract relations from a single chunk given the already-extracted items.
+
         Args:
             chunk: Document chunk with text and metadata
-            
+            items: List of item dicts, each with id (UUID), item_type, and name
+
         Returns:
-            List of extracted relationships
+            List of raw relation dicts with source/target item_ids and UUIDs
         """
+        if not items:
+            return []
+
+        chunk_text = chunk.get("text", "")
+        items_table = self._items_to_table(items)
+
         try:
-            # Format prompt with chunk text
-            prompt = RELATIONSHIP_EXTRACTION_PROMPT.format(text=chunk["text"])
-            
-            # Call LLM API with retry/backoff on transient errors
+            prompt = RELATION_EXTRACTION_PROMPT.format(text=chunk_text, items_table=items_table)
+        except KeyError as e:
+            logger.error("Error formatting relation prompt: %s", e)
+            return []
+
+        try:
             response = retry_api_call(
                 self.llm_client.messages.create,
                 model=self.llm_client.model,
                 max_tokens=MAX_TOKENS,
-                system="You are an expert in extracting structured information about eco-jurisprudence and living in harmony with nature from academic texts.",
+                system=(
+                    "You are an expert knowledge graph builder specialising in eco-jurisprudence "
+                    "and the planetary health movement. Extract relations between the provided items "
+                    "only — do not invent new items."
+                ),
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.1,
+                temperature=0.0,
             )
 
-            # Get the raw response content
             content = response.content[0].text.strip()
-            
-            # Parse response
-            try:
-                # Try to extract JSON from the response if it's wrapped in markdown code blocks
-                if "```json" in content:
-                    json_start = content.find("```json") + 7
-                    json_end = content.find("```", json_start)
-                    if json_end != -1:
-                        json_content = content[json_start:json_end].strip()
-                        content = json_content
-                elif "```" in content:
-                    json_start = content.find("```") + 3
-                    json_end = content.find("```", json_start)
-                    if json_end != -1:
-                        json_content = content[json_start:json_end].strip()
-                        content = json_content
-                
-                # Try to find JSON object in the content
-                json_start = content.find("{")
-                json_end = content.rfind("}")
-                if json_start != -1 and json_end != -1 and json_end > json_start:
-                    json_content = content[json_start:json_end+1].strip()
-                    content = json_content
-                
-                # Parse the JSON
-                result = json.loads(content)
-                relationships = result.get("relationships", [])
-                
-                # Add chunk info to relationships for tracking
-                for rel in relationships:
-                    if isinstance(rel, dict):
-                        rel["source_chunk"] = chunk.get("chunk_id", "unknown")
-                
-                return relationships
-                
-            except json.JSONDecodeError as e:
-                logger.warning(f"Failed to parse relationship extraction response as JSON: {str(e)}")
-                return []
-                
-        except Exception as e:
-            logger.error(f"Error extracting relationships from chunk: {str(e)}")
-            return []
-    
-    def extract_relationships_from_chunks(self, chunks: List[Dict]) -> List[Dict]:
-        """
-        Extract relationships from multiple document chunks
-        
-        Args:
-            chunks: List of document chunks
-            
-        Returns:
-            List of all extracted relationships
-        """
-        all_relationships = []
-        
-        logger.info(f"Extracting relationships from {len(chunks)} chunks")
-        
-        for i, chunk in enumerate(chunks):
-            logger.info(f"Processing chunk {i+1}/{len(chunks)} for relationships")
-            
-            chunk_relationships = self.extract_relationships_from_chunk(chunk)
-            
-            # Add chunk index for tracking
-            for rel in chunk_relationships:
-                if isinstance(rel, dict):
-                    rel["source_chunk"] = i
-                    if "id" not in rel:
-                        rel["id"] = str(uuid.uuid4())
-            
-            all_relationships.extend(chunk_relationships)
-            
-            # Add a short delay to avoid rate limiting
-            time.sleep(0.5)
-        
-        logger.info(f"Extracted {len(all_relationships)} relationships from all chunks")
-        return all_relationships
-    
-    def resolve_relationships_with_entities(self, relationships: List[Dict], entities_by_type: Dict[str, List[Dict]]) -> List[Dict]:
-        """
-        Resolve relationships by mapping entity names to IDs using fuzzy matching.
-        If an entity doesn't exist, it will be created with a flag indicating it was extracted from a relationship.
-        
-        Args:
-            relationships: List of relationships to resolve
-            entities_by_type: Dictionary of entities organized by type
-            
-        Returns:
-            List of resolved relationships with entity IDs
-        """
-        # Build entity map for fuzzy matching
-        entity_map = self._build_entity_map_with_fuzzy_keys(entities_by_type)
-        
-        resolved_relationships = []
-        # Initialize created_entities with all possible entity types, not just the ones in entities_by_type
-        all_entity_types = ["event", "actor", "concept", "publication", "location"]
-        created_entities = {entity_type: [] for entity_type in all_entity_types}
-        
-        logger.info(f"Resolving {len(relationships)} relationships with fuzzy matching")
-        logger.info(f"Entity map keys: {list(entity_map.keys())}")
-        for entity_type, entities in entity_map.items():
-            logger.info(f"  {entity_type}: {len(set(entities.values()))} unique entities")
-        
-        for i, rel in enumerate(relationships):
-            logger.debug(f"Processing relationship {i+1}: {rel}")
-            
-            source_type = rel.get("source_type", "").lower()
-            target_type = rel.get("target_type", "").lower()
-            source_name = rel.get("source", "")
-            target_name = rel.get("target", "")
-            
-            # Skip if missing required fields
-            if not source_type or not target_type or not source_name or not target_name:
-                logger.debug(f"Skipping relationship - missing required fields")
-                continue
-            
-            # Look up source and target IDs with fuzzy matching
-            source_id = self._find_entity_id(source_name, source_type, entity_map, entities_by_type)
-            target_id = self._find_entity_id(target_name, target_type, entity_map, entities_by_type)
-            
-            # Create missing entities if needed
-            if not source_id:
-                logger.info(f"Creating new entity for source: {source_name} ({source_type})")
-                source_entity = self._create_entity_from_relationship(source_name, source_type, rel, "source")
-                
-                # Ensure the entity type exists in all dictionaries
-                if source_type not in created_entities:
-                    created_entities[source_type] = []
-                created_entities[source_type].append(source_entity)
-                
-                # Update entity map with the new entity
-                source_id = source_entity["id"]
-                if source_type not in entity_map:
-                    entity_map[source_type] = {}
-                entity_map[source_type][source_name.lower()] = source_id
-                
-                # Add to entities_by_type
-                if source_type not in entities_by_type:
-                    entities_by_type[source_type] = []
-                entities_by_type[source_type].append(source_entity)
-            
-            if not target_id:
-                logger.info(f"Creating new entity for target: {target_name} ({target_type})")
-                target_entity = self._create_entity_from_relationship(target_name, target_type, rel, "target")
-                
-                # Ensure the entity type exists in all dictionaries
-                if target_type not in created_entities:
-                    created_entities[target_type] = []
-                created_entities[target_type].append(target_entity)
-                
-                # Update entity map with the new entity
-                target_id = target_entity["id"]
-                if target_type not in entity_map:
-                    entity_map[target_type] = {}
-                entity_map[target_type][target_name.lower()] = target_id
-                
-                # Add to entities_by_type
-                if target_type not in entities_by_type:
-                    entities_by_type[target_type] = []
-                entities_by_type[target_type].append(target_entity)
-            
-            # Create resolved relationship
-            resolved_rel = {
-                "id": str(uuid.uuid4()),
-                "source_id": source_id,
-                "source_type": source_type,
-                "target_id": target_id,
-                "target_type": target_type,
-                "relationship_type": rel.get("relationship_type"),
-                "description": rel.get("description", ""),
-                "strength": rel.get("strength", 3),
-                "supporting_text": rel.get("supporting_text", ""),
-                "source_chunk": rel.get("source_chunk")
-            }
-            
-            resolved_relationships.append(resolved_rel)
-        
-        # Log summary of created entities
-        for entity_type, entities in created_entities.items():
-            if entities:
-                logger.info(f"Created {len(entities)} new {entity_type} entities from relationships")
-        
-        logger.info(f"Successfully resolved: {len(resolved_relationships)}/{len(relationships)} relationships")
-        return resolved_relationships
-    
-    def _build_entity_map_with_fuzzy_keys(self, entities: Dict[str, List[Dict]]) -> Dict[str, Dict[str, str]]:
-        """
-        Build a map of entity names to IDs by type, including normalized names for fuzzy matching
-        """
-        entity_map = {entity_type: {} for entity_type in entities.keys()}
-        
-        for entity_type, entity_list in entities.items():
-            for entity in entity_list:
-                if entity_type == "event":
-                    original_name = entity.get("title", "")
-                else:
-                    original_name = entity.get("name", "")
-                
-                # Skip empty names
-                if not original_name:
+            content = self._extract_json(content)
+
+            result = json.loads(content)
+            raw_relations = result.get("relations", [])
+
+            # Build lookup: UUID → item metadata for programmatic enrichment
+            item_lookup = {item["id"]: item for item in items}
+
+            relations = []
+            for rel in raw_relations:
+                if not isinstance(rel, dict):
                     continue
-                
-                entity_id = entity["id"]
-                
-                # Store both original and normalized versions
-                entity_map[entity_type][original_name.lower()] = entity_id
-                
-                normalized = self._normalize_name(original_name)
-                if normalized and normalized != original_name.lower():
-                    entity_map[entity_type][normalized] = entity_id
-        
-        return entity_map
-    
-    def _find_entity_id(self, entity_name: str, entity_type: str, entity_map: Dict[str, Dict[str, str]], entities_by_type: Dict[str, List[Dict]]) -> Optional[str]:
+
+                src_id = rel.get("source_id", "")
+                tgt_id = rel.get("target_id", "")
+
+                if src_id not in item_lookup or tgt_id not in item_lookup:
+                    logger.warning(
+                        "Skipping relation %s — UUID not in chunk items: src=%s tgt=%s",
+                        rel.get("relation_id"), src_id, tgt_id
+                    )
+                    continue
+
+                src = item_lookup[src_id]
+                tgt = item_lookup[tgt_id]
+
+                relations.append({
+                    "id": str(uuid.uuid4()),
+                    "source_id": src_id,
+                    "source_type": src.get("item_type", ""),
+                    "source_name": src.get("name", ""),
+                    "target_id": tgt_id,
+                    "target_type": tgt.get("item_type", ""),
+                    "target_name": tgt.get("name", ""),
+                    "relation_type": rel.get("relation_type", ""),
+                    "relation_category": rel.get("relation_category", ""),
+                    "directionality": rel.get("directionality", ""),
+                    "modality": rel.get("modality", ""),
+                    "polarity": rel.get("polarity", ""),
+                    "short_relation_label": rel.get("short_relation_label", ""),
+                    "supporting_text": rel.get("supporting_text", ""),
+                    "source_chunk": chunk.get("chunk_id", chunk.get("source_chunk")),
+                })
+
+            logger.info("Extracted %d relations from chunk", len(relations))
+            return relations
+
+        except json.JSONDecodeError as e:
+            logger.warning("Failed to parse relation extraction response as JSON: %s", e)
+            logger.debug("Raw relation response (first 500 chars): %r", content[:500])
+            return []
+        except Exception as e:
+            logger.error("Error extracting relations from chunk: %s", e)
+            return []
+
+    def remap_relation_uuids(self, relations: List[Dict], uuid_map: Dict[str, str]) -> List[Dict]:
         """
-        Find entity ID using exact match first, then fuzzy matching
-        """
-        # Try exact match first
-        if entity_type in entity_map and entity_name.lower() in entity_map[entity_type]:
-            return entity_map[entity_type][entity_name.lower()]
-        
-        # Try fuzzy matching
-        return self._find_best_entity_match(entity_name, entity_type, entities_by_type)
-    
-    def _create_entity_from_relationship(self, entity_name: str, entity_type: str, relationship: Dict, role: str) -> Dict:
-        """
-        Create a new entity from relationship data when an entity doesn't exist
-        
+        Update source_id and target_id in relations to point to canonical UUIDs
+        after global entity resolution (which may have merged duplicates).
+
         Args:
-            entity_name: Name of the entity to create
-            entity_type: Type of the entity (event, actor, concept, etc.)
-            relationship: The relationship containing this entity
-            role: Role of the entity in the relationship (source or target)
-            
+            relations: List of relation dicts with source_id/target_id
+            uuid_map: Mapping {original_uuid: canonical_uuid}
+
         Returns:
-            Newly created entity
+            Relations with remapped UUIDs; relations whose endpoints can't be
+            resolved are dropped with a warning.
         """
-        entity_id = str(uuid.uuid4())
-        
-        # Base entity with common fields
-        entity = {
-            "id": entity_id,
-            "auto_created_from_relationship": True,
-            "source_chunk": relationship.get("source_chunk"),
-            "relationship_context": {
-                "relationship_type": relationship.get("relationship_type"),
-                "relationship_description": relationship.get("description", ""),
-                "relationship_strength": relationship.get("strength", 3),
-                "entity_role": role
-            }
-        }
-        
-        # Add type-specific fields
-        if entity_type == "event":
-            entity["title"] = entity_name
-            entity["description"] = f"Auto-created event from relationship: {relationship.get('description', '')}"
-            # Try to extract year if it's in the name
-            year_match = re.search(r'\b(19|20)\d{2}\b', entity_name)
-            if year_match:
-                entity["year"] = int(year_match.group(0))
-            entity["type"] = "Other"
-            entity["significance"] = 3  # Medium significance by default
-        else:
-            entity["name"] = entity_name
-            entity["description"] = f"Auto-created {entity_type} from relationship: {relationship.get('description', '')}"
-            
-            # Type-specific additional fields
-            if entity_type == "actor":
-                entity["type"] = "Other"
-                entity["role"] = "Extracted from relationship"
-            elif entity_type == "concept":
-                entity["definition"] = f"Concept extracted from relationship with {relationship.get('source' if role == 'target' else 'target', '')}"
-                entity["significance"] = 3
-            elif entity_type == "publication":
-                entity["type"] = "Other"
-                # Try to extract year if it's in the name
-                year_match = re.search(r'\b(19|20)\d{2}\b', entity_name)
-                if year_match:
-                    entity["year"] = int(year_match.group(0))
-            elif entity_type == "location":
-                entity["type"] = "Other"
-        
-        return entity
-    
-    def _find_best_entity_match(self, target_name: str, target_type: str, entities_by_type: Dict[str, List[Dict]], threshold: float = 0.6) -> Optional[str]:
-        """
-        Find the best matching entity using fuzzy matching
-        """
-        if target_type not in entities_by_type:
-            return None
-        
-        best_match = None
-        best_score = threshold
-        
-        for entity in entities_by_type[target_type]:
-            if target_type == "event":
-                entity_name = entity.get("title", "")
-            else:
-                entity_name = entity.get("name", "")
-            
-            if not entity_name:
-                continue
-            
-            score = self._calculate_similarity(target_name, entity_name)
-            
-            if score > best_score:
-                best_score = score
-                best_match = entity.get("id")
-        
-        return best_match
-    
-    def _normalize_name(self, name: str) -> str:
-        """
-        Normalize entity names for fuzzy matching
-        """
-        if not name:
-            return ""
-        
-        # Convert to lowercase
-        normalized = name.lower()
-        
-        # Remove common parenthetical qualifiers
-        normalized = re.sub(r'\s*\([^)]*\)', '', normalized)
-        
-        # Remove common prefixes/suffixes
-        normalized = re.sub(r'^(the|a|an)\s+', '', normalized)
-        normalized = re.sub(r'\s+(movements?|laws?|concepts?|theories|theorys?|models?)$', '', normalized)
-        
-        # Replace common abbreviations
-        abbreviation_map = {
-            'ron': 'rights of nature',
-            'us': 'united states',
-            'uk': 'united kingdom'
-        }
-        
-        for abbrev, full in abbreviation_map.items():
-            normalized = re.sub(r'\b' + abbrev + r'\b', full, normalized)
-        
-        # Remove extra whitespace and punctuation
-        normalized = re.sub(r'[^\w\s]', '', normalized)
-        normalized = re.sub(r'\s+', ' ', normalized).strip()
-        
-        return normalized
-    
-    def _calculate_similarity(self, name1: str, name2: str) -> float:
-        """
-        Calculate similarity between two entity names
-        """
-        # Normalize both names
-        norm1 = self._normalize_name(name1)
-        norm2 = self._normalize_name(name2)
-        
-        if not norm1 or not norm2:
-            return 0.0
-        
-        # Exact match after normalization
-        if norm1 == norm2:
-            return 1.0
-        
-        # Check if one is contained in the other
-        if norm1 in norm2 or norm2 in norm1:
-            return 0.8
-        
-        # Calculate word overlap
-        words1 = set(norm1.split())
-        words2 = set(norm2.split())
-        
-        if not words1 or not words2:
-            return 0.0
-        
-        intersection = words1.intersection(words2)
-        union = words1.union(words2)
-        
-        # Jaccard similarity
-        jaccard = len(intersection) / len(union)
-        
-        # Boost score if key words match
-        key_word_bonus = 0.0
-        key_words = {'rights', 'nature', 'environmental', 'indigenous', 'constitutional', 'treaty', 'development'}
-        
-        if intersection.intersection(key_words):
-            key_word_bonus = 0.2
-        
-        return min(1.0, jaccard + key_word_bonus)
-    
+        remapped = []
+        for rel in relations:
+            src = uuid_map.get(rel["source_id"], rel["source_id"])
+            tgt = uuid_map.get(rel["target_id"], rel["target_id"])
+            remapped.append({**rel, "source_id": src, "target_id": tgt})
+        return remapped
+
     def deduplicate_relationships(self, relationships: List[Dict]) -> List[Dict]:
-        """
-        Remove duplicate relationships based on source, target, and type
-        """
-        seen_relationships = set()
+        """Remove duplicate relations based on source_id, target_id, and relation_type."""
+        seen = set()
         deduplicated = []
-        
         for rel in relationships:
-            # Create a key for deduplication
-            key = (
-                rel.get("source_id", ""),
-                rel.get("target_id", ""),
-                rel.get("relationship_type", "")
-            )
-            
-            if key not in seen_relationships:
-                seen_relationships.add(key)
+            key = (rel.get("source_id", ""), rel.get("target_id", ""), rel.get("relation_type", ""))
+            if key not in seen:
+                seen.add(key)
                 deduplicated.append(rel)
             else:
-                logger.debug(f"Skipping duplicate relationship: {key}")
-        
-        logger.info(f"Deduplicated relationships: {len(deduplicated)}/{len(relationships)} kept")
+                logger.debug("Skipping duplicate relation: %s", key)
+        logger.info("Deduplicated relations: %d/%d kept", len(deduplicated), len(relationships))
         return deduplicated
-    
-    def filter_relationships_by_confidence(self, relationships: List[Dict], min_confidence: float = 0.5) -> List[Dict]:
+
+    # Items are batched for the significance pass to stay within model output limits.
+    # All relations are kept in every batch so the model has full relational context.
+    # Relation significances are deduplicated across batches (first occurrence wins).
+    _SIG_ITEM_BATCH_SIZE = 15
+
+    def extract_significance_from_chunk(
+        self, chunk: Dict, items: List[Dict], relations: List[Dict]
+    ) -> Dict[str, List[Dict]]:
         """
-        Filter relationships based on confidence scores
+        7th pass: attribute significance to items and relations from a single chunk.
+
+        Items are processed in batches of _SIG_ITEM_BATCH_SIZE.  All relations are
+        included in every batch so the model has complete relational context.
+        Relation significances are deduplicated across batches (first occurrence wins).
+
+        Args:
+            chunk: Document chunk with text
+            items: List of {id, item_type, name} dicts for this chunk
+            relations: List of relation dicts extracted from this chunk (with id field)
+
+        Returns:
+            Dict with "item_significance" and "relation_significance" lists
         """
-        filtered = []
-        
-        for rel in relationships:
-            confidence = rel.get("confidence_score", 1.0)
-            if confidence >= min_confidence:
-                filtered.append(rel)
-            else:
-                logger.debug(f"Filtering out low-confidence relationship: {confidence}")
-        
-        logger.info(f"Filtered relationships by confidence: {len(filtered)}/{len(relationships)} kept")
-        return filtered
-    
-    def enrich_relationships_with_context(self, relationships: List[Dict], entities_by_type: Dict[str, List[Dict]]) -> List[Dict]:
+        if not items:
+            return {"item_significance": [], "relation_significance": []}
+
+        # Slim down relations to just id + label for the prompt
+        relations_slim = [
+            {
+                "id": r["id"],
+                "source_name": r.get("source_name", ""),
+                "target_name": r.get("target_name", ""),
+                "relation_type": r.get("relation_type", ""),
+            }
+            for r in relations
+        ]
+
+        item_batches = [
+            items[start : start + self._SIG_ITEM_BATCH_SIZE]
+            for start in range(0, len(items), self._SIG_ITEM_BATCH_SIZE)
+        ]
+
+        if len(item_batches) > 1:
+            logger.info(
+                "  Splitting %d items into %d batches for significance attribution",
+                len(items), len(item_batches),
+            )
+
+        all_item_sig: List[Dict] = []
+        seen_rel_ids: set = set()
+        all_rel_sig: List[Dict] = []
+
+        valid_relation_uuids = {r["id"] for r in relations}
+
+        for idx, batch in enumerate(item_batches):
+            if len(item_batches) > 1:
+                logger.info(
+                    "  Significance batch %d/%d (%d items)", idx + 1, len(item_batches), len(batch)
+                )
+
+            items_table = self._items_to_table(batch)
+            relations_json = json.dumps(relations_slim, ensure_ascii=False)
+
+            try:
+                prompt = SIGNIFICANCE_ATTRIBUTION_PROMPT.format(
+                    text=chunk.get("text", ""),
+                    items_table=items_table,
+                    relations_json=relations_json,
+                )
+            except KeyError as e:
+                logger.error("Error formatting significance prompt: %s", e)
+                continue
+
+            try:
+                response = retry_api_call(
+                    self.llm_client.messages.create,
+                    model=self.llm_client.model,
+                    max_tokens=MAX_TOKENS,
+                    system=(
+                        "You are an expert knowledge graph builder specialising in eco-jurisprudence "
+                        "and the planetary health movement. Attribute significance only where clearly "
+                        "supported by the text."
+                    ),
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature=0.0,
+                )
+
+                content = self._extract_json(response.content[0].text.strip())
+                result = json.loads(content)
+
+                valid_item_uuids = {item["id"] for item in batch}
+
+                item_sig = [
+                    s for s in result.get("item_significance", [])
+                    if isinstance(s, dict) and s.get("id") in valid_item_uuids
+                ]
+                all_item_sig.extend(item_sig)
+
+                for rs in result.get("relation_significance", []):
+                    if isinstance(rs, dict) and rs.get("id") in valid_relation_uuids:
+                        if rs["id"] not in seen_rel_ids:
+                            seen_rel_ids.add(rs["id"])
+                            all_rel_sig.append(rs)
+
+                logger.info(
+                    "Significance: %d item entries, %d relation entries from batch",
+                    len(item_sig), len([rs for rs in result.get("relation_significance", [])
+                                        if isinstance(rs, dict) and rs.get("id") in valid_relation_uuids])
+                )
+
+            except json.JSONDecodeError as e:
+                logger.warning("Failed to parse significance response as JSON: %s", e)
+            except Exception as e:
+                logger.error("Error extracting significance from chunk: %s", e)
+
+        logger.info(
+            "Significance total: %d item entries, %d relation entries from chunk",
+            len(all_item_sig), len(all_rel_sig),
+        )
+        return {"item_significance": all_item_sig, "relation_significance": all_rel_sig}
+
+    def remap_significance_uuids(
+        self, significance: Dict[str, List[Dict]], uuid_map: Dict[str, str]
+    ) -> Dict[str, List[Dict]]:
         """
-        Enrich relationships with additional context from the entities they connect
+        Update item and relation UUIDs in significance data after global entity resolution.
+
+        Args:
+            significance: Dict with "item_significance" and "relation_significance"
+            uuid_map: Mapping {original_uuid: canonical_uuid}
+
+        Returns:
+            Significance data with remapped UUIDs
         """
-        # Create entity lookup for quick access
-        entity_lookup = {}
-        for entity_type, entity_list in entities_by_type.items():
-            for entity in entity_list:
-                entity_lookup[entity["id"]] = entity
-        
-        enriched_relationships = []
-        
-        for rel in relationships:
-            enriched_rel = rel.copy()
-            
-            # Add source entity context
-            source_entity = entity_lookup.get(rel.get("source_id"))
-            if source_entity:
-                if rel.get("source_type") == "event":
-                    enriched_rel["source_name"] = source_entity.get("title", "")
-                else:
-                    enriched_rel["source_name"] = source_entity.get("name", "")
-                enriched_rel["source_description"] = source_entity.get("description", "")
-            
-            # Add target entity context
-            target_entity = entity_lookup.get(rel.get("target_id"))
-            if target_entity:
-                if rel.get("target_type") == "event":
-                    enriched_rel["target_name"] = target_entity.get("title", "")
-                else:
-                    enriched_rel["target_name"] = target_entity.get("name", "")
-                enriched_rel["target_description"] = target_entity.get("description", "")
-            
-            enriched_relationships.append(enriched_rel)
-        
-        return enriched_relationships
+        item_sig = [
+            {**s, "id": uuid_map.get(s["id"], s["id"])}
+            for s in significance.get("item_significance", [])
+        ]
+        rel_sig = [
+            {**s, "id": uuid_map.get(s["id"], s["id"])}
+            for s in significance.get("relation_significance", [])
+        ]
+        return {"item_significance": item_sig, "relation_significance": rel_sig}
+
+    _TYPE_CODE = {"event": "E", "actor": "A", "expression": "X", "concept": "C", "location": "L"}
+
+    @staticmethod
+    def _items_to_table(items: List[Dict]) -> str:
+        """
+        Convert items list to a compact pipe-delimited table.
+        Each row: <uuid> | <type-code> | <name>
+        Saves ~40% tokens compared to JSON key-value format.
+        """
+        codes = RelationshipProcessor._TYPE_CODE
+        return "\n".join(
+            f"{item['id']} | {codes.get(item.get('item_type', ''), '?')} | {item.get('name', '')}"
+            for item in items
+        )
+
+    @staticmethod
+    def _extract_json(content: str) -> str:
+        """Strip markdown code fences and find the outermost JSON object."""
+        if "```json" in content:
+            s = content.find("```json") + 7
+            e = content.find("```", s)
+            if e != -1:
+                content = content[s:e].strip()
+        elif "```" in content:
+            s = content.find("```") + 3
+            e = content.find("```", s)
+            if e != -1:
+                content = content[s:e].strip()
+        s = content.find("{")
+        e = content.rfind("}")
+        if s != -1 and e != -1 and e > s:
+            content = content[s:e + 1]
+        return content

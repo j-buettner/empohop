@@ -28,10 +28,10 @@ This means no other module needs to change when switching backends.
 import logging
 import os
 import sys
-from typing import Any, List, Dict
+import time
+from typing import Any, List, Dict, Optional
 
 from config import (
-    LLM_BACKEND,
     EXTERNAL_API_URL,
     EXTERNAL_API_MODELS,
     EXTERNAL_DEFAULT_MODEL,
@@ -40,6 +40,100 @@ from config import (
 )
 
 logger = logging.getLogger(__name__)
+
+
+# ---------------------------------------------------------------------------
+# Rate limit monitor (attached to the httpx client via response hooks)
+# ---------------------------------------------------------------------------
+
+class RateLimitMonitor:
+    """
+    Captures rate-limit headers from every httpx response and exposes a
+    ``wait_if_needed()`` method that sleeps when remaining capacity is low.
+
+    On the first response the monitor logs all x-ratelimit-* headers so we
+    can see exactly what the API returns and tune thresholds accordingly.
+    """
+
+    # Pause when fewer than this many requests remain in the current window.
+    LOW_WATERMARK = 3
+
+    def __init__(self) -> None:
+        self.remaining: Optional[int] = None
+        self.reset_after_seconds: Optional[float] = None
+        self._first_response = True
+
+    # httpx event hook — called after every response
+    def on_response(self, response) -> None:
+        headers = response.headers
+
+        if self._first_response:
+            rl_headers = {k: v for k, v in headers.items() if "ratelimit" in k.lower() or "retry" in k.lower()}
+            if rl_headers:
+                logger.info("Rate-limit headers from API: %s", rl_headers)
+            else:
+                logger.info("No rate-limit headers detected in API response.")
+            self._first_response = False
+
+        # Try common header name variants
+        remaining_str = (
+            headers.get("x-ratelimit-remaining-requests")
+            or headers.get("x-ratelimit-remaining")
+            or headers.get("ratelimit-remaining")
+        )
+        reset_str = (
+            headers.get("x-ratelimit-reset-requests")
+            or headers.get("x-ratelimit-reset")
+            or headers.get("ratelimit-reset")
+            or headers.get("retry-after")
+        )
+
+        # Prefer the per-minute counter — it is the tightest limit
+        remaining_minute = headers.get("x-ratelimit-remaining-minute")
+        if remaining_minute is not None:
+            try:
+                self.remaining = int(remaining_minute)
+            except ValueError:
+                pass
+        elif remaining_str is not None:
+            try:
+                self.remaining = int(remaining_str)
+            except ValueError:
+                pass
+
+        if reset_str is not None:
+            self.reset_after_seconds = self._parse_reset(reset_str)
+
+    def wait_if_needed(self) -> None:
+        """Call before each API request — sleeps if remaining capacity is low."""
+        if self.remaining is None:
+            return
+        if self.remaining <= self.LOW_WATERMARK:
+            wait = self.reset_after_seconds if self.reset_after_seconds else 60.0
+            logger.warning(
+                "Rate limit low (remaining=%d). Pausing %.1fs before next call.",
+                self.remaining, wait,
+            )
+            time.sleep(wait)
+            self.remaining = None
+            self.reset_after_seconds = None
+
+    @staticmethod
+    def _parse_reset(value: str) -> float:
+        """Parse reset header — may be seconds (int/float) or ISO 8601 duration like '1s'."""
+        value = value.strip()
+        # ISO 8601 duration e.g. "500ms", "1s", "2m30s"
+        import re
+        m = re.match(r"(?:(\d+)m)?(?:(\d+(?:\.\d+)?)s)?(?:(\d+)ms)?$", value, re.IGNORECASE)
+        if m and any(m.groups()):
+            minutes = float(m.group(1) or 0)
+            seconds = float(m.group(2) or 0)
+            millis  = float(m.group(3) or 0)
+            return minutes * 60 + seconds + millis / 1000
+        try:
+            return float(value)
+        except ValueError:
+            return 60.0
 
 
 # ---------------------------------------------------------------------------
@@ -73,9 +167,10 @@ class _UnifiedMessages:
     signature, translating to the correct underlying call.
     """
 
-    def __init__(self, backend: str, raw_client: Any) -> None:
+    def __init__(self, backend: str, raw_client: Any, rate_monitor: RateLimitMonitor) -> None:
         self._backend = backend
         self._raw = raw_client
+        self._monitor = rate_monitor
 
     def create(
         self,
@@ -83,8 +178,10 @@ class _UnifiedMessages:
         max_tokens: int,
         system: str,
         messages: List[Dict[str, str]],
-        temperature: float = 0.1,
+        temperature: float = 0.0,
     ) -> UnifiedResponse:
+        self._monitor.wait_if_needed()
+
         if self._backend == "anthropic":
             # Anthropic returns its own response object which already has
             # .content[0].text — pass it through unchanged.
@@ -104,7 +201,11 @@ class _UnifiedMessages:
             messages=openai_messages,
             temperature=temperature,
         )
-        text = response.choices[0].message.content
+        text = response.choices[0].message.content or ""
+        # Strip <think>...</think> chain-of-thought blocks emitted by qwen3 and
+        # similar reasoning models before the actual response content.
+        import re as _re
+        text = _re.sub(r"<think>.*?</think>", "", text, flags=_re.DOTALL).strip()
         return UnifiedResponse(text)
 
 
@@ -114,14 +215,22 @@ class UnifiedLLMClient:
     would with the Anthropic SDK; responses always expose ``.content[0].text``.
 
     Attributes:
-        model   — the model name that will be used for API calls
-        backend — "anthropic" or "external"
+        model        — the model name that will be used for API calls
+        backend      — "anthropic" or "external"
+        rate_monitor — RateLimitMonitor (call .wait_if_needed() before each request)
     """
 
-    def __init__(self, backend: str, raw_client: Any, model: str) -> None:
+    def __init__(
+        self,
+        backend: str,
+        raw_client: Any,
+        model: str,
+        rate_monitor: Optional[RateLimitMonitor] = None,
+    ) -> None:
         self._backend = backend
         self.model = model
-        self.messages = _UnifiedMessages(backend, raw_client)
+        self.rate_monitor = rate_monitor or RateLimitMonitor()
+        self.messages = _UnifiedMessages(backend, raw_client, self.rate_monitor)
 
     def __repr__(self) -> str:
         return f"UnifiedLLMClient(backend={self._backend!r}, model={self.model!r})"
@@ -191,9 +300,12 @@ def create_llm_client(backend: str = None, model: str = None) -> UnifiedLLMClien
                 EXTERNAL_API_MODELS,
             )
 
-        raw = OpenAI(base_url=EXTERNAL_API_URL, api_key=api_key)
+        import httpx
+        monitor = RateLimitMonitor()
+        http_client = httpx.Client(event_hooks={"response": [monitor.on_response]})
+        raw = OpenAI(base_url=EXTERNAL_API_URL, api_key=api_key, http_client=http_client)
         logger.info("LLM backend: external (%s)  |  model: %s", EXTERNAL_API_URL, resolved_model)
-        return UnifiedLLMClient("external", raw, resolved_model)
+        return UnifiedLLMClient("external", raw, resolved_model, monitor)
 
     logger.error(
         "Unknown backend=%r. Valid values: 'anthropic', 'external'.", backend
