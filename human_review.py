@@ -124,7 +124,7 @@ class ReviewTask:
                     "actor": "actors",
                     "concept": "concepts",
                     "location": "locations",
-                    "publication": "publications"
+                    "expression": "expressions"
                 }
                 
                 kg_entity_type = entity_type_map.get(self.entity_type, self.entity_type)
@@ -361,7 +361,7 @@ class ReviewManager:
                 "events": [],
                 "actors": [],
                 "concepts": [],
-                "publications": [],
+                "expressions": [],
                 "locations": [],
                 "relationships": []
             }

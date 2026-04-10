@@ -183,7 +183,7 @@ EXTRACTED {entity_type.upper()}:
 {json.dumps(entity, indent=2)}
 
 ORIGINAL TEXT CONTEXT:
-{chunk_text[:1000] + "..." if len(chunk_text) > 1000 else chunk_text}
+{chunk_text[:4000] + "..." if len(chunk_text) > 4000 else chunk_text}
 
 SUPPORTING TEXT:
 {supporting_text}
@@ -257,7 +257,7 @@ EXTRACTED RELATIONSHIP:
 {target_context}
 
 ORIGINAL TEXT CONTEXT:
-{chunk_text[:1000] + "..." if len(chunk_text) > 1000 else chunk_text}
+{chunk_text[:4000] + "..." if len(chunk_text) > 4000 else chunk_text}
 
 Please evaluate this relationship extraction on the following criteria:
 
@@ -325,12 +325,11 @@ Respond in the following JSON format:
 - Is the domain classification appropriate?
 - Are related concepts actually related?
 """,
-            "publication": """
-- Is the publication title accurate and complete?
-- Is the publication type correctly classified?
-- Are the authors correctly identified?
-- Is the year plausible?
-- Is the publisher/journal information accurate?
+            "expression": """
+- Is the expression title accurate and complete?
+- Is the expression type correctly classified (Publication, Speech, Legal Document, Regulation, Cultural Practice, Symbol, Other)?
+- Are the related actors correctly identified?
+- Is the year plausible (if provided)?
 """,
             "location": """
 - Is the location name correctly identified?

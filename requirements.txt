@@ -2,6 +2,9 @@
 anthropic>=0.49.0
 openai>=1.0.0          # Used for the external OpenAI-compatible backend
 
+# Environment
+python-dotenv>=1.0.0   # Auto-loads .env at startup via configure_logging()
+
 # Production WSGI server (run Flask apps with: gunicorn -w 1 server:app)
 gunicorn>=21.2.0
 

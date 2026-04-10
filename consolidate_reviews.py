@@ -44,7 +44,7 @@ class KnowledgeGraphConsolidator:
             "actors": [],
             "concepts": [],
             "locations": [],
-            "publications": [],
+            "expressions": [],
             "relationships": []
         }
         self.review_history = []
@@ -144,7 +144,7 @@ class KnowledgeGraphConsolidator:
             "actor": "actors",
             "concept": "concepts",
             "location": "locations",
-            "publication": "publications",
+            "expression": "expressions",
             "relationship": "relationships"
         }
         
@@ -159,7 +159,7 @@ class KnowledgeGraphConsolidator:
                 "actors": 0,
                 "concepts": 0,
                 "locations": 0,
-                "publications": 0,
+                "expressions": 0,
                 "relationships": 0
             }
             

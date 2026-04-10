@@ -17,6 +17,12 @@ import os
 import sys
 from datetime import datetime, timezone
 
+try:
+    from dotenv import load_dotenv as _load_dotenv
+    _DOTENV_AVAILABLE = True
+except ImportError:
+    _DOTENV_AVAILABLE = False
+
 
 class _JsonFormatter(logging.Formatter):
     """Emit each log record as a single-line JSON object."""
@@ -37,9 +43,12 @@ def configure_logging() -> None:
     """
     Configure the root logger from environment variables.
 
-    Safe to call multiple times — subsequent calls replace existing handlers
-    so log format/level changes take effect without double-printing.
+    Also loads a .env file from the project root if python-dotenv is installed
+    and the file exists. Safe to call multiple times.
     """
+    if _DOTENV_AVAILABLE:
+        _load_dotenv(override=False)  # env vars already in shell take priority
+
     level_name = os.environ.get("LOG_LEVEL", "INFO").upper()
     level = getattr(logging, level_name, logging.INFO)
 
