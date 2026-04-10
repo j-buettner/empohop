@@ -258,7 +258,7 @@ class TestResolveEntities:
             ],
             "actor": [],
             "concept": [],
-            "publication": [],
+            "expression": [],
             "location": [],
         }
         resolved = resolver.resolve_entities(entities)
@@ -270,7 +270,7 @@ class TestResolveEntities:
             "actor": [{"name": "UNEP", "type": "Government"}],
             "event": [],
             "concept": [],
-            "publication": [],
+            "expression": [],
             "location": [],
         }
         resolved = resolver.resolve_entities(entities)
@@ -285,7 +285,7 @@ class TestResolveEntities:
             ],
             "event": [],
             "actor": [],
-            "publication": [],
+            "expression": [],
             "location": [],
         }
         resolved = resolver.resolve_entities(entities)

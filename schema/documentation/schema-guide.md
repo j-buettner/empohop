@@ -15,7 +15,7 @@ This guide provides comprehensive documentation for the Planetary Health Knowled
 
 ## Introduction
 
-The Planetary Health Knowledge Graph is designed to capture and represent the complex relationships between events, actors, locations, concepts, and publications in the planetary health movement. This schema enables:
+The Planetary Health Knowledge Graph is designed to capture and represent the complex relationships between events, actors, locations, concepts, and expressions in the planetary health movement. This schema enables:
 
 - Tracking the historical development of planetary health concepts and practices
 - Identifying key influencers and their relationships
@@ -34,14 +34,15 @@ Events represent significant occurrences in the planetary health movement, such 
 - `year`: Year when the event occurred (required)
 - `title`: Short descriptive title (required)
 - `description`: Detailed description (required)
-- `significance`: Importance rating (1-5 scale)
-- `type`: Categorization (Publication, Conference, Policy, Research, etc.)
+- `juridical significance`: Importance for recognizing the rights of nature (1-5 scale)
+- `harmony significance`: Importance for living in harmony with nature (1-5 scale)
+- `type`: Categorization (Conference, Policy, Research, Movement, Organization, etc.)
 - `start_date`/`end_date`: Specific dates (ISO 8601 format)
 
 **Usage Notes:**
 - Events should be discrete, identifiable occurrences
 - The `year` property is required for chronological ordering
-- Use `significance` to indicate the event's impact on planetary health
+- Use the two significance dimensions (`juridical significance`, `harmony significance`) to capture the event's impact on planetary health from different angles
 
 ### Actor
 
@@ -94,26 +95,27 @@ Concepts represent theories, ideas, frameworks, or terms relevant to planetary h
 **Usage Notes:**
 - Organize concepts hierarchically when appropriate
 - Document the evolution of concepts over time
-- Link concepts to their key proponents and publications
+- Link concepts to their key proponents and expressions
 
-### Publication
+### Expression
 
-Publications represent books, articles, reports, or other published materials relevant to planetary health.
+Expressions represent any meaningful communication relevant to the planetary health movement. This is a broad category that includes traditional publications as well as speeches, legal documents, regulations, cultural practices, and symbols.
 
 **Key Properties:**
 - `id`: Unique identifier (UUID v4)
-- `title`: Publication title (required)
-- `type`: Publication type (Journal Article, Book, Report, etc.)
-- `year`: Publication year (required)
-- `author_ids`: References to actor IDs
-- `doi`: Digital Object Identifier
-- `isbn`: International Standard Book Number
-- `abstract`: Summary of the publication
+- `title`: Title or name of the expression (required)
+- `type`: Expression type — one of: Publication, Speech, Legal Document, Regulation, Cultural Practice, Symbol, Journal Article, Book, Book Chapter, Conference Paper, Report, Policy Brief, White Paper, Thesis, Other
+- `year`: Year of the expression (optional — not all expressions have a fixed date)
+- `author_ids`: References to actor IDs who created this expression
+- `doi`: Digital Object Identifier (for journal articles/books)
+- `isbn`: International Standard Book Number (for books)
+- `abstract`: Summary or description
 
 **Usage Notes:**
-- Use standard identifiers (DOI, ISBN) when available
-- Capture citation relationships between publications
-- Link publications to the concepts they discuss and events they document
+- Use `year` when a specific year is known; leave empty for undated expressions such as ongoing cultural practices or symbols
+- Capture citation relationships between expressions via `CITES`
+- Link expressions to the concepts they articulate and the events they document or influence
+- For speeches and legal documents, `author_ids` refers to the speaker or issuing body
 
 ## Relationship Types
 
@@ -139,9 +141,9 @@ Relationships connect entities in the knowledge graph, representing how they int
   - Properties: role, description
   - Example: `(WHO)-[:PARTICIPATES_IN {role: "Organizer"}]->(Global_Health_Summit)`
 
-- **AUTHORS**: Actor authors a publication
-  - Properties: role (Lead Author, Contributor, etc.)
-  - Example: `(Jane_Smith)-[:AUTHORS {role: "Lead Author"}]->(Planetary_Boundaries_Paper)`
+- **CREATES**: Actor creates an expression (authors, delivers, enacts, etc.)
+  - Properties: role (Author, Speaker, Legislator, etc.)
+  - Example: `(Jane_Smith)-[:CREATES {role: "Lead Author"}]->(Planetary_Boundaries_Paper)`
 
 - **DEVELOPS**: Actor develops a concept
   - Properties: description, year
@@ -151,15 +153,18 @@ Relationships connect entities in the knowledge graph, representing how they int
   - Properties: start_date, end_date, description
   - Example: `(Harvard_University)-[:COLLABORATES_WITH]->(London_School_Hygiene)`
 
-### Publication Relationships
+### Expression Relationships
 
-- **CITES**: Publication cites another publication
+- **CITES**: Expression cites another expression
   - Properties: context, page_number
   - Example: `(Recent_Climate_Paper)-[:CITES]->(Original_Planetary_Boundaries_Paper)`
 
-- **DISCUSSES**: Publication discusses a concept
+- **DISCUSSES**: Expression discusses a concept
   - Properties: significance, context
   - Example: `(Lancet_Report)-[:DISCUSSES {significance: 5}]->(One_Health_Approach)`
+
+- **DOCUMENTS**: Expression documents an event
+  - Example: `(IPBES_Report)-[:DOCUMENTS]->(Biodiversity_Assessment_2019)`
 
 ### Concept Relationships
 
@@ -177,7 +182,7 @@ The schema includes validation rules to ensure data quality and consistency:
 - Actors: id, name, type
 - Locations: id, name, type
 - Concepts: id, name, definition
-- Publications: id, title, year
+- Expressions: id, title
 
 ### Value Constraints
 
@@ -209,7 +214,7 @@ Link to standardized external identifiers whenever possible:
 
 - Actors: ORCID (individuals), GRID/ROR (institutions), Wikidata QIDs
 - Locations: GeoNames IDs, Wikidata QIDs
-- Publications: DOIs, ISBNs, ISSNs
+- Expressions: DOIs, ISBNs, ISSNs (where applicable)
 - Concepts: Wikidata QIDs
 
 ## Querying Examples
@@ -220,7 +225,7 @@ Link to standardized external identifiers whenever possible:
 
 ```cypher
 MATCH (e:Event {title: "Lancet Commission on Planetary Health"})-[:INFLUENCES]->(influenced:Event)
-RETURN influenced.title, influenced.year, influenced.significance
+RETURN influenced.title, influenced.year, influenced.`harmony significance`
 ORDER BY influenced.year;
 ```
 
@@ -240,6 +245,14 @@ WITH c, e ORDER BY e.year ASC LIMIT 1
 MATCH path = (e)-[:PRECEDES*]->(later:Event)-[:DISCUSSES]->(c)
 RETURN path
 LIMIT 10;
+```
+
+**Find all expressions by an actor:**
+
+```cypher
+MATCH (a:Actor {name: "Johan Rockström"})-[:CREATES]->(ex:Expression)
+RETURN ex.title, ex.type, ex.year
+ORDER BY ex.year;
 ```
 
 ## Data Entry Guidelines
@@ -267,6 +280,11 @@ The schema may evolve over time to accommodate new requirements:
 2. **Versioning**: Major schema changes should be versioned
 3. **Documentation**: All changes must be documented
 4. **Migration**: Provide migration scripts for significant changes
+
+### Change History
+
+- **Expression replaces Publication**: The `Publication` entity type was broadened to `Expression` to capture a wider range of communications including speeches, legal documents, regulations, cultural practices, and symbols. `year` is no longer required for expressions. The relationship `AUTHORS` was generalized to `CREATES`.
+- **Dual significance dimensions for Events**: The single `significance` field was replaced by two domain-specific fields — `juridical significance` (rights of nature) and `harmony significance` (living in harmony with nature).
 
 ---
 

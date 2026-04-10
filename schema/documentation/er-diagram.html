@@ -67,7 +67,8 @@ erDiagram
         int year "Required"
         string title "Required"
         string description "Required"
-        int significance "1-5 scale"
+        int juridical_significance "1-5 scale"
+        int harmony_significance "1-5 scale"
         string type "Enum"
         date start_date "ISO 8601"
         date end_date "ISO 8601"
@@ -106,36 +107,36 @@ erDiagram
         string wikidata_id "Wikidata Q ID"
     }
     
-    PUBLICATION {
+    EXPRESSION {
         string id PK "UUID v4"
         string title "Required"
         string subtitle "Optional"
-        string type "Publication type"
-        int year "Required"
+        string type "Publication, Speech, Legal Document, ..."
+        int year "Optional"
         date date "Specific date"
-        string publisher "Publisher name"
+        string publisher "Publisher or issuer"
         string journal "For articles"
         string doi "Digital Object Identifier"
         string isbn "For books"
         string abstract "Summary"
     }
-    
+
     ACTOR ||--o{ EVENT : "PARTICIPATES_IN"
-    ACTOR ||--o{ PUBLICATION : "AUTHORS"
+    ACTOR ||--o{ EXPRESSION : "CREATES"
     ACTOR ||--o{ CONCEPT : "DEVELOPS"
     ACTOR ||--o{ ACTOR : "COLLABORATES_WITH"
     ACTOR }|--|| LOCATION : "BASED_IN"
-    
+
     EVENT ||--o{ EVENT : "INFLUENCES"
     EVENT }|--|| LOCATION : "TAKES_PLACE_AT"
     EVENT ||--o{ CONCEPT : "INTRODUCES"
-    
-    PUBLICATION ||--o{ PUBLICATION : "CITES"
-    PUBLICATION ||--o{ CONCEPT : "DISCUSSES"
-    PUBLICATION ||--o{ EVENT : "DOCUMENTS"
-    
+
+    EXPRESSION ||--o{ EXPRESSION : "CITES"
+    EXPRESSION ||--o{ CONCEPT : "DISCUSSES"
+    EXPRESSION ||--o{ EVENT : "DOCUMENTS"
+
     CONCEPT ||--o{ CONCEPT : "RELATES_TO"
-    
+
     LOCATION ||--o{ LOCATION : "CONTAINS"
         </div>
         
@@ -151,17 +152,17 @@ erDiagram
         <h3>Actor Relationships</h3>
         <ul>
             <li><strong>PARTICIPATES_IN</strong>: Actor participates in an event</li>
-            <li><strong>AUTHORS</strong>: Actor authors a publication</li>
+            <li><strong>CREATES</strong>: Actor creates an expression (authors, delivers, enacts, etc.)</li>
             <li><strong>DEVELOPS</strong>: Actor develops a concept</li>
             <li><strong>COLLABORATES_WITH</strong>: Actor collaborates with another actor</li>
             <li><strong>BASED_IN</strong>: Actor is based in a location</li>
         </ul>
-        
-        <h3>Publication Relationships</h3>
+
+        <h3>Expression Relationships</h3>
         <ul>
-            <li><strong>CITES</strong>: Publication cites another publication</li>
-            <li><strong>DISCUSSES</strong>: Publication discusses a concept</li>
-            <li><strong>DOCUMENTS</strong>: Publication documents an event</li>
+            <li><strong>CITES</strong>: Expression cites another expression</li>
+            <li><strong>DISCUSSES</strong>: Expression discusses a concept</li>
+            <li><strong>DOCUMENTS</strong>: Expression documents an event</li>
         </ul>
         
         <h3>Concept Relationships</h3>

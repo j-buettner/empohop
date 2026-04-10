@@ -13,7 +13,7 @@
             background-color: #f8f9fa;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -22,13 +22,13 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
+
         h1 {
             color: #2c3e50;
             margin-bottom: 30px;
             text-align: center;
         }
-        
+
         h2 {
             color: #2c3e50;
             margin-top: 30px;
@@ -36,51 +36,73 @@
             padding-bottom: 10px;
             border-bottom: 1px solid #eee;
         }
-        
+
         h3 {
             color: #2c3e50;
             margin-top: 25px;
             margin-bottom: 15px;
         }
-        
+
         h4 {
             color: #2c3e50;
             margin-top: 20px;
             margin-bottom: 10px;
         }
-        
+
         pre {
             background-color: #f8f9fa;
             padding: 15px;
             border-radius: 5px;
             overflow-x: auto;
         }
-        
+
         code {
             font-family: 'Courier New', Courier, monospace;
             color: #e74c3c;
         }
-        
+
         .footer {
             margin-top: 50px;
             text-align: center;
             color: #7f8c8d;
             font-size: 14px;
         }
-        
+
         .back-link {
             margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th {
+            background-color: #f0f4f8;
+            text-align: left;
+            padding: 8px 12px;
+            border: 1px solid #dee2e6;
+        }
+
+        td {
+            padding: 8px 12px;
+            border: 1px solid #dee2e6;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f8f9fa;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Planetary Health Knowledge Graph: Schema Guide</h1>
-        
+
         <p>This guide provides comprehensive documentation for the Planetary Health Knowledge Graph schema, including entity definitions, relationship types, data validation rules, and usage examples.</p>
-        
+
         <h2>Table of Contents</h2>
-        
+
         <ol>
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#entity-types">Entity Types</a></li>
@@ -91,11 +113,11 @@
             <li><a href="#data-entry-guidelines">Data Entry Guidelines</a></li>
             <li><a href="#schema-evolution">Schema Evolution</a></li>
         </ol>
-        
+
         <h2 id="introduction">Introduction</h2>
-        
-        <p>The Planetary Health Knowledge Graph is designed to capture and represent the complex relationships between events, actors, locations, concepts, and publications in the planetary health movement. This schema enables:</p>
-        
+
+        <p>The Planetary Health Knowledge Graph is designed to capture and represent the complex relationships between events, actors, locations, concepts, and expressions in the planetary health movement. This schema enables:</p>
+
         <ul>
             <li>Tracking the historical development of planetary health concepts and practices</li>
             <li>Identifying key influencers and their relationships</li>
@@ -103,35 +125,36 @@
             <li>Analyzing citation networks and concept evolution</li>
             <li>Discovering connections between seemingly disparate events and ideas</li>
         </ul>
-        
+
         <h2 id="entity-types">Entity Types</h2>
-        
+
         <h3>Event</h3>
-        
+
         <p>Events represent significant occurrences in the planetary health movement, such as conferences, policy adoptions, research milestones, or organizational formations.</p>
-        
+
         <h4>Key Properties:</h4>
         <ul>
             <li><code>id</code>: Unique identifier (UUID v4)</li>
             <li><code>year</code>: Year when the event occurred (required)</li>
             <li><code>title</code>: Short descriptive title (required)</li>
             <li><code>description</code>: Detailed description (required)</li>
-            <li><code>significance</code>: Importance rating (1-5 scale)</li>
-            <li><code>type</code>: Categorization (Publication, Conference, Policy, Research, etc.)</li>
+            <li><code>juridical significance</code>: Importance for recognizing the rights of nature (1–5 scale)</li>
+            <li><code>harmony significance</code>: Importance for living in harmony with nature (1–5 scale)</li>
+            <li><code>type</code>: Categorization (Conference, Policy, Research, Movement, Organization, etc.)</li>
             <li><code>start_date</code>/<code>end_date</code>: Specific dates (ISO 8601 format)</li>
         </ul>
-        
+
         <h4>Usage Notes:</h4>
         <ul>
             <li>Events should be discrete, identifiable occurrences</li>
             <li>The <code>year</code> property is required for chronological ordering</li>
-            <li>Use <code>significance</code> to indicate the event's impact on planetary health</li>
+            <li>Use both significance dimensions to capture the event's impact from different angles</li>
         </ul>
-        
+
         <h3>Actor</h3>
-        
+
         <p>Actors represent individuals, organizations, institutions, or other entities that participate in the planetary health movement.</p>
-        
+
         <h4>Key Properties:</h4>
         <ul>
             <li><code>id</code>: Unique identifier (UUID v4)</li>
@@ -142,18 +165,18 @@
             <li><code>role</code>: Primary role in planetary health</li>
             <li><code>affiliation_ids</code>: References to other affiliated actors</li>
         </ul>
-        
+
         <h4>Usage Notes:</h4>
         <ul>
             <li>Use standardized naming conventions for consistency</li>
             <li>Link to external identifiers (ORCID, GRID, ROR) when available</li>
             <li>Capture hierarchical relationships through affiliations</li>
         </ul>
-        
+
         <h3>Location</h3>
-        
+
         <p>Locations represent geographical places relevant to planetary health events and activities.</p>
-        
+
         <h4>Key Properties:</h4>
         <ul>
             <li><code>id</code>: Unique identifier (UUID v4)</li>
@@ -163,18 +186,18 @@
             <li><code>country</code>: ISO 3166-1 alpha-2 country code</li>
             <li><code>geoname_id</code>: GeoNames database identifier</li>
         </ul>
-        
+
         <h4>Usage Notes:</h4>
         <ul>
             <li>Use standardized geographical references (GeoNames, Wikidata)</li>
             <li>Capture hierarchical relationships (e.g., city within country)</li>
             <li>Include environmental features relevant to planetary health</li>
         </ul>
-        
+
         <h3>Concept</h3>
-        
+
         <p>Concepts represent theories, ideas, frameworks, or terms relevant to planetary health.</p>
-        
+
         <h4>Key Properties:</h4>
         <ul>
             <li><code>id</code>: Unique identifier (UUID v4)</li>
@@ -185,43 +208,68 @@
             <li><code>domain</code>: Field categories (Ecology, PublicHealth, etc.)</li>
             <li><code>significance</code>: Importance rating (1-5 scale)</li>
         </ul>
-        
+
         <h4>Usage Notes:</h4>
         <ul>
             <li>Organize concepts hierarchically when appropriate</li>
             <li>Document the evolution of concepts over time</li>
-            <li>Link concepts to their key proponents and publications</li>
+            <li>Link concepts to their key proponents and expressions</li>
         </ul>
-        
-        <h3>Publication</h3>
-        
-        <p>Publications represent books, articles, reports, or other published materials relevant to planetary health.</p>
-        
+
+        <h3>Expression</h3>
+
+        <p>Expressions represent any meaningful communication relevant to the planetary health movement. This is a broad category that includes traditional publications as well as speeches, legal documents, regulations, cultural practices, and symbols.</p>
+
         <h4>Key Properties:</h4>
         <ul>
             <li><code>id</code>: Unique identifier (UUID v4)</li>
-            <li><code>title</code>: Publication title (required)</li>
-            <li><code>type</code>: Publication type (Journal Article, Book, Report, etc.)</li>
-            <li><code>year</code>: Publication year (required)</li>
-            <li><code>author_ids</code>: References to actor IDs</li>
-            <li><code>doi</code>: Digital Object Identifier</li>
-            <li><code>isbn</code>: International Standard Book Number</li>
-            <li><code>abstract</code>: Summary of the publication</li>
+            <li><code>title</code>: Title or name of the expression (required)</li>
+            <li><code>type</code>: Expression type (see table below)</li>
+            <li><code>year</code>: Year of the expression (optional — not all expressions have a fixed date)</li>
+            <li><code>author_ids</code>: References to actor IDs who created this expression</li>
+            <li><code>doi</code>: Digital Object Identifier (for journal articles/books)</li>
+            <li><code>isbn</code>: International Standard Book Number (for books)</li>
+            <li><code>abstract</code>: Summary or description</li>
         </ul>
-        
+
+        <h4>Expression Types:</h4>
+        <table>
+            <thead>
+                <tr><th>Type</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Publication</td><td>Generic published work</td></tr>
+                <tr><td>Journal Article</td><td>Peer-reviewed academic article</td></tr>
+                <tr><td>Book</td><td>Monograph or edited volume</td></tr>
+                <tr><td>Book Chapter</td><td>Chapter in an edited volume</td></tr>
+                <tr><td>Conference Paper</td><td>Paper presented at a conference</td></tr>
+                <tr><td>Report</td><td>Institutional or policy report</td></tr>
+                <tr><td>Policy Brief</td><td>Short policy-focused document</td></tr>
+                <tr><td>White Paper</td><td>Authoritative report or guide</td></tr>
+                <tr><td>Thesis</td><td>Doctoral or master's thesis</td></tr>
+                <tr><td>Speech</td><td>Delivered address or lecture</td></tr>
+                <tr><td>Legal Document</td><td>Treaty, charter, declaration, court ruling</td></tr>
+                <tr><td>Regulation</td><td>Law, directive, or regulatory act</td></tr>
+                <tr><td>Cultural Practice</td><td>Ongoing cultural or traditional practice</td></tr>
+                <tr><td>Symbol</td><td>Symbol, emblem, or cultural marker</td></tr>
+                <tr><td>Other</td><td>Any expression not covered above</td></tr>
+            </tbody>
+        </table>
+
         <h4>Usage Notes:</h4>
         <ul>
-            <li>Use standard identifiers (DOI, ISBN) when available</li>
-            <li>Capture citation relationships between publications</li>
-            <li>Link publications to the concepts they discuss and events they document</li>
+            <li>Use <code>year</code> when a specific year is known; leave empty for undated expressions such as ongoing cultural practices or symbols</li>
+            <li>Capture citation relationships between expressions via <code>CITES</code></li>
+            <li>Link expressions to the concepts they articulate and the events they document or influence</li>
+            <li>For speeches and legal documents, <code>author_ids</code> refers to the speaker or issuing body</li>
         </ul>
-        
+
         <h2 id="relationship-types">Relationship Types</h2>
-        
+
         <p>Relationships connect entities in the knowledge graph, representing how they interact, influence, or relate to each other.</p>
-        
+
         <h3>Event Relationships</h3>
-        
+
         <ul>
             <li><strong>INFLUENCES</strong>: An event influences another event
                 <ul>
@@ -229,14 +277,14 @@
                     <li>Example: <code>(Climate_Paris_Agreement)-[:INFLUENCES]->(WHO_Planetary_Health_Initiative)</code></li>
                 </ul>
             </li>
-            
+
             <li><strong>PRECEDES/FOLLOWS</strong>: Chronological relationship between events
                 <ul>
                     <li>Properties: time_gap (in years)</li>
                     <li>Example: <code>(First_Planetary_Health_Conference)-[:PRECEDES]->(Second_Planetary_Health_Conference)</code></li>
                 </ul>
             </li>
-            
+
             <li><strong>TAKES_PLACE_AT</strong>: Event occurs at a location
                 <ul>
                     <li>Properties: description</li>
@@ -244,9 +292,9 @@
                 </ul>
             </li>
         </ul>
-        
+
         <h3>Actor Relationships</h3>
-        
+
         <ul>
             <li><strong>PARTICIPATES_IN</strong>: Actor participates in an event
                 <ul>
@@ -254,21 +302,21 @@
                     <li>Example: <code>(WHO)-[:PARTICIPATES_IN {role: "Organizer"}]->(Global_Health_Summit)</code></li>
                 </ul>
             </li>
-            
-            <li><strong>AUTHORS</strong>: Actor authors a publication
+
+            <li><strong>CREATES</strong>: Actor creates an expression (authors, delivers, enacts, etc.)
                 <ul>
-                    <li>Properties: role (Lead Author, Contributor, etc.)</li>
-                    <li>Example: <code>(Jane_Smith)-[:AUTHORS {role: "Lead Author"}]->(Planetary_Boundaries_Paper)</code></li>
+                    <li>Properties: role (Author, Speaker, Legislator, etc.)</li>
+                    <li>Example: <code>(Jane_Smith)-[:CREATES {role: "Lead Author"}]->(Planetary_Boundaries_Paper)</code></li>
                 </ul>
             </li>
-            
+
             <li><strong>DEVELOPS</strong>: Actor develops a concept
                 <ul>
                     <li>Properties: description, year</li>
                     <li>Example: <code>(Rockefeller_Foundation)-[:DEVELOPS]->(Planetary_Health_Concept)</code></li>
                 </ul>
             </li>
-            
+
             <li><strong>COLLABORATES_WITH</strong>: Actor collaborates with another actor
                 <ul>
                     <li>Properties: start_date, end_date, description</li>
@@ -276,27 +324,33 @@
                 </ul>
             </li>
         </ul>
-        
-        <h3>Publication Relationships</h3>
-        
+
+        <h3>Expression Relationships</h3>
+
         <ul>
-            <li><strong>CITES</strong>: Publication cites another publication
+            <li><strong>CITES</strong>: Expression cites another expression
                 <ul>
                     <li>Properties: context, page_number</li>
                     <li>Example: <code>(Recent_Climate_Paper)-[:CITES]->(Original_Planetary_Boundaries_Paper)</code></li>
                 </ul>
             </li>
-            
-            <li><strong>DISCUSSES</strong>: Publication discusses a concept
+
+            <li><strong>DISCUSSES</strong>: Expression discusses a concept
                 <ul>
                     <li>Properties: significance, context</li>
                     <li>Example: <code>(Lancet_Report)-[:DISCUSSES {significance: 5}]->(One_Health_Approach)</code></li>
                 </ul>
             </li>
+
+            <li><strong>DOCUMENTS</strong>: Expression documents an event
+                <ul>
+                    <li>Example: <code>(IPBES_Report)-[:DOCUMENTS]->(Biodiversity_Assessment_2019)</code></li>
+                </ul>
+            </li>
         </ul>
-        
+
         <h3>Concept Relationships</h3>
-        
+
         <ul>
             <li><strong>RELATES_TO</strong>: Concept relates to another concept
                 <ul>
@@ -305,86 +359,92 @@
                 </ul>
             </li>
         </ul>
-        
+
         <h2 id="data-validation">Data Validation</h2>
-        
+
         <p>The schema includes validation rules to ensure data quality and consistency:</p>
-        
+
         <h3>Required Properties</h3>
-        
+
         <ul>
             <li>Events: id, year, title, description</li>
             <li>Actors: id, name, type</li>
             <li>Locations: id, name, type</li>
             <li>Concepts: id, name, definition</li>
-            <li>Publications: id, title, year</li>
+            <li>Expressions: id, title</li>
         </ul>
-        
+
         <h3>Value Constraints</h3>
-        
+
         <ul>
             <li>Years must be between 1800 and 2100</li>
             <li>Significance ratings must be between 1 and 5</li>
             <li>Country codes must follow ISO 3166-1 alpha-2 format</li>
             <li>Coordinates must follow GeoJSON Point format</li>
         </ul>
-        
+
         <h3>Referential Integrity</h3>
-        
+
         <ul>
             <li>All referenced IDs must exist in the database</li>
             <li>Relationship endpoints must be of the correct entity types</li>
             <li>Hierarchical references must not create cycles</li>
         </ul>
-        
+
         <h2 id="identifiers-and-references">Identifiers and References</h2>
-        
+
         <h3>UUID Generation</h3>
-        
+
         <p>All entities use UUID v4 identifiers to ensure global uniqueness. Generate these using standard UUID libraries:</p>
-        
+
         <pre><code>import uuid
 entity_id = str(uuid.uuid4())</code></pre>
-        
+
         <h3>External Identifiers</h3>
-        
+
         <p>Link to standardized external identifiers whenever possible:</p>
-        
+
         <ul>
             <li>Actors: ORCID (individuals), GRID/ROR (institutions), Wikidata QIDs</li>
             <li>Locations: GeoNames IDs, Wikidata QIDs</li>
-            <li>Publications: DOIs, ISBNs, ISSNs</li>
+            <li>Expressions: DOIs, ISBNs, ISSNs (where applicable)</li>
             <li>Concepts: Wikidata QIDs</li>
         </ul>
-        
+
         <h2 id="querying-examples">Querying Examples</h2>
-        
+
         <h3>Neo4j Cypher Queries</h3>
-        
+
         <p><strong>Find events influenced by a specific event:</strong></p>
-        
+
         <pre><code>MATCH (e:Event {title: "Lancet Commission on Planetary Health"})-[:INFLUENCES]->(influenced:Event)
-RETURN influenced.title, influenced.year, influenced.significance
+RETURN influenced.title, influenced.year, influenced.`harmony significance`
 ORDER BY influenced.year;</code></pre>
-        
+
         <p><strong>Find key actors in the development of a concept:</strong></p>
-        
+
         <pre><code>MATCH (a:Actor)-[:DEVELOPS]->(c:Concept {name: "Planetary Health"})
 RETURN a.name, a.type, a.country
 ORDER BY a.significance DESC;</code></pre>
-        
+
         <p><strong>Find the evolution of a concept over time:</strong></p>
-        
+
         <pre><code>MATCH (e:Event)-[:INTRODUCES]->(c:Concept {name: "Planetary Boundaries"})
 WITH c, e ORDER BY e.year ASC LIMIT 1
 MATCH path = (e)-[:PRECEDES*]->(later:Event)-[:DISCUSSES]->(c)
 RETURN path
 LIMIT 10;</code></pre>
-        
+
+        <p><strong>Find all expressions by an actor:</strong></p>
+
+        <pre><code>MATCH (a:Actor {name: "Johan Rockström"})-[:CREATES]->(ex:Expression)
+RETURN ex.title, ex.type, ex.year
+ORDER BY ex.year;</code></pre>
+
         <h2 id="data-entry-guidelines">Data Entry Guidelines</h2>
-        
+
         <h3>Best Practices</h3>
-        
+
         <ol>
             <li><strong>Consistency</strong>: Use consistent naming conventions and formatting</li>
             <li><strong>Completeness</strong>: Fill in all relevant fields, not just required ones</li>
@@ -392,35 +452,42 @@ LIMIT 10;</code></pre>
             <li><strong>Evidence</strong>: Include sources and citations for all information</li>
             <li><strong>Neutrality</strong>: Maintain objective descriptions, especially for significance ratings</li>
         </ol>
-        
+
         <h3>Workflow</h3>
-        
+
         <ol>
             <li>Start by entering foundational entities (major events, key actors, core concepts)</li>
             <li>Add relationships between existing entities</li>
             <li>Expand with more specific or peripheral entities</li>
             <li>Continuously review and refine the knowledge graph</li>
         </ol>
-        
+
         <h2 id="schema-evolution">Schema Evolution</h2>
-        
+
         <p>The schema may evolve over time to accommodate new requirements:</p>
-        
+
         <ol>
             <li><strong>Backward Compatibility</strong>: Changes should maintain compatibility with existing data</li>
             <li><strong>Versioning</strong>: Major schema changes should be versioned</li>
             <li><strong>Documentation</strong>: All changes must be documented</li>
             <li><strong>Migration</strong>: Provide migration scripts for significant changes</li>
         </ol>
-        
+
+        <h3>Change History</h3>
+
+        <ul>
+            <li><strong>Expression replaces Publication</strong>: The <code>Publication</code> entity type was broadened to <code>Expression</code> to capture a wider range of communications including speeches, legal documents, regulations, cultural practices, and symbols. <code>year</code> is no longer required for expressions. The relationship <code>AUTHORS</code> was generalized to <code>CREATES</code>.</li>
+            <li><strong>Dual significance dimensions for Events</strong>: The single <code>significance</code> field was replaced by two domain-specific fields — <code>juridical significance</code> (rights of nature) and <code>harmony significance</code> (living in harmony with nature).</li>
+        </ul>
+
         <hr>
-        
+
         <p>This guide is a living document and will be updated as the schema evolves and as best practices emerge from its use.</p>
-        
+
         <div class="back-link">
             <a href="../../index.html" class="btn btn-primary">Back to Home</a>
         </div>
-        
+
         <div class="footer">
             <p>Planetary Health Knowledge Graph &copy; 2025</p>
         </div>
