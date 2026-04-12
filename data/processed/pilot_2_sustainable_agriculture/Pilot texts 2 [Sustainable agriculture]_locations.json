@@ -1,0 +1,895 @@
+{
+  "locations": [
+    {
+      "name": "Peruvian Amazon",
+      "type": "Region",
+      "country": "Peru",
+      "description": "Region in the Amazon basin of Peru where community‑based forestry initiatives have been studied.",
+      "supporting_text": "review of CBF initiatives in the Peruvian Amazon",
+      "source_chunk": 1,
+      "id": "f341b9cb-ce86-46bc-bec1-dcf39d267593",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Site of a review that notes the absence of effectiveness assessments.",
+        "supporting_text": "Menton & Cronkleton 2014 review of CBF initiatives in the Peruvian Amazon"
+      }
+    },
+    {
+      "name": "Asia",
+      "type": "Region",
+      "country": null,
+      "description": "Continental region referenced in FAO’s regional assessment of community‑based forestry.",
+      "supporting_text": "FAO, 2006a for Asia",
+      "source_chunk": 1,
+      "id": "dec2f793-88af-4e66-9aec-1da371ac1dc5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Regional FAO assessment documents expansion of CBF regimes in Asia.",
+        "supporting_text": "FAO regional assessment for Asia"
+      }
+    },
+    {
+      "name": "Africa",
+      "type": "Region",
+      "country": null,
+      "description": "Continental region referenced in FAO’s regional assessment of community‑based forestry. Region cited as an example of pre‑modern forest management regimes studied in the literature. Region mentioned in relation to PEFC’s exploration of group certification for community groups and large‑scale land acquisitions.",
+      "supporting_text": "FAO, 2008 for Africa",
+      "id": "e094411e-cd10-4b19-941b-490b0138c4b3",
+      "variations": [
+        "Africa"
+      ],
+      "source_chunks": [
+        1,
+        2,
+        6
+      ],
+      "supporting_texts": [
+        "FAO, 2008 for Africa",
+        "e.g. Odera, 2004 and Couillard et al., 2009 for Africa;",
+        "PEFC also offers group certification and is currently exploring its application to community groups in Africa, Europe and South and Southeast Asia."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Large‑scale land acquisitions in Africa threaten community forest tenure and livelihoods.",
+        "supporting_text": "Two‑thirds of the reported land acquisitions were in Africa, where nearly 700 million people live on land that is customarily owned but has insecure tenure"
+      }
+    },
+    {
+      "name": "Eastern Europe",
+      "type": "Region",
+      "country": null,
+      "description": "Geographic sub‑region referenced in FAO’s regional assessment of community‑based forestry.",
+      "supporting_text": "FAO, 2012a for Eastern Europe",
+      "source_chunk": 1,
+      "id": "d2bc5956-9f19-49cc-8f11-79bf33cc956c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Regional FAO assessment documents expansion of CBF regimes in Eastern Europe.",
+        "supporting_text": "FAO regional assessment for Eastern Europe"
+      }
+    },
+    {
+      "name": "Europe",
+      "type": "Region",
+      "country": null,
+      "description": "Region mentioned alongside Africa and Asia in PEFC’s certification outreach. Region where smallholder forestry is a well‑established forest management modality. The historical area where pre‑industrial rural dwellers relied on forest commons before industrialisation eroded customary rights.",
+      "supporting_text": "As in many developing countries today, rural dwellers in pre‑industrial Europe depended on their adjacent forest commons for livelihood support and as an integral part of their traditional agricultural systems.",
+      "id": "71d83f51-837a-43b3-ba58-ca2dba1470b4",
+      "variations": [
+        "Europe"
+      ],
+      "source_chunks": [
+        2,
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "As in many developing countries today, rural dwellers in pre‑industrial Europe depended on their adjacent forest commons for livelihood support and as an integral part of their traditional agricultural systems.",
+        "smallholder forestry in Europe and North America",
+        "PEFC also offers group certification and is currently exploring its application to community groups in Africa, Europe and South and Southeast Asia."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "PEFC is exploring group certification for community groups in Europe, facilitating collective participation.",
+        "supporting_text": "PEFC also offers group certification and is currently exploring its application to community groups in Africa, Europe and South and Southeast Asia"
+      }
+    },
+    {
+      "name": "France",
+      "type": "Country",
+      "country": null,
+      "description": "One of the two European nations that still retain significant forest estates managed through communal management rights (though publicly administered).",
+      "supporting_text": "France and Switzerland remain the only two countries in Europe in which significant areas of the forest estate are managed through some form of communal management rights (FAO, 2010a).",
+      "source_chunk": 2,
+      "id": "d87d0bfb-9003-4324-af17-da8cd3c27ffb",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "France’s communal rights are limited to public forests managed by authorities, not true community groups.",
+        "supporting_text": "these forests are public forests managed by local government authorities and not by discrete community groups."
+      }
+    },
+    {
+      "name": "Switzerland",
+      "type": "Country",
+      "country": null,
+      "description": "One of the two European nations that still retain significant forest estates managed through communal management rights (though publicly administered).",
+      "supporting_text": "France and Switzerland remain the only two countries in Europe in which significant areas of the forest estate are managed through some form of communal management rights (FAO, 2010a).",
+      "source_chunk": 2,
+      "id": "2ba26da3-88c8-416c-b679-e8bb9c38580c",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Switzerland’s communal rights are similarly confined to public forests, not genuine CBF regimes.",
+        "supporting_text": "these forests are public forests managed by local government authorities and not by discrete community groups."
+      }
+    },
+    {
+      "name": "global South",
+      "type": "Region",
+      "country": null,
+      "description": "Broad geographic term referring to many developing countries where community‑based forestry initiatives have been promoted. Broad geographic term used to describe locations where large‑scale land acquisitions are occurring. Broad term for developing countries that were colonised and where forest regimes were transformed by European powers.",
+      "supporting_text": "Most countries in the global South and the New World were subject to colonization by European powers from the sixteenth century onwards.",
+      "id": "73f7aad1-596d-4528-9715-0a43f07107b3",
+      "variations": [
+        "global South",
+        "Global South"
+      ],
+      "source_chunks": [
+        2,
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "Most countries in the global South and the New World were subject to colonization by European powers from the sixteenth century onwards.",
+        "In many developing countries in the global South",
+        "Large-scale land acquisitions in the global South"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Points to widespread degradation that motivated early CBF support, exposing the environmental challenges faced.",
+        "supporting_text": "In many developing countries in the global South, reversing widespread degradation was a primary reason for the initial international support for community‑based forestry"
+      }
+    },
+    {
+      "name": "New World",
+      "type": "Region",
+      "country": null,
+      "description": "Geographic area of the Americas referenced as having been colonised and subjected to forest annexation.",
+      "supporting_text": "Most countries in the global South and the New World were subject to colonization by European powers from the sixteenth century onwards.",
+      "source_chunk": 2,
+      "id": "d42afb35-8331-4e4f-8d19-b3396892144e",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Colonial annexation also affected the New World, exposing a pattern of forest dispossession.",
+        "supporting_text": "Most countries in the global South and the New World were subject to colonization by European powers."
+      }
+    },
+    {
+      "name": "South Asia",
+      "type": "Region",
+      "country": null,
+      "description": "One of the five regions covered by IUCN’s 1996‑2000 series of regional reports on community involvement in forest management. Region mentioned as having pre‑modern forest management regimes documented in scholarly work.",
+      "supporting_text": "Poffenberger, 2000 for South Asia;",
+      "id": "458d3d9f-9816-42de-9617-6998f465bd67",
+      "variations": [
+        "South Asia"
+      ],
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_texts": [
+        "Poffenberger, 2000 for South Asia;",
+        "covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada and the United States of America"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "South Asia inclusion in the IUCN report series highlighted its role in global CBF advocacy.",
+        "supporting_text": "produced a series of five regional reports (covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada …) … used to advocate for CBF in international discussions"
+      }
+    },
+    {
+      "name": "Southeast Asia",
+      "type": "Region",
+      "country": null,
+      "description": "One of the five regions covered by IUCN’s 1996‑2000 series of regional reports on community involvement in forest management. Region referenced for its historical indigenous forest management practices.",
+      "supporting_text": "Poffenberger, n.d. for Southeast Asia;",
+      "id": "f879673a-cc7b-41c8-9be1-0573ac1d35d0",
+      "variations": [
+        "Southeast Asia"
+      ],
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_texts": [
+        "Poffenberger, n.d. for Southeast Asia;",
+        "covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada and the United States of America"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Regional reports covering Southeast Asia were used to advocate CBF internationally, showing cross‑scale relevance.",
+        "supporting_text": "produced a series of five regional reports (covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada …) … used to advocate for CBF in international discussions"
+      }
+    },
+    {
+      "name": "Mesoamerica",
+      "type": "Region",
+      "country": null,
+      "description": "One of the five regions covered by IUCN’s 1996‑2000 series of regional reports on community involvement in forest management. Region highlighted as an example of pre‑colonial forest governance systems.",
+      "supporting_text": "IUCN, 2000 for Mesoamerica).",
+      "id": "6933af39-cbe7-491b-b08f-affff334b61e",
+      "variations": [
+        "Mesoamerica",
+        "MesoAmerica"
+      ],
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_texts": [
+        "IUCN, 2000 for Mesoamerica).",
+        "covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada and the United States of America"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Mesoamerican indigenous management is described as variable and dynamic, indicating transformative potential.",
+        "supporting_text": "these premodern management regimes ... were highly variable but also dynamic."
+      }
+    },
+    {
+      "name": "Asia and the Pacific region",
+      "type": "Region",
+      "country": null,
+      "description": "Region where community‑based forestry first emerged in the 1970s, according to FAO.",
+      "supporting_text": "FAO (2012b, p. 41) noted that CBF emerged in the Asia and the Pacific region, in part, \"in the context of failures by public forestry organizations to effectively protect and manage forests sustainably\".",
+      "source_chunk": 2,
+      "id": "f6d1a4d2-466a-439f-9df0-1e63df10598c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "CBF’s emergence in this region signals a shift away from failed public forestry models.",
+        "supporting_text": "FAO noted that CBF emerged in the Asia and the Pacific region, in part, “in the context of failures by public forestry organizations…”."
+      }
+    },
+    {
+      "name": "Jakarta",
+      "type": "City",
+      "country": "Indonesia",
+      "description": "Host city of the eighth World Forestry Congress, where the theme “Forests for People” was presented.",
+      "supporting_text": "In the same year, the eighth World Forestry Congress in Jakarta carried the theme \"Forests for People\".",
+      "source_chunk": 2,
+      "id": "3e82b018-bd48-4b78-8cfd-31a7993490a1",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Hosting the World Forestry Congress amplified the “Forests for People” discourse.",
+        "supporting_text": "the eighth World Forestry Congress in Jakarta carried the theme “Forests for People”."
+      }
+    },
+    {
+      "name": "Australia",
+      "type": "Country",
+      "country": null,
+      "description": "One of the settler societies where indigenous rights over forests were historically extinguished and later legally recognized.",
+      "supporting_text": "including Australia, Brazil, Canada, New Zealand and the United States of America",
+      "source_chunk": 4,
+      "id": "1c0a9cb4-32df-41a0-bf94-81b8320d7945",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Australia exemplifies settler‑colonial contexts where indigenous rights were extinguished, highlighting power asymmetries.",
+        "supporting_text": "This issue has been particularly prominent in countries … where settler societies largely displaced … indigenous communities (including Australia, Brazil, Canada …)."
+      }
+    },
+    {
+      "name": "Brazil",
+      "type": "Country",
+      "country": null,
+      "description": "One of the settler societies where indigenous rights over forests were historically extinguished and later legally recognized.",
+      "supporting_text": "including Australia, Brazil, Canada, New Zealand and the United States of America",
+      "source_chunk": 4,
+      "id": "58c3b532-29cc-44c9-80ce-7c56c9cf185d",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Brazil is cited as a settler‑colonial case illustrating historic power imbalances affecting forest rights.",
+        "supporting_text": "This issue has been particularly prominent in countries … where settler societies largely displaced … indigenous communities (including Australia, Brazil, Canada …)."
+      }
+    },
+    {
+      "name": "Canada",
+      "type": "Country",
+      "country": null,
+      "description": "One of the settler societies where indigenous rights over forests were historically extinguished and later legally recognized. One of the two countries included in IUCN’s regional reports on community involvement in forest management.",
+      "supporting_text": "including Australia, Brazil, Canada, New Zealand and the United States of America",
+      "id": "a720d984-4f14-461f-b6e4-694d013389be",
+      "variations": [
+        "Canada"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "including Australia, Brazil, Canada, New Zealand and the United States of America",
+        "covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada and the United States of America"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Canada’s inclusion demonstrates the global span of CBF advocacy evidence.",
+        "supporting_text": "produced a series of five regional reports (covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada …) … used to advocate for CBF in international discussions"
+      }
+    },
+    {
+      "name": "New Zealand",
+      "type": "Country",
+      "country": null,
+      "description": "One of the settler societies where indigenous rights over forests were historically extinguished and later legally recognized.",
+      "supporting_text": "including Australia, Brazil, Canada, New Zealand and the United States of America",
+      "source_chunk": 4,
+      "id": "a4d555df-7af1-4cb1-af47-650b6aa5cdab",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Illustrates settler societies where indigenous rights were historically extinguished, highlighting power asymmetries that hinder harmony with nature.",
+        "supporting_text": "including Australia, Brazil, Canada, New Zealand and the United States of America"
+      }
+    },
+    {
+      "name": "United States of America",
+      "type": "Country",
+      "country": null,
+      "description": "One of the settler societies where indigenous rights over forests were historically extinguished and later legally recognized. One of the two countries included in IUCN’s regional reports on community involvement in forest management; also mentioned in relation to timber legislation and certification.",
+      "supporting_text": "including Australia, Brazil, Canada, New Zealand and the United States of America",
+      "id": "5581692e-97d8-4a5a-9589-dba81d516fb4",
+      "variations": [
+        "United States of America"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "including Australia, Brazil, Canada, New Zealand and the United States of America",
+        "covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada and the United States of America"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "U.S. legislation (Lacey Act) bans illegal timber, raising legitimacy for sustainable forest practices.",
+        "supporting_text": "The United States of America has added provisions to the Lacey Act of 1900 ... to ban commerce in illegally sourced timber"
+      }
+    },
+    {
+      "name": "United Kingdom",
+      "type": "Country",
+      "country": null,
+      "description": "Country where the PEFC launched an online forest certification system for small and medium‑sized private forest owners. Location of the Overseas Development Institute that hosted the Social Forestry Network (later Rural Development Forestry Network).",
+      "supporting_text": "the Social Forestry Network (subsequently  the Rural Development Forestry Network) of the Overseas Development Institute in the United Kingdom",
+      "id": "18b34ac7-6959-47e1-b6af-77e212b41037",
+      "variations": [
+        "United Kingdom"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "the Social Forestry Network (subsequently  the Rural Development Forestry Network) of the Overseas Development Institute in the United Kingdom",
+        "the programme has recently launched an online forest certification system in the United Kingdom to help small and medium-sized private forest owners obtain PEFC certification simply and at low cost (PEFC, 2015)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "PEFC’s online system in the UK lowers barriers for small owners to obtain certification.",
+        "supporting_text": "The programme has recently launched an online forest certification system in the United Kingdom to help small and medium-sized private forest owners obtain PEFC certification simply and at low cost"
+      }
+    },
+    {
+      "name": "Bangkok",
+      "type": "City",
+      "country": "Thailand",
+      "description": "City where RECOFTC was established in 1987 to focus on capacity building for community‑based forestry in Asia and the Pacific.",
+      "supporting_text": "RECOFTC was established in 1987 in Bangkok",
+      "source_chunk": 4,
+      "id": "5172e6ae-d173-44fb-a322-c98b4d13aef6",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Site of RECOFTC’s establishment, providing regional capacity‑building for community‑based forestry.",
+        "supporting_text": "RECOFTC was established in 1987 in Bangkok to provide a focus on capacity building for CBF in Asia and the Pacific"
+      }
+    },
+    {
+      "name": "India",
+      "type": "Country",
+      "country": null,
+      "description": "One of the countries where community‑based forestry is well established and integrated into national development programmes.",
+      "supporting_text": "such as India, Nepal and the United Republic of Tanzania",
+      "source_chunk": 4,
+      "id": "622d9954-3b07-48e5-bfaa-8ca5257615ee",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Cited as a country where CBF is well‑established and integrated into national development, showing scalable system transformation.",
+        "supporting_text": "Most of this research ... has used examples from countries where CBF is well established ... such as India, Nepal and the United Republic of Tanzania"
+      }
+    },
+    {
+      "name": "Nepal",
+      "type": "Country",
+      "country": null,
+      "description": "One of the countries where community‑based forestry is well established and integrated into national development programmes.",
+      "supporting_text": "such as India, Nepal and the United Republic of Tanzania",
+      "source_chunk": 4,
+      "id": "7cfe6599-71f1-4b1a-bc26-53cdc98c810c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Demonstrates evolution from environmental movement to broader social and governance goals, indicating pathways for systemic change.",
+        "supporting_text": "Most of this research ... such as India, Nepal and the United Republic of Tanzania"
+      }
+    },
+    {
+      "name": "United Republic of Tanzania",
+      "type": "Country",
+      "country": null,
+      "description": "One of the countries where community‑based forestry is well established and integrated into national development programmes.",
+      "supporting_text": "such as India, Nepal and the United Republic of Tanzania",
+      "source_chunk": 4,
+      "id": "f227e780-0a14-4f3f-b9af-3518de344368",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Serves as a model where CBF is large‑scale and linked to national programmes, highlighting transformative potential.",
+        "supporting_text": "Most of this research ... such as India, Nepal and the United Republic of Tanzania"
+      }
+    },
+    {
+      "name": "Latin America",
+      "type": "Region",
+      "country": null,
+      "description": "Region mentioned as an exception to the large‑scale national policy rollout of community‑based forestry in the global South.",
+      "supporting_text": "although Latin America is an exception",
+      "source_chunk": 4,
+      "id": "301c7c09-ceb5-46f0-9d49-a0b696d2c471",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Identified as an exception to the typical large‑scale rollout in the global South, revealing uneven implementation conditions.",
+        "supporting_text": "In most countries in the South CBF has been rolled out ... although Latin America is an exception"
+      }
+    },
+    {
+      "name": "North America",
+      "type": "Region",
+      "country": null,
+      "description": "Region used as a benchmark for carbon stock comparisons with community forests worldwide. Region where smallholder forestry is a well‑established forest management modality.",
+      "supporting_text": "smallholder forestry in Europe and North America",
+      "id": "9836ab14-093c-478e-9e7f-4ec92366d8f3",
+      "variations": [
+        "North America"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "smallholder forestry in Europe and North America",
+        "about equal to the carbon in all the forests of North America"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text does not explicitly link North America to a specific contribution or condition for CBF.",
+        "supporting_text": "No direct excerpt mentioning North America’s role in CBF is provided."
+      }
+    },
+    {
+      "name": "China",
+      "type": "Country",
+      "country": null,
+      "description": "Country cited as having undergone major forest tenure reforms that spurred smallholder forestry.",
+      "supporting_text": "for example in China and Viet Nam",
+      "source_chunk": 4,
+      "id": "85a755d0-a2f4-4921-85d7-d2a8d160c129",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Cited as a case where major tenure reforms enabled emergence of smallholder forestry, illustrating policy‑driven system change.",
+        "supporting_text": "smallholder forestry ... emerged as a significant form ... as a result of major forest tenure reforms, for example in China and Viet Nam"
+      }
+    },
+    {
+      "name": "Viet Nam",
+      "type": "Country",
+      "country": null,
+      "description": "Country cited as having undergone major forest tenure reforms that spurred smallholder forestry.",
+      "supporting_text": "for example in China and Viet Nam",
+      "source_chunk": 4,
+      "id": "6e9a5d1a-211b-4086-8283-6c887de13837",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Highlights tenure reform leading to new forest management modalities, indicating transformative policy pathways.",
+        "supporting_text": "smallholder forestry ... emerged as a significant form ... as a result of major forest tenure reforms, for example in China and Viet Nam"
+      }
+    },
+    {
+      "name": "global North",
+      "type": "Region",
+      "country": null,
+      "description": "Broad geographic term referring to more industrialised nations where collaborative forms of community‑based forestry have emerged as pilot projects. Broad geographic term used to describe countries showing growing interest in ensuring legal timber harvesting.",
+      "supporting_text": "collaborative forms of CBF regimes have evolved in the global North and South",
+      "id": "f35b3828-4e27-499d-b1b0-e6fe5f76a026",
+      "variations": [
+        "global North",
+        "Global North"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "collaborative forms of CBF regimes have evolved in the global North and South",
+        "During the past two decades some countries in the global North have shown growing interest in ensuring that timber is harvested legally."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Notes distinct, smaller‑scale, pilot‑project evolution, suggesting alternative pathways for systemic transformation.",
+        "supporting_text": "McDermott and Schreckenberg ... noted distinct differences in the way that collaborative forms of CBF regimes have evolved in the global North and South"
+      }
+    },
+    {
+      "name": "Asia and the Pacific",
+      "type": "Region",
+      "country": null,
+      "description": "Region targeted by RECOFTC for capacity‑building activities in community‑based forestry.",
+      "supporting_text": "capacity building for CBF in Asia and the Pacific",
+      "source_chunk": 4,
+      "id": "ba47627f-f826-4aaf-a5bf-3d21ef472571",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Region targeted by RECOFTC’s capacity‑building activities, enhancing institutional support for CBF.",
+        "supporting_text": "RECOFTC was established in 1987 in Bangkok to provide a focus on capacity building for CBF in Asia and the Pacific"
+      }
+    },
+    {
+      "name": "Western Europe",
+      "type": "Region",
+      "country": null,
+      "description": "One of the five regions covered by IUCN’s 1996‑2000 series of regional reports on community involvement in forest management.",
+      "supporting_text": "covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada and the United States of America",
+      "source_chunk": 6,
+      "id": "be09444c-023a-4fcf-a1bb-ae69eab94058",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Western Europe data in the report series contributed to cross‑regional CBF evidence.",
+        "supporting_text": "produced a series of five regional reports (covering Southeast Asia, South Asia, MesoAmerica, Western Europe, and Canada …) … used to advocate for CBF in international discussions"
+      }
+    },
+    {
+      "name": "Northeastern United States of America",
+      "type": "Region",
+      "country": "United States of America",
+      "description": "Region where FSC certification of community forests is currently viable.",
+      "supporting_text": "This is the situation that prevails in the northeastern United States of America (Crow and Danks, 2010).",
+      "source_chunk": 6,
+      "id": "55f5fe30-b9a6-4d73-a058-022e421826e4",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Group certification model in the NE US enables community groups to share costs and achieve certification.",
+        "supporting_text": "This is the situation that prevails in the northeastern United States of America (Crow and Danks, 2010)."
+      }
+    },
+    {
+      "name": "Mexico",
+      "type": "Country",
+      "country": null,
+      "description": "Country with the largest area and number of community‑based forest enterprises certified by the Forest Stewardship Council.",
+      "supporting_text": "although Mexico has the largest area and number of CBF enterprises certified (Gerez-Fernández and Alatorre-Guzmán, 2015).",
+      "source_chunk": 6,
+      "id": "ee8a2dc2-16d9-46de-9759-ac832a93cf02",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Mexico is highlighted as the largest holder of certified CBF enterprises, showcasing CBF’s visibility.",
+        "supporting_text": "Mexico has the largest area and number of CBF enterprises certified"
+      }
+    },
+    {
+      "name": "European Union",
+      "type": "Institution",
+      "country": null,
+      "description": "Political and economic union that adopted the Forest Law Enforcement, Governance and Trade (FLEGT) Action Plan in 2003.",
+      "supporting_text": "Concerns about the impact of illegal logging and associated trade led the European Union (EU) to adopt the Forest Law Enforcement, Governance and Trade (FLEGT) Action Plan in 2003.",
+      "source_chunk": 6,
+      "id": "1a1e35b8-8f6c-4158-8eef-c6a2dab210f3",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "EU’s FLEGT Action Plan creates a policy framework that legitimizes legal timber trade.",
+        "supporting_text": "The EU’s FLEGT process is centred on Voluntary Partnership Agreements (VPAs) between the EU and countries that produce or export timber"
+      }
+    },
+    {
+      "name": "South and Southeast Asia",
+      "type": "Region",
+      "country": null,
+      "description": "Combined region referenced in PEFC’s plans for community‑group certification.",
+      "supporting_text": "PEFC also offers group certification and is currently exploring its application to community groups in Africa, Europe and South and Southeast Asia.",
+      "source_chunk": 6,
+      "id": "caeda0d0-fb94-4af8-a131-beb43b9a5702",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "PEFC’s exploration of group certification in South and Southeast Asia supports collective action among forest communities.",
+        "supporting_text": "PEFC also offers group certification and is currently exploring its application to community groups in Africa, Europe and South and Southeast Asia"
+      }
+    },
+    {
+      "name": "Asia‑Pacific",
+      "type": "Region",
+      "country": null,
+      "description": "Region referenced in the title of the second Asia‑Pacific Forestry Sector Outlook Study.",
+      "supporting_text": "the report of the second Asia‑Pacific Forestry Sector Outlook Study (FAO, 2010b, p. 192)",
+      "source_chunk": 6,
+      "id": "5f53a79d-3aba-45df-bfa2-812f5fe1aca4",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text mentions the Asia‑Pacific region only in passing without a clear link to CBF impact.",
+        "supporting_text": "No explicit excerpt tying Asia‑Pacific to a specific CBF contribution is provided."
+      }
+    },
+    {
+      "name": "United Nations",
+      "type": "Institution",
+      "country": null,
+      "description": "International organization that adopted the 2030 Agenda for Sustainable Development and the Sustainable Development Goals.",
+      "supporting_text": "In September 2015 the United Nations adopted a set of 17 Sustainable Development Goals (SDGs) which provide an overarching policy framework to guide the world's development agenda until 2030 (UN, 2015).",
+      "source_chunk": 6,
+      "id": "b767eb99-234b-43a9-a3f3-47eb038cbbf1",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "UN bodies embed CBF in international policy, raising its global legitimacy.",
+        "supporting_text": "Following the United Nations Conference on the Environment and Development in 1992, the Commission on Sustainable Development (CSD) endorsed the role of local communities..."
+      }
+    },
+    {
+      "name": "United Nations Forum on Forests (UNFF)",
+      "type": "Institution",
+      "country": null,
+      "description": "UN body that incorporated IPF/IFF proposals into its Multi‑Year Programme of Work.",
+      "supporting_text": "The successor to IPF and IFF, the United Nations Forum on Forests (UNFF), incorporated the IPF/IFF Proposals for Action into its Multi-Year Programme of Work.",
+      "source_chunk": 6,
+      "id": "bafe7d4d-0603-4833-a7e4-6969c2ddf84e",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "UNFF’s programme of work explicitly includes CBF, increasing its policy visibility.",
+        "supporting_text": "Among the major themes of the 2007−2015 Programme of Work were community‑based forest management"
+      }
+    },
+    {
+      "name": "Intergovernmental Panel on Forests (IPF)",
+      "type": "Institution",
+      "country": null,
+      "description": "Panel created by the Commission on Sustainable Development in 1995 to seek global consensus on participatory and sustainable forest management.",
+      "supporting_text": "CSD initiated the Intergovernmental Panel on Forests (IPF) in 1995 to seek a global consensus for action supportive of participatory and sustainable forest management.",
+      "source_chunk": 6,
+      "id": "c88166dc-b2c9-446e-9663-8a392cfe6f74",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "IPF was created to build global consensus for participatory forest management, opening pathways for systemic change.",
+        "supporting_text": "CSD initiated the Intergovernmental Panel on Forests (IPF) in 1995 to seek a global consensus for action supportive of participatory and sustainable forest management"
+      }
+    },
+    {
+      "name": "Intergovernmental Forum on Forests (IFF)",
+      "type": "Institution",
+      "country": null,
+      "description": "Successor to the IPF, used as a venue for community‑based forest management advocacy.",
+      "supporting_text": "input to IPF and its successor, the Intergovernmental Forum on Forests (IFF).",
+      "source_chunk": 6,
+      "id": "1c1672fa-82e2-4c92-8803-bdff09ad9c8e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IFF provided a platform for CBF advocacy in international fora, enabling stakeholder participation and policy influence.",
+        "supporting_text": "These were used … to advocate for CBF in international discussions on forests through input to … the Intergovernmental Forum on Forests (IFF)."
+      }
+    },
+    {
+      "name": "Forest Carbon Partnership Facility",
+      "type": "Institution",
+      "country": null,
+      "description": "World Bank‑run facility that prepares developing countries for participation in carbon offset markets for forestry projects.",
+      "supporting_text": "The World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market for forestry projects.",
+      "source_chunk": 6,
+      "id": "d130e683-f63f-4523-86fa-4b1269bb397e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The facility creates a carbon‑offset market pathway that could transform financing for community forests.",
+        "supporting_text": "The World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market for forestry projects."
+      }
+    },
+    {
+      "name": "World Bank",
+      "type": "Institution",
+      "country": null,
+      "description": "International financial institution that created the Forest Carbon Partnership Facility.",
+      "supporting_text": "The World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market for forestry projects.",
+      "source_chunk": 6,
+      "id": "65c9c346-a649-4d74-b2b0-cecff8ec0301",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "World Bank’s involvement links global carbon finance to community forest management, opening systemic change opportunities.",
+        "supporting_text": "World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market."
+      }
+    },
+    {
+      "name": "International Union for Conservation of Nature (IUCN)",
+      "type": "Institution",
+      "country": null,
+      "description": "Organization that established a Working Group on Community Involvement in Forest Management in 1996.",
+      "supporting_text": "Commencing in 1996, the International Union for Conservation of Nature (IUCN) established a Working Group on Community Involvement in Forest Management...",
+      "source_chunk": 6,
+      "id": "9d0418d8-2a55-4c7c-bb79-04ff51ae18f0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN organized a working group and produced reports that mobilised support for CBF across regions.",
+        "supporting_text": "IUCN established a Working Group on Community Involvement in Forest Management and produced a series of five regional reports … used to advocate for CBF."
+      }
+    },
+    {
+      "name": "CIFOR",
+      "type": "Institution",
+      "country": null,
+      "description": "Center for International Forestry Research, which included “Improving livelihoods through smallholder and community forestry” as a research domain in its 2008‑2018 strategic plan. International research organization that keeps community‑based forestry high on its agenda.",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "id": "e6881aba-9209-4814-a791-08b6099f7697",
+      "variations": [
+        "CIFOR"
+      ],
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+        "The Center for International Forestry Research (CIFOR, 2008) has included \"Improving livelihoods through smallholder and community forestry\" as one of the six research domains in its 2008−2018 strategic plan."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CIFOR’s strategic plan embeds community forestry research, enabling coordinated action.",
+        "supporting_text": "The Center for International Forestry Research (CIFOR, 2008) has included “Improving livelihoods through smallholder and community forestry”..."
+      }
+    },
+    {
+      "name": "FAO",
+      "type": "Institution",
+      "country": null,
+      "description": "Food and Agriculture Organization of the UN, cited as a source of forestry outlook studies and reports. Food and Agriculture Organization of the United Nations, which is revamping its programme on community‑based forestry to support rural poverty alleviation, food security, nutrition and sustainable provision of natural‑resource goods and services.",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "id": "af3decec-40dc-445a-967d-2827915a2cb8",
+      "variations": [
+        "FAO"
+      ],
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+        "FAO, through its new Strategic Framework, is revamping its programme on community-based forestry to contribute to its five Strategic Objectives, in particular to rural poverty alleviation, food security and nutrition and the sustainable provision of goods and services from natural resources (FAO, 2013)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "FAO’s strategic framework guides the revamp of its community‑based forestry programme.",
+        "supporting_text": "FAO, through its new Strategic Framework, is revamping its programme on community‑based forestry..."
+      }
+    },
+    {
+      "name": "ITTO",
+      "type": "Institution",
+      "country": null,
+      "description": "International Tropical Timber Organization, mentioned among bodies that keep CBF on their agendas. International Tropical Timber Organization, which listed Community Forest Management and Enterprises as one of its five thematic programmes.",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "id": "362925e2-8ef5-4854-91ce-502b70bd63d8",
+      "variations": [
+        "ITTO"
+      ],
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+        "The International Tropical Timber Organization (ITTO, 2014) has included Community Forest Management and Enterprises as one of its five thematic programmes."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "ITTO’s thematic programme institutionalises community forest management, supporting collective implementation.",
+        "supporting_text": "The International Tropical Timber Organization (ITTO, 2014) has included Community Forest Management and Enterprises as one of its five thematic programmes."
+      }
+    },
+    {
+      "name": "RECOFTC",
+      "type": "Institution",
+      "country": null,
+      "description": "Center for Research on Forests in Central Africa, listed among organizations supporting CBF.",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "source_chunk": 6,
+      "id": "29e9b3ea-5308-4f95-8e1a-1d2088d41b23",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "RECOFTC’s participation helps sustain momentum for community‑based forest management.",
+        "supporting_text": "many international organizations, such as … RECOFTC … have kept CBF high on their agendas."
+      }
+    },
+    {
+      "name": "Tropical Agricultural Research and Higher Education Center (CATIE)",
+      "type": "Institution",
+      "country": null,
+      "description": "Regional research centre cited as an organization that keeps CBF on its agenda.",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "source_chunk": 6,
+      "id": "5ed1495e-b607-4e8a-b9d6-1585f615b257",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CATIE’s involvement supports research and capacity‑building for CBF.",
+        "supporting_text": "many international organizations, such as … CATIE … have kept CBF high on their agendas."
+      }
+    },
+    {
+      "name": "IFRI",
+      "type": "Institution",
+      "country": null,
+      "description": "Institute that announced the FLARE network in early 2015 to advance knowledge on forest‑based livelihoods.",
+      "supporting_text": "In early 2015 IFRI announced the establishment of the Forests and Livelihoods: Assessment, Research and Engagement (FLARE) network...",
+      "source_chunk": 6,
+      "id": "66c6a5db-8f59-41de-ad95-066aa5ab8243",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IFRI created the FLARE network to coordinate knowledge exchange on forest‑based livelihoods.",
+        "supporting_text": "In early 2015 IFRI announced the establishment of the Forests and Livelihoods: Assessment, Research and Engagement (FLARE) network."
+      }
+    },
+    {
+      "name": "FLARE network",
+      "type": "Institution",
+      "country": null,
+      "description": "Community‑of‑practice network launched by IFRI to share knowledge on forest‑based livelihoods worldwide.",
+      "supporting_text": "In early 2015 IFRI announced the establishment of the Forests and Livelihoods: Assessment, Research and Engagement (FLARE) network, a community of practice with the aim of advancing the state of knowledge regarding forest-based livelihoods.",
+      "source_chunk": 6,
+      "id": "d7e320bd-3fd1-4f06-bce7-1c5aa5300c2a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "FLARE links stakeholders to generate and share knowledge that improves CBF outcomes.",
+        "supporting_text": "The FLARE network … to share and advance cutting edge knowledge … improve the efficacy of forest‑dependent livelihood interventions."
+      }
+    },
+    {
+      "name": "UNFF",
+      "type": "Institution",
+      "country": null,
+      "description": "United Nations Forum on Forests, which adopted a multi‑point declaration recognizing the importance of collective action by indigenous and local communities for sustainable forest management.",
+      "supporting_text": "In the multi-point declaration adopted at its eleventh session, UNFF (2015) recognized the importance of collective action by indigenous and local communities in advancing sustainable forest management.",
+      "source_chunk": 7,
+      "id": "cd1bd379-5d87-4615-8175-dec126a7fcb0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UNFF adopted a multi‑point declaration that recognises collective action for sustainable forest management.",
+        "supporting_text": "UNFF (2015) recognized the importance of collective action by indigenous and local communities in advancing sustainable forest management."
+      }
+    }
+  ]
+}

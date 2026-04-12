@@ -1,0 +1,2147 @@
+{
+  "expressions": [
+    {
+      "title": "Replacing GDP by 2030 Towards a Common Language for the Well-being and Sustainability Community",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "Rutger Hoekstra"
+      ],
+      "supporting_text": "Replacing GDP by 2030 Towards a Common Language for the Well-being and Sustainability Community",
+      "source_chunk": 0,
+      "id": "3071c428-abde-4c7c-a9b3-64df2a957f2c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Calls for coordinated effort to adopt a new metric, mobilising the well‑being and sustainability community.",
+        "supporting_text": "Replacing GDP by 2030 Towards a Common Language for the Well‑being and Sustainability Community"
+      }
+    },
+    {
+      "title": "System of National Accounts 1953",
+      "type": "Report",
+      "year": 1953,
+      "actors": [],
+      "supporting_text": "the first two official versions of the System of National Accounts (1953 and 1968) used the indicator Gross National Product (GNP).",
+      "source_chunk": 0,
+      "id": "22dded6b-b880-4d31-912c-08ac3bcbc7d7",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned only as a historical label without explicit link to harmony‑with‑nature goals.",
+        "supporting_text": "The first two official versions of the System of National Accounts (1953 and 1968)…"
+      }
+    },
+    {
+      "title": "System of National Accounts 1993",
+      "type": "Report",
+      "year": 1993,
+      "actors": [],
+      "supporting_text": "Later on, in the SNA 1993, GDP was adopted and GNP was sidelined.",
+      "source_chunk": 0,
+      "id": "f61ee1db-029b-4041-807f-d60e1efa1b87",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Highlights the 1993 revision that introduced GDP, showing that accounting systems can be updated.",
+        "supporting_text": "Later on, in the SNA 1993, GDP was adopted and GNP was sidelined."
+      }
+    },
+    {
+      "title": "System of National Accounts (SNA)",
+      "type": "Standard",
+      "year": 2008,
+      "actors": [
+        "United Nations",
+        "European Union"
+      ],
+      "supporting_text": "These are recorded in an international handbook called the System of National Accounts (SNA), which was last updated in 2008. It is a 722-page manual on how to record the economic transactions and resources of a society.",
+      "source_chunk": 1,
+      "id": "4b73cc63-4b0b-4f66-af08-83b435b06f6b"
+    },
+    {
+      "title": "Measure of Economic Well-being (MEW)",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "This approach includes indicators such as the Measure of Economic Well-being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index.",
+      "source_chunk": 2,
+      "id": "a79b00b4-48b8-4dc2-adf0-9878f374d853",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "An alternative monetary metric that adjusts GDP for welfare‑related dimensions.",
+        "supporting_text": "green accounting includes indicators such as the Measure of Economic Well‑being (MEW)"
+      }
+    },
+    {
+      "title": "Sustainable National Income (SNI)",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "This approach includes indicators such as the Measure of Economic Well-being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index.",
+      "source_chunk": 2,
+      "id": "f8b7b6c2-e4d3-4369-bb31-f2c08fd31d7e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a re‑weighted GDP that accounts for sustainability.",
+        "supporting_text": "green accounting includes indicators such as ... Sustainable National Income (SNI)"
+      }
+    },
+    {
+      "title": "Index of Sustainable Economic Welfare (ISEW)",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "This approach includes indicators such as the Measure of Economic Well-being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index.",
+      "source_chunk": 2,
+      "id": "2591f403-355b-4011-9428-6ffe1c005154",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Offers a composite measure that subtracts environmental costs from GDP.",
+        "supporting_text": "green accounting includes indicators such as ... Index of Sustainable Economic Welfare (ISEW)"
+      }
+    },
+    {
+      "title": "Genuine Progress Indicator (GPI)",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "This approach includes indicators such as the Measure of Economic Well-being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index.",
+      "source_chunk": 2,
+      "id": "f9b92c78-0076-4cd0-acff-1a33019ac245"
+    },
+    {
+      "title": "Genuine/Adjusted Net Savings (Wealth Index)",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "This approach includes indicators such as the Measure of Economic Well-being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index.",
+      "source_chunk": 2,
+      "id": "6a5d4070-e06b-427f-8740-71b1d325cecd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adjusts net savings to reflect resource depletion and environmental damage.",
+        "supporting_text": "green accounting includes indicators such as ... Genuine/Adjusted Net Savings or Wealth Index"
+      }
+    },
+    {
+      "title": "Human Development Index (HDI)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "There are \"composite indicators\" such as the Human Development Index (HDI), which aggregates health, education and GDP into a single index. HDI is one of the most visible Beyond-GDP alternatives and is featured every year in the United Nations' Human Development Report.",
+      "source_chunk": 2,
+      "id": "eba49e34-b65a-418e-aade-b9a864023fda"
+    },
+    {
+      "title": "United Nations' Human Development Report",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "HDI is one of the most visible Beyond-GDP alternatives and is featured every year in the United Nations' Human Development Report.",
+      "source_chunk": 2,
+      "id": "68e34812-85bd-49ae-a279-70fe7ec764d4",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Publishes the HDI, giving it institutional legitimacy and reach.",
+        "supporting_text": "HDI is ... featured every year in the United Nations’ Human Development Report."
+      }
+    },
+    {
+      "title": "Living Planet Report",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "World Wildlife Fund"
+      ],
+      "supporting_text": "For example, the ecological footprint is cited frequently, including in the Living Planet Report of the World Wildlife Fund.",
+      "source_chunk": 2,
+      "id": "31f3d9c3-2622-4c02-b9bf-4b22011d4aaa",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Cites ecological footprint, raising public awareness of environmental limits.",
+        "supporting_text": "including in the Living Planet Report of the World Wildlife Fund."
+      }
+    },
+    {
+      "title": "United Nations' Sustainable Development Goals (SDG)",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "The United Nations' Sustainable Development Goals (SDG), which are a global agreed set of targets for sustainable development, are probably the most famous example of an indicator set.",
+      "source_chunk": 2,
+      "id": "c339ef8b-e415-4970-9054-699d16835907",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a globally coordinated set of targets and indicators.",
+        "supporting_text": "The United Nations’ Sustainable Development Goals (SDG), which are a global agreed set of targets for sustainable development"
+      }
+    },
+    {
+      "title": "System of National Accounts (SNA)",
+      "type": "Standard",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Even the SNA, the worldwide handbook, explicitly warns: \"GDP is often taken as a measure of welfare, but the SNA makes no claim that this is so and indeed there are several conventions in the SNA that argue against the welfare interpretation of the accounts.\"",
+      "source_chunk": 2,
+      "id": "ebf7f343-0b9d-425e-9889-051075d3a83a"
+    },
+    {
+      "title": "Figure 1.1",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "The left side of the figure represents the global enterprise with a well-coordinated and harmonised operation, while the right side shows the heterogeneous and chaotic Beyond-GDP situation.",
+      "source_chunk": 3,
+      "id": "1bbf37c5-e3d4-4290-84c0-c9dfae0da00d",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Visually contrasts GDP‑driven and Beyond‑GDP scenarios, raising public awareness of the issue.",
+        "supporting_text": "Figure 1.1… left side… global enterprise… right side shows the heterogeneous and chaotic Beyond‑GDP situation."
+      }
+    },
+    {
+      "title": "Figure 1.2",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Figure 1.2 is a stylised depiction of these developments.",
+      "source_chunk": 3,
+      "id": "a684213c-6fd4-46ab-b33b-1bdd81c91215",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Illustrates the innovation‑cycle dynamics of GDP and Beyond‑GDP, making the conceptual argument more salient.",
+        "supporting_text": "Figure 1.2 is a stylised depiction of these developments."
+      }
+    },
+    {
+      "title": "System of National Accounts",
+      "type": "Standard",
+      "year": 1953,
+      "actors": [],
+      "supporting_text": "The System of National Accounts is the foundation upon which modern empirical macroeconomics is built. The SNA has, since 1953, prescribed what concepts to use when measuring the economy.",
+      "source_chunk": 4,
+      "id": "ff7ca1e2-b70e-4ac8-b50c-c29b4ff3ae89"
+    },
+    {
+      "title": "System of National Accounts (SNA)",
+      "type": "Standard",
+      "year": null,
+      "actors": [],
+      "supporting_text": "The SNA provides a common language which (macro)economists all over the world speak.",
+      "source_chunk": 5,
+      "id": "444f4621-65d5-4fd5-9c42-afe46526295d"
+    },
+    {
+      "title": "System of National Accounts (SNA)",
+      "type": "Standard",
+      "year": null,
+      "actors": [],
+      "supporting_text": "The SNA itself phrases this as follows: \"Per capita volumes of major aggregates are often used as a measure of the relative standard of living in countries...\"",
+      "source_chunk": 6,
+      "id": "54d754b0-11d1-43d0-a7aa-d9f60ba96ad9"
+    },
+    {
+      "title": "Sustainable Development Goals",
+      "type": "Declaration",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Sustainable Development Goals",
+      "source_chunk": 7,
+      "id": "55e1ba81-c978-463c-adfa-0cb06a47a336"
+    },
+    {
+      "title": "Brundtland Report",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "Brundtland"
+      ],
+      "supporting_text": "This is the underlying philosophy of the Brundtland Report which was the seminal publication that led to the institutionalisation of the term sustainable development",
+      "source_chunk": 8,
+      "id": "69ee854d-8af4-44dd-8583-e36ec97a7ad7"
+    },
+    {
+      "title": "Sustainable Development Goals",
+      "type": "Policy",
+      "year": 2015,
+      "actors": [
+        "United Nations",
+        "UN member states"
+      ],
+      "supporting_text": "a prime candidate would be the Sustainable Development Goals, a list of 169 targets that were adopted by all member states of the UN in 2015",
+      "source_chunk": 8,
+      "id": "a273a9bb-cd89-4e94-a41c-37f50fac15ab"
+    },
+    {
+      "title": "System of Global and National Accounts (SGNA)",
+      "type": "Standard",
+      "year": null,
+      "actors": [
+        "WSS community"
+      ],
+      "supporting_text": "This book proposes a neutral multidisciplinary measurement framework which should act as a common language: the System of Global and National Accounts (SGNA)",
+      "source_chunk": 8,
+      "id": "0371f295-b05e-4916-9237-0781c9b931b4"
+    },
+    {
+      "title": "Global Environmental Accounts (GENA)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "WSS community"
+      ],
+      "supporting_text": "The SGNA is subdivided into four \"system accounts\": 1. Global Environmental Accounts (GENA)",
+      "source_chunk": 8,
+      "id": "64a8aa22-a607-4efd-ade0-a8e4370fd8c0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces systematic environmental accounting essential for holistic well‑being metrics.",
+        "supporting_text": "The SGNA is subdivided into four “system accounts”: 1. Global Environmental Accounts (GENA)"
+      }
+    },
+    {
+      "title": "Global Societal Accounts (GSA)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "WSS community"
+      ],
+      "supporting_text": "2. Global Societal Accounts (GSA)",
+      "source_chunk": 8,
+      "id": "22076789-22c1-4f47-a8ba-a0e086b75f4d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a structured way to capture societal dimensions of well‑being.",
+        "supporting_text": "2. Global Societal Accounts (GSA)"
+      }
+    },
+    {
+      "title": "Global Economic Accounts (GECA)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "WSS community"
+      ],
+      "supporting_text": "3. Global Economic Accounts (GECA)",
+      "source_chunk": 8,
+      "id": "6e721b51-a57d-4b75-9518-41a9add98bce",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Integrates economic data with environmental and social layers for a full picture.",
+        "supporting_text": "3. Global Economic Accounts (GECA)"
+      }
+    },
+    {
+      "title": "Global Distribution Accounts (GDA)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "WSS community"
+      ],
+      "supporting_text": "4. Global Distribution Accounts (GDA)",
+      "source_chunk": 8,
+      "id": "4f5986be-961f-48be-b26a-47107ba0ba30",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adds distributional equity to the accounting suite, crucial for justice‑oriented metrics.",
+        "supporting_text": "4. Global Distribution Accounts (GDA)"
+      }
+    },
+    {
+      "title": "Global Quality Accounts (GQA)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "WSS community"
+      ],
+      "supporting_text": "5. Global Quality Accounts (GQA)",
+      "source_chunk": 8,
+      "id": "ad3d7b49-7479-4e99-b2b1-1880065e6c53",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Supplies quality‑assessment criteria that can serve as alternatives to GDP.",
+        "supporting_text": "The global quality accounts provide quality assessment criteria … can act as an alternative to GDP"
+      }
+    },
+    {
+      "title": "System of National Accounts (SNA)",
+      "type": "Standard",
+      "year": null,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "Revision of the System of National Accounts. Historically, there has been a new SNA every 1-2 decades.",
+      "source_chunk": 8,
+      "id": "0dbf3139-e4cd-45ba-8609-407846f14813"
+    },
+    {
+      "title": "System of National Accounts (SNA)",
+      "type": "Standard",
+      "year": null,
+      "actors": [],
+      "supporting_text": "the SNA is more than 700 pages long.",
+      "source_chunk": 9,
+      "id": "c40a1c67-f8b2-4c2e-80e1-293c1c15a9cd"
+    },
+    {
+      "title": "System of Global and National Accounts (SGNA)",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "the five sub-accounts of the System of Global and National Accounts (SGNA)",
+      "source_chunk": 9,
+      "id": "4f922b19-1bc1-4d78-be75-5dab4431c9b7",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "SGNA is introduced as the new accounting architecture that could replace GDP.",
+        "supporting_text": "Long‑term process to replace GDP with the System of Global and National Accounts (SGNA) by 2030"
+      }
+    },
+    {
+      "title": "Why Is GDP Successful? From cottage industry to multinational",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Why Is GDP Successful? From cottage industry to multinational",
+      "source_chunk": 10,
+      "id": "ccd72f3a-c37f-4b16-801f-f8c875330e08",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The title alone does not indicate how it contributes to or hinders efforts to integrate nature's value into economic decision‑making.",
+        "supporting_text": "Why Is GDP Successful? From cottage industry to multinational"
+      }
+    },
+    {
+      "title": "GDP: A Brief but Affectionate History",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Catchy titles such as GDP: A Brief but Affectionate History, The Little Big Number, Gross Domestic Problem, The Great Invention, The Hegemony of Growth, The Growth Delusion and the Value of Everything provide ample documentation of the history of GDP...",
+      "source_chunk": 11,
+      "id": "9cb6b54b-3dd0-42b9-8569-fae6a132221f",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The title signals a focus on chronicling GDP’s dominance, highlighting the prevailing metric‑centric condition.",
+        "supporting_text": "Catchy titles such as GDP: A Brief but Affectionate History ... provide ample documentation of the history of GDP."
+      }
+    },
+    {
+      "title": "The Little Big Number",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Catchy titles such as GDP: A Brief but Affectionate History, The Little Big Number, Gross Domestic Problem, The Great Invention, The Hegemony of Growth, The Growth Delusion and the Value of Everything provide ample documentation...",
+      "source_chunk": 11,
+      "id": "d2c0e767-1bb5-46a3-b440-76efec88a0a5",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The title is cited as part of literature that documents and critiques the dominance of GDP.",
+        "supporting_text": "Catchy titles such as ... The Little Big Number ... provide ample documentation of the history of GDP and the underlying ideas about “value”."
+      }
+    },
+    {
+      "title": "Gross Domestic Problem",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Catchy titles such as GDP: A Brief but Affectionate History, The Little Big Number, Gross Domestic Problem, The Great Invention, The Hegemony of Growth, The Growth Delusion and the Value of Everything provide ample documentation...",
+      "source_chunk": 11,
+      "id": "ae7de968-4083-4543-8129-1c1795dabd1b",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The book title signals a critical view of GDP’s role, highlighting the prevailing problem.",
+        "supporting_text": "Catchy titles such as ... Gross Domestic Problem ... provide ample documentation of the history of GDP and the underlying ideas about “value”."
+      }
+    },
+    {
+      "title": "The Great Invention",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Catchy titles such as GDP: A Brief but Affectionate History, The Little Big Number, Gross Domestic Problem, The Great Invention, The Hegemony of Growth, The Growth Delusion and the Value of Everything provide ample documentation...",
+      "source_chunk": 11,
+      "id": "53284843-4706-4621-8beb-102b0d12d1cf",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The title frames GDP as an invention, drawing attention to its constructed nature.",
+        "supporting_text": "Catchy titles such as ... The Great Invention ... provide ample documentation of the history of GDP and the underlying ideas about “value”."
+      }
+    },
+    {
+      "title": "The Hegemony of Growth",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Catchy titles such as GDP: A Brief but Affectionate History, The Little Big Number, Gross Domestic Problem, The Great Invention, The Hegemony of Growth, The Growth Delusion and the Value of Everything provide ample documentation...",
+      "source_chunk": 11,
+      "id": "c033a6ac-6049-4f7c-92e5-ca94cb67e8ec",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The title directly names the dominant growth paradigm that the text seeks to expose.",
+        "supporting_text": "Catchy titles such as ... The Hegemony of Growth ... provide ample documentation of the history of GDP and the underlying ideas about “value”."
+      }
+    },
+    {
+      "title": "The Growth Delusion",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Catchy titles such as GDP: A Brief but Affectionate History, The Little Big Number, Gross Domestic Problem, The Great Invention, The Hegemony of Growth, The Growth Delusion and the Value of Everything provide ample documentation...",
+      "source_chunk": 11,
+      "id": "60c85d50-7e2d-4b34-b6bc-2ad499d01784",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The title challenges the accepted belief in perpetual growth, highlighting a prevailing misconception.",
+        "supporting_text": "Catchy titles such as ... The Growth Delusion ... provide ample documentation of the history of GDP and the underlying ideas about “value”."
+      }
+    },
+    {
+      "title": "Value of Everything",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Catchy titles such as GDP: A Brief but Affectionate History, The Little Big Number, Gross Domestic Problem, The Great Invention, The Hegemony of Growth, The Growth Delusion and the Value of Everything provide ample documentation...",
+      "source_chunk": 11,
+      "id": "50f3c593-34b2-47de-b4d7-bc9b3ed94b14",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The title questions the prevailing valuation framework embodied by GDP.",
+        "supporting_text": "Catchy titles such as ... Value of Everything provide ample documentation of the history of GDP and the underlying ideas about “value”."
+      }
+    },
+    {
+      "title": "The Income of Nations",
+      "type": "Book",
+      "year": 1958,
+      "actors": [
+        "Studenski"
+      ],
+      "supporting_text": "The first, covering the years 1900 to 1958, is derived from The Income of Nations by Studenski (1958), which provides a nearly encyclopaedic overview of national income accounting for the period 1665-1958.",
+      "source_chunk": 11,
+      "id": "537192b6-fffb-48b6-8aae-a2161cb40b32",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Cited as a source that maps the spread of national income accounting, revealing the pervasiveness of GDP.",
+        "supporting_text": "The first, covering the years 1900 to 1958, is derived from The Income of Nations by Studenski (1958)..."
+      }
+    },
+    {
+      "title": "Kuznets Report",
+      "type": "Report",
+      "year": 1934,
+      "actors": [
+        "Simon Kuznets"
+      ],
+      "supporting_text": "A case in point is one of the landmark publications in the history of national accounting: a report by Simon Kuznets on 4 January 1934.",
+      "source_chunk": 11,
+      "id": "ea27ce0e-2dde-457d-a175-9066f0440207",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The report illustrates the delayed provision of macro‑economic data during a crisis, exposing a systemic shortfall.",
+        "supporting_text": "A case in point is one of the landmark publications ... a report by Simon Kuznets on 4 January 1934."
+      }
+    },
+    {
+      "title": "The General Theory of Employment, Interest and Money",
+      "type": "Book",
+      "year": 1936,
+      "actors": [
+        "John Maynard Keynes"
+      ],
+      "supporting_text": "A hugely influential publication of 1936 was by John Maynard Keynes, one of the defining figures in twentieth-century economics. In The General Theory of Employment, Interest and Money, Keynes laid the foundation for macroeconomics...",
+      "source_chunk": 11,
+      "id": "ef5191bd-cd04-43c3-8d0d-825f6c3df68d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Keynes’s work introduced a new macro‑economic paradigm that reshaped policy and measurement.",
+        "supporting_text": "In 1936 ... The General Theory of Employment, Interest and Money, Keynes laid the foundation for macroeconomics."
+      }
+    },
+    {
+      "title": "Resolution 220",
+      "type": "Resolution",
+      "year": 1932,
+      "actors": [
+        "Robert La Follette Jr."
+      ],
+      "supporting_text": "It took until 8 June 1932 before La Follette could get a majority to vote for resolution 220 which requested national income statistics for the period 1992-1932.",
+      "source_chunk": 11,
+      "id": "448c3205-dc33-4c43-9d1b-99906b1e4076",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The resolution formally requested national‑income statistics, mobilising governmental action to produce data.",
+        "supporting_text": "It was 8 June 1932 before La Follette could get a majority to vote for resolution 220 which requested national income statistics."
+      }
+    },
+    {
+      "title": "Bretton Woods agreement",
+      "type": "Agreement",
+      "year": 1944,
+      "actors": [],
+      "supporting_text": "The year 1929 is chosen because of the Great Depression; 1944 and 1973 are chosen because these symbolise the start and end of the Bretton Woods agreement.",
+      "source_chunk": 11,
+      "id": "cedd1797-0fa0-4fee-b0fc-ee8440e44677",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The agreement restructured the global monetary system, creating new institutions that influence economic measurement.",
+        "supporting_text": "The international economic order changed significantly at the Bretton Woods meeting in 1944, ushering in a new economic era."
+      }
+    },
+    {
+      "title": "Marshall Plan",
+      "type": "Programme",
+      "year": 1948,
+      "actors": [],
+      "supporting_text": "The Marshall Plan, which ran from 1948 to 1952, was a large-scale economic programme designed to put Europe on the road to economic prosperity and peace.",
+      "source_chunk": 11,
+      "id": "e0a22eb1-c260-42aa-9abd-2036d4c04523",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "A large‑scale aid programme that required systematic national‑account data, prompting coordinated action among nations.",
+        "supporting_text": "The Marshall Plan, which ran from 1948 to 1952, was a large‑scale economic programme designed to put Europe on the road to economic prosperity and peace."
+      }
+    },
+    {
+      "title": "System of National Accounts",
+      "type": "Standard",
+      "year": 1953,
+      "actors": [],
+      "supporting_text": "Macroeconomic statistics started to harmonise into the System of National Accounts, with the first edition being published in 1953 (more on the SNA later in this chapter).",
+      "source_chunk": 11,
+      "id": "87b6fd4c-b5b4-427b-a4a4-52fc3167d9c7"
+    },
+    {
+      "title": "Bretton Woods system",
+      "type": "Framework",
+      "year": 1944,
+      "actors": [],
+      "supporting_text": "the international agreements which had been agreed in Bretton Woods in 1944. ... At the end of the war, the Bretton Woods system had been adopted.",
+      "source_chunk": 12,
+      "id": "0e9701e7-2224-4f52-a194-03db6f730835",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Illustrates the fragile fixed‑exchange regime that preceded later reforms.",
+        "supporting_text": "At the end of the war, the Bretton Woods system had been adopted. The system began to run into trouble at the end of the 1960s."
+      }
+    },
+    {
+      "title": "The State of Macro",
+      "type": "Paper",
+      "year": 2008,
+      "actors": [
+        "Olivier Blanchard"
+      ],
+      "supporting_text": "In a 2008 paper titled \"The State of Macro\" Olivier Blanchard, who later was the chief economist at the IMF, declared that \"the state of macro is good\" and that there was a \"broad convergence of vision\".",
+      "source_chunk": 12,
+      "id": "b27389f9-7d54-4366-937a-89fd8d052ef5",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "The title of a paper that affirmed the adequacy of conventional macro metrics.",
+        "supporting_text": "In a 2008 paper titled “The State of Macro” Olivier Blanchard ... declared that “the state of macro is good”."
+      }
+    },
+    {
+      "title": "Maestro",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "Bob Woodward"
+      ],
+      "supporting_text": "When Bob Woodward, famous journalist of Watergate repute, wrote a biography about Alan Greenspan his book was titled Maestro.",
+      "source_chunk": 12,
+      "id": "e2086faa-4380-4634-b440-3c40acb52bfe",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "A biography that amplified Greenspan’s reputation and his policy legacy.",
+        "supporting_text": "Bob Woodward ... wrote a biography about Alan Greenspan his book was titled Maestro."
+      }
+    },
+    {
+      "title": "The Affluent Society",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "John Kenneth Galbraith"
+      ],
+      "supporting_text": "Influential was the Affluent Society by John Kenneth Galbraith, which addressed the inequality of \"private wealth and public squalor\" and the inadequacy of GDP as a measure of welfare.",
+      "source_chunk": 12,
+      "id": "93540729-6088-47cb-afed-9731e9e59b32",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Critiqued GDP, shifting discourse toward welfare‑oriented evaluation.",
+        "supporting_text": "Influential was the Affluent Society by John Kenneth Galbraith, which ... addressed ... the inadequacy of GDP as a measure of welfare."
+      }
+    },
+    {
+      "title": "Silent Spring",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "In the 1960s publications such as Silent Spring, The Tragedy of the Commons and The Population Bomb brought environmental problems and the dangers of population growth to a wider audience.",
+      "source_chunk": 13,
+      "id": "c70d56d7-17ff-4995-af5a-dbb7bad2ae02"
+    },
+    {
+      "title": "The Tragedy of the Commons",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "In the 1960s publications such as Silent Spring, The Tragedy of the Commons and The Population Bomb brought environmental problems and the dangers of population growth to a wider audience.",
+      "source_chunk": 13,
+      "id": "15a31c81-17fd-469a-a2cf-c1b62d0430a3",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Contributed to broader understanding of shared‑resource limits.",
+        "supporting_text": "publications such as ... The Tragedy of the Commons ... brought environmental problems ... to a wider audience"
+      }
+    },
+    {
+      "title": "The Population Bomb",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "In the 1960s publications such as Silent Spring, The Tragedy of the Commons and The Population Bomb brought environmental problems and the dangers of population growth to a wider audience.",
+      "source_chunk": 13,
+      "id": "16d577b5-9268-4fe6-9409-060e2170b339",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Highlighted demographic pressures, influencing environmental discourse.",
+        "supporting_text": "publications such as ... The Population Bomb brought environmental problems ... to a wider audience"
+      }
+    },
+    {
+      "title": "Brundtland Report",
+      "type": "Report",
+      "year": null,
+      "actors": [],
+      "supporting_text": "By the end of the 1980s a new concept which linked economic, environmental and social issues emerged. The term \"sustainable development\", which was popularised by the Brundtland Report, has become ubiquitous ever since.",
+      "source_chunk": 13,
+      "id": "6eb5f5bd-8de9-4a4d-9cfc-232f2ec086e0"
+    },
+    {
+      "title": "How Did Economists Get It So Wrong?",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "Paul Krugman"
+      ],
+      "supporting_text": "in his op-ed \"How Did Economists Get It So Wrong?\"",
+      "source_chunk": 14,
+      "id": "54b09c1e-92fa-4bee-ade6-a50b64808613",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The title itself signals a critique of prevailing economic thinking.",
+        "supporting_text": "How Did Economists Get It So Wrong?"
+      }
+    },
+    {
+      "title": "The Globalisation Paradox",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "Dani Rodrik"
+      ],
+      "supporting_text": "Dani Rodrik, in The Globalisation Paradox, shows that although...",
+      "source_chunk": 14,
+      "id": "491ed952-4244-424f-9eda-4fca8c24d48d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Highlights how free trade may undermine democratic control, suggesting alternative pathways.",
+        "supporting_text": "Dani Rodrik… shows that… free trade… leads to less democratic control and societal disenchantment"
+      }
+    },
+    {
+      "title": "The Rise and Fall of American Growth",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "Robert Gordon"
+      ],
+      "supporting_text": "Economists such as Robert Gordon in his book The Rise and Fall of American Growth argue that...",
+      "source_chunk": 14,
+      "id": "8e517833-3b95-41b2-a2cf-1a900c5d8970",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Projects a low‑growth future that would diminish GDP’s relevance.",
+        "supporting_text": "Robert Gordon… argues that high growth rates are behind us for the foreseeable future"
+      }
+    },
+    {
+      "title": "Stiglitz Report",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "Nicolas Sarkozy"
+      ],
+      "supporting_text": "Nicolas Sarkozy was interviewed about the Stiglitz Report and addressed the lack of faith in statistics.",
+      "source_chunk": 14,
+      "id": "c5528af6-1d3c-49a0-a8df-4b5e59f992f1"
+    },
+    {
+      "title": "Billion Prices Project",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "MIT"
+      ],
+      "supporting_text": "the \"billion prices project\" of MIT collects data from websites using webcrawlers to calculate daily inflation rates for many countries.",
+      "source_chunk": 14,
+      "id": "0c0bb2ce-acd0-4071-b510-14d48ce52bee",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows how high‑frequency data could replace traditional quarterly GDP reporting.",
+        "supporting_text": "The “billion prices project”… daily inflation rates… could influence the speed at which economic data emerges"
+      }
+    },
+    {
+      "title": "Transatlantic Trade and Investment Partnership",
+      "type": "Treaty",
+      "year": null,
+      "actors": [],
+      "supporting_text": "popular protest against the Transatlantic Trade and Investment Partnership (TTIP) and other free trade agreements shows that society's trust...",
+      "source_chunk": 14,
+      "id": "2342e60b-a1cd-4111-aec8-79159bf0fb9f",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Public protest against TTIP signals waning trust in growth‑centric trade models.",
+        "supporting_text": "Popular protest against the Transatlantic Trade and Investment Partnership (TTIP)… shows that society’s trust in this economic rationale is no longer automatic"
+      }
+    },
+    {
+      "title": "Trans-Pacific Partnership",
+      "type": "Treaty",
+      "year": null,
+      "actors": [
+        "Donald Trump"
+      ],
+      "supporting_text": "He withdrew from the Trans-Pacific Partnership (TPP) soon after he was elected",
+      "source_chunk": 14,
+      "id": "b48c9dc0-10aa-4c9b-ace9-12c2f5e2118f",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The TPP’s withdrawal reflects a shift away from conventional growth‑focused agreements.",
+        "supporting_text": "Donald Trump… withdrew from the Trans‑Pacific Partnership (TPP) soon after he was elected"
+      }
+    },
+    {
+      "title": "System of National Accounts (SNA)",
+      "type": "Standard",
+      "year": null,
+      "actors": [
+        "United Nations",
+        "Richard Stone"
+      ],
+      "supporting_text": "There is a really important component of this history: the System of National Accounts (SNA).",
+      "source_chunk": 15,
+      "id": "fc7c6cbe-b51e-4d48-918c-26b725687a3b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides the common language that could be extended to embed nature values.",
+        "supporting_text": "The SNA is thus the formalisation of the “language of macroeconomics”."
+      }
+    },
+    {
+      "title": "Report of the Subcommittee (1947)",
+      "type": "Report",
+      "year": 1947,
+      "actors": [
+        "Richard Stone",
+        "Committee of Statistical Experts of the League of Nations",
+        "Subcommittee members"
+      ],
+      "supporting_text": "The subcommittee produced a report two years later which can be seen as the start of the harmonisation process of the system of national accounts. The 1947 report still has many accounting features which have endured to the present day.",
+      "source_chunk": 15,
+      "id": "9d9f8bf6-8c21-4f38-aec0-eae45df87efc",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Serves as the foundational document for the harmonisation trajectory.",
+        "supporting_text": "The subcommittee produced a report two years later which can be seen as the start of the harmonisation process of the system of national accounts."
+      }
+    },
+    {
+      "title": "OEEC Handbook on National Income Accounting (1951)",
+      "type": "Handbook",
+      "year": 1951,
+      "actors": [
+        "OEEC",
+        "Richard Stone"
+      ],
+      "supporting_text": "He led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan.",
+      "source_chunk": 15,
+      "id": "3ee4d5a5-ff70-46b8-ba17-c1b23b153f91",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided a concrete tool used in the Marshall Plan, enabling coordinated implementation of the emerging SNA across Europe.",
+        "supporting_text": "He led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan."
+      }
+    },
+    {
+      "title": "OEEC Handbook on National Income Accounting (1952)",
+      "type": "Handbook",
+      "year": 1952,
+      "actors": [
+        "OEEC",
+        "Richard Stone"
+      ],
+      "supporting_text": "He led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan.",
+      "source_chunk": 15,
+      "id": "11342d5a-c820-4cc9-9c06-0e6f148b5228",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Extended the same coordination function as the 1951 handbook, reinforcing the SNA’s practical uptake.",
+        "supporting_text": "He led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan."
+      }
+    },
+    {
+      "title": "UN Handbook of National Accounts (1953)",
+      "type": "Handbook",
+      "year": 1953,
+      "actors": [
+        "United Nations",
+        "Richard Stone"
+      ],
+      "supporting_text": "Then, in 1953, Stone was the principal author of the first ever UN handbook, which is considered the first \"official\" SNA.",
+      "source_chunk": 15,
+      "id": "a19afc0a-1b1a-43d0-b854-8585d7a98f6d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "First official UN‑backed SNA created a globally harmonised accounting framework, opening the path to worldwide system change.",
+        "supporting_text": "In 1953, Stone was the principal author of the first ever UN handbook, which is considered the first “official” SNA."
+      }
+    },
+    {
+      "title": "SNA Handbook (1968)",
+      "type": "Handbook",
+      "year": 1968,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "The SNA handbook was subsequently updated in 1968, 1993 and 2008.",
+      "source_chunk": 15,
+      "id": "098cec8b-dac3-4323-94e7-f94266277662",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The 1968 update kept the standard current, supporting continued collective use and coordination.",
+        "supporting_text": "The SNA handbook was subsequently updated in 1968, 1993 and 2008."
+      }
+    },
+    {
+      "title": "SNA Handbook (1993)",
+      "type": "Handbook",
+      "year": 1993,
+      "actors": [
+        "United Nations",
+        "International statistical institutes"
+      ],
+      "supporting_text": "The SNA handbook was subsequently updated in 1968, 1993 and 2008.",
+      "source_chunk": 15,
+      "id": "2e4f1001-7b68-416e-9510-166394f0a990",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Marked the first universal agreement among all major institutes and countries on a single accounting system.",
+        "supporting_text": "The SNA 1993 was the first time that all major international institutes and all countries of the world fully agreed to a single system."
+      }
+    },
+    {
+      "title": "SNA Handbook (2008)",
+      "type": "Handbook",
+      "year": 2008,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "The SNA handbook was subsequently updated in 1968, 1993 and 2008.",
+      "source_chunk": 15,
+      "id": "d5317625-dce5-4408-a4f6-645528113e34",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The latest update sustains the relevance of the SNA for ongoing collective measurement efforts.",
+        "supporting_text": "The SNA handbook was subsequently updated in 2008."
+      }
+    },
+    {
+      "title": "Material Product System (MPS)",
+      "type": "Standard",
+      "year": null,
+      "actors": [
+        "United Nations",
+        "centrally planned communist countries"
+      ],
+      "supporting_text": "Even within the UN there was an alternative accounting framework, the Material Product System (MPS), which was used in over a dozen centrally planned communist countries.",
+      "source_chunk": 15,
+      "id": "06e4370e-ec03-4598-b972-6ede6b19ae74",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Illustrates the existence of an alternative, competing accounting regime that co‑existed with the SNA.",
+        "supporting_text": "Even within the UN there was an alternative accounting framework, the Material Product System (MPS), which was used in over a dozen centrally planned communist countries."
+      }
+    },
+    {
+      "title": "1934 report to Congress",
+      "type": "Report",
+      "year": 1934,
+      "actors": [
+        "Simon Kuznets"
+      ],
+      "supporting_text": "After the 1934 report to Congress and his work in the war, Kuznets started to grow increasingly uncomfortable about the direction of national accounts.",
+      "source_chunk": 15,
+      "id": "0f9f09f9-0621-420f-b94b-7b93c85cfa7e",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows how Kuznets’ ideas were formally presented yet subsequently ignored, highlighting political bias.",
+        "supporting_text": "After the 1934 report to Congress and his work in the war, Kuznets started to grow increasingly uncomfortable about the direction of national accounts."
+      }
+    },
+    {
+      "title": "System of National Accounts",
+      "type": "Standard",
+      "year": null,
+      "actors": [
+        "macroeconomists"
+      ],
+      "supporting_text": "Thirdly, macroeconomists have agreed on a formal macroeconomic language: the System of National Accounts.",
+      "source_chunk": 16,
+      "id": "ff5cd085-d3f8-4878-be94-ba48de39233e",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "The SNA provides the statistical backbone that sustains GDP as the dominant indicator.",
+        "supporting_text": "Thirdly, macroeconomists have agreed on a formal macroeconomic language: the System of National Accounts."
+      }
+    },
+    {
+      "title": "Compendium of Sustainable Development Indicator Initiatives",
+      "type": "Database",
+      "year": 2011,
+      "actors": [],
+      "supporting_text": "The biggest database, the Compendium of Sustainable Development Indicator Initiatives, listed around 900 initiatives all around the world but not all of these are at the national level.",
+      "source_chunk": 17,
+      "id": "f7626d96-105f-4875-94ed-c0ece8d4e210",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The compendium aggregates many initiatives, exposing the breadth of alternatives to GDP.",
+        "supporting_text": "The biggest database, the Compendium of Sustainable Development Indicator Initiatives, listed around 900 initiatives all around the world."
+      }
+    },
+    {
+      "title": "wikiprogress.org",
+      "type": "Online repository",
+      "year": null,
+      "actors": [
+        "OECD"
+      ],
+      "supporting_text": "The largest active repository of Beyond-GDP initiatives is wikiprogress.org, which is an OECD initiative that provides information about well‑being and sustainability projects from around the world.",
+      "source_chunk": 17,
+      "id": "039cfb8a-5d5a-4e03-89ef-7750741661c3",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a public repository that connects researchers and institutions worldwide.",
+        "supporting_text": "The largest active repository of Beyond‑GDP initiatives is wikiprogress.org, which is an OECD initiative that provides information about well‑being and sustainability projects."
+      }
+    },
+    {
+      "title": "World Happiness Database",
+      "type": "Database",
+      "year": null,
+      "actors": [],
+      "supporting_text": "For SWB two sources have been used (World Happiness Database and the European/World Values Survey).",
+      "source_chunk": 17,
+      "id": "f6e704f1-ae7d-49fb-b33b-c04c44b0562c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Serves as a primary data source for SWB, enabling broader adoption of wellbeing metrics.",
+        "supporting_text": "For SWB two sources have been used (World Happiness Database and the European/World Values Survey)."
+      }
+    },
+    {
+      "title": "European/World Values Survey",
+      "type": "Survey",
+      "year": null,
+      "actors": [],
+      "supporting_text": "For SWB two sources have been used (World Happiness Database and the European/World Values Survey).",
+      "source_chunk": 17,
+      "id": "4e31cf48-9981-44f5-808d-a7fd469c447b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides longitudinal data that underpins SWB measurement across many countries.",
+        "supporting_text": "For SWB two sources have been used (World Happiness Database and the European/World Values Survey)."
+      }
+    },
+    {
+      "title": "System of Environmental and Economic Accounts (SEEA)",
+      "type": "Accounting framework",
+      "year": null,
+      "actors": [
+        "United Nations Statistics Division"
+      ],
+      "supporting_text": "For the SEEA, estimates by Edens (2013) are used as well as responses to the Global Assessment of Environmental‑Economic Accounting which is carried out by the United Nations Statistics Division.",
+      "source_chunk": 17,
+      "id": "230e0c01-4e02-46d0-8bc3-9f4bfcb6177b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "SEEA’s rapid expansion across countries shows growing institutional capacity for eco‑economic accounting.",
+        "supporting_text": "The expansion of SEEA and SDI in terms of countries is quite rapid."
+      }
+    },
+    {
+      "title": "Sustainable Development Indicators (SDI)",
+      "type": "Indicator set",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Figure 4.1 provides a partial view of the development of three areas of Beyond‑GDP: namely Subjective Well‑being (SWB), the System of Environmental and Economics Accounts (SEEA) and Sustainable Development Indicators (SDI).",
+      "source_chunk": 17,
+      "id": "51197847-8e1d-495c-a050-815edc3522e6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "SDI’s increasing adoption signals a shift toward sustainability‑focused measurement.",
+        "supporting_text": "The expansion of SEEA and SDI in terms of countries is quite rapid."
+      }
+    },
+    {
+      "title": "Human Development Index (HDI)",
+      "type": "Index",
+      "year": null,
+      "actors": [],
+      "supporting_text": "For example, the Human Development Index (HDI) is available for 188 countries at data.un.org.",
+      "source_chunk": 17,
+      "id": "f208c2bd-45bc-4a5a-b1ef-a281559f80a8",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "HDI’s global coverage and recognisability lend legitimacy to Beyond‑GDP approaches.",
+        "supporting_text": "Human Development Index (HDI) is available for 188 countries ... Note that there are Beyond‑GDP indicators with global coverage."
+      }
+    },
+    {
+      "title": "Ecological Footprint",
+      "type": "Indicator",
+      "year": null,
+      "actors": [
+        "Global Footprint Network"
+      ],
+      "supporting_text": "the ecological footprint is calculated for 186 countries by the Global Footprint Network",
+      "source_chunk": 17,
+      "id": "4210120c-b9c7-4675-a804-a10b9bda092a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Offers a planetary‑scale metric that can reshape economic decision‑making.",
+        "supporting_text": "the ecological footprint is calculated for 186 countries by the Global Footprint Network."
+      }
+    },
+    {
+      "title": "Sustainable Society Index",
+      "type": "Index",
+      "year": null,
+      "actors": [],
+      "supporting_text": "the Sustainable Society Index has data for 154 countries.",
+      "source_chunk": 17,
+      "id": "fe249c2d-b4bd-452d-acfd-9634ccbfa38f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Widely reported index that raises public awareness of sustainability performance.",
+        "supporting_text": "the Sustainable Society Index has data for 154 countries."
+      }
+    },
+    {
+      "title": "Gallup polls on Subjective Well‑being (SWB)",
+      "type": "Survey",
+      "year": null,
+      "actors": [
+        "Gallup"
+      ],
+      "supporting_text": "the most recent Gallup polls on SWB cover around 140 countries.",
+      "source_chunk": 17,
+      "id": "90042bc6-fcc6-4582-9acd-4cfb90ee1228",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "High‑profile Gallup polls increase public and policy attention to wellbeing metrics.",
+        "supporting_text": "the most recent Gallup polls on SWB cover around 140 countries."
+      }
+    },
+    {
+      "title": "Global Assessment of Environmental‑Economic Accounting",
+      "type": "Assessment",
+      "year": null,
+      "actors": [
+        "United Nations Statistics Division"
+      ],
+      "supporting_text": "responses to the Global Assessment of Environmental‑Economic Accounting which is carried out by the United Nations Statistics Division.",
+      "source_chunk": 17,
+      "id": "0b72a705-3929-4bb4-88c3-37f9f9d4ab52",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Guides the development of SEEA, linking environmental and economic data.",
+        "supporting_text": "responses to the Global Assessment of Environmental‑Economic Accounting which is carried out by the United Nations Statistics Division."
+      }
+    },
+    {
+      "title": "Affluent Society",
+      "type": "Book",
+      "year": 1958,
+      "actors": [
+        "John Kenneth Galbraith"
+      ],
+      "supporting_text": "Affluent Society, by Harvard economist John Kenneth Galbraith, added an influential critique in 1958.",
+      "source_chunk": 19,
+      "id": "9b7c4cdb-e372-43a0-8c3a-fbe8c83b05d8",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Critiqued post‑war growth‑centric economics, highlighting the disconnect between GDP and societal wellbeing.",
+        "supporting_text": "Affluent Society, by Harvard economist John Kenneth Galbraith, added an influential critique in 1958."
+      }
+    },
+    {
+      "title": "Silent Spring",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Also publications like the Tragedy of the Commons and bestsellers such as Silent Spring and Population Bomb communicated the dangers of environmental degradation and population growth to a wider audience.",
+      "source_chunk": 19,
+      "id": "fbd7fa48-0c4e-4a33-8b4e-88838017266c",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Raised public awareness of environmental degradation, shifting discourse toward ecological concerns.",
+        "supporting_text": "Silent Spring ... communicated the dangers of environmental degradation ... to a wider audience."
+      }
+    },
+    {
+      "title": "Population Bomb",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Also publications like the Tragedy of the Commons and bestsellers such as Silent Spring and Population Bomb communicated the dangers of environmental degradation and population growth to a wider audience.",
+      "source_chunk": 19,
+      "id": "2a2a47d9-acfa-412d-94d8-0dcc09450118",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Highlighted population‑growth threats, influencing public and policy debates on environmental limits.",
+        "supporting_text": "Population Bomb communicated the dangers of ... population growth to a wider audience."
+      }
+    },
+    {
+      "title": "Tragedy of the Commons",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Also publications like the Tragedy of the Commons and bestsellers such as Silent Spring and Population Bomb communicated the dangers of environmental degradation and population growth to a wider audience.",
+      "source_chunk": 19,
+      "id": "07b2d11e-4ab2-4a38-b939-176175037bec",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Illustrated collective over‑use of resources, shaping discourse on shared environmental stewardship.",
+        "supporting_text": "Tragedy of the Commons ... communicated the dangers of environmental degradation ... to a wider audience."
+      }
+    },
+    {
+      "title": "Limits to Growth",
+      "type": "Report",
+      "year": 1972,
+      "actors": [
+        "Club of Rome"
+      ],
+      "supporting_text": "1972 was also the year that the seminal Limits to Growth report of the Club of Rome was published.",
+      "source_chunk": 19,
+      "id": "74081282-a3d6-4c32-a460-77e8becc20ea",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provided scenario modelling that exposed resource limits, suggesting the need for systemic economic transformation.",
+        "supporting_text": "1972 was also the year that the seminal Limits to Growth report ... played a major role in raising environmental awareness."
+      }
+    },
+    {
+      "title": "Our Common Future",
+      "type": "Report",
+      "year": 1987,
+      "actors": [
+        "United Nations World Commission on Environment and Development (WCED)"
+      ],
+      "supporting_text": "The real game-changer in Beyond-GDP measurement was the seminal publication by the United Nations World Commission on Environment and Development (WCED) in 1987. The commission's report, Our Common Future, is often referred to as the \"Brundtland Report\".",
+      "source_chunk": 19,
+      "id": "1df8bea6-4e1f-4b5c-b26c-330e72107627",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced the concept of sustainable development, offering a new systemic framework for balancing economic, social, and environmental goals.",
+        "supporting_text": "The commission’s report, Our Common Future, ... led to the popularisation of the term “sustainable development”."
+      }
+    },
+    {
+      "title": "Agenda 21",
+      "type": "Programme",
+      "year": 1992,
+      "actors": [
+        "United Nations Conference on Environment and Development (Rio Earth Summit)"
+      ],
+      "supporting_text": "At this conference, Agenda 21 was adopted which included a recommendation for countries to monitor their progress towards sustainable development.",
+      "source_chunk": 19,
+      "id": "0a517e68-25e1-46dd-b706-1a4725932627",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Recommended national monitoring of sustainable development, prompting coordinated policy implementation.",
+        "supporting_text": "Agenda 21 was adopted which included a recommendation for countries to monitor their progress towards sustainable development."
+      }
+    },
+    {
+      "title": "Measuring Well‑being and Societal Progress",
+      "type": "Programme",
+      "year": 2004,
+      "actors": [
+        "OECD"
+      ],
+      "supporting_text": "The OECD started convening the World Forum's \"measuring well-being and societal progress\" once every 2-4 years from 2004.",
+      "source_chunk": 19,
+      "id": "dcab3544-ea43-4a68-bcad-bbc2a8a2772f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Established a recurring forum for sharing well‑being metrics, supporting joint action across nations.",
+        "supporting_text": "The OECD started convening the World Forum’s “measuring well‑being and societal progress” once every 2–4 years from 2004."
+      }
+    },
+    {
+      "title": "Better Life Initiative/Index",
+      "type": "Programme",
+      "year": 2011,
+      "actors": [
+        "OECD"
+      ],
+      "supporting_text": "The OECD also launched the Better Life Initiative/Index at the fifty-year anniversary of the institute in 2011.",
+      "source_chunk": 19,
+      "id": "719ff3bf-98c9-4e6f-a9e2-cdf858755488",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Created a widely used alternative to GDP, enabling governments to track wellbeing and act on findings.",
+        "supporting_text": "The OECD also launched the Better Life Initiative/Index at the fifty-year anniversary of the institute in 2011."
+      }
+    },
+    {
+      "title": "Sustainable Development Indicators",
+      "type": "Programme",
+      "year": 2005,
+      "actors": [
+        "Eurostat"
+      ],
+      "supporting_text": "Eurostat (the statistical office of the European Union) started work on Sustainable Development Indicators in 2005.",
+      "source_chunk": 19,
+      "id": "73285726-062a-4101-9cb0-7986495395dc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Developed standardized metrics that support coordinated monitoring and policy across the EU.",
+        "supporting_text": "Eurostat ... started work on Sustainable Development Indicators in 2005."
+      }
+    },
+    {
+      "title": "e-Frame",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "European Commission"
+      ],
+      "supporting_text": "The European Commission held a large-scale conference on \"Beyond-GDP: Measuring progress, true wealth, and the well‑being of nations\" in 2007 and funded projects such as e-Frame and BRAINPOoL (Bringing Alternative Indicators into Policy).",
+      "source_chunk": 19,
+      "id": "01ce9c63-2aaa-4094-bb50-b2aaf3666811",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Funded as a tool to integrate alternative indicators into policy, facilitating collective implementation.",
+        "supporting_text": "European Commission ... funded projects such as e-Frame and BRAINPOoL."
+      }
+    },
+    {
+      "title": "BRAINPOoL (Bringing Alternative Indicators into Policy)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "European Commission"
+      ],
+      "supporting_text": "The European Commission held a large-scale conference on \"Beyond-GDP: Measuring progress, true wealth, and the well‑being of nations\" in 2007 and funded projects such as e-Frame and BRAINPOoL (Bringing Alternative Indicators into Policy).",
+      "source_chunk": 19,
+      "id": "73d37ca3-25ce-416f-9b5d-81b989551426",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a funded project that creates policy tools for Beyond‑GDP indicators.",
+        "supporting_text": "funded projects such as e-Frame and BRAINPOoL (Bringing Alternative Indicators into Policy), which dealt specifically with Beyond‑GDP indicators."
+      }
+    },
+    {
+      "title": "Wealth of Nations (World Bank report)",
+      "type": "Report",
+      "year": 2006,
+      "actors": [
+        "World Bank"
+      ],
+      "supporting_text": "The World Bank published the \"Wealth of Nations\" reports in 2006, 2011 and 2018.",
+      "source_chunk": 19,
+      "id": "99eac09a-2caf-421d-8083-e7655f07d89f"
+    },
+    {
+      "title": "Wealth of Nations (World Bank report)",
+      "type": "Report",
+      "year": 2011,
+      "actors": [
+        "World Bank"
+      ],
+      "supporting_text": "The World Bank published the \"Wealth of Nations\" reports in 2006, 2011 and 2018.",
+      "source_chunk": 19,
+      "id": "dfea7dec-acfd-42b7-99d0-01e899de62bd"
+    },
+    {
+      "title": "Wealth of Nations (World Bank report)",
+      "type": "Report",
+      "year": 2018,
+      "actors": [
+        "World Bank"
+      ],
+      "supporting_text": "The World Bank published the \"Wealth of Nations\" reports in 2006, 2011 and 2018.",
+      "source_chunk": 19,
+      "id": "0f5a510c-ba8c-4a72-b927-e67026c4585c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces alternative wealth metrics that can shift how progress is measured.",
+        "supporting_text": "The World Bank published the “Wealth of Nations” reports in 2006, 2011 and 2018."
+      }
+    },
+    {
+      "title": "Stiglitz Report",
+      "type": "Report",
+      "year": 2009,
+      "actors": [
+        "Commission on the Measurement of Economic Performance and Social Progress (CMEPSP)"
+      ],
+      "supporting_text": "In 2009, Nicolas Sarkozy, President of France, set up the Commission on the Measurement of Economic Performance and Social Progress. This report, which was produced by the CMEPSP, is commonly referred to as the Stiglitz Report.",
+      "source_chunk": 19,
+      "id": "57a1aca6-ff67-4540-ad50-988717928d8f"
+    },
+    {
+      "title": "Human Development Report",
+      "type": "Report",
+      "year": null,
+      "actors": [],
+      "supporting_text": "There are also other initiatives such as the Human Development Report, The World Happiness Report, The Global Sustainable Development Report and the Inclusive Wealth Report...",
+      "source_chunk": 19,
+      "id": "6f593b4a-ca89-4265-8600-07bebab9d6a9"
+    },
+    {
+      "title": "World Happiness Report",
+      "type": "Report",
+      "year": null,
+      "actors": [],
+      "supporting_text": "There are also other initiatives such as the Human Development Report, The World Happiness Report, The Global Sustainable Development Report and the Inclusive Wealth Report...",
+      "source_chunk": 19,
+      "id": "bf8162f2-060c-4e4f-b58e-66961a9f1bfb",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Widely recognised publication that contributes to the discourse on well‑being beyond GDP.",
+        "supporting_text": "other initiatives such as the Human Development Report, The World Happiness Report, The Global Sustainable Development Report and the Inclusive Wealth Report..."
+      }
+    },
+    {
+      "title": "Global Sustainable Development Report",
+      "type": "Report",
+      "year": null,
+      "actors": [],
+      "supporting_text": "There are also other initiatives such as the Human Development Report, The World Happiness Report, The Global Sustainable Development Report and the Inclusive Wealth Report...",
+      "source_chunk": 19,
+      "id": "b1498cee-0bd7-49b5-9d19-30d9d3936cc8",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Serves as a high‑profile platform for promoting sustainable‑development metrics.",
+        "supporting_text": "other initiatives such as the Human Development Report, The World Happiness Report, The Global Sustainable Development Report and the Inclusive Wealth Report..."
+      }
+    },
+    {
+      "title": "Inclusive Wealth Report",
+      "type": "Report",
+      "year": null,
+      "actors": [],
+      "supporting_text": "There are also other initiatives such as the Human Development Report, The World Happiness Report, The Global Sustainable Development Report and the Inclusive Wealth Report...",
+      "source_chunk": 19,
+      "id": "22cfdc1b-4a66-46f5-be1c-f0615b2f6dd7",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Highlights alternative wealth accounting, influencing public and policy discussions.",
+        "supporting_text": "other initiatives such as the Human Development Report, The World Happiness Report, The Global Sustainable Development Report and the Inclusive Wealth Report..."
+      }
+    },
+    {
+      "title": "Capital in the Twenty‑First Century",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "Thomas Piketty"
+      ],
+      "supporting_text": "Thomas Piketty's book on inequality (Capital in the Twenty‑First Century), which has had a significant impact on the Beyond‑GDP debate.",
+      "source_chunk": 19,
+      "id": "1fb723fb-eb6d-485e-aac4-9028d1ddedb1",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Piketty’s book significantly impacted the Beyond‑GDP debate.",
+        "supporting_text": "Thomas Piketty’s book on inequality (Capital in the Twenty‑First Century), which has had a significant impact on the Beyond‑GDP debate."
+      }
+    },
+    {
+      "title": "OECD Guidelines on Measuring Subjective Well‑being",
+      "type": "Guideline",
+      "year": 2013,
+      "actors": [
+        "OECD"
+      ],
+      "supporting_text": "The OECD's Guidelines on Measuring Subjective Well‑being was published in 2013.",
+      "source_chunk": 19,
+      "id": "2cbe8a17-bdf5-4cdb-90fb-e58a448dba6c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides standardized guidance for governments to measure well‑being.",
+        "supporting_text": "The OECD’s Guidelines on Measuring Subjective Well‑being was published in 2013."
+      }
+    },
+    {
+      "title": "Sustainable Development Goals",
+      "type": "Declaration",
+      "year": 2012,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "The main legacy of that conference is that the Sustainable Development Goals were conceived at that conference.",
+      "source_chunk": 19,
+      "id": "77e1c940-a7d8-4214-87a0-5632ec9752b3"
+    },
+    {
+      "title": "Eurobarometer survey",
+      "type": "Other",
+      "year": 1973,
+      "actors": [
+        "European Union"
+      ],
+      "supporting_text": "From 1973, SWB questions started to be asked in the European Union's Eurobarometer survey.",
+      "source_chunk": 20,
+      "id": "ab8cbdd3-00fa-42fd-b165-1a4358e23c3f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "A widely used EU survey that raises public and policy awareness of wellbeing metrics.",
+        "supporting_text": "From 1973, SWB questions started to be asked in the European Union’s Eurobarometer survey."
+      }
+    },
+    {
+      "title": "European Value Survey",
+      "type": "Other",
+      "year": 1981,
+      "actors": [
+        "academic groups"
+      ],
+      "supporting_text": "From 1981, academic groups started to work on the European Value Survey and World Value Survey in order to compare various SWB and other attitudes over multiple countries.",
+      "source_chunk": 20,
+      "id": "4653d8ba-a699-4af3-8587-ac70e7a980f4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a structured set of indicators that can inform alternative measurement frameworks.",
+        "supporting_text": "From 1981, academic groups started to work on the European Value Survey..."
+      }
+    },
+    {
+      "title": "World Value Survey",
+      "type": "Other",
+      "year": 1981,
+      "actors": [
+        "academic groups"
+      ],
+      "supporting_text": "From 1981, academic groups started to work on the European Value Survey and World Value Survey in order to compare various SWB and other attitudes over multiple countries.",
+      "source_chunk": 20,
+      "id": "69e79e74-be90-4632-abb1-f8c50d36c0ae",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Offers comparable cross‑national data essential for systemic wellbeing assessment.",
+        "supporting_text": "...and World Value Survey in order to compare various SWB and other attitudes over multiple countries."
+      }
+    },
+    {
+      "title": "Gallup World Poll",
+      "type": "Other",
+      "year": 2005,
+      "actors": [
+        "Gallup"
+      ],
+      "supporting_text": "The Gallup World Poll started in 2005 with 26 countries and had expanded to around 140 countries by 2018.",
+      "source_chunk": 20,
+      "id": "bb5da25d-bb19-4177-8e7f-c59eba662c3d",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Its global reach makes wellbeing data visible to a broad audience, enhancing legitimacy of non‑GDP metrics.",
+        "supporting_text": "The Gallup World Poll started in 2005 with 26 countries and had expanded to around 140 countries by 2018."
+      }
+    },
+    {
+      "title": "OECD guidelines",
+      "type": "Guideline",
+      "year": null,
+      "actors": [
+        "OECD"
+      ],
+      "supporting_text": "the OECD guidelines argue that each of these perspectives on SWB provide important and complementary dimensions to well-being.",
+      "source_chunk": 20,
+      "id": "151ded70-df3a-4e7e-a561-f18f2e4fee49",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Official guidelines give normative weight to wellbeing dimensions, supporting their adoption in policy.",
+        "supporting_text": "The OECD guidelines argue that each of these perspectives on SWB provide important and complementary dimensions to well‑being."
+      }
+    },
+    {
+      "title": "Measure of Economic Welfare",
+      "type": "Other",
+      "year": 1972,
+      "actors": [
+        "Nordhaus",
+        "Tobin"
+      ],
+      "supporting_text": "the Measure of Economic Welfare was created by Yale economists Nordhaus and Tobin.",
+      "source_chunk": 21,
+      "id": "b442687c-137b-4487-b573-fd57bfbf93e1",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "A concrete metric that adds positive welfare components and subtracts environmental damage, offering an alternative to GDP.",
+        "supporting_text": "The Measure of Economic Welfare… added leisure time and home production, subtracted environmental damage."
+      }
+    },
+    {
+      "title": "Index for Sustainable Economic Welfare (ISEW)",
+      "type": "Other",
+      "year": 1989,
+      "actors": [
+        "Daly",
+        "Cobb"
+      ],
+      "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW), which was proposed in 1989 by Daly and Cobb.",
+      "source_chunk": 21,
+      "id": "09f3480f-429f-4293-a431-afc9ec338295",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Extends MEW to a broader sustainable‑welfare index, indicating a pathway toward new systemic accounting.",
+        "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW)…"
+      }
+    },
+    {
+      "title": "Genuine Progress Indicator (GPI)",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "The ISEW later evolved into the Genuine Progress Indicator (GPI).",
+      "source_chunk": 21,
+      "id": "99591eb6-d26d-46de-b9a5-3c3cb6505147",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Evolved from ISEW and adopted by some jurisdictions, showing potential for policy‑level metric change.",
+        "supporting_text": "The ISEW later evolved into the Genuine Progress Indicator (GPI)."
+      }
+    },
+    {
+      "title": "Sustainable National Income",
+      "type": "Other",
+      "year": 1974,
+      "actors": [
+        "Roefie Hueting"
+      ],
+      "supporting_text": "A different, rather unique, approach was proposed in 1974 by Roefie Hueting: Sustainable National Income.",
+      "source_chunk": 21,
+      "id": "535d1fef-31b8-4af8-9d85-dc975e82e04a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Frames income within sustainability limits, offering a systemic alternative to conventional national accounts.",
+        "supporting_text": "Sustainable National Income… took environmental limits as the foundation of the methodology."
+      }
+    },
+    {
+      "title": "Genuine Savings Indicator",
+      "type": "Other",
+      "year": 1993,
+      "actors": [],
+      "supporting_text": "Based on this capital theory, the genuine savings indicator was suggested in 1993.",
+      "source_chunk": 21,
+      "id": "71d908c0-701e-4990-b1e8-4a272a078171",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Tracks changes in capital stocks, providing a basis for shifting economic decisions toward sustainability.",
+        "supporting_text": "Based on this capital theory, the genuine savings indicator was suggested in 1993."
+      }
+    },
+    {
+      "title": "Adjusted Net Savings",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "World Bank"
+      ],
+      "supporting_text": "World Bank has adopted this approach and publishes \"adjusted net savings\" and \"total (or comprehensive) wealth\" indicators.",
+      "source_chunk": 21,
+      "id": "a6a513dd-6937-4939-932c-7aa597a0d8a4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adopted by the World Bank, this indicator embeds environmental considerations into national accounts.",
+        "supporting_text": "the World Bank… publishes “adjusted net savings” and “total (or comprehensive) wealth” indicators."
+      }
+    },
+    {
+      "title": "Total (or Comprehensive) Wealth Indicator",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "World Bank"
+      ],
+      "supporting_text": "World Bank has adopted this approach and publishes \"adjusted net savings\" and \"total (or comprehensive) wealth\" indicators.",
+      "source_chunk": 21,
+      "id": "6c487ba1-4d13-46b3-9887-b9e3488bcb39",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Measures the full stock of assets, including natural capital, indicating a shift toward holistic wealth accounting.",
+        "supporting_text": "the World Bank… publishes “total (or comprehensive) wealth” indicators."
+      }
+    },
+    {
+      "title": "Inclusive Wealth Index (IWI)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "United Nations University",
+        "Partha Dasgupta"
+      ],
+      "supporting_text": "The United Nations University, under the leadership of Partha Dasgupta, proposed the Inclusive Wealth Index (IWI).",
+      "source_chunk": 21,
+      "id": "b77e3b4e-6e6d-4fc9-ad09-0b4a78ab7b92",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Proposed by UN scholars to capture inclusive wealth, signaling a move toward integrated sustainability metrics.",
+        "supporting_text": "The United Nations University… proposed the Inclusive Wealth Index (IWI)."
+      }
+    },
+    {
+      "title": "System of Environmental and Economic Accounts",
+      "type": "Other",
+      "year": null,
+      "actors": [],
+      "supporting_text": "The System of Environmental and Economic Accounts, which will be discussed later on, also includes a couple of indexes which follow this theoretical approach.",
+      "source_chunk": 21,
+      "id": "54ff268e-2a74-481c-8cbb-a6412992b03e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides an institutional framework for linking environmental data with economic accounts, enabling systemic change.",
+        "supporting_text": "The System of Environmental and Economic Accounts… includes a couple of indexes which follow this theoretical approach."
+      }
+    },
+    {
+      "title": "Life Situation Index (LSI)",
+      "type": "Indicator",
+      "year": null,
+      "actors": [
+        "Netherlands"
+      ],
+      "supporting_text": "in the early 1970s the Life Situation Index (LSI) was produced in the Netherlands.",
+      "source_chunk": 22,
+      "id": "6190b9e4-7984-4689-829b-2e6a17cc02f2",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The index represents a conceptual alternative to GDP, indicating systemic shift potential.",
+        "supporting_text": "In the early 1970s the Life Situation Index (LSI) was produced in the Netherlands."
+      }
+    },
+    {
+      "title": "Human Development Index",
+      "type": "Indicator",
+      "year": 1990,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "the Human Development Index. In 1990, the United Nations' Human Development Report used HDI for the first time.",
+      "source_chunk": 22,
+      "id": "b6d35436-eb83-4cc8-b498-166a86a89238",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Described as the most successful Beyond‑GDP initiative, it raises public and policy awareness.",
+        "supporting_text": "The HDI is probably one the most successful Beyond‑GDP initiatives."
+      }
+    },
+    {
+      "title": "Human Development Report",
+      "type": "Report",
+      "year": 1990,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "In 1990, the United Nations' Human Development Report used HDI for the first time.",
+      "source_chunk": 22,
+      "id": "72559aca-d8e7-4c4f-8394-a7f1bfe61e9e",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The report disseminates the HDI, shaping discourse on alternative welfare metrics.",
+        "supporting_text": "In 1990, the United Nations’ Human Development Report used HDI for the first time."
+      }
+    },
+    {
+      "title": "Competitiveness Index",
+      "type": "Indicator",
+      "year": null,
+      "actors": [
+        "World Economic Forum"
+      ],
+      "supporting_text": "Examples include the Competitiveness Index published by the World Economic Forum",
+      "source_chunk": 22,
+      "id": "a94cc526-0961-4c42-85f5-ce16b0aa46c9",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Its country rankings attract media attention, increasing the visibility of composite indicators.",
+        "supporting_text": "The country rankings of composite indicators are easily communicated to the general public and therefore capture media attention."
+      }
+    },
+    {
+      "title": "Global Innovation Index",
+      "type": "Indicator",
+      "year": null,
+      "actors": [],
+      "supporting_text": "and the Global Innovation Index.",
+      "source_chunk": 22,
+      "id": "2646dc30-264e-47ab-9e3d-9c503178e162",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Like the Competitiveness Index, it gains public attention through clear rankings.",
+        "supporting_text": "The country rankings of composite indicators are easily communicated to the general public and therefore capture media attention."
+      }
+    },
+    {
+      "title": "Sustainable Development Goals",
+      "type": "Goal",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Non-conceptual Indicator Sets (e.g., Sustainable Development Goals)",
+      "source_chunk": 22,
+      "id": "06493108-bb59-4c82-a1e1-f9c588b740be"
+    },
+    {
+      "title": "Gross National Happiness programme",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "King of Bhutan"
+      ],
+      "supporting_text": "One of the earliest and most cited Beyond-GDP initiatives is the programme on Gross National Happiness which was initiated by the King of Bhutan in the early 1970s.",
+      "source_chunk": 23,
+      "id": "36e29f46-57e5-42e2-8eba-8deddec104ff",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Early beyond‑GDP initiative that introduced a new value‑based metric.",
+        "supporting_text": "One of the earliest and most cited Beyond‑GDP initiatives is the programme ... initiated by the King of Bhutan in the early 1970s."
+      }
+    },
+    {
+      "title": "Brundtland Report",
+      "type": "Report",
+      "year": 1987,
+      "actors": [],
+      "supporting_text": "The Brundtland Report in 1987 ... were instrumental in promoting Type 3 Sustainable Development Indicators (SDI).",
+      "source_chunk": 23,
+      "id": "6924a68b-b5ae-46cd-9f4a-27aeb16af7a7"
+    },
+    {
+      "title": "Eurostat's Well‑being Report",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "Eurostat"
+      ],
+      "supporting_text": "For example, Eurostat's Well-being Report has a range of indicators ...",
+      "source_chunk": 23,
+      "id": "b3e2f373-a61e-4cdf-ad51-ddeea4c110b6",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a concrete set of well‑being indicators that can be used by policymakers.",
+        "supporting_text": "For example, Eurostat’s Well‑being Report has a range of indicators ..."
+      }
+    },
+    {
+      "title": "Wheel of Well‑being",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "United Kingdom"
+      ],
+      "supporting_text": "... and the UK's Wheel of Well-being is another example of a Type 3 indicator set.",
+      "source_chunk": 23,
+      "id": "9ac5a81c-0389-4595-bd7e-e761c2143e94",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Another national indicator set that operationalises well‑being metrics.",
+        "supporting_text": "the UK’s Wheel of Well‑being is another example of a Type 3 indicator set."
+      }
+    },
+    {
+      "title": "Sustainable Development Goals",
+      "type": "Declaration",
+      "year": 2015,
+      "actors": [
+        "Governments of the world"
+      ],
+      "supporting_text": "By far the most influential initiative is the Sustainable Development Goals, introduced in 2015. This was a worldwide process where the governments of the world agreed to define 17 goals and 169 targets for sustainable development.",
+      "source_chunk": 23,
+      "id": "12258b63-634f-4276-9e12-68916ee2fe83",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Global goal framework that reorients development measurement away from GDP.",
+        "supporting_text": "By far the most influential initiative is the Sustainable Development Goals, introduced in 2015."
+      }
+    },
+    {
+      "title": "Millennium Development Goals",
+      "type": "Declaration",
+      "year": 2000,
+      "actors": [],
+      "supporting_text": "At that conference, it was decided that the Millennium Development Goals (MDGs), which ran from 2000 to 2015, would be replaced by the SDGs.",
+      "source_chunk": 23,
+      "id": "6d230331-7a6f-49e8-b2fa-7267065e62c8",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The MDGs represented the prior dominant metric that later needed replacement.",
+        "supporting_text": "At that conference, it was decided that the Millennium Development Goals (MDGs), which ran from 2000 to 2015, would be replaced by the SDGs."
+      }
+    },
+    {
+      "title": "WGSSD Report",
+      "type": "Report",
+      "year": 2009,
+      "actors": [
+        "UNECE",
+        "OECD",
+        "Eurostat",
+        "European Commission"
+      ],
+      "supporting_text": "The WGSSD Report was published in 2009 and had a significant influence on the Stiglitz Report, which was also published in that same year.",
+      "source_chunk": 24,
+      "id": "21cf77fe-3d6c-4b82-9788-dcd043ff196a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The report’s blend of monetary and non‑monetary metrics provided a conceptual basis for later sustainable‑development accounting systems.",
+        "supporting_text": "The final report discusses monetary indicators for capital but also the advantages of providing a set of non-monetary indicators for these assets."
+      }
+    },
+    {
+      "title": "Stiglitz Report",
+      "type": "Report",
+      "year": 2009,
+      "actors": [
+        "Stiglitz"
+      ],
+      "supporting_text": "The final report discusses monetary indicators for capital but also the advantages of providing a set of non-monetary indicators for these assets. The WGSSD Report was published in 2009 and had a significant influence on the Stiglitz Report, which was also published in that same year.",
+      "source_chunk": 24,
+      "id": "83716542-c729-4bc1-b4ad-b11928fb4d84",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "It presented a compromise framework that challenged pure monetary accounting and influenced the design of Type 4 indicator sets.",
+        "supporting_text": "Methodologically speaking, the Stiglitz Report can be seen as a compromise between Type 1 and Type 3."
+      }
+    },
+    {
+      "title": "Task Force on Measuring Sustainable Development (TFSD)",
+      "type": "Other",
+      "year": 2009,
+      "actors": [
+        "UNECE",
+        "OECD",
+        "Eurostat"
+      ],
+      "supporting_text": "In 2009, just after the publication of the Stiglitz Report, the joint UNECE/OECD/Eurostat Task Force on Measuring Sustainable Development (TFSD) was created.",
+      "source_chunk": 24,
+      "id": "fe3a9948-18bc-4cf5-9165-ccbf4053b58c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The TFSD built on the Stiglitz conceptual framework to produce a new set of Type 4 indicators, indicating a shift in measurement practice.",
+        "supporting_text": "The TFSD built on the conceptual framework of the Stiglitz Report and also created a set of (Type 4) indicators."
+      }
+    },
+    {
+      "title": "CES Recommendations on Measuring Sustainable Development",
+      "type": "Recommendation",
+      "year": null,
+      "actors": [
+        "Conference of European Statisticians"
+      ],
+      "supporting_text": "The report was endorsed by the Conference of European Statisticians and the CES Recommendations on Measuring Sustainable Development have been adopted by a couple of countries so far.",
+      "source_chunk": 24,
+      "id": "4dd45d89-00d6-4b0d-a7bf-e30fc3965897",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Endorsed by the Conference of European Statisticians, the recommendations lend legitimacy and encourage adoption by member states.",
+        "supporting_text": "The report was endorsed by the Conference of European Statisticians and the CES Recommendations on Measuring Sustainable Development have been adopted by a couple of countries so far."
+      }
+    },
+    {
+      "title": "Better Life Index (BLI)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "OECD"
+      ],
+      "supporting_text": "An influential indicator set is the Better Life Index (BLI), which was launched by the OECD at its fiftieth anniversary.",
+      "source_chunk": 24,
+      "id": "22262b7e-e1cd-4c35-9907-2a25480f5200",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The BLI, launched by the OECD, provides a visible, user‑customisable alternative to GDP, raising public awareness of wellbeing metrics.",
+        "supporting_text": "An influential indicator set is the Better Life Index (BLI), which was launched by the OECD at its fiftieth anniversary."
+      }
+    },
+    {
+      "title": "System of Environmental and Economic Accounting (SEEA)",
+      "type": "Standard",
+      "year": null,
+      "actors": [],
+      "supporting_text": "System of Environmental and Economic Accounting (SEEA)",
+      "source_chunk": 24,
+      "id": "6e7be38d-35fc-4c64-b465-0daa327b29fb",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text merely mentions SEEA without describing its role or impact on the initiative.",
+        "supporting_text": "System of Environmental and Economic Accounting (SEEA)"
+      }
+    },
+    {
+      "title": "System of Environmental Economic Accounting (SEEA) 1993",
+      "type": "Standard",
+      "year": 1993,
+      "actors": [],
+      "supporting_text": "The SEEA 1993 includes a green accounting indicator called the eco‑domestic product (EDP) which is obtained by subtracting environmental costs from the Net Domestic Product.",
+      "source_chunk": 25,
+      "id": "4c2e921c-b4d7-47ae-b87d-7e366681b4fe",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces new green accounting indicators like the eco‑domestic product.",
+        "supporting_text": "The SEEA 1993 includes a green accounting indicator called the eco‑domestic product (EDP)."
+      }
+    },
+    {
+      "title": "System of Environmental Economic Accounting (SEEA) 2003",
+      "type": "Standard",
+      "year": 2003,
+      "actors": [
+        "United Nations",
+        "six major international institutes"
+      ],
+      "supporting_text": "By the time the second edition (SEEA 2003) was published the other international institutes had joined the UN as co‑authors.",
+      "source_chunk": 25,
+      "id": "f1327a5b-6340-4754-9d5b-201fb6a46a2a",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The 2003 edition remains non‑prescriptive, limiting its immediate policy impact.",
+        "supporting_text": "SEEA 2003 ... was not prescriptive on many crucial issues."
+      }
+    },
+    {
+      "title": "System of Environmental Economic Accounting 2012 – Central Framework",
+      "type": "Standard",
+      "year": 2012,
+      "actors": [
+        "Statistical Commission of the United Nations"
+      ],
+      "supporting_text": "After a lengthy deliberation process the System of Environmental Economic Accounting 2012 - Central Framework was adopted by the Statistical Commission of the United Nations.",
+      "source_chunk": 25,
+      "id": "bc100b5c-e632-4a15-891e-07da75fbc41d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adoption creates a unified, globally recognised framework for environmental accounting.",
+        "supporting_text": "the System of Environmental Economic Accounting 2012 – Central Framework was adopted by the Statistical Commission of the United Nations."
+      }
+    },
+    {
+      "title": "Brundtland Report",
+      "type": "Report",
+      "year": null,
+      "actors": [],
+      "supporting_text": "During the process that led to the SNA 1993, the topic of environmental pressures and sustainable development were high on the agenda because of the Brundtland Report/Earth Summit.",
+      "source_chunk": 25,
+      "id": "40260835-b03b-4c89-ac24-6483b608b892",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Set the agenda that pushed environmental pressures onto the SNA drafting table.",
+        "supporting_text": "environmental pressures ... were high on the agenda because of the Brundtland Report/Earth Summit."
+      }
+    },
+    {
+      "title": "System of National Accounts 1993 (SNA 1993)",
+      "type": "Standard",
+      "year": 1993,
+      "actors": [],
+      "supporting_text": "During the process that led to the SNA 1993, the topic of environmental pressures and sustainable development were high on the agenda because of the Brundtland Report/Earth Summit.",
+      "source_chunk": 25,
+      "id": "bb066654-2c21-489b-a062-c9a5cfd34110",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Represents the prevailing GDP‑centric accounting framework that needed environmental integration.",
+        "supporting_text": "During the process that led to the SNA 1993, the topic of environmental pressures ... were high on the agenda."
+      }
+    },
+    {
+      "title": "SEEA Handbook 1993",
+      "type": "Guideline",
+      "year": 1993,
+      "actors": [],
+      "supporting_text": "The harmonisation process for environmental accounts of the early 1990s led to the first handbook in 1993.",
+      "source_chunk": 25,
+      "id": "6049b363-95de-4113-8530-4e1b2800a017",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "First official documentation of SEEA, enabling international harmonisation.",
+        "supporting_text": "The SEEA 1993 was an important first step towards harmonisation of environmental accounting."
+      }
+    },
+    {
+      "title": "SEEA 2003 Document",
+      "type": "Other",
+      "year": 2003,
+      "actors": [],
+      "supporting_text": "The SEEA 2003 had also grown to a 598‑page document.",
+      "source_chunk": 25,
+      "id": "f4ec9101-55da-4632-b75f-097784bed610",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Continues the series but still lacks prescriptive guidance, highlighting limits.",
+        "supporting_text": "SEEA 2003 ... was not prescriptive on many crucial issues."
+      }
+    },
+    {
+      "title": "System of Environmental‑Economic Accounting (SEEA)",
+      "type": "Framework",
+      "year": null,
+      "actors": [],
+      "supporting_text": "The SEEA is probably the most successful example in the Beyond‑GDP scene.",
+      "source_chunk": 26,
+      "id": "5bdbae86-c00f-4f7b-b1f0-b3dd50505592",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a clear, structured, and harmonised framework that has been institutionalised quickly.",
+        "supporting_text": "The SEEA is probably the most successful example ... clear goal, structure and common language ... harmonisation process took less than twenty years."
+      }
+    },
+    {
+      "title": "Sustainable Development Goals (SDGs)",
+      "type": "Global Goals",
+      "year": null,
+      "actors": [],
+      "supporting_text": "The SDG process also proved that international institutes can be very effective in fostering a global agreement.",
+      "source_chunk": 26,
+      "id": "dd9a2baf-8a97-4056-984f-12c9a0b9309a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Demonstrates that international institutes can coordinate a global agreement supporting alternative metrics.",
+        "supporting_text": "The SDG process also proved that international institutes can be very effective in fostering a global agreement."
+      }
+    },
+    {
+      "title": "Motivational Interviewing (MI)",
+      "type": "Practice",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Motivational Interviewing (MI) is based on engaging addicts in a positive discussion of their goals, motives and futures.",
+      "source_chunk": 26,
+      "id": "5af5baec-13d6-4c57-a967-34205cf5de16",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Proposes a therapeutic model that could be adapted to shift societal attachment to GDP.",
+        "supporting_text": "Motivational Interviewing (MI) is based on engaging addicts ... Costanza and colleagues explore what the MI therapy might look like if applied to society’s addiction to GDP."
+      }
+    }
+  ]
+}

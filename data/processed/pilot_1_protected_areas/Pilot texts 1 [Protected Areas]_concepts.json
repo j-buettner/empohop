@@ -1,0 +1,696 @@
+{
+  "concepts": [
+    {
+      "name": "Protected area management categories",
+      "definition": "A system for classifying protected areas into distinct management types; first attempted by IUCN in 1978 and revised in 1994 into six categories, now widely used and endorsed by the parties to the Convention on Biological Diversity.",
+      "key_proponents": [
+        "International Union for Conservation of Nature (IUCN)"
+      ],
+      "supporting_text": "A first attempt to address this by categorising protected areas was made by IUCN in 1978. In 1994, IUCN adopted a revised system of six management categories. This system is now being widely used and has recently been endorsed by the parties to the Convention on Biological Diversity.",
+      "source_chunk": 0,
+      "id": "3c8dcc56-6217-4bad-9704-649dfbc6c2a1",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The concept provides a structured way to differentiate protection objectives, enabling system‑wide coordination.",
+        "supporting_text": "IUCN protected area management categories"
+      }
+    },
+    {
+      "name": "Modern protected area movement",
+      "definition": "The historical development of protected areas that began in the nineteenth century in nations such as the United States, Australia, New Zealand and South Africa, and later spread worldwide, leading to a remarkable expansion in the number and types of protected areas.",
+      "key_proponents": [],
+      "supporting_text": "Thus the modern protected areas movement had nineteenth century origins in the then \"new\" nations of North America, Australia, New Zealand and South Africa, but other countries were quick to follow suit.",
+      "source_chunk": 0,
+      "id": "4f638be9-74f3-4d23-bfea-93643897f7e0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The movement reflects a historic shift toward organized, large‑scale nature protection.",
+        "supporting_text": "Thus the modern protected areas movement had nineteenth century origins..."
+      }
+    },
+    {
+      "name": "National park",
+      "definition": "A type of protected area designated for public use, recreation and the enjoyment of natural beauty, exemplified by the 1872 dedication of Yellowstone as a public park for the benefit and enjoyment of the people.",
+      "key_proponents": [
+        "United States Congress"
+      ],
+      "supporting_text": "The first true national park came in 1872 with the dedication of Yellowstone by United States law \"as a public park or pleasuring ground for the benefit and enjoyment of the people\".",
+      "source_chunk": 0,
+      "id": "ce40b862-e4c0-4d24-afbc-5e7c65585ebb",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "National parks institutionalise public‑benefit protection and provide a model for collective stewardship.",
+        "supporting_text": "The first true national park came in 1872 with the dedication of Yellowstone by United States law..."
+      }
+    },
+    {
+      "name": "Sacred groves",
+      "definition": "Traditional protected natural sites regarded as sacred by local communities, representing a universal idea of protecting special places found in parts of Africa.",
+      "key_proponents": [],
+      "supporting_text": "the idea of protection of special places is universal: it occurs among the traditions of communities in the Pacific (\"tapu\" areas) and in parts of Africa (sacred groves), for example.",
+      "source_chunk": 0,
+      "id": "e37f5552-9135-4e6d-811d-a24ce9075597",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Sacred groves illustrate community‑based protection practices that support biodiversity.",
+        "supporting_text": "in parts of Africa (sacred groves)"
+      }
+    },
+    {
+      "name": "Tapu areas",
+      "definition": "Culturally designated protected zones in Pacific communities, reflecting a traditional practice of setting aside land for conservation and spiritual reasons.",
+      "key_proponents": [],
+      "supporting_text": "the idea of protection of special places is universal: it occurs among the traditions of communities in the Pacific (\"tapu\" areas) and in parts of Africa (sacred groves), for example.",
+      "source_chunk": 0,
+      "id": "b24e42ef-751d-4045-b060-24eee76db3b9",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Tapu areas show indigenous cultural mechanisms that restrict use and preserve ecosystems.",
+        "supporting_text": "traditions of communities in the Pacific (“tapu” areas)"
+      }
+    },
+    {
+      "name": "Protected areas as cultural artefacts",
+      "definition": "The concept that protected areas are not only ecological spaces but also cultural objects whose histories are intertwined with human civilisation.",
+      "key_proponents": [],
+      "supporting_text": "Protected areas are cultural artefacts and their story is entwined with that of human civilisation.",
+      "source_chunk": 0,
+      "id": "87262460-1d35-408b-bc2b-dc7f61013c5a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Framing protected areas as cultural artefacts highlights socio‑ecological interdependence, opening pathways for integrated policy.",
+        "supporting_text": "Protected areas are cultural artefacts and their story is entwined with that of human civilisation."
+      }
+    },
+    {
+      "name": "Protected area",
+      "definition": "A geographically defined space that meets the IUCN definition of a protected area, set up for various reasons, located in wilderness or long‑settled landscapes, spanning ecosystems such as forests, savannahs, grasslands, mountains, deserts, wetlands, ice caps, lakes and marine environments; varying widely in size, known by many national names, based on national legislation or international agreements, originating from governmental and other initiatives, owned by diverse interests and managed by different organisations.",
+      "key_proponents": [
+        "International Union for Conservation of Nature (IUCN)",
+        "UNEP/WCMC"
+      ],
+      "supporting_text": "In all, there are well over 100,000 sites that meet the IUCN definition of a protected area (see below). Together, these cover nearly 11.7% of the land surface of the planet (data source: UNEP/WCMC). ... protected areas: ■ have been set up for different reasons; ■ exist in wilderness areas and in long-settled landscapes; ■ are present in forests, savannahs, grasslands, mountains, deserts, wetlands, ice caps, lakes and at sea; ■ vary greatly in size; ■ have been given many different names at the national level; ■ are based on national legislation or international agreements of many kinds; ■ came about through various types of governmental and other initiatives; ■ are owned by different interests; and ■ are run by different kinds of organisations.",
+      "source_chunk": 1,
+      "id": "579cc14d-000b-4fac-98b1-401eb9f94505",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Scale and diversity of protected areas show large‑scale system transformation potential.",
+        "supporting_text": "well over 100,000 sites ... cover nearly 11.7% of the land surface of the planet"
+      }
+    },
+    {
+      "name": "Categories system (for protected areas)",
+      "definition": "A classification framework developed to organise the wide variety of protected areas according to attributes such as purpose of establishment, ecosystem type, size, governance structure, and ownership, addressing the diversity and complexity highlighted by the short history of protected‑area development.",
+      "key_proponents": [],
+      "supporting_text": "Already this very short history hints at some of the issues that gave rise to the development of the categories system.",
+      "source_chunk": 1,
+      "id": "1dab8ea2-5294-4b6a-bfbe-892a5a954446",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Developed in response to identified issues in protected‑area practice.",
+        "supporting_text": "this very short history hints at some of the issues that gave rise to the development of the categories system"
+      }
+    },
+    {
+      "name": "International framework for protected areas",
+      "definition": "A global and regional networked structure that coordinates protected‑area efforts through conventions and programmes such as the World Heritage Convention, the Ramsar Convention, and the European Natura 2000 network, providing an overarching system for designating and managing protected sites worldwide.",
+      "key_proponents": [
+        "World Heritage Convention",
+        "Ramsar Convention",
+        "Natura 2000"
+      ],
+      "supporting_text": "The start of an international framework for protected areas",
+      "source_chunk": 1,
+      "id": "34fdd492-6753-4b98-af89-43de8c0b90c6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Marks the start of a coordinated global structure for protection.",
+        "supporting_text": "The start of an international framework for protected areas"
+      }
+    },
+    {
+      "name": "global framework for protected areas",
+      "definition": "The idea of a worldwide coordinated system for protected areas that emerged from the post‑World War II conservation movement.",
+      "key_proponents": [
+        "IUCN network of volunteer experts"
+      ],
+      "supporting_text": "The emergence of a world‑wide conservation movement after the Second World War encouraged the idea of a global framework for protected areas.",
+      "source_chunk": 2,
+      "id": "110329ab-58cd-4e5c-aa28-f6f52301149a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The concept links disparate national efforts into a coordinated, system‑wide approach.",
+        "supporting_text": "The emergence of a world‑wide conservation movement after the Second World War encouraged the idea of a global framework for protected areas."
+      }
+    },
+    {
+      "name": "protected area categories (1933)",
+      "definition": "Four categories recommended for protected areas: national park, strict nature reserve, fauna and flora reserve, and reserve with prohibition for hunting and collecting.",
+      "key_proponents": [
+        "International Conference for the Protection of Fauna and Flora (1933)"
+      ],
+      "supporting_text": "This recommended four protected area categories (national park, strict nature reserve, fauna and flora reserve, and reserve with prohibition for hunting and collecting), which were widely used by colonial powers in Sub‑Saharan Africa.",
+      "source_chunk": 2,
+      "id": "b3faa4eb-60e5-497a-b6a0-b63bb21bfab9",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced a standardized set of categories that could be adopted internationally.",
+        "supporting_text": "This recommended four protected area categories (national park, strict nature reserve, fauna and flora reserve, and reserve with prohibition for hunting and collecting)"
+      }
+    },
+    {
+      "name": "nomenclature of protected areas",
+      "definition": "The terminology and naming conventions used to describe different types of protected areas, which became the subject of early debate.",
+      "key_proponents": [
+        "C.F. Brockman"
+      ],
+      "supporting_text": "At this meeting, the first proper debate about the 'nomenclature' of protected areas, which was based on a paper by C.F. Brockman, took place.",
+      "source_chunk": 2,
+      "id": "75b5c610-e009-4e1f-abff-08809a072f75",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Debates on nomenclature highlighted the need for consistent terminology to enable system‑wide coordination.",
+        "supporting_text": "At this meeting, the first proper debate about the ‘nomenclature’ of protected areas … took place"
+      }
+    },
+    {
+      "name": "classification system for protected areas (IUCN 1969)",
+      "definition": "A simple classification system that grouped protected lands into ‘national parks’, ‘scientific reserves’ and ‘natural monuments’.",
+      "key_proponents": [
+        "IUCN General Assembly (New Delhi, 1969)"
+      ],
+      "supporting_text": "In it, a simple classification system was used: 'national parks', 'scientific reserves' and 'natural monuments' (Holdgate, 1999).",
+      "source_chunk": 2,
+      "id": "7a87d2d3-3f30-40bc-8efb-00b69aca8b96",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The 1969 definition of ‘national park’ contributed to a formal classification framework.",
+        "supporting_text": "The IUCN General Assembly in New Delhi in 1969 defined ‘national park’ as: “a relatively large area …”"
+      }
+    },
+    {
+      "name": "Dasman's classification of protected areas (1972)",
+      "definition": "A detailed system dividing protected lands into six groups: Protected Anthropological Areas, Protected Historical or Archaeological Areas, Protected Natural Areas, Multiple Use Areas, National Parks, and Related Protected Areas.",
+      "key_proponents": [
+        "Dr Ray Dasmann"
+      ],
+      "supporting_text": "Dasmann proposed the following system of protected areas: 1. Protected Anthropological Areas (Natural Biotic Areas, Cultivated Landscapes, Sites of Special Interest) 2. Protected Historical or Archaeological Areas (Archaeological Sites, Historical Sites) 3. Protected Natural Areas (Strict Natural Areas, Managed Natural Areas, Wilderness Areas) 4. Multiple Use Areas 5. National Parks 6. Related Protected Areas (Provincial Parks, Strict Nature Reserves, Managed Nature Reserves, National Forests and Related Multiple Use Reserves, Anthropological, Archaeological or Historical Reserves).",
+      "source_chunk": 2,
+      "id": "cb35cac7-4d13-4a6b-bcc5-c42916e328ff",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces a new, multi‑category system that expands how protected areas can be conceptualised and managed.",
+        "supporting_text": "Dasmann proposed the following system of protected areas: 1. Protected Anthropological Areas … 6. National Parks"
+      }
+    },
+    {
+      "name": "UN List of protected areas",
+      "definition": "The first comprehensive ‘World List of National Parks and Equivalent Reserves’, compiled by IUCN and published in 1961, later known as the UN List of protected areas.",
+      "key_proponents": [
+        "IUCN protected areas commission"
+      ],
+      "supporting_text": "IUCN's new protected areas commission compiled a 300‑page \"World List of National Parks and Equivalent Reserves\". This – the first version of the now familiar \"UN List\" of protected areas – was published in 1961 and presented at the Seattle First World Conference on National Parks in 1962.",
+      "source_chunk": 2,
+      "id": "fcb2b284-cf37-40c1-ade9-603651cac7f1",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a shared inventory that enables coordination and standard‑setting across nations.",
+        "supporting_text": "first version of the now familiar “UN List” of protected areas – was published in 1961"
+      }
+    },
+    {
+      "name": "Man and Biosphere Programme",
+      "definition": "An international programme, launched in 1971, that links human activity with biosphere conservation and promotes sustainable development within protected areas.",
+      "key_proponents": [],
+      "supporting_text": "New international programmes and treaties were making an impact (e.g.: the Man and Biosphere Programme, initiated in 1971; ...",
+      "source_chunk": 2,
+      "id": "6c9ee807-3e3f-4670-96bf-3e0d7ce43646",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "An international programme that links conservation with sustainable development, opening pathways for systemic change.",
+        "supporting_text": "New international programmes and treaties were making an impact (e.g.: the Man and Biosphere Programme, initiated in 1971"
+      }
+    },
+    {
+      "name": "Ramsar Wetlands Convention",
+      "definition": "A 1971 international treaty focused on the conservation and wise use of wetlands.",
+      "key_proponents": [],
+      "supporting_text": "... the Ramsar Wetlands Convention, 1971; ...",
+      "source_chunk": 2,
+      "id": "fea814aa-298d-4389-8aea-a8ec67ab5d3e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Creates a global treaty framework for wetland protection, expanding the scope of protected‑area governance.",
+        "supporting_text": "New international programmes and treaties were making an impact (e.g.: … the Ramsar Wetlands Convention, 1971"
+      }
+    },
+    {
+      "name": "World Heritage Convention",
+      "definition": "A 1972 UNESCO convention establishing a framework for the identification and protection of world heritage sites, including natural areas.",
+      "key_proponents": [],
+      "supporting_text": "... and the World Heritage Convention, 1972).",
+      "source_chunk": 2,
+      "id": "980b225e-0173-4298-9f1d-ea839bf03f36",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Establishes an international mechanism that recognises and safeguards sites of universal value.",
+        "supporting_text": "New international programmes and treaties were making an impact (e.g.: … and the World Heritage Convention, 1972"
+      }
+    },
+    {
+      "name": "Categories system for protected areas",
+      "definition": "A framework that groups protected lands into ten categories based on their management objectives rather than national names, allowing a broad set of legal and managerial options for conservation land management.",
+      "key_proponents": [
+        "Dr Kenton Miller",
+        "CNPPA Committee on Criteria and Nomenclature",
+        "Rockefeller Foundation",
+        "IUCN"
+      ],
+      "supporting_text": "The work was funded by the Rockefeller Foundation and led by Dr Kenton Miller, chair of the CNPPA Committee on Criteria and Nomenclature... It advocated using a range of categories, based on management objectives rather than national names. These categories of land were to be thought of as \"members of one family, free from dominance one by another\".",
+      "source_chunk": 3,
+      "id": "1142d250-7d09-439e-a00d-3cd63b775c06"
+    },
+    {
+      "name": "National park (as a protected‑area concept)",
+      "definition": "The most common method for the management of conservation areas, representing one approach among many to protected‑area conservation and can be complemented by other distinct categories.",
+      "key_proponents": [
+        "1969 New Delhi definition"
+      ],
+      "supporting_text": "The committee incorporated the agreed 1969 New Delhi definition of national park, but recognised that this was only one approach among many to protected areas conservation. \"The national park was the most common method for the management of conservation areas ...(but it) can be complemented by other distinct categories...\"",
+      "source_chunk": 3,
+      "id": "a3a9883b-b1ac-4ed5-a0af-8a1aaf3abfb0"
+    },
+    {
+      "name": "Management objectives (as a categorisation principle)",
+      "definition": "The guiding criteria for assigning protected‑area categories, focusing on the purpose for which an area is managed rather than on its national or linguistic label.",
+      "key_proponents": [],
+      "supporting_text": "It advocated using a range of categories, based on management objectives rather than national names... regardless of nomenclature used by nations or consistent to particular languages, a conservation area can be recognised and categorised by the objectives for which it is in fact managed.",
+      "source_chunk": 3,
+      "id": "05e3bb6c-abba-4bdc-88ee-22263de73722"
+    },
+    {
+      "name": "Conservation area (conceptual definition)",
+      "definition": "A land or sea area that is managed for conservation purposes and can be recognised and categorised according to its management objectives, independent of the specific name or legal terminology used by a nation.",
+      "key_proponents": [],
+      "supporting_text": "ensure that \"regardless of nomenclature used by nations or consistent to particular languages, a conservation area can be recognised and categorised by the objectives for which it is in fact managed\" (ibid, page 6).",
+      "source_chunk": 3,
+      "id": "6d2a2ad8-de9e-487e-80bb-22c7c0bc4ab0"
+    },
+    {
+      "name": "Protected Areas Management Categories (1994 system)",
+      "definition": "The adopted 1994 framework that updates and expands the earlier IUCN categorisation, providing a standardized set of categories for protected‑area management worldwide.",
+      "key_proponents": [
+        "IUCN"
+      ],
+      "supporting_text": "The adoption of the 1994 system of Protected Areas Management Categories",
+      "source_chunk": 3,
+      "id": "3e2e9bac-1c64-4482-bb7b-f898473cf6dc"
+    },
+    {
+      "name": "IUCN protected area categories",
+      "definition": "A classification system for protected areas that, after revision, consists of six categories built around management objectives, replacing the earlier 1978 system (Categories I‑V) and abandoning Categories VI‑X.",
+      "key_proponents": [
+        "CNPPA",
+        "IUCN General Assembly",
+        "Hal Eidsvik (task force chair)",
+        "P.H.C. (Bing) Lucas",
+        "International Union for Conservation of Nature (IUCN)",
+        "World Commission on Protected Areas (WCPA)"
+      ],
+      "supporting_text": "endorse a system of six protected area categories based on management objectives; ... the IUCN General Assembly, meeting in Buenos Aires, approved the new system, commended it to governments and called on CNPPA to finalise guidance to explain it.",
+      "id": "df9b64d8-83f7-4c42-bb14-f13d7c58ecc1",
+      "variations": [
+        "IUCN protected area categories"
+      ],
+      "source_chunks": [
+        4,
+        5
+      ],
+      "supporting_texts": [
+        "endorse a system of six protected area categories based on management objectives; ... the IUCN General Assembly, meeting in Buenos Aires, approved the new system, commended it to governments and called on CNPPA to finalise guidance to explain it.",
+        "The first five categories equate broadly to the first five of the 1978 system, whereas Category VI embodies some of the ideas from former Categories VI, VII and VIII. ... A number of important principles are set out in the 1994 Guidelines to help explain the system: ■ the basis of categorisation by primary management objective assignment is not a commentary on management effectiveness; ■ the categories system is international; ... ■ a gradation of human intervention is implied."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The category framework structures how protected areas are classified and managed globally, enabling systemic transformation.",
+        "supporting_text": "the IUCN protected‑area categories system"
+      }
+    },
+    {
+      "name": "Protected area (definition)",
+      "definition": "An area of land and/or sea especially dedicated to the protection and maintenance of biological diversity, and of natural and associated cultural resources, and managed through legal or other effective means.",
+      "key_proponents": [
+        "IUCN (through the Guidelines for Protected Area Management Categories)"
+      ],
+      "supporting_text": "Part I of the Guidelines sets out a definition of a protected area: An area of land and/or sea especially dedicated to the protection and maintenance of biological diversity, and of natural and associated cultural resources, and managed through legal or other effective means.",
+      "source_chunk": 4,
+      "id": "3d7989ca-d9a9-4fef-b27b-cc93877c6d01",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Sets the universe of applicability, enabling systematic categorisation.",
+        "supporting_text": "Part I of the Guidelines sets out a definition of a protected area"
+      }
+    },
+    {
+      "name": "Common language for protected‑area stakeholders",
+      "definition": "A shared terminology that enables managers, planners, researchers, politicians and citizen groups in all countries to exchange information and views about protected areas.",
+      "key_proponents": [
+        "P.H.C. (Bing) Lucas"
+      ],
+      "supporting_text": "\"These guidelines have a special significance as they are intended for everyone involved in protected areas, providing a common language by which managers, planners, researchers, politicians and citizens groups in all countries can exchange information and views\".",
+      "source_chunk": 4,
+      "id": "82f1e357-05cf-429d-9cd6-5440ea41c3ff",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Facilitates communication and coordination among managers, planners, researchers and citizens.",
+        "supporting_text": "providing a common language by which managers, planners, researchers, politicians and citizens groups ... can exchange information"
+      }
+    },
+    {
+      "name": "Management objectives as basis for categorisation",
+      "definition": "The principle that protected‑area categories should be assigned according to the specific conservation and use goals that guide the management of each area.",
+      "key_proponents": [
+        "IUCN Council",
+        "CNPPA",
+        "Hal Eidsvik"
+      ],
+      "supporting_text": "endorse a system of six protected area categories based on management objectives",
+      "source_chunk": 4,
+      "id": "06639ef4-36d9-4ee1-93dc-97fcbbe6cf82",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Defines the systematic basis for assigning categories, enabling a shift in how protected areas are managed.",
+        "supporting_text": "The Guidelines ... define ... Management objectives as basis for categorisation."
+      }
+    },
+    {
+      "name": "International standards for protected‑area accounting and comparison",
+      "definition": "Guidelines that provide a uniform framework for collecting, handling and disseminating data about protected areas, enabling global and regional accounting and cross‑country comparisons.",
+      "key_proponents": [
+        "IUCN",
+        "World Conservation Monitoring Centre (WCMC)"
+      ],
+      "supporting_text": "to provide international standards to help global and regional accounting and comparisons between countries; to provide a framework for the collection, handling and dissemination of data about protected areas",
+      "source_chunk": 4,
+      "id": "cc7875ff-8c8c-400b-9856-b3daa70217c0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Standardised accounting creates cross‑scale comparability, opening pathways for system‑wide improvement.",
+        "supporting_text": "to provide international standards to help global and regional accounting and comparisons between countries"
+      }
+    },
+    {
+      "name": "Category VI (protected area category)",
+      "definition": "A protected‑area category that allows for sustainable use of natural resources, requiring that at least two‑thirds of the area remain in an essentially natural state, excludes large commercial plantations, and may accommodate limited permanent human presence.",
+      "key_proponents": [
+        "Developing‑country participants at the Caracas Congress",
+        "IUCN",
+        "World Commission on Protected Areas (WCPA)"
+      ],
+      "supporting_text": "The introduction of Category VI came in response to a concern among many developing country participants at the Caracas Congress that protected areas should include places where resources are conserved in essentially their natural condition as a basis for sustainable use. ... At least two‑thirds of the area must be, and remain, in 'an essentially natural state' (this is defined). Large commercial plantations are excluded.",
+      "source_chunk": 5,
+      "id": "be707d35-085f-496b-9b47-0d6b29c2ec96",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Category VI introduces a hybrid conservation‑use model, opening pathways for new governance arrangements.",
+        "supporting_text": "The introduction of Category VI… must be managed for the long term protection and maintenance of biodiversity."
+      }
+    },
+    {
+      "name": "IUCN protected area category system",
+      "definition": "A classification framework that assigns protected areas to management categories (e.g., Categories I‑IV, V) to provide a basis for reporting, recording, and guiding management objectives.",
+      "key_proponents": [
+        "International Union for Conservation of Nature (IUCN)",
+        "World Commission on Protected Areas (WCPA)",
+        "Convention on Biological Diversity (CBD)",
+        "National governments"
+      ],
+      "supporting_text": "The definitive version was issued in 1994, and has lately received intergovernmental recognition. … the system of protected area categories continues to evolve …",
+      "source_chunk": 6,
+      "id": "bf8fb6e6-df16-41cf-866b-bca107a36708"
+    },
+    {
+      "name": "United Nations List of Protected Areas",
+      "definition": "A publication (1997 and 2003 versions) that classifies individual protected areas by the management category to which they have been assigned.",
+      "key_proponents": [
+        "United Nations",
+        "IUCN/WCMC"
+      ],
+      "supporting_text": "The publication of the United Nations List of Protected Areas (1997 and 2003 versions) which classifies individual protected areas by the management category to which they have been assigned (IUCN/WCMC, 1998 and Chape et al., 2003).",
+      "source_chunk": 6,
+      "id": "f68180a0-098e-4851-ab71-02692f985ca8"
+    },
+    {
+      "name": "Best Practice Protected Area Guidelines Series",
+      "definition": "A series of guidelines produced by IUCN and Cardiff University that promotes the use of the IUCN protected‑area category system across all volumes, including specific guidance on Category V.",
+      "key_proponents": [
+        "International Union for Conservation of Nature (IUCN)",
+        "Cardiff University"
+      ],
+      "supporting_text": "the publications in the IUCN/Cardiff University Best Practice Protected Area Guidelines Series, which promotes the use of the system in all eleven volumes published to date, including specific guidance on Category V (Phillips, 2002).",
+      "source_chunk": 6,
+      "id": "01ca5a48-3ef0-44b8-9309-c4df54dfaab3"
+    },
+    {
+      "name": "Principle of excluding mining from protected area Categories I‑IV",
+      "definition": "A principle stating that governments and other actors should ensure that mining operations of all kinds are excluded from protected areas classified in Categories I through IV.",
+      "key_proponents": [
+        "World Commission on Protected Areas (WCPA)",
+        "IUCN World Conservation Congress (Recommendation 2.82)"
+      ],
+      "supporting_text": "A position statement on mining and protected areas, developed by WCPA 1998, which argued that governments and others should ensure that mining operations of all kinds were excluded from protected area Categories I‑IV.",
+      "source_chunk": 6,
+      "id": "1d29815b-781f-4879-b977-ee88bbc6fd52",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The principle proposes a concrete policy rule that guides governments to protect nature, enabling coordinated action to keep mining out of high‑value protected areas.",
+        "supporting_text": "a position statement on mining and protected areas ... argued that governments ... should ensure that mining operations ... were excluded from protected area Categories I–IV."
+      }
+    },
+    {
+      "name": "Idea of categorising protected areas by their objectives",
+      "definition": "The conceptual approach of grouping protected areas based on the specific conservation or management objectives they are intended to achieve.",
+      "key_proponents": [
+        "IUCN protected‑area experts",
+        "World Commission on Protected Areas (WCPA)"
+      ],
+      "supporting_text": "This is the background to the idea of categorising protected areas by their objectives.",
+      "source_chunk": 6,
+      "id": "cedac1ac-6cae-48e8-a285-a06eca164d7d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The idea introduces a systematic framework that can reshape how protected areas are managed and coordinated across scales.",
+        "supporting_text": "the idea of categorising protected areas by their objectives."
+      }
+    },
+    {
+      "name": "IUCN system of protected area management categories",
+      "definition": "A classification system for protected areas developed by the International Union for Conservation of Nature (IUCN) that provides a set of categories to label protected areas according to their management objectives; it has been used as a reference in national legislation and policy frameworks worldwide.",
+      "key_proponents": [
+        "International Union for Conservation of Nature (IUCN)",
+        "IUCN Environmental Law Centre (ELC)",
+        "P.H.C. (Bing) Lucas (former WCPA Chair)"
+      ],
+      "supporting_text": "As part of the Speaking a Common Language project, the World Conservation Union's (IUCN) Environmental Law Centre (ELC) was asked to research legal and policy frameworks for protected areas to see whether these have been influenced by the IUCN system of protected area management categories.",
+      "source_chunk": 7,
+      "id": "5b24ba6c-ecef-4621-865c-ab165c79c47b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The core classification that has been adopted in legislation and policy, shaping how protected areas are managed globally.",
+        "supporting_text": "Over 10% of legislation... has been strongly influenced by the IUCN guidance, including that for several major States..."
+      }
+    },
+    {
+      "name": "1994 IUCN Protected Area Management Categories",
+      "definition": "The 1994 guidelines that introduced the IUCN protected‑area classification system; they serve as an international framework for dialogue about protected areas and have been incorporated into various legal and policy instruments.",
+      "key_proponents": [
+        "IUCN",
+        "P.H.C. (Bing) Lucas"
+      ],
+      "supporting_text": "The research was focused on protected area information dated from 1978 onwards, which is when the first IUCN categories system was published (see article by Phillips in this issue of PARKS).",
+      "source_chunk": 7,
+      "id": "7329e472-1e44-4c9b-85ae-a1355150f81e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The 1994 guidelines serve as the reference point for the legal and policy influence documented in the study.",
+        "supporting_text": "the first IUCN categories system was published (see article by Phillips in this issue of PARKS)."
+      }
+    },
+    {
+      "name": "CBD Programme of Work on Protected Areas",
+      "definition": "A programme adopted by the Convention on Biological Diversity in early 2004 that endorses the IUCN protected‑area categories and supports the Speaking a Common Language project, representing a significant development in promoting the categories through a global instrument.",
+      "key_proponents": [
+        "Convention on Biological Diversity (CBD)"
+      ],
+      "supporting_text": "But early in 2004, the Convention on Biological Diversity (CBD) adopted a Programme of Work on Protected Areas, which endorses the categories system and supports the Speaking a Common Language project.",
+      "source_chunk": 7,
+      "id": "25b0b3ab-bab8-4480-9e23-b4b41dea7ef8",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Endorses the IUCN categories at the global level, raising their legitimacy and visibility.",
+        "supporting_text": "the Convention on Biological Diversity (CBD) adopted a Programme of Work on Protected Areas, which endorses the categories system"
+      }
+    },
+    {
+      "name": "Speaking a Common Language project",
+      "definition": "A project coordinated by the IUCN Environmental Law Centre to research and document how legal and policy frameworks for protected areas have been influenced by the IUCN protected‑area management categories.",
+      "key_proponents": [
+        "IUCN Environmental Law Centre (ELC)"
+      ],
+      "supporting_text": "AS PART OF THE SPEAKING A COMMON LANGUAGE PROJECT, the Environmental Law Centre (ELC) of IUCN - The World Conservation Union, was asked to research legal and policy frameworks for protected areas to see whether these have been influenced by the IUCN system of protected area management categories.",
+      "source_chunk": 7,
+      "id": "29d2c1bf-ec36-4ca3-bc5d-48d810f8680a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The project mobilises actors to assess and disseminate knowledge about category influence, supporting coordinated action.",
+        "supporting_text": "As part of the Speaking a Common Language project, the Environmental Law Centre (ELC) of IUCN was asked to research..."
+      }
+    },
+    {
+      "name": "Single international classification system for protected areas",
+      "definition": "The concept that a unified, globally‑recognised classification of protected‑area categories is valuable for ensuring consistent understanding, reporting, and communication across countries and institutions.",
+      "key_proponents": [
+        "CBD Programme of Work on Protected Areas",
+        "IUCN",
+        "Convention on Biological Diversity – Conference of the Parties (CBD/CoP7)",
+        "IUCN World Commission on Protected Areas (WCPA)"
+      ],
+      "supporting_text": "This need is formally reflected in the CBD Programme of Work on Protected Areas, which speaks of 'the value of a single international classification system for protected areas'.",
+      "id": "8251ecd9-a352-45e0-80a8-7c18bde49e02",
+      "variations": [
+        "Single international classification system for protected areas",
+        "single international classification system for protected areas"
+      ],
+      "source_chunks": [
+        7,
+        8
+      ],
+      "supporting_texts": [
+        "This need is formally reflected in the CBD Programme of Work on Protected Areas, which speaks of 'the value of a single international classification system for protected areas'.",
+        "Recognises the value of a single international classification system for protected areas and the benefit of providing information that is comparable across countries and regions and therefore welcomes the on‑going efforts of the IUCN WCPA to refine the IUCN system of categories."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Proposed as a unifying framework that can align national and international protected‑area reporting.",
+        "supporting_text": "the value of a single international classification system for protected areas"
+      }
+    },
+    {
+      "name": "Non‑driving principle of IUCN categories",
+      "definition": "A principle stating that IUCN protected‑area categories should not be used as a ‘driving’ mechanism for governments or organisations; instead, protected areas should first be established to meet national, local, or private goals and then labelled according to the appropriate IUCN category.",
+      "key_proponents": [
+        "P.H.C. (Bing) Lucas (former WCPA Chair)"
+      ],
+      "supporting_text": "In his Introduction to the guidance, the then WCPA Chair, P.H.C. (Bing) Lucas emphasised that \"these categories must in no way be considered as a 'driving' mechanism for governments or organisations in deciding the purposes of potential protected areas. Protected areas should be established to meet objectives consistent with national, local or private goals and needs ... and only then labelled with an IUCN category according to the management objectives developed herein\".",
+      "source_chunk": 7,
+      "id": "fb0f9296-3d68-4b9b-8954-f435f15f4931",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Clarifies that categories should not be used as a coercive mechanism, highlighting a common misconception in policy design.",
+        "supporting_text": "these categories must in no way be considered as a ‘driving’ mechanism for governments or organisations"
+      }
+    },
+    {
+      "name": "IUCN system of categories",
+      "definition": "An international classification system for protected areas that is refined by the IUCN World Commission on Protected Areas (WCPA) and used by Parties, governments and organisations to assign management categories to protected areas for consistent reporting.",
+      "key_proponents": [
+        "IUCN World Commission on Protected Areas (WCPA)",
+        "Convention on Biological Diversity – Conference of the Parties (CBD/CoP7)"
+      ],
+      "supporting_text": "the on‑going efforts of the IUCN WCPA to refine the IUCN system of categories and encourages Parties, other Governments and relevant organisations to assign protected area management categories to their protected areas, providing information consistent with the refined IUCN categories for reporting purposes.",
+      "source_chunk": 8,
+      "id": "bc0446a4-afdf-46ba-af4e-96594f2d6446",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The system underpins international classification and thus can drive systemic change in conservation practice.",
+        "supporting_text": "The IUCN categories had a strong influence on the development of the revised Convention"
+      }
+    },
+    {
+      "name": "Conservation Area",
+      "definition": "Any protected area designated and managed mainly or wholly for one of several purposes, including science or wilderness protection, ecosystem protection and recreation, conservation of specific natural features, management interventions, landscape/seascape conservation and recreation, or the sustainable use of natural ecosystems.",
+      "key_proponents": [
+        "African governmental experts (Interagency Taskforce)",
+        "Parties to the revised African Convention on the Conservation of Nature and Natural Resources (2003)"
+      ],
+      "supporting_text": "Article V, defines a \"Conservation Area\" as any protected area designated and managed mainly or wholly for one of the following purposes: i) Science or wilderness protection (Strict Nature Reserve/Wilderness Areas); ii) Ecosystem protection and recreation (National Parks) iii) Conservation of specific natural features (National Monuments) iv Conservation through management interventions (Habitat/Species Management Areas) v) Landscape/seascape conservation and re‑creation (Protected Landscapes/Seascapes); vi) The sustainable use of natural ecosystems (Managed Resource Protected Areas).",
+      "source_chunk": 8,
+      "id": "9ca9e194-c6e3-4501-ad72-d6fee491c439",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Defining the term provides a legal and operational target for protected‑area creation.",
+        "supporting_text": "Article V, defines a “Conservation Area” as any protected area designated and managed"
+      }
+    },
+    {
+      "name": "IUCN protected area management categories",
+      "definition": "An international classification system that assigns protected areas to specific categories based on their primary management purpose, used to guide conservation planning and management.",
+      "key_proponents": [
+        "International Union for Conservation of Nature (IUCN)",
+        "Australian Commonwealth Government",
+        "Argentinian Government"
+      ],
+      "supporting_text": "The IUCN protected area management categories concept is slowly filtering down into Australian State and Territory legal and policy frameworks and is also beginning to be implemented in the field and incorporated into park management plans.",
+      "source_chunk": 9,
+      "id": "f34c4214-e3c6-4574-bdc2-119ee29e40ff",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The category system provides the classification backbone for systematic conservation planning.",
+        "supporting_text": "IUCN protected area management categories"
+      }
+    },
+    {
+      "name": "Australian IUCN Reserve Management Principles",
+      "definition": "A set of principles derived from IUCN management guidelines that dictate how Commonwealth reserves must be managed according to their assigned IUCN category.",
+      "key_proponents": [
+        "Australian Government (through the EPBC Act and Regulations)",
+        "IUCN"
+      ],
+      "supporting_text": "The Act requires that each Commonwealth Reserve be assigned to one of the categories and that these reserves must be managed in accordance with the Australian IUCN Reserve Management Principles for that category - principles that have been strongly influenced by the IUCN management guidelines and criteria.",
+      "source_chunk": 9,
+      "id": "a572095a-caed-4859-bbf2-97296e53d74a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "These principles adapt the global IUCN categories to the Australian legal context.",
+        "supporting_text": "The EPBC Regulations set out the Australian IUCN Reserve Management Principles for each IUCN category."
+      }
+    },
+    {
+      "name": "National Reserve System (Australia)",
+      "definition": "A national network of protected areas established under Australian Guidelines for Establishing the National Reserve System, intended to coordinate and standardise protected‑area categories across all Australian jurisdictions.",
+      "key_proponents": [
+        "Australian Commonwealth Government",
+        "State and Territory Governments of Australia",
+        "Australian and New Zealand Environment and Conservation Council"
+      ],
+      "supporting_text": "In 1999, all States and Territories agreed (through the Australian and New Zealand Environment and Conservation Council) to the Australian Guidelines for Establishing the National Reserve System.",
+      "source_chunk": 9,
+      "id": "dd850f78-06d9-4988-8b42-5bf22afe2993",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "A national reserve system links individual protected areas into a coordinated network.",
+        "supporting_text": "Australian Guidelines for Establishing the National Reserve System"
+      }
+    },
+    {
+      "name": "National Strategy on Protected Areas (Argentina)",
+      "definition": "Argentina's policy framework aimed at conserving the country's natural heritage and promoting sustainable development by harmonising the management categories of protected areas across 25 jurisdictions with the international IUCN terminology.",
+      "key_proponents": [
+        "Argentinian Government",
+        "IUCN (as reference for category terminology)"
+      ],
+      "supporting_text": "The National Strategy on Protected Areas aims to achieve the conservation of Argentina's natural heritage, and to contribute to the sustainable development of the country. The policy specifically mentions the IUCN category system and aims \"To homogenise the different management categories of Protected Areas used at present in the 25 jurisdictions, adapting them to the international terminology that was established by the World Commission on Protected Areas of the World Conservation Union (IUCN)\".",
+      "source_chunk": 9,
+      "id": "2ce16b21-bc28-4044-b017-805638445d49",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The strategy provides a national blueprint for protected‑area categorisation and management.",
+        "supporting_text": "The National Strategy on Protected Areas aims to achieve the conservation of Argentina’s natural heritage…"
+      }
+    }
+  ]
+}

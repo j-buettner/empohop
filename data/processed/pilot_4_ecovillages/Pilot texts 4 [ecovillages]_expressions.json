@@ -1,0 +1,383 @@
+{
+  "expressions": [
+    {
+      "title": "Very little heroes' History and Roots of the Eco-Village movement",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "Judit Farkas",
+        "University of Pécs, Institute of Human Relations, Department of European Ethnology and Cultural Anthropology"
+      ],
+      "supporting_text": "'Very little heroes' History and Roots of the Eco-Village movement1",
+      "source_chunk": 0,
+      "id": "c09776a5-30d5-46c0-9584-3ca98d0cc30f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The title frames the study and raises awareness of the eco‑village movement.",
+        "supporting_text": "‘Very little heroes’ History and Roots of the Eco-Village movement"
+      }
+    },
+    {
+      "title": "Civilisation, Its Cause and Cure",
+      "type": "Book",
+      "year": 1889,
+      "actors": [
+        "Edward Carpenter"
+      ],
+      "supporting_text": "Civilisation, Its Cause and Cure (1889) has become the Bible of the social movements.",
+      "source_chunk": 3,
+      "id": "af5ded4e-02c3-4c40-9f02-cbcd836ab2f5",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Described as the “Bible” of social movements, shaping discourse.",
+        "supporting_text": "has become the Bible of the social movements"
+      }
+    },
+    {
+      "title": "Mother Earth News",
+      "type": "Other",
+      "year": 1975,
+      "actors": [],
+      "supporting_text": "the magazine called Mother Earth News (Hendersonville, North-California) started to set up organic gardens and energy saving houses next to their offices in 1975",
+      "source_chunk": 5,
+      "id": "c1f88c4c-9886-489a-be42-d7ba4f529f25",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Media outlet that broadcasted the eco‑village label to a broad audience.",
+        "supporting_text": "Mother Earth News ... started to call themselves eco‑village from 1979 on"
+      }
+    },
+    {
+      "title": "In Context",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "Robert Gilman",
+        "Diane Gilman"
+      ],
+      "supporting_text": "Robert and Diane Gilman in their paper called In Context (Seattle) commenced to report on this and similar initiatives at the turn of the 1980s-1990s.",
+      "source_chunk": 5,
+      "id": "9ecf95bf-0e2e-42aa-a791-f4df555d874f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Paper that presented co‑housing as a model for sustainable living, encouraging replication.",
+        "supporting_text": "Robert and Diane Gilman ... believed such initiatives may serve as a model for sustainable ways of life"
+      }
+    },
+    {
+      "title": "Global Ecovillage Network (GEN)",
+      "type": "Other",
+      "year": 1994,
+      "actors": [],
+      "supporting_text": "The international network, Global Ecovillage Network (GEN) was launched in 1994, in which the Hungarian Gyűrűfű project has already been involved as one of the funding members.",
+      "source_chunk": 5,
+      "id": "057aa47a-5e5b-447b-accd-0b90aeea46d2",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Network that coordinates and disseminates eco‑village practices internationally.",
+        "supporting_text": "The international network, Global Ecovillage Network (GEN) was launched in 1994"
+      }
+    },
+    {
+      "title": "Danish eco‑village network",
+      "type": "Other",
+      "year": 1993,
+      "actors": [],
+      "supporting_text": "In 1993 the Danish eco‑village network was set up, the first of this kind, which later served as a model for the later launched international eco‑village movement.",
+      "source_chunk": 5,
+      "id": "8abeb663-fc60-4560-82a7-4bebda638e02",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "National platform that links Danish eco‑villages and shares knowledge.",
+        "supporting_text": "In 1993 the Danish eco‑village network was set up, the first of this kind"
+      }
+    },
+    {
+      "title": "From Islands to Networks: The History and Future of the Ecovillage Movement",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "Jonathan Dawson"
+      ],
+      "supporting_text": "From Islands to Networks The History and Future of the Ecovillage Movement",
+      "source_chunk": 6,
+      "id": "6ffc4e52-1504-4b6c-9cc0-6deeee8e5a60",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The title frames the movement’s past and future, indicating its capacity to shift system dynamics toward ecological harmony.",
+        "supporting_text": "From Islands to Networks: The History and Future of the Ecovillage Movement"
+      }
+    },
+    {
+      "title": "Local Agenda 21 award",
+      "type": "Other",
+      "year": 2004,
+      "actors": [
+        "ZEGG",
+        "regional administration of Potsdam-Mittelmark"
+      ],
+      "supporting_text": "In 2004, ZEGG won the \"Local Agenda 21\" award set up by the regional administration of Potsdam-Mittelmark in the state of Brandenburg for the ensemble of its ecological work in the region.",
+      "source_chunk": 7,
+      "id": "724ffab1-e907-4871-b2a4-64a995fe010c",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The award symbolises external validation, increasing public and institutional acceptance of ecovillage practices.",
+        "supporting_text": "ZEGG won the “Local Agenda 21” award set up by the regional administration…"
+      }
+    },
+    {
+      "title": "UN CIFAL training center",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "Findhorn Foundation"
+      ],
+      "supporting_text": "Today, the ecovillage hosts a UN CIFAL training center (one of eleven such centers worldwide), which provides sustainability-related training for local governments and other local actors.",
+      "source_chunk": 7,
+      "id": "31d4a383-a8c7-451e-b41f-f594a0475e49",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides sustainability training to local governments, building capacity for broader systemic change.",
+        "supporting_text": "Findhorn hosts a UN CIFAL training center … which provides sustainability‑related training for local governments and other local actors."
+      }
+    },
+    {
+      "title": "Ecodyfi initiative",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "Centre for Alternative Technology",
+        "local authorities",
+        "Welsh Assembly",
+        "community groups",
+        "specialist organizations"
+      ],
+      "supporting_text": "The Centre for Alternative Technology, a founding member of the GEN, is a leading player in the Ecodyfi initiative in Wales, an effort that brings together local authorities, the Welsh Assembly, various community groups, and specialist organizations with the mission \"to foster sustainable community regeneration in the Dyfi valley\".",
+      "source_chunk": 7,
+      "id": "96eab99f-f11e-4342-98a2-2890b016280b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Co‑ordinates multiple stakeholders to regenerate the Dyfi valley, exemplifying collaborative regional sustainability.",
+        "supporting_text": "Ecodyfi initiative … brings together local authorities, the Welsh Assembly, various community groups … to foster sustainable community regeneration."
+      }
+    },
+    {
+      "title": "National Agency for Ecovillages",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "government of Senegal",
+        "GEN Senegal"
+      ],
+      "supporting_text": "The most striking recent breakthrough has been the decision by the government of Senegal to create a National Agency for Ecovillages.",
+      "source_chunk": 7,
+      "id": "4b55025e-389e-41a6-8d77-9f1ba5b37fee",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "State‑level agency aims to transform all villages, indicating a systemic shift toward ecovillage models.",
+        "supporting_text": "The government of Senegal … create a National Agency for Ecovillages… aim to transform all of Senegal’s fourteen thousand villages into ecovillages."
+      }
+    },
+    {
+      "title": "La Caravana Arcoiris por la Paz",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "La Caravana Arcoiris por la Paz",
+        "Brazilian government",
+        "Secretariat of Culture in the Coyoacán district of Mexico City"
+      ],
+      "supporting_text": "La Caravana Arcoiris por la Paz (the Rainbow Caravan of Peace), a community of artists and ecological activists that have toured Latin America for the last ten years... Between 2005 and 2008, La Caravana was commissioned by the Brazilian government to help develop fifty community-based cultural centers in Brazilian towns and villages.",
+      "source_chunk": 7,
+      "id": "81a34db2-60a8-4462-b26a-468067128fb3",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Mobilises artists and activists across Latin America to spread sustainability through cultural engagement.",
+        "supporting_text": "La Caravana … have toured Latin America … teaching sustainability through the arts."
+      }
+    },
+    {
+      "title": "Save Our Water Now campaign",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "The Farm"
+      ],
+      "supporting_text": "More than thirty years ago, its Save Our Water Now campaign organized local groups to stop deep-well injection into a regional aquifer by pesticide and herbicide companies.",
+      "source_chunk": 7,
+      "id": "d17a995a-39d1-428a-b2a5-67a4ebae1033",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Organises local groups to protect water resources, demonstrating grassroots environmental advocacy.",
+        "supporting_text": "The Farm … Save Our Water Now campaign organized local groups to stop deep‑well injection into a regional aquifer…"
+      }
+    },
+    {
+      "title": "Big Swan Headwaters Preserve",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "The Farm",
+        "local conservation organizations",
+        "state and local governments",
+        "Nature Conservancy"
+      ],
+      "supporting_text": "Its Big Swan Headwaters Preserve drew together local conservation organizations, state and local governments, and international charities like Nature Conservancy to protect more than three thousand contiguous acres from logging, subdivision, and development.",
+      "source_chunk": 7,
+      "id": "cece3e11-85be-4172-92e9-232751746183",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Aggregates NGOs, governments, and charities to protect a large contiguous natural area.",
+        "supporting_text": "Its Big Swan Headwaters Preserve drew together local conservation organizations, state and local governments, and international charities … to protect more than three thousand acres."
+      }
+    },
+    {
+      "title": "Peace Roots",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "The Farm"
+      ],
+      "supporting_text": "The Farm has also organized an antiwar network--Peace Roots--that aligns veterans, farmers, students, and the general public in campaigns to oppose continued war spending.",
+      "source_chunk": 7,
+      "id": "ae946a32-cef3-49aa-a989-181fca83afa3",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Creates a cross‑sector anti‑war network, linking diverse participants around a common sustainability‑linked cause.",
+        "supporting_text": "The Farm has also organized an antiwar network—Peace Roots—that aligns veterans, farmers, students, and the general public in campaigns…"
+      }
+    },
+    {
+      "title": "Plenty",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "The Farm"
+      ],
+      "supporting_text": "An international charity based at the Farm--Plenty--works in emergency relief arenas like post-hurricane New Orleans, post-earthquake Haiti, and the Gulf Coast in the aftermath of the BP Deepwater Horizon disaster.",
+      "source_chunk": 7,
+      "id": "7d33803e-47d5-4428-a04e-f5688b3dbbd1",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Plenty mobilises emergency relief, incubates community enterprises and convenes local stakeholders, building capacity for ecological regeneration.",
+        "supporting_text": "An international charity based at the Farm—Plenty—works in emergency relief arenas ... incubating community‑based enterprises and essential services, and bringing together local stakeholder groups."
+      }
+    },
+    {
+      "title": "Gaia University",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "ecovillage‑based institutes"
+      ],
+      "supporting_text": "university students are gaining credits from conventional universities for semesters spent in ecovillages ... and degrees from ecovillage‑based institutes through the recently organized Gaia University.",
+      "source_chunk": 7,
+      "id": "b65b55e7-c7e7-4d00-b2ed-64c1bdf798f0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Gaia University provides formal education and credentials, expanding knowledge and participation in ecovillage practices.",
+        "supporting_text": "University students are gaining credits ... and degrees from ecovillage‑based institutes through the recently organized Gaia University."
+      }
+    },
+    {
+      "title": "UN Habitat Scroll of Honor",
+      "type": "Other",
+      "year": 2009,
+      "actors": [
+        "Sarvodaya",
+        "United Nations (UN‑Habitat)"
+      ],
+      "supporting_text": "In 2009, Sarvodaya was awarded the United Nations' prestigious UN Habitat Scroll of Honor in special recognition of its achievements in helping communities recover from the effects of the tsunami.",
+      "source_chunk": 8,
+      "id": "31006169-919e-4ccd-b77d-f2ddea8ddd02",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The award symbolises formal recognition that can legitimize ecovillage approaches.",
+        "supporting_text": "UN Habitat Scroll of Honor"
+      }
+    },
+    {
+      "title": "Right Livelihood Award",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "The Farm"
+      ],
+      "supporting_text": "For its work in protecting indigenous cultures of the Americas through Plenty, The Farm received the first Right Livelihood Award, presented in the Swedish parliament in Stockholm.",
+      "source_chunk": 8,
+      "id": "cefef5c2-367e-47b4-b14b-00a1be0c41f1",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The award highlights the relevance of ecovillage‑linked cultural protection work.",
+        "supporting_text": "The Farm received the first Right Livelihood Award, presented in the Swedish parliament in Stockholm."
+      }
+    },
+    {
+      "title": "Gaia Education curriculum",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "Gaia Education",
+        "United Nations Institute for Training and Research (UNITAR)",
+        "UNESCO"
+      ],
+      "supporting_text": "Gaia Education has developed an educational curriculum drawn from best practice within ecovillages globally... The curriculum, developed by educators based in ecovillages around the world, has been endorsed by the United Nations Institute for Training and Research (UNITAR) and welcomed by the United Nations Educational, Scientific and Cultural Organisation (UNESCO) as a valuable contribution to its UN Decade of Education for Sustainable Development.",
+      "source_chunk": 8,
+      "id": "7a1d32bf-1266-43a3-9a16-bf88ed407c66",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The curriculum equips learners worldwide with ecovillage‑derived sustainability practices.",
+        "supporting_text": "Gaia Education has developed an educational curriculum ... endorsed by UNITAR and welcomed by UNESCO."
+      }
+    },
+    {
+      "title": "UN Decade of Education for Sustainable Development",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "UNESCO",
+        "United Nations"
+      ],
+      "supporting_text": "The curriculum ... has been endorsed by the United Nations Institute for Training and Research (UNITAR) and welcomed by the United Nations Educational, Scientific and Cultural Organisation (UNESCO) as a valuable contribution to its UN Decade of Education for Sustainable Development.",
+      "source_chunk": 8,
+      "id": "23066b82-4934-4e69-9d21-8cd212960465",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Linking the curriculum to the UN Decade raises its global policy relevance.",
+        "supporting_text": "welcomed by UNESCO as a valuable contribution to its UN Decade of Education for Sustainable Development."
+      }
+    },
+    {
+      "title": "Open University of Catalunya master's program",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "Open University of Catalunya"
+      ],
+      "supporting_text": "The course is now being taught in ecovillages, universities, and community centers on every continent and has been taught virtually for several years through the Open University of Catalunya in Spain, where it is now offered as a master's program.",
+      "source_chunk": 8,
+      "id": "a2fa55ab-b18b-4912-995b-11ad102b89e1",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The master’s program formalises training that can spread ecovillage knowledge.",
+        "supporting_text": "taught virtually ... through the Open University of Catalunya in Spain, where it is now offered as a master’s program."
+      }
+    },
+    {
+      "title": "Future Scenarios",
+      "type": "Book",
+      "year": 2009,
+      "actors": [
+        "David Holmgren"
+      ],
+      "supporting_text": "David Holmgren's Future Scenarios provides some insights into how the near- to medium-term future may unfold and the likely relevance of initiatives that are based on ecological design principles, such as ecovillages (Holmgren 2009).",
+      "source_chunk": 8,
+      "id": "ca20c3c6-b43d-4848-9979-17d462414d7b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The scenario framework outlines how systemic shifts could elevate ecovillage relevance.",
+        "supporting_text": "Future Scenarios"
+      }
+    }
+  ]
+}

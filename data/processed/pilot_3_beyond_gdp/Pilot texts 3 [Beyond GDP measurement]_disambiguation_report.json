@@ -1,0 +1,1563 @@
+{
+  "summary": {
+    "total_merges": 73,
+    "merges_by_type": {
+      "actor": 21,
+      "concept": 28,
+      "event": 3,
+      "location": 21
+    },
+    "manual_mapping_count": 0,
+    "low_confidence_merges": 1,
+    "timestamp": "2026-04-11 10:53:21"
+  },
+  "merges": [
+    {
+      "type": "actor",
+      "canonical_name": "World Bank",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 6,
+      "source_chunks": [
+        1,
+        4,
+        11,
+        19,
+        21,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International financial institution that provides loans and grants to the governments of poorer coun...",
+          "An international development institution that offers financial and technical assistance to developin...",
+          "International development bank founded in 1944....",
+          "International financial institution headquartered in Washington, D.C., USA....",
+          "International financial institution that publishes adjusted net savings and comprehensive wealth ind...",
+          "International financial institution that provides loans and grants to the governments of poorer coun..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "United Nations",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 6,
+      "source_chunks": [
+        1,
+        2,
+        15,
+        22,
+        23,
+        25
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Intergovernmental organization tasked with promoting international cooperation and maintaining peace...",
+          "Intergovernmental organization that coordinates global policy, including development goals and stati...",
+          "International organization that adopted and updated the System of National Accounts....",
+          "The intergovernmental body that produces the Human Development Report and promotes composite indicat...",
+          "International intergovernmental organization comprising member states worldwide....",
+          "The global intergovernmental organization that coordinates international cooperation on a wide range..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Simon Kuznets",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 6,
+      "source_chunks": [
+        2,
+        11,
+        12,
+        15,
+        19,
+        21
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Economist and pioneer of national accounting who highlighted the limits of GDP as a welfare measure....",
+          "Economist who produced the landmark 1934 report on national income for the U.S. Congress and later a...",
+          "American economist, pioneer of national income accounting, Nobel laureate (1971)....",
+          "American economist and Nobel laureate, pioneer of national income accounting....",
+          "American economist who originally developed GDP and later criticized its limitations....",
+          "Economist known for the Kuznets curve and critique of national accounts...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Organisation for Economic Co‑operation and Development (OECD)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 5,
+      "source_chunks": [
+        1,
+        4,
+        11,
+        17,
+        19
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International intergovernmental organization that promotes policies to improve the economic and soci...",
+          "An intergovernmental economic organisation that promotes policies to improve the economic and social...",
+          "International intergovernmental economic organisation founded in 1948 (originally OEEC)....",
+          "An international intergovernmental organization that coordinates economic policy and statistical ini...",
+          "International intergovernmental economic organisation headquartered in Paris, France...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "European Commission",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        1,
+        19,
+        24,
+        25
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Executive branch of the European Union responsible for proposing legislation and implementing decisi...",
+          "Executive body of the European Union, based in Brussels, Belgium....",
+          "Executive branch of the European Union responsible for proposing legislation and implementing decisi...",
+          "The executive branch of the European Union, responsible for proposing legislation and ensuring its i..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "United Nations (UN)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        4,
+        8,
+        11,
+        19
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "An international intergovernmental organization founded to promote peace, security, and cooperation ...",
+          "An intergovernmental organization comprising all member states, responsible for adopting global poli...",
+          "International organization established in 1945....",
+          "International organization headquartered in New York, USA...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "OECD",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        12,
+        16,
+        20,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Organisation for Economic Co‑operation and Development, an intergovernmental economic organization....",
+          "The Organisation for Economic Co‑operation and Development, an intergovernmental economic organizati...",
+          "The Organisation for Economic Co‑operation and Development, an international intergovernmental organ...",
+          "Organisation for Economic Co‑operation and Development, an intergovernmental economic organization...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "International Monetary Fund (IMF)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        1,
+        4,
+        11
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International organization that works to ensure the stability of the global monetary system....",
+          "A global financial institution that provides monetary cooperation and financial stability....",
+          "International financial institution created at the 1944 Bretton Woods Conference...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "John Maynard Keynes",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        4,
+        11,
+        15
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "British economist whose ideas fundamentally shaped modern macroeconomics and national income account...",
+          "British economist, author of *The General Theory of Employment, Interest and Money* (1936)....",
+          "Influential British economist whose ideas underpinned early national accounting concepts...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Netherlands",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        11,
+        22,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "National government of the Netherlands....",
+          "European country whose government produced an early composite wellbeing indicator....",
+          "A European country that later introduced Type 4 indicator sets...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Eurostat",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        19,
+        23,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Statistical office of the European Union, headquartered in Luxembourg....",
+          "Statistical office of the European Union responsible for producing European-wide statistics....",
+          "Statistical office of the European Union, part of the European Commission...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Bureau of Economic Analysis (BEA)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        1
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "U.S. statistical agency whose civil servants compile the quarterly GDP report....",
+          "U.S. government agency that compiles and publishes national economic accounts, including quarterly G..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "European Union",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        20
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Supranational political and economic union of 27 European member states....",
+          "Supranational political and economic union of European member states...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "World Wildlife Fund",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        22
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International non‑governmental organization focused on conservation and environmental research....",
+          "International non‑governmental organization that promotes the use of the ecological footprint as a m..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Paul Samuelson",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        3,
+        11
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Nobel Prize‑winning economist known for his contributions to macroeconomics and welfare economics....",
+          "American economist, Nobel laureate (1970)...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "United States",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        11,
+        14
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Federal government of the United States of America....",
+          "Federal government of the United States of America...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Norway",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        11,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "National government of Norway....",
+          "A European country that began creating indicator sets based on conceptual frameworks in the mid‑2000..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Robert Lucas",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        12
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "American economist, Nobel laureate (1995), founder of the new classical school....",
+          "American economist, Nobel laureate, founder of the new classical school...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "John Kenneth Galbraith",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        12,
+        19
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Canadian‑American economist and author of *The Affluent Society*....",
+          "Harvard economist and author of *The Affluent Society*...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Nicolas Sarkozy",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        14,
+        19
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Former President of France, interviewed about the Stiglitz Report....",
+          "President of France (2007‑2012)...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Global Footprint Network",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        17,
+        22
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "A non‑profit organization that develops and disseminates the Ecological Footprint accounting framewo...",
+          "A global network that compiles, standardises and disseminates ecological footprint data for countrie..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "System of National Accounts (SNA)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 9,
+      "source_chunks": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8,
+        11,
+        15,
+        16
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "green accounting",
+      "variations": [
+        "Green Accounting",
+        "Green accounting",
+        "Green accounting",
+        "Green accounting",
+        "Green accounting"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 9,
+      "source_chunks": [
+        2,
+        6,
+        7,
+        9,
+        19,
+        21,
+        24,
+        25,
+        26
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Beyond‑GDP",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 7,
+      "source_chunks": [
+        2,
+        3,
+        8,
+        9,
+        16,
+        19,
+        26
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Gross Domestic Product (GDP)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 5,
+      "source_chunks": [
+        0,
+        1,
+        3,
+        4,
+        17
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Sustainable development",
+      "variations": [
+        "Sustainable Development",
+        "sustainable development"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 5,
+      "source_chunks": [
+        7,
+        8,
+        13,
+        19,
+        21
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "ecological footprint",
+      "variations": [
+        "Ecological Footprint",
+        "Ecological Footprint",
+        "Ecological footprint"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        2,
+        7,
+        17,
+        22
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Beyond-GDP",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        6,
+        7,
+        14,
+        17
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Human Development Index (HDI)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        2,
+        17,
+        22
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "human capital",
+      "variations": [
+        "Human capital",
+        "Human Capital"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        4,
+        7,
+        11
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Subjective well‑being",
+      "variations": [
+        "subjective well‑being"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        6,
+        19,
+        20
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Sustainable Development Goals (SDGs)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        8,
+        9,
+        23
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Official Development Assistance (ODA)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        1
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Sustainable National Income (SNI)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        21
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Genuine Progress Indicator (GPI)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        21
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Schumpeterian dream",
+      "variations": [
+        "Schumpeterian Dream"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        3,
+        17
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Social capital",
+      "variations": [
+        "Social Capital"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Natural capital",
+      "variations": [
+        "Natural Capital"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Ecosystem services",
+      "variations": [
+        "Ecosystem Services"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "GDP multinational",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        6,
+        16
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Capability approach",
+      "variations": [
+        "Capability Approach"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        7,
+        22
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Sustainability",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        7,
+        8
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "System of Global and National Accounts (SGNA)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        8,
+        9
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "environmental economics",
+      "variations": [
+        "Environmental economics"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        13,
+        19
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "National income accounting",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        15,
+        16
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "System of Environmental and Economic Accounts (SEEA)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        17,
+        21
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Sustainable Development Indicators (SDI)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        17,
+        23
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Beyond‑GDP initiatives",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        20,
+        23
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Wealth accounting",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        21,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "event",
+      "canonical_name": "Fall of the Berlin Wall",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        12,
+        15
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The fall of the Berlin Wall and the collapse of the communist system reinforced the perception that ...",
+          "The collapse of the Berlin Wall ended the revision process of the Material Product System, leaving t..."
+        ],
+        "years": [
+          1989
+        ]
+      }
+    },
+    {
+      "type": "event",
+      "canonical_name": "Rio+10 Conference",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        19,
+        23
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The tenth anniversary conference of the 1992 Earth Summit, renewing momentum for Agenda 21 implement...",
+          "The Rio+10 Conference in 2002 stimulated many countries that had not yet done so to create a Sustain..."
+        ],
+        "years": [
+          2002
+        ]
+      }
+    },
+    {
+      "type": "event",
+      "canonical_name": "Publication of the Stiglitz Report",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        19,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Report of the CMEPSP, formally titled \"Report of the Commission on the Measurement of Economic Perfo...",
+          "Joseph Stiglitz’s report on measuring economic performance and sustainability was released, critiqui..."
+        ],
+        "years": [
+          2009
+        ]
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "United States",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 9,
+      "source_chunks": [
+        0,
+        1,
+        11,
+        12,
+        14,
+        15,
+        20,
+        21,
+        26
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The nation whose national accounts are discussed and whose GDP is reported each quarter....",
+          "Country whose GDP growth is tracked and compared with other major economies....",
+          "Early participant in national income accounting (1843) and later a major driver of statistical devel...",
+          "The United States experienced financial troubles in the late 1960s, partly due to the Vietnam War, i...",
+          "Country where the subprime mortgage market collapsed in 2007 and where the financial crisis of 2008 ...",
+          "Key participant in the development and adoption of the Keynes‑Stone accounting structure and the SNA...",
+          "The first SWB questionnaire survey was conducted in the United States in 1946, marking the post‑Worl...",
+          "Country referenced as the jurisdiction of the two states that have introduced official GPI measures....",
+          "Country where environmental accounts were discontinued in the 1990s by Congress, illustrating resist..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "United Kingdom",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 5,
+      "source_chunks": [
+        1,
+        11,
+        15,
+        19,
+        23
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "One of the major economies frequently cited in media headlines about GDP growth (referred to as the ...",
+          "Early national income estimates were produced for this country in the 17th century....",
+          "Country where tensions over national accounts were less evident and where Keynesian ideas received s...",
+          "Country whose prime minister David Cameron launched a process to measure subjective well‑being and a...",
+          "Country mentioned as having its own well‑being indicator set (the UK's Wheel of Well‑being)...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Netherlands",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 5,
+      "source_chunks": [
+        11,
+        15,
+        22,
+        24,
+        25
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Early participant in national income accounting (1798)....",
+          "One of the nations represented on the post‑war subcommittee and later mentioned as having its own na...",
+          "Country where the Life Situation Index (LSI) was produced in the early 1970s, cited as an early exam...",
+          "Later introduced Type 4 indicator sets....",
+          "Country where environmental accounts started in the 1990s...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "European Union",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        0,
+        1,
+        19,
+        20
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The supranational organization to which EU member states contribute based on GNI....",
+          "Supranational bloc whose member states release quarterly GDP figures and must follow SNA‑based legal...",
+          "Supranational organization whose statistical office Eurostat began work on Sustainable Development I...",
+          "From 1973, subjective well‑being questions were incorporated into the European Union's Eurobarometer..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "France",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        1,
+        11,
+        19,
+        25
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "One of the major economies frequently cited in media headlines about GDP growth....",
+          "One of the first European states to develop national income measurement, mentioned as a counterpart ...",
+          "Country whose president Nicolas Sarkozy set up the Commission on the Measurement of Economic Perform...",
+          "One of the early countries where environmental accounts began in the 1970s...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "United Nations",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        2,
+        4,
+        11,
+        19
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International organization that publishes the Human Development Report and coordinates the Sustainab...",
+          "One of the post‑World War II international institutions that grew during the “big government” era an...",
+          "International organization that began collecting national accounts data in 1952....",
+          "International organization that created the United Nations World Commission on Environment and Devel..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Norway",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        11,
+        15,
+        24,
+        25
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Early participant in national income accounting (1893)....",
+          "One of the nations represented on the post‑war subcommittee that worked on national income accountin...",
+          "One of the first countries in the mid‑2000s to create indicator sets based on conceptual frameworks....",
+          "One of the early countries where environmental accounts began in the 1970s...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Maryland",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        0,
+        1,
+        21
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The U.S. state where the lock‑up facility at 4600 Silver Hill Road is located....",
+          "U.S. state where BEA officials calculate quarterly GDP growth for the United States....",
+          "U.S. state that has introduced an official Genuine Progress Indicator (GPI) measure...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "China",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        1,
+        14,
+        26
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "One of the major economies frequently cited in media headlines about GDP growth....",
+          "Country noted for its previously spectacular growth rates that are now slowing, illustrating low‑gro...",
+          "Country where a green accounting initiative was halted after publication, showing challenges to adop..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "World Bank",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        4,
+        11,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "A post‑war international development institution that exemplifies the growing influence of economic ...",
+          "One of the major post‑Bretton Woods institutions tasked with overseeing the new economic order....",
+          "Mentioned as an institution where wealth accounting had become popular in the 1990s...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "OECD",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        4,
+        11,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The Organisation for Economic Co‑operation and Development, founded in the post‑war period as part o...",
+          "International body noted for stimulating research on national income....",
+          "Co‑created the Working Group for Statistics on Sustainable Development (WGSSD) in 2004...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Europe",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        13,
+        14,
+        15
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "In the 1970s, Europe faced the emerging problem of acid rain, which later spurred the development of...",
+          "Continent where populist parties have been gaining electoral appeal, influencing attitudes toward st...",
+          "Region where the British/American system became entrenched in statistical practice...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Germany",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        11
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "One of the major economies frequently cited in media headlines about GDP growth....",
+          "Early participant in national income accounting (1863‑1899)...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Bhutan",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        23
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Small, isolated country mentioned as an example of a state that has challenged the dominance of GDP ...",
+          "The country where the Gross National Happiness programme was initiated by the King in the early 1970..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Bretton Woods",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        11,
+        12
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Site of the 1944 conference that created the post‑war economic order....",
+          "Site in New Hampshire, USA, where the 1944 conference established the Bretton Woods monetary system...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Western world",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        11,
+        12
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Broad cultural‑economic region noted for rapid post‑war growth....",
+          "Refers to the collective societies of Europe and North America where student protests erupted in 196..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Canada",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        15,
+        26
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "One of the nations represented on the post‑war subcommittee that worked on national income accountin...",
+          "Country examined for the disappointing uptake of Beyond‑GDP indicators, highlighting national-level ..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Switzerland",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        15,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "One of the nations represented on the post‑war subcommittee that worked on national income accountin...",
+          "One of the first countries in the mid‑2000s to create indicator sets based on conceptual frameworks...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Rio de Janeiro",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        19,
+        23
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Host city of the 1992 Earth Summit (United Nations Conference on Environment and Development) that i...",
+          "Host city of the 1992 Rio Earth Summit and the 2012 Rio+20 Conference, key events that promoted Sust..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "European Commission",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        24,
+        25
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Partnered with UNECE, OECD and Eurostat to create the Working Group for Statistics on Sustainable De...",
+          "European Union body that made SEEA accounts legally binding for all European countries...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Australia",
+      "variations": [
+        "Austria"
+      ],
+      "manual_mappings": [],
+      "confidence": 0.7500000000000001,
+      "average_similarity": 0.75,
+      "cluster_size": 2,
+      "source_chunks": [
+        11
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Early participant in national income accounting (1861)....",
+          "Early participant in national income accounting (1886)...."
+        ],
+        "years": []
+      }
+    }
+  ]
+}

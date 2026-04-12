@@ -1,0 +1,1294 @@
+{
+  "locations": [
+    {
+      "name": "India",
+      "type": "Country",
+      "country": "India",
+      "description": "Ancient protected areas were set aside by royal decree over 2,000 years ago. Uses IUCN categories in protected‑area policy but not in national legislation.",
+      "supporting_text": "The countries found to have protected area policy that has used the IUCN categories (Level 1 and Level 2) include ... India ...",
+      "id": "3f8c09df-545f-41fe-acee-c3d715c3eb6a",
+      "variations": [
+        "India"
+      ],
+      "source_chunks": [
+        0,
+        7
+      ],
+      "supporting_texts": [
+        "The countries found to have protected area policy that has used the IUCN categories (Level 1 and Level 2) include ... India ...",
+        "Over 2,000 years ago, some areas were set aside by royal decree in India for the protection of natural resources"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "India’s protected‑area policy references IUCN categories, supporting national strategy development.",
+        "supporting_text": "“India … have used the IUCN categories in their policies.”"
+      }
+    },
+    {
+      "name": "Europe",
+      "type": "Region",
+      "country": null,
+      "description": "Geographic region referenced in a publication on applying the Guidelines. Historical hunting grounds were protected for the rich and powerful for a thousand years. Region where the Natura 2000 network of protected areas operates at the regional level.",
+      "supporting_text": "regional level (e.g. Natura 2000 in Europe)",
+      "id": "d5ff80a0-762e-4eb8-997c-674e9ae376d2",
+      "variations": [
+        "Europe"
+      ],
+      "source_chunks": [
+        0,
+        1,
+        5
+      ],
+      "supporting_texts": [
+        "regional level (e.g. Natura 2000 in Europe)",
+        "In Europe, hunting grounds were protected for the rich and powerful for a thousand years.",
+        "e.g. for Europe (EUROPARC and IUCN, 1999)"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "EUROPARC publication spreads the categories across Europe, raising their visibility and legitimacy.",
+        "supporting_text": "publications on how to apply the Guidelines ... for Europe (EUROPARC and IUCN, 1999)"
+      }
+    },
+    {
+      "name": "Pacific",
+      "type": "Region",
+      "country": null,
+      "description": "Traditional “tapu” areas reflect community‑based protection of special places.",
+      "supporting_text": "it occurs among the traditions of communities in the Pacific (\"tapu\" areas)",
+      "source_chunk": 0,
+      "id": "e0667477-a9d0-4218-9b7b-a07e2297a020",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Indigenous “tapu” areas illustrate community‑based conservation models.",
+        "supporting_text": "the traditions of communities in the Pacific (“tapu” areas)."
+      }
+    },
+    {
+      "name": "Africa",
+      "type": "Region",
+      "country": null,
+      "description": "Geographic region referenced in relation to a group of African governmental experts who modified the revised African Convention to suit regional circumstances. Sacred groves and later large game parks illustrate the African tradition of protected places.",
+      "supporting_text": "a group of African governmental experts",
+      "id": "38c37d69-c85c-4326-b91e-722431d570a1",
+      "variations": [
+        "Africa"
+      ],
+      "source_chunks": [
+        0,
+        8
+      ],
+      "supporting_texts": [
+        "a group of African governmental experts",
+        "in parts of Africa (sacred groves) ... For example, in Africa, a number of large game parks were created"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Regional adoption of IUCN categories shows how continental frameworks can shift conservation systems.",
+        "supporting_text": "The IUCN categories had a strong influence on the development of the revised Convention"
+      }
+    },
+    {
+      "name": "Lake District",
+      "type": "Other",
+      "country": "United Kingdom",
+      "description": "William Wordsworth described it in 1810 as a sort of national property, an early vision of protected landscapes.",
+      "supporting_text": "The English poet, William Wordsworth, wrote in 1810 of his vision of the Lake District as \"a sort of national property\"",
+      "source_chunk": 0,
+      "id": "a5bfbe52-385e-4edb-9368-d8d0f63c7fef",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Cultural appreciation of the landscape helped seed the protected‑area idea.",
+        "supporting_text": "The English poet, William Wordsworth, wrote in 1810 of his vision of the Lake District as “a sort of national property”."
+      }
+    },
+    {
+      "name": "United States",
+      "type": "Country",
+      "country": null,
+      "description": "Site of early national park legislation, including the Yosemite Grant and the creation of Yellowstone.",
+      "supporting_text": "In 1864, with the Yosemite Grant, the US Congress gave a small part of the present Yosemite National Park to the State of California ... The first true national park came in 1872 with the dedication of Yellowstone by United States law",
+      "source_chunk": 0,
+      "id": "a9d1becc-2e7b-46c9-a45b-c5018cd8aa9b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Early national‑park legislation set a model for modern protected‑area systems.",
+        "supporting_text": "The first true national park came in 1872 with the dedication of Yellowstone by United States law."
+      }
+    },
+    {
+      "name": "Yosemite National Park",
+      "type": "Other",
+      "country": "United States",
+      "description": "One of the earliest U.S. protected areas, partially granted to California in 1864.",
+      "supporting_text": "In 1864, with the Yosemite Grant, the US Congress gave a small part of the present Yosemite National Park to the State of California for \"public use, resort and recreation\"",
+      "source_chunk": 0,
+      "id": "b4bb05d3-0b6f-42cc-bd2c-ac3bf731ec12",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The Yosemite Grant directly allocated land for public protection and recreation.",
+        "supporting_text": "Yosemite Grant ... gave a small part of the present Yosemite National Park to the State of California."
+      }
+    },
+    {
+      "name": "California",
+      "type": "Region",
+      "country": "United States",
+      "description": "State that received part of Yosemite for public use under the 1864 grant.",
+      "supporting_text": "the US Congress gave a small part of the present Yosemite National Park to the State of California for \"public use, resort and recreation\"",
+      "source_chunk": 0,
+      "id": "aacbbe74-96cf-4627-9650-4d8dc2b16dcc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "State-level recipient of the Yosemite Grant, enabling management of protected land.",
+        "supporting_text": "Yosemite Grant ... gave a small part of the present Yosemite National Park to the State of California."
+      }
+    },
+    {
+      "name": "New South Wales",
+      "type": "Region",
+      "country": "Australia",
+      "description": "Australian state mentioned as a site for national‑level workshops on the Guidelines. British colony that took the first steps toward creating the modern Blue Mountains National Park in 1866.",
+      "supporting_text": "e.g. in Australia, UK, New South Wales, Finland, Canada and China",
+      "id": "babcd2ac-1b09-4d5a-85bc-aefc2185ac56",
+      "variations": [
+        "New South Wales"
+      ],
+      "source_chunks": [
+        0,
+        5
+      ],
+      "supporting_texts": [
+        "e.g. in Australia, UK, New South Wales, Finland, Canada and China",
+        "In 1866, the British Colony of New South Wales in Australia took the first steps in creation of the modern Blue Mountains National Park"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Workshops in New South Wales support the translation of guidelines into practice.",
+        "supporting_text": "National level workshops designed to explore how to apply the Guidelines in a local context, e.g. in ... New South Wales"
+      }
+    },
+    {
+      "name": "Australia",
+      "type": "Country",
+      "country": "Australia",
+      "description": "Country where early national parks such as Blue Mountains and Royal National Park were established in the 19th century. One of the countries that uses a distinct set of names (about 50) for its protected areas. One of the countries where national‑level workshops were held to explore application of the 1994 Guidelines. One of the major states whose legislation has been strongly influenced by the IUCN protected‑area categories; also the only country that specifically mentions IUCN in its legislation (Level 1). The nation where the Environment Protection and Biodiversity Conservation Act (EPBC) 1999 was developed and implemented.",
+      "supporting_text": "including several major States, such as Australia and Brazil.",
+      "id": "e58e932d-5c80-461b-8688-da1e9c4d1c18",
+      "variations": [
+        "Australia"
+      ],
+      "source_chunks": [
+        0,
+        1,
+        5,
+        7,
+        9
+      ],
+      "supporting_texts": [
+        "including several major States, such as Australia and Brazil.",
+        "In 1866, the British Colony of New South Wales in Australia ... and in 1879, Royal National Park was created in the wilds south of Sydney",
+        "with - for example - about 50 in Australia and some 12 in the UK",
+        "e.g. in Australia, UK, New South Wales, Finland, Canada and China",
+        "Box 3. Australia: Environment Protection and Biodiversity Conservation Act (EPBC) 1999 (Level 1)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The country’s legislation and guidelines embed IUCN categories, illustrating a national systemic shift toward harmony with nature.",
+        "supporting_text": "The EPBC Act... promotes biodiversity conservation by ensuring the protection of matters of national environmental significance"
+      }
+    },
+    {
+      "name": "Blue Mountains National Park",
+      "type": "Other",
+      "country": "Australia",
+      "description": "One of the first modern national parks, its creation began in New South Wales in 1866.",
+      "supporting_text": "the British Colony of New South Wales in Australia took the first steps in creation of the modern Blue Mountains National Park",
+      "source_chunk": 0,
+      "id": "bdbdc5be-8207-4bb2-93e0-24e77990f02b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "One of the first modern parks, its establishment exemplifies concrete action to allocate space for nature.",
+        "supporting_text": "In 1866, the British Colony of New South Wales in Australia took the first steps in creation of the modern Blue Mountains National Park"
+      }
+    },
+    {
+      "name": "Royal National Park",
+      "type": "Other",
+      "country": "Australia",
+      "description": "Established in 1879 in the wilds south of Sydney, it is one of the world’s earliest national parks.",
+      "supporting_text": "in 1879, Royal National Park was created in the wilds south of Sydney",
+      "source_chunk": 0,
+      "id": "318ff5df-663c-4c8d-abf6-b3a54d6424cc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Created in 1879, it demonstrates early institutional effort to protect natural landscapes for public benefit.",
+        "supporting_text": "In 1879, Royal National Park was created in the wilds south of Sydney"
+      }
+    },
+    {
+      "name": "Sydney",
+      "type": "City",
+      "country": "Australia",
+      "description": "Metropolitan city near which Royal National Park was created.",
+      "supporting_text": "Royal National Park was created in the wilds south of Sydney",
+      "source_chunk": 0,
+      "id": "bb0373f9-74e4-4015-a881-af492d3652d0",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned only as a geographic reference; no direct role in advancing protection is described.",
+        "supporting_text": "Royal National Park was created in the wilds south of Sydney"
+      }
+    },
+    {
+      "name": "Canada",
+      "type": "Country",
+      "country": null,
+      "description": "Country that protected hot springs in the Bow Valley, later forming Banff National Park. One of the countries where national‑level workshops were held to explore application of the 1994 Guidelines.",
+      "supporting_text": "e.g. in Australia, UK, New South Wales, Finland, Canada and China",
+      "id": "245a1b5b-6da7-4782-a9fa-354b483c0c6b",
+      "variations": [
+        "Canada"
+      ],
+      "source_chunks": [
+        0,
+        5
+      ],
+      "supporting_texts": [
+        "e.g. in Australia, UK, New South Wales, Finland, Canada and China",
+        "In 1885, Canada gave protection to hot springs in the Bow Valley of the Rocky Mountains, part of which became the Banff National Park"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Canadian workshops help translate the categories into national practice.",
+        "supporting_text": "National level workshops designed to explore how to apply the Guidelines in a local context, e.g. in ... Canada"
+      }
+    },
+    {
+      "name": "Bow Valley",
+      "type": "Region",
+      "country": "Canada",
+      "description": "Area in the Rocky Mountains where hot springs were protected in 1885, leading to Banff National Park.",
+      "supporting_text": "Canada gave protection to hot springs in the Bow Valley of the Rocky Mountains, part of which became the Banff National Park",
+      "source_chunk": 0,
+      "id": "082792a0-82f9-45b4-a843-e9ed690fd8c2",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Specific site where early protection was enacted, enabling the creation of a flagship national park.",
+        "supporting_text": "Canada gave protection to hot springs in the Bow Valley of the Rocky Mountains"
+      }
+    },
+    {
+      "name": "Banff National Park",
+      "type": "Other",
+      "country": "Canada",
+      "description": "One of Canada’s first national parks, originating from protected hot springs in the Bow Valley.",
+      "supporting_text": "part of which became the Banff National Park",
+      "source_chunk": 0,
+      "id": "046154cd-0781-43bd-bac2-95721ce0081c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Result of early protective measures, illustrating successful allocation of space for nature.",
+        "supporting_text": "part of which became the Banff National Park"
+      }
+    },
+    {
+      "name": "South Africa",
+      "type": "Country",
+      "country": null,
+      "description": "Country where several forest reserves were established in the late 19th century and later large game parks were created.",
+      "supporting_text": "Several forest reserves were set up in South Africa in the last years of the nineteenth century ... For example, in Africa, a number of large game parks were created",
+      "source_chunk": 0,
+      "id": "00bb5f46-22af-4b57-a352-3836832c29b7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Establishment of forest reserves in the late 19th century shows governmental action toward conservation.",
+        "supporting_text": "Several forest reserves were set up in South Africa in the last years of the nineteenth century"
+      }
+    },
+    {
+      "name": "New Zealand",
+      "type": "Country",
+      "country": null,
+      "description": "Country where a Maori chief offered sacred mountain summits that later formed Tongariro National Park.",
+      "supporting_text": "In 1887 a Maori Chief offered the Crown 2,400 ha of the sacred summits of Tongariro, Ngauruhoe and Ruapehu: these became in time part of Tongariro National Park in New Zealand",
+      "source_chunk": 0,
+      "id": "f55d2ab8-e4bb-4c3b-af4f-caa08c4ca8f8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Indigenous offer of sacred land to the Crown led to a national park, reflecting collaborative protection effort.",
+        "supporting_text": "In 1887 a Maori Chief offered the Crown 2,400 ha ... these became in time part of Tongariro National Park in New Zealand"
+      }
+    },
+    {
+      "name": "Tongariro National Park",
+      "type": "Other",
+      "country": "New Zealand",
+      "description": "Protected area created from sacred mountain summits offered by a Maori chief in 1887.",
+      "supporting_text": "these became in time part of Tongariro National Park in New Zealand",
+      "source_chunk": 0,
+      "id": "66771d1c-86b7-4b91-8fa1-549c66093458",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Result of a joint Maori‑Crown initiative, exemplifying early co‑managed protected area creation.",
+        "supporting_text": "these became in time part of Tongariro National Park in New Zealand"
+      }
+    },
+    {
+      "name": "North America",
+      "type": "Region",
+      "country": null,
+      "description": "One of the “new” nations in the 19th‑century origins of the modern protected‑area movement.",
+      "supporting_text": "Thus the modern protected areas movement had nineteenth century origins in the then \"new\" nations of North America, Australia, New Zealand and South Africa",
+      "source_chunk": 0,
+      "id": "25030d58-6491-4fb7-bf8d-4305be7666b2",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Region where the first national park (Yellowstone) was established, marking a seminal collective conservation act.",
+        "supporting_text": "The first true national park came in 1872 with the dedication of Yellowstone by United States law"
+      }
+    },
+    {
+      "name": "United Kingdom",
+      "type": "Country",
+      "country": null,
+      "description": "One of the countries that uses a distinct set of names (some 12) for its protected areas. One of the countries where national‑level workshops were held to explore application of the 1994 Guidelines.",
+      "supporting_text": "with - for example - about 50 in Australia and some 12 in the UK",
+      "id": "f43a1e2d-a9db-48b6-978b-399ca830b408",
+      "variations": [
+        "United Kingdom"
+      ],
+      "source_chunks": [
+        1,
+        5
+      ],
+      "supporting_texts": [
+        "with - for example - about 50 in Australia and some 12 in the UK",
+        "e.g. in Australia, UK, New South Wales, Finland, Canada and China"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Workshops in the United Kingdom enable local actors to implement the categories.",
+        "supporting_text": "National level workshops designed to explore how to apply the Guidelines in a local context, e.g. in ... United Kingdom"
+      }
+    },
+    {
+      "name": "UNEP/WCMC",
+      "type": "Institution",
+      "country": null,
+      "description": "The United Nations Environment Programme World Conservation Monitoring Centre, cited as the data source for the extent of protected areas.",
+      "supporting_text": "data source: UNEP/WCMC",
+      "source_chunk": 1,
+      "id": "d7b4a92d-fd40-46d9-bd76-d4b4b34106f4",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Listed as a location but the text gives no functional relevance.",
+        "supporting_text": "data source: UNEP/WCMC"
+      }
+    },
+    {
+      "name": "London",
+      "type": "City",
+      "country": "United Kingdom",
+      "description": "Host of the 1933 International Conference for the Protection of Fauna and Flora, the first effort to clarify protected‑area terminology.",
+      "supporting_text": "the International Conference for the Protection of Fauna and Flora, held in London",
+      "source_chunk": 2,
+      "id": "e28fd835-fd61-4365-afcb-a4f26eed3b44",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "London is only mentioned as the venue of a 1933 conference; no direct contribution to harmony is described.",
+        "supporting_text": "International Conference for the Protection of Fauna and Flora (1933), held in London"
+      }
+    },
+    {
+      "name": "Sub‑Saharan Africa",
+      "type": "Region",
+      "country": null,
+      "description": "Region where colonial powers widely applied the four protected‑area categories recommended in 1933.",
+      "supporting_text": "which were widely used by colonial powers in Sub‑Saharan Africa",
+      "source_chunk": 2,
+      "id": "f1750350-99b4-4b3f-b8c7-a1c629dacf21",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The text notes colonial powers applied the 1933 categories there, highlighting a historical power dynamic.",
+        "supporting_text": "categories … were widely used by colonial powers in Sub‑Saharan Africa"
+      }
+    },
+    {
+      "name": "Western Hemisphere",
+      "type": "Region",
+      "country": null,
+      "description": "Geographic scope of the 1942 Pan American Convention on Nature Protection and Wildlife Preservation.",
+      "supporting_text": "Pan American Convention on Nature Protection and Wildlife Preservation in the Western Hemisphere",
+      "source_chunk": 2,
+      "id": "b73a5d1d-be5b-4beb-b7fa-f201ecd21941",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The Pan American Convention applied its categories to the Western Hemisphere, reflecting a regional, possibly colonial, framework.",
+        "supporting_text": "Pan American Convention … incorporated four types … in the Western Hemisphere"
+      }
+    },
+    {
+      "name": "Seattle",
+      "type": "City",
+      "country": "United States",
+      "description": "Venue of the First World Conference on National Parks (1962) where the inaugural UN List of protected areas was presented.",
+      "supporting_text": "presented at the Seattle First World Conference on National Parks in 1962",
+      "source_chunk": 2,
+      "id": "7a4999f3-b33b-4790-83f7-7503b0f2f82e",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The Seattle conference presented the first UN List, raising the profile of protected‑area standards.",
+        "supporting_text": "presented at the Seattle First World Conference on National Parks in 1962"
+      }
+    },
+    {
+      "name": "New Delhi",
+      "type": "City",
+      "country": "India",
+      "description": "Location of the IUCN General Assembly in 1969 that defined the term “national park”. The city where the 1969 definition of national park was agreed, referenced in the 1978 IUCN report on protected‑area categories.",
+      "supporting_text": "The IUCN General Assembly in New Delhi in 1969 defined 'national park' as: \"a relatively large area where one or several ecosystems are not materially altered by human exploitation and occupation\".",
+      "id": "6723ee86-0117-42fc-97e5-e696e4e30210",
+      "variations": [
+        "New Delhi"
+      ],
+      "source_chunks": [
+        2,
+        3
+      ],
+      "supporting_texts": [
+        "The IUCN General Assembly in New Delhi in 1969 defined 'national park' as: \"a relatively large area where one or several ecosystems are not materially altered by human exploitation and occupation\".",
+        "The committee incorporated the agreed 1969 New Delhi definition of national park"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text only notes that a 1969 definition originated there; no direct impact on the initiative is described.",
+        "supporting_text": "1969 New Delhi definition of national park"
+      }
+    },
+    {
+      "name": "Ramsar",
+      "type": "City",
+      "country": "Iran",
+      "description": "Namesake city of the Ramsar Wetlands Convention (1971), an international treaty influencing protected‑area programmes.",
+      "supporting_text": "the Ramsar Wetlands Convention, 1971",
+      "source_chunk": 2,
+      "id": "e156b866-31a9-4ab4-b364-3232ceb252c6",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Ramsar appears only as a place name without contextual relevance to the initiative.",
+        "supporting_text": "Ramsar (appears only in the list of locations)"
+      }
+    },
+    {
+      "name": "Perth",
+      "type": "City",
+      "country": "Australia",
+      "description": "Site of the CNPPA meeting on 27 November 1990 where the task‑force report was adopted.",
+      "supporting_text": "The report was adopted by CNPPA at its meeting in Perth (27 November, 1990) and tabled for information at the IUCN General Assembly a day later.",
+      "source_chunk": 4,
+      "id": "9b9d3428-7d67-47c3-8de9-43a2b8b08a29",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The location itself does not convey a direct contribution to the initiative.",
+        "supporting_text": "adopted by CNPPA at its meeting in Perth"
+      }
+    },
+    {
+      "name": "Caracas",
+      "type": "City",
+      "country": "Venezuela",
+      "description": "Host city of the Congress where Category VI was introduced in response to developing‑country participants. Host city of the three‑day workshop at the Fourth World Congress on National Parks and Protected Areas.",
+      "supporting_text": "A three-day workshop took place at the Fourth World Congress on National Parks and Protected Areas … in Caracas, Venezuela.",
+      "id": "48cea00e-fccc-470d-8632-bea651eab1d1",
+      "variations": [
+        "Caracas"
+      ],
+      "source_chunks": [
+        4,
+        5
+      ],
+      "supporting_texts": [
+        "A three-day workshop took place at the Fourth World Congress on National Parks and Protected Areas … in Caracas, Venezuela.",
+        "the Caracas Congress"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The Caracas Congress prompted the creation of Category VI, illustrating how a forum can trigger systemic change.",
+        "supporting_text": "concern among many developing country participants at the Caracas Congress that protected areas should include places where resources are conserved"
+      }
+    },
+    {
+      "name": "Venezuela",
+      "type": "Country",
+      "country": null,
+      "description": "Country mentioned as the location of Caracas, where the workshop was held.",
+      "supporting_text": "A three-day workshop … in Caracas, Venezuela.",
+      "source_chunk": 4,
+      "id": "8b6f93f4-8ee6-48cc-8003-5ba40f5e5df9",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Cited as the country hosting the workshop, without explicit impact on the initiative.",
+        "supporting_text": "Three‑Day Workshop ... in Caracas, Venezuela"
+      }
+    },
+    {
+      "name": "Buenos Aires",
+      "type": "City",
+      "country": "Argentina",
+      "description": "Venue of the 1994 IUCN General Assembly that approved the new protected‑area categories system.",
+      "supporting_text": "Thus in 1994 … the IUCN General Assembly, meeting in Buenos Aires, approved the new system, commended it to governments and called on CNPPA to finalise guidance to explain it.",
+      "source_chunk": 4,
+      "id": "a7a97ca1-0b4f-4d1d-a52b-aa211f433a40",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Serves as the meeting city for the Assembly; the text does not attribute a direct role to the place.",
+        "supporting_text": "the IUCN General Assembly, meeting in Buenos Aires, approved the new system"
+      }
+    },
+    {
+      "name": "Argentina",
+      "type": "Country",
+      "country": "Argentina",
+      "description": "Country in which Buenos Aires, the 1994 IUCN General Assembly meeting location, is situated. National legislation (Law of National Parks and Reserves and Natural Monuments) reflects the IUCN categories; also listed among countries using the categories in policy. The nation that adopted the National Strategy on Protected Areas in 1999, referencing IUCN categories.",
+      "supporting_text": "■ Argentina (Law of National Parks and Reserves and Natural Monuments (National Law No. 22.351 1980);",
+      "id": "598df962-4c4e-4d04-ab99-160f59ac45af",
+      "variations": [
+        "Argentina"
+      ],
+      "source_chunks": [
+        4,
+        7,
+        9
+      ],
+      "supporting_texts": [
+        "■ Argentina (Law of National Parks and Reserves and Natural Monuments (National Law No. 22.351 1980);",
+        "… the IUCN General Assembly, meeting in Buenos Aires, approved the new system …",
+        "Box 4. Argentina: National Strategy on Protected Areas, 1999 (Level 1)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Its National Strategy adopts the IUCN category system to harmonise protected‑area management across jurisdictions.",
+        "supporting_text": "The National Strategy on Protected Areas aims to achieve the conservation of Argentina’s natural heritage... mentions the IUCN category system"
+      }
+    },
+    {
+      "name": "Finland",
+      "type": "Country",
+      "country": null,
+      "description": "One of the countries where national‑level workshops were held to explore application of the 1994 Guidelines.",
+      "supporting_text": "e.g. in Australia, UK, New South Wales, Finland, Canada and China",
+      "source_chunk": 5,
+      "id": "5449be3a-ccc2-4ed7-8e90-f884a849f630",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Finland workshops facilitate local uptake of the protected‑area categories.",
+        "supporting_text": "National level workshops designed to explore how to apply the Guidelines in a local context, e.g. in ... Finland"
+      }
+    },
+    {
+      "name": "China",
+      "type": "Country",
+      "country": null,
+      "description": "One of the countries where national‑level workshops were held to explore application of the 1994 Guidelines.",
+      "supporting_text": "e.g. in Australia, UK, New South Wales, Finland, Canada and China",
+      "source_chunk": 5,
+      "id": "651c63cc-0a92-4eae-876b-533f548d8057",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Workshops in China build capacity for applying the categories locally.",
+        "supporting_text": "National level workshops designed to explore how to apply the Guidelines in a local context, e.g. in ... China"
+      }
+    },
+    {
+      "name": "IUCN",
+      "type": "Institution",
+      "country": null,
+      "description": "International Union for Conservation of Nature, which together with WCPA promotes understanding and use of the protected‑area categories.",
+      "supporting_text": "IUCN and WCPA have sought to promote the understanding and use of the categories system",
+      "source_chunk": 5,
+      "id": "ce758489-4a90-4bfa-8648-4e764cbec58d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN leads promotion of the categories, coordinating actions that enable implementation.",
+        "supporting_text": "IUCN and WCPA have sought to promote the understanding and use of the categories system"
+      }
+    },
+    {
+      "name": "WCPA",
+      "type": "Institution",
+      "country": null,
+      "description": "World Commission on Protected Areas, which together with IUCN promotes understanding and use of the protected‑area categories.",
+      "supporting_text": "IUCN and WCPA have sought to promote the understanding and use of the categories system",
+      "source_chunk": 5,
+      "id": "79e377ab-a982-4203-bc21-4db8aa2af60a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "WCPA co‑leads promotion of the categories, supporting collective uptake.",
+        "supporting_text": "IUCN and WCPA have sought to promote the understanding and use of the categories system"
+      }
+    },
+    {
+      "name": "Cardiff University",
+      "type": "Institution",
+      "country": "United Kingdom",
+      "description": "Publisher of the IUCN/Cardiff University Best Practice Protected Area Guidelines Series, which promotes use of the IUCN protected‑area categorisation system.",
+      "supporting_text": "IUCN/Cardiff University Best Practice Protected Area Guidelines Series",
+      "source_chunk": 6,
+      "id": "44673c38-6ea5-4d54-8b67-0447f15ef435",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Location of the institution that produced the Best Practice Guidelines, facilitating their creation and dissemination.",
+        "supporting_text": "Best Practice Protected Area Guidelines Series ... Cardiff University"
+      }
+    },
+    {
+      "name": "Amman",
+      "type": "City",
+      "country": "Jordan",
+      "description": "Host city of the IUCN World Conservation Congress where recommendation 2.82 on mining and protected areas was adopted (2000).",
+      "supporting_text": "adopted by the IUCN World Conservation Congress in Amman (2000)",
+      "source_chunk": 6,
+      "id": "bb7c9977-5927-4391-a69b-c126123f5987",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Venue of the World Conservation Congress where the mining‑exclusion recommendation was adopted, giving it political weight.",
+        "supporting_text": "adopted by the IUCN World Conservation Congress in Amman (2000)"
+      }
+    },
+    {
+      "name": "Kuala Lumpur",
+      "type": "City",
+      "country": "Malaysia",
+      "description": "Host city of the 7th Conference of the Parties to the Convention on Biological Diversity (CBD/CoP7) where the Programme of Work on Protected Areas was adopted. Host city of the 7th Conference of the Parties to the Convention on Biological Diversity where governments endorsed the IUCN protected‑area categorisation system (February 2004).",
+      "supporting_text": "at the 7th Conference of the parties to the CBD in Kuala Lumpur (February 2004)",
+      "id": "ed84c82e-9fd3-49ef-a1e1-63b493dfbad6",
+      "variations": [
+        "Kuala Lumpur"
+      ],
+      "source_chunks": [
+        6,
+        8
+      ],
+      "supporting_texts": [
+        "at the 7th Conference of the parties to the CBD in Kuala Lumpur (February 2004)",
+        "meeting in Kuala Lumpur, Malaysia in February 2004"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Venue where the 7th CBD Conference adopted the Programme of Work, enabling coordinated action.",
+        "supporting_text": "meeting in Kuala Lumpur, Malaysia in February 2004, adopted a Programme of Work on Protected Areas"
+      }
+    },
+    {
+      "name": "United Nations",
+      "type": "Institution",
+      "country": null,
+      "description": "International organization that published the United Nations List of Protected Areas (1997 and 2003 versions), classifying protected areas by management category.",
+      "supporting_text": "The publication of the United Nations List of Protected Areas (1997 and 2003 versions)",
+      "source_chunk": 6,
+      "id": "2836b6ba-c7c8-4b04-8286-003e2fc6b569",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Institutional home of the List of Protected Areas, supporting global coordination of protected‑area data.",
+        "supporting_text": "The publication of the United Nations List of Protected Areas (1997 and 2003 versions)"
+      }
+    },
+    {
+      "name": "World Conservation Union (IUCN)",
+      "type": "Institution",
+      "country": null,
+      "description": "Global union for nature conservation that oversees the Environmental Law Centre and the Speaking a Common Language project.",
+      "supporting_text": "As part of the Speaking a Common Language project, the World Conservation Union's (IUCN) Environmental Law Centre (ELC) was asked to research legal and policy frameworks for protected areas...",
+      "source_chunk": 7,
+      "id": "7e9af292-1495-4b4d-818e-5a0ab6e0e663",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN commissioned the research project, mobilising expertise to assess category influence worldwide.",
+        "supporting_text": "As part of the Speaking a Common Language project, the World Conservation Union’s (IUCN) Environmental Law Centre (ELC) was asked to research..."
+      }
+    },
+    {
+      "name": "Environmental Law Centre (ELC)",
+      "type": "Institution",
+      "country": null,
+      "description": "IUCN’s Environmental Law Centre tasked with researching legal and policy frameworks for protected areas.",
+      "supporting_text": "As part of the Speaking a Common Language project, the World Conservation Union's (IUCN) Environmental Law Centre (ELC) was asked to research legal and policy frameworks for protected areas...",
+      "source_chunk": 7,
+      "id": "6feb83ef-990c-4edf-b9f8-2688060f14be",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "ELC carried out the systematic review, generating knowledge that can guide policy and legislation.",
+        "supporting_text": "AS PART OF THE SPEAKING A COMMON LANGUAGE PROJECT, the Environmental Law Centre (ELC) of IUCN … was asked to research legal and policy frameworks."
+      }
+    },
+    {
+      "name": "Brazil",
+      "type": "Country",
+      "country": "Brazil",
+      "description": "One of the major states whose legislation has been strongly influenced by the IUCN protected‑area categories.",
+      "supporting_text": "including several major States, such as Australia and Brazil.",
+      "source_chunk": 7,
+      "id": "de4832b2-26a1-4a75-abf5-6d0d55e96b88",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Brazil’s national system law aligns with IUCN categories, showing policy uptake at the country level.",
+        "supporting_text": "Brazil (Law No. 9.985 establishing the National System of Protected Areas Management 2000) … used the IUCN categories."
+      }
+    },
+    {
+      "name": "Belize",
+      "type": "Country",
+      "country": "Belize",
+      "description": "National legislation (National Parks Systems Act 1981) reflects the IUCN categories.",
+      "supporting_text": "■ Belize (National Parks Systems Act 1981);",
+      "source_chunk": 7,
+      "id": "6cded853-39ea-473c-96ab-a6111bb539a7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Belize’s National Parks Systems Act incorporates categories akin to the IUCN framework.",
+        "supporting_text": "Belize (National Parks Systems Act 1981) … included categories directly or very similar to the IUCN system."
+      }
+    },
+    {
+      "name": "Cambodia",
+      "type": "Country",
+      "country": "Cambodia",
+      "description": "Both the 1993 Regulations on the Creation and Designation of Protected Areas and the 1996 Law on Environmental Protection show strong influence of IUCN categories.",
+      "supporting_text": "■ Cambodia (Regulations on the Creation and Designation of Protected Areas 1993);",
+      "source_chunk": 7,
+      "id": "9d265eb1-7675-4c97-ba26-cc4a027c6586",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Cambodia’s regulations adopt categories comparable to the IUCN system, supporting national protection goals.",
+        "supporting_text": "Cambodia (Regulations on the Creation and Designation of Protected Areas 1993) … included categories directly or very similar to the IUCN system."
+      }
+    },
+    {
+      "name": "Guatemala",
+      "type": "Country",
+      "country": "Guatemala",
+      "description": "National legislation (Law for the Protection and Improvement of the Environment, Law of Protected Areas, etc.) reflects IUCN categories.",
+      "supporting_text": "■ Guatemala (Law for the Protection and Improvement of the Environment 1986, Law of Protected Areas 1989 and Regulation to the Protected Area Law 1990);",
+      "source_chunk": 7,
+      "id": "332c3adc-4332-4f2b-8c56-d15b5db1fedc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Guatemala’s environmental laws embed categories that mirror the IUCN classification.",
+        "supporting_text": "Guatemala (Law for the Protection and Improvement of the Environment 1986 …) … included categories directly or very similar to the IUCN system."
+      }
+    },
+    {
+      "name": "Philippines",
+      "type": "Country",
+      "country": "Philippines",
+      "description": "National legislation (National Integrated Protected Area Systems Act 1992) reflects IUCN categories.",
+      "supporting_text": "■ Philippines (National Integrated Protected Area Systems Act 1992);",
+      "source_chunk": 7,
+      "id": "b1fe4d2a-15cb-49a6-8710-c7982556c2e8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The Philippines’ Integrated Protected Area Systems Act aligns with IUCN categories, aiding coherent management.",
+        "supporting_text": "Philippines (National Integrated Protected Area Systems Act 1992) … included categories directly or very similar to the IUCN system."
+      }
+    },
+    {
+      "name": "Spain",
+      "type": "Country",
+      "country": "Spain",
+      "description": "National legislation (Conservation of Natural Areas and Wild Flora and Fauna Act 1989) reflects IUCN categories; also listed among policy‑using countries.",
+      "supporting_text": "■ Spain (Conservation of Natural Areas and Wild Flora and Fauna Act 1989);",
+      "source_chunk": 7,
+      "id": "17c9108e-f4e0-43ab-b6d0-ffe54d3c83b7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Spain’s conservation act adopts categories comparable to the IUCN framework, supporting national protected‑area policy.",
+        "supporting_text": "Spain (Conservation of Natural Areas and Wild Flora and Fauna Act 1989) … included categories directly or very similar to the IUCN system."
+      }
+    },
+    {
+      "name": "Turkey",
+      "type": "Country",
+      "country": "Turkey",
+      "description": "National legislation (National Park Act 1983) reflects IUCN categories.",
+      "supporting_text": "■ Turkey (National Park Act 1983).",
+      "source_chunk": 7,
+      "id": "bcd60fa5-ce0f-4c88-b0e2-540217616afa",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Turkey’s national legislation is listed as using IUCN categories, showing policy implementation that advances protected‑area goals.",
+        "supporting_text": "“Turkey (National Park Act 1983) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Bulgaria",
+      "type": "Country",
+      "country": "Bulgaria",
+      "description": "Protected Areas Law 1998 shows strong influence of IUCN categories.",
+      "supporting_text": "■ Bulgaria (Protected Areas Law 1998);",
+      "source_chunk": 7,
+      "id": "1dbee9d3-8078-4e43-9a9a-2ddca222be17",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Bulgaria’s protected‑area law reflects IUCN categories, contributing to coordinated legal frameworks.",
+        "supporting_text": "“Bulgaria (Protected Areas Law 1998) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Cuba",
+      "type": "Country",
+      "country": "Cuba",
+      "description": "Decree Law 201 National System of Protected Areas 1999 reflects IUCN categories.",
+      "supporting_text": "■ Cuba (Decree Law 201 National System of Protected Areas 1999);",
+      "source_chunk": 7,
+      "id": "0df1b7c5-e9de-43fd-a374-28f22a38af4e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Cuba’s decree law incorporates the IUCN system, aiding national protected‑area governance.",
+        "supporting_text": "“Cuba (Decree Law 201 National System of Protected Areas 1999) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Georgia",
+      "type": "Country",
+      "country": "Georgia",
+      "description": "Law on the System of Protected Territories 1996 reflects IUCN categories; also one of the only two countries that explicitly mention IUCN in legislation (Level 1).",
+      "supporting_text": "■ Georgia (Law on the System of Protected Territories 1996);",
+      "source_chunk": 7,
+      "id": "6a7a4afa-5f22-403e-9eb9-22c095f114bb",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Georgia’s law on protected territories adopts IUCN categories, strengthening legislative support for nature.",
+        "supporting_text": "“Georgia (Law on the System of Protected Territories 1996) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Hungary",
+      "type": "Country",
+      "country": "Hungary",
+      "description": "Act No. LIII. of 1996 on Nature Conservation reflects IUCN categories.",
+      "supporting_text": "■ Hungary (Act No. LIII. of 1996 on Nature Conservation in Hungary 1996);",
+      "source_chunk": 7,
+      "id": "31948dbd-5716-4af7-bd61-a0ec6749bb89",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Hungary’s nature‑conservation act aligns with IUCN categories, facilitating coherent protection measures.",
+        "supporting_text": "“Hungary (Act No. LIII. of 1996 on Nature Conservation) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Kuwait",
+      "type": "Country",
+      "country": "Kuwait",
+      "description": "Protected Area Law 1999 reflects IUCN categories.",
+      "supporting_text": "■ Kuwait (Protected Area Law 1999);",
+      "source_chunk": 7,
+      "id": "25b8d8f7-e629-492d-bdb3-dab240c769b9",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Kuwait’s protected‑area law incorporates IUCN categories, advancing national conservation policy.",
+        "supporting_text": "“Kuwait (Protected Area Law 1999) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Mexico",
+      "type": "Country",
+      "country": "Mexico",
+      "description": "General Ecology Law 1996 reflects IUCN categories.",
+      "supporting_text": "■ Mexico (General Ecology Law 1996);",
+      "source_chunk": 7,
+      "id": "03edb5e2-15ff-4e54-bc85-f0523a866a9e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Mexico’s General Ecology Law reflects IUCN categories, supporting ecosystem‑based legislation.",
+        "supporting_text": "“Mexico (General Ecology Law 1996) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Niger",
+      "type": "Country",
+      "country": "Niger",
+      "description": "Legislation on hunting and environmental protection (1998) reflects IUCN categories.",
+      "supporting_text": "■ Niger (Fixant le régime de la chasse et de la protection de la faune 1998 and Portant loi-cadre relative a la protection de l'environnement 1998);",
+      "source_chunk": 7,
+      "id": "d6a8254e-183b-49b8-8d83-05c33cd040c2",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Niger’s wildlife‑protection statutes adopt IUCN categories, contributing to legal protection of nature.",
+        "supporting_text": "“Niger (Fixant le régime de la chasse … 1998) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Slovenia",
+      "type": "Country",
+      "country": "Slovenia",
+      "description": "Nature Conservation Law 1999 reflects IUCN categories.",
+      "supporting_text": "■ Slovenia (Nature Conservation Law 1999)",
+      "source_chunk": 7,
+      "id": "6909e333-725f-4718-b979-3c7c1ab447e1",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Slovenia’s Nature Conservation Law incorporates IUCN categories, enhancing national protected‑area framework.",
+        "supporting_text": "“Slovenia (Nature Conservation Law 1999) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Uruguay",
+      "type": "Country",
+      "country": "Uruguay",
+      "description": "Draft National System of Protected Areas (Law No. 17234) 2000 reflects IUCN categories.",
+      "supporting_text": "■ Uruguay (Draft National System of Protected Areas (Law No. 17234) 2000);",
+      "source_chunk": 7,
+      "id": "5bac8a38-eb3b-433a-8640-c0cca3ebbe32",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Uruguay’s draft national system aligns with IUCN categories, indicating policy development toward harmonised protection.",
+        "supporting_text": "“Uruguay (Draft National System of Protected Areas 2000) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Vietnam",
+      "type": "Country",
+      "country": "Vietnam",
+      "description": "Regulation of Special Use Forests (Decision No 08/2001/QD‑TTg) reflects IUCN categories.",
+      "supporting_text": "■ Vietnam (Regulation of Special Use Forests, Protection Forests and Production Forests, which are Natural Forests (Decision No 08/2001/QD‑TTg of January 11 2001).",
+      "source_chunk": 7,
+      "id": "49f9ef29-82eb-41ad-8ff6-a9ceebefb3a6",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Vietnam’s forest‑use regulation references IUCN categories, supporting systematic conservation planning.",
+        "supporting_text": "“Vietnam (Regulation of Special Use Forests … 2001) … used the IUCN categories (Level 2).”"
+      }
+    },
+    {
+      "name": "Ecuador",
+      "type": "Country",
+      "country": "Ecuador",
+      "description": "Uses IUCN categories in protected‑area policy but not in national legislation.",
+      "supporting_text": "The countries found to have protected area policy that has used the IUCN categories (Level 1 and Level 2) include ... Ecuador ...",
+      "source_chunk": 7,
+      "id": "fd473b80-7940-45cc-b8d4-42aa7de73ccf",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Ecuador’s protected‑area policy uses IUCN categories, aiding policy‑level implementation.",
+        "supporting_text": "“Ecuador … have used the IUCN categories in their policies.”"
+      }
+    },
+    {
+      "name": "Guinea Bissau",
+      "type": "Country",
+      "country": "Guinea Bissau",
+      "description": "Uses IUCN categories in protected‑area policy but not in national legislation.",
+      "supporting_text": "The countries found to have protected area policy that has used the IUCN categories (Level 1 and Level 2) include ... Guinea Bissau ...",
+      "source_chunk": 7,
+      "id": "92780fac-4793-41bc-be67-7c8a5c4c2fa4",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Guinea Bissau’s policy documents incorporate IUCN categories, contributing to coordinated conservation action.",
+        "supporting_text": "“Guinea Bissau … have used the IUCN categories in their policies.”"
+      }
+    },
+    {
+      "name": "Russia",
+      "type": "Country",
+      "country": "Russia",
+      "description": "Uses IUCN categories in protected‑area policy but not in national legislation.",
+      "supporting_text": "The countries found to have protected area policy that has used the IUCN categories (Level 1 and Level 2) include ... Russia ...",
+      "source_chunk": 7,
+      "id": "55a6230c-a60f-480a-9d39-c26498e3b173",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Russia’s policy framework adopts IUCN categories, enhancing alignment with international standards.",
+        "supporting_text": "“Russia … have used the IUCN categories in their policies.”"
+      }
+    },
+    {
+      "name": "Saint Lucia",
+      "type": "Country",
+      "country": "Saint Lucia",
+      "description": "Uses IUCN categories in protected‑area policy but not in national legislation.",
+      "supporting_text": "The countries found to have protected area policy that has used the IUCN categories (Level 1 and Level 2) include ... Saint Lucia ...",
+      "source_chunk": 7,
+      "id": "a3cbbbc9-3fbe-41a9-b536-599464b60cb8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Policy adoption shows national agency to use the categories for protected‑area governance.",
+        "supporting_text": "The countries found to have protected area policy that has used the IUCN categories ... include ... Saint Lucia ..."
+      }
+    },
+    {
+      "name": "Saudi Arabia",
+      "type": "Country",
+      "country": "Saudi Arabia",
+      "description": "Uses IUCN categories in protected‑area policy but not in national legislation.",
+      "supporting_text": "The countries found to have protected area policy that has used the IUCN categories (Level 1 and Level 2) include ... Saudi Arabia ...",
+      "source_chunk": 7,
+      "id": "5b81cd0e-ae31-4687-8da9-bc8cc1dbc812",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Inclusion in policy indicates active use of the classification to guide protection measures.",
+        "supporting_text": "The countries found to have protected area policy that has used the IUCN categories ... include ... Saudi Arabia ..."
+      }
+    },
+    {
+      "name": "Ukraine",
+      "type": "Country",
+      "country": "Ukraine",
+      "description": "Uses IUCN categories in protected‑area policy but not in national legislation.",
+      "supporting_text": "The countries found to have protected area policy that has used the IUCN categories (Level 1 and Level 2) include ... Ukraine.",
+      "source_chunk": 7,
+      "id": "13c28642-66c0-4837-8f8a-7ba68534e01e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Policy use reflects national effort to align with the international classification.",
+        "supporting_text": "The countries found to have protected area policy that has used the IUCN categories ... include ... Ukraine ..."
+      }
+    },
+    {
+      "name": "Intergovernmental Forum on Forests",
+      "type": "Other",
+      "country": null,
+      "description": "International programme that has undertaken work to integrate IUCN protected‑area categories.",
+      "supporting_text": "Examples include the Intergovernmental Forum on Forests4 and Biosphere Reserves and the IUCN System of Protected Area Management Categories(Bridgewater et al. 1996).",
+      "source_chunk": 7,
+      "id": "46662db7-0fd5-40b6-a924-b7d987ec0ac6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The forum’s work to integrate the categories shows cross‑scale dynamics that could shift forest‑related protection systems.",
+        "supporting_text": "Examples include the Intergovernmental Forum on Forests ... that have undertaken work to integrate the IUCN protected area management categories."
+      }
+    },
+    {
+      "name": "Convention on Biological Diversity (CBD)",
+      "type": "Other",
+      "country": null,
+      "description": "International treaty that, in 2004, adopted a Programme of Work on Protected Areas endorsing the IUCN categories.",
+      "supporting_text": "But early in 2004, the Convention on Biological Diversity (CBD) adopted a Programme of Work on Protected Areas, which endorses the categories system and supports the Speaking a Common Language project...",
+      "source_chunk": 7,
+      "id": "5371b07b-b443-4316-8f14-cb85a1f3e68e",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "CBD’s endorsement raises the legitimacy and global visibility of the IUCN categories.",
+        "supporting_text": "early in 2004, the Convention on Biological Diversity (CBD) adopted a Programme of Work on Protected Areas, which endorses the categories system."
+      }
+    },
+    {
+      "name": "Conservation of Arctic Flora and Fauna (CAFF)",
+      "type": "Other",
+      "country": null,
+      "description": "Regional body whose Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996 specifically mentions the IUCN categories.",
+      "supporting_text": "The Conservation of Arctic Flora and Fauna (CAFF) Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996 specifically mentions the IUCN categories (Level 1)",
+      "source_chunk": 7,
+      "id": "c2c0d5b8-d67b-4dff-8fab-3b676293fc64",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Regional strategy’s explicit reference signals a pathway for system‑wide adoption in the Arctic.",
+        "supporting_text": "The Conservation of Arctic Flora and Fauna (CAFF) Circumpolar Protected Areas Network (CPAN) Strategy ... specifically mentions the IUCN categories (Level 1)."
+      }
+    },
+    {
+      "name": "Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996",
+      "type": "Other",
+      "country": null,
+      "description": "Document produced by CAFF that explicitly incorporates IUCN protected‑area categories.",
+      "supporting_text": "The Conservation of Arctic Flora and Fauna (CAFF) Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996 specifically mentions the IUCN categories (Level 1)",
+      "source_chunk": 7,
+      "id": "b26cc838-d659-471e-87ac-d222904f439f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The strategy’s use of the categories illustrates regional policy integration that can drive broader change.",
+        "supporting_text": "The Conservation of Arctic Flora and Fauna (CAFF) Circumpolar Protected Areas Network (CPAN) Strategy ... specifically mentions the IUCN categories (Level 1)."
+      }
+    },
+    {
+      "name": "Revised African Convention on the Conservation of Nature and Natural Resources 2003",
+      "type": "Other",
+      "country": null,
+      "description": "Regional convention that uses the IUCN categories (Level 1).",
+      "supporting_text": "the Revised African Convention on the Conservation of Nature and Natural Resources 2003 [see Box 2 below] uses the IUCN categories (Level 1).",
+      "source_chunk": 7,
+      "id": "724c101b-85b7-42ec-bcf0-412d3fff09be",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Incorporation of the categories into a continental treaty shows potential for legal harmonisation across Africa.",
+        "supporting_text": "The Revised African Convention on the Conservation of Nature and Natural Resources 2003 uses the IUCN categories (Level 1)."
+      }
+    },
+    {
+      "name": "World Database for Protected Areas",
+      "type": "Institution",
+      "country": null,
+      "description": "Database whose listed protected areas were used to select countries for the statistical analysis.",
+      "supporting_text": "Only those countries with protected areas listed on the World Database for Protected Areas were included in the statistics (see also article by Chape in this issue of PARKS).",
+      "source_chunk": 7,
+      "id": "40fbf70a-50a8-4506-ae9a-e5546921391b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The database provided the baseline list of countries, enabling coordinated analysis and reporting.",
+        "supporting_text": "Only those countries with protected areas listed on the World Database for Protected Areas were included in the statistics."
+      }
+    },
+    {
+      "name": "ECOLEX",
+      "type": "Institution",
+      "country": null,
+      "description": "Online information system (incorporating FAOLEX) used as a source of legislation and policy documents.",
+      "supporting_text": "Information was also gathered, and verified, through searching the Internet and by consulting with country experts from around the world. ... primarily the ELC literature and legislation libraries and ECOLEX (incorporating FAOLEX)2.",
+      "source_chunk": 7,
+      "id": "005955f1-c937-4f50-9260-e701b6d9bcad",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "ECOLEX supplied legal and policy information that underpinned the review.",
+        "supporting_text": "Information was sourced ... ECOLEX (incorporating FAOLEX)."
+      }
+    },
+    {
+      "name": "FAOLEX",
+      "type": "Institution",
+      "country": null,
+      "description": "Legal database incorporated within ECOLEX and used as a source of information.",
+      "supporting_text": "Information was also gathered, and verified, through searching the Internet and by consulting with country experts from around the world. ... primarily the ELC literature and legislation libraries and ECOLEX (incorporating FAOLEX)2.",
+      "source_chunk": 7,
+      "id": "f9c0874e-8165-4cb1-baef-6c65cfb6ca07",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "FAOLEX contributed to the data pool used for the legislative review.",
+        "supporting_text": "Information was sourced ... ECOLEX (incorporating FAOLEX)."
+      }
+    },
+    {
+      "name": "IUCN Commission on Environmental Law",
+      "type": "Institution",
+      "country": null,
+      "description": "IUCN commission mentioned as a body that should ensure users of the categories have a full understanding of the system.",
+      "supporting_text": "every effort is made by IUCN, and its Commissions on Environmental Law and on Protected Areas, to ensure that those who use the categories system in making policy and/or legislation have a full understanding of it.",
+      "source_chunk": 7,
+      "id": "b9e383b8-a155-477c-8879-42db79de2474",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The commission provides legal expertise that supports the development and interpretation of protected‑area law.",
+        "supporting_text": "IUCN, and its Commissions on Environmental Law and on Protected Areas."
+      }
+    },
+    {
+      "name": "IUCN Commission on Protected Areas",
+      "type": "Institution",
+      "country": null,
+      "description": "IUCN commission mentioned alongside the Commission on Environmental Law.",
+      "supporting_text": "every effort is made by IUCN, and its Commissions on Environmental Law and on Protected Areas, to ensure that those who use the categories system in making policy and/or legislation have a full understanding of it.",
+      "source_chunk": 7,
+      "id": "90915adc-43c5-45a8-92d3-ef444f5a29c0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The commission contributes to the creation and promotion of the category system worldwide.",
+        "supporting_text": "IUCN, and its Commissions on Environmental Law and on Protected Areas."
+      }
+    },
+    {
+      "name": "Malaysia",
+      "type": "Country",
+      "country": null,
+      "description": "Country in which the 7th Conference of the Parties to the Convention on Biological Diversity was held.",
+      "supporting_text": "meeting in Kuala Lumpur, Malaysia in February 2004",
+      "source_chunk": 8,
+      "id": "a39a42dc-d125-4633-b7b2-64cbc7456706",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Country to which the Programme of Work is applied, linking international guidance to national implementation.",
+        "supporting_text": "Programme of Work ... encourages Parties ... to assign protected area management categories ... for reporting purposes"
+      }
+    },
+    {
+      "name": "Durban",
+      "type": "City",
+      "country": null,
+      "description": "City where the Vth World Parks Congress took place, providing advice that informed the CBD/CoP7 decision on protected‑area categories.",
+      "supporting_text": "advice from the Vth World Parks Congress in Durban (September 2003)",
+      "source_chunk": 8,
+      "id": "147215be-39e2-468e-981a-d57b44c2e371",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Host of the Vth World Parks Congress whose advice informed the Programme of Work.",
+        "supporting_text": "advice from the Vth World Parks Congress in Durban (September 2003)"
+      }
+    },
+    {
+      "name": "Bonn",
+      "type": "City",
+      "country": null,
+      "description": "Location of the IUCN Environmental Law Centre, cited as the source of a personal communication about the African Convention on the Conservation of Nature and Natural Resources.",
+      "supporting_text": "IUCN Environmental Law Centre, Bonn",
+      "source_chunk": 8,
+      "id": "72f7caab-b8c3-4155-8ac4-14185398b179",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned only as the city of the informant; no direct role in advancing the initiative is described.",
+        "supporting_text": "Source: Pers. comm., Francoise Burhenne‑Guilmin, IUCN Environmental Law Centre, Bonn"
+      }
+    },
+    {
+      "name": "Australian Commonwealth Government",
+      "type": "Institution",
+      "country": "Australia",
+      "description": "The federal government that initiated a national approach to applying IUCN protected‑area categories across Australian jurisdictions.",
+      "supporting_text": "In the mid-1990s after the revised IUCN guidelines were published, the Australian Commonwealth Government embarked on a process involving the State and Territory Governments of developing a national approach to the implementation of the categories in Australia.",
+      "source_chunk": 9,
+      "id": "9ac2336f-b687-4132-82c8-74ca91596f9d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Through the Commonwealth, the EPBC Act legally mandates IUCN categorisation, altering the governance framework.",
+        "supporting_text": "During the development of the Environment Protection and Biodiversity Conservation Act (EPBC Act) ... embedding them into this new legislation"
+      }
+    },
+    {
+      "name": "Australian and New Zealand Environment and Conservation Council",
+      "type": "Institution",
+      "country": null,
+      "description": "The intergovernmental council through which Australian states and territories agreed to the Australian Guidelines for Establishing the National Reserve System.",
+      "supporting_text": "In 1999, all States and Territories agreed (through the Australian and New Zealand Environment and Conservation Council) to the Australian Guidelines for Establishing the National Reserve System.",
+      "source_chunk": 9,
+      "id": "901603e5-b880-4d65-8016-a484b7f4dab3",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "It coordinated the agreement among all states and territories to adopt the national reserve guidelines.",
+        "supporting_text": "all States and Territories agreed (through the Australian and New Zealand Environment and Conservation Council) to the Australian Guidelines"
+      }
+    },
+    {
+      "name": "Environment Australia",
+      "type": "Institution",
+      "country": "Australia",
+      "description": "The Australian government agency cited as the source of personal communication regarding the EPBC Act and its regulations.",
+      "supporting_text": "Source: Pers. comm. Wayne Fletcher, Legislation Policy Section, Environment Australia and www.ea.gov.au/ epbc/about/index.html.",
+      "source_chunk": 9,
+      "id": "348883fb-f724-4847-824f-f8450f6c4cdc",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Only appears as an institutional label for a source; no explicit role in the described processes.",
+        "supporting_text": "Wayne Fletcher, Legislation Policy Section, Environment Australia"
+      }
+    }
+  ]
+}

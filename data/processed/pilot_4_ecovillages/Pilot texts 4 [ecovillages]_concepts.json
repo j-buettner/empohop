@@ -1,0 +1,583 @@
+{
+  "concepts": [
+    {
+      "name": "Eco‑village movement",
+      "definition": "A global network of eco‑villages and related initiatives that share knowledge, standards, and strategies to promote sustainable community living worldwide.",
+      "key_proponents": [
+        "Global Ecovillage Network (GEN)",
+        "Findhorn Foundation",
+        "Gaia Trust"
+      ],
+      "supporting_text": "In 1993 the Danish eco‑village network was set up, the first of this kind, which later served as a model for the later launched international eco‑village movement.",
+      "id": "2e298768-88c0-4d21-930a-8b5aea447cf3",
+      "variations": [
+        "Eco‑village movement"
+      ],
+      "source_chunks": [
+        0,
+        5
+      ],
+      "supporting_texts": [
+        "In 1993 the Danish eco‑village network was set up, the first of this kind, which later served as a model for the later launched international eco‑village movement.",
+        "Although the ecovillage‑movement is a relatively new phenomenon (it was first formalised in the 1990s), the initiatives it aims to integrate do have a much longer history."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Described as an organized international network that coordinates and propagates eco‑village initiatives.",
+        "supporting_text": "the international eco‑village movement"
+      }
+    },
+    {
+      "name": "Intentional communities",
+      "definition": "Small, often North‑based, initiatives created around shared values and projects that pursue a more sustainable society, distinct from larger, conventional settlements.",
+      "key_proponents": [],
+      "supporting_text": "\"The former are small initiatives (only a handful have over one hundred members and many have significantly fewer) that are created around shared values and projects that relate to the journey toward a more sustainable society.\"",
+      "id": "5ad3eaaf-814c-402e-baae-e72096a0b345",
+      "variations": [
+        "Intentional communities"
+      ],
+      "source_chunks": [
+        0,
+        7
+      ],
+      "supporting_texts": [
+        "\"The former are small initiatives (only a handful have over one hundred members and many have significantly fewer) that are created around shared values and projects that relate to the journey toward a more sustainable society.\"",
+        "In the present paper the history and roots of the movement are covered by positioning eco‑villages within both the history of the broader environmental movement and that of intentional communities."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Identified as the broader experimental base from which ecovillages emerged, indicating systemic alternatives.",
+        "supporting_text": "the emergence of a range of communitarian experiments that were to flower into the intentional communities movement ..."
+      }
+    },
+    {
+      "name": "Environmental movement",
+      "definition": "A broad social and political movement concerned with protecting the natural environment, providing the historical context for the emergence of eco‑villages.",
+      "key_proponents": [],
+      "supporting_text": "In the present paper the history and roots of the movement are covered by positioning eco‑villages within both the history of the broader environmental movement and that of intentional communities.",
+      "source_chunk": 0,
+      "id": "34127ff7-3cce-4547-8bae-253cacff4a86",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The movement is presented as part of the larger environmental movement, highlighting cross‑scale dynamics.",
+        "supporting_text": "positioning eco‑villages within both the history of the broader environmental movement"
+      }
+    },
+    {
+      "name": "Rural migration processes",
+      "definition": "Patterns of population movement from urban to rural areas that influence the development and interpretation of Hungarian eco‑villages.",
+      "key_proponents": [],
+      "supporting_text": "An interpretation is given of the Hungarian eco‑villages in the context of rural migration processes.",
+      "source_chunk": 0,
+      "id": "b2e505cb-916c-4466-8279-f4a3b7b790b6",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Rural migration is identified as a contextual factor shaping Hungarian eco‑villages.",
+        "supporting_text": "interpretation ... in the context of rural migration processes"
+      }
+    },
+    {
+      "name": "Eco‑village",
+      "definition": "Human settlements that fit to their natural environment most efficiently and without doing any harm; inhabitants farm without chemicals, use environmentally sound technologies for building, waste management and wastewater treatment, rely on renewable energy resources, practice frugal consumption and recycling, earn a living, entertain and trade locally, and strive for autonomy and self‑sufficiency in order to detach from social, infrastructural or economic networks. They are usually intentional communities of 300‑500 persons with a multistage admission process to protect the settlement’s ecological and social integrity.",
+      "key_proponents": [
+        "Karen Litfin",
+        "Findhorn Foundation",
+        "Gaia Trust",
+        "Global Ecovillage Network (GEN)"
+      ],
+      "supporting_text": "\"According to the definitions… eco‑villages are human settlements which fit to their natural environment most efficiently and without doing any harm. In order to achieve these goals, their inhabitants farm without chemicals, use environmentally sound technologies for building, waste management and waste water treatment, relying on renewable energy resources in the process. Consumption is characterised with frugality, which includes the recycling principle, in addition to sparing use of natural resources. They wish to earn a living, entertain and trade locally. They are communities striving for autonomy and self‑sufficiency, the purpose of which is to \\\"get detached from the umbilical chord,\\\" i.e. to get rid of the various networks causing dependence and helplessness… The majority of eco‑villages are so called 'intentional', or 'created' communities… Planning… includes decision making by the members of the community… This approach is intended to exclude the possibility of speculations with the land ownership…\"",
+      "id": "b55b3ddd-88ac-4a3f-8ec8-2e67c6d67175",
+      "variations": [
+        "Eco‑village"
+      ],
+      "source_chunks": [
+        1,
+        5
+      ],
+      "supporting_texts": [
+        "\"According to the definitions… eco‑villages are human settlements which fit to their natural environment most efficiently and without doing any harm. In order to achieve these goals, their inhabitants farm without chemicals, use environmentally sound technologies for building, waste management and waste water treatment, relying on renewable energy resources in the process. Consumption is characterised with frugality, which includes the recycling principle, in addition to sparing use of natural resources. They wish to earn a living, entertain and trade locally. They are communities striving for autonomy and self‑sufficiency, the purpose of which is to \\\"get detached from the umbilical chord,\\\" i.e. to get rid of the various networks causing dependence and helplessness… The majority of eco‑villages are so called 'intentional', or 'created' communities… Planning… includes decision making by the members of the community… This approach is intended to exclude the possibility of speculations with the land ownership…\"",
+        "The term itself appeared back in the 1970s, but did not gain wide recognition at the time. The first eco‑village initiatives emerged against this social background."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The term unites diverse projects under a recognizable sustainability banner.",
+        "supporting_text": "eco‑village caught up with them later on... shows a close relationship with sustainability, the key issue of the 21st century"
+      }
+    },
+    {
+      "name": "Intentional community",
+      "definition": "A community that is created by the conscious efforts of a group of individuals based on ecological principles, often organized around shared values and decision‑making by consensus.",
+      "key_proponents": [
+        "Louise Meijering"
+      ],
+      "supporting_text": "most eco‑villages are intentional communities, in other words communities which were created by the conscious efforts of a bigger or lesser group of individuals based on the ecological principles.",
+      "id": "c3c33cb9-3201-453f-92c5-06759e96928f",
+      "variations": [
+        "Intentional community"
+      ],
+      "source_chunks": [
+        1,
+        5
+      ],
+      "supporting_texts": [
+        "most eco‑villages are intentional communities, in other words communities which were created by the conscious efforts of a bigger or lesser group of individuals based on the ecological principles.",
+        "\"The majority of eco‑villages are so called 'intentional', or 'created' communities, in other words a rural community set up by the conscious efforts of a major or lesser group of individuals. Planning in a great part of the eco‑villages includes decision making by the members of the community present from time to time about the admission of new members, and the candidate can only become a full member of the community when passed a multistage process.\""
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides the foundational organisational model for ecological regeneration.",
+        "supporting_text": "most eco‑villages are intentional communities, ... created by the conscious efforts of a bigger or lesser group of individuals based on the ecological principles"
+      }
+    },
+    {
+      "name": "Autonomous community",
+      "definition": "A community that strives for autonomy and self‑sufficiency, seeking to detach from social, infrastructural, or economic networks that create dependence and helplessness.",
+      "key_proponents": [],
+      "supporting_text": "\"They are communities striving for autonomy and self‑sufficiency, the purpose of which is to \\\"get detached from the umbilical chord,\\\" i.e. to get rid of the various networks causing dependence and helplessness, be they social, infrastructural or economic networks.\"",
+      "source_chunk": 1,
+      "id": "650d264a-68c7-4fde-b47d-4e5b996129bd",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Autonomy provides the capacity for self‑sufficiency and collective resistance, strengthening agency.",
+        "supporting_text": "\"As autonomous communities, they find that various forms of resistance might be important… they are proactive communities\""
+      }
+    },
+    {
+      "name": "Social‑ecological system",
+      "definition": "The integrated system of social and ecological components within which eco‑villagers see themselves embedded, emphasizing the interdependence of human societies and natural environments.",
+      "key_proponents": [],
+      "supporting_text": "\"...they consider themselves not as utopian fugitives, but as participants of the world deeply embedded in the social‑ecological system.\"",
+      "source_chunk": 1,
+      "id": "998e1a71-bd4f-4fdc-b3f1-e87bbc82c0fd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Linking eco‑villages to the broader social‑ecological system highlights interdependencies crucial for systemic change.",
+        "supporting_text": "\"they consider themselves… participants of the world deeply embedded in the social‑ecological system\""
+      }
+    },
+    {
+      "name": "back to nature",
+      "definition": "A philosophical and social movement that advocates a return to natural, pre‑industrial ways of living, opposing the destructive impacts of industrialisation.",
+      "key_proponents": [
+        "William Morris"
+      ],
+      "supporting_text": "William Morris (1834 -1896) industrial designer, author, Socialist activist was one of the great prophets of the 'back to nature' idea in this period",
+      "source_chunk": 3,
+      "id": "3a529a4b-9f44-4da0-a58e-2673866e25b8",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The idea underpins alternative lifestyles and community experiments.",
+        "supporting_text": "William Morris ... was one of the great prophets of the ‘back to nature’ idea"
+      }
+    },
+    {
+      "name": "eco‑villages",
+      "definition": "Intentional, self‑sustaining communities founded to promote ecological regeneration and environmental sustainability.",
+      "key_proponents": [],
+      "supporting_text": "And, in the second part of the 20th century, the foundation of eco‑villages started.",
+      "source_chunk": 3,
+      "id": "6e8d62e3-f750-4a5f-8fa3-bb30a9df5ea1",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Eco‑villages represent a systemic shift toward self‑sufficient, regenerative settlements.",
+        "supporting_text": "the foundation of eco‑villages started"
+      }
+    },
+    {
+      "name": "green discourse",
+      "definition": "The contemporary conversation and framing of environmental and sustainability issues in public and policy arenas.",
+      "key_proponents": [],
+      "supporting_text": "that finally led to the current green discourse and the inevitability of sustainability issues - at least on the communication level.",
+      "source_chunk": 3,
+      "id": "ec074769-f1a3-4502-9e95-f61aa53bbf1c",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The term signals the mainstreaming of sustainability language.",
+        "supporting_text": "led to the current green discourse and the inevitability of sustainability issues"
+      }
+    },
+    {
+      "name": "sustainability issues",
+      "definition": "Challenges related to meeting present needs without compromising the ability of future generations to meet theirs, increasingly recognised in public communication.",
+      "key_proponents": [],
+      "supporting_text": "that finally led to the current green discourse and the inevitability of sustainability issues - at least on the communication level.",
+      "source_chunk": 3,
+      "id": "e070cb37-0733-441e-b4c0-f4a85ea5b31d",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Their inevitability raises public and policy attention.",
+        "supporting_text": "led to the current green discourse and the inevitability of sustainability issues"
+      }
+    },
+    {
+      "name": "self‑sustaining communities",
+      "definition": "Communities that aim to produce their own food, energy, and goods, thereby reducing dependence on external industrial systems and fostering ecological regeneration.",
+      "key_proponents": [
+        "John Ruskin",
+        "Edward Carpenter"
+      ],
+      "supporting_text": "the fact that potential solutions and efforts include the attempt to create self‑sustaining communities in both the 19th and 20th century. Ruskin created an association, a farm striving for self‑sufficiency and a crafts shop; and Carpenter ... created a community ... where they started to grow vegetables, baked their own bread ...",
+      "source_chunk": 3,
+      "id": "4ef2f614-fa13-415b-90d6-b9fc98611247",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Both waves aimed to create concrete, cooperative settlements.",
+        "supporting_text": "the attempt to create self‑sustaining communities in both the 19th and 20th century"
+      }
+    },
+    {
+      "name": "environmentalism",
+      "definition": "A movement and body of thought concerned with protecting the natural environment and addressing ecological degradation.",
+      "key_proponents": [
+        "Ramachandra Guha"
+      ],
+      "supporting_text": "Ramachandra Guha, a sociologist from India differentiates two major waves of environmentally sound thinking and movements (environmentalism) in one of his works on the history of the environment (Guha 2000)",
+      "source_chunk": 3,
+      "id": "4700347b-c551-4794-b119-2c6758ed1558",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text mentions the term but does not specify its direct impact on the initiative.",
+        "supporting_text": "two major waves of environmentally sound thinking and movements (environmentalism)"
+      }
+    },
+    {
+      "name": "ecotage",
+      "definition": "Direct‑action sabotage aimed at preventing environmental harm, often by damaging equipment or infrastructure associated with ecological degradation.",
+      "key_proponents": [],
+      "supporting_text": "this period is to become the era of ecotage and ecological terrorism",
+      "source_chunk": 3,
+      "id": "0aa3eaac-5035-4c08-a025-53358decc13c",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Only described as part of a broader radical era; no clear positive or negative effect is given.",
+        "supporting_text": "this period is to become the era of ecotage and ecological terrorism"
+      }
+    },
+    {
+      "name": "ecological terrorism",
+      "definition": "Extreme forms of environmental activism that employ violent or destructive tactics to draw attention to ecological crises.",
+      "key_proponents": [],
+      "supporting_text": "this period is to become the era of ecotage and ecological terrorism",
+      "source_chunk": 3,
+      "id": "a6ffe5f2-590d-46d3-9b8c-c6eb15aeac84",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned without assessment of its role for or against the initiative.",
+        "supporting_text": "this period is to become the era of ecotage and ecological terrorism"
+      }
+    },
+    {
+      "name": "bottom‑up grassroots initiatives",
+      "definition": "Community‑driven actions originating from local actors, emphasizing decentralized participation in environmental problem‑solving.",
+      "key_proponents": [],
+      "supporting_text": "He points out that the period to come will be dominated by bottom up grassroots initiatives just as much as lobbying forces on the top level",
+      "source_chunk": 3,
+      "id": "2f1095d5-7ab9-4f59-863c-4ece8c117ed7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Identified as a driving force for future change.",
+        "supporting_text": "period to come will be dominated by bottom up grassroots initiatives"
+      }
+    },
+    {
+      "name": "Cohousing",
+      "definition": "A form of intentional community where private homes are clustered around shared facilities and common spaces, fostering cooperation and sustainable ways of life.",
+      "key_proponents": [
+        "Denmark co‑housing movement",
+        "Robert Gilman",
+        "Diane Gilman",
+        "Ross Jackson",
+        "Hildur Jackson"
+      ],
+      "supporting_text": "the co‑housing movement started to blossom in Denmark.",
+      "source_chunk": 5,
+      "id": "c759d9ae-5076-400c-8127-ed230b517adf",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Identified as a distinct type of intentional community that provides a concrete model for sustainable living.",
+        "supporting_text": "the communities established can be divided into two distinct types: cohousing and eco‑villages."
+      }
+    },
+    {
+      "name": "Counterculture (1960s)",
+      "definition": "A social movement of the 1960s that rejected mainstream cultural norms, consumerism, and established authority, giving rise to many intentional communities that emphasized freedom, spirituality, and ecological living.",
+      "key_proponents": [],
+      "supporting_text": "The seventh phase in the 1960s brought a huge wave of intentional communities surfacing from the counterculture of the period, in the United States of America alone, more than 2000 communities were founded at this time.",
+      "source_chunk": 5,
+      "id": "99aa4642-8bf5-4a7f-8925-2183d555cd7a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The 1960s counterculture generated a massive wave of new intentional communities, showing a shift in cultural values toward ecological alternatives.",
+        "supporting_text": "The seventh phase in the 1960s brought a huge wave of intentional communities surfacing from the counterculture of the period"
+      }
+    },
+    {
+      "name": "Sustainability",
+      "definition": "The principle of meeting present ecological, social and economic needs without compromising the ability of future generations to meet theirs; identified as a key issue of the 21st century and a core aim of eco‑villages.",
+      "key_proponents": [],
+      "supporting_text": "Thus their early operations can be seen as a self‑fulfilling prophecy and shows a close relationship with sustainability, the key issue of the 21st century.",
+      "source_chunk": 5,
+      "id": "21c10bae-0289-4efd-acfe-161f915114db",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Presented as the key issue of the 21st century, linking eco‑villages to broader societal relevance.",
+        "supporting_text": "shows a close relationship with sustainability, the key issue of the 21st century"
+      }
+    },
+    {
+      "name": "Ecovillage Movement",
+      "definition": "A movement centered on the development and networking of ecovillages for ecological regeneration and environmental sustainability.",
+      "key_proponents": [],
+      "supporting_text": "The History and Future of the Ecovillage Movement",
+      "source_chunk": 6,
+      "id": "f1300264-f911-489d-a391-1747f72bf011",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The Ecovillage Movement embodies intentional community building for ecological regeneration, directly enabling collective action.",
+        "supporting_text": "Ecovillage Movement"
+      }
+    },
+    {
+      "name": "Ecovillage",
+      "definition": "A human‑scale, full‑featured settlement in which human activities are harmlessly integrated into the natural world in a way that supports healthy human development and can be continued indefinitely; later qualified to include multiple centers of initiative such as governance structures, autonomous enterprises, associations, and resident projects.",
+      "key_proponents": [
+        "Robert Gilman",
+        "Dawson (2006)"
+      ],
+      "supporting_text": "\"The first attempt at a definition, and still the one most commonly used, is Robert Gilman's: 'A human-scale, full-featured settlement, in which human activities are harmlessly integrated into the natural world in a way that is supportive of healthy human development, and can be successfully continued into the indefinite future' (1991: 10). He added a later qualification in 1999 that ecovillages should also have 'multiple centers of initiative,' including governance structures, autonomous enterprises, associations, and projects of its residents...\"",
+      "source_chunk": 7,
+      "id": "aa8c8781-f1d6-48a4-a3c8-c2626e727a1e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The ecovillage concept outlines a settlement model that can shift human‑nature relations toward sustainable futures.",
+        "supporting_text": "A human‑scale, full‑featured settlement, in which human activities are harmlessly integrated into the natural world ..."
+      }
+    },
+    {
+      "name": "Bioregional networks",
+      "definition": "Emerging networks of engagement in a wide array of social, economic, and ecological initiatives, with ecovillages acting as nodes that connect and transform surrounding bioregions.",
+      "key_proponents": [],
+      "supporting_text": "\"Dense concentrations--or 'islands'--of sustainability-related activities are giving way to networks of engagement in a wide array of social, economic, and ecological initiatives, with ecovillages serving as nodes in emerging bioregional networks.\"",
+      "source_chunk": 7,
+      "id": "a165f6a4-a083-4a93-be0f-a2f58731f05c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Describes the transition from isolated “islands” to interconnected networks that amplify ecological impact regionally.",
+        "supporting_text": "Ecovillages serving as nodes in emerging bioregional networks."
+      }
+    },
+    {
+      "name": "Low‑energy future",
+      "definition": "A future in which humanity lives well within its means by dramatically reducing energy consumption and restructuring ways of living to align with low‑energy principles.",
+      "key_proponents": [],
+      "supporting_text": "\"...ecovillages might have the greatest impact in facilitating the transition to a low‑energy future in which the human family has implemented ways of living well within its means.\"",
+      "source_chunk": 7,
+      "id": "7ffe8ada-ee6a-46b2-870a-0fe20ec052cc",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Positions ecovillages as catalysts for a systemic shift to low‑energy societal structures.",
+        "supporting_text": "How ecovillages might have the greatest impact in facilitating the transition to a low‑energy future ..."
+      }
+    },
+    {
+      "name": "Post‑consumerist culture",
+      "definition": "A cultural shift away from consumption‑driven values toward economic relocalization, poverty alleviation, global justice, respect for cultural and spiritual diversity, and reduced materialism.",
+      "key_proponents": [],
+      "supporting_text": "\"...common cause has been made between these two constituencies ... around which alliances have been built focusing on economic relocalization, poverty alleviation and global justice, respect for cultural and spiritual diversity, and the evolution of a post‑consumerist culture.\"",
+      "source_chunk": 7,
+      "id": "41295f14-29d9-4a28-8e2c-6a13bacfd5c4",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Alliances aim to promote a post‑consumerist culture, mobilising shared values toward sustainability.",
+        "supporting_text": "Alliances ... focusing on ... the evolution of a post‑consumerist culture."
+      }
+    },
+    {
+      "name": "Intermediate technologies",
+      "definition": "Technologies of modest scale and appropriate complexity that support human‑scale, community‑based societies rather than large‑scale industrial growth.",
+      "key_proponents": [
+        "E. F. Schumacher"
+      ],
+      "supporting_text": "\"The spirit of Gandhi was resurrected in the writings of E. F. Schumacher, who proposed intermediate technologies as key to the evolution of more human‑scale and community‑based societies (Schumacher 1973).\"",
+      "source_chunk": 7,
+      "id": "a48c9660-71b1-475b-a160-421b08c260dd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Intermediate technologies are presented as a pathway to human‑scale, community‑based societies.",
+        "supporting_text": "Schumacher, who proposed intermediate technologies as key to the evolution of more human‑scale and community‑based societies."
+      }
+    },
+    {
+      "name": "Transition movement",
+      "definition": "A sustainability‑related community initiative that emerges within conventional towns and villages, aiming to build resilience and reduce carbon footprints at the local level.",
+      "key_proponents": [],
+      "supporting_text": "\"...it fails to adequately distinguish ecovillages from the growing number of sustainability‑related community initiatives in more conventional towns and villages, as exemplified, for example, by the Transition movement.\"",
+      "id": "58e1586f-65da-4fbf-9aec-15013b111c75",
+      "variations": [
+        "Transition movement",
+        "Transition Movement"
+      ],
+      "source_chunks": [
+        7,
+        8
+      ],
+      "supporting_texts": [
+        "\"...it fails to adequately distinguish ecovillages from the growing number of sustainability‑related community initiatives in more conventional towns and villages, as exemplified, for example, by the Transition movement.\"",
+        "The Transition Movement, in which existing communities are mobilizing their resources with the aim of building resilience and reducing their dependence on fossil fuels, is but one of a number of similar movements across the industrialized world."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Cited to illustrate existing mainstream sustainability initiatives that ecovillages must be distinguished from.",
+        "supporting_text": "It fails to adequately distinguish ecovillages from the growing number of sustainability‑related community initiatives ... exemplified ... by the Transition movement."
+      }
+    },
+    {
+      "name": "Cohousing movement",
+      "definition": "A movement, launched in Denmark and spreading internationally, that creates human settlements that tread more lightly on the earth while providing residents with a strong sense of community and belonging.",
+      "key_proponents": [],
+      "supporting_text": "\"The cohousing movement, launched in Denmark and spreading outward internationally, represented a less radical but no less important attempt to create human settlements that tread more lightly on the earth while offering their residents a real sense of community and belonging.\"",
+      "source_chunk": 7,
+      "id": "0b5b7b96-8a9f-47bd-9a46-57e0acbc5dc0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows a less radical but significant model for low‑impact, community‑oriented settlements.",
+        "supporting_text": "The cohousing movement ... represented a less radical but no less important attempt to create human settlements that tread more lightly on the earth ..."
+      }
+    },
+    {
+      "name": "Four dimensions of sustainability",
+      "definition": "A framework built around four interrelated pillars – social, economic, ecological, and worldviews/values – used to guide ecovillage education and practice.",
+      "key_proponents": [
+        "Gaia Education educators"
+      ],
+      "supporting_text": "Gaia Education has developed an educational curriculum ... built around the four dimensions of sustainability--social, economic, ecological, and worldviews/values.",
+      "source_chunk": 8,
+      "id": "7647c6a5-4c92-4de6-8159-89d235a9364c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The four‑dimensional framework integrates social, economic, ecological, and values aspects for systemic transformation.",
+        "supporting_text": "built around the four dimensions of sustainability—social, economic, ecological, and worldviews/values."
+      }
+    },
+    {
+      "name": "Postconsumerist values and lifestyles",
+      "definition": "A set of values and ways of living that aim to maintain a high quality of life while significantly reducing resource use, moving away from consumption‑driven norms.",
+      "key_proponents": [],
+      "supporting_text": "There is also a growing, if less widespread, recognition of the need to develop postconsumerist values and lifestyles that will make it possible to maintain a high quality of life with significantly reduced resource use.",
+      "source_chunk": 8,
+      "id": "253e1dbc-5bce-4ef2-8567-a781af3a74cd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adopting post‑consumerist values signals a shift toward lower‑resource, resilient societies.",
+        "supporting_text": "growing... recognition of the need to develop postconsumerist values and lifestyles that will make it possible to maintain a high quality of life with significantly reduced resource use."
+      }
+    },
+    {
+      "name": "Future Scenarios (David Holmgren)",
+      "definition": "A set of four possible near‑ to medium‑term futures based on the speed and scale of peak oil and climate change, used to assess the relevance of ecovillages and ecological design principles.",
+      "key_proponents": [
+        "David Holmgren"
+      ],
+      "supporting_text": "David Holmgren's Future Scenarios provides some insights into how the near- to medium-term future may unfold and the likely relevance of initiatives that are based on ecological design principles, such as ecovillages (Holmgren 2009).",
+      "source_chunk": 8,
+      "id": "65d7ac06-cb01-4e0d-a9ab-54e6b8275ef1",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Outlines possible future trajectories that determine the relevance of ecovillage initiatives.",
+        "supporting_text": "David Holmgren’s Future Scenarios provides some insights into how the near- to medium-term future may unfold and the likely relevance of initiatives..."
+      }
+    },
+    {
+      "name": "Earth Stewards scenario",
+      "definition": "One of Holmgren's rapid‑energy‑descent futures in which global warming is dramatically slowed, a cultural‑spiritual revolution occurs, and small‑scale organic farmers and home‑based retrofitting businesses thrive.",
+      "key_proponents": [
+        "David Holmgren"
+      ],
+      "supporting_text": "Holmgren describes the more benign rapid energy descent scenario, \"Earth Stewards,\" in the following terms: Global warming is slowed dramatically and reversed ... Organic and small farmers, close to markets ... thrive ... An explosion of home businesses based on building and equipment retrofit, maintenance and salvage starts to build a diversified economy.",
+      "source_chunk": 8,
+      "id": "1259e873-c200-466f-82d8-37bb310a4643",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Describes a future where ecovillages support a resilient, low‑energy society.",
+        "supporting_text": "Holmgren describes the more benign rapid energy descent scenario, “Earth Stewards,” in the following terms: Global warming is slowed dramatically..."
+      }
+    },
+    {
+      "name": "Lifeboats scenario",
+      "definition": "Holmgren's dystopian rapid‑energy‑descent future where communities act like medieval monasteries, preserving knowledge and cultural values for a prolonged period of scarcity and conflict.",
+      "key_proponents": [
+        "David Holmgren"
+      ],
+      "supporting_text": "Under Holmgren's dystopian rapid energy descent scenario, \"Lifeboats\" ... communities analogous to the monasteries of the early medieval period provide basic knowledge and skills to their surrounding communities and are thus protected ... pursue the task of saving and condensing knowledge and cultural values for the long dark ages ahead.",
+      "source_chunk": 8,
+      "id": "35a5e75f-b29b-4654-a4bb-0e9c83486eac",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows a possible role for ecovillages as knowledge‑preserving “lifeboats” in severe collapse.",
+        "supporting_text": "Under Holmgren’s dystopian rapid energy descent scenario, “Lifeboats” ... communities ... provide basic knowledge and skills to their surrounding communities..."
+      }
+    },
+    {
+      "name": "Ecological design principles",
+      "definition": "Design guidelines that integrate ecological considerations into the planning, construction, and operation of settlements, forming the theoretical basis for ecovillages.",
+      "key_proponents": [],
+      "supporting_text": "Future Scenarios ... the likely relevance of initiatives that are based on ecological design principles, such as ecovillages.",
+      "source_chunk": 8,
+      "id": "88bf7bb5-b456-494e-8da3-d233ea162f4c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides the design foundation that makes ecovillage initiatives relevant to broader systemic transformation.",
+        "supporting_text": "initiatives that are based on ecological design principles, such as ecovillages..."
+      }
+    },
+    {
+      "name": "Bioregional networks of sustainability initiatives",
+      "definition": "Regionally‑linked clusters of projects and organizations that cooperate to advance sustainability goals, with ecovillages often serving as hubs.",
+      "key_proponents": [],
+      "supporting_text": "The building of bioregional networks of sustainability initiatives, in which ecovillages are increasingly engaged, is ideal foundation building for such a future.",
+      "source_chunk": 8,
+      "id": "c8065723-5a69-443d-94c3-118402f5d62c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Highlights inter‑regional interdependencies that can amplify sustainability impacts.",
+        "supporting_text": "The building of bioregional networks of sustainability initiatives, in which ecovillages are increasingly engaged, is ideal foundation building for such a future."
+      }
+    },
+    {
+      "name": "Community currencies",
+      "definition": "Locally‑issued monetary instruments that facilitate exchange within a community, supporting economic resilience and reduced reliance on external financial systems.",
+      "key_proponents": [],
+      "supporting_text": "These initiatives include community currencies, local investment and cooperative ownership of enterprise and other community facilities, economic diversification, community‑based food production systems, building using locally available materials, and models for local governance.",
+      "source_chunk": 8,
+      "id": "55c6d2b2-cc9a-4eb3-8415-3a3ef88cd00c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Enables local exchange systems that support resilient, low‑resource economies.",
+        "supporting_text": "These initiatives include community currencies, local investment and cooperative ownership of enterprise..."
+      }
+    },
+    {
+      "name": "Cooperative ownership of enterprise",
+      "definition": "A model where businesses and assets are owned collectively by community members, promoting shared benefits and democratic control.",
+      "key_proponents": [],
+      "supporting_text": "These initiatives include community currencies, local investment and cooperative ownership of enterprise and other community facilities, economic diversification, community‑based food production systems...",
+      "source_chunk": 8,
+      "id": "7629f488-4bb2-4164-9b45-6b1fd14c1005",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Promotes shared ownership models that strengthen local economic resilience.",
+        "supporting_text": "These initiatives include community currencies, local investment and cooperative ownership of enterprise..."
+      }
+    }
+  ]
+}

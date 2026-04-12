@@ -1,0 +1,720 @@
+{
+  "concepts": [
+    {
+      "name": "Community-based forestry",
+      "definition": "A form of forestry that involves local communities in the management and use of forest resources, examined over forty years for its extent and effectiveness.",
+      "key_proponents": [
+        "FAO",
+        "Don Gilmour"
+      ],
+      "supporting_text": "Forty years of community-based forestry A review of its extent and effectiveness",
+      "source_chunk": 0,
+      "id": "ee30576d-877a-4103-9e0a-28af76512827",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The concept is examined for its reach and outcomes, indicating its capacity to shift forest governance systems.",
+        "supporting_text": "Community-based forestry"
+      }
+    },
+    {
+      "name": "Community-based forestry (CBF)",
+      "definition": "An umbrella description that includes both collaborative regimes (forestry practiced on land with communal tenure requiring collective action) and smallholder forestry (forestry practiced by smallholders on privately owned land), limited to formal regimes defined by a legal framework.",
+      "key_proponents": [
+        "FAO",
+        "RECOFTC (Center for People and Forests)",
+        "Arnold (2001)"
+      ],
+      "supporting_text": "\"The term \\\"community-based forestry\\\" (CBF) is used in this report as an umbrella description and includes both collaborative regimes (forestry practised on land that has some form of communal tenure and requires collective action) and smallholder forestry (forestry practised by smallholders on land that is privately owned).\"",
+      "id": "8ba4bfc0-d82e-47e5-a550-752a2262f8f3",
+      "variations": [
+        "Community-based forestry (CBF)",
+        "Community-Based Forestry (CBF)"
+      ],
+      "source_chunks": [
+        1,
+        3
+      ],
+      "supporting_texts": [
+        "\"The term \\\"community-based forestry\\\" (CBF) is used in this report as an umbrella description and includes both collaborative regimes (forestry practised on land that has some form of communal tenure and requires collective action) and smallholder forestry (forestry practised by smallholders on land that is privately owned).\"",
+        "Pilot projects tested CBF modalities in different settings to address environmental concerns"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CBF is presented as an umbrella that includes collaborative and smallholder regimes, encouraging collective management.",
+        "supporting_text": "Community-based forestry (CBF) … includes both collaborative regimes … and smallholder forestry."
+      }
+    },
+    {
+      "name": "Community forestry",
+      "definition": "An umbrella term for any situation which intimately involves local people in a forestry activity, originally adopted by FAO in 1978.",
+      "key_proponents": [
+        "FAO"
+      ],
+      "supporting_text": "FAO (1978, p. 1) originally adopted the term \"community forestry\" as an umbrella term for \"any situation which intimately involves local people in a forestry activity\".",
+      "source_chunk": 1,
+      "id": "f47e8038-8cd3-45c8-a424-53e6e96c82e9",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The term’s ambiguous use creates confusion about who is included, exposing a prevailing condition.",
+        "supporting_text": "The use of “community forestry” as an umbrella term is avoided because … does not include smallholders."
+      }
+    },
+    {
+      "name": "Social forestry",
+      "definition": "A term used by some interchangeably with community forestry and by others to describe a narrower spectrum of activities such as the establishment of woodlots to address deforestation and provide fuelwood; no clear definition exists.",
+      "key_proponents": [
+        "FAO"
+      ],
+      "supporting_text": "\"Social forestry\" is used by some as interchangeable with community forestry and by others to describe a much narrower spectrum of activities such as establishment of woodlots to address deforestation and provide fuelwood (FAO, 1991).",
+      "source_chunk": 1,
+      "id": "ce86bc94-4b81-4cf4-b367-9aa498d4ef9d",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The term’s unclear definition creates confusion that hampers typology development.",
+        "supporting_text": "the concurrent emergence of the term “social forestry”, for which no clear definition exists, began a degree of confusion that continues to the present day"
+      }
+    },
+    {
+      "name": "Participatory forestry",
+      "definition": "Processes and mechanisms which enable people with a direct stake in forest resources to be part of decision‑making in all aspects of forest management, including policy formulation processes.",
+      "key_proponents": [
+        "FAO"
+      ],
+      "supporting_text": "FAO (2012b) has defined participatory forestry as: \"processes and mechanisms which enable people with a direct stake in forest resources to be part of decision‑making in all aspects of forest management, including policy formulation processes\".",
+      "source_chunk": 1,
+      "id": "d535df88-812b-49f9-bcd1-e76890cdd56b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Definition emphasizes mechanisms that let stakeholders take part in forest decision‑making.",
+        "supporting_text": "FAO (2012b) has defined participatory forestry as: “processes and mechanisms which enable people with a direct stake … to be part of decision‑making …”"
+      }
+    },
+    {
+      "name": "Sustainable forest management (SFM)",
+      "definition": "The stewardship and use of forests and forest lands in a way, and at a rate, that maintains their biodiversity, productivity, regeneration capacity, vitality and potential to fulfil ecological, economic and social functions now and in the future, without causing damage to other ecosystems.",
+      "key_proponents": [
+        "IUCN",
+        "PROFOR",
+        "World Bank",
+        "Commission on Sustainable Development (CSD)"
+      ],
+      "supporting_text": "SFM refers to the stewardship and use of forests and forest lands in a way, and at a rate, that maintains their biodiversity, productivity, regeneration capacity, vitality and potential to fulfil, now and in the future, relevant ecological, economic and social functions, at local, national and global levels, and that does not cause damage to other ecosystems (IUCN, PROFOR and World Bank, 2004).",
+      "id": "832dd42b-5284-43ae-8268-135ae726182a",
+      "variations": [
+        "Sustainable forest management (SFM)",
+        "Sustainable Forest Management (SFM)"
+      ],
+      "source_chunks": [
+        1,
+        3,
+        6
+      ],
+      "supporting_texts": [
+        "SFM refers to the stewardship and use of forests and forest lands in a way, and at a rate, that maintains their biodiversity, productivity, regeneration capacity, vitality and potential to fulfil, now and in the future, relevant ecological, economic and social functions, at local, national and global levels, and that does not cause damage to other ecosystems (IUCN, PROFOR and World Bank, 2004).",
+        "Focus on SFM and livelihoods as CBF objectives",
+        "Following the United Nations Conference on the Environment and Development in 1992, the Commission on Sustainable Development (CSD) endorsed the role of local communities, indigenous peoples and other stakeholders in pursuing SFM."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Frames forest use within a holistic, long‑term ecological and social balance.",
+        "supporting_text": "CSD endorsed the role of local communities … in pursuing SFM."
+      }
+    },
+    {
+      "name": "Smallholder forestry",
+      "definition": "Forestry practised by smallholders on land that is privately owned; considered more aligned with collaborative forestry than with industrial forestry.",
+      "key_proponents": [
+        "Herbohn (2000)",
+        "Cossío et al. (2014)"
+      ],
+      "supporting_text": "The basis for including smallholder forestry is that it is more aligned with collaborative forestry than with industrial forestry (Herbohn, 2000).",
+      "id": "bcd0ec01-0566-4b15-989c-2fbfa90f742b",
+      "variations": [
+        "Smallholder forestry"
+      ],
+      "source_chunks": [
+        1,
+        4
+      ],
+      "supporting_texts": [
+        "The basis for including smallholder forestry is that it is more aligned with collaborative forestry than with industrial forestry (Herbohn, 2000).",
+        "Smallholder forestry, operating at the farm−forest interface, is also emerging as an important part of the forest industry in some Latin American countries, although it is largely overlooked by governments and remains in the margins of policy discourse (Cossío et al., 2014)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Emergence in the global South signals a new mode of forest management linked to tenure reforms.",
+        "supporting_text": "Smallholder forestry … is well‑established … but has emerged … in the global South only in recent decades."
+      }
+    },
+    {
+      "name": "Collaborative regimes",
+      "definition": "Forestry practised on land that has some form of communal tenure and requires collective action.",
+      "key_proponents": [],
+      "supporting_text": "\"collaborative regimes (forestry practised on land that has some form of communal tenure and requires collective action)\"",
+      "source_chunk": 1,
+      "id": "1789530a-4436-41a4-a348-5e1d0582f1a8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Explicitly requires collective action on communally‑tenured land.",
+        "supporting_text": "collaborative regimes (forestry practised on land that has some form of communal tenure and requires collective action)"
+      }
+    },
+    {
+      "name": "Formal CBF regimes",
+      "definition": "Community‑based forestry regimes that are defined by a legal framework and whose rights are formally recognized by governments.",
+      "key_proponents": [],
+      "supporting_text": "The major departure from RECOFTC's original definition is that the focus of this report is on formal regimes (i.e. those defined by a legal framework), whereas RECOFTC includes informal regimes in its definition of community forestry.",
+      "source_chunk": 1,
+      "id": "130b28b0-5ae9-45db-9289-7588001dee23",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Focus on legally recognised rights suggests a pathway to secure, systemic change.",
+        "supporting_text": "focus on formal CBF regimes … to focus attention on the rights attached to regimes that are formally recognized by governments"
+      }
+    },
+    {
+      "name": "Informal CBF regimes",
+      "definition": "Community‑based forestry arrangements that are not defined by a legal framework, often based on de‑facto rights that can be challenged or changed by bureaucratic discretion.",
+      "key_proponents": [],
+      "supporting_text": "RECOFTC includes informal regimes in its definition of community forestry. In the absence of a legal framework, informal (de facto) rights can be easily challenged and changed, and even extinguished, by bureaucratic discretion.",
+      "source_chunk": 1,
+      "id": "ad8c5e87-03c9-42e2-b9a2-fb07a8e1f4a0",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights insecurity of de‑facto rights without legal backing.",
+        "supporting_text": "In the absence of a legal framework, informal (de facto) rights can be easily challenged … and thus are not secure"
+      }
+    },
+    {
+      "name": "Forest tenure transformations",
+      "definition": "Changes in the allocation and security of user rights, responsibilities and decision‑making power over forest resources, often associated with the expansion of community‑based forestry.",
+      "key_proponents": [
+        "FAO",
+        "Rights and Resources Initiative (RRI)"
+      ],
+      "supporting_text": "During the past decade considerable attention has been paid to CBF and related forest tenure transformations. Both FAO and the Rights and Resources Initiative (RRI) have carried out regional and global assessments to chart these changes.",
+      "source_chunk": 1,
+      "id": "04f77823-da22-4006-ab2e-3164fdc0f758",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Attention to tenure change signals possible shifts in power and management structures.",
+        "supporting_text": "considerable attention has been paid to CBF and related forest tenure transformations"
+      }
+    },
+    {
+      "name": "Community‑based forestry (CBF)",
+      "definition": "A forest management modality in which local communities hold management rights and actively govern the use of forest commons, emerging as a response to the failure of conventional forest industry models and to increasing deforestation in the 1970s‑1980s.",
+      "key_proponents": [
+        "FAO",
+        "Gilmour",
+        "King",
+        "Hobley",
+        "Rackham",
+        "Jeanrenaud",
+        "Elinor Ostrom",
+        "Tole (2010)",
+        "Arnold (2001)"
+      ],
+      "supporting_text": "Functional local management systems were in place to govern how these common forests were used, systems that would currently be considered community-based forestry ... During the 1970s and 1980s, smallholder and community‑based forestry emerged in response partly to a perceived failure of the forest industry development model to lead to socioeconomic development, and partly to the increasing rate of deforestation ... The emergence, growth and evolution of community‑based forestry as a formally recognizable modality of forest management can be traced back to the seminal paper Forestry for local community development (FAO, 1978).",
+      "id": "dcd139ca-ba98-4947-a307-d3ccff3f742a",
+      "variations": [
+        "Community‑based forestry (CBF)"
+      ],
+      "source_chunks": [
+        2,
+        4
+      ],
+      "supporting_texts": [
+        "Functional local management systems were in place to govern how these common forests were used, systems that would currently be considered community-based forestry ... During the 1970s and 1980s, smallholder and community‑based forestry emerged in response partly to a perceived failure of the forest industry development model to lead to socioeconomic development, and partly to the increasing rate of deforestation ... The emergence, growth and evolution of community‑based forestry as a formally recognizable modality of forest management can be traced back to the seminal paper Forestry for local community development (FAO, 1978).",
+        "The popularity of community-based forestry as a formal type of forestry rests primarily on a narrative popularized by Ostrom (1990) that local communities, when granted sufficient property rights over local forest commons, can organize autonomously and develop local institutions to regulate the use of natural resources and manage them sustainably."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Frames a systemic approach that reorients forest governance toward local participation and sustainability.",
+        "supporting_text": "The popularity of community-based forestry ... rests primarily on a narrative ... that local communities ... can organize autonomously and develop local institutions to regulate ... sustainably."
+      }
+    },
+    {
+      "name": "Scientific forestry",
+      "definition": "A colonial‑era forest management approach in which central governments assumed exclusive rights over forest access and managed forests primarily to maximize timber production for the benefit of the colonizing power or the state.",
+      "key_proponents": [
+        "Colonial governments",
+        "Odera"
+      ],
+      "supporting_text": "Forest management in most colonized countries became characterized by the imposition of \"scientific forestry\" (Odera, 2004) where central governments assumed all rights over forest access and management and attempted to manage forests to maximize timber production for the benefit of the colonizing power and/or the State.",
+      "source_chunk": 2,
+      "id": "2d835c0a-45da-41a8-8d32-64592e972d51",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Identifies the dominant, extractive forestry paradigm that displaced customary regimes.",
+        "supporting_text": "Forest management ... became characterized by the imposition of “scientific forestry”."
+      }
+    },
+    {
+      "name": "People's participation",
+      "definition": "The principle that governments should involve local communities directly in reforestation programmes and forest management, recognizing that governments acting alone cannot resolve the deforestation crisis.",
+      "key_proponents": [
+        "FAO"
+      ],
+      "supporting_text": "It was widely acknowledged that governments acting alone would not be able to address the deforestation crisis, and efforts were made to encourage \"people's participation\" in government reforestation programmes.",
+      "id": "7f941eef-69ec-481a-a7ab-05beee38b8f5",
+      "variations": [
+        "People's participation",
+        "people's participation"
+      ],
+      "source_chunks": [
+        2,
+        3
+      ],
+      "supporting_texts": [
+        "It was widely acknowledged that governments acting alone would not be able to address the deforestation crisis, and efforts were made to encourage \"people's participation\" in government reforestation programmes.",
+        "Emergence of \"people's participation\" and bottom-up development"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Encourages direct involvement of communities in reforestation programmes.",
+        "supporting_text": "efforts were made to encourage “people’s participation” in government reforestation programmes."
+      }
+    },
+    {
+      "name": "Forest industry development model",
+      "definition": "The conventional model of forest exploitation focused on industrial timber production, which was perceived in the 1970s as failing to deliver socioeconomic development and contributing to deforestation and land degradation.",
+      "key_proponents": [
+        "Gilmour",
+        "King",
+        "Hobley"
+      ],
+      "supporting_text": "During the 1970s and 1980s, smallholder and community‑based forestry emerged in response partly to a perceived failure of the forest industry development model to lead to socioeconomic development, and partly to the increasing rate of deforestation and forest land degradation in developing countries (Gilmour, King and Hobley, 1989).",
+      "source_chunk": 2,
+      "id": "330cae4c-88f3-4289-a431-3c2609cc9ace",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Critiqued as a failed model that drove deforestation and excluded communities.",
+        "supporting_text": "failure of the forest industry development model to sustain forests and meet community needs."
+      }
+    },
+    {
+      "name": "Communal management rights",
+      "definition": "Legal or customary rights that allow communities to hold and exercise management authority over public forest lands, even when the forests are owned by the state.",
+      "key_proponents": [
+        "FAO"
+      ],
+      "supporting_text": "France and Switzerland remain the only two countries in Europe in which significant areas of the forest estate are managed through some form of communal management rights (FAO, 2010a). ... FAO (2010a, pp. 236‑237) recorded them as being forests where \"communities\" are the \"holder(s) of management rights of public forests\".",
+      "source_chunk": 2,
+      "id": "b4dc9e43-a2b7-42d0-b55d-c600baaca029",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows the rarity of communal rights, highlighting limited institutional support.",
+        "supporting_text": "France and Switzerland ... are managed through some form of communal management rights."
+      }
+    },
+    {
+      "name": "Indigenous regimes (premodern management regimes)",
+      "definition": "Traditional, often tribal, systems of forest governance that were highly variable and dynamic before colonial annexation, reflecting long‑standing institutional arrangements for resource use.",
+      "key_proponents": [
+        "IUCN",
+        "Odera",
+        "Couillard et al.",
+        "Poffenberger"
+      ],
+      "supporting_text": "A common feature of the colonial period was the annexation of forests that had previously been managed under various types of indigenous regimes. These premodern management regimes, which include those within tribal and post‑feudal societies, were highly variable but also dynamic (e.g. Odera, 2004 and Couillard et al., 2009 for Africa; Poffenberger, 2000 for South Asia; Poffenberger, n.d. for Southeast Asia; IUCN, 2000 for Mesoamerica).",
+      "source_chunk": 2,
+      "id": "7bc463ae-5bce-46cf-8f58-ce1fc3847c8f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Describes dynamic precolonial institutions that could inform alternative governance.",
+        "supporting_text": "These premodern management regimes ... were highly variable but also dynamic."
+      }
+    },
+    {
+      "name": "\"Forests for People\" theme",
+      "definition": "A framing of forest policy that emphasizes the role of forests in serving human livelihoods and well‑being, adopted as the central theme of the eighth World Forestry Congress in 1978.",
+      "key_proponents": [
+        "World Forestry Congress (Jakarta, 1978)"
+      ],
+      "supporting_text": "In the same year, the eighth World Forestry Congress in Jakarta carried the theme \"Forests for People\".",
+      "source_chunk": 2,
+      "id": "e04e100d-9981-46cf-bfd0-e6cbd9580be0",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Elevates forests as a public good, shaping global perception.",
+        "supporting_text": "the eighth World Forestry Congress in Jakarta carried the theme “Forests for People”."
+      }
+    },
+    {
+      "name": "bottom-up development",
+      "definition": "a development approach that originates from local communities rather than top‑down directives",
+      "key_proponents": [],
+      "supporting_text": "Emergence of \"people's participation\" and bottom-up development",
+      "source_chunk": 3,
+      "id": "611f54bd-6224-4bb5-a4d8-b7a911ddcbc1",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Bottom‑up development emphasizes local agency in decision‑making.",
+        "supporting_text": "bottom-up development"
+      }
+    },
+    {
+      "name": "sustainable development paradigm",
+      "definition": "the overarching framework in the 1990s that guided policies toward development that meets present needs without compromising future generations",
+      "key_proponents": [],
+      "supporting_text": "1990s. Events: Sustainable development paradigm, Recognition of indigenous peoples' rights.",
+      "source_chunk": 3,
+      "id": "f941387d-272c-4f68-b23f-185c93642567",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The paradigm signals a shift toward integrating ecological limits in development.",
+        "supporting_text": "Sustainable development paradigm"
+      }
+    },
+    {
+      "name": "indigenous peoples' rights",
+      "definition": "the recognized rights of indigenous communities to manage forests, formalized in community‑based forestry regimes",
+      "key_proponents": [],
+      "supporting_text": "1990s. Events: Sustainable development paradigm, Recognition of indigenous peoples' rights.",
+      "source_chunk": 3,
+      "id": "379bd7b1-3308-4730-90ed-03b84e303554",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Recognizing these rights enables communities to manage forests directly.",
+        "supporting_text": "indigenous peoples’ rights"
+      }
+    },
+    {
+      "name": "payment for environmental services",
+      "definition": "a mechanism that provides financial incentives for activities that generate environmental benefits, incorporated into CBF objectives in the 2010s",
+      "key_proponents": [],
+      "supporting_text": "Additions to CBF objectives to address global policy interests",
+      "source_chunk": 3,
+      "id": "828d87ab-8ca6-4d12-9bcf-b0ef64bdefe5",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "PES links forest stewardship to market incentives, increasing policy relevance.",
+        "supporting_text": "payment for environmental services"
+      }
+    },
+    {
+      "name": "decentralization and devolution policies",
+      "definition": "forest‑sector reforms that transfer decision‑making authority from central to local levels",
+      "key_proponents": [],
+      "supporting_text": "Forest sector reforms: decentralization and devolution policies",
+      "source_chunk": 3,
+      "id": "ab1473a7-7d1b-4a8c-992e-2f5945005c01",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "These policies create governance structures for local participation.",
+        "supporting_text": "decentralization and devolution policies"
+      }
+    },
+    {
+      "name": "Decentralized forest management",
+      "definition": "A policy emphasis that promotes the transfer of forest governance to local communities, driven by community demands for a greater say in natural resource governance and the recognition that communities can manage resources sustainably.",
+      "key_proponents": [
+        "International Forestry Resources and Institutions (IFRI)",
+        "Food and Agriculture Organization (FAO)"
+      ],
+      "supporting_text": "Several authors (as reported by International Forestry Resources and Institutions [IFRI] and FAO, in preparation) have noted that the policy emphasis on promoting decentralized forest management is also a response to factors that include community demands for a greater say in natural resource governance and recognition by many decision‑makers that communities have the capacity to manage resources sustainably.",
+      "source_chunk": 4,
+      "id": "ae17a143-7810-4300-8c12-8d669c20a5a4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Identified as a policy response that leverages community capacity, indicating a shift toward more distributed governance structures.",
+        "supporting_text": "policy emphasis on promoting decentralized forest management is also a response to factors that include community demands ... and recognition ... that communities have the capacity to manage resources sustainably."
+      }
+    },
+    {
+      "name": "Collaborative forms of community‑based forestry",
+      "definition": "Forms of CBF that emphasize cooperation among multiple stakeholders, focusing on how the forestry approach can be undertaken successfully and addressing weaknesses through critical analysis and research.",
+      "key_proponents": [
+        "Arnold (2001)",
+        "McDermott and Schreckenberg (2009)"
+      ],
+      "supporting_text": "Research interest has burgeoned, particularly focused on collaborative forms of CBF and aimed at working out how this form of forestry can be undertaken successfully… McDermott and Schreckenberg (2009) noted distinct differences in the way that collaborative forms of CBF regimes have evolved in the global North and South.",
+      "source_chunk": 4,
+      "id": "bef2e086-febc-48fc-804e-5448b3f1181d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows a shift from centralized to decentralized, systemic forest governance.",
+        "supporting_text": "Lawrence (2007) … the evolutionary path of CBF “follows a trend from reductionist to systemic … adaptive”."
+      }
+    },
+    {
+      "name": "Adaptive management",
+      "definition": "An evolutionary stage of CBF that moves toward learning, silvicultural experimentation and adaptive relations between humans and the environment, representing a shift from reductionist to systemic approaches.",
+      "key_proponents": [
+        "Lawrence (2007)"
+      ],
+      "supporting_text": "Lawrence (2007, p. 9) emphasized that CBF is not static. She argued that the evolutionary path of CBF \"follows a trend from reductionist to systemic, from simple to complex and from planned to adaptive… towards the eternally elusive goal of sustainable systemic and adaptive relations between humans and our environment\".",
+      "source_chunk": 4,
+      "id": "7723f5c6-2def-4f6c-a81e-73929f4482ac",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Identified as a later stage in the systemic evolution of CBF.",
+        "supporting_text": "… towards the eternally elusive goal of sustainable systemic and adaptive relations between humans and our environment."
+      }
+    },
+    {
+      "name": "Payment for environmental services (PES)",
+      "definition": "A mechanism that translates external, non‑market values of the environment into direct, contractual, conditional payments to local landholders for adopting practices that secure ecosystem conservation and restoration.",
+      "key_proponents": [
+        "Engel, Pagiola and Wunder (2008)"
+      ],
+      "supporting_text": "The PES concept has attracted growing interest in recent years \"as a mechanism to translate external, non‑market values of the environment into real financial incentives for local actors to provide environmental services\" (Engel, Pagiola and Wunder, 2008, p. 663).",
+      "id": "2c163401-fed8-46a8-9268-cd27b2257a4d",
+      "variations": [
+        "Payment for Environmental Services (PES)",
+        "Payment for environmental services (PES)"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "The PES concept has attracted growing interest in recent years \"as a mechanism to translate external, non‑market values of the environment into real financial incentives for local actors to provide environmental services\" (Engel, Pagiola and Wunder, 2008, p. 663).",
+        "Additional issues such as climate change, payment for environmental services (PES) and managing forests across the landscape have more recently been introduced into the earlier mix, leading to an increasingly complex policy and operational environment."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces market‑based incentives that can shift behavior toward conservation.",
+        "supporting_text": "Payment for environmental services … as a mechanism to translate external, non‑market values of the environment into real financial incentives for local actors."
+      }
+    },
+    {
+      "name": "Indigenous rights over forest resources",
+      "definition": "The fundamental rights of indigenous and local communities to exercise control over their traditional natural resources, reinforced by the UN Declaration on the Rights of Indigenous Peoples (2007) and used as a justification for CBF initiatives.",
+      "key_proponents": [
+        "United Nations Declaration on the Rights of Indigenous Peoples (2007)"
+      ],
+      "supporting_text": "In more recent years the fundamental rights of indigenous and other local communities to exercise control over their traditional natural resources has come to prominence as a justification for CBF. The United Nations (UN) Declaration on the Rights of Indigenous Peoples (adopted by the UN in 2007) has given additional impetus to this movement.",
+      "source_chunk": 4,
+      "id": "bf8e9b2f-67db-43a3-b437-593711f8777d",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "UN Declaration and legal challenges raise the legitimacy of indigenous forest claims.",
+        "supporting_text": "The UN Declaration … has given additional impetus to this movement … legal recognition of indigenous land rights claims … has grown."
+      }
+    },
+    {
+      "name": "Community‑based forest management (CBF)",
+      "definition": "A participatory approach that decentralises forest management to local communities, indigenous peoples and other stakeholders, channeling lessons from successful local experiences into global policy and contributing to sustainable forest management.",
+      "key_proponents": [
+        "Commission on Sustainable Development (CSD)",
+        "International Union for Conservation of Nature (IUCN)",
+        "United Nations Forum on Forests (UNFF)"
+      ],
+      "supporting_text": "The purpose was to channel the lessons learned from successful local experiences into global policy discourse, promote decentralisation of forest management and emphasise the potential of CBF to contribute to SFM.",
+      "source_chunk": 6,
+      "id": "0506c099-71e1-481c-9180-c1759de8a834",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Positions community stewardship as a systemic alternative to top‑down forest governance.",
+        "supporting_text": "CBF has become an integral part of international discussions and the work programmes of most international organizations concerned with forest conservation."
+      }
+    },
+    {
+      "name": "REDD+ (Reducing Emissions from Deforestation and Forest Degradation)",
+      "definition": "An international climate‑change mechanism that pays people in developing countries to avoid deforestation and forest degradation, while explicitly incorporating sustainable forest management and the enhancement of forest carbon stocks.",
+      "key_proponents": [
+        "UNFCCC (2007)",
+        "World Bank (Forest Carbon Partnership Facility)"
+      ],
+      "supporting_text": "The concept of reducing emissions from deforestation and forest degradation in developing countries (REDD or REDD+), developed to apply post Kyoto Protocol (i.e. post 2012), involves paying people to avoid deforestation and forest degradation – that is, not to remove trees or damage forest quality.",
+      "source_chunk": 6,
+      "id": "67276fc6-d276-45c7-a4a9-9d61aefd1432",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Links carbon finance to community forest management, offering a systemic climate‑mitigation pathway.",
+        "supporting_text": "REDD+ is a specific case of PES where it is hoped that local forest users will choose forest conservation if they receive higher compensation."
+      }
+    },
+    {
+      "name": "2030 Agenda for Sustainable Development",
+      "definition": "A United Nations‑adopted framework comprising 17 Sustainable Development Goals that integrates economic, social and environmental dimensions to guide global development until 2030.",
+      "key_proponents": [
+        "United Nations"
+      ],
+      "supporting_text": "In September 2015 the United Nations adopted a set of 17 Sustainable Development Goals (SDGs) which provide an overarching policy framework to guide the world's development agenda until 2030 (UN, 2015).",
+      "source_chunk": 6,
+      "id": "6d84b6c8-e379-4415-8e0c-3f40fa5fcb5e",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Elevates CBF visibility by embedding it in a globally recognised development framework.",
+        "supporting_text": "The 2030 Agenda for Sustainable Development offers a real opportunity to support the scaling‑up of CBF worldwide and enhance its effectiveness."
+      }
+    },
+    {
+      "name": "Sustainable Development Goals (SDGs)",
+      "definition": "A set of 17 globally agreed objectives that aim to eradicate poverty, achieve gender equality, and integrate economic, social and environmental dimensions of sustainable development.",
+      "key_proponents": [
+        "United Nations"
+      ],
+      "supporting_text": "The goals have a strong emphasis on poverty eradication as well as gender equality and the empowerment of women and girls. In particular, they emphasise integration of the economic, social and environmental dimensions of sustainable development.",
+      "source_chunk": 6,
+      "id": "ef51c5ad-c00f-4a6e-88b7-5b8a726cc0d2",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Links CBF directly to SDG 15.2, raising its policy relevance.",
+        "supporting_text": "CBF can contribute most directly to SDG 15.2, which states: “By 2020, promote the implementation of sustainable management of all types of forests…”."
+      }
+    },
+    {
+      "name": "Forest certification",
+      "definition": "A voluntary, standards‑based system that verifies sustainable forest management and allows forest products to access markets that reward proven sustainability, often through price premiums.",
+      "key_proponents": [
+        "Forest Stewardship Council (FSC)",
+        "Programme for the Endorsement of Forest Certification (PEFC)"
+      ],
+      "supporting_text": "Certification of sustainable production is often proposed as a way of increasing market access and obtaining a price premium for forest products from forests managed by communities and smallholders.",
+      "source_chunk": 6,
+      "id": "1d8496d2-e4b2-4544-bf15-35f436f4a17a"
+    },
+    {
+      "name": "Forest commons",
+      "definition": "Forests that are collectively owned or managed by local communities, providing multiple ecological and livelihood benefits at local to global scales.",
+      "key_proponents": [
+        "Chhatre and Agrawal (2009)"
+      ],
+      "supporting_text": "Forests provide multiple benefits at local to global scales. These include the global public good of carbon sequestration and local and national level contributions to livelihoods for more than half a billion users. Forest commons are a particularly important class of forests generating these multiple benefits.",
+      "source_chunk": 6,
+      "id": "b6e8b8ea-b078-4398-9d65-14ce03f58f69",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Highlights the role of shared forest resources in delivering multiple ecological and livelihood benefits.",
+        "supporting_text": "Forests provide multiple benefits … Forest commons are a particularly important class of forests generating these multiple benefits."
+      }
+    },
+    {
+      "name": "No‑regrets policy reforms",
+      "definition": "Policy actions that reduce deforestation and forest degradation and are beneficial regardless of climate‑change objectives, such as removing perverse subsidies and strengthening tenure and governance.",
+      "key_proponents": [
+        "Angelsen et al. (2012)"
+      ],
+      "supporting_text": "Angelsen et al. (2012), in their review of the first generation of REDD+ projects, recommended giving priority to three sets of actions, one of which was to implement \"no regrets\" policy reforms that can reduce deforestation and forest degradation but that are desirable regardless of climate objectives.",
+      "source_chunk": 6,
+      "id": "4c2bafa7-14e0-4d0b-87ba-f1a25599cc6e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Proposed reforms can reduce deforestation regardless of climate goals, showing a pathway for systemic improvement.",
+        "supporting_text": "“implement ‘no regrets’ policy reforms that can reduce deforestation and forest degradation but that are desirable regardless of climate objectives.”"
+      }
+    },
+    {
+      "name": "Carbon markets",
+      "definition": "Market mechanisms that create financial incentives for smallholders and communities to increase carbon stocks in their forests, typically through the sale of carbon offsets.",
+      "key_proponents": [
+        "World Bank (Forest Carbon Partnership Facility)"
+      ],
+      "supporting_text": "The relatively recent emergence of carbon markets also has the potential to provide a mechanism for smallholders and communities to receive an additional stream of revenue in exchange for demonstrably increasing the carbon stocks in their forests.",
+      "source_chunk": 6,
+      "id": "513a4cc3-6520-4199-8f1a-6135615ad6a5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Carbon markets are presented as a new mechanism to provide revenue to smallholders and communities.",
+        "supporting_text": "“The relatively recent emergence of carbon markets also has the potential to provide a mechanism for smallholders and communities to receive an additional stream of revenue.”"
+      }
+    },
+    {
+      "name": "Decentralisation of forest management",
+      "definition": "The transfer of authority and decision‑making power over forest resources from central governments to local communities, aiming to improve governance, livelihoods and forest outcomes.",
+      "key_proponents": [
+        "Commission on Sustainable Development (CSD)",
+        "International Union for Conservation of Nature (IUCN)"
+      ],
+      "supporting_text": "The purpose was to channel the lessons learned from successful local experiences into global policy discourse, promote decentralisation of forest management and emphasise the potential of CBF to contribute to SFM.",
+      "source_chunk": 6,
+      "id": "6f843787-9b9e-4ada-94a7-745f3918c3ec",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Decentralisation is repeatedly linked to empowering communities and enabling participatory management.",
+        "supporting_text": "“decentralisation of forest management … is about development and climate policies” and “devolution of authority to forest‑based communities.”"
+      }
+    },
+    {
+      "name": "Sustainable forest management",
+      "definition": "The practice of managing forests in a way that balances ecological, social, and economic objectives, emphasized through collective action by indigenous and local communities.",
+      "key_proponents": [
+        "UN Forum on Forests (UNFF)"
+      ],
+      "supporting_text": "UNFF (2015) recognized the importance of collective action by indigenous and local communities in advancing sustainable forest management.",
+      "source_chunk": 7,
+      "id": "d32a9bc8-29cf-4c21-b6b6-1c371509f8e7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UNFF links the declaration to the goal of sustainable forest management, reinforcing collective effort.",
+        "supporting_text": "UNFF (2015) recognized the importance of collective action by indigenous and local communities in advancing sustainable forest management."
+      }
+    },
+    {
+      "name": "Community‑based forestry",
+      "definition": "A forestry approach that empowers local communities to manage forest resources, linked to broader goals such as rural poverty alleviation, food security, nutrition, and sustainable provision of goods and services from natural resources.",
+      "key_proponents": [
+        "Food and Agriculture Organization (FAO)"
+      ],
+      "supporting_text": "FAO, through its new Strategic Framework, is revamping its programme on community‑based forestry to contribute to its five Strategic Objectives, in particular to rural poverty alleviation, food security and nutrition and the sustainable provision of goods and services from natural resources.",
+      "source_chunk": 7,
+      "id": "5ce6c84f-49f6-44ec-be53-296b4134f7d7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Central to multiple initiatives, it underpins collective implementation of forest stewardship.",
+        "supporting_text": "FAO, through its new Strategic Framework, is revamping its programme on community‑based forestry..."
+      }
+    },
+    {
+      "name": "Smallholder and community forestry",
+      "definition": "Forestry activities that improve livelihoods by supporting small‑scale landowners and community groups in managing forest lands.",
+      "key_proponents": [
+        "Center for International Forestry Research (CIFOR)"
+      ],
+      "supporting_text": "The Center for International Forestry Research (CIFOR, 2008) has included \"Improving livelihoods through smallholder and community forestry\" as one of the six research domains in its 2008‑2018 strategic plan.",
+      "source_chunk": 7,
+      "id": "b01bc506-af28-46a8-a7b4-28a97a73c0d8",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "CIFOR’s research focus signals a shift toward livelihood‑oriented forest governance.",
+        "supporting_text": "CIFOR ... has included “Improving livelihoods through smallholder and community forestry” as one of the six research domains..."
+      }
+    },
+    {
+      "name": "Community Forest Management and Enterprises",
+      "definition": "A thematic programme that promotes the management of forests by local communities and the development of community‑run forest enterprises.",
+      "key_proponents": [
+        "International Tropical Timber Organization (ITTO)"
+      ],
+      "supporting_text": "The International Tropical Timber Organization (ITTO, 2014) has included Community Forest Management and Enterprises as one of its five thematic programmes.",
+      "source_chunk": 7,
+      "id": "c8ecbe77-a845-4454-ae6e-77b099da26fd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "ITTO’s thematic inclusion points to emerging institutional support for community enterprises.",
+        "supporting_text": "ITTO ... has included Community Forest Management and Enterprises as one of its five thematic programmes."
+      }
+    },
+    {
+      "name": "Integration of traditional knowledge and practices of indigenous and local communities related to sustainable use of biodiversity",
+      "definition": "A strategic target that calls for respecting and fully incorporating indigenous and local peoples' traditional knowledge and practices into the implementation of biodiversity conservation and sustainable use.",
+      "key_proponents": [
+        "Conference of the Parties of the Convention on Biological Diversity (CBD)"
+      ],
+      "supporting_text": "The Conference of the Parties of the Convention on Biological Diversity has adopted a target ... respecting and fully integrating traditional knowledge and practices of indigenous and local communities related to sustainable use of biodiversity into the implementation of the Convention.",
+      "source_chunk": 7,
+      "id": "5d083ff3-a142-467e-8929-8635b97b2362",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Target adoption raises the profile and legitimacy of indigenous knowledge in global biodiversity policy.",
+        "supporting_text": "CBD COP ... adopted a target ... respecting and fully integrating traditional knowledge and practices of indigenous and local communities..."
+      }
+    }
+  ]
+}

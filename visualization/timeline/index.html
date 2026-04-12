@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Health Timeline Visualization</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .timeline-container {
+            position: relative;
+            margin: 40px 0;
+            padding: 20px 0;
+            overflow-x: auto;
+            overflow-y: visible;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+            min-height: 320px;
+            height: 320px;
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(52, 152, 219, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            z-index: 5;
+            cursor: pointer;
+            animation: fadeInOut 2s infinite;
+        }
+        
+        @keyframes fadeInOut {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+        
+        .timeline-axis {
+            height: 4px;
+            background-color: #3498db;
+            position: relative;
+            margin: 140px auto;
+            min-width: 100%;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-tick {
+            position: absolute;
+            width: 2px;
+            height: 12px;
+            background-color: #3498db;
+            bottom: -12px;
+            border-radius: 1px;
+        }
+        
+        .timeline-label {
+            position: absolute;
+            font-size: 12px;
+            color: #555;
+            bottom: -30px;
+            transform: translateX(-50%);
+            text-align: center;
+            font-weight: 500;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 1px 3px;
+            border-radius: 2px;
+        }
+        
+        .event-point {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #3498db;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.2s ease;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            border: 2px solid white;
+        }
+        
+        .event-point:hover {
+            width: 24px;
+            height: 24px;
+            background-color: #2980b9;
+            box-shadow: 0 0 8px rgba(0,0,0,0.5);
+            z-index: 20;
+        }
+        
+        .event-point[data-significance="fostering_collective_action"] {
+            background-color: #2ecc71;
+        }
+
+        .event-point[data-significance="revealing_potential_for_system_change"] {
+            background-color: #9b59b6;
+        }
+
+        .event-point[data-significance="exposing_prevailing_condition"] {
+            background-color: #e67e22;
+        }
+
+        .event-point[data-significance="impacting_salience_and_social_acceptance"] {
+            background-color: #3498db;
+        }
+
+        .event-point[data-significance="undermining_changes_and_progress"] {
+            background-color: #e74c3c;
+        }
+
+        .event-point[data-significance="unclear"] {
+            background-color: #95a5a6;
+        }
+        
+        /* Critic assessment indicators */
+        .event-point.has-critic-assessment {
+            border: 2px dashed #e74c3c;
+        }
+        
+        .event-point.critic-excellent {
+            border: 2px solid #2ecc71;
+        }
+        
+        .event-point.critic-good {
+            border: 2px solid #3498db;
+        }
+        
+        .event-point.critic-fair {
+            border: 2px solid #f39c12;
+        }
+        
+        .event-point.critic-poor {
+            border: 2px solid #e74c3c;
+        }
+        
+        .event-label {
+            position: absolute;
+            font-size: 12px;
+            color: #333;
+            transform: translateX(-50%);
+            text-align: center;
+            max-width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2px 5px;
+            border-radius: 3px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+            z-index: 5;
+        }
+        
+        .event-label:hover {
+            max-width: 300px;
+            font-weight: bold;
+            z-index: 20;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        .event-label.top {
+            bottom: 15px;
+        }
+        
+        .event-label.bottom {
+            top: 15px;
+        }
+        
+        .event-details {
+            display: none;
+            position: absolute;
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+            font-size: 14px;
+        }
+        
+        .event-details h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        
+        .event-details p {
+            margin-bottom: 8px;
+        }
+        
+        .event-details .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .event-details .close-btn:hover {
+            color: #333;
+        }
+        
+        .event-details .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        
+        .event-details .tag {
+            background-color: #e1f0fa;
+            border: 1px solid #3498db;
+            border-radius: 3px;
+            padding: 2px 6px;
+            font-size: 12px;
+        }
+        
+        .filters {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        
+        .type-filter, .significance-filter {
+            margin-bottom: 10px;
+        }
+        
+        .filter-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .related-events {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+        
+        .related-event-link {
+            display: block;
+            color: #3498db;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        
+        .related-event-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <style>
+        .pilot-switcher {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            background: #eef4fb;
+            border-radius: 6px;
+            border: 1px solid #c5d9ee;
+        }
+        .pilot-switcher label {
+            font-weight: 600;
+            color: #2c3e50;
+            white-space: nowrap;
+            margin: 0;
+        }
+        .pilot-switcher select {
+            flex: 1;
+            max-width: 480px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid #aac4e0;
+            font-size: 14px;
+        }
+        .pilot-switcher .loading-note {
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Planetary Health Timeline</h1>
+
+        <div class="pilot-switcher" id="pilot-switcher" style="display:none">
+            <label for="pilot-select">Dataset:</label>
+            <select id="pilot-select"></select>
+            <span class="loading-note" id="switcher-note"></span>
+        </div>
+        
+        <div class="filters">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="type-filter">
+                        <div class="filter-label">Event Type:</div>
+                        <div class="filter-options" id="type-filters">
+                            <!-- Event type filters will be generated here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="significance-filter">
+                        <div class="filter-label">Significance:</div>
+                        <div class="filter-options" id="significance-filters">
+                            <!-- Significance filters will be generated here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="critic-filter">
+                        <div class="filter-label">Critic Assessment:</div>
+                        <div class="filter-options">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="show-critic-toggle">
+                                <label class="form-check-label" for="show-critic-toggle">Show Critic Assessments</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline-container" id="timeline-container">
+            <div class="timeline-axis" id="timeline-axis"></div>
+            <!-- Events will be placed here -->
+        </div>
+        
+        <div class="event-details" id="event-details">
+            <span class="close-btn">&times;</span>
+            <h3 id="detail-title"></h3>
+            <p><strong>Year:</strong> <span id="detail-year"></span></p>
+            <p><strong>Type:</strong> <span id="detail-type"></span></p>
+            <p><strong>Significance:</strong> <span id="detail-significance"></span></p>
+            <p id="detail-significance-justification" style="display:none; font-size:12px; color:#555; font-style:italic; margin-top:-8px;"></p>
+            <p id="detail-description"></p>
+            <div id="detail-sources"></div>
+            <div class="tags" id="detail-tags"></div>
+            <div id="critic-assessment" style="display: none; margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee;">
+                <p><strong>Critic Assessment:</strong></p>
+                <div id="critic-details"></div>
+            </div>
+            <div class="related-events" id="related-events"></div>
+        </div>
+        
+        <div class="legend" id="sig-legend">
+            <!-- Populated dynamically by buildLegend() -->
+            
+            <!-- Critic assessment legend (hidden by default) -->
+            <div id="critic-legend" style="width: 100%; margin-top: 15px; display: none;">
+                <h6 class="text-center">Critic Assessment Quality</h6>
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #2ecc71;"></div>
+                        <span>Excellent</span>
+                    </div>
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #3498db;"></div>
+                        <span>Good</span>
+                    </div>
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #f39c12;"></div>
+                        <span>Fair</span>
+                    </div>
+                    <div class="legend-item">
+                        <div style="width: 16px; height: 16px; border-radius: 50%; margin-right: 5px; background-color: white; border: 2px solid #e74c3c;"></div>
+                        <span>Poor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="mt-5">Events Without Dates</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" id="undated-events-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Significance</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="undated-events-body">
+                    <!-- Undated events will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Global variables for critic data
+        let criticData = null;
+        let showCriticAssessments = false;
+        
+        // --------------- pilot switcher + data loading ---------------
+
+        // Resolve manifest path relative to this file's location
+        // Works both on GitHub Pages (relative URLs) and local dev server
+        const MANIFEST_PATH = '../../data/manifest.json';
+
+        function loadKG(path) {
+            document.getElementById('switcher-note').textContent = 'Loading…';
+            const url = (path.startsWith('/') || path.startsWith('http')) ? path : '/' + path;
+            fetch(url + '?v=' + new Date().getTime())
+                .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+                .then(data => {
+                    document.getElementById('switcher-note').textContent = '';
+                    criticData = null;
+                    try {
+                        initializeTimeline(data);
+                    } catch(err) {
+                        console.error('Error in initializeTimeline:', err);
+                        document.getElementById('switcher-note').textContent = 'Render error: ' + err.message;
+                    }
+                })
+                .catch(err => {
+                    document.getElementById('switcher-note').textContent = 'Failed to load: ' + err;
+                    console.error('Error loading KG:', err);
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Try to load the manifest (works on GitHub Pages and dev server)
+            fetch(MANIFEST_PATH + '?v=' + new Date().getTime())
+                .then(r => { if (!r.ok) throw new Error('no manifest'); return r.json(); })
+                .then(pilots => {
+                    const switcher = document.getElementById('pilot-switcher');
+                    const sel = document.getElementById('pilot-select');
+                    pilots.forEach((p, i) => {
+                        const opt = document.createElement('option');
+                        opt.value = p.path;
+                        opt.textContent = p.label;
+                        sel.appendChild(opt);
+                    });
+                    switcher.style.display = 'flex';
+                    sel.addEventListener('change', () => loadKG(sel.value));
+                    loadKG(pilots[0].path);
+                })
+                .catch(() => {
+                    // No manifest — fall back to dev-server API
+                    fetch('/api/knowledge-graph?v=' + new Date().getTime())
+                        .then(r => r.json())
+                        .then(data => {
+                            fetch('/api/critic-data?v=' + new Date().getTime())
+                                .then(r => { if (!r.ok) throw new Error('no critic'); return r.json(); })
+                                .then(cd => { criticData = cd; initializeTimeline(data); })
+                                .catch(() => { criticData = null; initializeTimeline(data); });
+                        })
+                        .catch(() => loadSampleData());
+                });
+        });
+        
+        function loadSampleData() {
+            console.log("Loading sample data from sample-data.json");
+            fetch('sample-data.json')
+                .then(response => {
+                    console.log("Sample data response status:", response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Sample data loaded successfully:", data);
+                    initializeTimeline(data);
+                })
+                .catch(error => {
+                    console.error('Error loading sample data:', error);
+                    // Create minimal sample data as a last resort
+                    console.log("Creating fallback sample data");
+                    const sampleData = {
+                        events: [
+                            {
+                                id: "fallback1",
+                                year: 1962,
+                                title: "Publication of 'Silent Spring'",
+                                description: "Rachel Carson's book documented the detrimental effects of pesticides on the environment.",
+                                significance: { primary_category: "impacting_salience_and_social_acceptance", justification: "Shifted public discourse on pesticides and environmental harm." },
+                                type: "Publication",
+                                tags: ["environmental movement", "ecology"]
+                            },
+                            {
+                                id: "fallback2",
+                                year: 1972,
+                                title: "UN Conference on Human Environment",
+                                description: "First major conference on international environmental issues.",
+                                significance: { primary_category: "fostering_collective_action", justification: "Enabled international coordination on environmental governance." },
+                                type: "Conference",
+                                tags: ["United Nations", "policy"]
+                            },
+                            {
+                                id: "fallback3",
+                                year: 2015,
+                                title: "Lancet Commission on Planetary Health",
+                                description: "Introduced the concept of planetary health.",
+                                significance: { primary_category: "revealing_potential_for_system_change", justification: "Introduced the planetary health framework linking human and natural system health." },
+                                type: "Publication",
+                                tags: ["planetary health", "Anthropocene"]
+                            }
+                        ]
+                    };
+                    initializeTimeline(sampleData);
+                });
+        }
+        
+        function initializeTimeline(data) {
+            // Clear previous render
+            // Clear and rebuild timeline-container (timeline-axis lives inside it)
+            const _tc = document.getElementById('timeline-container');
+            if (_tc) {
+                _tc.innerHTML = '<div class="timeline-axis" id="timeline-axis"></div>';
+            }
+            ['type-filters', 'significance-filters',
+             'undated-events-body', 'related-events'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.innerHTML = '';
+            });
+            // Clear legend items (keep the critic-legend div intact)
+            const legend = document.getElementById('sig-legend');
+            const criticLegend = document.getElementById('critic-legend');
+            if (legend && criticLegend) {
+                Array.from(legend.children).forEach(child => {
+                    if (child !== criticLegend) child.remove();
+                });
+            }
+
+            const events = data.events || [];
+            const relationships = data.relationships || [];
+            
+            if (events.length === 0) {
+                document.getElementById('timeline-container').innerHTML = '<p class="text-center">No events found in the dataset.</p>';
+                return;
+            }
+            
+            // Filter events into those with and without valid years
+            const eventsWithValidYears = [];
+            const eventsWithoutYears = [];
+            
+            events.forEach(event => {
+                const year = parseInt(event.year);
+                if (!isNaN(year)) {
+                    eventsWithValidYears.push(event);
+                } else {
+                    eventsWithoutYears.push(event);
+                }
+            });
+            
+            console.log("Events with valid years:", eventsWithValidYears.length);
+            console.log("Events without years:", eventsWithoutYears.length);
+            
+            if (eventsWithValidYears.length === 0) {
+                document.getElementById('timeline-container').innerHTML = '<p class="text-center">No events with valid years found in the dataset.</p>';
+                return;
+            }
+            
+            // Sort events by year
+            eventsWithValidYears.sort((a, b) => parseInt(a.year) - parseInt(b.year));
+            
+            // Find min and max years for the timeline
+            const minYear = Math.min(...eventsWithValidYears.map(e => parseInt(e.year)));
+            const maxYear = Math.max(...eventsWithValidYears.map(e => parseInt(e.year)));
+            
+            console.log("Valid events count:", eventsWithValidYears.length);
+            console.log("Events with invalid years:", events.length - eventsWithValidYears.length);
+            
+            // Create a map of events by ID for quick lookup
+            const eventsById = {};
+            events.forEach(event => {
+                eventsById[event.id] = event;
+            });
+            
+            // Create a map of related events
+            const relatedEvents = {};
+            relationships.forEach(rel => {
+                if (rel.source_type === 'Event' && rel.target_type === 'Event') {
+                    if (!relatedEvents[rel.source_id]) {
+                        relatedEvents[rel.source_id] = [];
+                    }
+                    relatedEvents[rel.source_id].push({
+                        eventId: rel.target_id,
+                        relationshipType: rel.relation_type,
+                        description: rel.supporting_text
+                    });
+                    
+                    // Add the reverse relationship too
+                    if (!relatedEvents[rel.target_id]) {
+                        relatedEvents[rel.target_id] = [];
+                    }
+                    
+                    // Determine the reverse relationship type
+                    let reverseType = 'Related To';
+                    if (rel.relation_type === 'Influences') reverseType = 'Influenced By';
+                    if (rel.relation_type === 'Precedes') reverseType = 'Follows';
+                    if (rel.relation_type === 'Follows') reverseType = 'Precedes';
+                    if (rel.relation_type === 'References') reverseType = 'Referenced By';
+                    if (rel.relation_type === 'IsReferencedBy') reverseType = 'References';
+                    
+                    relatedEvents[rel.target_id].push({
+                        eventId: rel.source_id,
+                        relationshipType: reverseType,
+                        description: rel.supporting_text
+                    });
+                }
+            });
+            
+            // Create the timeline axis
+            createTimelineAxis(minYear, maxYear);
+            
+            // Create event points
+            createEventPoints(events, eventsById, relatedEvents);
+            
+            // Create filters
+            createFilters(events);
+            
+            // Create table for events without years
+            createUndatedEventsTable(eventsWithoutYears, eventsById, relatedEvents);
+        }
+        
+        function createTimelineAxis(minYear, maxYear) {
+            const timelineAxis = document.getElementById('timeline-axis');
+            const timelineContainer = document.getElementById('timeline-container');
+            
+            console.log("Min Year:", minYear, "Max Year:", maxYear);
+            
+            // Add some padding to the years
+            const paddedMinYear = minYear - 2;
+            const paddedMaxYear = maxYear + 2;
+            const yearRange = paddedMaxYear - paddedMinYear;
+            
+            console.log("Padded Min Year:", paddedMinYear, "Padded Max Year:", paddedMaxYear, "Year Range:", yearRange);
+            
+            // Calculate a good width for the timeline based on the number of years
+            // Each year should have at least 200px of space (increased from 100px)
+            const minWidth = Math.max(yearRange * 200, timelineContainer.offsetWidth);
+            timelineAxis.style.width = `${minWidth}px`;
+            console.log("Initial timeline width:", minWidth);
+            
+            // Add scroll indicator with click functionality
+            const scrollIndicator = document.createElement('div');
+            scrollIndicator.className = 'scroll-indicator';
+            scrollIndicator.textContent = 'Scroll →';
+            scrollIndicator.addEventListener('click', function() {
+                console.log("Scroll indicator clicked");
+                // Scroll the timeline container to the right by 300px
+                timelineContainer.scrollLeft += 300;
+                console.log("Scrolled to:", timelineContainer.scrollLeft);
+            });
+            timelineContainer.appendChild(scrollIndicator);
+            
+            // Zoom controls — positioned inside the timeline box, top-right corner
+            const zoomControls = document.createElement('div');
+            zoomControls.style.cssText = `
+                position: absolute; top: 8px; right: 8px; z-index: 20;
+                display: flex; gap: 4px;
+                background: rgba(255,255,255,0.9);
+                padding: 4px 6px; border-radius: 6px;
+                box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+                border: 1px solid #ddd;
+            `;
+
+            function makeZoomBtn(label) {
+                const btn = document.createElement('button');
+                btn.textContent = label;
+                btn.style.cssText = `
+                    background: #3498db; color: white; border: none;
+                    border-radius: 4px; width: 28px; height: 28px;
+                    font-size: 16px; font-weight: bold; cursor: pointer; line-height: 1;
+                `;
+                btn.onmouseover = () => btn.style.background = '#2980b9';
+                btn.onmouseout  = () => btn.style.background = '#3498db';
+                return btn;
+            }
+
+            const zoomInBtn = makeZoomBtn('+');
+            zoomInBtn.addEventListener('click', function() {
+                const currentWidth = parseInt(timelineAxis.style.width) || timelineAxis.offsetWidth;
+                timelineAxis.style.width = `${currentWidth * 1.3}px`;
+                repositionEvents();
+            });
+
+            const zoomOutBtn = makeZoomBtn('−');
+            zoomOutBtn.addEventListener('click', function() {
+                const currentWidth = parseInt(timelineAxis.style.width) || timelineAxis.offsetWidth;
+                timelineAxis.style.width = `${Math.max(currentWidth / 1.3, timelineContainer.clientWidth)}px`;
+                repositionEvents();
+            });
+
+            zoomControls.appendChild(zoomInBtn);
+            zoomControls.appendChild(zoomOutBtn);
+            timelineContainer.appendChild(zoomControls);
+            
+            // Create tick marks for each decade
+            const startDecade = Math.floor(paddedMinYear / 10) * 10;
+            const endDecade = Math.ceil(paddedMaxYear / 10) * 10;
+            
+            for (let year = startDecade; year <= endDecade; year += 10) {
+                if (year >= paddedMinYear && year <= paddedMaxYear) {
+                    const position = ((year - paddedMinYear) / yearRange) * 100;
+                    
+                    // Create tick mark
+                    const tick = document.createElement('div');
+                    tick.className = 'timeline-tick';
+                    tick.style.left = `${position}%`;
+                    timelineAxis.appendChild(tick);
+                    
+                    // Create label
+                    const label = document.createElement('div');
+                    label.className = 'timeline-label';
+                    label.textContent = year;
+                    label.style.left = `${position}%`;
+                    timelineAxis.appendChild(label);
+                }
+            }
+            
+            // Store the year range for event positioning
+            timelineAxis.dataset.minYear = paddedMinYear;
+            timelineAxis.dataset.maxYear = paddedMaxYear;
+            timelineAxis.dataset.yearRange = yearRange;
+        }
+        
+        function createEventPoints(events, eventsById, relatedEvents) {
+            const timelineContainer = document.getElementById('timeline-container');
+            const timelineAxis = document.getElementById('timeline-axis');
+            const paddedMinYear = parseFloat(timelineAxis.dataset.minYear);
+            const yearRange = parseFloat(timelineAxis.dataset.yearRange);
+            
+            // Get the position of the timeline axis for vertical positioning
+            const axisRect = timelineAxis.getBoundingClientRect();
+            const containerRect = timelineContainer.getBoundingClientRect();
+            const axisTop = axisRect.top - containerRect.top;
+            
+            console.log("Timeline axis position:", axisTop);
+            
+            // Filter out events with non-numeric years
+            const eventsWithValidYears = events.filter(event => {
+                const year = parseInt(event.year);
+                return !isNaN(year);
+            });
+            
+            console.log("Creating event points for", eventsWithValidYears.length, "events with valid years");
+            
+            // Group events by year to handle multiple events in the same year
+            const eventsByYear = {};
+            eventsWithValidYears.forEach(event => {
+                const year = parseInt(event.year);
+                if (!eventsByYear[year]) {
+                    eventsByYear[year] = [];
+                }
+                eventsByYear[year].push(event);
+            });
+            
+            // The axis sits at margin-top:140px inside the 320px container (padding:20px)
+            // So axisCenter = 20 (padding) + 140 (margin) = 160px from container top
+            const AXIS_CENTER = 160;
+            const LABEL_GAP = 12;   // px between dot edge and label
+            const LABEL_STEP = 22;  // px between stacked labels on same side
+
+            // Process events by year
+            Object.keys(eventsByYear).sort((a, b) => a - b).forEach(year => {
+                const yearEvents = eventsByYear[year];
+                const timelineWidth = timelineAxis.offsetWidth;
+                const yearPosition = ((parseInt(year) - paddedMinYear) / yearRange) * 100;
+                const pixelPosition = (yearPosition / 100) * timelineWidth;
+
+                const eventsCount = yearEvents.length;
+
+                yearEvents.forEach((event, eventIndex) => {
+                    // Use the qualitative significance category for coloring.
+                    const sig = (event.significance && event.significance.primary_category) || 'unclear';
+
+                    // Alternate: even indices go above axis, odd below
+                    const isTop = eventIndex % 2 === 0;
+                    const stackLevel = Math.floor(eventIndex / 2);
+                    const DOT_RADIUS = 8;
+
+                    // Spread dots vertically around axis centre
+                    const dotVertOffset = isTop
+                        ? -(DOT_RADIUS + stackLevel * (DOT_RADIUS * 2 + 4))
+                        :  (DOT_RADIUS + stackLevel * (DOT_RADIUS * 2 + 4));
+                    const dotTop = AXIS_CENTER + dotVertOffset;
+
+                    // Create event point
+                    const eventPoint = document.createElement('div');
+                    eventPoint.className = 'event-point';
+                    eventPoint.dataset.id = event.id;
+                    eventPoint.dataset.significance = sig;
+                    eventPoint.dataset.type = event.type || 'Other';
+                    eventPoint.dataset.year = event.year;
+                    eventPoint.style.left = `${pixelPosition}px`;
+                    eventPoint.style.top = `${dotTop}px`;
+                    timelineContainer.appendChild(eventPoint);
+
+                    // Labels continue outward from the dot
+                    const eventLabel = document.createElement('div');
+                    eventLabel.className = `event-label ${isTop ? 'top' : 'bottom'}`;
+                    eventLabel.textContent = event.title;
+                    eventLabel.style.left = `${pixelPosition}px`;
+
+                    if (isTop) {
+                        const bottomFromContainer = (320 - dotTop) + DOT_RADIUS + LABEL_GAP;
+                        eventLabel.style.bottom = `${bottomFromContainer}px`;
+                        eventLabel.style.top = 'auto';
+                    } else {
+                        eventLabel.style.top = `${dotTop + DOT_RADIUS + LABEL_GAP}px`;
+                        eventLabel.style.bottom = 'auto';
+                    }
+
+                    timelineContainer.appendChild(eventLabel);
+
+                    eventPoint.addEventListener('click', function(e) {
+                        showEventDetails(event, e, eventsById, relatedEvents);
+                    });
+                    eventLabel.addEventListener('click', function(e) {
+                        showEventDetails(event, e, eventsById, relatedEvents);
+                    });
+                });
+            });
+        }
+        
+        function showEventDetails(event, clickEvent, eventsById, relatedEvents) {
+            const detailsPanel = document.getElementById('event-details');
+            
+            // Set details content
+            document.getElementById('detail-title').textContent = event.title;
+            document.getElementById('detail-year').textContent = event.year;
+            document.getElementById('detail-type').textContent = event.type || 'Not specified';
+            const sigObj = event.significance;
+            if (sigObj && typeof sigObj === 'object' && sigObj.primary_category) {
+                document.getElementById('detail-significance').textContent = sigObj.primary_category.replace(/_/g, ' ');
+                document.getElementById('detail-significance-justification').textContent = sigObj.justification || '';
+                document.getElementById('detail-significance-justification').style.display = 'block';
+            } else {
+                document.getElementById('detail-significance').textContent = 'Not specified';
+                document.getElementById('detail-significance-justification').textContent = '';
+                document.getElementById('detail-significance-justification').style.display = 'none';
+            }
+            document.getElementById('detail-description').textContent = event.description || 'No description available.';
+            
+            // Set sources
+            const sourcesContainer = document.getElementById('detail-sources');
+            sourcesContainer.innerHTML = '';
+            if (event.sources && event.sources.length > 0) {
+                const sourcesTitle = document.createElement('p');
+                sourcesTitle.innerHTML = '<strong>Sources:</strong>';
+                sourcesContainer.appendChild(sourcesTitle);
+                
+                const sourcesList = document.createElement('ul');
+                sourcesList.style.fontSize = '12px';
+                sourcesList.style.paddingLeft = '20px';
+                
+                event.sources.forEach(source => {
+                    const sourceItem = document.createElement('li');
+                    sourceItem.textContent = source;
+                    sourcesList.appendChild(sourceItem);
+                });
+                
+                sourcesContainer.appendChild(sourcesList);
+            }
+            
+            // Set tags
+            const tagsContainer = document.getElementById('detail-tags');
+            tagsContainer.innerHTML = '';
+            if (event.tags && event.tags.length > 0) {
+                event.tags.forEach(tag => {
+                    const tagElement = document.createElement('span');
+                    tagElement.className = 'tag';
+                    tagElement.textContent = tag;
+                    tagsContainer.appendChild(tagElement);
+                });
+            }
+            
+            // Set critic assessment if available and enabled
+            const criticAssessmentContainer = document.getElementById('critic-assessment');
+            const criticDetailsContainer = document.getElementById('critic-details');
+            criticDetailsContainer.innerHTML = '';
+            
+            if (showCriticAssessments && criticData && criticData.entity_evaluations && criticData.entity_evaluations.event) {
+                // Find the critic assessment for this event
+                const eventEvaluation = criticData.entity_evaluations.event.find(eval => eval.entity_id === event.id);
+                
+                if (eventEvaluation) {
+                    criticAssessmentContainer.style.display = 'block';
+                    
+                    // Create quality badge
+                    const qualityBadge = document.createElement('div');
+                    qualityBadge.style.display = 'inline-block';
+                    qualityBadge.style.padding = '3px 8px';
+                    qualityBadge.style.borderRadius = '4px';
+                    qualityBadge.style.marginBottom = '10px';
+                    qualityBadge.style.fontWeight = 'bold';
+                    
+                    // Set color based on extraction quality
+                    switch(eventEvaluation.extraction_quality) {
+                        case 'excellent':
+                            qualityBadge.style.backgroundColor = '#d4edda';
+                            qualityBadge.style.color = '#155724';
+                            qualityBadge.textContent = 'Excellent';
+                            break;
+                        case 'good':
+                            qualityBadge.style.backgroundColor = '#cce5ff';
+                            qualityBadge.style.color = '#004085';
+                            qualityBadge.textContent = 'Good';
+                            break;
+                        case 'fair':
+                            qualityBadge.style.backgroundColor = '#fff3cd';
+                            qualityBadge.style.color = '#856404';
+                            qualityBadge.textContent = 'Fair';
+                            break;
+                        case 'poor':
+                            qualityBadge.style.backgroundColor = '#f8d7da';
+                            qualityBadge.style.color = '#721c24';
+                            qualityBadge.textContent = 'Poor';
+                            break;
+                        default:
+                            qualityBadge.style.backgroundColor = '#e9ecef';
+                            qualityBadge.style.color = '#495057';
+                            qualityBadge.textContent = 'Unknown';
+                    }
+                    
+                    criticDetailsContainer.appendChild(qualityBadge);
+                    
+                    // Add confidence score
+                    if (eventEvaluation.overall_confidence) {
+                        const confidenceElement = document.createElement('p');
+                        confidenceElement.innerHTML = `<strong>Confidence:</strong> ${eventEvaluation.overall_confidence}/5`;
+                        criticDetailsContainer.appendChild(confidenceElement);
+                    }
+                    
+                    // Add issues if any
+                    if (eventEvaluation.issues_identified && eventEvaluation.issues_identified.length > 0) {
+                        const issuesTitle = document.createElement('p');
+                        issuesTitle.innerHTML = '<strong>Issues:</strong>';
+                        criticDetailsContainer.appendChild(issuesTitle);
+                        
+                        const issuesList = document.createElement('ul');
+                        issuesList.style.fontSize = '12px';
+                        issuesList.style.paddingLeft = '20px';
+                        
+                        eventEvaluation.issues_identified.forEach(issue => {
+                            const issueItem = document.createElement('li');
+                            issueItem.innerHTML = `<strong>${issue.issue_type}:</strong> ${issue.description}`;
+                            issuesList.appendChild(issueItem);
+                        });
+                        
+                        criticDetailsContainer.appendChild(issuesList);
+                    }
+                    
+                    // Add strengths if any
+                    if (eventEvaluation.strengths && eventEvaluation.strengths.length > 0) {
+                        const strengthsTitle = document.createElement('p');
+                        strengthsTitle.innerHTML = '<strong>Strengths:</strong>';
+                        criticDetailsContainer.appendChild(strengthsTitle);
+                        
+                        const strengthsList = document.createElement('ul');
+                        strengthsList.style.fontSize = '12px';
+                        strengthsList.style.paddingLeft = '20px';
+                        
+                        eventEvaluation.strengths.forEach(strength => {
+                            const strengthItem = document.createElement('li');
+                            strengthItem.textContent = strength;
+                            strengthsList.appendChild(strengthItem);
+                        });
+                        
+                        criticDetailsContainer.appendChild(strengthsList);
+                    }
+                } else {
+                    criticAssessmentContainer.style.display = 'none';
+                }
+            } else {
+                criticAssessmentContainer.style.display = 'none';
+            }
+            
+            // Set related events
+            const relatedEventsContainer = document.getElementById('related-events');
+            relatedEventsContainer.innerHTML = '';
+            
+            if (relatedEvents[event.id] && relatedEvents[event.id].length > 0) {
+                const relatedTitle = document.createElement('p');
+                relatedTitle.innerHTML = '<strong>Related Events:</strong>';
+                relatedEventsContainer.appendChild(relatedTitle);
+                
+                relatedEvents[event.id].forEach(relation => {
+                    const relatedEvent = eventsById[relation.eventId];
+                    if (relatedEvent) {
+                        const link = document.createElement('a');
+                        link.className = 'related-event-link';
+                        link.textContent = `${relation.relationshipType}: ${relatedEvent.title} (${relatedEvent.year})`;
+                        link.addEventListener('click', function() {
+                            showEventDetails(relatedEvent, null, eventsById, relatedEvents);
+                        });
+                        relatedEventsContainer.appendChild(link);
+                    }
+                });
+            } else {
+                relatedEventsContainer.style.display = 'none';
+            }
+            
+            // Position the details panel
+            if (clickEvent) {
+                const rect = clickEvent.target.getBoundingClientRect();
+                const containerRect = document.querySelector('.container').getBoundingClientRect();
+                
+                // Calculate position relative to the container
+                let left = rect.left - containerRect.left + rect.width / 2;
+                let top = rect.top - containerRect.top + rect.height / 2;
+                
+                // Adjust to keep within container
+                if (left < 150) left = 150;
+                if (left > containerRect.width - 150) left = containerRect.width - 150;
+                
+                detailsPanel.style.left = `${left - 150}px`; // Center the 300px wide panel
+                detailsPanel.style.top = `${top + 20}px`;
+            }
+            
+            // Show the panel
+            detailsPanel.style.display = 'block';
+            
+            // Add close button functionality
+            document.querySelector('.close-btn').addEventListener('click', function() {
+                detailsPanel.style.display = 'none';
+            });
+        }
+        
+        function createFilters(events) {
+            // Get unique event types
+            const eventTypes = [...new Set(events.map(e => e.type || 'Other'))];
+            
+            // Create type filters
+            const typeFiltersContainer = document.getElementById('type-filters');
+            typeFiltersContainer.innerHTML = '';
+            
+            // Add "All" option
+            const allTypeLabel = document.createElement('label');
+            allTypeLabel.className = 'btn btn-sm btn-outline-primary active';
+            allTypeLabel.innerHTML = `
+                <input type="radio" name="type-filter" value="all" checked> All
+            `;
+            typeFiltersContainer.appendChild(allTypeLabel);
+            
+            // Add each event type
+            eventTypes.forEach(type => {
+                const label = document.createElement('label');
+                label.className = 'btn btn-sm btn-outline-primary';
+                label.innerHTML = `
+                    <input type="radio" name="type-filter" value="${type}"> ${type}
+                `;
+                typeFiltersContainer.appendChild(label);
+            });
+            
+            // Create significance filters
+            const significanceFiltersContainer = document.getElementById('significance-filters');
+            significanceFiltersContainer.innerHTML = '';
+            
+            // Add "All" option
+            const allSignificanceLabel = document.createElement('label');
+            allSignificanceLabel.className = 'btn btn-sm btn-outline-primary active';
+            allSignificanceLabel.innerHTML = `
+                <input type="radio" name="significance-filter" value="all" checked> All
+            `;
+            significanceFiltersContainer.appendChild(allSignificanceLabel);
+            
+            // Count events per significance category — split dated vs undated
+            const sigCounts = {};       // dated only (shown on timeline)
+            const sigCountsAll = {};    // all events (dated + undated table)
+            events.forEach(e => {
+                const cat = (e.significance && e.significance.primary_category) || 'unclear';
+                sigCountsAll[cat] = (sigCountsAll[cat] || 0) + 1;
+                if (!isNaN(parseInt(e.year))) {
+                    sigCounts[cat] = (sigCounts[cat] || 0) + 1;
+                }
+            });
+
+            // Add each significance category that appears in the data
+            const sigCategories = [
+                ['fostering_collective_action',            'Fostering Collective Action'],
+                ['revealing_potential_for_system_change',  'Revealing System Change Potential'],
+                ['exposing_prevailing_condition',          'Exposing Prevailing Condition'],
+                ['impacting_salience_and_social_acceptance','Impacting Salience & Acceptance'],
+                ['undermining_changes_and_progress',       'Undermining Progress'],
+                ['unclear',                                'Unclear'],
+            ];
+            sigCategories.forEach(([val, text]) => {
+                const total = sigCountsAll[val] || 0;
+                if (total === 0) return;
+                const label = document.createElement('label');
+                label.className = 'btn btn-sm btn-outline-primary';
+                label.innerHTML = `<input type="radio" name="significance-filter" value="${val}"> ${text}`;
+                significanceFiltersContainer.appendChild(label);
+            });
+
+            // Build the legend: show timeline count + undated count separately
+            buildLegend(sigCounts, sigCountsAll);
+            
+            // Add critic assessment toggle functionality
+            const criticToggle = document.getElementById('show-critic-toggle');
+            criticToggle.addEventListener('change', function() {
+                showCriticAssessments = this.checked;
+                document.getElementById('critic-legend').style.display = showCriticAssessments ? 'block' : 'none';
+                
+                // Apply critic assessment indicators to event points
+                applyEventCriticAssessments();
+            });
+            
+            // Add filter functionality
+            document.querySelectorAll('input[name="type-filter"]').forEach(input => {
+                input.addEventListener('change', applyFilters);
+            });
+            
+            document.querySelectorAll('input[name="significance-filter"]').forEach(input => {
+                input.addEventListener('change', applyFilters);
+            });
+            
+            // Update button active states
+            document.querySelectorAll('input[name="type-filter"]').forEach(input => {
+                input.addEventListener('change', function() {
+                    document.querySelectorAll('label.btn').forEach(label => {
+                        if (label.contains(this)) {
+                            label.classList.add('active');
+                        } else if (label.querySelector('input[name="type-filter"]')) {
+                            label.classList.remove('active');
+                        }
+                    });
+                });
+            });
+            
+            document.querySelectorAll('input[name="significance-filter"]').forEach(input => {
+                input.addEventListener('change', function() {
+                    document.querySelectorAll('label.btn').forEach(label => {
+                        if (label.contains(this)) {
+                            label.classList.add('active');
+                        } else if (label.querySelector('input[name="significance-filter"]')) {
+                            label.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        }
+        
+        function applyEventCriticAssessments() {
+            if (!criticData) return;
+            
+            const eventPoints = document.querySelectorAll('.event-point');
+            
+            // Reset all event points
+            eventPoints.forEach(point => {
+                point.classList.remove('has-critic-assessment', 'critic-excellent', 'critic-good', 'critic-fair', 'critic-poor');
+            });
+            
+            if (!showCriticAssessments) return;
+            
+            // Find event evaluations in critic data
+            const eventEvaluations = criticData.entity_evaluations?.event || [];
+            
+            // Create a map of event evaluations by entity_id
+            const evaluationsByEntityId = {};
+            eventEvaluations.forEach(evaluation => {
+                if (evaluation.entity_id) {
+                    evaluationsByEntityId[evaluation.entity_id] = evaluation;
+                }
+            });
+            
+            // Apply critic assessment classes to event points
+            eventPoints.forEach(point => {
+                const eventId = point.dataset.id;
+                const evaluation = evaluationsByEntityId[eventId];
+                
+                if (evaluation) {
+                    point.classList.add('has-critic-assessment');
+                    
+                    // Add class based on extraction quality
+                    if (evaluation.extraction_quality === 'excellent') {
+                        point.classList.add('critic-excellent');
+                    } else if (evaluation.extraction_quality === 'good') {
+                        point.classList.add('critic-good');
+                    } else if (evaluation.extraction_quality === 'fair') {
+                        point.classList.add('critic-fair');
+                    } else if (evaluation.extraction_quality === 'poor') {
+                        point.classList.add('critic-poor');
+                    }
+                }
+            });
+        }
+        
+        function repositionEvents() {
+            const timelineAxis = document.getElementById('timeline-axis');
+            const paddedMinYear = parseFloat(timelineAxis.dataset.minYear);
+            const paddedMaxYear = parseFloat(timelineAxis.dataset.maxYear);
+            const yearRange = paddedMaxYear - paddedMinYear;
+            const timelineWidth = timelineAxis.offsetWidth;
+
+            const AXIS_CENTER = 160;
+            const LABEL_GAP = 12;
+            const LABEL_STEP = 22;
+            const DOT_RADIUS = 8;
+
+            const eventPoints = document.querySelectorAll('.event-point');
+            const eventLabels = document.querySelectorAll('.event-label');
+
+            const pointsByYear = {};
+            eventPoints.forEach(point => {
+                const year = parseFloat(point.dataset.year);
+                if (!pointsByYear[year]) pointsByYear[year] = [];
+                pointsByYear[year].push(point);
+            });
+
+            Object.keys(pointsByYear).forEach(year => {
+                const yearPoints = pointsByYear[year];
+                const yearFraction = (parseFloat(year) - paddedMinYear) / yearRange;
+                const pixelPosition = yearFraction * timelineWidth;
+
+                yearPoints.forEach((point, eventIndex) => {
+                    const isTop = eventIndex % 2 === 0;
+                    const stackLevel = Math.floor(eventIndex / 2);
+                    const dotVertOffset = isTop
+                        ? -(DOT_RADIUS + stackLevel * (DOT_RADIUS * 2 + 4))
+                        :  (DOT_RADIUS + stackLevel * (DOT_RADIUS * 2 + 4));
+                    const dotTop = AXIS_CENTER + dotVertOffset;
+
+                    point.style.left = `${pixelPosition}px`;
+                    point.style.top = `${dotTop}px`;
+
+                    const labelIndex = Array.from(eventPoints).indexOf(point);
+                    if (labelIndex >= 0 && labelIndex < eventLabels.length) {
+                        const label = eventLabels[labelIndex];
+                        label.style.left = `${pixelPosition}px`;
+                        if (isTop) {
+                            label.style.bottom = `${(320 - dotTop) + DOT_RADIUS + LABEL_GAP}px`;
+                            label.style.top = 'auto';
+                        } else {
+                            label.style.top = `${dotTop + DOT_RADIUS + LABEL_GAP}px`;
+                            label.style.bottom = 'auto';
+                        }
+                    }
+                });
+            });
+
+            // Update tick marks
+            const timelineTicks = document.querySelectorAll('.timeline-tick');
+            const timelineLabels = document.querySelectorAll('.timeline-label');
+            timelineTicks.forEach((tick, index) => {
+                if (index < timelineLabels.length) {
+                    const year = parseFloat(timelineLabels[index].textContent);
+                    const yearFraction = (year - paddedMinYear) / yearRange;
+                    const pixelPosition = yearFraction * timelineWidth;
+                    tick.style.left = `${pixelPosition}px`;
+                    timelineLabels[index].style.left = `${pixelPosition}px`;
+                }
+            });
+        }
+        
+        function applyFilters() {
+            const selectedType = document.querySelector('input[name="type-filter"]:checked').value;
+            const selectedSignificance = document.querySelector('input[name="significance-filter"]:checked').value;
+            
+            // Apply filters to timeline events
+            const eventPoints = document.querySelectorAll('.event-point');
+            const eventLabels = document.querySelectorAll('.event-label');
+            
+            eventPoints.forEach((point, index) => {
+                const typeMatch = selectedType === 'all' || point.dataset.type === selectedType;
+                const significanceMatch = selectedSignificance === 'all' || String(point.dataset.significance) === String(selectedSignificance);
+                
+                if (typeMatch && significanceMatch) {
+                    point.style.display = 'block';
+                    eventLabels[index].style.display = 'block';
+                } else {
+                    point.style.display = 'none';
+                    eventLabels[index].style.display = 'none';
+                }
+            });
+            
+            // Apply filters to undated events table
+            const tableRows = document.querySelectorAll('#undated-events-body tr');
+            tableRows.forEach(row => {
+                const rowType = row.dataset.type;
+                const rowSignificance = row.dataset.significance;
+                
+                const typeMatch = selectedType === 'all' || rowType === selectedType;
+                const significanceMatch = selectedSignificance === 'all' || rowSignificance === selectedSignificance;
+                
+                if (typeMatch && significanceMatch) {
+                    row.style.display = 'table-row';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+            
+            // Hide details panel when filters change
+            document.getElementById('event-details').style.display = 'none';
+        }
+        
+        function createUndatedEventsTable(events, eventsById, relatedEvents) {
+            const tableBody = document.getElementById('undated-events-body');
+            
+            if (events.length === 0) {
+                const emptyRow = document.createElement('tr');
+                emptyRow.innerHTML = '<td colspan="5" class="text-center">No events without dates found</td>';
+                tableBody.appendChild(emptyRow);
+                return;
+            }
+            
+            function resolveSig(e) {
+                return (e.significance && e.significance.primary_category) || 'unclear';
+            }
+
+            // Sort events alphabetically by significance category, unclear last
+            events.sort((a, b) => {
+                const sa = resolveSig(a), sb = resolveSig(b);
+                if (sa === 'unclear' && sb !== 'unclear') return 1;
+                if (sb === 'unclear' && sa !== 'unclear') return -1;
+                return sa.localeCompare(sb);
+            });
+
+            // Create a row for each event
+            events.forEach(event => {
+                const sig = resolveSig(event);
+                const row = document.createElement('tr');
+                row.dataset.id = event.id;
+                row.dataset.type = event.type || 'Other';
+                row.dataset.significance = sig;
+                row.style.cursor = 'pointer';
+
+                // Add significance color indicator
+                const titleCell = document.createElement('td');
+                const colorIndicator = document.createElement('span');
+                colorIndicator.style.display = 'inline-block';
+                colorIndicator.style.width = '12px';
+                colorIndicator.style.height = '12px';
+                colorIndicator.style.borderRadius = '50%';
+                colorIndicator.style.marginRight = '8px';
+
+                // Set color based on significance category
+                colorIndicator.style.backgroundColor = SIG_COLORS[sig] || SIG_COLORS['unclear'];
+                
+                titleCell.appendChild(colorIndicator);
+                titleCell.appendChild(document.createTextNode(event.title));
+                
+                // Create other cells
+                const typeCell = document.createElement('td');
+                typeCell.textContent = event.type || 'Other';
+                
+                const significanceCell = document.createElement('td');
+                significanceCell.textContent = sig ? sig.replace(/_/g, ' ') : '—';
+                
+                const descriptionCell = document.createElement('td');
+                // Truncate description if it's too long
+                const description = event.description || 'No description available';
+                descriptionCell.textContent = description.length > 100 ? 
+                    description.substring(0, 100) + '...' : 
+                    description;
+                
+                const actionsCell = document.createElement('td');
+                const viewButton = document.createElement('button');
+                viewButton.className = 'btn btn-sm btn-outline-primary';
+                viewButton.textContent = 'View Details';
+                viewButton.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent row click event
+                    showEventDetails(event, e, eventsById, relatedEvents);
+                });
+                actionsCell.appendChild(viewButton);
+                
+                // Add cells to row
+                row.appendChild(titleCell);
+                row.appendChild(typeCell);
+                row.appendChild(significanceCell);
+                row.appendChild(descriptionCell);
+                row.appendChild(actionsCell);
+                
+                // Add click event to row
+                row.addEventListener('click', function(e) {
+                    showEventDetails(event, e, eventsById, relatedEvents);
+                });
+                
+                // Add row to table
+                tableBody.appendChild(row);
+            });
+        }
+
+        const SIG_COLORS = {
+            'fostering_collective_action':            '#2ecc71',
+            'revealing_potential_for_system_change':  '#9b59b6',
+            'exposing_prevailing_condition':          '#e67e22',
+            'impacting_salience_and_social_acceptance': '#3498db',
+            'undermining_changes_and_progress':       '#e74c3c',
+            'unclear':                                '#95a5a6',
+        };
+        const SIG_LABELS = {
+            'fostering_collective_action':            'Fostering Collective Action',
+            'revealing_potential_for_system_change':  'Revealing System Change Potential',
+            'exposing_prevailing_condition':          'Exposing Prevailing Condition',
+            'impacting_salience_and_social_acceptance': 'Impacting Salience & Acceptance',
+            'undermining_changes_and_progress':       'Undermining Progress',
+            'unclear':                                'Unclear',
+        };
+
+        function buildLegend(sigCounts, sigCountsAll) {
+            const legend = document.getElementById('sig-legend');
+            const criticLegend = document.getElementById('critic-legend');
+
+            Object.keys(SIG_COLORS).forEach(cat => {
+                const dated = sigCounts[cat] || 0;
+                const total = sigCountsAll[cat] || 0;
+                if (total === 0) return;
+                const undated = total - dated;
+                let countText = `${dated} on timeline`;
+                if (undated > 0) countText += `, ${undated} undated`;
+                const item = document.createElement('div');
+                item.className = 'legend-item';
+                item.innerHTML = `
+                    <div class="legend-color" style="background-color:${SIG_COLORS[cat]};"></div>
+                    <span>${SIG_LABELS[cat]} — ${countText}</span>
+                `;
+                legend.insertBefore(item, criticLegend);
+            });
+        }
+    </script>
+</body>
+</html>

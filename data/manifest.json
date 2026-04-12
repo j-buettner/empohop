@@ -1,0 +1,27 @@
+[
+  {
+    "id": "pilot_1_protected_areas",
+    "label": "Pilot 1 — Protected Areas",
+    "path": "data/processed/pilot_1_protected_areas/Pilot texts 1 [Protected Areas]_knowledge_graph.json"
+  },
+  {
+    "id": "pilot_2_sustainable_agriculture",
+    "label": "Pilot 2 — Sustainable Agriculture",
+    "path": "data/processed/pilot_2_sustainable_agriculture/Pilot texts 2 [Sustainable agriculture]_knowledge_graph.json"
+  },
+  {
+    "id": "pilot_3_beyond_gdp",
+    "label": "Pilot 3 — Beyond GDP",
+    "path": "data/processed/pilot_3_beyond_gdp/Pilot texts 3 [Beyond GDP measurement]_knowledge_graph.json"
+  },
+  {
+    "id": "pilot_4_ecovillages",
+    "label": "Pilot 4 — Ecovillages & Transition Towns",
+    "path": "data/processed/pilot_4_ecovillages/Pilot texts 4 [ecovillages]_knowledge_graph.json"
+  },
+  {
+    "id": "pilot_5_environmental_movement",
+    "label": "Pilot 5 — Environmental Movement & Governance",
+    "path": "data/processed/pilot_5_environmental_movement/Pilot texts 5 [Environmental movement and governance]_knowledge_graph.json"
+  }
+]

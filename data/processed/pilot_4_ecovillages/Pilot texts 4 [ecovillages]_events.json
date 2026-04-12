@@ -1,0 +1,711 @@
+{
+  "events": [
+    {
+      "title": "Publication of Litfin 2011 (analysis of the eco‑village movement)",
+      "year": 2011,
+      "description": "Karen Litfin, a political scientist and researcher of the international eco‑village movement, authored a work published in 2011 that includes the quoted sentence about eco‑villages and their role in sustainability.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Karen Litfin"
+      ],
+      "concepts": [
+        "eco‑village movement"
+      ],
+      "supporting_text": "\"Ecovillages are not the answer to the sustainability crisis. They are just one answer - and we need all the answers we can get.\" This sentence was written by Karen Litfin, a political scientist, researcher of the international eco‑village movement (Litfin 2011:139).",
+      "source_chunk": 1,
+      "id": "8fde7e9a-4f62-4381-a764-f9173f4e7b39",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The analysis diagnoses current societal values and suggests pathways for systemic transformation.",
+        "supporting_text": "\"the investigation of the set of values in an eco‑village… might reflect a proper diagnosis to the problems of our current society\""
+      }
+    },
+    {
+      "title": "Student protest at University of Copenhagen (oil‑spill demonstration)",
+      "year": 1969,
+      "description": "A couple of students interrupted a natural sciences class at the University of Copenhagen, entered carrying a mallard soaked in a marine oil spill and recited anti‑pollution slogans, illustrating the radicalisation of the emerging environmental movement.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "University of Copenhagen",
+        "Copenhagen"
+      ],
+      "actors": [
+        "Students (University of Copenhagen)"
+      ],
+      "concepts": [
+        "Environmental activism",
+        "Anti‑pollution",
+        "Ecotage"
+      ],
+      "supporting_text": "in the Spring of 1969 a couple of students interrupted the class on natural sciences at the University of Copenhagen, rushing in, carrying a mallard soaked in a marine oil spill and reciting anti-pollution slogans.",
+      "source_chunk": 3,
+      "id": "79a5c02d-565d-47ef-980d-28919d768b41",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The protest shows direct collective action raising anti‑pollution awareness.",
+        "supporting_text": "in the Spring of 1969 a couple of students ... carrying a mallard soaked in a marine oil spill and reciting anti‑pollution slogans"
+      }
+    },
+    {
+      "title": "Foundation of eco‑villages",
+      "year": null,
+      "description": "The emergence of intentional, self‑sustaining communities (eco‑villages) began in the second half of the 20th century as part of the broader second wave of environmental thinking and grassroots initiatives.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Environmental activists",
+        "Grassroots initiatives"
+      ],
+      "concepts": [
+        "Eco‑village",
+        "Self‑sustaining community",
+        "Environmental regeneration"
+      ],
+      "supporting_text": "And, in the second part of the 20th century, the foundation of eco‑villages started.",
+      "source_chunk": 3,
+      "id": "d2a23e63-3abe-4e19-9149-64c7aad5fe67",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Marks the emergence of a new settlement model that can shift socio‑ecological systems.",
+        "supporting_text": "in the second part of the 20th century, the foundation of eco‑villages started"
+      }
+    },
+    {
+      "title": "Founding of the first Kibbutz",
+      "year": 1909,
+      "description": "The first kibbutz, a collective agricultural community in what would become Israel, was established.",
+      "type": "Event",
+      "dates": {
+        "start": "1909-01-01",
+        "end": "1909-12-31"
+      },
+      "locations": [
+        "Israel"
+      ],
+      "actors": [],
+      "concepts": [
+        "intentional community",
+        "kibbutz"
+      ],
+      "supporting_text": "The first Kibbutz was founded in 1909 and the related movement (United Kibbutz Movement) was formed in 1927.",
+      "source_chunk": 5,
+      "id": "ee64693a-bd35-4710-9102-bdb865b3297f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces a new intentional‑community model that could shift social‑ecological systems.",
+        "supporting_text": "The first Kibbutz was founded in 1909"
+      }
+    },
+    {
+      "title": "Formation of the United Kibbutz Movement",
+      "year": 1927,
+      "description": "A formal organization uniting kibbutz settlements was created to coordinate the kibbutz movement.",
+      "type": "Organization formation",
+      "dates": {
+        "start": "1927-01-01",
+        "end": "1927-12-31"
+      },
+      "locations": [
+        "Israel"
+      ],
+      "actors": [],
+      "concepts": [
+        "kibbutz movement",
+        "collective agriculture"
+      ],
+      "supporting_text": "The first Kibbutz was founded in 1909 and the related movement (United Kibbutz Movement) was formed in 1927.",
+      "source_chunk": 5,
+      "id": "ee02bd28-ade9-4b40-b4fb-2351b170d656",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Creates an organized network that coordinates multiple kibbutzim.",
+        "supporting_text": "the related movement (United Kibbutz Movement) was formed in 1927"
+      }
+    },
+    {
+      "title": "Establishment of the Findhorn Foundation",
+      "year": 1962,
+      "description": "The Findhorn Foundation, later a leading eco‑village, was created in Scotland as a community focused on spiritual and ecological living.",
+      "type": "Organization formation",
+      "dates": {
+        "start": "1962-01-01",
+        "end": "1962-12-31"
+      },
+      "locations": [
+        "Scotland"
+      ],
+      "actors": [],
+      "concepts": [
+        "eco‑village",
+        "intentional community",
+        "spiritual ecology"
+      ],
+      "supporting_text": "One of the best known such community building on a life close to nature and nature related spiritual values was the Findhorn Foundation established in 1962 Scotland.",
+      "source_chunk": 5,
+      "id": "cb3fe6fd-2aeb-4d52-9960-ca2fa6152cb5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Becomes a flagship model for later eco‑village initiatives.",
+        "supporting_text": "One of the best known such community ... was the Findhorn Foundation established in 1962 Scotland"
+      }
+    },
+    {
+      "title": "Mother Earth News sets up organic gardens and energy‑saving houses",
+      "year": 1975,
+      "description": "The magazine began creating organic gardens and energy‑saving houses next to its offices, functioning as education centres and early eco‑village prototypes.",
+      "type": "Project launch",
+      "dates": {
+        "start": "1975-01-01",
+        "end": "1975-12-31"
+      },
+      "locations": [
+        "Hendersonville, Northern California, USA"
+      ],
+      "actors": [
+        "Mother Earth News"
+      ],
+      "concepts": [
+        "organic gardening",
+        "energy efficiency",
+        "eco‑village"
+      ],
+      "supporting_text": "According to a historian of the eco‑village movement (Bates 2003) the magazine called Mother Earth News (Hendersonville, North‑California) started to set up organic gardens and energy saving houses next to their offices in 1975.",
+      "source_chunk": 5,
+      "id": "d1375c71-39c0-4c3c-aead-80b5faaab90d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Demonstrates concrete sustainable practices that other groups can emulate.",
+        "supporting_text": "Mother Earth News ... started to set up organic gardens and energy saving houses next to their offices in 1975"
+      }
+    },
+    {
+      "title": "Mother Earth News adopts the term “eco‑village”",
+      "year": 1979,
+      "description": "The publication began referring to its own site and activities as an “eco‑village”, helping to popularise the term.",
+      "type": "Terminology adoption",
+      "dates": {
+        "start": "1979-01-01",
+        "end": "1979-12-31"
+      },
+      "locations": [
+        "Hendersonville, Northern California, USA"
+      ],
+      "actors": [
+        "Mother Earth News"
+      ],
+      "concepts": [
+        "eco‑village"
+      ],
+      "supporting_text": "they started to call themselves eco‑village from 1979 on.",
+      "source_chunk": 5,
+      "id": "ada22f43-9060-476b-9032-1e74316e980c",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Popularises the label that frames the movement in public discourse.",
+        "supporting_text": "they started to call themselves eco‑village from 1979 on"
+      }
+    },
+    {
+      "title": "First eco‑village meeting in Denmark",
+      "year": 1991,
+      "description": "A gathering of Danish eco‑village initiatives aimed to define the eco‑village concept and devise a propagation strategy.",
+      "type": "Meeting",
+      "dates": {
+        "start": "1991-01-01",
+        "end": "1991-12-31"
+      },
+      "locations": [
+        "Denmark"
+      ],
+      "actors": [],
+      "concepts": [
+        "eco‑village concept",
+        "propagation strategy"
+      ],
+      "supporting_text": "The first such meeting was held in Denmark in 1991, with the aim to define an eco‑village concept and to formulate a strategy of propagation.",
+      "source_chunk": 5,
+      "id": "6b14ca87-e29f-43c3-ac8c-3faee45a282c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Formally defines the eco‑village concept and a propagation strategy.",
+        "supporting_text": "The first such meeting was held in Denmark in 1991, with the aim to define an eco‑village concept"
+      }
+    },
+    {
+      "title": "Establishment of the Danish eco‑village network",
+      "year": 1993,
+      "description": "Denmark created its first national network of eco‑village projects, later serving as a model for international cooperation.",
+      "type": "Organization formation",
+      "dates": {
+        "start": "1993-01-01",
+        "end": "1993-12-31"
+      },
+      "locations": [
+        "Denmark"
+      ],
+      "actors": [],
+      "concepts": [
+        "eco‑village network"
+      ],
+      "supporting_text": "In 1993 the Danish eco‑village network was set up, the first of this kind, which later served as a model for the later launched international eco‑village movement.",
+      "source_chunk": 5,
+      "id": "72a9d669-e1eb-42d7-b8d6-7e2c0663a920",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Creates a national coordination platform for eco‑villages.",
+        "supporting_text": "In 1993 the Danish eco‑village network was set up, the first of this kind"
+      }
+    },
+    {
+      "title": "Launch of the Global Ecovillage Network (GEN)",
+      "year": 1994,
+      "description": "An international network linking eco‑village projects worldwide was created, with early participation from the Hungarian Gyűrűfű project.",
+      "type": "Organization formation",
+      "dates": {
+        "start": "1994-01-01",
+        "end": "1994-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "Hungarian Gyűrűfű project"
+      ],
+      "concepts": [
+        "global networking",
+        "eco‑village"
+      ],
+      "supporting_text": "The international network, Global Ecovillage Network (GEN) was launched in 1994, in which the Hungarian Gyűrűfű project has already been involved as one of the funding members.",
+      "source_chunk": 5,
+      "id": "66d23f6a-3ae7-4536-98b7-95be4dc88e28",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Establishes an international hub that links and supports eco‑village projects worldwide.",
+        "supporting_text": "The international network, Global Ecovillage Network (GEN) was launched in 1994"
+      }
+    },
+    {
+      "title": "First international eco‑village meeting in Findhorn, Scotland",
+      "year": 1995,
+      "description": "The inaugural global gathering, titled “Ecovillages and Sustainable Communities. Models for the 21st Century”, was organized by Gaia Trust and the Findhorn Foundation.",
+      "type": "Conference",
+      "dates": {
+        "start": "1995-01-01",
+        "end": "1995-12-31"
+      },
+      "locations": [
+        "Findhorn, Scotland"
+      ],
+      "actors": [
+        "Gaia Trust",
+        "Findhorn Foundation"
+      ],
+      "concepts": [
+        "sustainable communities",
+        "eco‑village models"
+      ],
+      "supporting_text": "The first international eco‑village meeting took place in 1995 in Findhorn, Scotland, organised and sponsored by the Gaia Trust and the Findhorn Foundation. The title of the event ‒ Ecovillages and Sustainable Communities. Models for the 21st Century ‒ formulated and marked out the road precisely on which eco‑villages intend to walk.",
+      "source_chunk": 5,
+      "id": "af308739-1501-4503-aca0-c082f05a2b25",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Sets a shared roadmap for the global eco‑village movement.",
+        "supporting_text": "The first international eco‑village meeting took place in 1995 in Findhorn, Scotland, organised and sponsored by the Gaia Trust and the Findhorn Foundation"
+      }
+    },
+    {
+      "title": "Publication of Robert Gilman's ecovillage definition",
+      "year": 1991,
+      "description": "Gilman's first widely‑used definition of an ecovillage as a human‑scale, full‑featured settlement that harmlessly integrates human activities into the natural world.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Robert Gilman"
+      ],
+      "concepts": [
+        "Ecovillage definition"
+      ],
+      "supporting_text": "The first attempt at a definition, and still the one most commonly used, is Robert Gilman's: \"A human-scale, full-featured settlement, in which human activities are harmlessly integrated into the natural world...\" (1991: 10).",
+      "source_chunk": 7,
+      "id": "b41e26c7-fb9f-43d0-ad9d-b4d7ce255be1",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a visionary model that frames how settlements can integrate with nature, enabling systemic re‑thinking.",
+        "supporting_text": "The first attempt at a definition ... is Robert Gilman’s: “A human‑scale, full‑featured settlement, in which human activities are harmlessly integrated into the natural world…"
+      }
+    },
+    {
+      "title": "Publication of Gilman's qualification of the ecovillage definition",
+      "year": 1999,
+      "description": "Gilman added a qualification stating that ecovillages should have multiple centers of initiative, including governance structures, autonomous enterprises, associations and resident projects.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Robert Gilman"
+      ],
+      "concepts": [
+        "Ecovillage definition"
+      ],
+      "supporting_text": "He added a later qualification in 1999 that ecovillages should also have \"multiple centers of initiative,\" including governance structures, autonomous enterprises, associations, and projects of its residents...",
+      "source_chunk": 7,
+      "id": "b5f61152-72d3-4f0b-84f3-987675dd54aa",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Expands the definition to include multiple initiative centers, suggesting more complex, scalable governance and economic structures.",
+        "supporting_text": "He added a later qualification in 1999 that ecovillages should also have “multiple centers of initiative,” including governance structures, autonomous enterprises…"
+      }
+    },
+    {
+      "title": "Publication of Dawson's five defining characteristics of ecovillages",
+      "year": 2006,
+      "description": "Dawson proposed five precise characteristics to define ecovillages, focusing on private citizen initiatives, communitarian impulse, control over community resources, shared spiritual values, and roles as research, demonstration and training centres.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Dawson"
+      ],
+      "concepts": [
+        "Ecovillage characteristics"
+      ],
+      "supporting_text": "Subsequently, I offered the following five defining characteristics of ecovillages: \"[p]rivate citizens' initiatives; ... that act as centers of research, demonstration and in most cases training\" (Dawson 2006).",
+      "source_chunk": 7,
+      "id": "29853ffa-ef97-4452-9e09-845ea66dae16",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Offers a concrete framework that communities can adopt to coordinate values, resources, and activities.",
+        "supporting_text": "Subsequently, I offered the following five defining characteristics of ecovillages: “private citizens’ initiatives; … act as centers of research, demonstration and in most cases training.”"
+      }
+    },
+    {
+      "title": "ZEGG receives Local Agenda 21 award",
+      "year": 2004,
+      "description": "The German ecovillage ZEGG was awarded the Local Agenda 21 prize by the regional administration of Potsdam‑Mittelmark in Brandenburg for its ensemble of ecological work in the region.",
+      "type": "Award",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "ZEGG (near Berlin, Germany)",
+        "Potsdam‑Mittelmark, Brandenburg, Germany"
+      ],
+      "actors": [
+        "ZEGG"
+      ],
+      "concepts": [
+        "Local Agenda 21"
+      ],
+      "supporting_text": "In 2004, ZEGG won the \"Local Agenda 21\" award set up by the regional administration of Potsdam‑Mittelmark in the state of Brandenburg for the ensemble of its ecological work in the region.",
+      "source_chunk": 7,
+      "id": "c774c307-50e4-40d2-a114-13e6f051c962",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Official recognition raises the profile and legitimacy of ZEGG’s ecological work.",
+        "supporting_text": "In 2004, ZEGG won the “Local Agenda 21” award set up by the regional administration of Potsdam‑Mittelmark…"
+      }
+    },
+    {
+      "title": "Findhorn economic impact study published",
+      "year": 2002,
+      "description": "A study commissioned by Brian Burns Associates quantified Findhorn’s contribution of 400 jobs and £5 million to the economy of northern Scotland.",
+      "type": "Research",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "North of Scotland, United Kingdom"
+      ],
+      "actors": [
+        "Brian Burns Associates"
+      ],
+      "concepts": [
+        "Economic impact of ecovillages"
+      ],
+      "supporting_text": "The first found that Findhorn's initiatives contributed four hundred jobs and £5 million to the economy of the north of Scotland (Brian Burns Associates 2002).",
+      "source_chunk": 7,
+      "id": "3054b669-e8c7-4720-9f28-d23a57bba035",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Demonstrates tangible economic benefits, granting credibility that opens doors to wider collaboration.",
+        "supporting_text": "Findhorn’s initiatives contributed four hundred jobs and £5 million to the economy… These studies won the community a level of credibility…"
+      }
+    },
+    {
+      "title": "Findhorn ecological‑footprint study published",
+      "year": 2009,
+      "description": "A follow‑up study showed that per‑capita ecological footprints of Findhorn residents are half the UK national average.",
+      "type": "Research",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Scotland, United Kingdom"
+      ],
+      "actors": [
+        "Dawson"
+      ],
+      "concepts": [
+        "Ecological footprint"
+      ],
+      "supporting_text": "The second found that community residents have a per capita ecological footprint that is one‑half of the UK national average (Dawson 2009).",
+      "source_chunk": 7,
+      "id": "24467652-5618-4baa-9c55-0bda5e789533",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Shows measurable environmental performance, enhancing legitimacy and influencing public perception.",
+        "supporting_text": "community residents have a per capita ecological footprint that is one‑half of the UK national average… These studies won the community a level of credibility…"
+      }
+    },
+    {
+      "title": "Commissioning of La Caravana by the Brazilian government",
+      "year": null,
+      "description": "Between 2005 and 2008 the Brazilian government commissioned the Rainbow Caravan of Peace (La Caravana) to develop fifty community‑based cultural centres across Brazilian towns and villages.",
+      "type": "Process",
+      "dates": {
+        "start": "2005-01-01",
+        "end": "2008-12-31"
+      },
+      "locations": [
+        "Brazil"
+      ],
+      "actors": [
+        "La Caravana (Rainbow Caravan of Peace)",
+        "Brazilian government"
+      ],
+      "concepts": [
+        "Community‑based cultural centres"
+      ],
+      "supporting_text": "Between 2005 and 2008, La Caravana was commissioned by the Brazilian government to help develop fifty community-based cultural centers in Brazilian towns and villages.",
+      "source_chunk": 7,
+      "id": "b561e7af-f572-454b-abb2-a49ba61eb60f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Government contract enables large‑scale cultural‑sustainability projects across many communities.",
+        "supporting_text": "La Caravana … was commissioned by the Brazilian government to help develop fifty community‑based cultural centers in Brazilian towns and villages."
+      }
+    },
+    {
+      "title": "Award of UN Habitat Scroll of Honor to Sarvodaya",
+      "year": 2009,
+      "description": "Sarvodaya was awarded the United Nations' prestigious UN Habitat Scroll of Honor in special recognition of its achievements in helping communities recover from the effects of the tsunami.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Sarvodaya",
+        "United Nations (UN Habitat)"
+      ],
+      "concepts": [
+        "UN Habitat Scroll of Honor",
+        "community recovery"
+      ],
+      "supporting_text": "In 2009, Sarvodaya was awarded the United Nations' prestigious UN Habitat Scroll of Honor in special recognition of its achievements in helping communities recover from the effects of the tsunami.",
+      "source_chunk": 8,
+      "id": "83551541-0594-4325-bd4a-0e07b804044f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The award raises the visibility and legitimacy of ecovillage‑based recovery work.",
+        "supporting_text": "In 2009, Sarvodaya was awarded the United Nations’ prestigious UN Habitat Scroll of Honor in special recognition of its achievements..."
+      }
+    },
+    {
+      "title": "Award of Nobel Peace Prize to Wangari Maathai (founder of the Green Belt Movement)",
+      "year": 2004,
+      "description": "The work of the Green Belt Movement was recognized by the awarding of the Nobel Peace Prize to its founder, Wangari Maathai.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Wangari Maathai",
+        "Green Belt Movement"
+      ],
+      "concepts": [
+        "Nobel Peace Prize",
+        "environmental conservation",
+        "community mobilization"
+      ],
+      "supporting_text": "The work of the GBM was recognized by the awarding of the Nobel Peace Prize to its founder, Wangari Maathai, in 2004.",
+      "source_chunk": 8,
+      "id": "7ca466e5-de34-4739-a38c-3e61e8c93904",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The Nobel prize amplifies global awareness and acceptance of community‑based environmental action.",
+        "supporting_text": "The work of the GBM was recognized by the awarding of the Nobel Peace Prize to its founder, Wangari Maathai, in 2004."
+      }
+    },
+    {
+      "title": "Publication of study on intentional communities’ quality of life (Mulder, Costanza, Erickson)",
+      "year": 2006,
+      "description": "A study found that intentional communities in the United States were succeeding in maintaining a high quality of life despite significantly lower than average incomes by substituting social and natural capital for financial capital.",
+      "type": "Research",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Mulder",
+        "Costanza",
+        "Erickson"
+      ],
+      "concepts": [
+        "intentional communities",
+        "quality of life",
+        "social and natural capital"
+      ],
+      "supporting_text": "One study found that intentional communities in the United States were succeeding in maintaining a high quality of life despite significantly lower than average incomes by substituting social and natural capital for financial capital (Mulder, Costanza, and Erickson 2006).",
+      "source_chunk": 8,
+      "id": "a380eae6-2806-438b-ac36-3ee4eb888fb7",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The study demonstrates that alternative community models can sustain well‑being with lower financial capital.",
+        "supporting_text": "One study found that intentional communities in the United States were succeeding in maintaining a high quality of life despite significantly lower than average incomes..."
+      }
+    },
+    {
+      "title": "Publication of David Holmgren’s “Future Scenarios”",
+      "year": 2009,
+      "description": "David Holmgren presented four possible future scenarios based on the speed and scale of peak oil and climate change, outlining potential roles for ecovillages under different energy descent trajectories.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "David Holmgren"
+      ],
+      "concepts": [
+        "Future Scenarios",
+        "peak oil",
+        "climate change",
+        "energy descent"
+      ],
+      "supporting_text": "David Holmgren's Future Scenarios provides some insights into how the near- to medium-term future may unfold and the likely relevance of initiatives that are based on ecological design principles, such as ecovillages (Holmgren 2009).",
+      "source_chunk": 8,
+      "id": "8c050388-3a02-456c-8051-0e6c059312b9",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The scenarios map possible systemic pathways, highlighting where ecovillages could influence future trajectories.",
+        "supporting_text": "David Holmgren’s Future Scenarios provides some insights into how the near- to medium-term future may unfold and the likely relevance of initiatives..."
+      }
+    },
+    {
+      "title": "Process of blurring between ecovillages and rural community development initiatives in the Global South",
+      "year": null,
+      "description": "Over recent decades, the distinction between ecovillages and other rural community development initiatives has become blurred as rural development agencies adopt holistic, community‑driven strategies pioneered by ecovillages such as Sarvodaya.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Ecovillages",
+        "Rural development agencies",
+        "Sarvodaya"
+      ],
+      "concepts": [
+        "blurring of ecovillage and rural development",
+        "holistic community‑driven strategies"
+      ],
+      "supporting_text": "The line between ecovillages and other rural community development initiatives has become blurred by the adoption of more holistic and integrated community‑driven strategies by rural development agencies over recent decades.",
+      "source_chunk": 8,
+      "id": "fb5073a7-5ee2-4dad-9db9-fd6c6a39968b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The convergence shows emerging interdependencies that can reshape development practice.",
+        "supporting_text": "the line between ecovillages and other rural community development initiatives has become blurred by the adoption of more holistic and integrated community‑driven strategies..."
+      }
+    },
+    {
+      "title": "Development of alliances enabling ecovillage experiments to be shared through UN, universities and research projects",
+      "year": null,
+      "description": "Alliances that have developed over the past several decades allow various experiments engaged in by ecovillages to be widely shared through institutional presence in the United Nations, university courses, research projects, and consultancy services.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Ecovillages",
+        "United Nations",
+        "Universities",
+        "Research institutions"
+      ],
+      "concepts": [
+        "alliances",
+        "knowledge diffusion",
+        "institutional presence"
+      ],
+      "supporting_text": "Alliances that have developed over the past several decades allow various experiments engaged in by ecovillages to be widely shared through institutional presence in the United Nations, university courses, research projects, and consultancy services aimed at official and nongovernmental agencies.",
+      "source_chunk": 8,
+      "id": "caf9f278-0ed4-4f5d-b6ea-9071d0f37fb8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Alliances create channels for knowledge exchange and coordinated action across institutions.",
+        "supporting_text": "Alliances that have developed over the past several decades allow various experiments ... to be widely shared through institutional presence in the United Nations, university courses, research projects..."
+      }
+    },
+    {
+      "title": "Building of bioregional networks of sustainability initiatives involving ecovillages",
+      "year": null,
+      "description": "The building of bioregional networks of sustainability initiatives, in which ecovillages are increasingly engaged, is described as an ideal foundation for future resilience and low‑energy societies.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Ecovillages",
+        "regional sustainability initiatives"
+      ],
+      "concepts": [
+        "bioregional networks",
+        "sustainability initiatives",
+        "resilience building"
+      ],
+      "supporting_text": "The building of bioregional networks of sustainability initiatives, in which ecovillages are increasingly engaged, is ideal foundation building for such a future.",
+      "source_chunk": 8,
+      "id": "62fca90d-ed5f-4667-a659-994f07bd3222",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Network building expands collaborative capacity for regional resilience.",
+        "supporting_text": "The building of bioregional networks of sustainability initiatives, in which ecovillages are increasingly engaged, is ideal foundation building for such a future."
+      }
+    }
+  ]
+}

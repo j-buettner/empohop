@@ -1,0 +1,1495 @@
+{
+  "events": [
+    {
+      "title": "IUCN first categorisation of protected areas",
+      "year": 1978,
+      "description": "The International Union for Conservation of Nature (IUCN) made its first attempt to reduce confusion in protected‑area management by introducing a categorisation system for protected areas.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN"
+      ],
+      "concepts": [
+        "protected area management categories"
+      ],
+      "supporting_text": "A first attempt to address this by categorising protected areas was made by IUCN in 1978.",
+      "source_chunk": 0,
+      "id": "87167871-1283-40a6-b0e4-acabf6667a80",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN’s first categorisation created a common framework to reduce confusion and coordinate protection efforts.",
+        "supporting_text": "A first attempt to address this by categorising protected areas was made by IUCN in 1978."
+      }
+    },
+    {
+      "title": "IUCN adoption of revised six management categories",
+      "year": 1994,
+      "description": "IUCN adopted a revised system that defined six distinct management categories for protected areas, a framework that has since been widely used and later endorsed by the parties to the Convention on Biological Diversity.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN"
+      ],
+      "concepts": [
+        "six management categories"
+      ],
+      "supporting_text": "In 1994, IUCN adopted a revised system of six management categories.",
+      "source_chunk": 0,
+      "id": "10280749-d8eb-4693-b1f0-013b808e8cdd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The revised six‑category system introduced a new governance structure that can shift how protected areas are managed globally.",
+        "supporting_text": "In 1994, IUCN adopted a revised system of six management categories."
+      }
+    },
+    {
+      "title": "Global diffusion of the protected‑area concept during the twentieth century",
+      "year": null,
+      "description": "Throughout the twentieth century the idea of setting aside land for conservation spread worldwide, with different regions emphasizing game parks, landscape protection, or other forms, leading to a remarkable expansion in the number and types of protected areas.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "protected areas",
+        "conservation",
+        "protected‑area expansion"
+      ],
+      "supporting_text": "During the twentieth century the idea spread around the world, though the driving force has been different in different regions. But everywhere a remarkable expansion in the number and types of protected areas has taken place over the past century.",
+      "source_chunk": 0,
+      "id": "94f2599e-2ac4-4307-93b4-4ac1a3467cd0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Widespread adoption of the protected‑area idea across regions marks a systemic shift toward larger‑scale conservation.",
+        "supporting_text": "During the twentieth century the idea spread around the world... a remarkable expansion in the number and types of protected areas has taken place over the past century."
+      }
+    },
+    {
+      "title": "International Conference for the Protection of Fauna and Flora (1933)",
+      "year": 1933,
+      "description": "First effort to clarify protected‑area terminology; the conference recommended four protected‑area categories (national park, strict nature reserve, fauna and flora reserve, reserve with hunting prohibition).",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "London"
+      ],
+      "actors": [],
+      "concepts": [
+        "protected‑area categories",
+        "national park",
+        "strict nature reserve",
+        "fauna and flora reserve"
+      ],
+      "supporting_text": "The first effort to clarify terms was made in 1933, at the International Conference for the Protection of Fauna and Flora, held in London. This recommended four protected area categories (national park, strict nature reserve, fauna and flora reserve, and reserve with prohibition for hunting and collecting)",
+      "source_chunk": 2,
+      "id": "ec70add0-e66e-4087-beb1-8b2e60ec1fa8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "First coordinated effort to define protected‑area categories, enabling joint action across nations.",
+        "supporting_text": "The first effort to clarify terms was made in 1933, at the International Conference for the Protection of Fauna and Flora, held in London."
+      }
+    },
+    {
+      "title": "Pan American Convention on Nature Protection and Wildlife Preservation (1942)",
+      "year": 1942,
+      "description": "Convention that incorporated four protected‑area types (national park, national reserve, nature monument, strict wilderness reserve) for the Western Hemisphere.",
+      "type": "Convention",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "protected‑area types",
+        "national park",
+        "national reserve",
+        "nature monument",
+        "strict wilderness reserve"
+      ],
+      "supporting_text": "In 1942, the Pan American Convention on Nature Protection and Wildlife Preservation in the Western Hemisphere also incorporated four types: national park, national reserve, nature monument and strict wilderness reserve",
+      "source_chunk": 2,
+      "id": "b75b3a90-54cb-4ec6-988a-b9f3761c99b3",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Regional treaty adopted protected‑area categories, mobilising countries in the Western Hemisphere.",
+        "supporting_text": "In 1942, the Pan American Convention on Nature Protection and Wildlife Preservation in the Western Hemisphere also incorporated four types."
+      }
+    },
+    {
+      "title": "Establishment of the International Commission on National Parks (1960)",
+      "year": 1960,
+      "description": "Creation of the International Commission on National Parks under the leadership of Hal Coolidge; it later became the IUCN Commission on National Parks and Protected Areas.",
+      "type": "Organization",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Hal Coolidge"
+      ],
+      "concepts": [
+        "protected‑area governance",
+        "IUCN commission"
+      ],
+      "supporting_text": "The International Commission on National Parks was established in 1960 under the leadership of Hal Coolidge.",
+      "source_chunk": 2,
+      "id": "56909db4-0206-4485-82fd-6482c650da6e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Created a permanent expert body to coordinate global protected‑area work.",
+        "supporting_text": "The International Commission on National Parks was established in 1960 under the leadership of Hal Coolidge."
+      }
+    },
+    {
+      "title": "ECOSOC 27th Session Resolution Recognising National Parks (1959)",
+      "year": 1959,
+      "description": "Resolution of the 27th session of the United Nations Economic and Social Council acknowledging national parks and equivalent reserves as important for wise use of natural resources.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "United Nations Economic and Social Council (ECOSOC)"
+      ],
+      "concepts": [
+        "national parks",
+        "wise use of natural resources"
+      ],
+      "supporting_text": "A 1959 resolution of the 27th session of the United Nations Economic and Social Council (ECOSOC) recognised that \"national parks and equivalent reserves are important factors in the wise use of natural resources\".",
+      "source_chunk": 2,
+      "id": "cd3ed136-ba2e-4e36-a0a4-ad3e7fa391f1",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Gave high‑level political legitimacy to protected areas as wise‑use tools.",
+        "supporting_text": "A 1959 resolution of the 27th session of the United Nations Economic and Social Council (ECOSOC) recognised that “national parks and equivalent reserves are important factors in the wise use of natural resources”."
+      }
+    },
+    {
+      "title": "Publication of the First UN List of National Parks and Equivalent Reserves (1961)",
+      "year": 1961,
+      "description": "IUCN’s new protected‑areas commission compiled a 300‑page World List, the first version of the now familiar UN List of protected areas.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN"
+      ],
+      "concepts": [
+        "UN List of protected areas",
+        "world list of national parks"
+      ],
+      "supporting_text": "IUCN's new protected areas commission compiled a 300-page \"World List of National Parks and Equivalent Reserves\". This - the first version of the now familiar \"UN List\" of protected areas - was published in 1961",
+      "source_chunk": 2,
+      "id": "bfe2297e-2054-4407-9a55-521de20bab00",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Compiled a global inventory that supported coordination and monitoring.",
+        "supporting_text": "IUCN’s new protected areas commission compiled a 300‑page “World List of National Parks and Equivalent Reserves”. This … was published in 1961."
+      }
+    },
+    {
+      "title": "Seattle First World Conference on National Parks (1962)",
+      "year": 1962,
+      "description": "International conference where the 1961 UN List was presented and the first formal debate on protected‑area nomenclature took place.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Seattle"
+      ],
+      "actors": [
+        "IUCN"
+      ],
+      "concepts": [
+        "protected‑area nomenclature",
+        "UN List"
+      ],
+      "supporting_text": "and presented at the Seattle First World Conference on National Parks in 1962 (Ravenel and Redford, 2001). At this meeting, the first proper debate about the 'nomenclature' of protected areas, which was based on a paper by C.F. Brockman, took place",
+      "source_chunk": 2,
+      "id": "08ec7384-3cef-433f-bdb8-16ed81ebed92",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Provided an international forum where the first debate on protected‑area nomenclature took place.",
+        "supporting_text": "At this meeting, the first proper debate about the ‘nomenclature’ of protected areas … took place."
+      }
+    },
+    {
+      "title": "UN General Assembly 16th Session Resolution on Economic Development and Nature Conservation (December 1962)",
+      "year": 1962,
+      "description": "Resolution endorsing the ECOSOC decision, linking economic development with nature conservation.",
+      "type": "Policy",
+      "dates": {
+        "start": "1962-12-01",
+        "end": "1962-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "United Nations General Assembly"
+      ],
+      "concepts": [
+        "economic development",
+        "nature conservation"
+      ],
+      "supporting_text": "The ECOSOC decision was endorsed by a resolution of the 16th Session of the General Assembly of the United Nations (December 1962), on 'Economic Development and Nature Conservation'",
+      "source_chunk": 2,
+      "id": "6d6e7210-d894-402b-95e0-75e402d93fba",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Elevated the protection agenda to the UN General Assembly, reinforcing global political relevance.",
+        "supporting_text": "The ECOSOC decision was endorsed by a resolution of the 16th Session of the General Assembly … on ‘Economic Development and Nature Conservation’."
+      }
+    },
+    {
+      "title": "Publication of the Second UN List of National Parks (1966)",
+      "year": 1966,
+      "description": "IUCN released the second edition of the UN List, prepared by Sir Hugh Elliott under the guidance of Commission chair Jean‑Paul Harroy; a French version followed in 1967.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Sir Hugh Elliott",
+        "Jean‑Paul Harroy"
+      ],
+      "concepts": [
+        "UN List",
+        "protected‑area classification"
+      ],
+      "supporting_text": "In 1966, IUCN published the second version of the list, prepared by Sir Hugh Elliott, under the guidance of the new chair of the Commission on National Parks, Jean‑Paul Harroy (a French version was published a year later).",
+      "source_chunk": 2,
+      "id": "404892a0-e6f6-472c-835e-9d86f17f2fee",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Updated the global list, sustaining coordination and data sharing.",
+        "supporting_text": "In 1966, IUCN published the second version of the list."
+      }
+    },
+    {
+      "title": "IUCN General Assembly in New Delhi (1969)",
+      "year": 1969,
+      "description": "The assembly defined ‘national park’ as a relatively large area where ecosystems are not materially altered by human exploitation, and urged countries not to label non‑conforming areas as national parks.",
+      "type": "Assembly",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "New Delhi"
+      ],
+      "actors": [
+        "IUCN"
+      ],
+      "concepts": [
+        "national park definition"
+      ],
+      "supporting_text": "The IUCN General Assembly in New Delhi in 1969 defined 'national park' as: \"a relatively large area where one or several ecosystems are not materially altered by human exploitation and occupation\".",
+      "source_chunk": 2,
+      "id": "7d799656-a93a-4808-bb70-e3c462838c4d",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Established a formal definition of ‘national park’ and urged compliance, shaping policy standards.",
+        "supporting_text": "The IUCN General Assembly in New Delhi in 1969 defined ‘national park’ as … The assembly called on countries ‘not to describe as national parks’ those areas that did not meet the definition."
+      }
+    },
+    {
+      "title": "Second World Conference on National Parks (1972)",
+      "year": 1972,
+      "description": "World conference where IUCN was asked to define purposes of protected areas and develop standards and nomenclature; it also featured a paper by Ray Dasmann on classification systems.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN",
+        "Dr Ray Dasmann"
+      ],
+      "concepts": [
+        "protected‑area classification",
+        "nomenclature standards"
+      ],
+      "supporting_text": "The 1972 2nd World Conference on National Parks recommended that IUCN, \"taking into account existing terminology in international treaties and in close consultation with governments concerned (to): ■ Define the various purposes for which protected areas are set aside; and ■ Develop suitable standards and nomenclature for such areas\"",
+      "source_chunk": 2,
+      "id": "18753a34-0c11-4071-918a-3587013daa80",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Called on IUCN to define purposes and develop standards, prompting coordinated action.",
+        "supporting_text": "The 1972 2nd World Conference on National Parks recommended that IUCN … Define the various purposes … and Develop suitable standards and nomenclature."
+      }
+    },
+    {
+      "title": "Publication of Ray Dasmann Paper on Protected‑Area Classification (1973)",
+      "year": 1973,
+      "description": "Senior Ecologist Dr Ray Dasmann’s paper on a comprehensive classification system for protected natural and cultural areas was published, later appearing in conference proceedings.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Dr Ray Dasmann",
+        "IUCN"
+      ],
+      "concepts": [
+        "protected‑area classification system"
+      ],
+      "supporting_text": "IUCN's Senior Ecologist, Dr Ray Dasmann, wrote a paper on the Development of a Classification System for Protected Natural and Cultural Areas for the Second World Conference on National Parks (1972), which was published a year later(IUCN, 1973)",
+      "source_chunk": 2,
+      "id": "900a7160-90f9-46e2-874d-d7b7c99702bf",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced a comprehensive classification that could reshape protected‑area design.",
+        "supporting_text": "Dasmann proposed the following system of protected areas: …"
+      }
+    },
+    {
+      "title": "World Directory of National Parks and Protected Areas (1975)",
+      "year": 1975,
+      "description": "IUCN published a comprehensive directory of national parks and protected areas, complementing the series of UN List editions.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN"
+      ],
+      "concepts": [
+        "world directory",
+        "protected‑area inventory"
+      ],
+      "supporting_text": "IUCN published further editions of the UN List between 1971 and 1975, and the World Directory of National Parks and Protected Areas in 1975.",
+      "source_chunk": 2,
+      "id": "738f4e6a-393d-40d8-aab6-6d4804c71a7d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided a reference tool that facilitated global coordination and information exchange.",
+        "supporting_text": "IUCN published further editions … and the World Directory of National Parks and Protected Areas in 1975."
+      }
+    },
+    {
+      "title": "Initiation of the Man and Biosphere Programme (1971)",
+      "year": 1971,
+      "description": "UNESCO launched the Man and Biosphere (MAB) Programme, an international effort to promote sustainable development through biosphere reserves.",
+      "type": "Program",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Man and Biosphere Programme",
+        "biosphere reserves"
+      ],
+      "supporting_text": "New international programmes and treaties were making an impact (e.g.: the Man and Biosphere Programme, initiated in 1971",
+      "source_chunk": 2,
+      "id": "a62f3ed3-838d-4b61-9898-271d43b35d2f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Created a new international programme linking human activity with ecosystem stewardship.",
+        "supporting_text": "New international programmes and treaties were making an impact (e.g.: the Man and Biosphere Programme, initiated in 1971 …)."
+      }
+    },
+    {
+      "title": "Ramsar Wetlands Convention (1971)",
+      "year": 1971,
+      "description": "International treaty establishing the Ramsar Convention on Wetlands, aimed at conserving wetland ecosystems.",
+      "type": "Convention",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Ramsar Convention",
+        "wetland conservation"
+      ],
+      "supporting_text": "the Ramsar Wetlands Convention, 1971",
+      "source_chunk": 2,
+      "id": "443ec2fe-c199-49b5-8a7a-1c7447844e8c",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Established a global treaty that raised the profile of wetland protection.",
+        "supporting_text": "New international programmes and treaties were making an impact (e.g.: … the Ramsar Wetlands Convention, 1971 …)."
+      }
+    },
+    {
+      "title": "World Heritage Convention (1972)",
+      "year": 1972,
+      "description": "UNESCO convention creating the World Heritage List to protect cultural and natural sites of outstanding universal value.",
+      "type": "Convention",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "World Heritage Convention",
+        "cultural and natural heritage"
+      ],
+      "supporting_text": "the World Heritage Convention, 1972",
+      "source_chunk": 2,
+      "id": "e49493ce-489c-48b3-a6bd-29795e73acc1",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Gave worldwide recognition to natural and cultural heritage sites, enhancing legitimacy.",
+        "supporting_text": "New international programmes and treaties were making an impact (e.g.: … and the World Heritage Convention, 1972)."
+      }
+    },
+    {
+      "title": "Publication of UN List Editions (1971‑1975)",
+      "year": null,
+      "description": "Series of IUCN‑produced UN List editions released over a five‑year period, documenting the growth and classification of protected areas worldwide.",
+      "type": "Process",
+      "dates": {
+        "start": "1971-01-01",
+        "end": "1975-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "IUCN"
+      ],
+      "concepts": [
+        "UN List",
+        "protected‑area documentation"
+      ],
+      "supporting_text": "IUCN published further editions of the UN List between 1971 and 1975",
+      "source_chunk": 2,
+      "id": "e3f1fce2-0571-45af-9192-c6df32956b62",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The repeated publication created a shared reference that enabled coordination and tracking of protected‑area growth.",
+        "supporting_text": "IUCN published further editions of the UN List between 1971 and 1975"
+      }
+    },
+    {
+      "title": "CNPPA decision to develop protected‑area categories system",
+      "year": 1975,
+      "description": "Decision taken by the Committee on National Parks and Protected Areas (CNPPA) in 1975 to develop a categories system for protected areas, responding to a request made at a 1972 conference.",
+      "type": "Policy",
+      "dates": {
+        "start": "1975-01-01",
+        "end": "1975-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "CNPPA"
+      ],
+      "concepts": [
+        "Protected‑area categories system"
+      ],
+      "supporting_text": "decision taken by CNPPA in 1975 to develop a categories system for protected areas",
+      "source_chunk": 3,
+      "id": "b6ffc2ce-2255-4382-aa44-43a7c16e78a7"
+    },
+    {
+      "title": "Publication of IUCN Report on Categories, Objectives and Criteria for Protected Areas",
+      "year": 1978,
+      "description": "The final IUCN report outlining categories, objectives and criteria for protected areas was published in August 1978. Although issued as a discussion paper, it quickly became recognised as IUCN guidance for protected‑area classification.",
+      "type": "Publication",
+      "dates": {
+        "start": "1978-08-01",
+        "end": "1978-08-01"
+      },
+      "locations": [],
+      "actors": [
+        "IUCN",
+        "Rockefeller Foundation",
+        "Dr Kenton Miller",
+        "CNPPA Committee on Criteria and Nomenclature"
+      ],
+      "concepts": [
+        "Protected‑area categories",
+        "Management objectives"
+      ],
+      "supporting_text": "Its final report was published in August 1978.",
+      "source_chunk": 3,
+      "id": "194b9f8a-7819-4ad4-920a-b4b874006200"
+    },
+    {
+      "title": "1972 conference request for protected‑area categories system",
+      "year": 1972,
+      "description": "A conference held in 1972 issued a request that prompted CNPPA to develop a systematic categorisation of protected areas.",
+      "type": "Conference",
+      "dates": {
+        "start": "1972-01-01",
+        "end": "1972-12-31"
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Protected‑area categories"
+      ],
+      "supporting_text": "response to the request of the 1972 conference",
+      "source_chunk": 3,
+      "id": "0869d2db-87ca-4e5d-88a1-f0387dbf877a"
+    },
+    {
+      "title": "Development of protected‑area categories system",
+      "year": null,
+      "description": "A multi‑year process (1975‑1978) funded by the Rockefeller Foundation and led by Dr Kenton Miller to create a ten‑category system for protected areas, culminating in the 1978 IUCN report.",
+      "type": "Process",
+      "dates": {
+        "start": "1975-01-01",
+        "end": "1978-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "Rockefeller Foundation",
+        "Dr Kenton Miller",
+        "CNPPA Committee on Criteria and Nomenclature"
+      ],
+      "concepts": [
+        "Protected‑area categories system",
+        "Conservation management categories"
+      ],
+      "supporting_text": "The work was funded by the Rockefeller Foundation and led by Dr Kenton Miller, chair of the CNPPA Committee on Criteria and Nomenclature. Its final report was published in August 1978.",
+      "source_chunk": 3,
+      "id": "4d43bad4-6b58-4af0-859c-17446b018504"
+    },
+    {
+      "title": "Adoption of 1994 Protected Areas Management Categories system",
+      "year": 1994,
+      "description": "Formal adoption of the 1994 system of Protected Areas Management Categories, providing a standardized framework for classifying protected areas worldwide.",
+      "type": "Policy",
+      "dates": {
+        "start": "1994-01-01",
+        "end": "1994-12-31"
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Protected Areas Management Categories"
+      ],
+      "supporting_text": "The adoption of the 1994 system of Protected Areas Management Categories",
+      "source_chunk": 3,
+      "id": "4ca6ae82-54e8-4008-9e3e-f0464d8bc26f"
+    },
+    {
+      "title": "Compilation of the 1993 UN List of Protected Areas",
+      "year": 1993,
+      "description": "The 1978 categories system was used to compile the 1993 United Nations list of protected areas, which set out protected areas under Categories I‑V.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Protected area categories",
+        "Categories I‑V"
+      ],
+      "supporting_text": "it was used in compiling the 1993 UN list of protected areas (which set out protected areas under Categories I-V).",
+      "source_chunk": 4,
+      "id": "dc92dec4-3d8e-4b48-816e-4381251135d1",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Creates a global inventory that enables coordinated protection efforts.",
+        "supporting_text": "it was used in compiling the 1993 UN list of protected areas (which set out protected areas under Categories I–V)"
+      }
+    },
+    {
+      "title": "Establishment of CNPPA Task Force to Update Protected Area Categories",
+      "year": 1984,
+      "description": "CNPPA established a task force under Hal Eidsvik to consider updating the categories system.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "CNPPA",
+        "Hal Eidsvik"
+      ],
+      "concepts": [
+        "Protected area categories"
+      ],
+      "supporting_text": "In 1984, therefore, CNPPA established a task force under Hal Eidsvik to consider updating the categories system.",
+      "source_chunk": 4,
+      "id": "b8186382-44fc-4977-98bb-f5d8118d59bc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Organises actors to revise the categorisation system.",
+        "supporting_text": "CNPPA established a task force under Hal Eidsvik to consider updating the categories system"
+      }
+    },
+    {
+      "title": "Adoption of Task Force Report by CNPPA",
+      "year": 1990,
+      "description": "The task force report recommending a new system built around Categories I‑V was adopted by CNPPA at its meeting in Perth on 27 November 1990.",
+      "type": "Meeting",
+      "dates": {
+        "start": "1990-11-27",
+        "end": "1990-11-27"
+      },
+      "locations": [
+        "Perth"
+      ],
+      "actors": [
+        "CNPPA",
+        "Hal Eidsvik"
+      ],
+      "concepts": [
+        "Protected area categories"
+      ],
+      "supporting_text": "The report was adopted by CNPPA at its meeting in Perth (27 November, 1990) and tabled for information at the IUCN General Assembly a day later.",
+      "source_chunk": 4,
+      "id": "f6e99bd0-9d15-411e-b402-e5956575ee0e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Formal acceptance opens the way for a new categorisation framework.",
+        "supporting_text": "The report was adopted by CNPPA at its meeting in Perth (27 November, 1990)"
+      }
+    },
+    {
+      "title": "Tabling of CNPPA Report at IUCN General Assembly",
+      "year": 1990,
+      "description": "The adopted report was tabled for information at the IUCN General Assembly on 28 November 1990.",
+      "type": "Conference",
+      "dates": {
+        "start": "1990-11-28",
+        "end": "1990-11-28"
+      },
+      "locations": [],
+      "actors": [
+        "IUCN General Assembly",
+        "CNPPA"
+      ],
+      "concepts": [],
+      "supporting_text": "and tabled for information at the IUCN General Assembly a day later.",
+      "source_chunk": 4,
+      "id": "4ee43c16-cdab-4ae7-bbae-0900b024fa6c",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Raises the profile of the proposal among the international conservation community.",
+        "supporting_text": "and tabled for information at the IUCN General Assembly a day later"
+      }
+    },
+    {
+      "title": "Three‑Day Workshop at Fourth World Congress on National Parks and Protected Areas",
+      "year": 1990,
+      "description": "A three‑day workshop was held at the Fourth World Congress on National Parks and Protected Areas in Caracas, Venezuela, addressing the task force’s recommendations.",
+      "type": "Workshop",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Caracas, Venezuela"
+      ],
+      "actors": [
+        "IUCN",
+        "Task Force",
+        "Caracas Congress"
+      ],
+      "concepts": [
+        "Protected area categories"
+      ],
+      "supporting_text": "A three-day workshop took place at the Fourth World Congress on National Parks and Protected Areas ... in Caracas, Venezuela.",
+      "source_chunk": 4,
+      "id": "3ff31ef6-e790-4b78-aa41-72cf2025301d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a forum for deliberation and consensus‑building on the new system.",
+        "supporting_text": "A three‑day workshop took place at the Fourth World Congress on National Parks and Protected Areas ... in Caracas, Venezuela"
+      }
+    },
+    {
+      "title": "Adoption of Recommendation 17 by Caracas Congress",
+      "year": 1990,
+      "description": "The Caracas Congress adopted Recommendation 17, urging CNPPA and the IUCN Council to endorse a system of six protected area categories based on management objectives.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Caracas, Venezuela"
+      ],
+      "actors": [
+        "Caracas Congress",
+        "CNPPA",
+        "IUCN Council"
+      ],
+      "concepts": [
+        "Six protected area categories"
+      ],
+      "supporting_text": "Acting on the workshop's conclusions, the Caracas Congress adopted Recommendation 17, urging CNPPA and the IUCN Council to: endorse a system of six protected area categories based on management objectives; recommend this to governments; and explain it through guidelines.",
+      "source_chunk": 4,
+      "id": "2cb36568-b9aa-4a1b-8a5d-ac103abe85b6",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Generates a formal recommendation that urges key bodies to act on the new categories.",
+        "supporting_text": "Caracas Congress adopted Recommendation 17, urging CNPPA and the IUCN Council to: endorse a system of six protected area categories"
+      }
+    },
+    {
+      "title": "Approval of New Protected Area Category System by IUCN General Assembly",
+      "year": 1994,
+      "description": "The IUCN General Assembly meeting in Buenos Aires approved the new system of protected area categories, commended it to governments and called on CNPPA to finalise guidance.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Buenos Aires"
+      ],
+      "actors": [
+        "IUCN General Assembly",
+        "CNPPA"
+      ],
+      "concepts": [
+        "New protected area category system"
+      ],
+      "supporting_text": "Thus in 1994, ten years after the review of the 1978 system had begun, the IUCN General Assembly, meeting in Buenos Aires, approved the new system, commended it to governments and called on CNPPA to finalise guidance to explain it.",
+      "source_chunk": 4,
+      "id": "71d7c29f-9ad7-42dc-a2e1-07c5d69d12b8",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Official endorsement enables system‑wide adoption and transformation.",
+        "supporting_text": "the IUCN General Assembly, meeting in Buenos Aires, approved the new system"
+      }
+    },
+    {
+      "title": "Publication of Guidelines for Protected Area Management Categories",
+      "year": 1994,
+      "description": "IUCN and the World Conservation Monitoring Centre published the Guidelines for Protected Area Management Categories in English, French and Spanish.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN",
+        "World Conservation Monitoring Centre"
+      ],
+      "concepts": [
+        "Guidelines for Protected Area Management Categories"
+      ],
+      "supporting_text": "Later in 1994, IUCN and the World Conservation Monitoring Centre (WCMC) published Guidelines for Protected Area Management Categories, in English, French and Spanish (IUCN/WCMC, 1994).",
+      "source_chunk": 4,
+      "id": "5ac3797c-f8c2-4c54-a7d3-b503ad7b1212",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Supplies a common language and practical tools for managers, planners and stakeholders.",
+        "supporting_text": "IUCN and the World Conservation Monitoring Centre (WCMC) published Guidelines for Protected Area Management Categories"
+      }
+    },
+    {
+      "title": "Review of the 1978 Protected Area Categories System",
+      "year": null,
+      "description": "A decade‑long review began with the establishment of a CNPPA task force in 1984 and culminated in the approval of a new system by the IUCN General Assembly in 1994.",
+      "type": "Process",
+      "dates": {
+        "start": "1984-01-01",
+        "end": "1994-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "CNPPA",
+        "IUCN",
+        "Hal Eidsvik"
+      ],
+      "concepts": [
+        "Protected area categories"
+      ],
+      "supporting_text": "In 1984, therefore, CNPPA established a task force ... Thus in 1994, ten years after the review of the 1978 system had begun, the IUCN General Assembly, meeting in Buenos Aires, approved the new system...",
+      "source_chunk": 4,
+      "id": "e413c0ef-3a8e-4f81-a460-790f41cd8019",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights shortcomings of the earlier system, diagnosing why change is needed.",
+        "supporting_text": "its shortcomings, indicated above, soon became evident"
+      }
+    },
+    {
+      "title": "Publication of the 1994 IUCN Protected Area Categories Guidelines",
+      "year": 1994,
+      "description": "The 1994 Guidelines were released, providing an international categorisation system for protected areas, outlining principles, definitions, objectives, and management guidance for each category.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN",
+        "World Commission on Protected Areas (WCPA)"
+      ],
+      "concepts": [
+        "Protected area categories",
+        "IUCN classification system"
+      ],
+      "supporting_text": "The 1994 Guidelines set out the following for each category: ■ A Definition; ■ Objectives of Management; ■ Guidance for Selection; ■ Organisational Responsibility; and an ■ Equivalent Category in 1978 System.",
+      "source_chunk": 5,
+      "id": "4ac3567c-321a-4872-9fc6-fa0616c6f211",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The Guidelines introduce new definitions and flexible management objectives, creating a framework for systemic change in protected‑area governance.",
+        "supporting_text": "The new Guidelines give prominence to the numbers and related objectives… the 1994 system explicitly recognises that some permanent human presence…"
+      }
+    },
+    {
+      "title": "Introduction of Category VI in the IUCN Protected Area Categories",
+      "year": 1994,
+      "description": "Category VI was added to the classification system in response to concerns raised at the Caracas Congress, allowing protected areas that include sustainable use of natural resources while ensuring long‑term biodiversity protection.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Caracas, Venezuela"
+      ],
+      "actors": [
+        "Developing‑country participants at the Caracas Congress",
+        "IUCN"
+      ],
+      "concepts": [
+        "Category VI",
+        "Sustainable use",
+        "Protected area"
+      ],
+      "supporting_text": "The introduction of Category VI came in response to a concern among many developing country participants at the Caracas Congress that protected areas should include places where resources are conserved in essentially their natural condition as a basis for sustainable use.",
+      "source_chunk": 5,
+      "id": "b75a5b4b-5bf2-4180-a75a-dbbdb81e129d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Category VI adds a new management option that integrates sustainable use with biodiversity protection, expanding the system’s adaptive capacity.",
+        "supporting_text": "The introduction of Category VI came in response to a concern among many developing country participants at the Caracas Congress…"
+      }
+    },
+    {
+      "title": "Ongoing promotion of the IUCN protected‑area categories system by IUCN and WCPA",
+      "year": 1994,
+      "description": "Since the publication of the Guidelines, IUCN and the World Commission on Protected Areas have undertaken activities to promote understanding and use of the categories system across many countries and international fora.",
+      "type": "Process",
+      "dates": {
+        "start": "1994-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN",
+        "World Commission on Protected Areas (WCPA)"
+      ],
+      "concepts": [
+        "Protected area categories",
+        "Capacity‑building",
+        "Policy diffusion"
+      ],
+      "supporting_text": "Since the publication of the Guidelines, IUCN and WCPA have sought to promote the understanding and use of the categories system in many countries and international fora.",
+      "source_chunk": 5,
+      "id": "20bef7c2-e015-451b-8415-46a3ce8c8e8b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN and WCPA actively disseminate and support the categories, building capacity and coordination among many jurisdictions.",
+        "supporting_text": "Since the publication of the Guidelines, IUCN and WCPA have sought to promote the understanding and use of the categories system in many countries and international fora."
+      }
+    },
+    {
+      "title": "National‑level workshops on applying the IUCN categories system",
+      "year": 1994,
+      "description": "Workshops have been organised in several countries to explore how to apply the 1994 Guidelines in local contexts, supporting implementation at the national level.",
+      "type": "Process",
+      "dates": {
+        "start": "1994-01-01",
+        "end": null
+      },
+      "locations": [
+        "Australia",
+        "United Kingdom",
+        "New South Wales (Australia)",
+        "Finland",
+        "Canada",
+        "China"
+      ],
+      "actors": [
+        "IUCN",
+        "National and regional conservation agencies"
+      ],
+      "concepts": [
+        "Guidelines implementation",
+        "Protected‑area management"
+      ],
+      "supporting_text": "National level workshops designed to explore how to apply the Guidelines in a local context, e.g. in Australia, UK, New South Wales, Finland, Canada and China.",
+      "source_chunk": 5,
+      "id": "a66826bf-b50a-4824-a590-c9a26ecb0472",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Workshops provide hands‑on training and local adaptation of the guidelines, enabling implementation across diverse contexts.",
+        "supporting_text": "National level workshops designed to explore how to apply the Guidelines in a local context, e.g. in Australia, UK, New South Wales, Finland, Canada and China."
+      }
+    },
+    {
+      "title": "Launch of pioneer effort to categorise protected areas",
+      "year": 1978,
+      "description": "A pioneer effort was launched to develop a system for categorising protected areas by their objectives.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN protected area experts"
+      ],
+      "concepts": [
+        "Protected area categorisation"
+      ],
+      "supporting_text": "After some limited initiatives by a few IUCN protected area experts in the 1960s, a pioneer effort was launched in 1978.",
+      "source_chunk": 6,
+      "id": "1319b689-0d8b-466e-a9bb-8d4361e27de9"
+    },
+    {
+      "title": "Issuance of definitive version of IUCN protected‑area category system",
+      "year": 1994,
+      "description": "The definitive version of the protected‑area category system was issued, providing a standardized framework for classifying protected areas.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "IUCN",
+        "World Commission on Protected Areas (WCPA)"
+      ],
+      "concepts": [
+        "IUCN protected‑area categories"
+      ],
+      "supporting_text": "The definitive version was issued in 1994, and has lately received intergovernmental recognition.",
+      "source_chunk": 6,
+      "id": "b5886a2f-46e4-4dad-a3a9-1710fdb8dd7a"
+    },
+    {
+      "title": "Publication of the United Nations List of Protected Areas (1997 version)",
+      "year": 1997,
+      "description": "The United Nations released a list of protected areas that classifies each area by its assigned IUCN management category.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "United Nations",
+        "IUCN World Conservation Monitoring Centre (WCMC)"
+      ],
+      "concepts": [
+        "Protected‑area categories",
+        "UN List of Protected Areas"
+      ],
+      "supporting_text": "The publication of the United Nations List of Protected Areas (1997 and 2003 versions) which classifies individual protected areas by the management category to which they have been assigned (IUCN/WCMC, 1998 and Chape et al., 2003).",
+      "source_chunk": 6,
+      "id": "5ae0e19a-081e-4f71-b22a-80cf26c59456"
+    },
+    {
+      "title": "Development of position statement on mining and protected areas",
+      "year": 1998,
+      "description": "WCPA produced a position statement arguing that mining operations should be excluded from protected‑area Categories I‑IV.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "World Commission on Protected Areas (WCPA)"
+      ],
+      "concepts": [
+        "Mining exclusion",
+        "Protected‑area Categories I‑IV"
+      ],
+      "supporting_text": "A position statement on mining and protected areas, developed by WCPA 1998, which argued that governments and others should ensure that mining operations of all kinds were excluded from protected area Categories I‑IV.",
+      "source_chunk": 6,
+      "id": "48626242-e800-41d9-b29b-7522ddfdba71"
+    },
+    {
+      "title": "Adoption of recommendation 2.82 at IUCN World Conservation Congress",
+      "year": 2000,
+      "description": "Recommendation 2.82, reflecting the mining‑exclusion principle, was formally adopted at the IUCN World Conservation Congress held in Amman.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Amman, Jordan"
+      ],
+      "actors": [
+        "IUCN World Conservation Congress"
+      ],
+      "concepts": [
+        "Recommendation 2.82",
+        "Protected‑area categories"
+      ],
+      "supporting_text": "This principle was taken up in a recommendation (number 2.82) adopted by the IUCN World Conservation Congress in Amman (2000) - see articles by Kapila, and Parsons and Richards.",
+      "source_chunk": 6,
+      "id": "dd98e2b0-1fba-4d84-983e-149568ac5bb3"
+    },
+    {
+      "title": "Publication of the United Nations List of Protected Areas (2003 version)",
+      "year": 2003,
+      "description": "A revised United Nations List of Protected Areas was released, updating the classification of protected areas by IUCN management category.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "United Nations",
+        "IUCN World Conservation Monitoring Centre (WCMC)",
+        "Chape et al."
+      ],
+      "concepts": [
+        "Protected‑area categories",
+        "UN List of Protected Areas"
+      ],
+      "supporting_text": "The publication of the United Nations List of Protected Areas (1997 and 2003 versions) which classifies individual protected areas by the management category to which they have been assigned (IUCN/WCMC, 1998 and Chape et al., 2003).",
+      "source_chunk": 6,
+      "id": "dfb5f33c-041f-41ad-94b6-452c41f8514b"
+    },
+    {
+      "title": "Endorsement of IUCN protected‑area category system by the Convention on Biological Diversity",
+      "year": 2004,
+      "description": "At the 7th Conference of the Parties to the CBD in Kuala Lumpur, governments endorsed the IUCN system as a basis for reporting and recording protected areas.",
+      "type": "Conference",
+      "dates": {
+        "start": "2004-02-01",
+        "end": "2004-02-28"
+      },
+      "locations": [
+        "Kuala Lumpur, Malaysia"
+      ],
+      "actors": [
+        "Convention on Biological Diversity (CBD)",
+        "Governments of CBD Parties"
+      ],
+      "concepts": [
+        "IUCN protected‑area categories",
+        "CBD reporting and recording"
+      ],
+      "supporting_text": "Endorsement of the system by the Convention on Biological Diversity: at the 7th Conference of the parties to the CBD in Kuala Lumpur (February 2004), governments accepted that the system provided a basis for reporting and recording, and encouraged governments and others to assign protected areas to categories.",
+      "source_chunk": 6,
+      "id": "f54d80f4-9c11-4746-bb29-83ffb0e2cdc3"
+    },
+    {
+      "title": "Publication of the first IUCN Protected Area Management Categories system",
+      "year": 1978,
+      "description": "The inaugural IUCN categories system for protected areas was published, providing the first international classification framework for protected area management.",
+      "type": "Publication",
+      "dates": {
+        "start": "1978-01-01",
+        "end": "1978-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "International Union for Conservation of Nature (IUCN)"
+      ],
+      "concepts": [
+        "IUCN Protected Area Management Categories"
+      ],
+      "supporting_text": "The research was focused on protected area information dated from 1978 onwards, which is when the first IUCN categories system was published",
+      "source_chunk": 7,
+      "id": "274fe4c6-a9f6-4816-9b94-54e1e921e21c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced a classification that later shaped legislation and policy.",
+        "supporting_text": "The research was focused on protected area information dated from 1978 onwards, which is when the first IUCN categories system was published."
+      }
+    },
+    {
+      "title": "Publication of the IUCN Protected Area Management Categories guidelines",
+      "year": 1994,
+      "description": "IUCN released the 1994 guidelines that formalised the protected‑area management categories, which later influenced national legislation and policy.",
+      "type": "Publication",
+      "dates": {
+        "start": "1994-01-01",
+        "end": "1994-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "International Union for Conservation of Nature (IUCN)"
+      ],
+      "concepts": [
+        "IUCN Protected Area Management Categories"
+      ],
+      "supporting_text": "124 [pieces of legislation] adopted since the 1994 guidelines were published",
+      "source_chunk": 7,
+      "id": "0fc75bb6-024e-4e90-bef6-c753b0440150",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Guidelines provided a concrete framework that influenced later laws.",
+        "supporting_text": "Over 124 [pieces of legislation] adopted since the 1994 guidelines were published."
+      }
+    },
+    {
+      "title": "Adoption of the CAFF Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan",
+      "year": 1996,
+      "description": "The Conservation of Arctic Flora and Fauna (CAFF) adopted its CPAN Strategy and Action Plan, explicitly referencing the IUCN protected‑area categories (Level 1).",
+      "type": "Policy",
+      "dates": {
+        "start": "1996-01-01",
+        "end": "1996-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "Conservation of Arctic Flora and Fauna (CAFF)"
+      ],
+      "concepts": [
+        "IUCN Protected Area Management Categories"
+      ],
+      "supporting_text": "The Conservation of Arctic Flora and Fauna (CAFF) Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996 specifically mentions the IUCN categories (Level 1)",
+      "source_chunk": 7,
+      "id": "94db5d25-2b18-4321-b972-24843e239b5e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Regional strategy incorporated the categories, enabling coordinated protection across the Arctic.",
+        "supporting_text": "The Conservation of Arctic Flora and Fauna (CAFF) Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996 specifically mentions the IUCN categories."
+      }
+    },
+    {
+      "title": "Publication of the IUCN System of Protected Area Management Categories (Bridgewater et al.)",
+      "year": 1996,
+      "description": "A scholarly work presenting the IUCN system of protected‑area management categories, further disseminating the framework internationally.",
+      "type": "Publication",
+      "dates": {
+        "start": "1996-01-01",
+        "end": "1996-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "International Union for Conservation of Nature (IUCN)",
+        "Bridgewater et al."
+      ],
+      "concepts": [
+        "IUCN Protected Area Management Categories"
+      ],
+      "supporting_text": "Other than these programmes, the IUCN categories had little impact until recently on key instruments at a global level. But early in 2004, the Convention on Biological Diversity (CBD) adopted a Programme of Work on Protected Areas, which endorses the categories system and supports the Speaking a Common Language project - see Box 1.",
+      "source_chunk": 7,
+      "id": "a6ac5c9c-dfbc-4400-84d3-92d849738eb2",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provided the scientific basis for later policy uptake.",
+        "supporting_text": "Examples include ... the IUCN System of Protected Area Management Categories (Bridgewater et al. 1996)."
+      }
+    },
+    {
+      "title": "Revision of the African Convention on the Conservation of Nature and Natural Resources",
+      "year": 2003,
+      "description": "The African Convention was revised to incorporate the IUCN protected‑area management categories, marking a regional uptake of the classification system.",
+      "type": "Convention",
+      "dates": {
+        "start": "2003-01-01",
+        "end": "2003-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "African Union (through the African Convention)"
+      ],
+      "concepts": [
+        "IUCN Protected Area Management Categories"
+      ],
+      "supporting_text": "the Revised African Convention on the Conservation of Nature and Natural Resources 2003 … uses the IUCN categories (Level 1)",
+      "source_chunk": 7,
+      "id": "b52e7340-b593-44a7-825a-3c38f54a7dcc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Regional legal instrument adopted the categories, extending their reach.",
+        "supporting_text": "The Revised African Convention on the Conservation of Nature and Natural Resources 2003 ... uses the IUCN categories."
+      }
+    },
+    {
+      "title": "Adoption of the CBD Programme of Work on Protected Areas",
+      "year": 2004,
+      "description": "The Convention on Biological Diversity adopted a Programme of Work on Protected Areas that endorses the IUCN categories system and supports the Speaking a Common Language project.",
+      "type": "Policy",
+      "dates": {
+        "start": "2004-01-01",
+        "end": "2004-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "Convention on Biological Diversity (CBD)"
+      ],
+      "concepts": [
+        "IUCN Protected Area Management Categories"
+      ],
+      "supporting_text": "But early in 2004, the Convention on Biological Diversity (CBD) adopted a Programme of Work on Protected Areas, which endorses the categories system and supports the Speaking a Common Language project",
+      "source_chunk": 7,
+      "id": "f98184bb-3fbb-4213-95ef-2735d8439c57",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Global endorsement raised the profile and legitimacy of the categories.",
+        "supporting_text": "Early in 2004, the Convention on Biological Diversity (CBD) adopted a Programme of Work on Protected Areas, which endorses the categories system."
+      }
+    },
+    {
+      "title": "Adoption of the Programme of Work on Protected Areas (Decision VII/28) by CBD/CoP7",
+      "year": 2004,
+      "description": "The 7th Conference of the Parties to the Convention on Biological Diversity (CBD/CoP7) met in Kuala Lumpur, Malaysia in February 2004 and adopted a Programme of Work on Protected Areas (Decision VII/28), endorsing the IUCN categories system and supporting the Speaking a Common Language project.",
+      "type": "Policy",
+      "dates": {
+        "start": "2004-02-01",
+        "end": "2004-02-01"
+      },
+      "locations": [
+        "Kuala Lumpur, Malaysia"
+      ],
+      "actors": [
+        "Conference of the Parties to the Convention on Biological Diversity (CBD/CoP7)",
+        "IUCN World Commission on Protected Areas (IUCN WCPA)"
+      ],
+      "concepts": [
+        "Programme of Work on Protected Areas",
+        "IUCN protected area categories",
+        "Speaking a Common Language project"
+      ],
+      "supporting_text": "the 7th Conference of the Parties to the Convention on Biological Diversity (CBD/CoP7), meeting in Kuala Lumpur, Malaysia in February 2004, adopted a Programme of Work on Protected Areas (Decision VII/28) that contains an important paragraph in which CBD/CoP7 endorses the categories system and supports the Speaking a Common Language project.",
+      "source_chunk": 8,
+      "id": "64046892-3d4c-45f1-b228-413c90a4f337",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Adoption creates a formal mechanism for parties to coordinate protected‑area classification and reporting.",
+        "supporting_text": "the 7th Conference of the Parties … adopted a Programme of Work on Protected Areas (Decision VII/28)"
+      }
+    },
+    {
+      "title": "Vth World Parks Congress",
+      "year": 2003,
+      "description": "The Vth World Parks Congress held in Durban in September 2003 provided advice that was incorporated into the CBD/CoP7 decision on protected area categories.",
+      "type": "Conference",
+      "dates": {
+        "start": "2003-09-01",
+        "end": "2003-09-30"
+      },
+      "locations": [
+        "Durban, South Africa"
+      ],
+      "actors": [
+        "World Parks Congress"
+      ],
+      "concepts": [
+        "Protected area categories",
+        "IUCN guidelines"
+      ],
+      "supporting_text": "This was included following advice from the Vth World Parks Congress in Durban (September 2003).",
+      "source_chunk": 8,
+      "id": "dd620785-5d70-4b81-a55f-59abb60d7dca",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The Congress supplied advice that shaped the CBD programme, showing a platform for stakeholder coordination.",
+        "supporting_text": "This was included following advice from the Vth World Parks Congress in Durban (September 2003)."
+      }
+    },
+    {
+      "title": "Adoption of the revised African Convention on the Conservation of Nature and Natural Resources",
+      "year": 2003,
+      "description": "The African Convention was revised in 2003, incorporating IUCN protected‑area categories into its definitions and management objectives for Conservation Areas across the continent.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": null,
+      "actors": [
+        "Interagency Taskforce",
+        "African governmental experts"
+      ],
+      "concepts": [
+        "IUCN protected area categories",
+        "Conservation Areas",
+        "African Convention on the Conservation of Nature and Natural Resources"
+      ],
+      "supporting_text": "Box 2. The revised African Convention on the Conservation of Nature and Natural Resources 2003 (Level 1). The IUCN categories had a strong influence on the development of the revised Convention.",
+      "source_chunk": 8,
+      "id": "84feea7f-b1c6-4f5b-b5de-15fd62cd3e8e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Adoption institutionalises conservation‑area categories across African jurisdictions.",
+        "supporting_text": "The IUCN categories had a strong influence on the development of the revised Convention."
+      }
+    },
+    {
+      "title": "Ongoing refinement of the IUCN protected area categories by IUCN WCPA",
+      "year": null,
+      "description": "The IUCN World Commission on Protected Areas continues to refine the international classification system for protected areas, supporting consistent reporting and comparability across countries and regions.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": null,
+      "actors": [
+        "IUCN World Commission on Protected Areas (IUCN WCPA)"
+      ],
+      "concepts": [
+        "IUCN protected area categories",
+        "International classification system"
+      ],
+      "supporting_text": "the CoP: ... welcomes the on‑going efforts of the IUCN WCPA to refine the IUCN system of categories",
+      "source_chunk": 8,
+      "id": "3e9e6c86-84a0-4c77-9266-c9c794cfa255",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Continuous refinement can shift how protected areas are classified and managed globally.",
+        "supporting_text": "encourages … ongoing refinement of the IUCN system of categories"
+      }
+    },
+    {
+      "title": "Agreement to Australian Guidelines for Establishing the National Reserve System",
+      "year": 1999,
+      "description": "All Australian States and Territories, through the Australian and New Zealand Environment and Conservation Council, formally agreed to adopt the Australian Guidelines for Establishing the National Reserve System, which require protected areas to be classified using IUCN categories.",
+      "type": "Policy",
+      "dates": {
+        "start": "1999-01-01",
+        "end": null
+      },
+      "locations": [
+        "Australia"
+      ],
+      "actors": [
+        "Australian States and Territories",
+        "Australian and New Zealand Environment and Conservation Council"
+      ],
+      "concepts": [
+        "IUCN protected area categories",
+        "National Reserve System",
+        "Australian Guidelines for Establishing the National Reserve System"
+      ],
+      "supporting_text": "In 1999, all States and Territories agreed (through the Australian and New Zealand Environment and Conservation Council) to the Australian Guidelines for Establishing the National Reserve System.",
+      "source_chunk": 9,
+      "id": "44583abf-c254-45c0-b04a-4837535df9f5",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "A coordinated agreement across all States and Territories creates a unified framework for protected‑area classification.",
+        "supporting_text": "In 1999, all States and Territories agreed (through the Australian and New Zealand Environment and Conservation Council) to the Australian Guidelines for Establishing the National Reserve System."
+      }
+    },
+    {
+      "title": "Commencement of the Environment Protection and Biodiversity Conservation Act (EPBC Act)",
+      "year": 2000,
+      "description": "The EPBC Act, which embeds IUCN protected‑area categories into Australian legislation and promotes biodiversity conservation, came into force on 16 July 2000.",
+      "type": "Legislation",
+      "dates": {
+        "start": "2000-07-16",
+        "end": null
+      },
+      "locations": [
+        "Australia"
+      ],
+      "actors": [
+        "Australian Commonwealth Government",
+        "Senator Robert Hill (then Minister for Environment)"
+      ],
+      "concepts": [
+        "IUCN protected area categories",
+        "EPBC Act",
+        "Australian IUCN Reserve Management Principles"
+      ],
+      "supporting_text": "The EPBC Act came into force on 16 July 2000.",
+      "source_chunk": 9,
+      "id": "e1ec4380-dbf4-4404-891a-0c4aadf4b1e7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The act’s entry into force provides a legal mechanism to protect biodiversity nationwide.",
+        "supporting_text": "The EPBC Act came into force on 16 July 2000."
+      }
+    },
+    {
+      "title": "Promulgation of the Environment Protection and Biodiversity Conservation Act Regulations 2000",
+      "year": 2000,
+      "description": "Regulations accompanying the EPBC Act were issued in 2000, setting out the Australian IUCN Reserve Management Principles for each IUCN category and guiding the preparation of management plans for Commonwealth reserves.",
+      "type": "Regulation",
+      "dates": {
+        "start": "2000-01-01",
+        "end": null
+      },
+      "locations": [
+        "Australia"
+      ],
+      "actors": [
+        "Australian Government"
+      ],
+      "concepts": [
+        "EPBC Regulations",
+        "Australian IUCN Reserve Management Principles",
+        "IUCN protected area categories"
+      ],
+      "supporting_text": "The Environment Protection and Biodiversity Conservation Act Regulations 2000: scaleplus.law.gov.au/html/pastereg/3/1619/top.htm",
+      "source_chunk": 9,
+      "id": "f310c0c0-84c4-4376-9f02-dba6648eb8b0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Regulations operationalise the act by defining management principles for each IUCN category.",
+        "supporting_text": "The EPBC Regulations set out the Australian IUCN Reserve Management Principles for each IUCN category."
+      }
+    },
+    {
+      "title": "Adoption of Argentina's National Strategy on Protected Areas",
+      "year": 1999,
+      "description": "Argentina introduced a National Strategy on Protected Areas in 1999 to conserve its natural heritage and to harmonise the management categories of protected areas across its 25 jurisdictions with the international IUCN terminology.",
+      "type": "Policy",
+      "dates": {
+        "start": "1999-01-01",
+        "end": null
+      },
+      "locations": [
+        "Argentina"
+      ],
+      "actors": [
+        "Argentine Government"
+      ],
+      "concepts": [
+        "IUCN category system",
+        "National Strategy on Protected Areas",
+        "World Commission on Protected Areas"
+      ],
+      "supporting_text": "Box 4. Argentina: National Strategy on Protected Areas, 1999 (Level 1). The National Strategy on Protected Areas aims to achieve the conservation of Argentina's natural heritage... The policy specifically mentions the IUCN category system and aims \"To homogenise the different management categories of Protected Areas used at present in the 25 jurisdictions, adapting them to the international terminology that was established by the World Commission on Protected Areas of the World Conservation Union (IUCN)\".",
+      "source_chunk": 9,
+      "id": "7f2488b2-265d-49b9-8498-5a1ee9291ce5",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Adoption signals national commitment to a harmonised protected‑area system.",
+        "supporting_text": "The National Strategy on Protected Areas aims to achieve the conservation of Argentina’s natural heritage…"
+      }
+    }
+  ]
+}

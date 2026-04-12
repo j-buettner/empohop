@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Health Knowledge Graph</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-header {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .btn-primary {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Planetary Health Knowledge Graph</h1>
+        
+        <div class="alert alert-info">
+            <strong>Project Overview:</strong> A structured knowledge graph for tracking the planetary health movement, including events, actors, concepts, publications, and locations.
+        </div>
+        
+        <h2>Tools & Visualizations</h2>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Timeline Visualization</div>
+                    <div class="card-body">
+                        <p>Interactive timeline of events in the planetary health movement.</p>
+                        <a href="visualization/timeline/index.html" class="btn btn-primary">Open Timeline</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Network Visualization</div>
+                    <div class="card-body">
+                        <p>Interactive network graph showing relationships between entities.</p>
+                        <a href="visualization/network/index.html" class="btn btn-primary">Open Network Graph</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Data Entry Form</div>
+                    <div class="card-body">
+                        <p>Form for entering new events and their relationships.</p>
+                        <a href="tools/data-entry/event-entry-form.html" class="btn btn-primary">Open Data Entry Form</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Knowledge Graph Data</div>
+                    <div class="card-body">
+                        <p>View the extracted knowledge graph data in JSON format.</p>
+                        <a href="data/processed/book_9780262366601-compressed_knowledge_graph.json" class="btn btn-primary">View Knowledge Graph</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Documentation</h2>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Schema Guide</div>
+                    <div class="card-body">
+                        <p>Comprehensive documentation of the knowledge graph schema.</p>
+                        <a href="schema/documentation/schema-guide.html" class="btn btn-primary">View Schema Guide</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Entity-Relationship Diagram</div>
+                    <div class="card-body">
+                        <p>Visual representation of the entity relationships.</p>
+                        <a href="schema/documentation/er-diagram.html" class="btn btn-primary">View ER Diagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">JSON Schemas</div>
+                    <div class="card-body">
+                        <p>JSON Schema definitions for all entity types.</p>
+                        <div class="d-grid gap-2">
+                            <a href="schema/json-schema/event.json" class="btn btn-outline-primary btn-sm">Event Schema</a>
+                            <a href="schema/json-schema/actor.json" class="btn btn-outline-primary btn-sm">Actor Schema</a>
+                            <a href="schema/json-schema/concept.json" class="btn btn-outline-primary btn-sm">Concept Schema</a>
+                            <a href="schema/json-schema/publication.json" class="btn btn-outline-primary btn-sm">Publication Schema</a>
+                            <a href="schema/json-schema/location.json" class="btn btn-outline-primary btn-sm">Location Schema</a>
+                            <a href="schema/json-schema/relationship.json" class="btn btn-outline-primary btn-sm">Relationship Schema</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Neo4j Database Schema</div>
+                    <div class="card-body">
+                        <p>Cypher scripts for setting up the Neo4j database.</p>
+                        <div class="d-grid gap-2">
+                            <a href="schema/neo4j/constraints.cypher" class="btn btn-outline-primary btn-sm">Database Constraints</a>
+                            <a href="schema/neo4j/indexes.cypher" class="btn btn-outline-primary btn-sm">Database Indexes</a>
+                            <a href="schema/neo4j/relationships.cypher" class="btn btn-outline-primary btn-sm">Relationship Definitions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Getting Started</h2>
+        
+        <p>To get started with this project:</p>
+        
+        <ol>
+            <li>Explore the <a href="README.md">README.md</a> file for an overview of the project structure and features.</li>
+            <li>Review the <a href="schema/documentation/schema-guide.html">Schema Guide</a> to understand the data model.</li>
+            <li>Examine the <a href="data/processed/book_9780262366601-compressed_knowledge_graph.json">Knowledge Graph Data</a> to see how information is structured.</li>
+            <li>Try the <a href="visualization/timeline/index.html">Timeline</a> and <a href="visualization/network/index.html">Network Graph</a> visualizations.</li>
+            <li>Use the <a href="tools/data-entry/event-entry-form.html">Data Entry Form</a> to add new events.</li>
+        </ol>
+        
+        <div class="footer">
+            <p>Planetary Health Knowledge Graph &copy; 2025</p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1062 @@
+{
+  "actors": [
+    {
+      "name": "IUCN",
+      "type": "Organization",
+      "description": "International Union for Conservation of Nature, a global authority on nature conservation and sustainable use. International Union for Conservation of Nature, which created and later revised the global system of protected‑area management categories.",
+      "role": "Promoted the understanding and use of the protected‑area categories system in many countries and international fora.",
+      "country": "Switzerland",
+      "supporting_text": "Since the publication of the Guidelines, IUCN and WCPA have sought to promote the understanding and use of the categories system in many countries and international fora.",
+      "id": "56a9651b-a8b9-43dc-b6ba-e113476f485b",
+      "variations": [
+        "IUCN"
+      ],
+      "source_chunks": [
+        0,
+        5
+      ],
+      "supporting_texts": [
+        "Since the publication of the Guidelines, IUCN and WCPA have sought to promote the understanding and use of the categories system in many countries and international fora.",
+        "A first attempt to address this by categorising protected areas was made by IUCN in 1978. In 1994, IUCN adopted a revised system of six management categories."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN leads the promotion and development of the categories, coordinating international and national efforts.",
+        "supporting_text": "Since the publication of the Guidelines, IUCN and WCPA have sought to promote the understanding and use of the categories system…"
+      }
+    },
+    {
+      "name": "parties to the Convention on Biological Diversity",
+      "type": "Coalition",
+      "description": "The signatory governments of the international Convention on Biological Diversity.",
+      "role": "Endorsed the IUCN management‑category system, supporting its use for designating protected areas worldwide.",
+      "country": null,
+      "supporting_text": "has recently been endorsed by the parties to the Convention on Biological Diversity.",
+      "source_chunk": 0,
+      "id": "0e34aed2-7753-4fa3-ab83-2f70e1bc98c0",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Their endorsement confers international legitimacy on the IUCN categories.",
+        "supporting_text": "has recently been endorsed by the parties to the Convention on Biological Diversity."
+      }
+    },
+    {
+      "name": "William Wordsworth",
+      "type": "Individual",
+      "description": "English poet who expressed an early vision of nature as a national heritage.",
+      "role": "Provided cultural inspiration for the idea of protecting landscapes for public benefit.",
+      "country": "United Kingdom",
+      "supporting_text": "The English poet, William Wordsworth, wrote in 1810 of his vision of the Lake District as \"a sort of national property\".",
+      "source_chunk": 0,
+      "id": "8d3915fe-c73d-4b06-8586-764905031560",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "His early vision framed nature as a national property, hinting at a shift toward collective stewardship.",
+        "supporting_text": "The English poet, William Wordsworth, wrote in 1810 of his vision of the Lake District as “a sort of national property”."
+      }
+    },
+    {
+      "name": "George Catlin",
+      "type": "Individual",
+      "description": "American poet, explorer and artist who advocated for a national park in the United States.",
+      "role": "Early proponent of designating large natural spaces for public enjoyment and conservation.",
+      "country": "United States",
+      "supporting_text": "In 1832, the American poet, explorer and artist, George Catlin, pointed to the need for \"...a nation's park, containing man and beast, in all the wild and freshness of their nature's beauty\".",
+      "source_chunk": 0,
+      "id": "c5ee8d92-d826-4d4e-b41d-5d4d2bd7b947",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Catlin’s call for a nation’s park highlighted an early conceptual basis for systematic protection.",
+        "supporting_text": "In 1832, ... George Catlin, pointed to the need for “…a nation’s park, containing man and beast, in all the wild and freshness of their nature’s beauty”."
+      }
+    },
+    {
+      "name": "US Congress",
+      "type": "Government",
+      "description": "The federal legislative body of the United States.",
+      "role": "Enacted the Yosemite Grant, allocating federal land for public use and the creation of a protected area.",
+      "country": "United States",
+      "supporting_text": "In 1864, with the Yosemite Grant, the US Congress gave a small part of the present Yosemite National Park to the State of California for \"public use, resort and recreation\".",
+      "source_chunk": 0,
+      "id": "c13dd0b5-3365-4f81-a1ad-b0822eb4909d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Legislative grant created a protected area, allocating space for nature to thrive.",
+        "supporting_text": "In 1864, with the Yosemite Grant, the US Congress gave a small part of the present Yosemite National Park to the State of California for “public use, resort and recreation”."
+      }
+    },
+    {
+      "name": "State of California",
+      "type": "Government",
+      "description": "State government of California, USA.",
+      "role": "Received federal land under the Yosemite Grant to manage as a public protected area.",
+      "country": "United States",
+      "supporting_text": "In 1864, with the Yosemite Grant, the US Congress gave a small part of the present Yosemite National Park to the State of California for \"public use, resort and recreation\".",
+      "source_chunk": 0,
+      "id": "36304398-30e2-4d0a-a25a-162aad56ed7e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Received the grant and became a steward of the designated protected land.",
+        "supporting_text": "In 1864, with the Yosemite Grant, the US Congress gave a small part of the present Yosemite National Park to the State of California for “public use, resort and recreation”."
+      }
+    },
+    {
+      "name": "Crown",
+      "type": "Government",
+      "description": "The British Crown, representing the sovereign authority of the United Kingdom and its colonies.",
+      "role": "Accepted the donation of sacred mountain land that later became part of a protected national park in New Zealand.",
+      "country": "United Kingdom",
+      "supporting_text": "In 1887 a Maori Chief offered the Crown 2,400 ha of the sacred summits of Tongariro, Ngauruhoe and Ruapehu: these became in time part of Tongariro National Park in New Zealand.",
+      "source_chunk": 0,
+      "id": "b772ab19-a891-4356-9303-f89945659e19",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Accepted land offered by the Maori Chief, enabling the creation of a national park.",
+        "supporting_text": "In 1887 a Maori Chief offered the Crown 2,400 ha of the sacred summits of Tongariro, Ngauruhoe and Ruapehu."
+      }
+    },
+    {
+      "name": "Maori Chief",
+      "type": "Individual",
+      "description": "Indigenous leader of the Māori people in New Zealand who offered land for protection.",
+      "role": "Donated sacred mountain summits that were incorporated into a protected national park.",
+      "country": "New Zealand",
+      "supporting_text": "In 1887 a Maori Chief offered the Crown 2,400 ha of the sacred summits of Tongariro, Ngauruhoe and Ruapehu: these became in time part of Tongariro National Park in New Zealand.",
+      "source_chunk": 0,
+      "id": "af96ca30-acd7-48c3-9a0f-cd0e8f7529a7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Proactively offered sacred land for protection, directly contributing to park establishment.",
+        "supporting_text": "In 1887 a Maori Chief offered the Crown 2,400 ha of the sacred summits of Tongariro, Ngauruhoe and Ruapehu."
+      }
+    },
+    {
+      "name": "British Colony of New South Wales",
+      "type": "Government",
+      "description": "Colonial administration of New South Wales, Australia, under British rule.",
+      "role": "Initiated the creation of the modern Blue Mountains National Park, an early protected‑area effort.",
+      "country": "Australia",
+      "supporting_text": "In 1866, the British Colony of New South Wales in Australia took the first steps in creation of the modern Blue Mountains National Park.",
+      "source_chunk": 0,
+      "id": "870659ec-b093-4899-a569-3ea08765ed03",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Initiated steps toward creating the modern Blue Mountains National Park.",
+        "supporting_text": "In 1866, the British Colony of New South Wales in Australia took the first steps in creation of the modern Blue Mountains National Park."
+      }
+    },
+    {
+      "name": "World Heritage Convention",
+      "type": "Organization",
+      "description": "An international framework that designates protected areas of outstanding universal value. UNESCO convention adopted in 1972 to protect cultural and natural heritage of outstanding universal value.",
+      "role": "Provides an international network of protected areas and sets criteria for their designation and management.",
+      "country": "International",
+      "supporting_text": "there are international networks of protected areas at the global level (e.g. those under the World Heritage ... Conventions)",
+      "id": "2fee4b3c-0844-4bf1-a37c-4a8e48b7c049",
+      "variations": [
+        "World Heritage Convention"
+      ],
+      "source_chunks": [
+        1,
+        2
+      ],
+      "supporting_texts": [
+        "there are international networks of protected areas at the global level (e.g. those under the World Heritage ... Conventions)",
+        "New international programmes and treaties were making an impact (e.g.: the Man and Biosphere Programme, initiated in 1971; the Ramsar Wetlands Convention, 1971; and the World Heritage Convention, 1972)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The convention is presented as another treaty contributing to the growth of protected areas.",
+        "supporting_text": "New international programmes and treaties were making an impact (e.g.: … and the World Heritage Convention, 1972)"
+      }
+    },
+    {
+      "name": "Ramsar Convention",
+      "type": "Organization",
+      "description": "The Convention on Wetlands of International Importance, especially as Waterfowl Habitat, which creates a global network of protected wetlands.",
+      "role": "Establishes an international network of protected wetland sites and guides their conservation and sustainable use.",
+      "country": "International",
+      "supporting_text": "there are international networks of protected areas at the global level (e.g. those under the World Heritage and Ramsar Conventions)",
+      "source_chunk": 1,
+      "id": "4ca5b14f-7ec9-4301-a65c-79fce417b514"
+    },
+    {
+      "name": "Natura 2000",
+      "type": "Coalition",
+      "description": "A European Union-wide network of protected areas covering both terrestrial and marine habitats.",
+      "role": "Coordinates regional protected‑area designations and management across EU member states.",
+      "country": "European Union",
+      "supporting_text": "there are international networks of protected areas at the regional level (e.g. Natura 2000 in Europe)",
+      "source_chunk": 1,
+      "id": "b27deb90-df66-4075-995a-8074ea4f8e61"
+    },
+    {
+      "name": "UNEP/WCMC",
+      "type": "Organization",
+      "description": "The United Nations Environment Programme World Conservation Monitoring Centre, which compiles data on protected areas worldwide.",
+      "role": "Provides the global dataset that quantifies the extent of protected areas (e.g., 11.7% of the planet’s land surface).",
+      "country": "International",
+      "supporting_text": "Together, these cover nearly 11.7% of the land surface of the planet (data source: UNEP/WCMC).",
+      "source_chunk": 1,
+      "id": "55d6eed9-9ead-477d-b8bd-465d97ca37a4",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Only cited as a data source; no functional role described.",
+        "supporting_text": "data source: UNEP/WCMC"
+      }
+    },
+    {
+      "name": "International Union for Conservation of Nature (IUCN)",
+      "type": "Organization",
+      "description": "A global authority on the status of biodiversity and the definition of protected areas. A global authority on the status of the natural world and the measures needed to safeguard it. Global authority on conservation that develops guidelines and classification systems for protected areas. Global authority on conservation, providing the protected‑area category system and management guidelines. Global conservation organization that develops standards and guidelines for protected areas.",
+      "role": "Sets the definition used to count and classify protected areas worldwide.",
+      "country": "International",
+      "supporting_text": "In all, there are well over 100,000 sites that meet the IUCN definition of a protected area",
+      "id": "e1e9dc0a-b126-4689-9907-adc167b33ec8",
+      "variations": [
+        "International Union for Conservation of Nature (IUCN)"
+      ],
+      "source_chunks": [
+        1,
+        3,
+        6,
+        8,
+        9
+      ],
+      "supporting_texts": [
+        "In all, there are well over 100,000 sites that meet the IUCN definition of a protected area",
+        "The 1978 IUCN Report on Categories, Objectives and Criteria for PAs... help IUCN play its part in international initiatives, such as the World Heritage Convention;",
+        "References to the 1994 system have been made in numerous IUCN/WCPA publications.",
+        "The IUCN categories had a strong influence on the development of the revised Convention.",
+        "the IUCN protected area management categories concept is slowly filtering down into Australian State and Territory legal and policy frameworks and is also beginning to be implemented in the field and incorporated into park management plans."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Its protected‑area categories provide the conceptual basis that is being adopted nationally, enabling system‑wide change.",
+        "supporting_text": "IUCN protected area management categories concept is slowly filtering down into Australian State and Territory legal and policy frameworks"
+      }
+    },
+    {
+      "name": "IUCN network (or commission) of volunteer experts on protected areas",
+      "type": "NGO",
+      "description": "A network/commission of volunteer experts within the International Union for Conservation of Nature focused on protected areas.",
+      "role": "Led the worldwide conservation movement and the development of a global framework for protected areas.",
+      "country": null,
+      "supporting_text": "This has been led by the IUCN network - or commission - of volunteer experts on protected areas.",
+      "source_chunk": 2,
+      "id": "067545cb-a0e1-46d6-9f3d-3536f4e3aead",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "A volunteer expert body that coordinates global standards and guidance for protected‑area networks.",
+        "supporting_text": "This has been led by the IUCN network – or commission – of volunteer experts on protected areas"
+      }
+    },
+    {
+      "name": "Hal Coolidge",
+      "type": "Individual",
+      "description": "Leader under whose guidance the International Commission on National Parks was established in 1960.",
+      "role": "Provided leadership for the creation of the International Commission on National Parks, an early body for protected‑area classification.",
+      "country": null,
+      "supporting_text": "The International Commission on National Parks was established in 1960 under the leadership of Hal Coolidge.",
+      "source_chunk": 2,
+      "id": "2adc4581-61d3-40ed-b369-9eae7ec19365",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided leadership for the creation of the International Commission on National Parks.",
+        "supporting_text": "The International Commission on National Parks was established in 1960 under the leadership of Hal Coolidge"
+      }
+    },
+    {
+      "name": "International Commission on National Parks",
+      "type": "Organization",
+      "description": "Commission created in 1960 to coordinate national‑park and protected‑area work; later became the Commission on National Parks and Protected Areas of IUCN.",
+      "role": "Developed early protected‑area categories and later evolved into the World Commission on Protected Areas.",
+      "country": null,
+      "supporting_text": "It soon became the Commission on National Parks and Protected Areas of IUCN (CNPPA); since 1996 it has been the World Commission on Protected Areas (WCPA).",
+      "source_chunk": 2,
+      "id": "e6c09afd-214f-48f1-aedd-871f7e9693e0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Institutionalised expert coordination on protected‑area policy worldwide.",
+        "supporting_text": "The International Commission on National Parks was established in 1960"
+      }
+    },
+    {
+      "name": "World Commission on Protected Areas (WCPA)",
+      "type": "Organization",
+      "description": "A commission of the IUCN that focuses on protected‑area policy and management. The current IUCN commission responsible for global protected‑area policy and standards.",
+      "role": "Authored a 1998 position statement urging exclusion of mining from protected‑area categories I‑IV.",
+      "country": "International",
+      "supporting_text": "A position statement on mining and protected areas, developed by WCPA 1998, which argued that governments and others should ensure that mining operations of all kinds were excluded from protected area Categories I-IV.",
+      "id": "4f8d142c-400c-42e6-9fb0-e562e8a2acfc",
+      "variations": [
+        "World Commission on Protected Areas (WCPA)"
+      ],
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_texts": [
+        "A position statement on mining and protected areas, developed by WCPA 1998, which argued that governments and others should ensure that mining operations of all kinds were excluded from protected area Categories I-IV.",
+        "since 1996 it has been the World Commission on Protected Areas (WCPA)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "WCPA authored the mining‑exclusion principle and co‑authored the category system, shaping policy implementation.",
+        "supporting_text": "a position statement on mining and protected areas, developed by WCPA 1998"
+      }
+    },
+    {
+      "name": "United Nations Economic and Social Council (ECOSOC)",
+      "type": "Government",
+      "description": "A principal organ of the United Nations that coordinates economic, social and related work of the UN system.",
+      "role": "Adopted a 1959 resolution recognizing national parks and equivalent reserves as important for wise use of natural resources.",
+      "country": "International",
+      "supporting_text": "A 1959 resolution of the 27th session of the United Nations Economic and Social Council (ECOSOC) recognised that \"national parks and equivalent reserves are important factors in the wise use of natural resources\".",
+      "source_chunk": 2,
+      "id": "9d881056-c6df-41c5-8bd0-547159e99849",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Its 1959 resolution elevated the political profile of national parks within the UN system.",
+        "supporting_text": "A 1959 resolution of the 27th session of the United Nations Economic and Social Council (ECOSOC) recognised that “national parks … are important factors in the wise use of natural resources”"
+      }
+    },
+    {
+      "name": "United Nations General Assembly",
+      "type": "Government",
+      "description": "The main deliberative, policymaking and representative organ of the United Nations.",
+      "role": "Endorsed the ECOSOC decision on economic development and nature conservation in December 1962.",
+      "country": "International",
+      "supporting_text": "The ECOSOC decision was endorsed by a resolution of the 16th Session of the General Assembly of the United Nations (December 1962), on 'Economic Development and Nature Conservation'.",
+      "source_chunk": 2,
+      "id": "405cdb8f-e9d0-4f1a-9780-c22f16ab3f8a",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Endorsed ECOSOC’s resolution, further legitimising protected‑area objectives at the highest UN level.",
+        "supporting_text": "The ECOSOC decision was endorsed by a resolution of the 16th Session of the General Assembly of the United Nations (December 1962)"
+      }
+    },
+    {
+      "name": "Sir Hugh Elliott",
+      "type": "Individual",
+      "description": "Conservationist who prepared the second version of the UN List of protected areas in 1966.",
+      "role": "Compiled and published the 1966 edition of the UN List of National Parks and Equivalent Reserves.",
+      "country": null,
+      "supporting_text": "In 1966, IUCN published the second version of the list, prepared by Sir Hugh Elliott, under the guidance of the new chair of the Commission on National Parks, Jean‑Paul Harroy.",
+      "source_chunk": 2,
+      "id": "cf401eb5-ab60-41d0-a9db-39e96812ca89",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Compiled the second edition of the UN List, advancing standardisation of protected‑area data.",
+        "supporting_text": "In 1966, IUCN published the second version of the list, prepared by Sir Hugh Elliott"
+      }
+    },
+    {
+      "name": "Jean‑Paul Harroy",
+      "type": "Individual",
+      "description": "Chair of the IUCN Commission on National Parks during the mid‑1960s.",
+      "role": "Guided the preparation of the 1966 UN List of protected areas.",
+      "country": null,
+      "supporting_text": "In 1966, IUCN published the second version of the list, prepared by Sir Hugh Elliott, under the guidance of the new chair of the Commission on National Parks, Jean‑Paul Harroy.",
+      "source_chunk": 2,
+      "id": "8d40798f-654f-4a5c-bb77-e40abcabc7fc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Guided the 1966 UN List as chair, supporting continuity of global inventory efforts.",
+        "supporting_text": "under the guidance of the new chair of the Commission on National Parks, Jean‑Paul Harroy"
+      }
+    },
+    {
+      "name": "Dr Ray Dasmann",
+      "type": "Individual",
+      "description": "Senior Ecologist at IUCN who authored a seminal paper on protected‑area classification.",
+      "role": "Developed and proposed a comprehensive classification system for protected natural and cultural areas.",
+      "country": null,
+      "supporting_text": "IUCN's Senior Ecologist, Dr Ray Dasmann, wrote a paper on the Development of a Classification System for Protected Natural and Cultural Areas for the Second World Conference on National Parks (1972).",
+      "source_chunk": 2,
+      "id": "3562cf25-239c-4385-8023-0031ffd46322",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Authored a classification framework that broadened the conceptual basis for protected‑area design.",
+        "supporting_text": "IUCN’s Senior Ecologist, Dr Ray Dasmann, wrote a paper on the Development of a Classification System for Protected Natural and Cultural Areas"
+      }
+    },
+    {
+      "name": "C.F. Brockman",
+      "type": "Individual",
+      "description": "Author of a paper that formed the basis of the first proper debate on protected‑area nomenclature in 1962.",
+      "role": "Provided scholarly input that sparked discussion on protected‑area terminology.",
+      "country": null,
+      "supporting_text": "At this meeting, the first proper debate about the 'nomenclature' of protected areas, which was based on a paper by C.F. Brockman, took place.",
+      "source_chunk": 2,
+      "id": "5210715e-ca55-401f-83c6-6ad154f6b6e3",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "His paper underpinned the 1962 debate on protected‑area nomenclature, shaping discourse.",
+        "supporting_text": "the first proper debate about the ‘nomenclature’ of protected areas, which was based on a paper by C.F. Brockman, took place"
+      }
+    },
+    {
+      "name": "Man and Biosphere Programme",
+      "type": "Organization",
+      "description": "UNESCO programme launched in 1971 to promote sustainable development through biosphere reserves.",
+      "role": "Introduced an international framework that influenced the design and allocation of protected areas.",
+      "country": "International",
+      "supporting_text": "New international programmes and treaties were making an impact (e.g.: the Man and Biosphere Programme, initiated in 1971; the Ramsar Wetlands Convention, 1971; and the World Heritage Convention, 1972).",
+      "source_chunk": 2,
+      "id": "c9b83bb6-7194-4ef6-8e12-2381e9af718f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The programme is cited as an international initiative that made an impact on protected‑area development.",
+        "supporting_text": "New international programmes and treaties were making an impact (e.g.: the Man and Biosphere Programme, initiated in 1971)"
+      }
+    },
+    {
+      "name": "Ramsar Wetlands Convention",
+      "type": "Organization",
+      "description": "International treaty for the conservation and wise use of wetlands, signed in 1971.",
+      "role": "Provided an additional international mechanism influencing protected‑area policy and designation.",
+      "country": "International",
+      "supporting_text": "New international programmes and treaties were making an impact (e.g.: the Man and Biosphere Programme, initiated in 1971; the Ramsar Wetlands Convention, 1971; and the World Heritage Convention, 1972).",
+      "source_chunk": 2,
+      "id": "04ffc68a-76ba-4f59-a52a-7dfe246e1d5d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The convention is listed among treaties that advanced protected‑area efforts.",
+        "supporting_text": "New international programmes and treaties were making an impact (e.g.: … the Ramsar Wetlands Convention, 1971)"
+      }
+    },
+    {
+      "name": "Conservation and National Parks Programme Association (CNPPA)",
+      "type": "Organization",
+      "description": "A body that coordinated the development of a categorisation system for protected areas in the 1970s.",
+      "role": "Decided in 1975 to develop a categories system for protected areas and worked with IUCN commissions to promote the system.",
+      "country": null,
+      "supporting_text": "This was the background to the decision taken by CNPPA in 1975 to develop a categories system for protected areas...",
+      "source_chunk": 3,
+      "id": "6e6e1a3d-a1f6-450b-a41a-7cb2e48fd809",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CNPPA initiated and coordinated the development of a protected‑area categories system.",
+        "supporting_text": "decision taken by CNPPA in 1975 to develop a categories system for protected areas"
+      }
+    },
+    {
+      "name": "Rockefeller Foundation",
+      "type": "Organization",
+      "description": "A U.S. philanthropic foundation that funds research and initiatives in health, environment and development.",
+      "role": "Funded the work that produced the 1978 IUCN report and the protected‑area categorisation system.",
+      "country": "United States",
+      "supporting_text": "The work was funded by the Rockefeller Foundation and led by Dr Kenton Miller, chair of the CNPPA Committee on Criteria and Nomenclature.",
+      "source_chunk": 3,
+      "id": "470658a9-a755-4c7c-8431-fbc37d1f3c18",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided the financial resources that enabled the categories system to be developed.",
+        "supporting_text": "The work was funded by the Rockefeller Foundation"
+      }
+    },
+    {
+      "name": "Dr Kenton Miller",
+      "type": "Individual",
+      "description": "Chair of the CNPPA Committee on Criteria and Nomenclature who led the development of the 1978 categorisation report.",
+      "role": "Led the committee that produced the 1978 IUCN report on protected‑area categories.",
+      "country": null,
+      "supporting_text": "The work was funded by the Rockefeller Foundation and led by Dr Kenton Miller, chair of the CNPPA Committee on Criteria and Nomenclature.",
+      "source_chunk": 3,
+      "id": "17e3c503-7b9b-4341-983b-e03b078fab44",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Led the committee that produced the 1978 IUCN report, guiding the categorisation effort.",
+        "supporting_text": "led by Dr Kenton Miller, chair of the CNPPA Committee on Criteria and Nomenclature"
+      }
+    },
+    {
+      "name": "CNPPA",
+      "type": "Organization",
+      "description": "Commission on National Parks and Protected Areas, a body within the IUCN system that coordinates protected‑area categorisation work.",
+      "role": "Established a task force to update the protected‑area categories system and adopted the 1990 report recommending a new categorisation framework.",
+      "country": null,
+      "supporting_text": "In 1984, therefore, CNPPA established a task force under Hal Eidsvik to consider updating the categories system.",
+      "source_chunk": 4,
+      "id": "6116b5ef-7dcc-402b-a15a-97eb6a703dfc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Coordinated the task force, adopted reports and drove the category revision process.",
+        "supporting_text": "CNPPA established a task force under Hal Eidsvik"
+      }
+    },
+    {
+      "name": "Hal Eidsvik",
+      "type": "Individual",
+      "description": "Task‑force leader appointed by CNPPA to review and propose revisions to the IUCN protected‑area categories.",
+      "role": "Led the CNPPA task force that produced the 1990 report recommending a new system of protected‑area categories.",
+      "country": null,
+      "supporting_text": "In 1984, therefore, CNPPA established a task force under Hal Eidsvik to consider updating the categories system.",
+      "source_chunk": 4,
+      "id": "13aab093-7d34-4ebf-a20c-b6ec9b243894",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Led the task force that produced the recommendation for a new categorisation system.",
+        "supporting_text": "CNPPA established a task force under Hal Eidsvik"
+      }
+    },
+    {
+      "name": "IUCN Council",
+      "type": "Organization",
+      "description": "Governing body of the International Union for Conservation of Nature (IUCN).",
+      "role": "Was urged by the Caracas Congress to endorse the six‑category system and to develop guidance for governments.",
+      "country": null,
+      "supporting_text": "Acting on the workshop's conclusions, the Caracas Congress adopted Recommendation 17, urging CNPPA and the IUCN Council to: endorse a system of six protected area categories based on management objectives; recommend this to governments; and explain it through guidelines.",
+      "source_chunk": 4,
+      "id": "086f6445-0151-4fea-a717-d33702d55c60",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Referred the recommendation to a higher level, enabling further institutional review.",
+        "supporting_text": "the IUCN Council referred this matter to a higher level"
+      }
+    },
+    {
+      "name": "IUCN General Assembly",
+      "type": "Organization",
+      "description": "The plenary decision‑making forum of the International Union for Conservation of Nature.",
+      "role": "Approved the new six‑category protected‑area system in 1994 and earlier provided a forum for reporting the 1990 CNPPA recommendations.",
+      "country": null,
+      "supporting_text": "Thus in 1994, ten years after the review of the 1978 system had begun, the IUCN General Assembly, meeting in Buenos Aires, approved the new system, commended it to governments and called on CNPPA to finalise guidance to explain it.",
+      "source_chunk": 4,
+      "id": "bfc6ae16-e7f7-4031-ae64-a980491da8cd",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Approved the new system, giving it legitimacy and visibility to governments.",
+        "supporting_text": "the IUCN General Assembly, meeting in Buenos Aires, approved the new system"
+      }
+    },
+    {
+      "name": "World Conservation Monitoring Centre (WCMC)",
+      "type": "Organization",
+      "description": "A UN‑affiliated centre that provides biodiversity information and supports the IUCN.",
+      "role": "Co‑published the 1994 Guidelines for Protected Area Management Categories with IUCN.",
+      "country": null,
+      "supporting_text": "Later in 1994, IUCN and the World Conservation Monitoring Centre (WCMC) published Guidelines for Protected Area Management Categories, in English, French and Spanish (IUCN/WCMC, 1994).",
+      "source_chunk": 4,
+      "id": "4dc5bc6d-3ada-4676-87ed-b12ca9e05e11",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Co‑published the Guidelines, providing essential tools for implementation.",
+        "supporting_text": "IUCN and the World Conservation Monitoring Centre (WCMC) published Guidelines"
+      }
+    },
+    {
+      "name": "P.H.C. (Bing) Lucas",
+      "type": "Individual",
+      "description": "Chair of CNPPA at the time the 1994 Guidelines were introduced. Former Chair of the IUCN World Commission on Protected Areas (WCPA).",
+      "role": "Authored the introductory remarks to the 1994 Guidelines, emphasizing their purpose for managers, planners, researchers, politicians and citizen groups.",
+      "country": null,
+      "supporting_text": "The 1994 guidelines summarised Introducing the 1994 guidance, the then Chair of CNPPA, P.H.C. (Bing) Lucas wrote: \"These guidelines have a special significance as they are intended for everyone involved in protected areas...\"",
+      "id": "5f35287f-d453-4265-9e9d-4075dabc5575",
+      "variations": [
+        "P.H.C. (Bing) Lucas"
+      ],
+      "source_chunks": [
+        4,
+        7
+      ],
+      "supporting_texts": [
+        "The 1994 guidelines summarised Introducing the 1994 guidance, the then Chair of CNPPA, P.H.C. (Bing) Lucas wrote: \"These guidelines have a special significance as they are intended for everyone involved in protected areas...\"",
+        "the then WCPA Chair, P.H.C. (Bing) Lucas emphasised that \"these categories must in no way be considered as a 'driving' mechanism for governments or organisations...\""
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Lucas stresses that the categories were not intended as a driving mechanism, highlighting the original normative context.",
+        "supporting_text": "These categories must in no way be considered as a ‘driving’ mechanism for governments or organisations …"
+      }
+    },
+    {
+      "name": "Foster",
+      "type": "Individual",
+      "description": "IUCN consultant who contributed a paper informing the Caracas Congress workshop.",
+      "role": "Provided expert input that helped shape the recommendations adopted by the Caracas Congress regarding protected‑area categories.",
+      "country": null,
+      "supporting_text": "and was informed also by a paper from an IUCN consultant (Foster, 1992).",
+      "source_chunk": 4,
+      "id": "c21c9f19-7d4c-46f6-a1b1-ae935ee4e03c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided a consultant paper that informed the workshop deliberations.",
+        "supporting_text": "was informed also by a paper from an IUCN consultant (Foster, 1992)"
+      }
+    },
+    {
+      "name": "WCPA",
+      "type": "Organization",
+      "description": "World Commission on Protected Areas, a commission of IUCN that focuses on protected‑area policy and practice.",
+      "role": "Promoted the understanding and use of the protected‑area categories system in many countries and international fora.",
+      "country": "Switzerland",
+      "supporting_text": "Since the publication of the Guidelines, IUCN and WCPA have sought to promote the understanding and use of the categories system in many countries and international fora.",
+      "source_chunk": 5,
+      "id": "9d9307a5-eeb6-4826-b2f8-418c00d2c568",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "WCPA co‑leads the ongoing promotion, enhancing collaborative capacity among protected‑area practitioners.",
+        "supporting_text": "Since the publication of the Guidelines, IUCN and WCPA have sought to promote the understanding and use of the categories system…"
+      }
+    },
+    {
+      "name": "EUROPARC",
+      "type": "Organization",
+      "description": "European network of protected areas that produces guidance on protected‑area management.",
+      "role": "Authored a publication on how to apply the 1994 Guidelines in Europe.",
+      "country": "Belgium",
+      "supporting_text": "Publications on how to apply the Guidelines in specific geographical or other contexts, e.g. for Europe (EUROPARC and IUCN, 1999)...",
+      "source_chunk": 5,
+      "id": "a10129fc-dbf2-477a-93d1-57d26351830a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "EUROPARC produces guidance that helps European actors apply the categories, supporting coordinated action.",
+        "supporting_text": "Publications on how to apply the Guidelines … for Europe (EUROPARC and IUCN, 1999)."
+      }
+    },
+    {
+      "name": "ANCA",
+      "type": "Organization",
+      "description": "Australian National ... (organisation involved in protected‑area guidance in Australia).",
+      "role": "Authored a publication on how to apply the 1994 Guidelines in Australia.",
+      "country": "Australia",
+      "supporting_text": "...for Australia (ANCA, 1995)...",
+      "source_chunk": 5,
+      "id": "e2b849ca-d494-4639-b824-2123c6572be2",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "ANCA provides Australian-specific guidance, enabling collective uptake of the categories.",
+        "supporting_text": "Publications … for Australia (ANCA, 1995)."
+      }
+    },
+    {
+      "name": "Bridgewater et al.",
+      "type": "Individual",
+      "description": "Authors of a 1996 study relating the Guidelines to Biosphere Reserves.",
+      "role": "Produced a publication on applying the Guidelines in relation to Biosphere Reserves.",
+      "country": null,
+      "supporting_text": "...in relation to Biosphere Reserves (Bridgewater et al., 1996)...",
+      "source_chunk": 5,
+      "id": "c1070815-d65e-41be-92f5-febd35fac42a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Their case study informs application of the categories to biosphere reserves, supporting knowledge sharing.",
+        "supporting_text": "in relation to Biosphere Reserves (Bridgewater et al., 1996)."
+      }
+    },
+    {
+      "name": "PARKS",
+      "type": "Organization",
+      "description": "Entity that produced a 1998 publication on applying the Guidelines to the marine environment.",
+      "role": "Authored a publication on how to apply the Guidelines to the marine environment.",
+      "country": null,
+      "supporting_text": "...and the marine environment (PARKS, 1998)",
+      "source_chunk": 5,
+      "id": "4a3d9e65-c06f-4154-b0fc-e0457c2ae0d9",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows tension between traditionalists wanting to keep “national parks” name and those pushing neutral titles, exposing naming politics.",
+        "supporting_text": "traditionalists, who were opposed to the loss of all mention of national parks in particular, and others who wanted to move to entirely “neutral” titles"
+      }
+    },
+    {
+      "name": "United Nations",
+      "type": "Organization",
+      "description": "Intergovernmental organization that facilitates global cooperation on a range of issues.",
+      "role": "Published the United Nations List of Protected Areas (1997, 2003) that classifies sites by IUCN management category.",
+      "country": "International",
+      "supporting_text": "The publication of the United Nations List of Protected Areas (1997 and 2003 versions) which classifies individual protected areas by the management category to which they have been assigned (IUCN/WCMC, 1998 and Chape et al., 2003).",
+      "source_chunk": 6,
+      "id": "803b2b0e-48e7-4c1e-a627-3fd5209c1a1d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The UN produced the List of Protected Areas, providing a global reference that supports coordinated protection efforts.",
+        "supporting_text": "The publication of the United Nations List of Protected Areas (1997 and 2003 versions)"
+      }
+    },
+    {
+      "name": "Convention on Biological Diversity (CBD)",
+      "type": "Organization",
+      "description": "An international treaty under the United Nations aimed at conserving biological diversity. International treaty and its governing body that aims to conserve biological diversity.",
+      "role": "Endorsed the IUCN protected‑area categorisation system at its 7th Conference of the Parties, encouraging governments to adopt it.",
+      "country": "International",
+      "supporting_text": "Endorsement of the system by the Convention on Biological Diversity: at the 7th Conference of the parties to the CBD in Kuala Lumpur (February 2004), governments accepted that the system provided a basis for reporting and recording, and encouraged governments and others to assign protected areas to categories.",
+      "id": "fab20c9c-9f6f-4a34-86cf-5be93e61925b",
+      "variations": [
+        "Convention on Biological Diversity (CBD)"
+      ],
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "Endorsement of the system by the Convention on Biological Diversity: at the 7th Conference of the parties to the CBD in Kuala Lumpur (February 2004), governments accepted that the system provided a basis for reporting and recording, and encouraged governments and others to assign protected areas to categories.",
+        "early in 2004, the Convention on Biological Diversity (CBD) adopted a Programme of Work on Protected Areas, which endorses the categories system"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Adopted the Programme of Work that endorses the IUCN categories, steering international policy.",
+        "supporting_text": "the Convention on Biological Diversity (CBD) adopted a Programme of Work on Protected Areas, which endorses the categories system"
+      }
+    },
+    {
+      "name": "IUCN World Conservation Congress",
+      "type": "Organization",
+      "description": "The supreme decision‑making body of the IUCN, convened every four years.",
+      "role": "Adopted recommendation 2.82 in 2000, reinforcing the exclusion of mining from protected‑area categories I‑IV.",
+      "country": "International",
+      "supporting_text": "This principle was taken up in a recommendation (number 2.82) adopted by the IUCN World Conservation Congress in Amman (2000).",
+      "source_chunk": 6,
+      "id": "99366150-fda6-4aa5-9b7b-119f91395155",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The Congress formally adopted Recommendation 2.82, raising the profile of the mining‑exclusion principle.",
+        "supporting_text": "adopted by the IUCN World Conservation Congress in Amman (2000)"
+      }
+    },
+    {
+      "name": "IUCN/WCMC (World Conservation Monitoring Centre)",
+      "type": "Organization",
+      "description": "A biodiversity information centre that collaborates with IUCN on data and assessments.",
+      "role": "Co‑authored the United Nations List of Protected Areas, providing the classification of sites by management category.",
+      "country": "United Kingdom",
+      "supporting_text": "The publication of the United Nations List of Protected Areas (1997 and 2003 versions) which classifies individual protected areas by the management category to which they have been assigned (IUCN/WCMC, 1998 and Chape et al., 2003).",
+      "source_chunk": 6,
+      "id": "be63bbfe-9ef0-4f59-8a5c-ef77081643d4",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN/WCMC published the UN List of Protected Areas, supplying essential data for global conservation planning.",
+        "supporting_text": "(IUCN/WCMC, 1998 ... )"
+      }
+    },
+    {
+      "name": "Cardiff University",
+      "type": "Organization",
+      "description": "A public research university in Wales, United Kingdom.",
+      "role": "Co‑produced the IUCN/Cardiff University Best Practice Protected Area Guidelines Series that promote use of the categorisation system.",
+      "country": "United Kingdom",
+      "supporting_text": "Especially relevant are the publications in the IUCN/Cardiff University Best Practice Protected Area Guidelines Series, which promotes the use of the system in all eleven volumes published to date, including specific guidance on Category V (Phillips, 2002).",
+      "source_chunk": 6,
+      "id": "f5b1923b-ccd3-42b1-8995-7fe620fbceb8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Cardiff University co‑published the Best Practice Guidelines that promote the category system worldwide.",
+        "supporting_text": "Best Practice Protected Area Guidelines Series ... published by Cardiff University"
+      }
+    },
+    {
+      "name": "Speaking a Common Language project",
+      "type": "Other",
+      "description": "A collaborative project aimed at advancing the protected‑area categorisation system.",
+      "role": "Continues to develop and refine the IUCN protected‑area categories, ensuring they meet emerging conservation needs.",
+      "country": null,
+      "supporting_text": "the work of the Speaking a Common Language project, that the system of protected area categories continues to evolve and that new things are expected of it.",
+      "source_chunk": 6,
+      "id": "0753c689-1069-49ed-981c-c588fa5415d5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The project highlights the evolving nature of the category system and its capacity for future transformation.",
+        "supporting_text": "the work of the Speaking a Common Language project"
+      }
+    },
+    {
+      "name": "World Conservation Union (IUCN)",
+      "type": "Organization",
+      "description": "The leading global authority on the status of the natural world and the measures needed to safeguard it.",
+      "role": "Commissioned the research on legal and policy frameworks for protected areas and promotes the protected‑area management categories worldwide.",
+      "country": "International",
+      "supporting_text": "the World Conservation Union's (IUCN) Environmental Law Centre (ELC) was asked to research legal and policy frameworks for protected areas",
+      "source_chunk": 7,
+      "id": "db7d5c09-cc33-440e-8346-ff15fc62fb5f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN provides the classification system and supports its diffusion through projects and legal research.",
+        "supporting_text": "World Conservation Union’s (IUCN) Environmental Law Centre (ELC) was asked to research..."
+      }
+    },
+    {
+      "name": "Environmental Law Centre (ELC) of IUCN",
+      "type": "Organization",
+      "description": "The legal research unit of IUCN that analyses environmental legislation and policy.",
+      "role": "Conducted the systematic review of national and international protected‑area legislation to assess influence of IUCN categories.",
+      "country": "International",
+      "supporting_text": "the World Conservation Union's (IUCN) Environmental Law Centre (ELC) was asked to research legal and policy frameworks for protected areas",
+      "source_chunk": 7,
+      "id": "43c01e83-2873-469b-ac28-95892a882e00",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Conducted the systematic review of legislation and policy, generating knowledge for further action.",
+        "supporting_text": "the Environmental Law Centre (ELC) of IUCN – The World Conservation Union, was asked to research legal and policy frameworks"
+      }
+    },
+    {
+      "name": "Intergovernmental Forum on Forests",
+      "type": "Organization",
+      "description": "A UN‑facilitated platform for discussion of forest‑related policies among governments.",
+      "role": "One of the global programmes that has worked to integrate IUCN protected‑area management categories into its processes.",
+      "country": "International",
+      "supporting_text": "Examples include the Intergovernmental Forum on Forests4 and Biosphere Reserves and the IUCN System of Protected Area Management Categories",
+      "source_chunk": 7,
+      "id": "450436a3-0bea-4dd0-a205-28ba1df89d62",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Acts as a global forum that has begun to incorporate the IUCN categories into its programmes.",
+        "supporting_text": "Examples include the Intergovernmental Forum on Forests... that have undertaken work to integrate the IUCN protected area management categories"
+      }
+    },
+    {
+      "name": "Conservation of Arctic Flora and Fauna (CAFF)",
+      "type": "Organization",
+      "description": "A working group of the Arctic Council focused on the conservation of Arctic biodiversity.",
+      "role": "Through its CPAN Strategy and Action Plan, explicitly references the IUCN protected‑area categories.",
+      "country": "International",
+      "supporting_text": "The Conservation of Arctic Flora and Fauna (CAFF) Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996 specifically mentions the IUCN categories",
+      "source_chunk": 7,
+      "id": "f7e94299-55d3-499b-b8f4-92e7f67d1e9e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Regional body that explicitly references IUCN categories, illustrating diffusion to sub‑global governance.",
+        "supporting_text": "CAFF Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996 specifically mentions the IUCN categories"
+      }
+    },
+    {
+      "name": "Circumpolar Protected Areas Network (CPAN)",
+      "type": "Coalition",
+      "description": "A network of Arctic protected‑area managers and scientists coordinated by CAFF.",
+      "role": "Its 1996 Strategy and Action Plan cites the IUCN categories as a reference framework.",
+      "country": "International",
+      "supporting_text": "The Conservation of Arctic Flora and Fauna (CAFF) Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996 specifically mentions the IUCN categories",
+      "source_chunk": 7,
+      "id": "80307a25-899b-4d1f-9cc1-30efb58341d4",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CPAN’s strategy explicitly adopts IUCN categories, enabling regional coordination for protected‑area management.",
+        "supporting_text": "The Conservation of Arctic Flora and Fauna (CAFF) Circumpolar Protected Areas Network (CPAN) Strategy and Action Plan 1996 specifically mentions the IUCN categories (Level 1)."
+      }
+    },
+    {
+      "name": "African Convention on the Conservation of Nature and Natural Resources",
+      "type": "Organization",
+      "description": "A regional treaty adopted by African states to protect natural resources and biodiversity.",
+      "role": "In its 2003 revision, the convention incorporates the IUCN protected‑area management categories.",
+      "country": "Africa",
+      "supporting_text": "the Revised African Convention on the Conservation of Nature and Natural Resources 2003 ... uses the IUCN categories",
+      "source_chunk": 7,
+      "id": "681f17bf-c493-4f7d-b002-39fa3bb1dc34",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The revised African Convention incorporates the IUCN categories, providing a regional legal platform for harmonised protection.",
+        "supporting_text": "The Revised African Convention on the Conservation of Nature and Natural Resources 2003 ... uses the IUCN categories (Level 1)."
+      }
+    },
+    {
+      "name": "IUCN Commission on Environmental Law",
+      "type": "Organization",
+      "description": "One of IUCN’s specialist commissions that focuses on environmental legislation and policy.",
+      "role": "Tasked with ensuring that users of the IUCN categories have a full understanding of the system in policy and legislation.",
+      "country": "International",
+      "supporting_text": "by IUCN, and its Commissions on Environmental Law and on Protected Areas, to ensure that those who use the categories system in making policy and/or legislation have a full understanding of it",
+      "source_chunk": 7,
+      "id": "22329260-c20c-4a7f-b35e-39930cdbb39f",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text mentions the commission but provides no specific information about its role or impact.",
+        "supporting_text": "N/A"
+      }
+    },
+    {
+      "name": "IUCN Commission on Protected Areas",
+      "type": "Organization",
+      "description": "IUCN’s commission dedicated to the science and management of protected areas worldwide.",
+      "role": "Works alongside the Commission on Environmental Law to promote correct use of the IUCN categories in policy and legislation.",
+      "country": "International",
+      "supporting_text": "by IUCN, and its Commissions on Environmental Law and on Protected Areas, to ensure that those who use the categories system in making policy and/or legislation have a full understanding of it",
+      "source_chunk": 7,
+      "id": "a9ce4179-36fc-4ec7-8a9f-081d62ba8af7",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The commission is listed but the passage gives no explicit description of its contribution.",
+        "supporting_text": "N/A"
+      }
+    },
+    {
+      "name": "IUCN World Commission on Protected Areas (IUCN WCPA)",
+      "type": "Organization",
+      "description": "Specialized commission of the IUCN responsible for the development and refinement of protected‑area categories.",
+      "role": "Refines the international classification system for protected areas and supplies comparable information for reporting by Parties and governments.",
+      "country": "Switzerland",
+      "supporting_text": "the on‑going efforts of the IUCN WCPA to refine the IUCN system of categories",
+      "source_chunk": 8,
+      "id": "b3349703-990b-4149-a531-6361b79a15e6",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN WCPA is directly involved in refining the category system and guiding parties.",
+        "supporting_text": "IUCN World Commission on Protected Areas (IUCN WCPA) … involved in ongoing refinement"
+      }
+    },
+    {
+      "name": "7th Conference of the Parties to the Convention on Biological Diversity (CBD/CoP7)",
+      "type": "Coalition",
+      "description": "The governing body of the Convention on Biological Diversity, convening representatives of Parties to adopt decisions and programmes.",
+      "role": "Adopted the Programme of Work on Protected Areas that endorses the IUCN category system and encourages governments and organisations to assign management categories to their protected areas.",
+      "country": "International (meeting held in Malaysia)",
+      "supporting_text": "the 7th Conference of the Parties to the Convention on Biological Diversity (CBD/CoP7), meeting in Kuala Lumpur, Malaysia in February 2004, adopted a Programme of Work on Protected Areas (Decision VII/28)",
+      "source_chunk": 8,
+      "id": "f312039e-fb25-44b9-801e-aa0bdbf99775",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CBD/CoP7 adopted the programme, mobilising parties to implement the classification system.",
+        "supporting_text": "the 7th Conference of the Parties … adopted a Programme of Work on Protected Areas"
+      }
+    },
+    {
+      "name": "Francoise Burhenne‑Guilmin",
+      "type": "Individual",
+      "description": "Legal expert affiliated with the IUCN Environmental Law Centre.",
+      "role": "Provided personal communication that supplied information on the influence of IUCN guidelines on the African Convention.",
+      "country": null,
+      "supporting_text": "Source: Pers. comm., Francoise Burhenne‑Guilmin, IUCN Environmental Law Centre, Bonn",
+      "source_chunk": 8,
+      "id": "516febf0-6412-4a76-82b4-ee001587c89d",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text only notes a personal communication; no clear impact on the initiative is described.",
+        "supporting_text": "Source: Pers. comm., Francoise Burhenne‑Guilmin, IUCN Environmental Law Centre, Bonn"
+      }
+    },
+    {
+      "name": "IUCN Environmental Law Centre",
+      "type": "Organization",
+      "description": "IUCN‑affiliated centre based in Bonn that focuses on environmental law and policy.",
+      "role": "Serves as the institutional source of expertise cited regarding the impact of IUCN categories on the African Convention.",
+      "country": "Germany",
+      "supporting_text": "Source: Pers. comm., Francoise Burhenne‑Guilmin, IUCN Environmental Law Centre, Bonn",
+      "source_chunk": 8,
+      "id": "53737bd1-43fc-441d-8f6f-32fa6d1b8dc5",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides expert input that supports the development and refinement of protected‑area categories.",
+        "supporting_text": "Source: Pers. comm., Francoise Burhenne‑Guilmin, IUCN Environmental Law Centre, Bonn"
+      }
+    },
+    {
+      "name": "Australian Commonwealth Government",
+      "type": "Government",
+      "description": "The federal government of Australia responsible for national environmental legislation and policy.",
+      "role": "Embarked on a process with State and Territory Governments to develop a national approach for implementing IUCN protected‑area categories.",
+      "country": "Australia",
+      "supporting_text": "the Australian Commonwealth Government embarked on a process involving the State and Territory Governments of developing a national approach to the implementation of the categories in Australia.",
+      "source_chunk": 9,
+      "id": "bb66bab0-47cd-4ac3-bcca-af28a49b402d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The Commonwealth Government initiated the national process that led to the guidelines and legislation.",
+        "supporting_text": "the Australian Commonwealth Government embarked on a process involving the State and Territory Governments of developing a national approach…"
+      }
+    },
+    {
+      "name": "State and Territory Governments (Australia)",
+      "type": "Government",
+      "description": "The sub‑national governments of Australia’s six states and two territories.",
+      "role": "Participated with the Commonwealth in designing and adopting a national framework for IUCN category implementation and protected‑area reporting.",
+      "country": "Australia",
+      "supporting_text": "the Australian Commonwealth Government embarked on a process involving the State and Territory Governments of developing a national approach to the implementation of the categories in Australia.",
+      "source_chunk": 9,
+      "id": "e8b95ece-0baa-4128-af4c-fdc37c1c4a84",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "They jointly developed a national approach, contributed data to a shared database and agreed to common guidelines.",
+        "supporting_text": "process involving the State and Territory Governments of developing a national approach... A Collaborative Australian Protected Area Database was developed. This allows all jurisdictions to contribute information on their protected areas"
+      }
+    },
+    {
+      "name": "Australian and New Zealand Environment and Conservation Council",
+      "type": "Organization",
+      "description": "A trans‑national council that facilitates environmental cooperation between Australia and New Zealand.",
+      "role": "Served as the conduit through which all Australian states and territories agreed to the Australian Guidelines for Establishing the National Reserve System.",
+      "country": "Australia",
+      "supporting_text": "all States and Territories agreed (through the Australian and New Zealand Environment and Conservation Council) to the Australian Guidelines for Establishing the National Reserve System.",
+      "source_chunk": 9,
+      "id": "9cd07c3b-a82a-4c9b-94fb-6ba11a3c5faa",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "It served as the conduit through which all jurisdictions agreed to the national reserve system guidelines.",
+        "supporting_text": "all States and Territories agreed (through the Australian and New Zealand Environment and Conservation Council) to the Australian Guidelines for Establishing the National Reserve System"
+      }
+    },
+    {
+      "name": "Senator Robert Hill",
+      "type": "Individual",
+      "description": "Former Australian Minister for the Environment (1999‑2001).",
+      "role": "Formalised the use of IUCN categories by embedding them into the Environment Protection and Biodiversity Conservation Act 1999.",
+      "country": "Australia",
+      "supporting_text": "During the development of the Environment Protection and Biodiversity Conservation Act (EPBC Act) 1999, the then Minister for Environment, Senator Robert Hill, successfully formalised the use of the categories by embedding them into this new legislation.",
+      "source_chunk": 9,
+      "id": "62fbc8b7-825d-45fe-bed1-25555f9fa968",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "He embedded the IUCN categories into national legislation, creating a systemic shift in protected‑area governance.",
+        "supporting_text": "the then Minister for Environment, Senator Robert Hill, successfully formalised the use of the categories by embedding them into this new legislation"
+      }
+    },
+    {
+      "name": "Wayne Fletcher",
+      "type": "Individual",
+      "description": "Legislation Policy Section officer at Environment Australia.",
+      "role": "Provided personal communication that supplied information on the development and implementation of the EPBC Act and its regulations.",
+      "country": "Australia",
+      "supporting_text": "Source: Pers. comm. Wayne Fletcher, Legislation Policy Section, Environment Australia and www.ea.gov.au/ epbc/about/index.html.",
+      "source_chunk": 9,
+      "id": "e1457cbe-f810-4d32-a681-ead1e2083883",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text only cites him as a source of personal communication, without describing a concrete contribution.",
+        "supporting_text": "Source: Pers. comm. Wayne Fletcher, Legislation Policy Section, Environment Australia"
+      }
+    },
+    {
+      "name": "Environment Australia",
+      "type": "Organization",
+      "description": "Australian government agency responsible for environmental policy and legislation.",
+      "role": "Produced the Collaborative Australian Protected Area Database and contributed expertise to the EPBC Act and its regulations.",
+      "country": "Australia",
+      "supporting_text": "Source: Pers. comm. Wayne Fletcher, Legislation Policy Section, Environment Australia and www.ea.gov.au/ epbc/about/index.html.",
+      "source_chunk": 9,
+      "id": "e65df631-8541-4cbb-a370-32f5b53f5284",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned only as the institutional affiliation of a source; no direct role in the described actions is given.",
+        "supporting_text": "Wayne Fletcher, Legislation Policy Section, Environment Australia"
+      }
+    },
+    {
+      "name": "World Commission on Protected Areas of the World Conservation Union (IUCN)",
+      "type": "Organization",
+      "description": "A commission within IUCN that develops international terminology and standards for protected areas.",
+      "role": "Provided the international terminology that Argentina’s National Strategy on Protected Areas seeks to adopt.",
+      "country": null,
+      "supporting_text": "adapting them to the international terminology that was established by the World Commission on Protected Areas of the World Conservation Union (IUCN).",
+      "source_chunk": 9,
+      "id": "43c0ab3a-9fe4-4e0f-b620-6c65c2f3fdf0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "It supplies the international terminology that Argentina’s strategy seeks to adopt.",
+        "supporting_text": "adapting them to the international terminology that was established by the World Commission on Protected Areas of the World Conservation Union (IUCN)"
+      }
+    }
+  ]
+}

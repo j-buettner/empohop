@@ -1,0 +1,3475 @@
+{
+  "expressions": [
+    {
+      "title": "Our Plundered Planet",
+      "type": "Book",
+      "year": 1948,
+      "actors": [
+        "Fairfield Osborn"
+      ],
+      "supporting_text": "Fairfield Osborn publishes Our Plundered Planet",
+      "source_chunk": 0,
+      "id": "54ad5b49-f700-4554-93c9-83a7b851d68c"
+    },
+    {
+      "title": "Road to Survival",
+      "type": "Book",
+      "year": 1948,
+      "actors": [
+        "William Vogt"
+      ],
+      "supporting_text": "William Vogt publishes Road to Survival",
+      "source_chunk": 0,
+      "id": "a56b1bee-a667-44ec-81b0-cc4ae357d0e7"
+    },
+    {
+      "title": "A Sand County Almanac",
+      "type": "Book",
+      "year": 1949,
+      "actors": [
+        "Aldo Leopold"
+      ],
+      "supporting_text": "Aldo Leopold publishes 4 Sand County Almanac",
+      "source_chunk": 0,
+      "id": "9cd8397f-d49d-407c-917e-52ddd038aa75"
+    },
+    {
+      "title": "Resources for Freedom",
+      "type": "Report",
+      "year": 1952,
+      "actors": [
+        "Paley Commission"
+      ],
+      "supporting_text": "The Paley Commission publishes Resources for Freedom report",
+      "source_chunk": 0,
+      "id": "400be84f-423b-43ba-ae71-f9d17410898f",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The Paley Commission report diagnoses resource scarcity and policy gaps.",
+        "supporting_text": "1952 ... The Paley Commission publishes Resources for Freedom report"
+      }
+    },
+    {
+      "title": "The Affluent Society",
+      "type": "Book",
+      "year": 1958,
+      "actors": [
+        "J. K. Galbraith"
+      ],
+      "supporting_text": "US economist J. K. Galbraith publishes The Affluent Society",
+      "source_chunk": 0,
+      "id": "a15fce1e-dc7a-4259-8553-48635fecf6fc"
+    },
+    {
+      "title": "Silent Spring",
+      "type": "Book",
+      "year": 1962,
+      "actors": [
+        "Rachel Carson"
+      ],
+      "supporting_text": "Rachel Carson publishes Silent Spring",
+      "source_chunk": 0,
+      "id": "b3197cf6-8364-40b2-ac00-079803904d5d"
+    },
+    {
+      "title": "The Economics of the Coming Spaceship Earth",
+      "type": "Other",
+      "year": 1966,
+      "actors": [
+        "Kenneth E. Boulding"
+      ],
+      "supporting_text": "Kenneth E. Boulding publishes his essay \"The Economics of the Coming Spaceship Earth\"",
+      "source_chunk": 0,
+      "id": "74df10db-abfc-49ed-aca7-dde27a86169d"
+    },
+    {
+      "title": "Red Data Book",
+      "type": "Report",
+      "year": 1966,
+      "actors": [
+        "International Union for Conservation of Nature"
+      ],
+      "supporting_text": "The International Union for Conservation of Nature publishes its first Red Data Book on endangered species",
+      "source_chunk": 0,
+      "id": "ff2ca5a3-9f38-4c7a-919a-bf1808b4cada",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a baseline for conservation actions and policy development.",
+        "supporting_text": "1966 International Union for Conservation of Nature publishes its first Red Data Book on endangered species"
+      }
+    },
+    {
+      "title": "The Tragedy of the Commons",
+      "type": "Other",
+      "year": 1968,
+      "actors": [
+        "Garrett Hardin"
+      ],
+      "supporting_text": "Garrett Hardin publishes 'The Tragedy of the Commons'",
+      "source_chunk": 0,
+      "id": "e005c7ad-bed4-4ef6-9617-0550e0c6a0b6"
+    },
+    {
+      "title": "The Population Bomb",
+      "type": "Book",
+      "year": 1968,
+      "actors": [
+        "Paul Ehrlich"
+      ],
+      "supporting_text": "Paul Ehrlich publishes The Population Bomb",
+      "source_chunk": 0,
+      "id": "18ffb3db-804a-4926-9e24-94bd441239c1"
+    },
+    {
+      "title": "Man's Impact on the Global Environment",
+      "type": "Report",
+      "year": 1970,
+      "actors": [
+        "MIT's Study of Critical Environmental Problems"
+      ],
+      "supporting_text": "MIT's Study of Critical Environmental Problems publishes Man's Impact on the Global Environment report",
+      "source_chunk": 0,
+      "id": "b0c5cabf-7204-49c7-bb8b-468ee449f9c4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The MIT report quantifies human influence, indicating the need for transformative policies.",
+        "supporting_text": "1970 MIT’s Study of Critical Environmental Problems publishes Man’s Impact on the Global Environment report"
+      }
+    },
+    {
+      "title": "The Founex Report",
+      "type": "Report",
+      "year": 1971,
+      "actors": [],
+      "supporting_text": "The Founex Report identifies the link between development and environment",
+      "source_chunk": 0,
+      "id": "cca0a4b8-7139-4020-9a3d-8bc097da47a6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Identifies development‑environment linkages, suggesting integrated policy approaches.",
+        "supporting_text": "1971 The Founex Report identifies the link between development and environment"
+      }
+    },
+    {
+      "title": "A Blueprint for Survival",
+      "type": "Other",
+      "year": 1972,
+      "actors": [
+        "The Ecologist"
+      ],
+      "supporting_text": "The UK-based magazine The Ecologist publishes 'A Blueprint for Survival'",
+      "source_chunk": 0,
+      "id": "c7fdadc8-9de0-4729-9127-624fb55d272c"
+    },
+    {
+      "title": "The Limits to Growth",
+      "type": "Book",
+      "year": 1972,
+      "actors": [
+        "Club of Rome"
+      ],
+      "supporting_text": "Club of Rome publishes The Limits to Growth",
+      "source_chunk": 0,
+      "id": "42fb0c87-9a5e-44be-b605-5b237cbad55f"
+    },
+    {
+      "title": "Only One Earth",
+      "type": "Book",
+      "year": 1972,
+      "actors": [
+        "Barbara Ward"
+      ],
+      "supporting_text": "Barbara Ward publishes Only One Earth",
+      "source_chunk": 0,
+      "id": "159db921-d8e8-484d-927f-dc9faf248c70",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Ward’s book popularised the idea of a single shared planet, raising public awareness.",
+        "supporting_text": "1972 Barbara Ward publishes Only One Earth"
+      }
+    },
+    {
+      "title": "Small is Beautiful",
+      "type": "Book",
+      "year": 1973,
+      "actors": [
+        "E. F. Schumacher"
+      ],
+      "supporting_text": "E. F. Schumacher publishes Small is Beautiful",
+      "source_chunk": 0,
+      "id": "bf9d0beb-bfd5-497c-87c3-b7072854aa3c"
+    },
+    {
+      "title": "Post-Scarcity Anarchism",
+      "type": "Book",
+      "year": 1973,
+      "actors": [
+        "Murray Bookchin"
+      ],
+      "supporting_text": "Murray Bookchin publishes Post-Scarcity Anarchism",
+      "source_chunk": 0,
+      "id": "35db39c2-20fd-4064-86f4-3869901702a5"
+    },
+    {
+      "title": "The Ultimate Resource",
+      "type": "Book",
+      "year": 1975,
+      "actors": [
+        "Julian Simon"
+      ],
+      "supporting_text": "Julian Simon publishes The Ultimate Resource",
+      "source_chunk": 0,
+      "id": "5e04db0f-0852-4b9f-aa91-8826f4c5d2c4"
+    },
+    {
+      "title": "North-South: A Programme for Survival",
+      "type": "Report",
+      "year": 1980,
+      "actors": [
+        "Brandt Commission"
+      ],
+      "supporting_text": "The Brandt Commission publishes North-South: A Programme for Survival",
+      "source_chunk": 0,
+      "id": "bc67d6c8-55d7-4a5a-9042-65d850458591",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The report links global inequities to environmental survival, highlighting systemic change opportunities.",
+        "supporting_text": "1980 The Brandt Commission publishes North-South: A Programme for Survival"
+      }
+    },
+    {
+      "title": "Life on Earth",
+      "type": "Programme",
+      "year": 1979,
+      "actors": [
+        "BBC"
+      ],
+      "supporting_text": "BBC broadcasts David Attenborough's Life on Earth documentary",
+      "source_chunk": 0,
+      "id": "7e6c6ddd-d58e-4968-978e-d3cd596fe736"
+    },
+    {
+      "title": "Oregon Bottle Bill",
+      "type": "Law",
+      "year": 1971,
+      "actors": [
+        "State of Oregon"
+      ],
+      "supporting_text": "The US State of Oregon's Bottle Bill becomes law",
+      "source_chunk": 0,
+      "id": "8157c1b1-33c5-4e65-90e1-98305a049c74"
+    },
+    {
+      "title": "National Environmental Policy Act",
+      "type": "Law",
+      "year": 1969,
+      "actors": [
+        "USA"
+      ],
+      "supporting_text": "USA adopts the National Environmental Policy Act",
+      "source_chunk": 0,
+      "id": "64436a6e-ed44-405b-8a1f-dd02ecf81d7d"
+    },
+    {
+      "title": "Clean Air Act (UK)",
+      "type": "Law",
+      "year": 1956,
+      "actors": [
+        "UK"
+      ],
+      "supporting_text": "UK adopts its first Clean Air Act",
+      "source_chunk": 0,
+      "id": "034f3329-3155-42e5-aac6-e94cee46ac19",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The act introduced regulatory standards to improve air quality, enabling collective health and environmental benefits.",
+        "supporting_text": "1956 UK adopts its first Clean Air Act"
+      }
+    },
+    {
+      "title": "Clean Air Act (USA)",
+      "type": "Law",
+      "year": 1963,
+      "actors": [
+        "USA"
+      ],
+      "supporting_text": "USA adopts the Clean Air Act",
+      "source_chunk": 0,
+      "id": "ad46a2e2-017a-4977-95ae-0ad1ac966e95",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "U.S. legislation set nationwide emission limits, supporting coordinated action on air pollution.",
+        "supporting_text": "1963 USA adopts the Clean Air Act"
+      }
+    },
+    {
+      "title": "Wilderness Act",
+      "type": "Law",
+      "year": 1964,
+      "actors": [
+        "USA"
+      ],
+      "supporting_text": "USA adopts the Wilderness Act",
+      "source_chunk": 0,
+      "id": "9fd292c5-2561-47b1-aaab-464754df588d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Created a legal basis for preserving wilderness areas, mobilizing collective conservation efforts.",
+        "supporting_text": "1964 USA adopts the Wilderness Act"
+      }
+    },
+    {
+      "title": "Land and Water Conservation Act",
+      "type": "Law",
+      "year": 1965,
+      "actors": [
+        "USA"
+      ],
+      "supporting_text": "USA adopts the Land and Water Conservation Act",
+      "source_chunk": 0,
+      "id": "02b5ab3c-4cea-42fc-bbdb-6ccc57fc0f4b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Established federal authority to protect land and water resources, enabling coordinated stewardship.",
+        "supporting_text": "1965 USA adopts the Land and Water Conservation Act"
+      }
+    },
+    {
+      "title": "Endangered Species Act",
+      "type": "Law",
+      "year": 1973,
+      "actors": [
+        "USA"
+      ],
+      "supporting_text": "USA adopts the Endangered Species Act",
+      "source_chunk": 0,
+      "id": "bcd1c67f-d961-457a-8351-ced0a048dd0d"
+    },
+    {
+      "title": "Clean Water Act",
+      "type": "Law",
+      "year": 1972,
+      "actors": [
+        "USA"
+      ],
+      "supporting_text": "USA adopts the Clean Water Act",
+      "source_chunk": 0,
+      "id": "daee4b39-f278-4a5d-a16f-b89676761444"
+    },
+    {
+      "title": "Environmental Pollution Act",
+      "type": "Law",
+      "year": 1974,
+      "actors": [
+        "UK"
+      ],
+      "supporting_text": "UK adopts the Environmental Pollution Act",
+      "source_chunk": 0,
+      "id": "bdd6e5ee-d9ab-4cc7-a8e0-6bd0b107d948",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UK legislation addressed multiple pollution sources, supporting collective environmental regulation.",
+        "supporting_text": "1974 UK adopts the Environmental Pollution Act"
+      }
+    },
+    {
+      "title": "Resource Conservation and Recovery Act",
+      "type": "Law",
+      "year": 1976,
+      "actors": [
+        "USA"
+      ],
+      "supporting_text": "USA adopts the Resource Conservation and Recovery Act",
+      "source_chunk": 0,
+      "id": "31778c9b-7826-4a15-aa04-7020a1db5e3c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Created a framework for hazardous waste management, enabling coordinated waste reduction.",
+        "supporting_text": "1976 USA adopts the Resource Conservation and Recovery Act"
+      }
+    },
+    {
+      "title": "Toxic Substances Control Act",
+      "type": "Law",
+      "year": 1976,
+      "actors": [
+        "USA"
+      ],
+      "supporting_text": "USA adopts the Toxic Substances Control Act",
+      "source_chunk": 0,
+      "id": "253e9826-3a01-4bb4-bbef-c2a9539b4942",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The act creates a regulatory framework that enables coordinated action to control toxic substances.",
+        "supporting_text": "USA adopts the Resource Conservation and Recovery Act US Toxic Substances Control Act"
+      }
+    },
+    {
+      "title": "Wildlife and Countryside Act",
+      "type": "Law",
+      "year": 1981,
+      "actors": [
+        "UK"
+      ],
+      "supporting_text": "UK adopts the Wildlife and Countryside Act",
+      "source_chunk": 0,
+      "id": "79cc0093-6a5c-4c37-9110-530acd2a06c6",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Adoption of the act empowers collective protection of wildlife and habitats in the UK.",
+        "supporting_text": "UK adopts the Wildlife and Countryside Act"
+      }
+    },
+    {
+      "title": "RAMSAR Convention",
+      "type": "Treaty",
+      "year": 1975,
+      "actors": [],
+      "supporting_text": "RAMSAR Convention (wetlands) ... come into force",
+      "source_chunk": 0,
+      "id": "4912407a-f157-4cb0-b2b2-8ea55616e039",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The convention establishes an international system for wetland conservation, showing a shift toward global governance.",
+        "supporting_text": "1975 Vietnam War ends, RAMSAR Convention (wetlands) and CITES (wild animal trade) come into force"
+      }
+    },
+    {
+      "title": "CITES",
+      "type": "Treaty",
+      "year": 1975,
+      "actors": [],
+      "supporting_text": "CITES (wild animal trade) ... come into force",
+      "source_chunk": 0,
+      "id": "9e86b05d-fa0f-49c2-a853-1f976fdae330",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "CITES creates a global treaty framework to regulate wildlife trade, indicating systemic change potential.",
+        "supporting_text": "1975 Vietnam War ends, RAMSAR Convention (wetlands) and CITES (wild animal trade) come into force"
+      }
+    },
+    {
+      "title": "Common Crisis",
+      "type": "Report",
+      "year": 1983,
+      "actors": [
+        "Brandt Commission"
+      ],
+      "supporting_text": "1983 Brandt Commission publishes Common Crisis",
+      "source_chunk": 1,
+      "id": "08f55e30-3c5e-4c92-bac3-9c0bfe85fec6",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The Brandt Commission’s publication highlights the existing global crisis, diagnosing the problem.",
+        "supporting_text": "1983 Brandt Commission publishes Common Crisis"
+      }
+    },
+    {
+      "title": "Our Common Future",
+      "type": "Report",
+      "year": 1986,
+      "actors": [
+        "Brundtland Commission"
+      ],
+      "supporting_text": "Brundtland Commission publishes Our Common Future",
+      "source_chunk": 1,
+      "id": "0c587b07-4528-4d7b-942e-165f6df426f3"
+    },
+    {
+      "title": "Toxic Wastes and Race",
+      "type": "Report",
+      "year": 1986,
+      "actors": [
+        "U.S. United Church of Christ's Commission for Racial Justice"
+      ],
+      "supporting_text": "US United Church of Christ's Commission for Racial Justice publishes Toxic Wastes and Race",
+      "source_chunk": 1,
+      "id": "c763cdc9-d37b-4316-a22d-5bc9b7744f4d"
+    },
+    {
+      "title": "White Paper",
+      "type": "Policy",
+      "year": 1990,
+      "actors": [
+        "United Kingdom government"
+      ],
+      "supporting_text": "1990 UK publishes its first environment White Paper",
+      "source_chunk": 1,
+      "id": "be312ad0-9796-44ee-9923-de5b1c376a1f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The UK government’s White Paper sets a policy agenda for environmental action.",
+        "supporting_text": "1990 UK publishes its first environment White Paper"
+      }
+    },
+    {
+      "title": "Environmental Protection Act",
+      "type": "Law",
+      "year": 1990,
+      "actors": [
+        "United Kingdom government"
+      ],
+      "supporting_text": "1990 UK adopts the Environmental Protection Act",
+      "source_chunk": 1,
+      "id": "cb4c881f-d355-4a89-86a3-46cdd12c5440",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Legislation provides legal mechanisms to protect the environment and coordinate action.",
+        "supporting_text": "1990 UK adopts the Environmental Protection Act"
+      }
+    },
+    {
+      "title": "Kyoto Protocol",
+      "type": "Treaty",
+      "year": 1997,
+      "actors": [],
+      "supporting_text": "1997 The Kyoto Protocol on climate change is adopted",
+      "source_chunk": 1,
+      "id": "840dc274-620e-4cb9-8473-db66754c05cc"
+    },
+    {
+      "title": "Kyoto Protocol",
+      "type": "Treaty",
+      "year": 2005,
+      "actors": [],
+      "supporting_text": "2005 Kyoto Protocol on climate change comes into force",
+      "source_chunk": 1,
+      "id": "1323abca-fe0b-4df8-91a1-d74d3fc55d2a"
+    },
+    {
+      "title": "UN Millennium Ecosystem Assessment",
+      "type": "Report",
+      "year": 2005,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "The UN Millennium Ecosystem Assessment is published",
+      "source_chunk": 1,
+      "id": "a4434a55-066d-4e54-a139-021eb4f40cf6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The assessment quantifies ecosystem services, informing policy and societal shifts toward sustainability.",
+        "supporting_text": "2005 The UN Millennium Ecosystem Assessment is published"
+      }
+    },
+    {
+      "title": "The Stern Review",
+      "type": "Report",
+      "year": 2006,
+      "actors": [
+        "Nicholas Stern"
+      ],
+      "supporting_text": "The Stern Review estimates the cost of not taking action on climate change",
+      "source_chunk": 1,
+      "id": "be5a6a91-bf5f-483b-ba85-37bc586afed8",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides an economic case for climate action, influencing policy and investment decisions.",
+        "supporting_text": "2006 The Stern Review estimates the cost of not taking action on climate change"
+      }
+    },
+    {
+      "title": "An Inconvenient Truth",
+      "type": "Other",
+      "year": 2006,
+      "actors": [
+        "Al Gore"
+      ],
+      "supporting_text": "Al Gore produces the Oscar‑winning climate change documentary film An Inconvenient Truth",
+      "source_chunk": 1,
+      "id": "3914a877-234d-4060-8f75-2469cd165405"
+    },
+    {
+      "title": "Global Green New Deal",
+      "type": "Programme",
+      "year": 2008,
+      "actors": [
+        "UNEP"
+      ],
+      "supporting_text": "UNEP launches a Global Green New Deal",
+      "source_chunk": 1,
+      "id": "78e9c607-a7c6-4087-9f97-d9843cba138d"
+    },
+    {
+      "title": "Prosperity Without Growth",
+      "type": "Book",
+      "year": 2009,
+      "actors": [
+        "Tim Jackson"
+      ],
+      "supporting_text": "Tim Jackson publishes Prosperity Without Growth",
+      "source_chunk": 1,
+      "id": "cd541922-7744-4eaa-a18e-af7cf4825379"
+    },
+    {
+      "title": "Towards a Green Economy",
+      "type": "Report",
+      "year": 2011,
+      "actors": [
+        "UNEP"
+      ],
+      "supporting_text": "UNEP publishes Towards a Green Economy report",
+      "source_chunk": 1,
+      "id": "07f1e5b7-7ad4-4062-9757-119552a72b5a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "UNEP’s report defines a green‑economy pathway, offering a blueprint for systemic transition.",
+        "supporting_text": "2011 UNEP publishes Towards a Green Economy report"
+      }
+    },
+    {
+      "title": "Climate Change Act",
+      "type": "Law",
+      "year": 2008,
+      "actors": [
+        "United Kingdom government"
+      ],
+      "supporting_text": "2008 UK adopts the world's first Climate Change Act with a legally binding commitment to reduce carbon emissions",
+      "source_chunk": 1,
+      "id": "a24b9aed-0a71-43a7-acd6-aa05c163242f"
+    },
+    {
+      "title": "Climate Change Bill",
+      "type": "Policy",
+      "year": 2010,
+      "actors": [
+        "U.S. President Barack Obama"
+      ],
+      "supporting_text": "2010 US President Obama introduces the Climate Change Bill",
+      "source_chunk": 1,
+      "id": "a98b6221-2509-4e45-803b-c9439bb6d43b"
+    },
+    {
+      "title": "Buy Nothing Day",
+      "type": "Other",
+      "year": 1992,
+      "actors": [
+        "United States anti‑consumerist movement"
+      ],
+      "supporting_text": "Anti‑consumerist 'Buy Nothing Day' is launched in the USA",
+      "source_chunk": 1,
+      "id": "ff0f09d0-a8e4-4a47-bf01-86890e211552"
+    },
+    {
+      "title": "Executive Order reinforcing civil rights and environmental laws",
+      "type": "Executive Order",
+      "year": 1994,
+      "actors": [
+        "U.S. President Bill Clinton"
+      ],
+      "supporting_text": "1994 US President Clinton signs an Executive Order reinforcing civil rights and environmental laws",
+      "source_chunk": 1,
+      "id": "7e5a7289-7842-40e8-b6f9-ad4ec847d3af",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The order signals a possible systemic integration of civil‑rights and environmental protection within U.S. governance.",
+        "supporting_text": "US President Clinton signs an Executive Order reinforcing civil rights and environmental laws"
+      }
+    },
+    {
+      "title": "First Assessment Report",
+      "type": "Report",
+      "year": 1990,
+      "actors": [
+        "Intergovernmental Panel on Climate Change (IPCC)"
+      ],
+      "supporting_text": "IPCC publishes its first assessment report on the science of climate change",
+      "source_chunk": 1,
+      "id": "effa8117-1cab-4209-886e-b0769f5b07c4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides the first comprehensive scientific basis for climate‑policy transformation.",
+        "supporting_text": "IPCC publishes its first assessment report on the science of climate change"
+      }
+    },
+    {
+      "title": "Third Assessment Report",
+      "type": "Report",
+      "year": 2001,
+      "actors": [
+        "Intergovernmental Panel on Climate Change (IPCC)"
+      ],
+      "supporting_text": "IPCC publishes its third assessment report on climate change",
+      "source_chunk": 1,
+      "id": "7ce91393-e8b3-4cb1-9c76-56153af7d058",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Updates global climate knowledge, enabling more informed systemic responses.",
+        "supporting_text": "IPCC publishes its third assessment report on climate change"
+      }
+    },
+    {
+      "title": "Fourth Assessment Report",
+      "type": "Report",
+      "year": 2007,
+      "actors": [
+        "Intergovernmental Panel on Climate Change (IPCC)"
+      ],
+      "supporting_text": "IPCC publishes its fourth assessment report on climate change",
+      "source_chunk": 1,
+      "id": "6dbd3f11-0b7d-44b2-bad3-f786f1fd91e6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Further refines scientific consensus, supporting policy shifts toward harmony with nature.",
+        "supporting_text": "IPCC publishes its fourth assessment report on climate change"
+      }
+    },
+    {
+      "title": "Fifth Assessment Report",
+      "type": "Report",
+      "year": 2014,
+      "actors": [
+        "Intergovernmental Panel on Climate Change (IPCC)"
+      ],
+      "supporting_text": "2014 IPCC publishes its fifth assessment report on climate change",
+      "source_chunk": 1,
+      "id": "77dccc9d-3789-4881-8fc2-0e8035b8fd9a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Latest synthesis of climate science, crucial for systemic change agendas.",
+        "supporting_text": "IPCC publishes its fifth assessment report on climate change"
+      }
+    },
+    {
+      "title": "EU voluntary Eco‑labelling scheme",
+      "type": "Policy",
+      "year": 1992,
+      "actors": [
+        "European Union"
+      ],
+      "supporting_text": "European Union introduces a voluntary Eco‑labelling scheme",
+      "source_chunk": 1,
+      "id": "7d96c311-389d-4f34-be0b-a9489ccac148",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Creates a market‑based mechanism for producers and consumers to act together on environmental performance.",
+        "supporting_text": "European Union introduces a voluntary Eco‑labelling scheme"
+      }
+    },
+    {
+      "title": "Environmentalism since 1945",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Each chapter of Environmentalism since 1945 tells the story of a different aspect of environmentalism, starting with campaigns and campaign groups, then covering global environmental governance, science, economics and popular culture.",
+      "source_chunk": 2,
+      "id": "12c62af5-ac84-4d46-9ecd-aa5f65e3995a",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The book frames the historical narrative, raising awareness of the movement’s evolution.",
+        "supporting_text": "Each chapter of Environmentalism since 1945 tells the story of a different aspect of environmentalism"
+      }
+    },
+    {
+      "title": "De aëre, aquis et locis (Air, Waters and Places)",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "Hippocrates"
+      ],
+      "supporting_text": "Hippocrates (ca. 460 - ca. 377 BC) noted the effects of food, occupation and climate in causing disease in his book, De aëre, aquis et locis (Air, Waters and Places).",
+      "source_chunk": 3,
+      "id": "a4e9b825-4a1b-4b28-bc2f-1708958a9811"
+    },
+    {
+      "title": "Silent Spring",
+      "type": "Book",
+      "year": 1962,
+      "actors": [
+        "Rachel Carson"
+      ],
+      "supporting_text": "Rachel Carson's book Silent Spring (1962) was among the first to link the dangers of the atomic bomb to the misuse of pesticides, emphasising humanity's capacity to destroy nature and itself.",
+      "source_chunk": 3,
+      "id": "8148077a-33fb-486b-aa8c-12298d03976d"
+    },
+    {
+      "title": "The Tragedy of the Commons",
+      "type": "Book",
+      "year": 1968,
+      "actors": [
+        "Garrett Hardin"
+      ],
+      "supporting_text": "Over the next ten years a number of publications followed suit: 'The Tragedy of the Commons' (Garrett Hardin, 1968) ...",
+      "source_chunk": 3,
+      "id": "fa80e6f8-723b-4a57-b5df-4dcbac03d8c3",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Hardin’s essay exposes a fundamental ecological dilemma, opening pathways for institutional reform.",
+        "supporting_text": "1968 Garrett Hardin publishes ‘The Tragedy of the Commons’"
+      }
+    },
+    {
+      "title": "The Limits to Growth",
+      "type": "Book",
+      "year": 1972,
+      "actors": [
+        "Donella Meadows",
+        "Jørgen Randers",
+        "Dennis Meadows"
+      ],
+      "supporting_text": "... and The Limits to Growth (Meadows et al., 1972) raised wider anxieties about the future of the planet ...",
+      "source_chunk": 3,
+      "id": "7f0fa276-4b4d-4d94-a92e-5de388d889e4"
+    },
+    {
+      "title": "A Blueprint for Survival",
+      "type": "Report",
+      "year": 1972,
+      "actors": [
+        "The Ecologist"
+      ],
+      "supporting_text": "... while 'A Blueprint for Survival' (The Ecologist, 1972) ...",
+      "source_chunk": 3,
+      "id": "4cb65d6d-256e-4cbe-b141-22901ea52fb3"
+    },
+    {
+      "title": "Small is Beautiful",
+      "type": "Book",
+      "year": 1973,
+      "actors": [
+        "E. F. Schumacher"
+      ],
+      "supporting_text": "... and Small is Beautiful (E. F. Schumacher, 1973) sketched out green alternatives.",
+      "source_chunk": 3,
+      "id": "2eb167ad-6782-4cc6-bee0-84524069455f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The book proposes alternative economic models that could shift societies toward sustainability.",
+        "supporting_text": "1973 E. F. Schumacher publishes Small is Beautiful"
+      }
+    },
+    {
+      "title": "Birds of America",
+      "type": "Book",
+      "year": 1840,
+      "actors": [
+        "John James Audubon"
+      ],
+      "supporting_text": "the author of Birds of America (1840)",
+      "source_chunk": 4,
+      "id": "ba826349-6451-452d-91ab-9f1418333d14",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text does not mention this work, so its role cannot be inferred.",
+        "supporting_text": ""
+      }
+    },
+    {
+      "title": "National Environmental Policy Act",
+      "type": "Law",
+      "year": null,
+      "actors": [],
+      "supporting_text": "These included the National Environmental Policy Act, Clean Air Act, Clean Water Act and Endangered Species Act.",
+      "source_chunk": 5,
+      "id": "47e046c3-1772-48e6-9da9-74bb5052785f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The Act institutionalised environmental assessment, enabling systemic policy shifts.",
+        "supporting_text": "helped to achieve a number of legislative milestones. These included the National Environmental Policy Act"
+      }
+    },
+    {
+      "title": "Clean Air Act",
+      "type": "Law",
+      "year": null,
+      "actors": [],
+      "supporting_text": "These included the National Environmental Policy Act, Clean Air Act, Clean Water Act and Endangered Species Act.",
+      "source_chunk": 5,
+      "id": "421204cc-0b2d-4d6c-8f3d-9857acf3b575"
+    },
+    {
+      "title": "Clean Water Act",
+      "type": "Law",
+      "year": null,
+      "actors": [],
+      "supporting_text": "These included the National Environmental Policy Act, Clean Air Act, Clean Water Act and Endangered Species Act.",
+      "source_chunk": 5,
+      "id": "87e3cf30-6af4-4bfb-9811-f34e1f0ac494",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The act represents a systemic policy shift that advances environmental protection.",
+        "supporting_text": "helped to achieve a number of legislative milestones. These included ... Clean Water Act ..."
+      }
+    },
+    {
+      "title": "Endangered Species Act",
+      "type": "Law",
+      "year": null,
+      "actors": [],
+      "supporting_text": "These included the National Environmental Policy Act, Clean Air Act, Clean Water Act and Endangered Species Act.",
+      "source_chunk": 5,
+      "id": "cf326769-3b23-4a16-a1b1-04391c1a634b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Legislation that creates a structural framework for protecting biodiversity.",
+        "supporting_text": "helped to achieve a number of legislative milestones. These included ... Endangered Species Act."
+      }
+    },
+    {
+      "title": "Silent Spring",
+      "type": "Book",
+      "year": 1962,
+      "actors": [
+        "Rachel Carson"
+      ],
+      "supporting_text": "In 1962, Rachel Carson brought DDT aerial spraying to widespread public attention through her bestselling book Silent Spring (see Chapter 4).",
+      "source_chunk": 5,
+      "id": "51c0849c-79a9-48b1-99e0-9139a67ae67f"
+    },
+    {
+      "title": "Revolt of the Bird Watchers",
+      "type": "Article",
+      "year": 1971,
+      "actors": [
+        "Friends of the Earth",
+        "Environmental Defense Fund",
+        "Associated Press"
+      ],
+      "supporting_text": "A 1971 Associated Press article published as 'Revolt of the Bird Watchers' documents a lawsuit by FoE and the EDF stalling construction of a US$2.5 billion Alaskan oil pipeline.",
+      "source_chunk": 5,
+      "id": "df48663c-bc40-4349-a127-1f995407c9e1",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The article highlights the conflict between industrial development and environmental protection.",
+        "supporting_text": "A 1971 Associated Press article published as ‘Revolt of the Bird Watchers’ documents a lawsuit ... stalling construction of a US$2.5 billion Alaskan oil pipeline."
+      }
+    },
+    {
+      "title": "we are neither left or right: we are in front",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "German Greens",
+        "German Green Party"
+      ],
+      "supporting_text": "the German Greens used their platform to challenge traditional models of economic growth, called for a reduced-hour working week, and demanded an end to nuclear power. Although no two green parties were exactly alike, most were committed to grassroots democracy, non-violence and social justice. The fledgling German political movement set the tone with the slogan 'we are neither left or right: we are in front'.",
+      "source_chunk": 6,
+      "id": "daecca68-364b-40d6-910f-ebbe3abea02d",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The slogan framed the party as a distinct, forward‑looking force.",
+        "supporting_text": "the slogan ‘we are neither left or right: we are in front’"
+      }
+    },
+    {
+      "title": "Community Charge (Poll Tax)",
+      "type": "Policy",
+      "year": null,
+      "actors": [
+        "UK Conservative government"
+      ],
+      "supporting_text": "By 1989, a decline in the popularity of the UK Conservative government, driven by growing opposition to the Community Charge, also known as the Poll Tax, was combined with public concern over nuclear power and the depletion of the ozone layer.",
+      "source_chunk": 7,
+      "id": "621e9c7d-0d79-4abe-8ccc-900dd7db5769"
+    },
+    {
+      "title": "Superfund",
+      "type": "Policy",
+      "year": 1980,
+      "actors": [
+        "US authorities"
+      ],
+      "supporting_text": "the 1980 Superfund set up to fund site clean ups",
+      "source_chunk": 9,
+      "id": "a239705c-d0f0-42ed-9140-eb12079b9c0c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Defines a financial mechanism that enables systematic site remediation.",
+        "supporting_text": "Superfund set up to fund site clean ups"
+      }
+    },
+    {
+      "title": "Toxic Wastes and Race",
+      "type": "Report",
+      "year": 1987,
+      "actors": [
+        "United Church of Christ's Commission for Racial Justice"
+      ],
+      "supporting_text": "In 1987, the United Church of Christ's Commission for Racial Justice published Toxic Wastes and Race.",
+      "source_chunk": 9,
+      "id": "bc7db6de-bb7b-407f-be0f-85335aac6875",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The study highlighted that race was the strongest predictor of waste‑facility siting, exposing environmental racism.",
+        "supporting_text": "The study found that race was the strongest variable in predicting the siting of waste facilities."
+      }
+    },
+    {
+      "title": "This Common Inheritance",
+      "type": "White Paper",
+      "year": 1990,
+      "actors": [
+        "British Government"
+      ],
+      "supporting_text": "the British Government published This Common Inheritance (1990), the first ever White Paper on the environment.",
+      "source_chunk": 9,
+      "id": "94bb5c7f-ae36-4940-9b40-dcf477917f0c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "It was the first ever White Paper on the environment, introducing a new policy framework.",
+        "supporting_text": "the British Government published This Common Inheritance (1990), the first ever White Paper on the environment."
+      }
+    },
+    {
+      "title": "Roads for Prosperity",
+      "type": "White Paper",
+      "year": 1989,
+      "actors": [
+        "Conservative government of the United Kingdom"
+      ],
+      "supporting_text": "the Conservative government's plans for the 'largest road-building programme in the UK since the Romans', set out in the 1989 transport White Paper Roads for Prosperity (1989).",
+      "source_chunk": 9,
+      "id": "d02486cd-492c-44b0-80bb-34c67ae38269",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The White Paper laid out the Conservative government’s large‑scale road‑building programme, a condition contrary to environmental harmony.",
+        "supporting_text": "the Conservative government’s plans for the ‘largest road‑building programme in the UK since the Romans’, set out in the 1989 transport White Paper Roads for Prosperity (1989)."
+      }
+    },
+    {
+      "title": "Getting Nowhere Fast",
+      "type": "Report",
+      "year": 1976,
+      "actors": [
+        "Friends of the Earth (FoE)"
+      ],
+      "supporting_text": "in 1976 published Getting Nowhere Fast, questioning the desirability of increased car use.",
+      "source_chunk": 9,
+      "id": "ae8ef5ca-8ef3-44a6-90e3-be235be9bf65",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The publication questioned car use and helped mobilise opposition to road schemes.",
+        "supporting_text": "FoE ... published Getting Nowhere Fast, questioning the desirability of increased car use."
+      }
+    },
+    {
+      "title": "Buy Nothing Day",
+      "type": "Programme",
+      "year": 1992,
+      "actors": [],
+      "supporting_text": "The anti-consumerist Buy Nothing Day, first launched in the USA in 1992, encapsulated the ideals of this countercultural movement.",
+      "source_chunk": 10,
+      "id": "e7028437-debf-4d03-8c82-5092c4257344",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The expression embodies the anti‑consumerist call that mobilises participants.",
+        "supporting_text": "The anti‑consumerist Buy Nothing Day, first launched in the USA in 1992, encapsulated the ideals of this countercultural movement."
+      }
+    },
+    {
+      "title": "50 Years is Enough",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "campaigners from trade justice, development and environment communities"
+      ],
+      "supporting_text": "Early large-scale street protests began with the '50 Years is Enough' campaign. This campaign brought together campaigners from trade justice, development and environment communities to protest against the policies of the International Monetary Fund (IMF), World Bank and World Trade Organization (WTO).",
+      "source_chunk": 10,
+      "id": "22d7c2c5-8044-49f9-bd71-5066e001b1d9",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The campaign explicitly called out IMF, World Bank and WTO policies.",
+        "supporting_text": "Early large‑scale street protests began with the ‘50 Years is Enough’ campaign. This campaign ... protest against the policies of the International Monetary Fund (IMF), World Bank and World Trade Organization (WTO)."
+      }
+    },
+    {
+      "title": "Global Street Party",
+      "type": "Programme",
+      "year": 1998,
+      "actors": [
+        "veterans of the anti-roads movement",
+        "Reclaim the Streets"
+      ],
+      "supporting_text": "In 1998, veterans of the anti-roads movement and Reclaim the Streets participated in the Global Street Party that coincided with the twenty‑fourth G8 summit in Birmingham in the UK.",
+      "source_chunk": 10,
+      "id": "8ceace93-6d32-4677-9352-6ce3f9a84d63",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The expression denotes a coordinated public demonstration at a G8 summit.",
+        "supporting_text": "In 1998, veterans of the anti‑roads movement and Reclaim the Streets participated in the Global Street Party that coincided with the twenty‑fourth G8 summit in Birmingham in the UK."
+      }
+    },
+    {
+      "title": "World Social Forum",
+      "type": "Programme",
+      "year": 2001,
+      "actors": [
+        "civil society organisations"
+      ],
+      "supporting_text": "These networks continue to develop through a number of avenues such as the World Social Forum, which has met on a regular basis since 2001.",
+      "source_chunk": 10,
+      "id": "f1de345f-aaff-4d11-a47a-30d166191b77",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The term signals an ongoing platform for collective environmental action.",
+        "supporting_text": "These networks continue to develop through a number of avenues such as the World Social Forum, which has met on a regular basis since 2001."
+      }
+    },
+    {
+      "title": "Green My Apple campaign",
+      "type": "Programme",
+      "year": 2006,
+      "actors": [
+        "Greenpeace",
+        "Greenpeace International"
+      ],
+      "supporting_text": "In 2006, Greenpeace launched the Green My Apple campaign when it found Apple less responsive than other computer companies to removing hazardous substances from products.",
+      "source_chunk": 11,
+      "id": "6c2661e8-0deb-43ae-84e3-67bd69314220",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The campaign concept enabled coordinated online activism.",
+        "supporting_text": "Green My Apple campaign... Greenpeace provided online images and design material for visitors to create and post imaginative ways of pushing the campaign."
+      }
+    },
+    {
+      "title": "The Big Ask campaign",
+      "type": "Programme",
+      "year": 2005,
+      "actors": [
+        "Friends of the Earth (FoE)",
+        "Thom Yorke"
+      ],
+      "supporting_text": "Thom Yorke (b. 1968), lead singer of the music group Radiohead, launched The Big Ask campaign on 25 May 2005.",
+      "source_chunk": 12,
+      "id": "bd1773a6-0c1e-4efb-b736-95d7ba2d6128",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The campaign serves as a rallying banner that unites NGOs and the public around climate legislation.",
+        "supporting_text": "The Big Ask campaign helped create the public momentum needed for the UK government to adopt the 2008 Climate Change Act."
+      }
+    },
+    {
+      "title": "Climate Change Act",
+      "type": "Law",
+      "year": 2008,
+      "actors": [
+        "UK government"
+      ],
+      "supporting_text": "the UK government to adopt the 2008 Climate Change Act, which set the world's first legally binding targets to reduce six greenhouse gases by 80 per cent by 2050 compared with a 1990 baseline.",
+      "source_chunk": 12,
+      "id": "dfb5b6b1-50f1-4dd1-9637-7a1ac7bb2e0c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The Act codifies binding emissions reductions, providing a legal mechanism for systemic decarbonisation.",
+        "supporting_text": "Climate Change Act ... set the world’s first legally binding targets to reduce six greenhouse gases by 80 % by 2050."
+      }
+    },
+    {
+      "title": "Early Day Motion 178",
+      "type": "Resolution",
+      "year": 2005,
+      "actors": [
+        "UK Parliament"
+      ],
+      "supporting_text": "On the same day, a Parliamentary petition (Early Day Motion 178) opened calling for new legislation requiring annual cuts in carbon dioxide emissions of 3 per cent.",
+      "source_chunk": 12,
+      "id": "d8b4161f-f673-45f2-882f-3280cc9a4329",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The motion signals parliamentary acknowledgement of the need for stronger climate action, influencing public discourse.",
+        "supporting_text": "Early Day Motion 178 ... opened calling for new legislation requiring annual cuts in carbon dioxide emissions of 3 %."
+      }
+    },
+    {
+      "title": "I Count campaign",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "Stop Climate Chaos coalition"
+      ],
+      "supporting_text": "The Stop Climate Chaos coalition ran the I Count campaign and organised a climate change rally in London to urge the government to introduce a climate change bill.",
+      "source_chunk": 12,
+      "id": "fc54c1b6-a38e-46bc-a619-6de0ab4516ce",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The campaign organised a rally and mobilised NGOs, directly contributing to pressure on the government.",
+        "supporting_text": "The Stop Climate Chaos coalition ran the I Count campaign and organised a climate change rally in London."
+      }
+    },
+    {
+      "title": "Noel Kampff Climate Action Project",
+      "type": "Other",
+      "year": 1997,
+      "actors": [
+        "Nature Conservancy",
+        "BP",
+        "Pacificorp",
+        "American Electric Power",
+        "Bolivian Government"
+      ],
+      "supporting_text": "In 2009, Greenpeace published the findings of its investigation of the Noel Kampff Climate Action Project, a protected forest area set up in 1997 by the Nature Conservancy, BP, Pacificorp, American Electric Power and the Bolivian Government.",
+      "source_chunk": 12,
+      "id": "5ac1ca76-ec50-47ce-af3d-ddce6d4b74d2",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text presents conflicting views; it is unclear whether the project advances or hinders harmony with nature.",
+        "supporting_text": "Greenpeace ... called it a ‘carbon scam’; The Nature Conservancy said it delivers measurable emissions reductions."
+      }
+    },
+    {
+      "title": "Climate Change Bill",
+      "type": "Bill",
+      "year": null,
+      "actors": [
+        "UK government"
+      ],
+      "supporting_text": "The UK environmental movement also had success in challenging government decisions that did not appear to support the new Climate Change Bill.",
+      "source_chunk": 13,
+      "id": "5792f77d-6810-4990-863c-058dbf0b69a2",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The bill represents a policy instrument that could reshape emissions pathways.",
+        "supporting_text": "the American Power Act (Climate Change Bill)"
+      }
+    },
+    {
+      "title": "American Power Act",
+      "type": "Bill",
+      "year": 2010,
+      "actors": [
+        "Obama Administration"
+      ],
+      "supporting_text": "In May 2010, the Obama Administration introduced a long-awaited Climate Change Bill, the American Power Act, which sought to reduce carbon emissions by 17 per cent by 2020 compared with 2005 levels.",
+      "source_chunk": 13,
+      "id": "7d7b2a82-52e7-4cec-a7c8-9c4725021f6f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Specifies a concrete legislative proposal targeting emissions reductions.",
+        "supporting_text": "the American Power Act (Climate Change Bill)"
+      }
+    },
+    {
+      "title": "Declaration on Permanent Sovereignty over Natural Resources",
+      "type": "Declaration",
+      "year": 1962,
+      "actors": [
+        "Developing nations",
+        "Chile",
+        "United Nations"
+      ],
+      "supporting_text": "In 1962 developing nations, led by Chile, secured a UN Declaration on Permanent Sovereignty over Natural Resources.",
+      "source_chunk": 15,
+      "id": "1638330c-61f1-4df9-a7d7-7a165d8c72f4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Codifies the principle that resource sovereignty can reshape power balances in environmental governance.",
+        "supporting_text": "Declaration on Permanent Sovereignty over Natural Resources"
+      }
+    },
+    {
+      "title": "UN General Assembly Resolution (1966)",
+      "type": "Declaration",
+      "year": 1966,
+      "actors": [
+        "United Nations General Assembly",
+        "Developing nations"
+      ],
+      "supporting_text": "This was followed by a 1966 UN General Assembly Resolution, which recognised that developing nations must be able to exploit and market their natural wealth.",
+      "source_chunk": 15,
+      "id": "10839819-acc6-4d2f-9d95-2a0553042ee1",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Defines the legal basis for permanent sovereignty, altering the normative framework for resource use.",
+        "supporting_text": "UN General Assembly Resolution (1966) ... defines Permanent sovereignty over natural resources"
+      }
+    },
+    {
+      "title": "Problems of the Human Environment",
+      "type": "Report",
+      "year": 1969,
+      "actors": [
+        "U Thant",
+        "United Nations"
+      ],
+      "supporting_text": "The report, entitled Problems of the Human Environment (1969), suggested the world had a decade to seriously address air and water pollution, soil erosion and the waste of natural resources, and it made newspaper headlines across the world.",
+      "source_chunk": 15,
+      "id": "15e21f06-75ad-40dd-ada1-b927e9498865",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The report’s stark decade‑long warning captured worldwide media attention, shaping public discourse.",
+        "supporting_text": "it made newspaper headlines across the world"
+      }
+    },
+    {
+      "title": "The Population Bomb",
+      "type": "Book",
+      "year": 1968,
+      "actors": [
+        "Paul Ehrlich"
+      ],
+      "supporting_text": "a series of books, including The Population Bomb (Paul Ehrlich, 1968) and The Limits to Growth (Meadows et al., 1972)",
+      "source_chunk": 15,
+      "id": "490d2f03-c577-4206-afc7-b082572fad2e"
+    },
+    {
+      "title": "The Limits to Growth",
+      "type": "Book",
+      "year": 1972,
+      "actors": [
+        "Meadows et al."
+      ],
+      "supporting_text": "a series of books, including The Population Bomb (Paul Ehrlich, 1968) and The Limits to Growth (Meadows et al., 1972)",
+      "source_chunk": 15,
+      "id": "1bd75eed-45f6-4a95-a5ee-fede91e6f057"
+    },
+    {
+      "title": "UN General Assembly Resolution 2398 (XXIII)",
+      "type": "Declaration",
+      "year": 1968,
+      "actors": [
+        "United Nations General Assembly"
+      ],
+      "supporting_text": "The General Assembly adopted resolution 2398 (XXIII) convening the UNCHE and noting the '[...] continuing and accelerating impairment of the quality of the human environment' and its 'consequent effects on the condition of man, his physical, mental and social well-being, his dignity and his enjoyment of basic human rights, in developing as well as developed countries.'",
+      "source_chunk": 15,
+      "id": "bf8258f7-591c-4d5b-9053-4d15e8ec0590",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Explicitly linked environmental impairment to human well‑being, setting a systemic agenda for future policy.",
+        "supporting_text": "noting the ‘[…] continuing and accelerating impairment of the quality of the human environment’"
+      }
+    },
+    {
+      "title": "The Founex Report on Development and Environment",
+      "type": "Report",
+      "year": 1971,
+      "actors": [
+        "Intellectuals from developing nations"
+      ],
+      "supporting_text": "The outcome of these discussions was The Founex Report on Development and Environment (1971), which clearly set out the link between environment and development priorities...",
+      "source_chunk": 16,
+      "id": "1da49494-cb1b-4a58-b3fb-5e86fdaac904",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The report articulated the environment‑development link, exposing a pathway for systemic change.",
+        "supporting_text": "which clearly set out the link between environment and development priorities..."
+      }
+    },
+    {
+      "title": "Declaration of Twenty-six Principles on the Human Environment",
+      "type": "Declaration",
+      "year": null,
+      "actors": [
+        "Conference participants (113 developing and developed nations)"
+      ],
+      "supporting_text": "After nine days of discussion and negotiation, the conference produced an action plan consisting of 106 recommendations, and a Declaration of twenty-six principles on the human environment.",
+      "source_chunk": 16,
+      "id": "f12340f1-bfd6-4f36-9899-43ef0a935c2f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The declaration framed normative principles that shaped discourse and legitimacy of environmental governance.",
+        "supporting_text": "the conference produced... a Declaration of twenty-six principles on the human environment."
+      }
+    },
+    {
+      "title": "UN Environment Programme (UNEP)",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "UNEP was created to provide a global voice for the environmental agenda within the UN system.",
+      "source_chunk": 16,
+      "id": "0bc05f6b-ae3e-4c8e-87e6-d9ac8a8a2091",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UNEP was created to coordinate expertise and give a global voice to the environmental agenda.",
+        "supporting_text": "UNEP was created to provide a global voice for the environmental agenda within the UN system."
+      }
+    },
+    {
+      "title": "North-South: A Program for Survival",
+      "type": "Report",
+      "year": 1980,
+      "actors": [
+        "Brandt Commission"
+      ],
+      "supporting_text": "It published two reports, North-South: A Program for Survival (1980) and Common Crisis North-South: Cooperation for World Recovery (1983).",
+      "source_chunk": 17,
+      "id": "4f2424fe-9e39-43eb-aa1c-243440447b4e",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The title foregrounds the dire survival challenges faced by the global South.",
+        "supporting_text": "North‑South: A Program for Survival (1980)"
+      }
+    },
+    {
+      "title": "Common Crisis North-South: Cooperation for World Recovery",
+      "type": "Report",
+      "year": 1983,
+      "actors": [
+        "Brandt Commission"
+      ],
+      "supporting_text": "It published two reports, North-South: A Program for Survival (1980) and Common Crisis North-South: Cooperation for World Recovery (1983).",
+      "source_chunk": 17,
+      "id": "12febff7-9a56-46d3-8dcd-fa80aba52603",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The expression signals an acute global crisis demanding cooperative recovery.",
+        "supporting_text": "Common Crisis North‑South: Cooperation for World Recovery (1983)"
+      }
+    },
+    {
+      "title": "Resolution 38/161",
+      "type": "Resolution",
+      "year": 1983,
+      "actors": [
+        "UN General Assembly"
+      ],
+      "supporting_text": "In 1983, the same year that Common Crisis was published, the UN General Assembly passed Resolution 38/161, establishing the World Commission on Environment and Development (WCED).",
+      "source_chunk": 17,
+      "id": "adb78016-8627-4484-8085-2daa3a0d7836",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The resolution formalised the creation of a new commission to address environment‑development issues.",
+        "supporting_text": "Resolution 38/161 ... establishing the World Commission on Environment and Development (WCED)"
+      }
+    },
+    {
+      "title": "Our Common Future",
+      "type": "Report",
+      "year": 1987,
+      "actors": [
+        "World Commission on Environment and Development (WCED)",
+        "Gro Harlem Brundtland"
+      ],
+      "supporting_text": "its report, Our Common Future, also known as the Brundtland Report, was published in 1987.",
+      "source_chunk": 17,
+      "id": "2dd9b789-7d10-492a-baf3-eb185a6164c4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The report introduced the concept of sustainable development, a transformative system‑level idea.",
+        "supporting_text": "Our Common Future ... defined the requirements for ‘sustainable development’"
+      }
+    },
+    {
+      "title": "World Conservation Strategy",
+      "type": "Report",
+      "year": 1980,
+      "actors": [
+        "UN agencies",
+        "environmental groups"
+      ],
+      "supporting_text": "a concept that had been introduced seven years earlier in the World Conservation Strategy (1980) published by a coalition of UN agencies and environmental groups.",
+      "source_chunk": 17,
+      "id": "0d9965b9-4128-48bb-bbac-417307eaa56b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "It articulated the interdependence of conservation and development, shaping future policy frameworks.",
+        "supporting_text": "World Conservation Strategy ... stressed the interdependence of conservation and development"
+      }
+    },
+    {
+      "title": "UN Framework Convention on Climate Change (UNFCCC)",
+      "type": "Treaty",
+      "year": 1992,
+      "actors": [
+        "United Nations",
+        "UNCED negotiators"
+      ],
+      "supporting_text": "UNCED negotiators eventually secured the adoption of the UN Framework Convention on Climate Change (UNFCCC)",
+      "source_chunk": 18,
+      "id": "713470ed-1b3e-4e52-beed-1dddbcc4094c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adoption of the UNFCCC creates a global legal framework that can shift climate governance toward harmony with nature.",
+        "supporting_text": "UNCED negotiators eventually secured the adoption of the UN Framework Convention on Climate Change (UNFCCC)"
+      }
+    },
+    {
+      "title": "Convention on Biological Diversity (CBD)",
+      "type": "Treaty",
+      "year": 1992,
+      "actors": [
+        "United Nations",
+        "UNCED negotiators"
+      ],
+      "supporting_text": "UNCED negotiators eventually secured the adoption of ... the Convention on Biological Diversity (CBD)",
+      "source_chunk": 18,
+      "id": "af2ce1fd-e803-40f6-98e4-838ffc76d622"
+    },
+    {
+      "title": "Agenda 21",
+      "type": "Programme",
+      "year": 1992,
+      "actors": [
+        "United Nations",
+        "UNCED"
+      ],
+      "supporting_text": "a global plan of action to promote sustainable development called Agenda 21",
+      "source_chunk": 18,
+      "id": "8392492b-0ce3-4e7b-b689-d554d97832ed",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Agenda 21 is a comprehensive plan of action that outlines how sustainable development can be pursued globally.",
+        "supporting_text": "a global plan of action to promote sustainable development called Agenda 21"
+      }
+    },
+    {
+      "title": "Rio Declaration on Environment and Development",
+      "type": "Declaration",
+      "year": 1992,
+      "actors": [
+        "United Nations",
+        "UNCED"
+      ],
+      "supporting_text": "the Rio Declaration on Environment and Development, which set out a series of principles defining the rights and responsibilities of states",
+      "source_chunk": 18,
+      "id": "27f83c81-2bb0-405c-a682-2084055e91e5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The declaration sets principles that redefine state responsibilities toward environmental stewardship.",
+        "supporting_text": "the Rio Declaration on Environment and Development, which set out a series of principles defining the rights and responsibilities of states"
+      }
+    },
+    {
+      "title": "Statement of Forest Principles",
+      "type": "Declaration",
+      "year": 1992,
+      "actors": [
+        "United Nations",
+        "UNCED"
+      ],
+      "supporting_text": "a Statement of Forest Principles to support the sustainable management of the world's forests",
+      "source_chunk": 18,
+      "id": "cf09b1e4-f68b-4171-925d-ae314a0bcd2b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "It provides a framework for sustainable forest management, indicating a shift toward ecosystem‑based governance.",
+        "supporting_text": "a Statement of Forest Principles to support the sustainable management of the world’s forests"
+      }
+    },
+    {
+      "title": "Brandt Report",
+      "type": "Report",
+      "year": null,
+      "actors": [],
+      "supporting_text": "the Brandt Report a decade later",
+      "source_chunk": 18,
+      "id": "70ff9554-4155-4e72-ab07-efba4f9d41b7",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The report highlights the historical lack of sufficient overseas aid, exposing a persistent development financing gap.",
+        "supporting_text": "The Pearson Commission originally proposed the overseas aid target in 1969, and this was reiterated by the Brandt Report a decade later"
+      }
+    },
+    {
+      "title": "Resolution S-19/2",
+      "type": "Resolution",
+      "year": 1997,
+      "actors": [
+        "UN General Assembly"
+      ],
+      "supporting_text": "The session's final document (Resolution S-19/2) outlined the need for a high-profile conference, equal in scale and ambition to UNCED",
+      "source_chunk": 18,
+      "id": "9d8ca141-c19a-481b-bc51-d429952ad252",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The resolution calls for a high‑profile conference, signalling a potential large‑scale shift in sustainable‑development policy.",
+        "supporting_text": "final document (Resolution S-19/2) outlined the need for a high-profile conference"
+      }
+    },
+    {
+      "title": "Resolution 55/199",
+      "type": "Resolution",
+      "year": 2000,
+      "actors": [
+        "UN General Assembly"
+      ],
+      "supporting_text": "when the UN General Assembly adopted Resolution 55/199, acknowledging that, despite many successful and continuing efforts of the international community since UNCHE, the environment and the natural resource base continued to deteriorate at an alarming rate",
+      "source_chunk": 18,
+      "id": "700a1160-2fa8-4a50-8070-65251c9f4928",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "It acknowledges ongoing environmental deterioration, exposing the gap between commitments and outcomes.",
+        "supporting_text": "adopted Resolution 55/199, acknowledging that ... the environment ... continued to deteriorate at an alarming rate"
+      }
+    },
+    {
+      "title": "Kyoto Protocol",
+      "type": "Treaty",
+      "year": null,
+      "actors": [
+        "United States",
+        "George W. Bush"
+      ],
+      "supporting_text": "Bush had rejected the Kyoto Protocol to tackle climate change",
+      "source_chunk": 19,
+      "id": "a4d64c1d-f495-44bf-a6e7-3d8a5b1a7d60"
+    },
+    {
+      "title": "Plan of Implementation",
+      "type": "Policy",
+      "year": null,
+      "actors": [
+        "World Summit on Sustainable Development"
+      ],
+      "supporting_text": "The outcome of the Summit was its Plan of Implementation",
+      "source_chunk": 19,
+      "id": "39cbcf2c-cd48-4a0c-b8b1-d180e035418d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The plan provides a concrete roadmap for implementing summit outcomes.",
+        "supporting_text": "The outcome of the Summit was its Plan of Implementation and the Johannesburg Declaration on Sustainable Development."
+      }
+    },
+    {
+      "title": "Johannesburg Declaration on Sustainable Development",
+      "type": "Declaration",
+      "year": null,
+      "actors": [
+        "World Summit on Sustainable Development"
+      ],
+      "supporting_text": "and the Johannesburg Declaration on Sustainable Development.",
+      "source_chunk": 19,
+      "id": "a1e2e293-2f80-4dc4-ad43-66863819b79b",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The declaration codified the summit’s commitments, raising their visibility.",
+        "supporting_text": "The outcome of the Summit was its Plan of Implementation and the Johannesburg Declaration on Sustainable Development."
+      }
+    },
+    {
+      "title": "WEHAB",
+      "type": "Policy",
+      "year": null,
+      "actors": [
+        "World Summit on Sustainable Development"
+      ],
+      "supporting_text": "the summit concentrated on an action plan of deliverables across the areas of water and sanitation, energy, health, agriculture and biodiversity (WEHAB).",
+      "source_chunk": 19,
+      "id": "98d10ca2-26d7-412a-92d9-e72a5e51a6de",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "WEHAB links water, energy, health, agriculture and biodiversity, showing sectoral interdependence.",
+        "supporting_text": "summit concentrated on an action plan of deliverables across the areas of water and sanitation, energy, health, agriculture and biodiversity (WEHAB)."
+      }
+    },
+    {
+      "title": "Millennium Development Goals (MDGs)",
+      "type": "Programme",
+      "year": null,
+      "actors": [],
+      "supporting_text": "there was a deliberate attempt to connect WEHAB to the Millennium Development Goals (MDGs)",
+      "source_chunk": 19,
+      "id": "35cf0010-daf7-448d-9874-a24a776a9d4e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Linking WEHAB to MDGs shows an effort to integrate development and environmental goals.",
+        "supporting_text": "there was a deliberate attempt to connect WEHAB to the Millennium Development Goals (MDGs)"
+      }
+    },
+    {
+      "title": "New Partnership for Africa's Development (NEPAD)",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "South Africa"
+      ],
+      "supporting_text": "and the New Partnership for Africa's Development (NEPAD) initiative.",
+      "source_chunk": 19,
+      "id": "0874a898-bdf6-46ef-9adb-d28e456c4355",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Connecting WEHAB to NEPAD signals a regional strategy for sustainable development.",
+        "supporting_text": "connect WEHAB to ... the New Partnership for Africa’s Development (NEPAD) initiative"
+      }
+    },
+    {
+      "title": "Ramsar Convention",
+      "type": "Treaty",
+      "year": 1971,
+      "actors": [],
+      "supporting_text": "protection of wetlands (Ramsar Convention, 1971)",
+      "source_chunk": 19,
+      "id": "f069781c-a0e0-4a92-b9c5-1ab4b76d3544",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Early MEA that creates a cooperative framework for wetland protection.",
+        "supporting_text": "Early MEAs covered specific traditional conservation issues such as the protection of wetlands (Ramsar Convention, 1971)"
+      }
+    },
+    {
+      "title": "Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)",
+      "type": "Treaty",
+      "year": 1973,
+      "actors": [],
+      "supporting_text": "or of endangered species (Convention on International Trade in Endangered Species of Wild Fauna and Flora, CITES, 1973)",
+      "source_chunk": 19,
+      "id": "21d77b58-d546-4f06-a535-5394bc8cc460",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CITES provides an international mechanism to regulate trade in endangered species.",
+        "supporting_text": "or of endangered species (Convention on International Trade in Endangered Species of Wild Fauna and Flora, CITES, 1973)"
+      }
+    },
+    {
+      "title": "Vienna Convention",
+      "type": "Treaty",
+      "year": 1985,
+      "actors": [],
+      "supporting_text": "ozone-depleting substances (Vienna Convention, 1985",
+      "source_chunk": 19,
+      "id": "92a486aa-93e3-4509-842e-d57e77b0bba9",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Part of the second‑generation MEAs that address ozone‑depleting substances.",
+        "supporting_text": "including ozone‑depleting substances (Vienna Convention, 1985; Montreal Protocol, 1987)"
+      }
+    },
+    {
+      "title": "Montreal Protocol",
+      "type": "Treaty",
+      "year": 1987,
+      "actors": [],
+      "supporting_text": "Montreal Protocol, 1987",
+      "source_chunk": 19,
+      "id": "ee1d4b88-de5f-4d04-bac3-272a5b19b0e8"
+    },
+    {
+      "title": "Basel Convention",
+      "type": "Treaty",
+      "year": 1989,
+      "actors": [],
+      "supporting_text": "hazardous wastes (Basel Convention, 1989)",
+      "source_chunk": 19,
+      "id": "f149a03a-fe84-4d20-ba32-bfdbb510e175",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Establishes a cooperative regime for hazardous waste management.",
+        "supporting_text": "hazardous wastes (Basel Convention, 1989)"
+      }
+    },
+    {
+      "title": "UNFCCC",
+      "type": "Treaty",
+      "year": 1992,
+      "actors": [],
+      "supporting_text": "climate change (UNFCCC, 1992)",
+      "source_chunk": 19,
+      "id": "44c3f2f7-cc4b-4b5c-b604-cc9038fad4cb",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Global treaty that structures collective climate‑change mitigation efforts.",
+        "supporting_text": "climate change (UNFCCC, 1992)"
+      }
+    },
+    {
+      "title": "Rotterdam Convention",
+      "type": "Treaty",
+      "year": 1998,
+      "actors": [],
+      "supporting_text": "hazardous chemicals and pesticides (Rotterdam Convention, 1998)",
+      "source_chunk": 19,
+      "id": "8304d3b1-1e42-437c-a561-04eaa77c16cc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Creates a joint mechanism for controlling hazardous chemicals and pesticides.",
+        "supporting_text": "hazardous chemicals and pesticides (Rotterdam Convention, 1998)"
+      }
+    },
+    {
+      "title": "Cartagena Protocol",
+      "type": "Treaty",
+      "year": 2000,
+      "actors": [],
+      "supporting_text": "bio-safety (Cartagena Protocol, 2000)",
+      "source_chunk": 19,
+      "id": "ff7c3700-57e7-42c6-8182-798b4bb0551c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a collaborative framework for biosafety of genetically modified organisms.",
+        "supporting_text": "bio‑safety (Cartagena Protocol, 2000)"
+      }
+    },
+    {
+      "title": "Stockholm Convention",
+      "type": "Treaty",
+      "year": 2001,
+      "actors": [],
+      "supporting_text": "persistent organic pollutants (Stockholm Convention, 2001)",
+      "source_chunk": 19,
+      "id": "4afe9dd0-49e7-4e3d-b6d0-480a71b79853",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "International agreement that coordinates action on persistent organic pollutants.",
+        "supporting_text": "persistent organic pollutants (Stockholm Convention, 2001)"
+      }
+    },
+    {
+      "title": "Vienna Convention for the Protection of the Ozone Layer",
+      "type": "Treaty",
+      "year": 1985,
+      "actors": [
+        "twenty nations"
+      ],
+      "supporting_text": "Public concern over the health and environmental impacts of depletion of the ozone layer first translated into coordinated international action in 1985, when twenty nations signed the Vienna Convention for the Protection of the Ozone Layer.",
+      "source_chunk": 20,
+      "id": "81ae7c5f-ed36-44e1-a3f5-58678bec74c0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Serves as the foundational framework enabling later, stronger agreements.",
+        "supporting_text": "when twenty nations signed the Vienna Convention for the Protection of the Ozone Layer"
+      }
+    },
+    {
+      "title": "Montreal Protocol on Substances that Deplete the Ozone Layer",
+      "type": "Treaty",
+      "year": 1987,
+      "actors": [
+        "forty-three nations",
+        "United States"
+      ],
+      "supporting_text": "By 1987, representatives from forty-three nations had agreed to sign the Montreal Protocol, freeze production of CFCs at 1986 levels, and reduce production by 50 per cent by 1999.",
+      "source_chunk": 20,
+      "id": "e66779b4-aa13-4bdb-a33b-7c70245dae30",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Demonstrates how a multilateral treaty can drive global emissions reductions.",
+        "supporting_text": "The Montreal Protocol on Substances that Deplete the Ozone Layer is widely cited as environmental multilateralism at its most effective"
+      }
+    },
+    {
+      "title": "First Assessment Report of the IPCC",
+      "type": "Report",
+      "year": 1990,
+      "actors": [
+        "Intergovernmental Panel on Climate Change"
+      ],
+      "supporting_text": "It produced its first assessment report on the science of climate change in 1990, and its findings supported the establishment of the main apparatus for negotiations: the UNFCCC.",
+      "source_chunk": 20,
+      "id": "99442222-6478-45c3-a231-d081bb42640b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Supplied the first consolidated scientific basis for climate policy.",
+        "supporting_text": "It produced its first assessment report on the science of climate change in 1990"
+      }
+    },
+    {
+      "title": "Second Assessment Report of the IPCC",
+      "type": "Report",
+      "year": 1995,
+      "actors": [
+        "Intergovernmental Panel on Climate Change"
+      ],
+      "supporting_text": "The IPCC's second assessment report, published in 1995, concluded that 'the balance of evidence suggests a discernible human influence on global climate'.",
+      "source_chunk": 20,
+      "id": "abc0b010-0562-4cdd-ba0a-d8ab2df4ac62",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Highlighted human influence, increasing public and political urgency.",
+        "supporting_text": "The IPCC’s second assessment report, published in 1995, concluded that ‘the balance of evidence suggests a discernible human influence on global climate’"
+      }
+    },
+    {
+      "title": "Fourth Assessment Report of the IPCC",
+      "type": "Report",
+      "year": 2007,
+      "actors": [
+        "Intergovernmental Panel on Climate Change"
+      ],
+      "supporting_text": "By the fourth assessment report (2007), the IPCC's conclusions were more strongly worded: \"Most of the observed increase in globally averaged temperatures since the mid-20th century is very likely due to the observed increase in anthropogenic (human) greenhouse gas concentrations.\"",
+      "source_chunk": 20,
+      "id": "ab2e0968-c71f-4ad0-a471-7c255c821057"
+    },
+    {
+      "title": "United Nations Framework Convention on Climate Change",
+      "type": "Treaty",
+      "year": null,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "its findings supported the establishment of the main apparatus for negotiations: the UNFCCC.",
+      "source_chunk": 20,
+      "id": "c0efa358-89c3-44a3-8934-e5f563ac612d"
+    },
+    {
+      "title": "Nobel Peace Prize 2007",
+      "type": "Other",
+      "year": 2007,
+      "actors": [
+        "Intergovernmental Panel on Climate Change"
+      ],
+      "supporting_text": "In 2007, the IPCC was awarded the Nobel Peace Prize for its 'efforts to lay the foundations for measures that are needed to counteract climate change'.",
+      "source_chunk": 20,
+      "id": "ad0bba9a-7eea-4bf4-9ab6-67dad2cf79a0"
+    },
+    {
+      "title": "United Nations Framework Convention on Climate Change (UNFCCC)",
+      "type": "Treaty",
+      "year": 1992,
+      "actors": [
+        "countries",
+        "USA"
+      ],
+      "supporting_text": "After the first IPCC assessment report, countries acted quickly to adopt the UNFCCC in 1992.",
+      "source_chunk": 21,
+      "id": "ca8deb7f-eae4-4afa-9e51-0e453f503d48"
+    },
+    {
+      "title": "Kyoto Protocol",
+      "type": "Treaty",
+      "year": 1997,
+      "actors": [
+        "UNFCCC signatories",
+        "Annex 1 countries",
+        "developed nations"
+      ],
+      "supporting_text": "COP 3 in 1997 established the Kyoto Protocol to create mandatory emissions‑reduction targets for specific developed countries to be achieved by 2008‑12.",
+      "source_chunk": 21,
+      "id": "1d10d5b2-6122-4b88-878c-849cbc35c85b"
+    },
+    {
+      "title": "Copenhagen Accord",
+      "type": "Declaration",
+      "year": 2009,
+      "actors": [
+        "major polluting countries",
+        "developed nations",
+        "developing nations"
+      ],
+      "supporting_text": "The final outcome was a statement of commitment to action called the Copenhagen Accord, supplemented by an annex of non‑binding commitments from all the major polluting countries.",
+      "source_chunk": 21,
+      "id": "22da96c7-bed0-47d9-b629-31a7ca2131be"
+    },
+    {
+      "title": "Kyoto Protocol",
+      "type": "Treaty",
+      "year": null,
+      "actors": [
+        "developing nations",
+        "developed nations"
+      ],
+      "supporting_text": "extension of the Kyoto Protocol (developing nations) and those who wanted to replace it (developed nations).",
+      "source_chunk": 22,
+      "id": "91870adf-6be3-4ac5-9348-b72b5d48aa1d"
+    },
+    {
+      "title": "Copenhagen Accord",
+      "type": "Agreement",
+      "year": null,
+      "actors": [
+        "countries"
+      ],
+      "supporting_text": "building on the Copenhagen Accord's hastily collected commitments.",
+      "source_chunk": 22,
+      "id": "7cf87642-a68d-40ae-a0ea-944bd58d607b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Served as the basis for countries to formally submit emissions‑reduction targets at COP 16.",
+        "supporting_text": "building on the Copenhagen Accord’s hastily collected commitments"
+      }
+    },
+    {
+      "title": "Green Climate Fund",
+      "type": "Programme",
+      "year": 2010,
+      "actors": [
+        "COP 16",
+        "developing nations"
+      ],
+      "supporting_text": "established a Green Climate Fund for channelling mitigation and adaptation funding to developing nations.",
+      "source_chunk": 22,
+      "id": "5b007164-add7-4f5f-9913-ee135fa8aa8d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Created to channel mitigation and adaptation financing to developing nations, enabling joint action.",
+        "supporting_text": "established a Green Climate Fund for channelling mitigation and adaptation funding to developing nations"
+      }
+    },
+    {
+      "title": "United Nations Framework Convention on Climate Change (UNFCCC)",
+      "type": "Treaty",
+      "year": null,
+      "actors": [
+        "countries",
+        "UN"
+      ],
+      "supporting_text": "submitted their emissions reductions targets under the UNFCCC process",
+      "source_chunk": 22,
+      "id": "fb078e7d-bf04-46b3-8e1c-ee55a21e86e4"
+    },
+    {
+      "title": "Silent Spring",
+      "type": "Book",
+      "year": 1962,
+      "actors": [
+        "Rachel Carson"
+      ],
+      "supporting_text": "Since the publication of Rachel Carson's Silent Spring (1962), the use of scientific evidence has become one of the central ways in which environmental arguments have been constructed.",
+      "source_chunk": 23,
+      "id": "87ac164f-a5d5-4469-8f52-581f410fac3f"
+    },
+    {
+      "title": "Historia Naturalis",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "Pliny the Elder"
+      ],
+      "supporting_text": "Roman Pliny the Elder (AD 23-79) wrote Historia Naturalis, an encyclopaedia which sought to catalogue all the entities found in nature.",
+      "source_chunk": 23,
+      "id": "43080951-41b8-4c2b-8666-b30b1becdc6b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provided an early systematic catalogue of nature that underpins later ecological knowledge.",
+        "supporting_text": "Roman Pliny the Elder (AD 23–79) wrote Historia Naturalis, an encyclopaedia which sought to catalogue all the entities found in nature."
+      }
+    },
+    {
+      "title": "The Wisdom of God Manifested in the Works of the Creation",
+      "type": "Book",
+      "year": 1691,
+      "actors": [
+        "John Ray"
+      ],
+      "supporting_text": "The English naturalist John Ray (1627-1705) called his popular study of the natural world The Wisdom of God Manifested in the Works of the Creation (1691).",
+      "source_chunk": 23,
+      "id": "a49e617e-19bf-4140-998e-092db08061b8",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text mentions the work but does not specify its impact on harmony‑with‑nature initiatives.",
+        "supporting_text": "John Ray (1627–1705) called his popular study of the natural world The Wisdom of God Manifested in the Works of the Creation (1691)."
+      }
+    },
+    {
+      "title": "Systema Naturae",
+      "type": "Book",
+      "year": 1758,
+      "actors": [
+        "Carl Linnaeus"
+      ],
+      "supporting_text": "In Systema Naturae (1758), Linnaeus classified humans next to monkeys in the animal kingdom.",
+      "source_chunk": 23,
+      "id": "0818694d-d904-4462-b546-8f1fcad0dffe",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced the human‑within‑nature idea that reshaped ecological thinking.",
+        "supporting_text": "In Systema Naturae (1758), Linnaeus classified humans next to monkeys … placed humans within rather than apart from nature."
+      }
+    },
+    {
+      "title": "Man and Nature",
+      "type": "Book",
+      "year": 1864,
+      "actors": [
+        "George Perkins Marsh"
+      ],
+      "supporting_text": "In the same decade, George Perkins Marsh (1801-82) published Man and Nature (1864), and argued that humankind was the prime cause of species extinction.",
+      "source_chunk": 23,
+      "id": "26fdfcb0-c04d-49b3-8615-9a5b76130dcf",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Explicitly highlighted humanity as the prime cause of species extinction.",
+        "supporting_text": "George Perkins Marsh (1801–82) published Man and Nature (1864), and argued that humankind was the prime cause of species extinction."
+      }
+    },
+    {
+      "title": "Mutual Aid: A Factor of Evolution",
+      "type": "Book",
+      "year": 1902,
+      "actors": [
+        "Peter Kropotkin"
+      ],
+      "supporting_text": "In his book Mutual Aid: A Factor of Evolution (1902), he used examples from the animal world to show how cooperation rather than competition was central to societal prosperity and progress.",
+      "source_chunk": 24,
+      "id": "e9b9af74-0376-4323-9c35-277357fa641a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Kropotkin’s book introduced cooperation as a natural principle for societal organization.",
+        "supporting_text": "In his book Mutual Aid: A Factor of Evolution (1902), he used examples ... to show how cooperation ... was central to societal prosperity"
+      }
+    },
+    {
+      "title": "A Sand County Almanac",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "Aldo Leopold"
+      ],
+      "supporting_text": "In A Sand County Almanac he wrote 'a thing is right when it tends to preserve the integrity, beauty, and stability of the biotic community.",
+      "source_chunk": 24,
+      "id": "d6678875-fd03-4bc8-aa9a-155a128e55ef",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The book popularised the land‑ethic idea, gaining wider appeal from the late 1960s.",
+        "supporting_text": "In A Sand County Almanac he wrote ‘a thing is right when it tends to preserve the integrity, beauty, and stability of the biotic community’"
+      }
+    },
+    {
+      "title": "Inimical Effects on Wildlife of Periodic DDD Applications to Clear Lake",
+      "type": "Paper",
+      "year": 1960,
+      "actors": [
+        "Hunt",
+        "Bischoff"
+      ],
+      "supporting_text": "In 1960, Hunt and Bischoff published a paper entitled 'Inimical Effects on Wildlife of Periodic DDD Applications to Clear Lake'.",
+      "source_chunk": 24,
+      "id": "bd3a803c-0b26-4855-9478-35877496df48",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The paper exposed the harmful, previously under‑recognised effects of pesticide use on wildlife.",
+        "supporting_text": "The Clear Lake study showed that chemicals ... transferred up the food chain ... grebe population fell from over 1000 pairs to approximately thirty"
+      }
+    },
+    {
+      "title": "Silent Spring",
+      "type": "Book",
+      "year": 1962,
+      "actors": [
+        "Rachel Carson"
+      ],
+      "supporting_text": "The completed work was first serialised in the New Yorker and then published in book form as Silent Spring in 1962.",
+      "source_chunk": 25,
+      "id": "f5ee4a31-3179-4e8f-a992-cd00a040087a"
+    },
+    {
+      "title": "The Ecologist",
+      "type": "Magazine",
+      "year": 1970,
+      "actors": [
+        "Edward Goldsmith"
+      ],
+      "supporting_text": "The following year, Edward Goldsmith (1928-2009) published the first edition of a new magazine called The Ecologist as a platform for environmental thinking in the UK.",
+      "source_chunk": 25,
+      "id": "63302517-8f55-4ca7-be4f-39e4f50f8b52",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Served as a recurring venue for disseminating ecological ideas and mobilising readers.",
+        "supporting_text": "The magazine reached a wide audience in 1972 when it published Goldsmith’s ‘A Blueprint for Survival’."
+      }
+    },
+    {
+      "title": "A Blueprint for Survival",
+      "type": "Book",
+      "year": 1972,
+      "actors": [
+        "Edward Goldsmith"
+      ],
+      "supporting_text": "The magazine reached a wide audience in 1972 when it published Goldsmith's 'A Blueprint for Survival', a manifesto for societal change that was endorsed by scientists and academics and went on to sell 750,000 copies as a paperback book.",
+      "source_chunk": 25,
+      "id": "1b344ffb-9288-4da3-a38d-77a2dc666e30",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Outlined a comprehensive blueprint for societal change, exposing systemic ecological challenges.",
+        "supporting_text": "‘A Blueprint for Survival’, a manifesto for societal change that was endorsed by scientists and academics."
+      }
+    },
+    {
+      "title": "The New Yorker",
+      "type": "Magazine",
+      "year": null,
+      "actors": [],
+      "supporting_text": "The completed work was first serialised in the New Yorker and then published in book form as Silent Spring in 1962.",
+      "source_chunk": 25,
+      "id": "fc3864f8-ecaa-4537-8924-22e7c85e521d",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Serialisation in a major magazine amplified the book’s reach and legitimacy.",
+        "supporting_text": "The completed work was first serialised in the New Yorker."
+      }
+    },
+    {
+      "title": "Post-Scarcity Anarchism",
+      "type": "Book",
+      "year": 1970,
+      "actors": [
+        "Murray Bookchin"
+      ],
+      "supporting_text": "Murray Bookchin (1921-2006) developed a more politically revolutionary approach, in which he combined anarchist political philosophy with ecology in books such as Post-Scarcity Anarchism (1970).",
+      "source_chunk": 26,
+      "id": "67ad2f69-a904-4f52-9899-2536aaea6ec0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Embodies a revolutionary ecological‑political synthesis.",
+        "supporting_text": "Murray Bookchin ... in books such as Post‑Scarcity Anarchism (1970)."
+      }
+    },
+    {
+      "title": "Red Data Books",
+      "type": "Report",
+      "year": 1966,
+      "actors": [
+        "International Union for Conservation of Nature (IUCN)"
+      ],
+      "supporting_text": "From 1966 onwards, the International Union for Conservation of Nature (IUCN) published Red Data Books of threatened species in need of conservation attention",
+      "source_chunk": 27,
+      "id": "a7005720-3238-43eb-8a12-3631b88ab635"
+    },
+    {
+      "title": "Global Biodiversity Outlook",
+      "type": "Report",
+      "year": 2010,
+      "actors": [],
+      "supporting_text": "The 2010 Global Biodiversity Outlook found that the target established in 2002 to achieve a significant reduction in the rate of biodiversity loss by 2010 had not been met.",
+      "source_chunk": 27,
+      "id": "e798621a-9a60-4375-b23a-2fd73bbd2ae1",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows the 2010 assessment that the 2002 biodiversity‑loss reduction target was not met.",
+        "supporting_text": "The 2010 Global Biodiversity Outlook found that the target ... had not been met."
+      }
+    },
+    {
+      "title": "Silent Spring",
+      "type": "Book",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Science has lost none of the power first shown by Silent Spring to push scientific issues to the top of the global political agenda.",
+      "source_chunk": 27,
+      "id": "d5dc0ae7-eca4-4c05-88b4-c51716644259",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Cited as the historic catalyst that lifted scientific issues onto the global political agenda.",
+        "supporting_text": "science has lost none of the power first shown by Silent Spring to push scientific issues to the top of the global political agenda."
+      }
+    },
+    {
+      "title": "Convention on Biological Diversity (CBD)",
+      "type": "Treaty",
+      "year": 1992,
+      "actors": [],
+      "supporting_text": "by 1992 international momentum led to the adoption of the CBD.",
+      "source_chunk": 27,
+      "id": "9b9f49a6-0d56-43a4-9827-45bf032e0fe4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adoption at Rio created a global treaty linking biodiversity to policy action.",
+        "supporting_text": "Biodiversity together with climate change secured global attention at the 1992 Rio Earth Summit through the CBD ..."
+      }
+    },
+    {
+      "title": "United Nations Framework Convention on Climate Change (UNFCCC)",
+      "type": "Treaty",
+      "year": 1992,
+      "actors": [],
+      "supporting_text": "Biodiversity together with climate change secured global attention at the 1992 Rio Earth Summit through the CBD and the UNFCCC",
+      "source_chunk": 27,
+      "id": "3c95b8d7-4bd7-42c0-b289-a1122c998e0b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adoption at Rio established a worldwide framework for climate governance.",
+        "supporting_text": "Biodiversity together with climate change secured global attention at the 1992 Rio Earth Summit through the ... UNFCCC."
+      }
+    },
+    {
+      "title": "Global Atmospheric Research Programme (GARP)",
+      "type": "Programme",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Starting in the late 1960s, the UN system endorsed and supported global collaboration and research programmes such as the Global Atmospheric Research Programme (GARP) and the Global Environment Monitoring System (GEMS).",
+      "source_chunk": 27,
+      "id": "52853aa3-5a00-49cb-af8d-a2e9a033f10b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UN endorsement created a coordinated research programme for atmospheric science.",
+        "supporting_text": "the UN system endorsed and supported ... Global Atmospheric Research Programme (GARP)."
+      }
+    },
+    {
+      "title": "Global Environment Monitoring System (GEMS)",
+      "type": "Programme",
+      "year": null,
+      "actors": [],
+      "supporting_text": "Starting in the late 1960s, the UN system endorsed and supported global collaboration and research programmes such as the Global Atmospheric Research Programme (GARP) and the Global Environment Monitoring System (GEMS).",
+      "source_chunk": 27,
+      "id": "a54ee0a1-5e84-42ac-a5ce-fd1bd9ce7a7b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UN support enabled a global system for environmental monitoring.",
+        "supporting_text": "the UN system endorsed and supported ... Global Environment Monitoring System (GEMS)."
+      }
+    },
+    {
+      "title": "World Climate Research Programme",
+      "type": "Programme",
+      "year": 1980,
+      "actors": [],
+      "supporting_text": "The first World Climate Research Programme was established in 1980.",
+      "source_chunk": 27,
+      "id": "070d4dfe-cd23-4719-80c8-bbec90913ad2",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Establishment provided an organized platform for climate research collaboration.",
+        "supporting_text": "The first World Climate Research Programme was established in 1980."
+      }
+    },
+    {
+      "title": "Air and Rain",
+      "type": "Book",
+      "year": 1872,
+      "actors": [
+        "Robert Angus Smith"
+      ],
+      "supporting_text": "Robert Angus Smith (1817-84), Britain's first official air‑pollution inspector, monitored the concentration of sulphuric acid in rain near to industrial Manchester and described its effects in his book Air and Rain (1872):",
+      "source_chunk": 28,
+      "id": "73656721-f654-4398-81cb-fefe0ee58845",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Smith’s early description highlighted severe ecological damage from acid rain.",
+        "supporting_text": "‘there is no hope for vegetation … galvanized iron is valueless … stone and bricks of buildings crumble’"
+      }
+    },
+    {
+      "title": "Beaver Committee Report",
+      "type": "Report",
+      "year": 1954,
+      "actors": [
+        "Beaver Committee",
+        "UK government"
+      ],
+      "supporting_text": "The resulting Beaver Committee Report (1954) concluded that levels of air pollution could no longer be tolerated but also observed that 'sulphur dioxide is one of the most harmful of all polluting agents'.",
+      "source_chunk": 28,
+      "id": "c10d02e2-8bc3-4fca-b4e9-a9fa02bdbf9e",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The report publicly declared that existing air‑pollution levels were intolerable.",
+        "supporting_text": "Beaver Committee Report (1954) concluded that levels of air pollution could no longer be tolerated"
+      }
+    },
+    {
+      "title": "Clean Air Act",
+      "type": "Law",
+      "year": 1956,
+      "actors": [
+        "UK government"
+      ],
+      "supporting_text": "The UK government responded by passing the 1956 Clean Air Act, which established smokeless zones and encouraged the burning of smokeless fuels.",
+      "source_chunk": 28,
+      "id": "ed2778a6-f084-4499-a773-38553b867a37"
+    },
+    {
+      "title": "Air Quality Accord (Canada–USA)",
+      "type": "Other",
+      "year": 1991,
+      "actors": [
+        "Canada",
+        "USA"
+      ],
+      "supporting_text": "An air quality accord between Canada and the USA was signed in 1991 after a change in administration from President Ronald Reagan (1981-89) to President George H. Bush (b. 1924).",
+      "source_chunk": 28,
+      "id": "30c8a31e-bc2a-4ac2-a8a6-f6beebed7c9a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The accord represents a formal policy instrument for joint emission reduction.",
+        "supporting_text": "air quality accord between Canada and the USA was signed in 1991"
+      }
+    },
+    {
+      "title": "EU moratorium on the commercial growing of GM crops",
+      "type": "Policy",
+      "year": null,
+      "actors": [
+        "European Union"
+      ],
+      "supporting_text": "The EU placed a moratorium on the commercial growing of GM crops on this basis. ... The European moratorium on approving the commercial growing of GM crops came to an end in 2010",
+      "source_chunk": 29,
+      "id": "98d3821e-742e-4914-b906-1636fd8dd676",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Sets a high‑profile regulatory stance that shapes public discourse on GM safety.",
+        "supporting_text": "EU placed a moratorium on the commercial growing of GM crops."
+      }
+    },
+    {
+      "title": "IPCC reports",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "IPCC"
+      ],
+      "supporting_text": "When the IPCC was created, its purpose was to make climate science relevant, understandable and clear. The process of developing IPCC reports was carefully designed to create ownership by the scientific community and by world governments...",
+      "source_chunk": 31,
+      "id": "0a30d7da-b0b5-4a33-81a8-7a297602aaa4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Designed to make climate science clear and to create ownership, they provide a basis for systemic policy change.",
+        "supporting_text": "When the IPCC was created, its purpose was to make climate science relevant, understandable and clear."
+      }
+    },
+    {
+      "title": "Second report on the science of climate change",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "IPCC"
+      ],
+      "supporting_text": "In 1995 the Wall Street Journal picked up and published claims that editorial changes to the second report on the science of climate change were in violation of IPCC rules of procedure and would 'deceive policy makers and the public into believing that the scientific evidence shows human activities are causing global warming'.",
+      "source_chunk": 31,
+      "id": "bad38508-5789-4f5e-8ca9-26d45b26ca15",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Serves as the scientific foundation that media and challengers reference, indicating its systemic relevance.",
+        "supporting_text": "Wall Street Journal ... claims ... about the second report on the science of climate change."
+      }
+    },
+    {
+      "title": "Fourth IPCC report",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "IPCC"
+      ],
+      "supporting_text": "This move came shortly before the fourth IPCC report concluded that there was a 90 per cent chance that anthropocentric greenhouse gas emissions caused most of the observed increase in global temperatures since the mid‑twentieth century...",
+      "source_chunk": 31,
+      "id": "d7848e03-ee1c-46b0-a8dc-40bd6466f6a5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides strong evidence linking anthropogenic emissions to warming, a catalyst for policy shifts.",
+        "supporting_text": "the fourth IPCC report concluded that there was a 90 per cent chance that anthropocentric greenhouse gas emissions caused most of the observed increase."
+      }
+    },
+    {
+      "title": "Muir Russell emails review",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "Muir Russell"
+      ],
+      "supporting_text": "The Muir Russell emails review found 'their rigour and honesty as scientists are not in doubt' and that it 'did not find any evidence of behaviour that might undermine the conclusions of the IPCC assessments'.",
+      "source_chunk": 31,
+      "id": "b9532702-af8a-417b-8f5a-a0b7a3b831f9",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlighted a pattern of insufficient openness, exposing a weakness in scientific transparency.",
+        "supporting_text": "it also concluded that they had displayed a ‘consistent pattern of failing to display the proper degree of openness’."
+      }
+    },
+    {
+      "title": "Daily Telegraph",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "Daily Telegraph"
+      ],
+      "supporting_text": "the Daily Telegraph, the most widely circulated broadsheet in the UK, summarised the atmosphere of hostility, claiming nobody was listening to scientists any more and describing them as 'white‑coated prima donnas and narcissists [...] pointy heads in lab coats [who] have reassumed the role of mad cranks'.",
+      "source_chunk": 31,
+      "id": "6aa83139-4dc0-4e75-a705-b2f26858d809",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Framed scientists as hostile, shaping public perception and discourse in the UK.",
+        "supporting_text": "the Daily Telegraph ... summarised the atmosphere of hostility, claiming nobody was listening to scientists any more."
+      }
+    },
+    {
+      "title": "The Wealth of Nations",
+      "type": "Book",
+      "year": null,
+      "actors": [
+        "Adam Smith"
+      ],
+      "supporting_text": "In The Wealth of Nations Adam Smith (1723-90) described rent from the use of land, the wages of labour and profits of stock as 'the three original sources of all revenue as well as of all exchangeable value.'",
+      "source_chunk": 33,
+      "id": "455a3885-8349-490d-8637-00394dda6689",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Smith’s description of land rent as a stable source of public revenue foregrounds the economic importance of natural resources.",
+        "supporting_text": "He described rent derived from the use of land as… ‘the principal source of the public revenue of many a great nation’."
+      }
+    },
+    {
+      "title": "An Essay on the Principle of Population, as it Affects the Future Improvement of Society",
+      "type": "Book",
+      "year": 1798,
+      "actors": [
+        "Thomas Malthus"
+      ],
+      "supporting_text": "as it Affects the Future Improvement of Society (1798), Malthus explained that population growth, driven initially by surplus food production, would eventually be constrained by limits to productive land and a resultant shortage of food.",
+      "source_chunk": 33,
+      "id": "c23bca1a-4b4a-4780-b4c2-cc09a11c67ae",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The essay stresses that population growth will be limited by land productivity, exposing a demographic‑environmental constraint.",
+        "supporting_text": "Population growth… would eventually be constrained by limits to productive land and a resultant shortage of food."
+      }
+    },
+    {
+      "title": "The Coal Question: An Inquiry Concerning the Progress of the Nation, and the Probable Exhaustion of our Coal-mines",
+      "type": "Book",
+      "year": 1865,
+      "actors": [
+        "William Stanley Jevons"
+      ],
+      "supporting_text": "In 1865, William Stanley Jevons (1835-82) published The Coal Question: An Inquiry Concerning the Progress of the Nation, and the Probable Exhaustion of our Coal-mines, in which he argued that improvements in fuel efficiency tended to increase, rather than decrease, fuel use.",
+      "source_chunk": 33,
+      "id": "4343a232-fd9f-44a4-95ac-42553bdf3b0c",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The work reveals the counter‑intuitive rebound effect of efficiency gains on fuel consumption.",
+        "supporting_text": "It is a confusion of ideas to suppose that the economical use of fuel is equivalent to diminished consumption."
+      }
+    },
+    {
+      "title": "Principles of Political Economy with some of their Applications to Social Philosophy",
+      "type": "Book",
+      "year": 1862,
+      "actors": [
+        "John Stuart Mill"
+      ],
+      "supporting_text": "In 1862, he published the Principles of Political Economy with some of their Applications to Social Philosophy, in which he championed the 'stationary state economy' and warned against the drive for unlimited economic growth.",
+      "source_chunk": 33,
+      "id": "8554dc35-141c-4139-95dc-c20cf21ed518",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Mill’s text articulates a stationary‑state vision, suggesting a transformative alternative to growth‑centric economies.",
+        "supporting_text": "He championed the ‘stationary state economy’ and warned against the drive for unlimited economic growth."
+      }
+    },
+    {
+      "title": "The Affluent Society",
+      "type": "Book",
+      "year": 1958,
+      "actors": [
+        "John Kenneth Galbraith"
+      ],
+      "supporting_text": "In The Affluent Society (1958), the American economist John Kenneth Galbraith (1908-2006), reflecting on the continued focus on production as a measure of progress, observed:",
+      "source_chunk": 34,
+      "id": "8932d693-5ecd-46ae-b633-56d526e86a2a"
+    },
+    {
+      "title": "Resources for Freedom: Foundations for Growth and Security",
+      "type": "Report",
+      "year": 1952,
+      "actors": [
+        "Paley Commission",
+        "William Paley",
+        "Harry S. Truman"
+      ],
+      "supporting_text": "the following year the Paley Commission, chaired by William Paley (1901-90), produced a five-volume report: Resources for Freedom: Foundations for Growth and Security.",
+      "source_chunk": 34,
+      "id": "da257912-3203-4939-a6f1-87000ad778ea",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The report’s call for measured resource planning points to alternative, sustainable development pathways.",
+        "supporting_text": "The study revealed... unprecedented increase in natural resource usage... argued for a measured approach to resource planning."
+      }
+    },
+    {
+      "title": "Our Plundered Planet",
+      "type": "Book",
+      "year": 1948,
+      "actors": [
+        "Henry Fairfield Osborn Jr."
+      ],
+      "supporting_text": "These included Henry Fairfield Osborn Jr's (1887-1969) Our Plundered Planet and William Vogt's (1902-68) Road to Survival, both published in 1948.",
+      "source_chunk": 34,
+      "id": "04067157-ba95-478c-9a30-7ec856d6d7a3",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Malthusian text highlights ongoing exploitation of natural resources, exposing unsustainable conditions.",
+        "supporting_text": "Henry Fairfield Osborn Jr’s... Our Plundered Planet... published in 1948."
+      }
+    },
+    {
+      "title": "Road to Survival",
+      "type": "Book",
+      "year": 1948,
+      "actors": [
+        "William Vogt"
+      ],
+      "supporting_text": "These included Henry Fairfield Osborn Jr's (1887-1969) Our Plundered Planet and William Vogt's (1902-68) Road to Survival, both published in 1948.",
+      "source_chunk": 34,
+      "id": "ea67c68e-1b59-4c42-9774-d86a3ed46685",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Emphasizes overpopulation and resource strain, exposing a critical environmental threat.",
+        "supporting_text": "William Vogt’s... Road to Survival, both published in 1948."
+      }
+    },
+    {
+      "title": "The Population Bomb",
+      "type": "Book",
+      "year": 1968,
+      "actors": [
+        "Paul R. Ehrlich"
+      ],
+      "supporting_text": "Ehrlich published The Population Bomb in 1968, and directly linked population growth to the Earth's capacity to sustain humankind.",
+      "source_chunk": 34,
+      "id": "1ffc60e6-b0c6-4c4d-a2dd-23a4e1c7c3f9",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Links rapid population growth to ecological limits, exposing a key driver of environmental stress.",
+        "supporting_text": "Ehrlich published The Population Bomb in 1968, and directly linked population growth to the Earth’s capacity to sustain humankind."
+      }
+    },
+    {
+      "title": "Marshall Plan",
+      "type": "Policy",
+      "year": 1947,
+      "actors": [
+        "United States"
+      ],
+      "supporting_text": "In the US European Recovery Program, also known as the Marshall Plan, ran from 1947 to 1951 and provided aid to repair the devastation of major war areas and begin economic reconstruction.",
+      "source_chunk": 34,
+      "id": "9f2fa015-b11d-4b07-86ed-179a89e63eff"
+    },
+    {
+      "title": "The Economics of the Coming Spaceship Earth",
+      "type": "Other",
+      "year": 1966,
+      "actors": [
+        "Kenneth E. Boulding"
+      ],
+      "supporting_text": "In his 1966 essay 'The Economics of the Coming Spaceship Earth', Kenneth E. Boulding (1910-93) challenged neoclassical economic ideas of an 'open' economic system without finite resources and a limited assimilative capacity to absorb waste.",
+      "source_chunk": 34,
+      "id": "2f3f2a4b-957a-4672-b995-ee64643cd084",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Proposes a closed‑economy model, suggesting a systemic shift away from limitless growth.",
+        "supporting_text": "Kenneth E. Boulding... challenged neoclassical economic ideas of an ‘open’ economic system... called the open economy a ‘cowboy’ economy."
+      }
+    },
+    {
+      "title": "The Closing Circle",
+      "type": "Book",
+      "year": 1971,
+      "actors": [
+        "Barry Commoner"
+      ],
+      "supporting_text": "In a critique of Commoner's book The Closing Circle (1971), Ehrlich and his colleague John P. Holdren (b. 1944) accused Commoner of placing too great an emphasis on 'faulty technology'...",
+      "source_chunk": 35,
+      "id": "fa033062-2884-4b01-9929-21a26c95b7e5",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Commoner’s book was critiqued for over‑emphasising faulty technology, revealing a narrow framing of environmental problems.",
+        "supporting_text": "accused Commoner of placing too great an emphasis on ‘faulty technology’"
+      }
+    },
+    {
+      "title": "The Limits to Growth",
+      "type": "Report",
+      "year": 1972,
+      "actors": [
+        "Club of Rome",
+        "Aurelio Peccei",
+        "Alexander King"
+      ],
+      "supporting_text": "The Club's first report, The Limits to Growth (1972), was underpinned by the work of a group of systems scientists at the Massachusetts Institute of Technology (MIT)...",
+      "source_chunk": 35,
+      "id": "4fa18d94-8528-4966-9c02-3bd03b4daf55",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The work presented a systems‑based scenario that linked population, production, and resource use, showing possible non‑linear outcomes.",
+        "supporting_text": "highlighted the potential for economic models to trace the interconnections and feedback between various sectors and trends"
+      }
+    },
+    {
+      "title": "The Ultimate Resource",
+      "type": "Book",
+      "year": 1981,
+      "actors": [
+        "Julian Simon"
+      ],
+      "supporting_text": "His arguments were summarised in The Ultimate Resource (1981).",
+      "source_chunk": 35,
+      "id": "caaca3cd-f2ba-4a5f-a686-9b48ab09dd15",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "The book argued against physical resource limits, counteracting the Limits‑to‑Growth narrative.",
+        "supporting_text": "challenge the idea that there are physical limits to resources that must ultimately constrain economic growth"
+      }
+    },
+    {
+      "title": "The Entropy Law and the Economic Process",
+      "type": "Book",
+      "year": 1971,
+      "actors": [
+        "Nicholas Georgescu‑Roegen"
+      ],
+      "supporting_text": "In The Entropy Law and the Economic Process (1971), Georgescu‑Roegen explained that whenever energy is used, the amount of usable energy available to society declines.",
+      "source_chunk": 36,
+      "id": "7a84da40-c214-4a2f-9bdd-56f5a58a3329",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Articulates the entropy principle applied to economics, exposing a systemic limit to growth.",
+        "supporting_text": "In The Entropy Law and the Economic Process (1971), Georgescu‑Roegen explained that whenever energy is used, the amount of usable energy available to society declines."
+      }
+    },
+    {
+      "title": "Small is Beautiful: A Study of Economics as if People Mattered",
+      "type": "Book",
+      "year": 1973,
+      "actors": [
+        "Ernst F. Schumacher"
+      ],
+      "supporting_text": "… championed the use of appropriate technology in Small is Beautiful: A Study of Economics as if People Mattered (1973).",
+      "source_chunk": 36,
+      "id": "004fd39b-8095-40d6-a8bb-d971bff85708",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Advocates a human‑centred, resource‑conserving economic vision that challenges conventional growth models.",
+        "supporting_text": "Ernst F. Schumacher … championed the use of appropriate technology in Small is Beautiful: A Study of Economics as if People Mattered (1973)."
+      }
+    },
+    {
+      "title": "Index of Sustainable Economic Welfare",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "Herman E. Daly",
+        "John B. Cobb"
+      ],
+      "supporting_text": "Following this, Daly and John B. Cobb (b. 1925) constructed an index of sustainable economic welfare intended to replace GNP as a measure of economic wellbeing.",
+      "source_chunk": 36,
+      "id": "0c49d1ca-005d-47ef-9195-afbe9c4d321b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides an alternative metric to GNP, supporting policy shifts toward wellbeing‑based assessment.",
+        "supporting_text": "Daly and John B. Cobb constructed an index of sustainable economic welfare intended to replace GNP as a measure of economic wellbeing."
+      }
+    },
+    {
+      "title": "Man's Impact on the Global Environment: Assessment and Recommendations for Action",
+      "type": "Report",
+      "year": 1970,
+      "actors": [
+        "Massachusetts Institute of Technology (MIT)"
+      ],
+      "supporting_text": "An 1970 MIT report of the Study of Critical Environmental Problems, entitled Man's Impact on the Global Environment: Assessment and Recommendations for Action, described nine 'environmental services' that would decline if the functioning of ecosystems were damaged.",
+      "source_chunk": 37,
+      "id": "340c96a9-0550-4cf7-9425-ec6a94a38c91",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Communicated the ecosystem‑services idea in a structured, policy‑oriented document.",
+        "supporting_text": "An 1970 MIT report… described nine ‘environmental services’ that would decline if the functioning of ecosystems were damaged."
+      }
+    },
+    {
+      "title": "Millennium Ecosystem Assessment",
+      "type": "Assessment",
+      "year": "2001-2005",
+      "actors": [],
+      "supporting_text": "The idea was developed further, applied to biodiversity assessments, and then used as a central organising concept for the Millennium Ecosystem Assessment, undertaken between 2001 and 2005.",
+      "source_chunk": 37,
+      "id": "192e8087-4ec8-44e8-981a-ee344ca2a9d8",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Synthesised ecosystem‑services knowledge for global decision‑makers.",
+        "supporting_text": "The Millennium Ecosystem Assessment examined the consequences of ecosystem change on human wellbeing…"
+      }
+    },
+    {
+      "title": "Stern Review",
+      "type": "Report",
+      "year": 2006,
+      "actors": [
+        "Sir Nicholas Stern"
+      ],
+      "supporting_text": "The 2006 Stern Review is the most highprofile example of economic theory presenting the case for environmental action.",
+      "source_chunk": 38,
+      "id": "4b463904-aabd-4453-855d-90eb7d586a9e",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The expression embodies the high‑profile economic argument that elevated climate action in public discourse.",
+        "supporting_text": "The 2006 Stern Review is the most highprofile example of economic theory presenting the case for environmental action."
+      }
+    },
+    {
+      "title": "Kyoto Protocol",
+      "type": "Treaty",
+      "year": null,
+      "actors": [],
+      "supporting_text": "the Kyoto Protocol allows for the purchase of emissions-reduction credits through the Clean Development Mechanism.",
+      "source_chunk": 38,
+      "id": "e2cb23eb-de00-4948-b5d8-2046680de5e7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The protocol creates an international mechanism for emissions‑reduction credits, enabling coordinated climate action.",
+        "supporting_text": "the Kyoto Protocol allows for the purchase of emissions-reduction credits through the Clean Development Mechanism."
+      }
+    },
+    {
+      "title": "Clean Development Mechanism",
+      "type": "Programme",
+      "year": null,
+      "actors": [],
+      "supporting_text": "the Kyoto Protocol allows for the purchase of emissions-reduction credits through the Clean Development Mechanism.",
+      "source_chunk": 38,
+      "id": "f47cab6b-6dfd-4be7-8d00-ce095e8805c4",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CDM provides a market‑based tool for developing‑country emission reductions, supporting collective mitigation efforts.",
+        "supporting_text": "the Kyoto Protocol allows for the purchase of emissions-reduction credits through the Clean Development Mechanism."
+      }
+    },
+    {
+      "title": "EU emissions trading scheme",
+      "type": "Policy",
+      "year": null,
+      "actors": [
+        "European Union"
+      ],
+      "supporting_text": "The EU has established an emissions trading scheme",
+      "source_chunk": 38,
+      "id": "df2e6b33-60d1-4412-a47e-e7c9fc5b9cc0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The EU ETS establishes a carbon price, mobilising collective action to reduce emissions.",
+        "supporting_text": "The EU has established an emissions trading scheme, and the Kyoto Protocol..."
+      }
+    },
+    {
+      "title": "UNEP report",
+      "type": "Report",
+      "year": 2010,
+      "actors": [
+        "UNEP"
+      ],
+      "supporting_text": "In 2010, a UNEP report estimated that 3000 listed companies were responsible for US$2.15 trillion worth of environmental damage in 2008",
+      "source_chunk": 38,
+      "id": "826652f3-7356-4760-9a46-eec1b1da6a4c",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The report documents extensive corporate environmental damage, highlighting current harmful practices.",
+        "supporting_text": "In 2010, a UNEP report estimated that 3000 listed companies were responsible for US$2.15 trillion worth of environmental damage..."
+      }
+    },
+    {
+      "title": "Global Green New Deal",
+      "type": "Programme",
+      "year": 2008,
+      "actors": [
+        "UNEP"
+      ],
+      "supporting_text": "Following in his footsteps, UNEP instigated the Global Green New Deal (GGND) initiative in December 2008.",
+      "source_chunk": 39,
+      "id": "91cc6112-6c58-43b1-9907-7cf16668623e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The GGND is presented as an economic stimulus that links recovery with environmental objectives, indicating a systemic shift.",
+        "supporting_text": "UNEP instigated the Global Green New Deal (GGND) initiative in December 2008… aimed at reviving the global economy… reducing carbon dependency and environmental degradation."
+      }
+    },
+    {
+      "title": "G20 communiqué",
+      "type": "Declaration",
+      "year": 2009,
+      "actors": [
+        "G20"
+      ],
+      "supporting_text": "A G20 communiqué from the meeting stated 'We will make the transition towards clean, innovative, resource efficient, low carbon technologies and infrastructure [...] We will identify and work together on further measures to build sustainable economies.'",
+      "source_chunk": 39,
+      "id": "11cd2f7c-aefa-4357-8067-4d3e16d0877b",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The communiqué publicly commits G20 members to clean‑technology transitions, raising political relevance of green policies.",
+        "supporting_text": "A G20 communiqué from the meeting stated ‘We will make the transition towards clean, innovative, resource efficient, low carbon technologies…’"
+      }
+    },
+    {
+      "title": "New Deal",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "Franklin D. Roosevelt"
+      ],
+      "supporting_text": "US President Franklin D. Roosevelt's (1882-1945) response to the 1929 Great Depression was a series of economic programmes called the New Deal, which focused on relief, recovery and reform.",
+      "source_chunk": 39,
+      "id": "687b8fda-3be6-4b55-aba5-2955cccd9692",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The historical New Deal is cited as a model for large‑scale, coordinated economic‑environmental recovery.",
+        "supporting_text": "US President Franklin D. Roosevelt’s response… was a series of economic programmes called the New Deal."
+      }
+    },
+    {
+      "title": "Green economy budget",
+      "type": "Policy",
+      "year": 2009,
+      "actors": [
+        "United Kingdom government"
+      ],
+      "supporting_text": "the UK devoted approximately 11 per cent of its US$3.9 billion fiscal stimulus to green investments as well as launching a 'Green economy' budget in April 2009, which included a range of low-carbon investments aimed at creating 400,000 new jobs over an eight-year period.",
+      "source_chunk": 40,
+      "id": "61d2e42d-93bc-4006-9b88-4dc6b241cf64"
+    },
+    {
+      "title": "American Recovery and Reinvestment Act",
+      "type": "Law",
+      "year": 2009,
+      "actors": [
+        "United States government"
+      ],
+      "supporting_text": "In February 2009, the USA adopted a US$78.5 billion American Recovery and Reinvestment Act, which included measures to retrofit buildings and expand mass transit, freight rail and renewable energy as well as construct a 'smart' electrical grid transmission system.",
+      "source_chunk": 40,
+      "id": "92323bd5-d0d4-47b7-b4b9-84bb813c6eef"
+    },
+    {
+      "title": "Towards a Green Economy: Pathways to Sustainable Development and Poverty Eradication",
+      "type": "Report",
+      "year": 2011,
+      "actors": [
+        "UNEP"
+      ],
+      "supporting_text": "In February 2011, UNEP published Towards a Green Economy: Pathways to Sustainable Development and Poverty Eradication, which further advocated green investment on a global scale.",
+      "source_chunk": 40,
+      "id": "1221bb72-9a5f-424a-92e1-3ddb2514d0e2"
+    },
+    {
+      "title": "Prosperity Without Growth",
+      "type": "Book",
+      "year": 2009,
+      "actors": [
+        "Tim Jackson"
+      ],
+      "supporting_text": "In Prosperity Without Growth (2009), Tim Jackson argues that a different kind of economy is essential for a different kind of prosperity...",
+      "source_chunk": 41,
+      "id": "452a33e0-669f-4f35-a9f7-8b9a941f44ea",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The expression encapsulates a vision for an economy within ecological limits.",
+        "supporting_text": "In Prosperity Without Growth (2009), Tim Jackson argues that a different kind of economy is essential..."
+      }
+    },
+    {
+      "title": "Marshall Plan",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "United States"
+      ],
+      "supporting_text": "the US Marshall Plan introduced American economic models to reduce trade barriers and rebuild and create a strong economic foundation.",
+      "source_chunk": 41,
+      "id": "302c3f49-178c-479a-bbef-6627c4b1701d",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights a post‑war growth model that spurred expansive consumption.",
+        "supporting_text": "the US Marshall Plan introduced American economic models to reduce trade barriers and rebuild and create a strong economic foundation."
+      }
+    },
+    {
+      "title": "Unsafe at Any Speed",
+      "type": "Book",
+      "year": 1965,
+      "actors": [
+        "Ralph Nader"
+      ],
+      "supporting_text": "In 1965, Ralph Nader (b. 1934) published Unsafe at Any Speed, which examined the reluctance of the car industry to improve both vehicle pollution and safety.",
+      "source_chunk": 42,
+      "id": "ce6d4bc6-2b94-4bd5-a4f6-be5109b6e103",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The book’s arguments directly prompted consumer‑advocacy movements.",
+        "supporting_text": "Nader’s book directly challenged large corporations and prompted a new type of consumer advocacy"
+      }
+    },
+    {
+      "title": "Clean Air Act",
+      "type": "Law",
+      "year": null,
+      "actors": [
+        "United States government"
+      ],
+      "supporting_text": "Within years, both the US Clean Air Act and the National Traffic and Motor Vehicle Safety Act were established.",
+      "source_chunk": 42,
+      "id": "60fa421c-b185-4a51-b06c-b9d2a44412bd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Legislative response that could shift pollution control practices.",
+        "supporting_text": "Within years, both the US Clean Air Act ... were established"
+      }
+    },
+    {
+      "title": "National Traffic and Motor Vehicle Safety Act",
+      "type": "Law",
+      "year": null,
+      "actors": [
+        "United States government"
+      ],
+      "supporting_text": "Within years, both the US Clean Air Act and the National Traffic and Motor Vehicle Safety Act were established.",
+      "source_chunk": 42,
+      "id": "99db7c0a-1b6e-47df-9efe-f9eca1329e2a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced safety standards that could change vehicle design and use.",
+        "supporting_text": "Within years, both the ... National Traffic and Motor Vehicle Safety Act were established"
+      }
+    },
+    {
+      "title": "The Affluent Society",
+      "type": "Book",
+      "year": 1956,
+      "actors": [
+        "J. K. Galbraith"
+      ],
+      "supporting_text": "The economist J. K. Galbraith (1908-2006) eloquently identified the imbalance between the new-found private wealth and its environmental effects in his book The Affluent Society (1956).",
+      "source_chunk": 42,
+      "id": "e575d903-3f27-4b16-bcd1-813ab2946623",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Highlights the link between affluence and environmental degradation, suggesting systemic reform.",
+        "supporting_text": "The economist J. K. Galbraith ... identified the imbalance ... in his book The Affluent Society (1956)"
+      }
+    },
+    {
+      "title": "Earthrise",
+      "type": "Other",
+      "year": 1968,
+      "actors": [
+        "Apollo 8 crew"
+      ],
+      "supporting_text": "The first image of Earth rising in the vast darkness of space over a lunar landscape became an iconic picture. Initially in black and white, and then in colour, the image became known as 'Earthrise'.",
+      "source_chunk": 43,
+      "id": "3834f547-a753-4666-aab4-165889072977",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The image reframed humanity’s view of Earth as a fragile, interconnected whole.",
+        "supporting_text": "The first image of Earth rising... became an iconic picture... fed a growing environmental belief"
+      }
+    },
+    {
+      "title": "Earth Day: A Question of Survival",
+      "type": "Report",
+      "year": 1970,
+      "actors": [
+        "CBS News"
+      ],
+      "supporting_text": "Media coverage included a primetime CBS News Special Report called Earth Day: A Question of Survival.",
+      "source_chunk": 43,
+      "id": "480cc5a9-e060-4482-9113-96cca0c664a8",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "CBS News special amplified the Earth Day message to a national audience.",
+        "supporting_text": "Media coverage included a primetime CBS News Special Report called Earth Day: A Question of Survival"
+      }
+    },
+    {
+      "title": "Crying Indian",
+      "type": "Advertisement",
+      "year": 1971,
+      "actors": [
+        "Keep America Beautiful"
+      ],
+      "supporting_text": "In 1971, Keep America Beautiful (KAB) launched the 'Crying Indian' public announcement campaign, which was to become an iconic symbol of personal environmental responsibility.",
+      "source_chunk": 43,
+      "id": "2f92a25a-5a30-4351-8046-3b9a6b4912b6",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Served as a memorable visual cue for individual environmental responsibility.",
+        "supporting_text": "‘Crying Indian’ public announcement campaign, which was to become an iconic symbol of personal environmental responsibility"
+      }
+    },
+    {
+      "title": "Oregon Bottle Bill",
+      "type": "Law",
+      "year": 1971,
+      "actors": [
+        "State of Oregon"
+      ],
+      "supporting_text": "in 1971 the State of Oregon's landmark Bottle Bill became law",
+      "source_chunk": 44,
+      "id": "d37ee020-95b6-4b21-90c9-ce319b908b3c",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text mentions the expression but does not discuss its distinct impact beyond the event itself.",
+        "supporting_text": "Oregon Bottle Bill"
+      }
+    },
+    {
+      "title": "Clean Community System",
+      "type": "Programme",
+      "year": 1975,
+      "actors": [
+        "KAB"
+      ],
+      "supporting_text": "a year later launched the Clean Community System as an alternative that placed an emphasis on street cleaning and other litter-control activities",
+      "source_chunk": 44,
+      "id": "e9cb286c-6c3d-47bd-b238-788bc8caec15",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Only the system’s launch is described; the expression alone is not evaluated for significance.",
+        "supporting_text": "Clean Community System"
+      }
+    },
+    {
+      "title": "\"Save it\" campaign",
+      "type": "Programme",
+      "year": 1973,
+      "actors": [
+        "UK government"
+      ],
+      "supporting_text": "led the government to introduce a national 'Save it' campaign to promote energy conservation",
+      "source_chunk": 44,
+      "id": "7d2d6657-3d1e-4b19-b557-cdb9366d8112",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Government campaign promoted energy‑conservation, shaping public discourse on saving energy.",
+        "supporting_text": "government to introduce a national ‘Save it’ campaign to promote energy conservation"
+      }
+    },
+    {
+      "title": "\"Are you doing your bit?\" campaign",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "UK government"
+      ],
+      "supporting_text": "Other notable public information campaigns included the UK government's 'Are you doing your bit?' campaign in the late 1990s",
+      "source_chunk": 44,
+      "id": "f8156f18-df53-4fac-8ed6-d94002d401fc",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Public campaign aimed at increasing personal environmental responsibility, influencing social norms.",
+        "supporting_text": "UK government’s ‘Are you doing your bit?’ campaign"
+      }
+    },
+    {
+      "title": "\"Act on CO2\" campaign",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "UK government"
+      ],
+      "supporting_text": "more recently in the 2000s the 'Act on CO2' campaign",
+      "source_chunk": 44,
+      "id": "f7cffba5-1ca9-4417-b5c0-ab314c9e0a21",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Recent campaign further raises awareness of carbon emissions, affecting public salience.",
+        "supporting_text": "more recently in the 2000s the ‘Act on CO2’ campaign"
+      }
+    },
+    {
+      "title": "Montreal Protocol",
+      "type": "Treaty",
+      "year": null,
+      "actors": [],
+      "supporting_text": "spurred an international effort to sign the Montreal Protocol to curb the production of CFCs",
+      "source_chunk": 45,
+      "id": "0b67ef41-2d25-439a-ac76-dfb32b906d19",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The Protocol represented a global treaty that successfully curbed CFC production, showing international governance can drive environmental change.",
+        "supporting_text": "The discovery… spurred an international effort to sign the Montreal Protocol to curb the production of CFCs."
+      }
+    },
+    {
+      "title": "The Aerosol Connection",
+      "type": "Other",
+      "year": 1986,
+      "actors": [
+        "Friends of the Earth UK"
+      ],
+      "supporting_text": "In 1986, the UK FoE published a pamphlet, The Aerosol Connection, detailing a list of aerosols that were CFC‑free.",
+      "source_chunk": 45,
+      "id": "f37c872a-335d-4ad5-950f-cf7f172b1815",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The pamphlet served as an informational tool that mobilised consumer scrutiny of aerosol products.",
+        "supporting_text": "The UK FoE published a pamphlet, The Aerosol Connection… encouraging consumers to find out which aerosols they should be buying."
+      }
+    },
+    {
+      "title": "The Green Consumer Guide",
+      "type": "Book",
+      "year": 1988,
+      "actors": [
+        "John Elkington",
+        "Julia Hailes"
+      ],
+      "supporting_text": "In 1988, John Elkington (b. 1949) and Julia Hailes (b. 1961) published The Green Consumer Guide, which reflected the growing interest in green consumerism...",
+      "source_chunk": 45,
+      "id": "65bd101e-4f55-4fb5-b0ec-0ce846226d3a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The guide educated shoppers on environmentally friendly purchases, empowering them to influence market offerings.",
+        "supporting_text": "The Green Consumer Guide… encouraged individuals who wanted to use their purchasing power to buy the greenest products."
+      }
+    },
+    {
+      "title": "Save the whale",
+      "type": "Programme",
+      "year": 1986,
+      "actors": [
+        "The Body Shop",
+        "Greenpeace"
+      ],
+      "supporting_text": "In 1986 it created its own window campaign, 'Save the whale', in collaboration with Greenpeace.",
+      "source_chunk": 45,
+      "id": "c418c186-7455-4375-a6c7-272754243e72",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The campaign raised public consciousness about marine protection, prompting consumer support for conservation.",
+        "supporting_text": "The Body Shop… created its own window campaign, ‘Save the whale’, in collaboration with Greenpeace."
+      }
+    },
+    {
+      "title": "EU Ecolabel",
+      "type": "Programme",
+      "year": 1992,
+      "actors": [
+        "European Union"
+      ],
+      "supporting_text": "The EU introduced a voluntary Ecolabel scheme in 1992. The Ecolabel was designed to make it easier for consumers to identify and choose green products...",
+      "source_chunk": 46,
+      "id": "01dba54f-ff81-4586-8e33-741a1f698d1d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The label provides a concrete tool for consumers and firms to act environmentally.",
+        "supporting_text": "The Ecolabel was designed to make it easier for consumers to identify and choose green products and to encourage businesses…"
+      }
+    },
+    {
+      "title": "Plan A",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "Marks & Spencer"
+      ],
+      "supporting_text": "Marks & Spencer launched a £200 million 'Plan A' programme to make the company carbon neutral by cutting energy consumption and stocking more products from recycled materials.",
+      "source_chunk": 46,
+      "id": "539bbe0f-322b-40b0-9b06-8fad6a2d175f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Marks & Spencer’s £200 million programme commits the company to carbon‑neutral actions.",
+        "supporting_text": "Marks & Spencer launched a £200 million ‘Plan A’ programme to make the company carbon neutral by cutting energy consumption…"
+      }
+    },
+    {
+      "title": "The Undersea World of Jacques Cousteau",
+      "type": "Programme",
+      "year": 1966,
+      "actors": [
+        "Jacques Cousteau"
+      ],
+      "supporting_text": "The 1966 US broadcast of The Undersea World of Jacques Cousteau brought life under the seas to public attention for the very first time.",
+      "source_chunk": 46,
+      "id": "addce1f2-f04a-4872-ae0a-7cf56544c915",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Title of the broadcast that captured public imagination about marine ecosystems.",
+        "supporting_text": "The 1966 US broadcast of The Undersea World of Jacques Cousteau brought life under the seas to public attention…"
+      }
+    },
+    {
+      "title": "Life on Earth",
+      "type": "Programme",
+      "year": 1979,
+      "actors": [
+        "David Attenborough"
+      ],
+      "supporting_text": "In 1979, Attenborough produced a highly acclaimed documentary, Life on Earth, which told the story of the evolution of life on the planet.",
+      "source_chunk": 46,
+      "id": "67dde48e-c9b0-4d62-b2f8-5f10fbf75c4d",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Documentary title that became a cultural reference for biodiversity awareness.",
+        "supporting_text": "Attenborough produced a highly acclaimed documentary, Life on Earth, which told the story of the evolution of life on the planet."
+      }
+    },
+    {
+      "title": "Live Aid",
+      "type": "Programme",
+      "year": 1985,
+      "actors": [
+        "International artists"
+      ],
+      "supporting_text": "It was not until the 1980s, with the success of the Live Aid concert on 13 July 1985 which galvanised a host of international artists to raise money to tackle the Ethiopian famine...",
+      "source_chunk": 46,
+      "id": "869920b6-c7da-4bbe-a619-ccaa0f4337bd",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Brand name of the concert that entered global popular consciousness.",
+        "supporting_text": "Live Aid concert … galvanised a host of international artists to raise money to tackle the Ethiopian famine."
+      }
+    },
+    {
+      "title": "Green Issue",
+      "type": "Other",
+      "year": 2006,
+      "actors": [
+        "Vanity Fair",
+        "Julia Roberts",
+        "George Clooney",
+        "Al Gore",
+        "Robert Kennedy Jr",
+        "Annie Leibovitz"
+      ],
+      "supporting_text": "In May 2006, US Vanity Fair, a magazine of popular culture, fashion and politics, reflected popular environmental awareness when it published its 'Green Issue'. The cover featured Hollywood movie stars Julia Roberts (b. 1967) and George Clooney (b. 1961), and politicians Al Gore (b. 1948) and Robert Kennedy Jr (b. 1954), ... The four celebrities were photographed by American portrait photographer Annie Leibovitz (b. 1949)...",
+      "source_chunk": 47,
+      "id": "592fddc8-96a3-4d4b-95cb-0406a103ef50",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Label that framed climate awareness as a cultural theme.",
+        "supporting_text": "The cover described global warming as a threat... called for ‘A New American Revolution’."
+      }
+    },
+    {
+      "title": "An Inconvenient Truth",
+      "type": "Other",
+      "year": 2006,
+      "actors": [
+        "Al Gore"
+      ],
+      "supporting_text": "In 2006, former US Democratic Party Vice President Al Gore's long-standing interest in environmental issues led him to produce the Oscar-winning documentary An Inconvenient Truth.",
+      "source_chunk": 47,
+      "id": "e9024646-7f6e-45a3-8c6c-61f88f9f92af",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Title of a high‑profile documentary that shaped public perception of climate urgency.",
+        "supporting_text": "produced the Oscar‑winning documentary An Inconvenient Truth."
+      }
+    },
+    {
+      "title": "The Day After Tomorrow",
+      "type": "Other",
+      "year": 2004,
+      "actors": [],
+      "supporting_text": "This followed the 2004 Hollywood science-fiction disaster film The Day After Tomorrow.",
+      "source_chunk": 47,
+      "id": "d7550ec3-2157-4207-9597-6d6fb66dcd22",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Film title that signalled climate catastrophe to mass audiences.",
+        "supporting_text": "depicted the potentially catastrophic effects of climate change."
+      }
+    },
+    {
+      "title": "The 11th Hour",
+      "type": "Other",
+      "year": 2007,
+      "actors": [
+        "Leonardo DiCaprio"
+      ],
+      "supporting_text": "In 2007, US actor Leonardo DiCaprio (b. 1974) produced and narrated the feature film documentary The 11th Hour on the state of the natural environment.",
+      "source_chunk": 47,
+      "id": "bc2fc922-245d-411a-a497-83b8fa62d931",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Documentary title that highlighted planetary environmental problems.",
+        "supporting_text": "documented problems facing the planet’s life systems, including climate change."
+      }
+    },
+    {
+      "title": "The Age of Stupid",
+      "type": "Other",
+      "year": 2009,
+      "actors": [
+        "Franny Armstrong",
+        "Pete Postlethwaite"
+      ],
+      "supporting_text": "In 2009 British environmental campaigner Franny Armstrong (b. 1972) produced the film The Age of Stupid, ... A drama-documentary-animation hybrid, The Age of Stupid stars British actor Pete Postlethwaite (1946-2011)...",
+      "source_chunk": 47,
+      "id": "2cdd9a01-d26b-4cb9-ba4f-a491e1268be2",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The film raises public awareness and questions inaction on climate change, shifting discourse.",
+        "supporting_text": "\"The Age of Stupid ... asking ‘Why didn’t we stop climate change when we had the chance?’\""
+      }
+    },
+    {
+      "title": "Live Earth",
+      "type": "Programme",
+      "year": 2007,
+      "actors": [
+        "Al Gore"
+      ],
+      "supporting_text": "Following on the success of An Inconvenient Truth, Gore set out to sell the importance of action on climate change on an epic scale through a global series of Live Earth concerts. The 2007 Live Earth concert called for worldwide action to combat climate change across seven continents...",
+      "source_chunk": 47,
+      "id": "f5cf11fe-8134-4660-951d-56c73358ea36",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "A global concert series that called for worldwide action and mobilised audiences across continents.",
+        "supporting_text": "\"The 2007 Live Earth concert called for worldwide action to combat climate change across seven continents, and was broadcast in 132 countries.\""
+      }
+    },
+    {
+      "title": "Climate Safety",
+      "type": "Report",
+      "year": 2008,
+      "actors": [
+        "Public Interest Research Centre"
+      ],
+      "supporting_text": "In 2008, the Public Interest Research Centre's report Climate Safety concluded the need for a 10 per cent reduction in the developed world's emissions by the end of 2010.",
+      "source_chunk": 47,
+      "id": "28afc15f-0dd5-4544-87d1-366a28db8823",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The report quantifies needed emissions cuts, exposing a concrete pathway for systemic change.",
+        "supporting_text": "\"Climate Safety concluded the need for a 10 per cent reduction in the developed world’s emissions by the end of 2010.\""
+      }
+    },
+    {
+      "title": "10:10 campaign",
+      "type": "Programme",
+      "year": 2008,
+      "actors": [
+        "Franny Armstrong"
+      ],
+      "supporting_text": "This inspired Armstrong to found the 10:10 campaign, which encouraged individuals, businesses and organisations to commit to reducing their carbon emissions.",
+      "source_chunk": 47,
+      "id": "1fa2df65-6b12-4336-8e9a-81df2cccf1c4",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Encourages individuals, businesses and organisations to commit to carbon‑reduction targets.",
+        "supporting_text": "\"the 10:10 campaign, which encouraged individuals, businesses and organisations to commit to reducing their carbon emissions.\""
+      }
+    },
+    {
+      "title": "Active Resistance",
+      "type": "Programme",
+      "year": 2005,
+      "actors": [
+        "Vivienne Westwood"
+      ],
+      "supporting_text": "In 2005, the designer Vivenne Westwood (b. 1941) set up 'Active Resistance' as a project to encourage engagement with humanitarian and environmental issues.",
+      "source_chunk": 47,
+      "id": "4058499a-4c37-4f04-8833-cd746b8f1c12",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "A fashion project designed to engage the public with humanitarian and environmental issues.",
+        "supporting_text": "\"Vivenne Westwood ... set up ‘Active Resistance’ as a project to encourage engagement with humanitarian and environmental issues.\""
+      }
+    },
+    {
+      "title": "I am not a plastic bag bag",
+      "type": "Other",
+      "year": 2007,
+      "actors": [
+        "Anya Hindmarch",
+        "Sainsbury's"
+      ],
+      "supporting_text": "In 2007, bag designer Anya Hindmarch (b.1968) designed an unbleached £5 cotton bag with 'I am not a plastic bag' written on it for Sainsbury's supermarket.",
+      "source_chunk": 47,
+      "id": "a5329ab6-4846-4b8a-a0b6-659ac177096d",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The slogan popularised an eco‑chic fashion trend, normalising sustainable consumer choices.",
+        "supporting_text": "\"designed an unbleached £5 cotton bag with ‘I am not a plastic bag’ ... contributing to an ‘eco‑chic’ trend in fashion.\""
+      }
+    },
+    {
+      "title": "Endangered Earth",
+      "type": "Report",
+      "year": 1989,
+      "actors": [
+        "Time magazine"
+      ],
+      "supporting_text": "In 1989, the US Time magazine declared 'Endangered Earth' as the 'Planet of the Year' instead of its usual man or woman of the year.",
+      "source_chunk": 48,
+      "id": "5892ebaa-27cf-44d3-8330-66313b7708ea",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The phrase was used by a major magazine to signal planetary risk, shaping public perception.",
+        "supporting_text": "Time magazine declared ‘Endangered Earth’ as the ‘Planet of the Year’."
+      }
+    },
+    {
+      "title": "Sizzle: The New Climate Message",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "Futerra"
+      ],
+      "supporting_text": "A report by the sustainability communications consultancy Futerra, Sizzle: The New Climate Message, argues that in order to reinvigorate public and media interest, campaigns need to focus on a vision of a greener life that is positive and appealing to all.",
+      "source_chunk": 50,
+      "id": "960432aa-2cda-4723-a63a-77661ea4976a",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The report aims to reshape public discourse by presenting a positive, appealing vision of greener living.",
+        "supporting_text": "A report by the sustainability communications consultancy Futerra, Sizzle: The New Climate Message, argues that ... campaigns need to focus on a vision of a greener life that is positive and appealing to all."
+      }
+    }
+  ]
+}

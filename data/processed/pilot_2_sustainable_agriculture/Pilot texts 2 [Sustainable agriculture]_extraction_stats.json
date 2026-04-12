@@ -1,0 +1,12 @@
+{
+  "total_chunks": 8,
+  "chunks_processed": 8,
+  "entity_counts": {
+    "event": 46,
+    "actor": 58,
+    "concept": 42,
+    "expression": 21,
+    "location": 51
+  },
+  "relationship_count": 83
+}
