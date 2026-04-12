@@ -436,10 +436,11 @@
         // --------------- pilot switcher + data loading ---------------
 
         const MANIFEST_PATH = '../../data/manifest.json';
+        let _kgBase = '';
 
         function loadKG(path) {
             document.getElementById('switcher-note').textContent = 'Loading…';
-            const url = (path.startsWith('/') || path.startsWith('http')) ? path : '/' + path;
+            const url = _kgBase ? _kgBase + path : '/' + path;
             fetch(url + '?v=' + new Date().getTime())
                 .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
                 .then(data => {
@@ -460,9 +461,11 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             // Try manifest first (GitHub Pages / static file serving)
-            fetch(MANIFEST_PATH + '?v=' + new Date().getTime())
+            const manifestUrl = new URL(MANIFEST_PATH, window.location.href).href;
+            fetch(manifestUrl + '?v=' + new Date().getTime())
                 .then(r => { if (!r.ok) throw new Error('no manifest'); return r.json(); })
                 .then(pilots => {
+                    _kgBase = manifestUrl.replace(/data\/manifest\.json.*$/, '');
                     const switcher = document.getElementById('pilot-switcher');
                     const sel = document.getElementById('pilot-select');
                     pilots.forEach(p => {

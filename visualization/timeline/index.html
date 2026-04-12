@@ -460,10 +460,12 @@
         // Resolve manifest path relative to this file's location
         // Works both on GitHub Pages (relative URLs) and local dev server
         const MANIFEST_PATH = '../../data/manifest.json';
+        // Base URL resolved from manifest location — works on GitHub Pages and dev server
+        let _kgBase = '';
 
         function loadKG(path) {
             document.getElementById('switcher-note').textContent = 'Loading…';
-            const url = (path.startsWith('/') || path.startsWith('http')) ? path : '/' + path;
+            const url = _kgBase ? _kgBase + path : '/' + path;
             fetch(url + '?v=' + new Date().getTime())
                 .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
                 .then(data => {
@@ -484,9 +486,13 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             // Try to load the manifest (works on GitHub Pages and dev server)
-            fetch(MANIFEST_PATH + '?v=' + new Date().getTime())
+            const manifestUrl = new URL(MANIFEST_PATH, window.location.href).href;
+            fetch(manifestUrl + '?v=' + new Date().getTime())
                 .then(r => { if (!r.ok) throw new Error('no manifest'); return r.json(); })
                 .then(pilots => {
+                    // Derive base so KG paths (relative to repo root) resolve correctly
+                    // e.g. https://user.github.io/repo/data/manifest.json → base = .../repo/
+                    _kgBase = manifestUrl.replace(/data\/manifest\.json.*$/, '');
                     const switcher = document.getElementById('pilot-switcher');
                     const sel = document.getElementById('pilot-select');
                     pilots.forEach((p, i) => {
