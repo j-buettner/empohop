@@ -6,11 +6,12 @@ import re
 
 # Handle import errors gracefully
 try:
+    from pathlib import Path as _Path
     from docling.document_converter import DocumentConverter
     from docling.chunking import HybridChunker
     from docling.datamodel.pipeline_options import PdfPipelineOptions
     from docling.datamodel.base_models import InputFormat
-    from docling.document_converter import PdfFormatOption
+    from docling.document_converter import PdfFormatOption, WordFormatOption
     DOCLING_AVAILABLE = True
 except ImportError as e:
     print(f"Warning: Docling not available due to import error: {e}")
@@ -21,6 +22,7 @@ except ImportError as e:
     PdfPipelineOptions = None
     InputFormat = None
     PdfFormatOption = None
+    WordFormatOption = None
 
 try:
     from transformers import AutoTokenizer
@@ -70,10 +72,12 @@ class DoclingExtractor:
             pipeline_options.do_ocr = use_ocr
             pipeline_options.do_table_structure = True
             
-            # Initialize Docling converter with OCR settings
+            # Initialize Docling converter — explicitly allow PDF and DOCX
             self.converter = DocumentConverter(
+                allowed_formats=[InputFormat.PDF, InputFormat.DOCX],
                 format_options={
-                    InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_options)
+                    InputFormat.PDF:  PdfFormatOption(pipeline_options=pipeline_options),
+                    InputFormat.DOCX: WordFormatOption(),
                 }
             )
             
@@ -129,9 +133,9 @@ class DoclingExtractor:
     def _extract_with_docling(self, source: str) -> Dict[str, Any]:
         """Extract using Docling"""
         logger.info(f"Converting document with Docling: {source}")
-        
-        # Convert document using Docling (no ocr parameter needed - it's configured in pipeline options)
-        result = self.converter.convert(source)
+
+        # Pass a Path so docling can reliably detect the file format from the suffix
+        result = self.converter.convert(_Path(source))
         
         # Extract the document
         doc = result.document

@@ -374,6 +374,11 @@ class EntityResolver:
             # For expressions, check year and actors
             year1 = entity1.get("year")
             year2 = entity2.get("year")
+            try:
+                year1 = int(year1) if year1 is not None else None
+                year2 = int(year2) if year2 is not None else None
+            except (ValueError, TypeError):
+                year1 = year2 = None
             if year1 and year2:
                 year_sim = 1.0 if abs(year1 - year2) <= 1 else 0.0  # Allow 1 year difference
                 scores.append(year_sim)

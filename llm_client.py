@@ -51,16 +51,23 @@ class RateLimitMonitor:
     Captures rate-limit headers from every httpx response and exposes a
     ``wait_if_needed()`` method that sleeps when remaining capacity is low.
 
+    Tracks three windows — minute, hour, day — and pauses for the appropriate
+    duration when any window runs low, preventing 429 errors entirely.
+
     On the first response the monitor logs all x-ratelimit-* headers so we
     can see exactly what the API returns and tune thresholds accordingly.
     """
 
-    # Pause when fewer than this many requests remain in the current window.
-    LOW_WATERMARK = 3
+    # Pause when fewer than this many requests remain in the window.
+    MINUTE_WATERMARK = 3
+    HOUR_WATERMARK   = 10
+    DAY_WATERMARK    = 20
 
     def __init__(self) -> None:
-        self.remaining: Optional[int] = None
-        self.reset_after_seconds: Optional[float] = None
+        self.remaining_minute: Optional[int] = None
+        self.remaining_hour:   Optional[int] = None
+        self.remaining_day:    Optional[int] = None
+        self.reset_after_seconds: Optional[float] = None  # seconds until minute window resets
         self._first_response = True
 
     # httpx event hook — called after every response
@@ -75,55 +82,77 @@ class RateLimitMonitor:
                 logger.info("No rate-limit headers detected in API response.")
             self._first_response = False
 
-        # Try common header name variants
-        remaining_str = (
-            headers.get("x-ratelimit-remaining-requests")
-            or headers.get("x-ratelimit-remaining")
-            or headers.get("ratelimit-remaining")
-        )
+        def _int(h: str) -> Optional[int]:
+            v = headers.get(h)
+            try:
+                return int(v) if v is not None else None
+            except ValueError:
+                return None
+
+        self.remaining_minute = _int("x-ratelimit-remaining-minute") or _int("ratelimit-remaining")
+        self.remaining_hour   = _int("x-ratelimit-remaining-hour")
+        self.remaining_day    = _int("x-ratelimit-remaining-day")
+
         reset_str = (
-            headers.get("x-ratelimit-reset-requests")
+            headers.get("ratelimit-reset")
             or headers.get("x-ratelimit-reset")
-            or headers.get("ratelimit-reset")
             or headers.get("retry-after")
         )
-
-        # Prefer the per-minute counter — it is the tightest limit
-        remaining_minute = headers.get("x-ratelimit-remaining-minute")
-        if remaining_minute is not None:
-            try:
-                self.remaining = int(remaining_minute)
-            except ValueError:
-                pass
-        elif remaining_str is not None:
-            try:
-                self.remaining = int(remaining_str)
-            except ValueError:
-                pass
-
         if reset_str is not None:
             self.reset_after_seconds = self._parse_reset(reset_str)
 
     def wait_if_needed(self) -> None:
-        """Call before each API request — sleeps if remaining capacity is low."""
-        if self.remaining is None:
-            return
-        if self.remaining <= self.LOW_WATERMARK:
-            wait = self.reset_after_seconds if self.reset_after_seconds else 60.0
+        """Call before each API request — sleeps if any rate-limit window is nearly exhausted."""
+        import datetime
+
+        # Check day limit first (longest wait)
+        if self.remaining_day is not None and self.remaining_day <= self.DAY_WATERMARK:
+            now = datetime.datetime.now()
+            midnight = (now + datetime.timedelta(days=1)).replace(
+                hour=0, minute=0, second=10, microsecond=0
+            )
+            wait = (midnight - now).total_seconds()
             logger.warning(
-                "Rate limit low (remaining=%d). Pausing %.1fs before next call.",
-                self.remaining, wait,
+                "Daily rate limit nearly exhausted (remaining=%d). "
+                "Pausing %.0fs until midnight reset.",
+                self.remaining_day, wait,
             )
             time.sleep(wait)
-            self.remaining = None
+            self.remaining_day = None
+            return
+
+        # Check hour limit
+        if self.remaining_hour is not None and self.remaining_hour <= self.HOUR_WATERMARK:
+            now = datetime.datetime.now()
+            next_hour = (now + datetime.timedelta(hours=1)).replace(
+                minute=0, second=10, microsecond=0
+            )
+            wait = (next_hour - now).total_seconds()
+            logger.warning(
+                "Hourly rate limit nearly exhausted (remaining=%d). "
+                "Pausing %.0fs until next hour reset.",
+                self.remaining_hour, wait,
+            )
+            time.sleep(wait)
+            self.remaining_hour = None
+            return
+
+        # Check minute limit
+        if self.remaining_minute is not None and self.remaining_minute <= self.MINUTE_WATERMARK:
+            wait = self.reset_after_seconds if self.reset_after_seconds else 60.0
+            logger.warning(
+                "Per-minute rate limit low (remaining=%d). Pausing %.1fs.",
+                self.remaining_minute, wait,
+            )
+            time.sleep(wait)
+            self.remaining_minute = None
             self.reset_after_seconds = None
 
     @staticmethod
     def _parse_reset(value: str) -> float:
         """Parse reset header — may be seconds (int/float) or ISO 8601 duration like '1s'."""
-        value = value.strip()
-        # ISO 8601 duration e.g. "500ms", "1s", "2m30s"
         import re
+        value = value.strip()
         m = re.match(r"(?:(\d+)m)?(?:(\d+(?:\.\d+)?)s)?(?:(\d+)ms)?$", value, re.IGNORECASE)
         if m and any(m.groups()):
             minutes = float(m.group(1) or 0)
@@ -302,7 +331,10 @@ def create_llm_client(backend: str = None, model: str = None) -> UnifiedLLMClien
 
         import httpx
         monitor = RateLimitMonitor()
-        http_client = httpx.Client(event_hooks={"response": [monitor.on_response]})
+        http_client = httpx.Client(
+            event_hooks={"response": [monitor.on_response]},
+            timeout=120.0,  # 2-minute hard timeout per request
+        )
         raw = OpenAI(base_url=EXTERNAL_API_URL, api_key=api_key, http_client=http_client)
         logger.info("LLM backend: external (%s)  |  model: %s", EXTERNAL_API_URL, resolved_model)
         return UnifiedLLMClient("external", raw, resolved_model, monitor)

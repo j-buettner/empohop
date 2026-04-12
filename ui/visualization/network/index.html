@@ -235,12 +235,47 @@
             padding-top: 10px;
             border-top: 1px solid #eee;
         }
+    <style>
+        .pilot-switcher {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            background: #eef4fb;
+            border-radius: 6px;
+            border: 1px solid #c5d9ee;
+        }
+        .pilot-switcher label {
+            font-weight: 600;
+            color: #2c3e50;
+            white-space: nowrap;
+            margin: 0;
+        }
+        .pilot-switcher select {
+            flex: 1;
+            max-width: 480px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid #aac4e0;
+            font-size: 14px;
+        }
+        .pilot-switcher .loading-note {
+            font-size: 13px;
+            color: #7f8c8d;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Planetary Health Knowledge Graph</h1>
         <h2 class="text-center text-muted mb-4" style="font-size:1.2rem; font-weight:400;">Knowledge Graph</h2>
+
+        <div class="pilot-switcher" id="pilot-switcher" style="display:none">
+            <label for="pilot-select">Dataset:</label>
+            <select id="pilot-select"></select>
+            <span class="loading-note" id="switcher-note"></span>
+        </div>
 
         <div class="controls">
             <div class="row">
@@ -398,46 +433,61 @@
         let criticData = null;
         let showCriticAssessments = false;
         
-        // Load the data
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load data from the processed directory with cache-busting parameter
-            console.log("Attempting to load data from processed directory...");
-            
-            // First load the knowledge graph data from the API endpoint
-            fetch('/api/knowledge-graph?v=' + new Date().getTime())
-                .then(response => {
-                    console.log("Response status:", response.status);
-                    return response.json();
-                })
+        // --------------- pilot switcher + data loading ---------------
+
+        const MANIFEST_PATH = '../../data/manifest.json';
+
+        function loadKG(path) {
+            document.getElementById('switcher-note').textContent = 'Loading…';
+            const url = (path.startsWith('/') || path.startsWith('http')) ? path : '/' + path;
+            fetch(url + '?v=' + new Date().getTime())
+                .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
                 .then(data => {
-                    console.log("Loaded knowledge graph data:", data);
-                    
-                    // Then try to load critic data from API endpoint
-                    fetch('/api/critic-data?v=' + new Date().getTime())
-                        .then(response => {
-                            if (response.ok) {
-                                return response.json();
-                            } else {
-                                throw new Error('Critic data not available');
-                            }
-                        })
-                        .then(criticDataResponse => {
-                            console.log("Loaded critic data successfully");
-                            criticData = criticDataResponse;
-                            initializeGraph(data);
-                        })
-                        .catch(error => {
-                            console.warn('Critic data not available:', error);
-                            criticData = null;
-                            initializeGraph(data);
-                        });
+                    document.getElementById('switcher-note').textContent = '';
+                    criticData = null;
+                    try {
+                        initializeGraph(data);
+                    } catch(err) {
+                        console.error('Error in initializeGraph:', err);
+                        document.getElementById('switcher-note').textContent = 'Render error: ' + err.message;
+                    }
                 })
-                .catch(error => {
-                    console.error('Error loading data:', error);
-                    // For demo purposes, load sample data if file not found
-                    loadSampleData();
+                .catch(err => {
+                    document.getElementById('switcher-note').textContent = 'Failed to load: ' + err;
+                    console.error('Error loading KG:', err);
                 });
-                
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Try manifest first (GitHub Pages / static file serving)
+            fetch(MANIFEST_PATH + '?v=' + new Date().getTime())
+                .then(r => { if (!r.ok) throw new Error('no manifest'); return r.json(); })
+                .then(pilots => {
+                    const switcher = document.getElementById('pilot-switcher');
+                    const sel = document.getElementById('pilot-select');
+                    pilots.forEach(p => {
+                        const opt = document.createElement('option');
+                        opt.value = p.path;
+                        opt.textContent = p.label;
+                        sel.appendChild(opt);
+                    });
+                    switcher.style.display = 'flex';
+                    sel.addEventListener('change', () => loadKG(sel.value));
+                    loadKG(pilots[0].path);
+                })
+                .catch(() => {
+                    // Fall back to dev-server API
+                    fetch('/api/knowledge-graph?v=' + new Date().getTime())
+                        .then(r => r.json())
+                        .then(data => {
+                            fetch('/api/critic-data?v=' + new Date().getTime())
+                                .then(r => { if (!r.ok) throw new Error('no critic'); return r.json(); })
+                                .then(cd => { criticData = cd; initializeGraph(data); })
+                                .catch(() => { criticData = null; initializeGraph(data); });
+                        })
+                        .catch(() => loadSampleData());
+                });
+
             // Set up event listeners
             document.querySelector('.close-btn').addEventListener('click', function() {
                 document.getElementById('node-details-panel').style.display = 'none';
@@ -537,6 +587,15 @@
         }
         
         function initializeGraph(data) {
+            // Clear previous render
+            const _nc = document.getElementById('network-container');
+            if (_nc) _nc.innerHTML = '';
+            const _ef = document.getElementById('entity-type-filters');
+            if (_ef) _ef.innerHTML = '';
+            const _ndp = document.getElementById('node-details-panel');
+            if (_ndp) _ndp.style.display = 'none';
+            if (svg) { svg.on('.zoom', null); svg = null; }
+
             // Process the data into a graph structure
             processData(data);
             

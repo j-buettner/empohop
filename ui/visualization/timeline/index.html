@@ -309,10 +309,46 @@
             text-decoration: underline;
         }
     </style>
+    <style>
+        .pilot-switcher {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            background: #eef4fb;
+            border-radius: 6px;
+            border: 1px solid #c5d9ee;
+        }
+        .pilot-switcher label {
+            font-weight: 600;
+            color: #2c3e50;
+            white-space: nowrap;
+            margin: 0;
+        }
+        .pilot-switcher select {
+            flex: 1;
+            max-width: 480px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid #aac4e0;
+            font-size: 14px;
+        }
+        .pilot-switcher .loading-note {
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Planetary Health Timeline</h1>
+
+        <div class="pilot-switcher" id="pilot-switcher" style="display:none">
+            <label for="pilot-select">Dataset:</label>
+            <select id="pilot-select"></select>
+            <span class="loading-note" id="switcher-note"></span>
+        </div>
         
         <div class="filters">
             <div class="row">
@@ -419,44 +455,61 @@
         let criticData = null;
         let showCriticAssessments = false;
         
-        // Load the data
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load data from the processed directory with cache-busting parameter
-            console.log("Attempting to load data from processed directory...");
-            
-            // First load the knowledge graph data from the API endpoint
-            fetch('/api/knowledge-graph?v=' + new Date().getTime())
-                .then(response => {
-                    console.log("Response status:", response.status);
-                    return response.json();
-                })
+        // --------------- pilot switcher + data loading ---------------
+
+        // Resolve manifest path relative to this file's location
+        // Works both on GitHub Pages (relative URLs) and local dev server
+        const MANIFEST_PATH = '../../data/manifest.json';
+
+        function loadKG(path) {
+            document.getElementById('switcher-note').textContent = 'Loading…';
+            const url = (path.startsWith('/') || path.startsWith('http')) ? path : '/' + path;
+            fetch(url + '?v=' + new Date().getTime())
+                .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
                 .then(data => {
-                    console.log("Loaded knowledge graph data:", data);
-                    
-                    // Then try to load critic data from API endpoint
-                    fetch('/api/critic-data?v=' + new Date().getTime())
-                        .then(response => {
-                            if (response.ok) {
-                                return response.json();
-                            } else {
-                                throw new Error('Critic data not available');
-                            }
-                        })
-                        .then(criticDataResponse => {
-                            console.log("Loaded critic data successfully");
-                            criticData = criticDataResponse;
-                            initializeTimeline(data);
-                        })
-                        .catch(error => {
-                            console.warn('Critic data not available:', error);
-                            criticData = null;
-                            initializeTimeline(data);
-                        });
+                    document.getElementById('switcher-note').textContent = '';
+                    criticData = null;
+                    try {
+                        initializeTimeline(data);
+                    } catch(err) {
+                        console.error('Error in initializeTimeline:', err);
+                        document.getElementById('switcher-note').textContent = 'Render error: ' + err.message;
+                    }
                 })
-                .catch(error => {
-                    console.error('Error loading data:', error);
-                    // For demo purposes, load sample data if file not found
-                    loadSampleData();
+                .catch(err => {
+                    document.getElementById('switcher-note').textContent = 'Failed to load: ' + err;
+                    console.error('Error loading KG:', err);
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Try to load the manifest (works on GitHub Pages and dev server)
+            fetch(MANIFEST_PATH + '?v=' + new Date().getTime())
+                .then(r => { if (!r.ok) throw new Error('no manifest'); return r.json(); })
+                .then(pilots => {
+                    const switcher = document.getElementById('pilot-switcher');
+                    const sel = document.getElementById('pilot-select');
+                    pilots.forEach((p, i) => {
+                        const opt = document.createElement('option');
+                        opt.value = p.path;
+                        opt.textContent = p.label;
+                        sel.appendChild(opt);
+                    });
+                    switcher.style.display = 'flex';
+                    sel.addEventListener('change', () => loadKG(sel.value));
+                    loadKG(pilots[0].path);
+                })
+                .catch(() => {
+                    // No manifest — fall back to dev-server API
+                    fetch('/api/knowledge-graph?v=' + new Date().getTime())
+                        .then(r => r.json())
+                        .then(data => {
+                            fetch('/api/critic-data?v=' + new Date().getTime())
+                                .then(r => { if (!r.ok) throw new Error('no critic'); return r.json(); })
+                                .then(cd => { criticData = cd; initializeTimeline(data); })
+                                .catch(() => { criticData = null; initializeTimeline(data); });
+                        })
+                        .catch(() => loadSampleData());
                 });
         });
         
@@ -511,6 +564,26 @@
         }
         
         function initializeTimeline(data) {
+            // Clear previous render
+            // Clear and rebuild timeline-container (timeline-axis lives inside it)
+            const _tc = document.getElementById('timeline-container');
+            if (_tc) {
+                _tc.innerHTML = '<div class="timeline-axis" id="timeline-axis"></div>';
+            }
+            ['type-filters', 'significance-filters',
+             'undated-events-body', 'related-events'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.innerHTML = '';
+            });
+            // Clear legend items (keep the critic-legend div intact)
+            const legend = document.getElementById('sig-legend');
+            const criticLegend = document.getElementById('critic-legend');
+            if (legend && criticLegend) {
+                Array.from(legend.children).forEach(child => {
+                    if (child !== criticLegend) child.remove();
+                });
+            }
+
             const events = data.events || [];
             const relationships = data.relationships || [];
             

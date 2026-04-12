@@ -111,6 +111,17 @@ def create_app(kg_file: str = DEFAULT_KG_FILE) -> Flask:
             logger.exception("Error reading critic data")
             return jsonify({"error": str(exc)}), 500
 
+    @flask_app.route("/api/manifest")
+    def manifest():
+        manifest_file = os.path.join(_BASE_DIR, "data", "manifest.json")
+        if not os.path.exists(manifest_file):
+            return jsonify({"error": "manifest.json not found — run generate_manifest.py"}), 404
+        try:
+            with open(manifest_file, "r", encoding="utf-8") as f:
+                return jsonify(json.load(f))
+        except Exception as exc:
+            return jsonify({"error": str(exc)}), 500
+
     @flask_app.route("/api/health")
     def health():
         return jsonify({"status": "ok", "kg_file": kg_file})
@@ -122,6 +133,13 @@ def create_app(kg_file: str = DEFAULT_KG_FILE) -> Flask:
     @flask_app.route("/")
     def index():
         return send_from_directory(_UI_DIR, "index.html")
+
+    # Expose data directory (manifest.json and KG files) at /data/<path>
+    # so that the relative URL ../../data/manifest.json from ui/visualization/*/
+    # resolves correctly on the dev server too.
+    @flask_app.route("/data/<path:filename>")
+    def data_files(filename):
+        return send_from_directory(os.path.join(_BASE_DIR, "data"), filename)
 
     # Expose schema JSON files (used by both the pipeline and the UI)
     @flask_app.route("/schema/json-schema/<path:filename>")

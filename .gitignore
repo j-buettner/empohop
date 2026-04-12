@@ -47,13 +47,14 @@ Thumbs.db
 # Project specific
 data/extracted/*
 !data/extracted/sample-data.json
-data/processed/*
-!data/processed/.gitkeep
+data/processed/*/raw/
 data/review/*
 !data/review/.gitkeep
 data/extracted_old/*
+data/archive/
+data/pilot_texts/
 
-# Large files
+# Large files — keep processed KG output and manifest, exclude raw inputs
 *.pdf
 *.docx
 *.xlsx
@@ -62,8 +63,10 @@ data/extracted_old/*
 !requirements.txt
 !package.json
 !schema/json-schema/*.json
-!visualization/timeline/sample-data.json
+!ui/visualization/timeline/sample-data.json
 !data/extracted/sample-data.json
+!data/manifest.json
+!data/processed/**/*_knowledge_graph.json
 
 # API keys and sensitive information
 .env
