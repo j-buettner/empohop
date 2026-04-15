@@ -1,15 +1,15 @@
 {
   "summary": {
-    "total_merges": 178,
+    "total_merges": 201,
     "merges_by_type": {
-      "actor": 59,
-      "concept": 28,
-      "event": 6,
-      "location": 85
+      "actor": 76,
+      "concept": 34,
+      "event": 3,
+      "location": 88
     },
     "manual_mapping_count": 0,
     "low_confidence_merges": 0,
-    "timestamp": "2026-04-11 17:26:22"
+    "timestamp": "2026-04-15 15:45:23"
   },
   "merges": [
     {
@@ -19,95 +19,33 @@
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 12,
+      "cluster_size": 11,
       "source_chunks": [
-        1,
         2,
         5,
         7,
         8,
-        10,
+        9,
         11,
-        12,
         13,
-        25,
-        30,
-        45
+        14,
+        27,
+        32,
+        48
       ],
       "supporting_evidence": {
         "descriptions": [
-          "International environmental organization...",
-          "An international environmental NGO founded in the early 1970s, known for direct‑action campaigns to ...",
-          "International environmental organization founded in 1971....",
-          "International environmental organization known for direct‑action campaigns and advocacy....",
-          "International environmental organization known for direct‑action campaigns....",
-          "A global environmental organization known for direct‑action campaigns....",
-          "A highly centralised environmental organisation that relies on individual members and supporters for...",
-          "Global environmental organization known for investigative campaigns and direct action....",
-          "Global environmental organization known for high‑profile direct‑action campaigns....",
-          "International environmental organization founded in the early 1970s....",
-          "An international environmental campaign organization known for direct action and public advocacy....",
-          "International environmental organization active in campaigns worldwide...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "World Bank",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 8,
-      "source_chunks": [
-        1,
-        10,
-        17,
-        18,
-        34,
-        36,
-        39,
-        40
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "International financial institution...",
-          "An international development bank that provides financial and technical assistance to developing cou...",
-          "International development bank that offers financial and technical assistance to developing nations....",
-          "International financial institution that manages development financing....",
-          "Originally the International Bank for Reconstruction and Development, a multilateral development ins...",
-          "International financial institution that supports development projects and policy research....",
-          "International financial institution that provides loans and technical assistance to developing count...",
-          "International financial institution that provides loans and grants to the governments of poorer coun..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "European Union",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 6,
-      "source_chunks": [
-        1,
-        22,
-        38,
-        40,
-        46,
-        49
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Supranational political and economic union of European states...",
-          "Supranational political and economic union of 27 European member states....",
-          "Supranational political and economic union of European member states....",
-          "A supranational political and economic union of European member states....",
-          "Supranational political entity that introduced a voluntary Ecolabel scheme in 1992....",
-          "A supranational political and economic union of European member states that commissioned a 2009 stud..."
+          "Global environmental NGO established in 1972, known for direct-action campaigns....",
+          "International environmental organization founded in 1971, known for direct‑action campaigns....",
+          "International environmental organization known for high‑profile global campaigns....",
+          "International environmental campaign organisation...",
+          "An international environmental NGO known for high‑profile direct‑action campaigns....",
+          "An international environmental non‑governmental organization known for direct‑action campaigning....",
+          "A global environmental organization known for investigative campaigns....",
+          "International environmental organisation that carried out direct action and a high‑profile land purc...",
+          "International environmental organization founded in the early 1970s, known for direct‑action campaig...",
+          "An international environmental organization known for direct-action campaigns to protect the environ...",
+          "Global environmental organization that conducts campaigns on climate, oceans, forests and toxic poll..."
         ],
         "years": []
       }
@@ -122,122 +60,104 @@
       "cluster_size": 6,
       "source_chunks": [
         2,
+        5,
         6,
         7,
-        9,
-        12,
-        13
+        13,
+        14
       ],
       "supporting_evidence": {
         "descriptions": [
-          "A campaign group founded in the early 1970s that mobilizes public support and advocacy for environme...",
-          "International environmental NGO active in the United Kingdom....",
-          "Environmental non‑governmental organization that campaigns on ecological issues....",
-          "International network of environmental NGOs active in campaigning on a wide range of ecological issu...",
-          "International network of environmental organizations, with a strong presence in the United Kingdom....",
-          "International environmental organization with a strong UK presence...."
+          "International network of environmental NGOs founded in 1969....",
+          "International network of environmental NGOs founded in 1969....",
+          "International environmental network originating in the United States....",
+          "International environmental NGO that led campaigns against nuclear fuel reprocessing and other ecolo...",
+          "An international network of environmental organizations....",
+          "Environmental NGO that mobilised the public to lobby Members of Parliament and joined a climate‑chan..."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "UK government",
+      "canonical_name": "World Bank",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 5,
+      "cluster_size": 6,
       "source_chunks": [
-        1,
-        12,
-        26,
-        28,
-        30
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "The central government of the United Kingdom...",
-          "National government of the United Kingdom....",
-          "The central governing authority of the United Kingdom....",
-          "National government of the United Kingdom....",
-          "The central government of the United Kingdom, including the relevant ministry responsible for marine..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "UNEP",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 5,
-      "source_chunks": [
-        1,
-        19,
-        22,
-        39,
-        40
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "United Nations Environment Programme...",
-          "United Nations Environment Programme, the UN agency responsible for coordinating environmental activ...",
-          "United Nations Environment Programme, the leading global environmental authority within the UN syste...",
-          "United Nations Environment Programme, the leading global environmental authority within the UN syste...",
-          "United Nations Environment Programme, an international agency promoting environmental sustainability..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "United States",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 5,
-      "source_chunks": [
+        11,
         18,
         20,
-        22,
-        29,
-        34
+        38,
+        41,
+        43
       ],
       "supporting_evidence": {
         "descriptions": [
-          "North American nation and UN member state....",
-          "One of the major emitters of CFCs at the time of the Montreal Protocol negotiations; prepared to tak...",
-          "Federal government of the United States of America....",
-          "The federal government of the United States of America....",
-          "Federal government of the United States of America...."
+          "A global development institution that offers financial and technical assistance to developing countr...",
+          "International financial institution that provides loans and development assistance....",
+          "International development bank that manages the Global Environment Facility....",
+          "International financial institution that supports development projects worldwide....",
+          "International financial institution that provides loans and advice to developing countries....",
+          "A multinational financial institution that funds development projects worldwide...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "Intergovernmental Panel on Climate Change (IPCC)",
+      "canonical_name": "China",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 4,
+      "cluster_size": 6,
       "source_chunks": [
-        1,
-        20,
-        27,
-        32
+        16,
+        22,
+        23,
+        24,
+        42,
+        43
       ],
       "supporting_evidence": {
         "descriptions": [
-          "UN‑mandated scientific body assessing climate change...",
-          "An international scientific body created by the World Meteorological Organization and UNEP to assess...",
-          "An intergovernmental body established by the United Nations to assess the science related to climate...",
-          "An international intergovernmental body that assesses scientific information related to climate chan..."
+          "People's Republic of China, a major global power....",
+          "The world's largest current emitter of carbon dioxide, classified as an economy in transition....",
+          "The government of the People’s Republic of China, a major global emitter and negotiating party....",
+          "The People's Republic of China, a major global power with significant influence over international e...",
+          "National government of the People’s Republic of China....",
+          "One of the leading global economies mentioned as investing heavily in the green energy sector...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "European Union",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 6,
+      "source_chunks": [
+        23,
+        24,
+        40,
+        42,
+        48,
+        52
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "A political and economic union of European member states....",
+          "A supranational political and economic union of European states that participates in global environm...",
+          "Supranational political and economic union of European member states....",
+          "Supranational political and economic union of European member states....",
+          "Supranational political and economic union of European member states....",
+          "A supranational political and economic union of European member states that conducts research and po..."
         ],
         "years": []
       }
@@ -249,43 +169,126 @@
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 4,
+      "cluster_size": 5,
       "source_chunks": [
+        0,
         3,
-        5,
-        23,
-        25
+        6,
+        26,
+        27
       ],
       "supporting_evidence": {
         "descriptions": [
+          "Marine biologist and author of *Silent Spring* (1962)....",
           "American marine biologist and author of *Silent Spring* (1962)....",
-          "American marine biologist and author of *Silent Spring* (1962)....",
-          "American marine biologist and author of *Silent Spring* (1962)....",
-          "Biologist and writer who synthesized scientific evidence on pesticides for the book *Silent Spring*...."
+          "American marine biologist and author of *Silent Spring*....",
+          "Biologist and writer who synthesized scientific evidence on pesticide impacts into the book *Silent ...",
+          "American marine biologist and author of *Silent Spring*, a seminal work that exposed the dangers of ..."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "United Nations (UN)",
+      "canonical_name": "UK government",
+      "variations": [
+        "UK Government",
+        "UK Government"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 5,
+      "source_chunks": [
+        13,
+        28,
+        30,
+        32,
+        47
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The central government of the United Kingdom....",
+          "The central government of the United Kingdom....",
+          "The central government of the United Kingdom in the 1950s‑1960s....",
+          "The central government of the United Kingdom....",
+          "The central government of the United Kingdom...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "India",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 5,
+      "source_chunks": [
+        16,
+        19,
+        23,
+        24,
+        38
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Republic of India, a major global power....",
+          "A South Asian nation that was part of the developing‑country bloc at the Earth Summit....",
+          "The federal government of India, a large and rapidly growing emitter....",
+          "The Republic of India, a major developing nation participating in global environmental governance....",
+          "Sovereign state in South Asia...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "United Nations Environment Programme (UNEP)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 5,
+      "source_chunks": [
+        21,
+        22,
+        40,
+        41,
+        42
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The UN's global environmental authority that initiates and supports multilateral environmental agree...",
+          "The leading global environmental authority within the United Nations system....",
+          "UN agency that coordinates global environmental assessments and policy guidance....",
+          "UN agency coordinating global environmental policy and programmes....",
+          "UN agency that coordinates global environmental activities and policy advice...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "United States",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 4,
       "source_chunks": [
-        7,
-        15,
-        17,
-        18
+        0,
+        16,
+        23,
+        31
       ],
       "supporting_evidence": {
         "descriptions": [
-          "International intergovernmental organization promoting peace, security and development....",
-          "International intergovernmental organization created in 1945 to provide a forum for global cooperati...",
-          "The global intergovernmental organization that provides a forum for environmental, economic and soci...",
-          "International intergovernmental organization overseeing global environmental governance...."
+          "Federal government of the United States....",
+          "Federal government of the United States of America....",
+          "The federal government of the United States of America, a major emitter and key negotiator....",
+          "The federal government of the United States of America...."
         ],
         "years": []
       }
@@ -299,109 +302,171 @@
       "average_similarity": 1.0,
       "cluster_size": 4,
       "source_chunks": [
-        14,
-        21,
-        22,
-        40
+        16,
+        23,
+        24,
+        43
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Emerging world power experiencing rapid industrialisation, influencing global environmental governan...",
-          "Federative Republic of Brazil, a large emerging economy and significant emitter....",
-          "Federal government of the Federative Republic of Brazil....",
-          "The federal government of the Federative Republic of Brazil...."
+          "Federal republic in South America....",
+          "The federal government of Brazil, identified as a major emerging polluter....",
+          "The Federative Republic of Brazil, a large emerging economy involved in international environmental ...",
+          "One of the leading global economies mentioned as investing heavily in the green energy sector...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "China",
+      "canonical_name": "United Nations",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 4,
+      "cluster_size": 3,
       "source_chunks": [
-        14,
-        21,
-        22,
-        40
+        0,
+        16,
+        20
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Emerging world power experiencing rapid industrialisation, influencing global environmental governan...",
-          "People's Republic of China, the world's largest current emitter of CO₂ and a rapidly developing econ...",
-          "The central government of the People's Republic of China....",
-          "The national government of the People’s Republic of China...."
+          "International intergovernmental organization founded in 1945....",
+          "The primary international organization created in 1945 to provide a forum for global cooperation....",
+          "International intergovernmental organization that coordinates global environmental and development a..."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "India",
+      "canonical_name": "Harry S. Truman",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 4,
+      "cluster_size": 3,
       "source_chunks": [
-        14,
+        0,
+        16,
+        36
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "President of the United States (1945‑1953)....",
+          "President of the United States (1945‑1953)....",
+          "President of the United States (1945‑1953)...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Beaver Committee",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        0,
+        30,
+        39
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "British government committee that reported on air‑pollution levels in 1954....",
+          "A UK‑appointed committee that produced the 1954 Beaver Committee Report on air‑pollution....",
+          "A committee that conducted an early economic costing of air‑pollution damage in the mid‑1950s...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "World Wildlife Fund (WWF)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        0,
+        5,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International conservation organization founded in 1961....",
+          "International conservation organization founded in Switzerland in 1961, now known as the World Wide ...",
+          "International conservation organization...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "United Kingdom",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        0,
+        2,
+        42
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Sovereign state of Great Britain....",
+          "The national government of the United Kingdom....",
+          "National government of the United Kingdom...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Al Gore",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        2,
+        49,
+        50
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Former U.S. Vice President and climate advocate who organized a global music event to raise climate ...",
+          "Former U.S. Vice President and environmental advocate featured on the 2006 *Vanity Fair* “Green Issu...",
+          "Former U.S. Vice President and climate advocate, known for the documentary *An Inconvenient Truth*...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "UNEP",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        2,
         18,
-        21,
-        22
+        24
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Emerging world power experiencing rapid industrialisation, influencing global environmental governan...",
-          "South Asian nation and member of the UN....",
-          "Republic of India, a fast‑growing economy and major emitter....",
-          "Government of the Republic of India...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "Robert Costanza",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 3,
-      "source_chunks": [
-        1,
-        36,
-        37
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Economist and scholar known for work on ecosystem services...",
-          "Ecological economist who helped develop modern ecological economics....",
-          "Ecological economist who, with colleagues, produced early large‑scale estimates of the monetary valu..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "Reclaim the Streets",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 3,
-      "source_chunks": [
-        1,
-        9,
-        10
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "International activist network focused on reclaiming public space...",
-          "UK‑based activist collective focused on reclaiming public spaces from car dominance....",
-          "A grassroots activist network that stages public demonstrations against car‑centric urban planning a..."
+          "United Nations Environment Programme, the leading global environmental authority within the UN syste...",
+          "United Nations Environment Programme, created to provide a global voice for the environmental agenda...",
+          "United Nations Environment Programme, a global-level advocate for the environment that establishes i..."
         ],
         "years": []
       }
@@ -415,15 +480,15 @@
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        1,
-        12,
-        38
+        2,
+        13,
+        40
       ],
       "supporting_evidence": {
         "descriptions": [
-          "British multinational oil and gas company...",
           "British multinational oil and gas company....",
-          "British multinational oil and gas company (formerly British Petroleum)...."
+          "A multinational oil and gas company....",
+          "British multinational oil and gas company...."
         ],
         "years": []
       }
@@ -438,14 +503,14 @@
       "cluster_size": 3,
       "source_chunks": [
         3,
-        38,
-        39
+        40,
+        41
       ],
       "supporting_evidence": {
         "descriptions": [
           "American ecologist and author of *The Tragedy of the Commons* (1968)....",
-          "American ecologist and philosopher best known for formulating the ‘tragedy of the commons’ concept....",
-          "American ecologist and author of “The Tragedy of the Commons”...."
+          "American ecologist and author of the ‘tragedy of the commons’ concept....",
+          "American ecologist and author of the “Tragedy of the Commons” essay...."
         ],
         "years": []
       }
@@ -460,14 +525,14 @@
       "cluster_size": 3,
       "source_chunks": [
         4,
-        11,
-        13
+        12,
+        14
       ],
       "supporting_evidence": {
         "descriptions": [
-          "A UK‑based conservation charity founded in 1895 that purchases and manages land of natural beauty....",
-          "The largest environmental and heritage charity in the United Kingdom....",
-          "Conservation charity protecting historic places and natural landscapes in the UK...."
+          "A historic UK conservation charity founded in 1895 that purchased early properties and land to prote...",
+          "The largest environmental and heritage conservation group in the United Kingdom....",
+          "Heritage conservation charity that joined the opposition to Heathrow airport expansion...."
         ],
         "years": []
       }
@@ -483,20 +548,20 @@
       "source_chunks": [
         4,
         5,
-        34
+        36
       ],
       "supporting_evidence": {
         "descriptions": [
-          "One of the United States’ oldest environmental NGOs, founded in 1892....",
-          "U.S. environmental organization....",
-          "One of the oldest and largest grassroots environmental organizations in the United States...."
+          "One of the United States' oldest environmental organizations, founded in 1892....",
+          "American environmental organization founded in 1892, known for grassroots activism and conservation ...",
+          "Major U.S. environmental non‑governmental organization...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "National Wildlife Federation",
+      "canonical_name": "Royal Society for the Protection of Birds (RSPB)",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -505,42 +570,64 @@
       "source_chunks": [
         4,
         5,
-        11
+        12
       ],
       "supporting_evidence": {
         "descriptions": [
-          "A US conservation organization founded in 1936....",
-          "U.S. conservation organization....",
-          "One of the largest wildlife‑conservation organisations in the United States...."
+          "A UK conservation charity founded in 1889, originally focused on bird protection and later managing ...",
+          "British bird‑conservation charity founded in the late 19th century....",
+          "A major UK bird‑conservation charity...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "United Kingdom",
+      "canonical_name": "International Monetary Fund (IMF)",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
+        11,
         18,
-        29,
-        40
+        36
       ],
       "supporting_evidence": {
         "descriptions": [
-          "European nation and UN member state....",
-          "The national government of the United Kingdom....",
-          "The national government of the United Kingdom...."
+          "An international financial institution that provides loans and policy advice to its member countries...",
+          "International financial institution that provides macro‑economic stability assistance....",
+          "International financial institution established to ensure post‑war peace and prosperity through econ..."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "UNFCCC",
+      "canonical_name": "United Nations (UN)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        17,
+        18,
+        19
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International organization comprising member states, overseeing global governance....",
+          "International organization comprising multiple specialized agencies and bodies....",
+          "An intergovernmental organization that serves as a global forum for environmental, economic and soci..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "United States of America (USA)",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -553,129 +640,311 @@
       ],
       "supporting_evidence": {
         "descriptions": [
-          "United Nations Framework Convention on Climate Change, the international treaty body governing clima...",
-          "United Nations Framework Convention on Climate Change, the international treaty that provides the fr...",
-          "United Nations Framework Convention on Climate Change, the international treaty that underpins globa..."
+          "A sovereign state that exercised political influence within the United Nations system....",
+          "A sovereign nation that was a major emitter of ozone‑depleting substances in the 1980s....",
+          "A major industrialised nation and historically large emitter of carbon dioxide...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "Residents of Afton",
+      "canonical_name": "Intergovernmental Panel on Climate Change (IPCC)",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 2,
+      "cluster_size": 3,
       "source_chunks": [
-        1,
-        8
+        22,
+        29,
+        33
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Residents of Afton, a predominantly black community in North Carolina, USA...",
-          "Predominantly Black community in Warren County, North Carolina, USA...."
+          "A scientific body created in 1988 by the World Meteorological Organization and the United Nations En...",
+          "A United Nations body that assesses the science related to climate change....",
+          "International body that assesses climate science and produces assessment reports...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "Brandt Commission",
+      "canonical_name": "William Vogt",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
-        17
+        0,
+        36
       ],
       "supporting_evidence": {
         "descriptions": [
-          "International commission that examined global environmental and development challenges...",
-          "An international commission chaired by former German Chancellor Willy Brandt that examined North‑Sou..."
+          "Author of *Road to Survival* (1948)....",
+          "Ecologist and author of the 1948 book \"Road to Survival.\"..."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "Union Carbide",
+      "canonical_name": "Defenders of Wildlife",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
-        17
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Multinational chemical corporation responsible for the Bhopal disaster...",
-          "A multinational chemical corporation responsible for the 1984 Bhopal disaster...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "Friends of the Earth",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        1,
+        0,
         5
       ],
       "supporting_evidence": {
         "descriptions": [
-          "International environmental NGO...",
-          "International network of environmental organizations founded in 1969...."
+          "U.S. wildlife‑conservation organization founded in 1947....",
+          "U.S. nonprofit founded in 1947, focused on protecting native animals and their habitats...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "Sting",
+      "canonical_name": "Aldo Leopold",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
-        46
+        0,
+        25
       ],
       "supporting_evidence": {
         "descriptions": [
-          "British musician and activist...",
-          "British musician and activist...."
+          "Ecologist and author of *Sand County Almanac* (1949)....",
+          "American forester, ecologist, and author of *A Sand County Almanac*...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "Al Gore",
+      "canonical_name": "Paley Commission",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
-        47
+        0,
+        36
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Former U.S. Vice President and climate advocate...",
-          "Former U.S. Vice President and environmental advocate...."
+          "U.S. government commission created in 1951 to study natural‑resource availability....",
+          "Presidentially appointed commission chaired by William Paley that studied resource availability...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "J. K. Galbraith",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        45
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "U.S. economist and author of *The Affluent Society* (1958)....",
+          "American economist and author of *The Affluent Society* (1956)...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Natural Resources Defense Council",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        12
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "U.S. environmental advocacy organization founded in 1970....",
+          "A US‑based environmental advocacy organisation...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Don't Make a Wave Committee",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        8
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Canadian activist group formed in 1970 to protest nuclear testing....",
+          "Group of peace activists formed in 1970 to protest US nuclear testing at Amchitka Island..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Royal Commission on Environmental Pollution",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        2
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "British government commission created in 1970....",
+          "A UK government advisory body that examined environmental pollution issues...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "International Union for Conservation of Nature (IUCN)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        29
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Global union of governments and NGOs that published its first Red Data Book in 1966....",
+          "A global authority on the status of the natural world and the measures needed to safeguard it...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "James Lovelock",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        28
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Scientist who formulated the Gaia hypothesis (1972)....",
+          "NASA scientist who formulated the Gaia hypothesis, linking Earth's atmosphere to living processes...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "E. F. Schumacher",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        3
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Economist and author of *Small is Beautiful* (1973)....",
+          "German-born economist and author of *Small is Beautiful* (1973)...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Murray Bookchin",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        27
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Social theorist and author of *Post‑Scarcity Anarchism* (1973)....",
+          "American social theorist and ecologist (1921‑2006) who combined anarchist philosophy with ecology to..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Club of Rome",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        37
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International think‑tank that published *The Limits to Growth* in 1972....",
+          "International think‑tank founded in 1968 to study global limits to growth and resource consumption...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "IPCC",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        34
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The Intergovernmental Panel on Climate Change, a UN scientific body that assesses climate science....",
+          "Intergovernmental Panel on Climate Change, the leading global body for assessing climate science...."
         ],
         "years": []
       }
@@ -689,33 +958,33 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
-        41
+        2,
+        43
       ],
       "supporting_evidence": {
         "descriptions": [
-          "British ecological economist and author...",
-          "Economist and author of *Prosperity Without Growth* (2009)...."
+          "Economist and author known for his work on sustainable prosperity....",
+          "Author of *Prosperity Without Growth* (2009) and a prominent scholar in ecological economics...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "University of East Anglia",
+      "canonical_name": "Barack Obama",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
-        31
+        2,
+        23
       ],
       "supporting_evidence": {
         "descriptions": [
-          "British university that hosts the Climatic Research Unit...",
-          "British university hosting the CRU...."
+          "44th President of the United States (2009‑2017)....",
+          "President of the United States during the COP 15 negotiations (2009‑2017)...."
         ],
         "years": []
       }
@@ -729,13 +998,33 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
+        2,
         7
       ],
       "supporting_evidence": {
         "descriptions": [
-          "British politician, member of the Green Party...",
-          "British politician, first Green Party Member of Parliament in the UK...."
+          "British politician, member of the Green Party, and the first Green MP in the UK Parliament....",
+          "Born 1960, the first Green Party Member of Parliament in Britain, elected for Brighton Pavilion in 2..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Natural Resources Defense Council (NRDC)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        5
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "U.S.-based environmental advocacy organization founded in 1970....",
+          "U.S. environmental advocacy group founded in 1970...."
         ],
         "years": []
       }
@@ -750,12 +1039,12 @@
       "cluster_size": 2,
       "source_chunks": [
         3,
-        23
+        25
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Ancient Greek physician (c. 460 – c. 377 BC) who linked climate, food, and occupation to disease....",
-          "Ancient Greek physician (c. 460‑c. 370 BC) who linked climate to human health...."
+          "Ancient Greek physician (c. 460 – c. 377 BC) who linked environment to health....",
+          "Ancient Greek physician who linked climate to human health...."
         ],
         "years": []
       }
@@ -770,32 +1059,12 @@
       "cluster_size": 2,
       "source_chunks": [
         3,
-        25
+        27
       ],
       "supporting_evidence": {
         "descriptions": [
-          "British environmental magazine....",
-          "Environmental magazine founded by Edward Goldsmith in the UK...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "Royal Society for the Protection of Birds (RSPB)",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        4,
-        13
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "A UK bird‑conservation charity founded in 1889....",
-          "UK charity dedicated to bird conservation and wider environmental protection...."
+          "British environmental magazine and publishing organization....",
+          "British environmental magazine founded in 1970 that became a key venue for ecological discourse and ..."
         ],
         "years": []
       }
@@ -809,13 +1078,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        4,
-        5
+        5,
+        6
       ],
       "supporting_evidence": {
         "descriptions": [
-          "A US bird‑conservation organization founded in 1905, named after naturalist John James Audubon....",
-          "U.S. organization dedicated to bird conservation and habitat protection...."
+          "U.S. conservation organization founded in 1905, named after naturalist John James Audubon....",
+          "U.S. nonprofit focused on bird conservation and broader environmental issues...."
         ],
         "years": []
       }
@@ -829,20 +1098,20 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        4,
-        5
+        5,
+        6
       ],
       "supporting_evidence": {
         "descriptions": [
-          "An American conservation organization founded in 1922....",
-          "U.S. conservation organization focused on wildlife and natural resources...."
+          "American conservation organization established in 1922, focused on protecting natural resources....",
+          "U.S. conservation organization that supported EDF’s DDT‑ban litigation...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "Natural Resources Defense Council",
+      "canonical_name": "National Wildlife Federation",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -850,74 +1119,114 @@
       "cluster_size": 2,
       "source_chunks": [
         5,
-        11
+        12
       ],
       "supporting_evidence": {
         "descriptions": [
-          "U.S. environmental advocacy group founded in 1970....",
-          "A US‑based environmental advocacy organisation with a large online activist community...."
+          "American conservation group founded in 1936, promoting wildlife protection and environmental educati...",
+          "One of the largest wildlife conservation organisations in the United States...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "UK Green Party",
+      "canonical_name": "John F. Kennedy",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        7,
-        9
+        5,
+        26
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Political party in the United Kingdom focused on ecological sustainability, social justice and grass...",
-          "Political party in the United Kingdom that promotes green politics and sustainability...."
+          "35th President of the United States (1961‑1963)....",
+          "President of the United States (1961‑1963)...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "British Government",
-      "variations": [
-        "British government"
+      "canonical_name": "Environmental Defense Fund (EDF)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        5,
+        6
       ],
+      "supporting_evidence": {
+        "descriptions": [
+          "U.S. nonprofit environmental advocacy group founded in 1967....",
+          "U.S. environmental nonprofit that led legal campaigns to ban the pesticide DDT...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "UNESCO",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        8,
+        17
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "United Nations Educational, Scientific and Cultural Organization...",
+          "United Nations Educational, Scientific and Cultural Organization...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "US government",
+      "variations": [
+        "US Government"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        8,
+        30
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Federal government of the United States of America...",
+          "The federal government of the United States of America...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Friends of the Earth International",
+      "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
         9,
-        31
+        12
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Central government of the United Kingdom....",
-          "The United Kingdom's central government...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "International Monetary Fund (IMF)",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        10,
-        17
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "A global financial institution that sets economic policies for member countries....",
-          "International financial institution that provides loans and policy advice to member countries...."
+          "A global confederation of environmental campaign groups that coordinates member groups worldwide....",
+          "A global network of environmental organisations...."
         ],
         "years": []
       }
@@ -931,13 +1240,33 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        10,
-        29
+        11,
+        31
       ],
       "supporting_evidence": {
         "descriptions": [
-          "An intergovernmental organization that regulates international trade....",
-          "An international organization that adjudicates trade disputes between nations...."
+          "An intergovernmental organization that regulates international trade between nations....",
+          "International body that regulates global trade rules...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Nestlé",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        12,
+        47
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "A multinational food and beverage company....",
+          "Swiss multinational food and beverage corporation...."
         ],
         "years": []
       }
@@ -951,13 +1280,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        11,
-        46
+        13,
+        48
       ],
       "supporting_evidence": {
         "descriptions": [
-          "A large UK supermarket chain....",
-          "British supermarket chain...."
+          "A large UK‑based supermarket chain....",
+          "British multinational supermarket chain, one of the largest retailers in the UK...."
         ],
         "years": []
       }
@@ -971,13 +1300,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        12,
-        25
+        13,
+        26
       ],
       "supporting_evidence": {
         "descriptions": [
-          "International conservation organization that designs and implements nature‑based projects....",
-          "International conservation organization that established a research station on toxic chemicals and w..."
+          "An international conservation organization....",
+          "International conservation organization that established a Toxic Chemicals and Wildlife research sta..."
         ],
         "years": []
       }
@@ -991,20 +1320,20 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        12,
-        31
+        13,
+        33
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Industry‑led international coalition that historically opposed climate‑change regulation....",
-          "An American industrial grouping formed shortly after the IPCC, representing business interests oppos..."
+          "An international industry coalition that has historically opposed climate‑change regulation....",
+          "An American industrial grouping formed in the early 1990s to represent the interests of fossil‑fuel ..."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "United States of America",
+      "canonical_name": "European Union (EU)",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -1012,32 +1341,12 @@
       "cluster_size": 2,
       "source_chunks": [
         14,
-        40
+        31
       ],
       "supporting_evidence": {
         "descriptions": [
-          "The United States, a major global power whose dominance shaped environmental negotiations after the ...",
-          "The federal government of the United States...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "Harry S. Truman",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        15,
-        34
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "President of the United States (1884‑1972)....",
-          "President of the United States (1945‑1953)...."
+          "Supranational political and economic union of European states....",
+          "Supranational political and economic union of European member states...."
         ],
         "years": []
       }
@@ -1051,33 +1360,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        15,
-        17
+        16,
+        19
       ],
       "supporting_evidence": {
         "descriptions": [
-          "State entity representing the USSR during the early Cold War period....",
-          "A former federal socialist state comprising Russia and other republics, existing until 1991...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "actor",
-      "canonical_name": "Sweden",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        15,
-        28
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Nordic country recognised for its neutral and progressive foreign policy....",
-          "National government of Sweden...."
+          "Federal socialist state that existed from 1922 to 1991, comprising Russia and other republics....",
+          "A former federal socialist state that existed until 1991...."
         ],
         "years": []
       }
@@ -1091,20 +1380,20 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        15,
-        18
+        17,
+        19
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Main deliberative, policymaking and representative organ of the United Nations....",
-          "Main deliberative organ of the United Nations...."
+          "Principal deliberative organ of the United Nations....",
+          "The main deliberative, policymaking and representative organ of the United Nations...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "George H. Bush",
+      "canonical_name": "World Meteorological Organization (WMO)",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -1112,32 +1401,52 @@
       "cluster_size": 2,
       "source_chunks": [
         18,
-        28
+        22
       ],
       "supporting_evidence": {
         "descriptions": [
-          "President of the United States at the time of UNCED....",
-          "President of the United States (1989‑1993)...."
+          "UN agency responsible for aspects of environmental policy....",
+          "A United Nations specialized agency for meteorology and atmospheric sciences...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "US Environmental Protection Agency",
+      "canonical_name": "UNCHE",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        20,
-        26
+        18,
+        23
       ],
       "supporting_evidence": {
         "descriptions": [
-          "The United States federal agency responsible for protecting human health and the environment....",
-          "United States federal agency tasked with protecting human health and the environment...."
+          "UN entity that began to address the links between the environment and development agendas....",
+          "A United Nations body that historically helped shape international climate negotiations...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Union Carbide",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        19,
+        51
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "A multinational chemical corporation responsible for the 1984 Bhopal disaster....",
+          "Multinational chemical corporation involved in a major gas disaster in India...."
         ],
         "years": []
       }
@@ -1151,13 +1460,33 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        20,
-        27
+        22,
+        29
       ],
       "supporting_evidence": {
         "descriptions": [
-          "An international treaty and its secretariat that coordinates global climate negotiations....",
-          "An international environmental treaty that stabilises greenhouse‑gas concentrations in the atmospher..."
+          "An international treaty adopted in 1992 that provides a framework for negotiating protocols to limit...",
+          "An international environmental treaty that provides the framework for global climate negotiations...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "United States of America",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        24,
+        42
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The United States, a leading global power influencing international environmental policy....",
+          "National government of the United States...."
         ],
         "years": []
       }
@@ -1171,12 +1500,12 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        23,
-        33
+        25,
+        35
       ],
       "supporting_evidence": {
         "descriptions": [
-          "English economist and demographer (1766‑1834) who articulated the relationship between population gr...",
+          "English economist and demographer known for his theory of population limits....",
           "British scholar and demographer, author of *An Essay on the Principle of Population*...."
         ],
         "years": []
@@ -1184,20 +1513,20 @@
     },
     {
       "type": "actor",
-      "canonical_name": "Beaver Committee",
+      "canonical_name": "British government",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        28,
-        37
+        31,
+        33
       ],
       "supporting_evidence": {
         "descriptions": [
-          "A UK government‑appointed committee that investigated air‑pollution in the early 1950s....",
-          "A committee that conducted an early attempt to cost the damage caused by air pollution in the mid‑19..."
+          "The central government of the United Kingdom....",
+          "The United Kingdom’s central government...."
         ],
         "years": []
       }
@@ -1211,13 +1540,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        31,
-        32
+        33,
+        34
       ],
       "supporting_evidence": {
         "descriptions": [
-          "The United Kingdom's oldest scientific academy....",
-          "The United Kingdom’s national academy of sciences, dedicated to promoting excellence in science...."
+          "The United Kingdom’s national academy of sciences, the world’s oldest scientific academy....",
+          "The United Kingdom's national academy of sciences, a learned society promoting scientific excellence..."
         ],
         "years": []
       }
@@ -1231,33 +1560,33 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        34,
-        43
+        36,
+        45
       ],
       "supporting_evidence": {
         "descriptions": [
           "President of the United States (1969‑1974)....",
-          "42nd President of the United States...."
+          "42nd President of the United States (1913‑1994)...."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "Paul Ehrlich",
+      "canonical_name": "Massachusetts Institute of Technology (MIT)",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        35,
-        37
+        37,
+        39
       ],
       "supporting_evidence": {
         "descriptions": [
-          "American biologist and population scholar, prominent critic of growth‑centric development....",
-          "American biologist and author who co‑advocated the public service functions of the environment...."
+          "Leading academic institution whose systems scientists developed the first integrated global model li...",
+          "Leading research university in the United States that produced an early report on environmental serv..."
         ],
         "years": []
       }
@@ -1271,76 +1600,66 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        36,
-        37
+        38,
+        39
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Mathematical economist known for applying the second law of thermodynamics to economic theory....",
-          "Economist and ecological thinker known for critiquing the reliance on purely economic methods for en..."
+          "Mathematical economist who applied thermodynamic principles to economic theory....",
+          "Romanian‑American economist known for his critique of applying pure economic methods to environmenta..."
         ],
         "years": []
       }
     },
     {
       "type": "actor",
-      "canonical_name": "BBC",
+      "canonical_name": "Robert Costanza",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        42,
-        48
+        38,
+        39
       ],
       "supporting_evidence": {
         "descriptions": [
-          "British public broadcaster that held a monopoly on television until the mid‑1950s....",
-          "British public service broadcaster known for news, documentaries, and educational programming...."
+          "Ecological economist who expanded the field after its early pioneers....",
+          "Ecological economist who, with colleagues, produced a landmark valuation of global ecosystem service..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Franny Armstrong",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        49,
+        50
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "British environmental campaigner who produced the 2009 film *The Age of Stupid*....",
+          "Director of the documentary *The Age of Stupid* and climate campaigner...."
         ],
         "years": []
       }
     },
     {
       "type": "concept",
-      "canonical_name": "environmental movement",
+      "canonical_name": "Sustainable development",
       "variations": [
-        "Environmental movement",
-        "Environmental movement",
-        "Environmental movement"
-      ],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 9,
-      "source_chunks": [
-        3,
-        4,
-        5,
-        6,
-        11,
-        13,
-        30,
-        32,
-        51
-      ],
-      "supporting_evidence": {
-        "descriptions": [],
-        "years": []
-      }
-    },
-    {
-      "type": "concept",
-      "canonical_name": "Sustainable Development",
-      "variations": [
-        "Sustainable development",
-        "Sustainable development",
-        "Sustainable development",
-        "Sustainable development",
-        "Sustainable development",
-        "Sustainable development",
-        "Sustainable development"
+        "Sustainable Development",
+        "sustainable development",
+        "sustainable development",
+        "sustainable development",
+        "sustainable development"
       ],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -1349,12 +1668,12 @@
       "source_chunks": [
         1,
         2,
-        11,
-        17,
-        18,
+        13,
         19,
-        36,
-        41
+        20,
+        21,
+        38,
+        43
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1365,17 +1684,83 @@
       "type": "concept",
       "canonical_name": "Environmentalism",
       "variations": [
+        "environmentalism",
         "environmentalism"
       ],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 4,
+      "cluster_size": 6,
       "source_chunks": [
         2,
-        14,
-        23,
-        50
+        3,
+        4,
+        24,
+        44,
+        51
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Environmental movement",
+      "variations": [
+        "environmental movement",
+        "environmental movement"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 5,
+      "source_chunks": [
+        4,
+        6,
+        7,
+        12,
+        15
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Tragedy of the Commons",
+      "variations": [
+        "Tragedy of the commons"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        0,
+        3,
+        40
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Environmental justice",
+      "variations": [
+        "environmental justice"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        2,
+        9,
+        10
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1391,12 +1776,11 @@
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 4,
+      "cluster_size": 3,
       "source_chunks": [
         2,
-        44,
-        45,
-        46
+        47,
+        48
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1405,28 +1789,9 @@
     },
     {
       "type": "concept",
-      "canonical_name": "Ecological economics",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 4,
-      "source_chunks": [
-        36,
-        37,
-        40,
-        41
-      ],
-      "supporting_evidence": {
-        "descriptions": [],
-        "years": []
-      }
-    },
-    {
-      "type": "concept",
-      "canonical_name": "Radical ecology",
+      "canonical_name": "green economy",
       "variations": [
-        "radical ecology"
+        "Green economy"
       ],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -1434,8 +1799,8 @@
       "cluster_size": 3,
       "source_chunks": [
         2,
-        25,
-        26
+        42,
+        43
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1444,19 +1809,18 @@
     },
     {
       "type": "concept",
-      "canonical_name": "Environmental agenda",
+      "canonical_name": "Anti‑roads movement",
       "variations": [
-        "environmental agenda",
-        "environmental agenda"
+        "anti‑roads movement"
       ],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        3,
-        6,
-        32
+        9,
+        10,
+        11
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1474,8 +1838,28 @@
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        14,
-        15,
+        16,
+        21,
+        24
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Multilateral Environmental Agreements (MEAs)",
+      "variations": [
+        "Multilateral environmental agreements (MEAs)"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        16,
+        21,
         22
       ],
       "supporting_evidence": {
@@ -1485,18 +1869,16 @@
     },
     {
       "type": "concept",
-      "canonical_name": "Multilateral environmental agreements (MEAs)",
-      "variations": [
-        "Multilateral Environmental Agreements (MEAs)"
-      ],
+      "canonical_name": "Burden of proof",
+      "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        14,
-        19,
-        20
+        29,
+        30,
+        32
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1505,18 +1887,50 @@
     },
     {
       "type": "concept",
-      "canonical_name": "Consumerism",
-      "variations": [
-        "consumerism"
-      ],
+      "canonical_name": "Acid rain",
+      "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        41,
-        42,
-        51
+        29,
+        30,
+        31
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Gaia hypothesis",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        28
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Small is Beautiful",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        3
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1533,7 +1947,62 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        10
+        11
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Ecosystem services",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        39
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Deep ecology",
+      "variations": [
+        "deep ecology"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        27
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Radical ecology",
+      "variations": [
+        "radical ecology"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        27
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1549,46 +2018,8 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
-        41
-      ],
-      "supporting_evidence": {
-        "descriptions": [],
-        "years": []
-      }
-    },
-    {
-      "type": "concept",
-      "canonical_name": "Green Economy",
-      "variations": [
-        "Green economy"
-      ],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        1,
-        40
-      ],
-      "supporting_evidence": {
-        "descriptions": [],
-        "years": []
-      }
-    },
-    {
-      "type": "concept",
-      "canonical_name": "deep ecology",
-      "variations": [
-        "Deep ecology"
-      ],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
         2,
-        26
+        43
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1597,34 +2028,15 @@
     },
     {
       "type": "concept",
-      "canonical_name": "Environmental justice",
+      "canonical_name": "Environmental governance",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        2,
-        9
-      ],
-      "supporting_evidence": {
-        "descriptions": [],
-        "years": []
-      }
-    },
-    {
-      "type": "concept",
-      "canonical_name": "Tragedy of the Commons",
-      "variations": [
-        "Tragedy of the commons"
-      ],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
         3,
-        38
+        17
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1641,7 +2053,43 @@
       "cluster_size": 2,
       "source_chunks": [
         3,
-        35
+        37
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Environmental campaign groups",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        32
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "green political parties",
+      "variations": [
+        "Green political parties"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        5,
+        7
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1651,31 +2099,16 @@
     {
       "type": "concept",
       "canonical_name": "throwaway society",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        5,
-        45
+      "variations": [
+        "Throwaway society"
       ],
-      "supporting_evidence": {
-        "descriptions": [],
-        "years": []
-      }
-    },
-    {
-      "type": "concept",
-      "canonical_name": "Anti‑roads movement",
-      "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        8,
-        9
+        6,
+        48
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1685,14 +2118,16 @@
     {
       "type": "concept",
       "canonical_name": "Legally binding targets",
-      "variations": [],
+      "variations": [
+        "legally binding targets"
+      ],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        12,
-        21
+        13,
+        23
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1701,17 +2136,15 @@
     },
     {
       "type": "concept",
-      "canonical_name": "Human environment",
-      "variations": [
-        "human environment"
-      ],
+      "canonical_name": "environmental agenda",
+      "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        15,
-        16
+        18,
+        34
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1727,8 +2160,8 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        20,
-        28
+        22,
+        30
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1737,34 +2170,15 @@
     },
     {
       "type": "concept",
-      "canonical_name": "Ecology",
+      "canonical_name": "Malthusian principle",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        23,
-        32
-      ],
-      "supporting_evidence": {
-        "descriptions": [],
-        "years": []
-      }
-    },
-    {
-      "type": "concept",
-      "canonical_name": "Burden of proof",
-      "variations": [
-        "burden of proof"
-      ],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        27,
-        28
+        25,
+        35
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1782,8 +2196,8 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        27,
-        32
+        29,
+        49
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1792,15 +2206,17 @@
     },
     {
       "type": "concept",
-      "canonical_name": "Acid rain",
-      "variations": [],
+      "canonical_name": "environmental economics",
+      "variations": [
+        "Environmental economics"
+      ],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        28,
-        32
+        34,
+        36
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1816,8 +2232,8 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        33,
-        37
+        35,
+        40
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1826,15 +2242,17 @@
     },
     {
       "type": "concept",
-      "canonical_name": "greenwash",
-      "variations": [],
+      "canonical_name": "Ecological economics",
+      "variations": [
+        "ecological economics"
+      ],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        44,
-        45
+        39,
+        43
       ],
       "supporting_evidence": {
         "descriptions": [],
@@ -1842,51 +2260,37 @@
       }
     },
     {
-      "type": "event",
-      "canonical_name": "First Earth Day",
+      "type": "concept",
+      "canonical_name": "Consumerism",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 3,
+      "cluster_size": 2,
       "source_chunks": [
-        2,
-        43,
-        48
+        44,
+        54
       ],
       "supporting_evidence": {
-        "descriptions": [
-          "Communities across the United States participated in the first Earth Day, marking a major public env...",
-          "US Senator Gaylord Nelson proposed and organized the first Earth Day on 22 April 1970, a nationwide ...",
-          "The inaugural Earth Day marked a peak in U.S. public concern for the environment...."
-        ],
-        "years": [
-          1970
-        ]
+        "descriptions": [],
+        "years": []
       }
     },
     {
-      "type": "event",
-      "canonical_name": "Publication of Silent Spring",
+      "type": "concept",
+      "canonical_name": "environmental awareness",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 3,
+      "cluster_size": 2,
       "source_chunks": [
-        3,
-        5,
-        23
+        47,
+        49
       ],
       "supporting_evidence": {
-        "descriptions": [
-          "Rachel Carson's book Silent Spring linked the dangers of the atomic bomb to the misuse of pesticides...",
-          "Rachel Carson’s bestselling book Silent Spring brought the dangers of DDT aerial spraying to widespr...",
-          "Rachel Carson's book *Silent Spring* was published, establishing scientific evidence as a central pi..."
-        ],
-        "years": [
-          1962
-        ]
+        "descriptions": [],
+        "years": []
       }
     },
     {
@@ -1899,12 +2303,12 @@
       "cluster_size": 2,
       "source_chunks": [
         3,
-        35
+        37
       ],
       "supporting_evidence": {
         "descriptions": [
-          "A study by Meadows et al. that highlighted systemic limits to economic and population growth, intens...",
-          "The Club of Rome released its first report, *The Limits to Growth*, based on work by MIT systems sci..."
+          "The Limits to Growth, authored by Meadows and colleagues, was published, presenting computer‑modelle...",
+          "The Club of Rome released its first report, \"The Limits to Growth,\" presenting scenarios from an int..."
         ],
         "years": [
           1972
@@ -1913,67 +2317,46 @@
     },
     {
       "type": "event",
-      "canonical_name": "Emergence of the UK Anti‑Roads Movement",
-      "variations": [
-        "Emergence of the UK anti‑roads movement"
-      ],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        8,
-        9
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "In the 1980s, the UK anti‑roads movement formed in reaction to planning decisions that prioritized p...",
-          "A multi‑year development in the early 1990s in which a single‑issue campaign against new road constr..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "event",
-      "canonical_name": "Adoption of the Convention on Biological Diversity (CBD)",
+      "canonical_name": "Establishment of Greenpeace",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        18,
-        27
+        5,
+        8
       ],
       "supporting_evidence": {
         "descriptions": [
-          "UNCED resulted in the adoption of the CBD, a global agreement to conserve biological diversity....",
-          "International momentum at the Rio Earth Summit resulted in the adoption of the Convention on Biologi..."
+          "Founding of Greenpeace, an international environmental activist organization....",
+          "Key members of the Don't Make a Wave Committee founded Greenpeace as a campaign organization, adopti..."
         ],
         "years": [
-          1992
+          1971
         ]
       }
     },
     {
       "type": "event",
-      "canonical_name": "Adoption of the United Nations Framework Convention on Climate Change (UNFCCC)",
+      "canonical_name": "Publication of \"The Affluent Society\"",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        19,
-        27
+        36,
+        45
       ],
       "supporting_evidence": {
         "descriptions": [
-          "International treaty establishing a framework for global action to combat climate change....",
-          "At the Rio Earth Summit, the UNFCCC was adopted, establishing a framework for international climate‑..."
+          "John Kenneth Galbraith released *The Affluent Society*, critiquing the post‑war focus on production ...",
+          "Economist J. K. Galbraith published his book *The Affluent Society*, identifying the imbalance betwe..."
         ],
         "years": [
-          1992
+          1956,
+          1958
         ]
       }
     },
@@ -1984,13 +2367,12 @@
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 30,
+      "cluster_size": 32,
       "source_chunks": [
         0,
         1,
         2,
         4,
-        5,
         6,
         7,
         8,
@@ -1999,56 +2381,59 @@
         11,
         12,
         13,
-        18,
-        25,
+        14,
+        15,
         26,
+        27,
         28,
-        29,
         30,
         31,
-        39,
-        40,
-        41,
+        32,
+        33,
+        42,
         44,
-        45,
         46,
         47,
         48,
         49,
-        51
+        50,
+        52,
+        53
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country that adopted several early environmental statutes (Clean Air Act 1956, Environmental Polluti...",
-          "Country referenced repeatedly for policy actions, protests, and institutional developments throughou...",
-          "Country mentioned as a primary source of early and powerful environmental campaign groups and case s...",
-          "Early battleground for US and UK environmental campaigners; location of the National Trust’s early l...",
-          "Country represented at the 1971 FoE international meeting and location of FoE UK headquarters....",
-          "In the UK, early Green Party links with campaign groups were less established, and environmental cam...",
-          "Country where a large protest was held on the first anniversary of Chernobyl and where the Green Par...",
-          "Country where many environmental campaign groups are based and from which the anti‑roads movement em...",
-          "Country where the anti‑roads movement, road protests and related policy debates took place....",
-          "Country where the twenty‑fourth G8 summit was held in Birmingham....",
-          "Mentioned as the national context where the National Trust and RSPB are the largest environmental gr...",
-          "Country where innovative climate‑change partnerships influenced government action and the 2008 Clima...",
-          "The national context for a successful environmental movement that challenged government decisions on...",
-          "Criticised for opposing the UN target that developed nations allocate 0.7 % of national income to de...",
-          "Country where the Nature Conservancy research station and UK pesticide research were based....",
-          "The nation-state that created the Royal Commission for Environmental Pollution and the Department fo...",
-          "Britain’s government that responded to air‑pollution crises with the 1956 Clean Air Act and later ac...",
-          "Country referenced for low trust in food regulators after the BSE crisis and for environmental conce...",
-          "The sovereign state whose government backed Shell’s deep‑sea disposal plan and later criticised Gree...",
-          "Country referenced as the location of the British government, Royal Society, University of East Angl...",
-          "Country whose Prime Minister Gordon Brown hosted the G20 London Summit in April 2009....",
-          "Implemented a green fiscal stimulus of about 11 % of its US$3.9 billion package and launched a ‘Gree...",
-          "Country where food rationing ended in July 1954....",
-          "Country where the 1973 oil embargo sparked national debates on energy security and led to the ‘Save ...",
-          "The UK market accounted for a large share of the toiletries sector and was the base for several gree...",
-          "Home of TV botanist David Bellamy mentioned in the context of early environmental broadcasting....",
-          "Country where the 10:10 campaign was based....",
-          "The nation across which Prince Charles conducted a bio‑fuel‑powered Royal Train ecotour to promote s...",
-          "Country referenced when comparing public opinion differences with the Netherlands and other European...",
-          "Country where a 2009 survey was conducted on public perceptions of a green lifestyle...."
+          "Country referenced throughout the timeline (e.g., Beaver Committee, Clean Air Act, Environmental Pol...",
+          "UK referenced in multiple events such as the first bottle bank in Barnsley and adoption of environme...",
+          "Adopted the world's first Climate Change Act in 2008....",
+          "Identified as a key nation where early environmental organisations were founded and protected lands ...",
+          "Country where FoE UK operated, influencing national policy and staging a bottle‑dump protest at Schw...",
+          "Country discussed in relation to its Green Party, anti‑nuclear campaigns, and electoral history....",
+          "Country of the Observer newspaper and the origin of the WWF fundraising appeal....",
+          "Base of many early environmental campaign groups and the origin of the UK anti‑roads movement....",
+          "The UK anti‑roads movement is an example of a single‑issue campaign supported by a wide range of gro...",
+          "Country that hosted the twenty‑fourth G8 summit in Birmingham in 1998....",
+          "The UK is mentioned as the national context for the National Trust and the RSPB, two of the largest ...",
+          "The United Kingdom is highlighted for its innovative climate‑change partnerships and for adopting th...",
+          "The nation where the Big Ask campaign originated and where parliamentary actions on climate law took...",
+          "Country where the Transition Towns movement provides a community‑led response to climate change and ...",
+          "Country where early parliamentary debate on pesticide impacts took place and where the Nature Conser...",
+          "Country where Edward Goldsmith published the first edition of the magazine The Ecologist....",
+          "The nation whose government created the Royal Commission for Environmental Pollution and the Departm...",
+          "Implemented the 1956 Clean Air Act and was identified as a net exporter of sulphur dioxide....",
+          "Country whose scientists and civil servants at the Department of the Environment advocated for sulph...",
+          "Country whose scientists, government, and waters are mentioned in relation to GM crop trials and the...",
+          "Country referenced as a site of public debate and governmental involvement in climate‑science contro...",
+          "Country of the Prime Minister who hosted the G20 London Summit in April 2009....",
+          "The UK ended all food rationing in July 1954, marking the close of the post‑war rationing period....",
+          "Country where the first bottle bank in the UK was installed in the 1970s....",
+          "The UK experienced national debates on energy security after the 1973 oil crisis and launched severa...",
+          "The UK government ran the 'Are you doing your bit?' public information campaign in the late 1990s....",
+          "The UK Prime Minister Margaret Thatcher is mentioned in the context of 1980s deregulation policies....",
+          "Country referenced as the location of Brighton and as the home of Britain’s leading businesses in 20...",
+          "Country of origin for TV botanist David Bellamy and other British figures referenced....",
+          "Prince Charles’ home country; the 10:10 campaign originated here and the Prince’s ecotour aimed at p...",
+          "Public felt well informed and willing to act; also showed greater differences of opinion about clima...",
+          "Country mentioned in relation to a 2009 survey about green lifestyles...."
         ],
         "years": []
       }
@@ -2060,58 +2445,64 @@
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 24,
+      "cluster_size": 27,
       "source_chunks": [
+        0,
         1,
+        2,
         4,
-        5,
         6,
         8,
         9,
-        11,
-        18,
-        19,
+        10,
+        13,
+        15,
+        16,
         20,
-        22,
-        25,
-        26,
+        21,
+        23,
         28,
-        29,
-        34,
-        39,
-        43,
+        30,
+        36,
+        41,
+        44,
         45,
         46,
         47,
+        48,
         49,
-        50
+        52,
+        53
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country mentioned in multiple entries (e.g., US United Church of Christ, US Time magazine, US Presid...",
-          "Early battleground for US and UK environmental campaigners; later site of Sierra Club campaigns....",
-          "Country central to early environmental legislation and activism described in the text....",
-          "Petra Kelly was involved in political campaigning in the USA....",
-          "Country whose public and politicians were pressured to act against whaling and where many environmen...",
-          "The nation whose authorities attempted to respond to abandoned hazardous waste sites through the 198...",
-          "Cited as the national context where the National Wildlife Federation has one of the largest membersh...",
-          "Identified as the country of origin for Conservation International, a US‑based environmental group t...",
-          "One of the major delegations at UNCED; the US President gave a speech before the conference and the ...",
-          "Country whose president and secretary of state are mentioned in relation to the summit and climate p...",
-          "Country whose EPA estimated large health‑cost savings from CFC reductions and was a major emitter of...",
-          "President Obama’s limited political capital was noted amid US domestic political opposition....",
-          "Country where Silent Spring became a bestseller and where federal officials responded to pesticide c...",
-          "The nation-state whose federal agencies (NASA, EPA) are mentioned as pioneering environmental instit...",
-          "Undertook a scientific study on acid rain in the 1970s and later signed an air‑quality accord with C...",
-          "Country where the precautionary principle is seen as overly restrictive and where most GM corn, soy,...",
-          "Country referenced throughout the text for its post‑war economic boom, resource consumption, and pol...",
-          "Country mentioned in reference to President Franklin D. Roosevelt and the September 2009 G20 summit ...",
-          "The nation that built and launched the Apollo missions, whose senator proposed the first Earth Day a...",
-          "US environmental groups targeted the largest US fast‑food chain, McDonald’s, for its non‑recyclable ...",
-          "Country of origin for the 1966 broadcast of The Undersea World of Jacques Cousteau and later consume...",
-          "Country referenced as the origin of Vanity Fair and the location of several Live Earth concerts and ...",
-          "Country whose public attitudes to climate change were examined in a Yale University study....",
-          "The United States is mentioned as the nationality of salesman Elmer Wheeler, whose 1940s marketing a..."
+          "Country referenced repeatedly (e.g., Defenders of Wildlife, multiple federal environmental statutes)...",
+          "Country mentioned in multiple events such as the Three Mile Island accident, Love Canal, Valley of t...",
+          "President Obama introduced the Climate Change Bill in 2010....",
+          "Identified as one of the primary arenas for early environmental battles, especially over dam project...",
+          "Country whose federal government was urged to consider a national DDT ban and whose environmental mo...",
+          "Country whose public and politicians were pressured to influence the International Whaling Commissio...",
+          "Base of many early environmental campaign groups and the origin of the US environmental justice move...",
+          "The US environment justice movement has moved beyond an anti-toxics focus to include wider issues....",
+          "The United States is referenced as the base of Conservation International and as the broader nationa...",
+          "Country where the Interfaith Power and Light network offers a religious response to climate change a...",
+          "Country referenced in Cold‑War split dynamics and as the location of Lake Success and New York....",
+          "Country whose president chose not to attend the 2002 WSSD and whose delegation was led by the Secret...",
+          "Country that was among the major emitters of CFCs and prepared to take an international lead in the ...",
+          "Country whose president Barack Obama was mentioned as influencing climate negotiations....",
+          "The nation whose government established the Environmental Protection Agency and hosts NASA....",
+          "Carried out a scientific study on acid rain and was identified as a major sulphur dioxide emitter....",
+          "Country whose post‑war economic boom and rapid growth are discussed, as well as its domestic resourc...",
+          "Nation whose president, Franklin D. Roosevelt, responded to the 1929 Great Depression with the New D...",
+          "The USA experienced rapid post‑war economic growth, a boom in car ownership, and the introduction of...",
+          "The nation referenced as “US” in connection with the lunar module Eagle, the senator who proposed Ea...",
+          "Country where early environmental campaigns such as Earth Day, Keep America Beautiful, and the first...",
+          "The US President Ronald Reagan is mentioned alongside the UK Prime Minister in the 1980s deregulatio...",
+          "A 1989 survey of Americans showed high concern for environmental impacts of purchased products....",
+          "Country where consumer activism targeted McDonald's and where green product marketing strategies are...",
+          "Country of origin for the 1966 broadcast, several actors, and many of the environmental initiatives ...",
+          "Subject of a 2010 Yale University study on public attitudes toward climate change....",
+          "Country referenced as the origin of a 1940s salesman whose marketing approach is discussed...."
         ],
         "years": []
       }
@@ -2125,111 +2516,111 @@
       "average_similarity": 1.0,
       "cluster_size": 15,
       "source_chunks": [
-        3,
         4,
-        6,
-        7,
-        9,
-        12,
-        15,
-        21,
-        23,
-        29,
-        30,
-        34,
-        41,
-        46,
-        49
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Continent mentioned as an early arena for environmental campaigning in the late nineteenth century....",
-          "Continent referenced as a locus of student mobilisation against the Vietnam War and for civil rights...",
-          "Sweden's Miljöpartiet de gröna was among the first green parties to secure national electoral succes...",
-          "Region where opposition to nuclear energy grew after the Chernobyl disaster and where green parties ...",
-          "Region referenced in relation to the UK Green Party’s success in the 1989 European elections....",
-          "Region where a pan‑European campaign was launched in 2009 to push for binding climate‑law targets....",
-          "One of the regions where public concern over the environment spread in the late 1960s....",
-          "Region that, together with the USA, generated over 50 % of CO₂ emissions in the twentieth century....",
-          "Broad geographical area referenced in describing the historical European worldview toward nature....",
-          "Region where the precautionary principle is a central tenet of environmental policy and where consum...",
-          "The broader continental region where a boycott of Shell was organised following Greenpeace’s campaig...",
-          "Continent whose countries were the focus of post‑war reconstruction and the Marshall Plan....",
-          "Region mentioned in the context of post‑war reconstruction and economic rebuilding....",
-          "Region mentioned alongside Canada, New Zealand and the USA where green‑product strategies are being ...",
-          "Region referenced when discussing variation in public attitudes toward climate change across Europea..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Stockholm",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 10,
-      "source_chunks": [
-        0,
-        1,
-        2,
-        14,
-        15,
-        17,
-        18,
-        19,
-        22,
-        28
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Host city of the 1972 UN Conference on the Human Environment....",
-          "City where the Stockholm Environment Institute was established in 1989....",
-          "City where the first major United Nations Conference on the Human Environment (UNCHE) took place....",
-          "City where the 1972 UN Conference on the Human Environment (UNCHE) was held....",
-          "Site chosen by the UN General Assembly in 1968 for the UN Conference on the Human Environment....",
-          "City referenced as the location of the earlier Stockholm Conference, twenty years before the Rio Ear...",
-          "Reference city for the earlier UN environmental conference held twenty years before Rio, illustratin...",
-          "City after which the Stockholm Convention (2001) on persistent organic pollutants is named....",
-          "Cited in reference to the 1972 summit and the 2012 Earth Summit (Stockholm +40)....",
-          "Host city of the 1972 United Nations Conference on the Human Environment (UNCHÉ)...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Sweden",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 10,
-      "source_chunks": [
-        0,
-        1,
-        2,
         5,
         6,
-        14,
-        15,
+        7,
+        8,
+        10,
+        17,
+        22,
+        25,
+        31,
+        32,
+        36,
+        44,
+        48,
+        52
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Mentioned as one of the regions where early environmental campaigning emerged in the late nineteenth...",
+          "Continent mentioned as a locus of student activism and emerging environmental movements....",
+          "Continent where US environmental groups established a presence and where numerous green parties and ...",
+          "The continent where green political parties emerged and where many of the described movements took p...",
+          "One of the continents where WWF‑donated funds were allocated to projects....",
+          "Reference to the 1989 European elections in which the UK Green Party achieved success....",
+          "One of the regions where public concern over the environment spread in the late 1960s....",
+          "Mentioned together with the USA as having contributed over half of 20th‑century CO₂ emissions....",
+          "Continent referenced regarding historical European attitudes toward nature and the world as a myster...",
+          "Region where the precautionary principle became a central tenet of environmental policy for GM foods...",
+          "The continent referenced in the discussion of the moratorium on commercial GM crop approval....",
+          "Continent whose countries were the focus of post‑war reconstruction efforts....",
+          "European countries rebuilt their economies after WWII, aided by the US Marshall Plan and the continu...",
+          "Geographic region referenced as a market for green product strategies....",
+          "Region where public attitudes to climate change vary between countries...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Brazil",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 10,
+      "source_chunks": [
+        1,
+        2,
+        16,
+        17,
+        19,
         23,
-        28,
+        24,
+        42,
+        43,
         49
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country where the green party Miljöpartiet de Gröna was founded in 1981....",
-          "Country where the Stockholm Environment Institute was founded and where Miljöpartiet de Gröna entere...",
-          "Host country of the first major United Nations Conference on the Human Environment (UNCHE) held in S...",
-          "Country represented at the 1971 FoE international meeting....",
-          "Sweden's Miljöpartiet de gröna was among the first green parties to secure national electoral succes...",
-          "Host country of the 1972 UN Conference on the Human Environment (UNCHE)....",
-          "Proposed the idea of a global conference on the human environment to the UN General Assembly in 1967...",
-          "Country of origin of the Swedish naturalist Carl Linnaeus referenced as a key figure in early ecolog...",
-          "Funded early acid‑rain research, accused neighbours of exporting pollution, and hosted the 1972 Stoc...",
-          "Country where the public felt well‑informed about climate change and willing to act...."
+          "Country of the Rio de Janeiro Earth Summit....",
+          "Host country for the UN Earth Summit (Rio+20) in 2012....",
+          "Emerging world power influencing the future direction of global environmental governance....",
+          "Country whose delegate, after the conference, convinced the government to create a secretariat for t...",
+          "Host country of the 1992 UN Conference on Environment and Development (Earth Summit)....",
+          "One of the major polluting economies referenced in discussions about a new protocol....",
+          "Listed as a major power base that can act unilaterally in climate negotiations....",
+          "Host country for the 2012 Rio+20 conference referenced in the UNEP report....",
+          "One of the leading global economies investing heavily in the green energy sector....",
+          "Country containing the Amazonian region where the Rainforest Foundation International helped secure ..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "USA",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 10,
+      "source_chunks": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        16,
+        18,
+        22,
+        25,
+        51
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Communities across the USA participated in the first Earth Day....",
+          "One of the two primary countries where early powerful environmental campaign groups were formed and ...",
+          "United States of America – the national context for early wildlife conservation and later environmen...",
+          "Country where Petra Kelly, a founder of the West German Green Party, conducted political campaigning...",
+          "Country where the anti‑consumerist Buy Nothing Day was first launched in 1992 and where many environ...",
+          "Abbreviation used for the United States in describing Cold‑War alliances....",
+          "Proposed a smaller UN unit to promote an environmental ethic across specialised agencies....",
+          "Cited as a historic major emitter of CO₂ and as a nation concerned about the economic costs of clima...",
+          "Country referenced as the location of Walden Pond, Concord, and Massachusetts....",
+          "Public concern for the environment in the United States peaked around the first Earth Day in 1970, d..."
         ],
         "years": []
       }
@@ -2244,25 +2635,24 @@
       "cluster_size": 9,
       "source_chunks": [
         0,
-        5,
-        9,
-        12,
-        13,
-        28,
-        37,
+        6,
+        10,
+        14,
+        30,
         39,
-        47
+        42,
+        50
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Site of the great 1952 smog disaster and the 1953 coronation of Queen Elizabeth II....",
-          "City where FoE staged a publicity stunt by dumping glass bottles at the Schweppes headquarters....",
-          "Capital city where the M11 link‑road protest occurred....",
-          "City where the Stop Climate Chaos coalition organised a climate‑change rally....",
-          "City where the major Heathrow airport is located and where a third‑runway proposal became politicall...",
-          "Site of the 1952 great smog, a landmark pollution event that spurred UK policy action....",
-          "City where the Roskill Commission proposed a location for a third runway in the early 1970s....",
-          "Host city of the April 2009 G20 summit where leaders discussed the financial‑crisis response and the...",
+          "Site of the 1952 great smog and the 1953 coronation of Queen Elizabeth II....",
+          "Location of the Coronation of Queen Elizabeth II in 1953....",
+          "City where FoE UK staged a publicity stunt by dumping glass bottles outside the headquarters of Schw...",
+          "Location of the M11 link road protest....",
+          "Host city of a climate‑change rally organised by the Stop Climate Chaos coalition....",
+          "Site of the 1952 great smog that spurred public demand for smoke‑pollution action....",
+          "City considered for a third runway by the Roskill Commission in the early 1970s....",
+          "Host city of the G20 summit held in April 2009....",
           "One of the seven Live Earth concert venues in 2007...."
         ],
         "years": []
@@ -2270,7 +2660,7 @@
     },
     {
       "type": "location",
-      "canonical_name": "USA",
+      "canonical_name": "Stockholm",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -2280,152 +2670,24 @@
         0,
         1,
         2,
-        10,
         16,
+        17,
+        19,
         21,
         24,
-        37,
-        42
+        30
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country that enacted many early environmental laws (Clean Air Act 1963, National Environmental Polic...",
-          "Country where the anti-consumerist 'Buy Nothing Day' was launched in 1992....",
-          "Country where communities participated in the first Earth Day and where several early environmental ...",
-          "Country where the anti‑consumerist Buy Nothing Day was first launched in 1992 and the origin of seve...",
-          "Country that proposed a smaller UN unit to promote an environmental ethic across specialised agencie...",
-          "One of the large number of countries that ratified the UNFCCC in the 1990s....",
-          "Country referenced multiple times as the setting for early environmental thought, pesticide use, and...",
-          "Country referenced as the jurisdiction of the Environmental Protection Agency (EPA) that uses cost‑b...",
-          "Country where car ownership surged after World War II, leading to the abandonment of trolley buses, ..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "India",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 9,
-      "source_chunks": [
-        1,
-        7,
-        14,
-        17,
-        18,
-        21,
-        22,
-        36,
-        48
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Country where the Union Carbide Bhopal disaster occurred in 1984....",
-          "Country that received WWF‑funded projects in the early 1960s....",
-          "Emerging world power whose rapid industrialisation influences the future direction of global environ...",
-          "Country in South Asia where the Bhopal disaster occurred and which was heavily impacted by the debt ...",
-          "Co‑leader with Malaysia of the developing nations opposing a binding forest convention at the Rio Su...",
-          "One of the emerging economies identified as a major polluter in negotiations for a new climate agree...",
-          "One of the major powers capable of influencing international environmental agreements....",
-          "One of the countries that backed the World Bank's 2010 plan to develop an accounting measure for nat...",
-          "Country referenced as the site of the Union Carbide gas tragedy, an environmental disaster cited in ..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Brazil",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 8,
-      "source_chunks": [
-        1,
-        14,
-        16,
-        17,
-        21,
-        22,
-        40,
-        46
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Country hosting the 1992 Earth Summit and the 2012 Rio+20 conference....",
-          "Emerging world power whose rapid industrialisation influences the future direction of global environ...",
-          "Country whose delegate, after the conference, persuaded the government to create a national secretar...",
-          "Country that hosted the 1992 Earth Summit in its city Rio de Janeiro....",
-          "One of the emerging economies identified as a major polluter in negotiations for a new climate agree...",
-          "One of the major powers capable of influencing international environmental agreements....",
-          "Host country for the 2012 Rio+20 conference, a key venue for advancing green‑economy and poverty‑era...",
-          "Country containing the state of Amazonas, where a rainforest protection campaign succeeded...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "United States of America",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 8,
-      "source_chunks": [
-        12,
-        13,
-        14,
-        17,
-        31,
-        40,
-        41,
-        48
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Country where counter‑movements to environmental causes have been established....",
-          "National context where the environmental movement has been less effective on climate change legislat...",
-          "One of the leading powers influencing global environmental conferences and agreements after the Cold...",
-          "The USA is mentioned as a power that routinely marginalised the United Nations during the period dis...",
-          "Country mentioned alongside the UK where internet blogs and comment boards challenged climate‑scienc...",
-          "Adopted the US$78.5 billion American Recovery and Reinvestment Act in February 2009, including measu...",
-          "Country noted for economic growth during the post‑war period....",
-          "Country where public concern for the environment peaked around the first Earth Day in 1970 and later..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "North America",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 7,
-      "source_chunks": [
-        3,
-        4,
-        5,
-        15,
-        23,
-        28,
-        29
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Continent mentioned alongside Europe as an early arena for environmental campaigning....",
-          "Region mentioned alongside Europe as a centre of student activism in the 1960s....",
-          "Region where several early environmental NGOs (EDF, FoE, NRDC, Greenpeace) were established....",
-          "One of the regions where public concern over the environment spread in the late 1960s....",
-          "Region visited by Pehr Kalm, where he observed wildlife declines linked to settler hunting practices...",
-          "Continent whose scientists joined early investigations of acid‑rain impacts on aquatic ecosystems....",
-          "Region described as more accepting of large‑scale intensive farming as a matter of efficiency and te..."
+          "Host city of the UN Conference on the Human Environment in 1972....",
+          "City where the Stockholm Environment Institute was established....",
+          "Venue of the first United Nations Conference on the Human Environment (UNCHE) in 1972....",
+          "Host city of the 1972 UN Conference on the Human Environment (UNCHE), marking the start of modern gl...",
+          "Venue where the UN General Assembly agreed the UN Conference on the Human Environment would take pla...",
+          "Reference point for the earlier Stockholm Conference, mentioned as occurring twenty years earlier....",
+          "City after which the 2001 Stockholm Convention on Persistent Organic Pollutants is named....",
+          "Host city mentioned in connection with the 2012 Earth Summit (Stockholm +40)....",
+          "Host city of the 1972 United Nations Conference on the Human Environment (UNCHE)...."
         ],
         "years": []
       }
@@ -2437,25 +2699,125 @@
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 7,
+      "cluster_size": 9,
       "source_chunks": [
-        13,
-        22,
-        29,
-        38,
+        1,
+        14,
+        23,
+        24,
+        31,
         40,
-        46,
-        49
+        42,
+        48,
+        52
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Regional benchmark used to compare the ambition of the U.S. American Power Act emissions targets....",
-          "Stepped back from committing to improve its emissions targets for 2020....",
-          "Supranational body that placed a moratorium on the commercial growing of GM crops....",
-          "Supranational organization that established an emissions trading scheme to price carbon....",
-          "Contributed 0.9 % of its fiscal spending to green stimulus, ranking after China and South Korea amon...",
-          "Introduced a voluntary Ecolabel scheme in 1992 to help consumers identify green products....",
-          "Supranational body that conducted a 2009 study on European public concern about climate change...."
+          "Introduced a voluntary eco‑labelling scheme....",
+          "Political and economic bloc used as a benchmark for emission‑reduction targets in the American Power...",
+          "Supranational bloc that stepped back from committing to stronger emissions targets during COP 15....",
+          "Cited alongside other major powers (China, Brazil, India, Japan, USA) as a power base in climate neg...",
+          "Political entity that placed a moratorium on the commercial growing of GM crops....",
+          "The EU established an emissions trading scheme as part of carbon‑pricing policies....",
+          "Regional bloc whose G20 members collectively spent 0.9 % of fiscal spending on green stimulus....",
+          "Supranational entity that introduced a voluntary Ecolabel scheme in 1992 to help consumers identify ...",
+          "Conducted a 2009 study finding two‑thirds of Europeans consider climate a very serious problem...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "United States of America",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 9,
+      "source_chunks": [
+        12,
+        14,
+        24,
+        26,
+        31,
+        32,
+        33,
+        39,
+        42
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The USA is mentioned as the national context for the National Wildlife Federation, a major environme...",
+          "Country where climate‑change legislation has repeatedly failed to pass, despite multiple bill introd...",
+          "Referred to as the USA, a major power base that can act unilaterally in climate negotiations....",
+          "Country referenced as a major site of modern environmentalism and pesticide regulation....",
+          "Partner in the 1991 air‑quality accord with Canada and the jurisdiction of the FDA and WTO dispute m...",
+          "Country referenced as the major producer of GM corn, soy, and oilseed rape....",
+          "Country referenced alongside the UK as a locus of online and media debate over climate‑science issue...",
+          "Country referenced as the jurisdiction of the EPA and the location of MIT....",
+          "Country that adopted the American Recovery and Reinvestment Act in February 2009 and contributed to ..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "India",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 8,
+      "source_chunks": [
+        1,
+        8,
+        16,
+        19,
+        23,
+        24,
+        38,
+        51
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Country of the Bhopal disaster....",
+          "Country where WWF‑donated funds were allocated to projects....",
+          "Emerging world power influencing the future direction of global environmental governance....",
+          "Location of the 1984 Union Carbide chemical explosion at Bhopal and a leading developing nation at t...",
+          "Major polluting economy mentioned alongside Brazil and China in the context of a new climate protoco...",
+          "Listed as a major power base that can act unilaterally in climate negotiations....",
+          "One of the countries that backed the World Bank's 2010 plan for natural‑wealth accounting....",
+          "The Union Carbide gas tragedy in India was one of the environmental disasters that heightened public..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Sweden",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 7,
+      "source_chunks": [
+        1,
+        2,
+        6,
+        16,
+        17,
+        30,
+        52
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Country where Miljépartiet de Gréna was established and the Stockholm Environment Institute was foun...",
+          "Host country for the first United Nations Conference on the Human Environment (UNCHE) in 1972....",
+          "Country represented at the 1971 FoE meeting and later home to the green party Miljöpartiet de gröna....",
+          "Country where the 1972 UN Conference on the Human Environment (UNCHE) was held....",
+          "Proposed the idea of a global conference on the human environment and was respected internationally ...",
+          "Funded scientific research on acid rain and hosted the 1972 Stockholm UNCHE....",
+          "Public felt well informed about climate change and were willing to take personal action...."
         ],
         "years": []
       }
@@ -2471,19 +2833,75 @@
       "source_chunks": [
         0,
         7,
-        9,
-        14,
-        15,
-        17
+        10,
+        16,
+        20,
+        28
       ],
       "supporting_evidence": {
         "descriptions": [
-          "International organization established after World War II (1945)....",
-          "Global institution targeted by early environmental campaigns....",
-          "International organization where the Conservative Prime Minister Margaret Thatcher gave a speech on ...",
-          "International organization that has acted as the facilitator of global conferences and agreements on...",
-          "Created in 1945 to provide a global forum for discussion, consensus‑building and action on worldwide...",
-          "The UN served as a global forum for environmental, economic and social concerns despite being margin..."
+          "International organization established in 1945....",
+          "Global intergovernmental organization targeted by high‑profile environmental campaigns....",
+          "Venue where Conservative Prime Minister Margaret Thatcher gave a speech on climate change....",
+          "International organization that has acted as facilitator of global environmental conferences and agr...",
+          "International organization that convened the World Summit on Sustainable Development (WSSD) and othe...",
+          "International organization that endorsed and supported global collaboration and research programmes ..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "North America",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 6,
+      "source_chunks": [
+        4,
+        5,
+        17,
+        25,
+        30,
+        31
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Mentioned alongside Europe as a region where early environmental campaigning emerged in the late nin...",
+          "Continent mentioned as a locus of student activism and emerging environmental movements....",
+          "One of the regions where public concern over the environment spread in the late 1960s....",
+          "Region where Pehr Kalm traveled and observed wildlife decline linked to settlers' hunting techniques...",
+          "Region where scientists began to notice fish and vegetation losses linked to acid rain....",
+          "Region where large‑scale intensive farming was more widely accepted as a matter of efficiency and te..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "China",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 6,
+      "source_chunks": [
+        16,
+        22,
+        23,
+        24,
+        42,
+        43
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Emerging world power influencing the future direction of global environmental governance; also part ...",
+          "Described as having overtaken the USA as the single biggest CO₂ emitter in the past decade, still in...",
+          "Major polluting economy that opposed US demands during COP 15 negotiations....",
+          "Identified as one of the major power bases that can act unilaterally in climate negotiations....",
+          "One of the G20 members that devoted a sizeable proportion of fiscal spending to a green stimulus (3 ...",
+          "One of the leading global economies investing heavily in the green energy sector...."
         ],
         "years": []
       }
@@ -2495,22 +2913,20 @@
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 6,
+      "cluster_size": 5,
       "source_chunks": [
         0,
         1,
-        2,
-        10,
-        15,
-        47
+        11,
+        16,
+        50
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Host city of the 1949 UN Scientific Conference on Conservation and Utilization of Resources (UNSCCUR...",
-          "City where the September 11 terrorist attacks on the World Trade Center occurred in 2001....",
-          "City referenced in the name of the newspaper that published an editorial summarizing the environment...",
-          "City where the World Trade Center was attacked on 9/11, mentioned as a reference point for later sec...",
-          "State in which Lake Success is located and where the 1949 UNSCCUR conference took place....",
+          "Host city of the UN Scientific Conference on Conservation and Utilization of Resources (UNSCCUR) in ...",
+          "City of the World Trade Center attacks on 11 September 2001....",
+          "City mentioned in relation to the 9/11 terrorist attacks on the World Trade Center, which preceded a...",
+          "City (state) where Lake Success is located and where the 1949 UNSCCUR took place....",
           "One of the seven Live Earth concert venues in 2007...."
         ],
         "years": []
@@ -2523,23 +2939,21 @@
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 6,
+      "cluster_size": 5,
       "source_chunks": [
-        0,
-        4,
+        1,
         5,
         6,
-        8,
-        46
+        7,
+        48
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country mentioned in connection with the Amoco Cadiz oil disaster (near Brittany)....",
-          "Country where the New Left attempted to overthrow the government during the 1960s....",
-          "Country represented at the 1971 FoE international meeting and home to FoE’s sister group Les Amis de...",
-          "Daniel Cohn‑Bendit is a leading green campaigner in France and Germany....",
-          "Country whose intelligence agency planted a limpet mine on the Rainbow Warrior to stop protests agai...",
-          "One of the two countries with the highest number of EU Ecolabel licences by early 2010...."
+          "Country near which the Amoco Cadiz oil disaster occurred....",
+          "Country where the New Left attempted to overthrow the government in the 1960s....",
+          "Country represented at the 1971 FoE international network meeting and home to FoE's sister group Les...",
+          "Country where Daniel Cohn‑Bendit is a leading green campaigner and where he was involved in the 1968...",
+          "Country with the highest number of EU Ecolabel licences as of early 2010...."
         ],
         "years": []
       }
@@ -2551,23 +2965,68 @@
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
-      "cluster_size": 6,
+      "cluster_size": 5,
       "source_chunks": [
         1,
-        17,
-        18,
-        22,
-        27,
-        47
+        2,
+        19,
+        29,
+        50
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Host city of the 1992 Earth Summit and the 2012 UN Earth Summit (Rio+20)....",
-          "Host city of the 1992 UN Conference on Environment and Development (Earth Summit)....",
-          "Host city of the 1992 United Nations Conference on Environment and Development (UNCED), commonly ref...",
-          "Cited in reference to the 2012 Earth Summit (Rio +20)....",
+          "Host city of the 1992 Earth Summit....",
+          "Venue of the 2012 UN Earth Summit (Rio+20)....",
+          "Host city of the 1992 Earth Summit....",
           "Host city of the 1992 Rio Earth Summit where biodiversity and climate change secured global politica...",
           "One of the seven Live Earth concert venues in 2007...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Vietnam",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        0,
+        3,
+        27
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Location where Agent Orange was used during the Vietnam War, which ended in 1975....",
+          "Country where the Vietnam War concluded in 1975....",
+          "Country referenced as part of the historical backdrop (the Vietnam War) that helped spread modern en...",
+          "Country where chemical herbicides were used during the Vietnam War, referenced in the context of Sil..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Canada",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        0,
+        30,
+        31,
+        48
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Country where the Don't Make a Wave Committee was founded to protest nuclear testing....",
+          "Participated in acid‑rain research and was a net importer of sulphur dioxide emissions....",
+          "Signatory to an air‑quality accord with the United States in 1991....",
+          "Country mentioned as a market where companies have developed green product marketing strategies...."
         ],
         "years": []
       }
@@ -2583,22 +3042,22 @@
       "source_chunks": [
         0,
         1,
-        10,
-        46
+        11,
+        48
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country where the Seveso industrial disaster occurred in 1976....",
-          "Country where the 2001 G8 summit took place in Genoa....",
-          "Country where the 2001 G8 summit took place in the city of Genoa....",
-          "One of the two countries with the highest number of EU Ecolabel licences by early 2010...."
+          "Country where the Seveso disaster occurred in 1976....",
+          "Country of the Genoa G8 summit....",
+          "Country where the 2001 G8 summit in Genoa took place, leading to violent clashes between protesters ...",
+          "Country with the highest number of EU Ecolabel licences as of early 2010...."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "England",
+      "canonical_name": "Chernobyl",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -2606,16 +3065,40 @@
       "cluster_size": 4,
       "source_chunks": [
         1,
-        4,
-        23,
-        49
+        7,
+        19,
+        51
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country component of the United Kingdom referenced for the Newbury bypass protests....",
-          "Region referenced in the name of the Council for the Preservation of Rural England....",
-          "Country of origin of the English naturalist John Ray mentioned in the historical overview of ecologi...",
-          "Country where a 2010 survey of public attitudes to climate change was conducted...."
+          "Site of the 1986 nuclear disaster....",
+          "Site of the 1986 nuclear disaster that galvanized European opposition to nuclear energy....",
+          "Location of the 1986 nuclear power plant disaster....",
+          "The Chernobyl nuclear disaster is cited as a major environmental catastrophe that contributed to ris..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Johannesburg",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        1,
+        20,
+        21,
+        50
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Host city of the 2002 UN World Summit on Sustainable Development....",
+          "Host city of the World Summit on Sustainable Development (WSSD) in 2002....",
+          "City where the Johannesburg Declaration on Sustainable Development was adopted as part of the Summit...",
+          "One of the seven Live Earth concert venues in 2007...."
         ],
         "years": []
       }
@@ -2630,16 +3113,16 @@
       "cluster_size": 4,
       "source_chunks": [
         1,
-        19,
-        22,
-        44
+        20,
+        23,
+        47
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country of the 2002 UN World Summit on Sustainable Development....",
-          "Host country of the World Summit on Sustainable Development (WSSD)....",
-          "Host country of COP 17 in 2011....",
-          "Country from which Barclays Bank withdrew due to international opposition to apartheid...."
+          "Country of the Johannesburg summit....",
+          "Host country of the 2002 World Summit on Sustainable Development; referenced as the host nation link...",
+          "Host country for COP 17, scheduled to be held in its city Durban....",
+          "Barclays Bank withdrew from South Africa due to international opposition to apartheid, illustrating ..."
         ],
         "years": []
       }
@@ -2654,86 +3137,16 @@
       "cluster_size": 4,
       "source_chunks": [
         3,
-        7,
-        41,
-        46
+        31,
+        44,
+        48
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country where the first major oil spill (Torrey Canyon) occurred in 1967....",
-          "Country referenced as the nation where Caroline Lucas became the first Green Party MP....",
-          "Country referenced when discussing wartime rationing and resource scarcity....",
-          "Leading businesses responded to a resurging green trend in 2007...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "China",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 4,
-      "source_chunks": [
-        14,
-        21,
-        22,
-        40
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Emerging world power whose rapid industrialisation influences the future direction of global environ...",
-          "Overtook the USA as the single biggest CO₂ emitter in the past decade and is a major polluter....",
-          "Opposed US demands to monitor emission reductions during the climate negotiations....",
-          "Allocated 3 % of its fiscal spending to a green stimulus, using it as a long‑term commitment to clea..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "World Bank",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 4,
-      "source_chunks": [
-        18,
-        36,
-        39,
-        40
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Designated manager of the Global Environment Facility (GEF), a funding mechanism established at the ...",
-          "International financial institution that launched a 2010 plan, supported by India, Mexico and other ...",
-          "International financial institution that has supported large‑scale private‑sector water resource man...",
-          "Identified as a multinational institution whose actions will test the acceptance of green‑economy id..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Canada",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 3,
-      "source_chunks": [
-        0,
-        28,
-        46
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Country where the Don't Make a Wave Committee was founded to protest nuclear testing....",
-          "Partnered with the United States on acid‑rain research and signed a bilateral air‑quality accord in ...",
-          "One of the regions where companies have developed green‑product marketing strategies...."
+          "Location of the first major oil spill described in the text, involving the super‑tanker Torrey Canyo...",
+          "The British government accepted the link between domestic air pollution and acid rain from Scandinav...",
+          "Post‑war Britain implemented extensive food and material rationing during and after WWII....",
+          "Country whose leading businesses responded to a resurging green trend in 2007, exemplified by Tesco’..."
         ],
         "years": []
       }
@@ -2749,13 +3162,35 @@
       "source_chunks": [
         1,
         8,
-        46
+        48
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country of the Auckland incident involving Greenpeace in 1985....",
-          "Country where the Greenpeace vessel Rainbow Warrior was docked when it was sabotaged....",
-          "One of the regions where companies have developed green‑product marketing strategies...."
+          "Country of the Auckland incident....",
+          "Country containing the city of Auckland, site of the Rainbow Warrior bombing....",
+          "Country mentioned alongside Canada and the USA as a market for green product strategies...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Scandinavia",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        1,
+        30,
+        31
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Region referenced in relation to acid rain....",
+          "Region where scientists first expressed concern about disappearing fish due to acid rain....",
+          "Region referenced in relation to acid‑rain impacts that the British government linked to its own air..."
         ],
         "years": []
       }
@@ -2771,79 +3206,13 @@
       "source_chunks": [
         1,
         5,
-        7
+        8
       ],
       "supporting_evidence": {
         "descriptions": [
-          "State where the Exxon Valdez oil spill occurred in 1989....",
-          "U.S. state where a $2.5 billion oil pipeline project was challenged by environmental groups....",
+          "State where the Exxon Valdez oil spill occurred....",
+          "U.S. state referenced as the site of a proposed $2.5 billion oil pipeline contested by environmental...",
           "U.S. state whose west coast includes Amchitka Island, the site of nuclear testing protests...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Johannesburg",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 3,
-      "source_chunks": [
-        1,
-        19,
-        47
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "City that hosted the UN World Summit on Sustainable Development in 2002....",
-          "Host city of the World Summit on Sustainable Development (WSSD) in 2002....",
-          "One of the seven Live Earth concert venues in 2007...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Copenhagen",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 3,
-      "source_chunks": [
-        1,
-        21,
-        22
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Host city of the COP 15 climate change talks in 2009....",
-          "City that hosted COP 15 in December 2009, described as an environmental ‘mega conference’....",
-          "Referenced via the Copenhagen Accord, a key outcome of the 2009 climate talks...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Denmark",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 3,
-      "source_chunks": [
-        1,
-        21,
-        22
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Country where the 2009 COP 15 climate talks were held....",
-          "Host country of COP 15, the 2009 climate conference held in Copenhagen....",
-          "Host country of COP 15, where the conference facilitation was criticised...."
         ],
         "years": []
       }
@@ -2857,15 +3226,15 @@
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        1,
-        22,
-        36
+        2,
+        23,
+        38
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country of the 2010 COP 16 climate negotiations in Cancun....",
-          "Host country of COP 16 in December 2010....",
-          "One of the countries that backed the World Bank's 2010 plan to develop an accounting measure for nat..."
+          "Host country for COP 16 UN climate talks in Cancun....",
+          "Host country for COP 16, which took place in its city Cancun....",
+          "One of the countries that backed the World Bank's 2010 plan for natural‑wealth accounting...."
         ],
         "years": []
       }
@@ -2879,15 +3248,37 @@
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        1,
-        13,
-        38
+        2,
+        14,
+        40
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Marine region where the BP Deepwater Horizon oil spill occurred in 2010....",
-          "Body of water where the Deepwater Horizon oil spill occurred, influencing U.S. Senate deliberations ...",
-          "Body of water where the 2010 Deepwater Horizon oil spill occurred, illustrating the economic impact ..."
+          "Site of the BP Deepwater Horizon oil spill in 2010....",
+          "Body of water where the Deepwater Horizon oil spill occurred, cited as a factor delaying US climate ...",
+          "Site of the 2010 Deepwater Horizon oil spill, illustrating the real‑world economic impact of ecologi..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "UK",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        3,
+        5,
+        51
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "One of the two primary countries where early powerful environmental campaign groups were formed and ...",
+          "United Kingdom – referenced for parallel anti‑plume campaigns led by the RSPB....",
+          "UK newspapers and magazines dramatically increased the frequency of the word “green” between 1984 an..."
         ],
         "years": []
       }
@@ -2902,14 +3293,14 @@
       "cluster_size": 3,
       "source_chunks": [
         3,
-        24,
-        44
+        26,
+        46
       ],
       "supporting_evidence": {
         "descriptions": [
-          "U.S. state containing Santa Barbara, site of a major oil platform explosion....",
-          "U.S. state referenced through the Californian Fisheries and Game Department, which helped stimulate ...",
-          "U.S. state that proposed a bottle‑deposit bill in 1974, which KAB opposed...."
+          "U.S. state whose coast near Santa Barbara was the site of a major oil platform explosion....",
+          "U.S. state where the Fisheries and Game Department is based and where Clear Lake is located....",
+          "U.S. state that proposed a similar bottle deposit bill in 1974, which KAB opposed...."
         ],
         "years": []
       }
@@ -2924,14 +3315,14 @@
       "cluster_size": 3,
       "source_chunks": [
         6,
-        15,
-        17
+        16,
+        19
       ],
       "supporting_evidence": {
         "descriptions": [
-          "During the Soviet leadership of Mikhail Gorbachev (1988‑91), environmental activism in communist cou...",
-          "Boycotted the 1949 UNSCCUR conference....",
-          "State in which the Chernobyl disaster occurred...."
+          "Former super‑state whose leadership under Mikhail Gorbachev (1988‑91) saw environmental activism use...",
+          "Cold‑War bloc that boycotted the 1949 UNSCCUR conference....",
+          "Country (at the time) where the 1986 Chernobyl nuclear power plant disaster occurred...."
         ],
         "years": []
       }
@@ -2945,37 +3336,15 @@
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        6,
-        28,
-        44
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Home of the German Greens, who challenged traditional models of economic growth and opposed nuclear ...",
-          "Large sulphur‑dioxide emitter that was prompted into action by public outcry over forest damage....",
-          "Country that achieved significant glass and paper recycling rates by the 1980s, with strong support ..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Chernobyl",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 3,
-      "source_chunks": [
         7,
-        17,
-        48
+        30,
+        46
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Site of the 1986 nuclear disaster that sparked heightened European opposition to nuclear energy....",
-          "Location of the 1986 nuclear power plant disaster....",
-          "Location of the nuclear disaster mentioned as part of the 1980s surge in environmental concern...."
+          "The nation where the Bündnis 90/Die Grünen operates and where many of the historical figures mention...",
+          "Large sulphur dioxide emitter that was prompted into action by public reaction to forest loss....",
+          "Country noted for considerable progress in glass and paper recycling during the 1980s...."
         ],
         "years": []
       }
@@ -2992,37 +3361,37 @@
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        9,
-        30,
-        31
+        10,
+        31,
+        33
       ],
       "supporting_evidence": {
         "descriptions": [
-          "The UK government that published the first White Paper on the environment, *This Common Inheritance*...",
-          "The UK state apparatus that criticised Greenpeace after it admitted a measurement error....",
-          "The UK government that commissioned an independent review of the CRU and the IPCC following the emai..."
+          "Published the first White Paper on the environment, *This Common Inheritance* (1990)....",
+          "Government that eventually accepted the link between domestic air pollution and Scandinavian acid ra...",
+          "The UK government that commissioned one of the independent reviews into the CRU email controversy...."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "Montreal",
+      "canonical_name": "World Bank",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 3,
       "source_chunks": [
-        19,
         20,
-        45
+        38,
+        43
       ],
       "supporting_evidence": {
         "descriptions": [
-          "City after which the Montreal Protocol (1987) on ozone‑depleting substances is named....",
-          "City after which the Montreal Protocol—an international agreement to phase out CFCs—was named....",
-          "Montreal gave its name to the international treaty (Montreal Protocol) aimed at curbing CFC producti..."
+          "International financial institution designated to manage the Global Environment Facility (GEF)....",
+          "International financial institution that launched a 2010 plan to create an accounting measure that p...",
+          "A multinational institution whose actions will test the acceptance of green‑economy ideas...."
         ],
         "years": []
       }
@@ -3037,7 +3406,7 @@
       "cluster_size": 2,
       "source_chunks": [
         0,
-        15
+        17
       ],
       "supporting_evidence": {
         "descriptions": [
@@ -3061,8 +3430,8 @@
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Location of a major oil slick in 1969....",
-          "Coastal city in California where an oil platform explosion released crude oil...."
+          "Site of an oil slick in 1969....",
+          "Coastal city in California where an oil platform explosion released large volumes of crude oil...."
         ],
         "years": []
       }
@@ -3077,12 +3446,12 @@
       "cluster_size": 2,
       "source_chunks": [
         0,
-        42
+        45
       ],
       "supporting_evidence": {
         "descriptions": [
-          "River in Ohio that caught fire in 1969, symbolising water pollution....",
-          "River in Ohio whose 1969 oil slick fire was widely covered on television, raising public awareness o..."
+          "River that experienced a fire in 1969....",
+          "River in Ohio, USA, site of a 1969 oil slick fire that received extensive television coverage and he..."
         ],
         "years": []
       }
@@ -3097,12 +3466,32 @@
       "cluster_size": 2,
       "source_chunks": [
         0,
-        44
+        46
       ],
       "supporting_evidence": {
         "descriptions": [
           "U.S. state whose Bottle Bill became law in 1971....",
           "U.S. state that enacted the landmark Bottle Bill in 1971 to reduce litter and conserve resources...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Barnsley",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        46
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Location of the UK's first bottle bank in 1977....",
+          "Town where the UK's first bottle bank was placed in a Tesco supermarket car park...."
         ],
         "years": []
       }
@@ -3116,13 +3505,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        0,
-        44
+        1,
+        46
       ],
       "supporting_evidence": {
         "descriptions": [
-          "English county where the UK’s first bottle bank was installed in Barnsley (1977)....",
-          "English county whose council set the trend for glass recycling in the UK during the late 1970s...."
+          "Region where Barnsley is located....",
+          "Region that hosted the UK's first bottle bank and where the county council promoted glass recycling...."
         ],
         "years": []
       }
@@ -3136,33 +3525,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        0,
-        8
+        1,
+        9
       ],
       "supporting_evidence": {
         "descriptions": [
-          "U.S. state where the Love Canal toxic‑waste site was discovered in 1978....",
-          "U.S. state that contains the Love Canal neighbourhood...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Love Canal",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        0,
-        8
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Neighborhood in New York State identified as a major toxic‑waste dump in 1978....",
-          "Neighbourhood in New York State where toxic waste was discovered in 1978, cited as a catalyst for th..."
+          "State where the Love Canal neighbourhood is located....",
+          "U.S. state containing the Love Canal neighbourhood, mentioned in the context of a toxic‑waste incide..."
         ],
         "years": []
       }
@@ -3176,53 +3545,53 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        0,
-        8
+        1,
+        9
       ],
       "supporting_evidence": {
         "descriptions": [
-          "U.S. state where the Valley of the Drums toxic‑waste dump was cleaned up in 1979....",
-          "U.S. state that contains the Valley of the Drums toxic waste site...."
+          "State where the Valley of the Drums toxic waste dump is located....",
+          "U.S. state where the Valley of the Drums toxic‑waste site is located...."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "Vietnam",
+      "canonical_name": "Valley of the Drums",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        0,
-        3
+        1,
+        9
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country where the Vietnam War ended in 1975....",
-          "Country referenced as part of the historical backdrop for modern environmental concern...."
+          "23‑acre toxic waste dump in Kentucky....",
+          "A 23‑acre toxic‑waste dump in Kentucky that received media attention in 1979...."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "MIT",
+      "canonical_name": "Afton",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        0,
-        37
+        1,
+        9
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Massachusetts Institute of Technology, publisher of the 1966 Study of Critical Environmental Problem...",
-          "Massachusetts Institute of Technology, which produced a 1970 report on critical environmental proble..."
+          "Predominantly Black community in North Carolina that protested a hazardous waste site....",
+          "Predominantly Black community in Warren County, North Carolina, site of a 1982 protest against a haz..."
         ],
         "years": []
       }
@@ -3237,12 +3606,32 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        8
+        9
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Site of a 1982 protest by residents of Afton against a hazardous waste site....",
-          "U.S. state that contains Warren County and the community of Afton...."
+          "State where the Afton community is located....",
+          "U.S. state where Warren County and the community of Afton are located, referenced in the origin stor..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Times Beach",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        9
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Town in Missouri evacuated due to a toxin scare....",
+          "Town in Missouri that was permanently evacuated in 1983 because of a toxin scare...."
         ],
         "years": []
       }
@@ -3257,12 +3646,32 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        8
+        9
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Location of the Times Beach evacuation due to a toxin scare in 1983....",
-          "U.S. state that contains the town of Times Beach...."
+          "State containing Times Beach....",
+          "U.S. state where the town of Times Beach was evacuated in 1983...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Bhopal",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        19
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "City where the Union Carbide disaster occurred....",
+          "Site of the 1984 Union Carbide chemical explosion...."
         ],
         "years": []
       }
@@ -3281,8 +3690,8 @@
       ],
       "supporting_evidence": {
         "descriptions": [
-          "City where Greenpeace's Rainbow Warrior was destroyed by French intelligence in 1985....",
-          "City in New Zealand where the Rainbow Warrior was docked and attacked...."
+          "City where Greenpeace's Rainbow Warrior was blown up....",
+          "City where the Greenpeace vessel Rainbow Warrior was bombed by a French‑planted limpet mine...."
         ],
         "years": []
       }
@@ -3297,19 +3706,19 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        46
+        49
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country for which Live Aid raised money in 1985 to address famine....",
-          "Country whose famine was the focus of the 1985 Live Aid concert fundraising effort...."
+          "Country affected by famine for which Live Aid raised money....",
+          "Country affected by the famine that the 1985 Live Aid concert aimed to alleviate...."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "Scandinavia",
+      "canonical_name": "Twyford Down",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -3317,12 +3726,12 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        28
+        10
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Region referenced in 1986 when the UK government linked British air pollution to Scandinavian acid r...",
-          "Northern European region where scientists first raised concerns about fish disappearances linked to ..."
+          "Site of a road protest camp in 1991....",
+          "First road protest camp to hit national news in 1991; campaign lasted almost twenty years...."
         ],
         "years": []
       }
@@ -3337,11 +3746,11 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        10
+        11
       ],
       "supporting_evidence": {
         "descriptions": [
-          "City where World Bank anniversary celebrations took place in 1994....",
+          "City where World Bank anniversary celebrations took place....",
           "Capital city where the 1994 World Bank anniversary celebrations were held...."
         ],
         "years": []
@@ -3357,12 +3766,12 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        10
+        11
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country of the 1994 World Bank anniversary celebrations in Madrid....",
-          "Country hosting the 1994 World Bank anniversary celebrations in its capital, Madrid...."
+          "Country of the Madrid celebrations....",
+          "Country that hosted the 1994 World Bank anniversary celebrations in its capital, Madrid...."
         ],
         "years": []
       }
@@ -3377,12 +3786,32 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        9
+        10
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Town where the 1995 anti-road protests on the Newbury bypass were held....",
-          "Town in southern England where the Newbury bypass protest took place in 1995...."
+          "Town where anti‑road protests took place in 1995....",
+          "Site of the Newbury bypass protest in 1995...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "England",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        51
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Region within the UK mentioned together with Berkshire....",
+          "A 2010 survey of public attitudes in England showed that a majority still believed climate change wa..."
         ],
         "years": []
       }
@@ -3397,12 +3826,12 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        10
+        11
       ],
       "supporting_evidence": {
         "descriptions": [
-          "City that hosted a Global Street Party coinciding with the G8 summit in 1998....",
-          "City that hosted the twenty‑fourth G8 summit and the Global Street Party in 1998...."
+          "City hosting the G8 summit in 1998....",
+          "City that hosted the twenty‑fourth G8 summit in 1998, coinciding with the Global Street Party...."
         ],
         "years": []
       }
@@ -3417,12 +3846,12 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        10
+        11
       ],
       "supporting_evidence": {
         "descriptions": [
-          "City where protests took place during the World Trade Organization negotiations in 1999....",
-          "City where activists protested outside the WTO negotiations in 1999...."
+          "City where WTO protests took place in 1999....",
+          "City that was the focal point of the 1989 WTO protests and the 1999 WTO negotiations protests...."
         ],
         "years": []
       }
@@ -3437,12 +3866,52 @@
       "cluster_size": 2,
       "source_chunks": [
         1,
-        10
+        11
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Italian city that hosted the 2001 G8 summit, which was accompanied by large protests....",
-          "City where the 2001 G8 summit took place and where violent clashes between protesters and police occ..."
+          "City hosting the 2001 G8 summit....",
+          "Italian city where the 2001 G8 summit protests erupted, resulting in a fatal shooting and police vio..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Denmark",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        23
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Host country for COP 15 climate change talks in Copenhagen....",
+          "Host country for COP 15, held in its capital Copenhagen...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Copenhagen",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        23
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Venue of the 2009 COP 15 climate change talks....",
+          "Capital city where COP 15 was convened in December 2009...."
         ],
         "years": []
       }
@@ -3456,33 +3925,53 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
-        22
+        2,
+        23
       ],
       "supporting_evidence": {
         "descriptions": [
-          "City that hosted the COP 16 UN climate talks in 2010....",
-          "Host city of COP 16...."
+          "Venue of the 2010 COP 16 UN climate talks....",
+          "Coastal city that hosted COP 16 in December 2010...."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "Twyford Down",
+      "canonical_name": "Japan",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        1,
-        9
+        2,
+        24
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Hill area in the UK where a road protest camp attracted national news in 1991....",
-          "Site of the first major road‑protest camp that attracted national news coverage in 1991...."
+          "Location threatened by an earthquake and tsunami affecting nuclear power plants in 2011....",
+          "Listed as a major power base that can act unilaterally in climate negotiations...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "University of East Anglia",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        33
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Investigated the implications of the 'climategate' email scandal in 2009....",
+          "British university that hosts the Climatic Research Unit (CRU), whose hacked emails sparked a major ..."
         ],
         "years": []
       }
@@ -3497,12 +3986,12 @@
       "cluster_size": 2,
       "source_chunks": [
         4,
-        28
+        30
       ],
       "supporting_evidence": {
         "descriptions": [
-          "City supplied with water from Thirlmere reservoir, mentioned in the context of early conservation ef...",
-          "Industrial city where Robert Angus Smith monitored sulphuric acid in rain during the 19th century...."
+          "City that received water from the Thirlmere reservoir, mentioned in the context of early conservatio...",
+          "Industrial city where Robert Angus Smith monitored sulphuric acid in rain...."
         ],
         "years": []
       }
@@ -3517,12 +4006,32 @@
       "cluster_size": 2,
       "source_chunks": [
         4,
-        24
+        26
       ],
       "supporting_evidence": {
         "descriptions": [
-          "City targeted by the Sierra Club’s campaign to stop a dam in Hetch Hetchy Valley....",
-          "City used as a geographic reference point for Clear Lake, the site of a pivotal DDD pesticide study...."
+          "Target of a Sierra Club campaign to stop a dam in the nearby Hetch Hetchy Valley....",
+          "City in California located south of Clear Lake, mentioned as a geographic reference point...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "National Trust",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        12
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Early UK conservation organisation that purchased land in the Lake District....",
+          "The largest environmental group in the UK, offering access to nature reserves and historic landscape..."
         ],
         "years": []
       }
@@ -3537,32 +4046,12 @@
       "cluster_size": 2,
       "source_chunks": [
         6,
-        12
+        14
       ],
       "supporting_evidence": {
         "descriptions": [
-          "The Finnish Green League (Vihreä liitto) secured parliamentary recognition in 1991, and became the f...",
-          "European country where climate‑law proposals were submitted following the UK’s 2008 Climate Change A..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Western Europe",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        6,
-        34
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "The Finnish Green League became the first green party in Western Europe to enter a national governme...",
-          "Sub‑region of Europe targeted by the Marshall Plan to prevent the spread of communism and stabilise ..."
+          "Country whose Green League secured parliamentary recognition in 1991 and entered a national governme...",
+          "European country that received a climate‑law proposal inspired by the UK Big Ask campaign...."
         ],
         "years": []
       }
@@ -3577,12 +4066,12 @@
       "cluster_size": 2,
       "source_chunks": [
         6,
-        21
+        23
       ],
       "supporting_evidence": {
         "descriptions": [
-          "One of the communist‑ruled countries in Central and Eastern Europe where environmental movements dev...",
-          "Host country of COP 14, the 2008 climate conference held in Poznan...."
+          "One of the post‑communist Central and Eastern European states where environmental movements develope...",
+          "Host country for COP 14, where the conference took place in Poznan...."
         ],
         "years": []
       }
@@ -3596,13 +4085,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        6,
-        16
+        7,
+        18
       ],
       "supporting_evidence": {
         "descriptions": [
-          "The West German Green Party (est. 1979) partnered with an East German alliance to form Bündnis 90/Di...",
-          "Country of former Chancellor Willy Brandt, who chaired the international commission on development a..."
+          "The western part of Germany during the Cold War, referenced as the base of the early Green Party and...",
+          "Country of former Chancellor Willy Brandt, who chaired the Brandt Commission on North‑South developm..."
         ],
         "years": []
       }
@@ -3616,13 +4105,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        6,
-        16
+        7,
+        17
       ],
       "supporting_evidence": {
         "descriptions": [
-          "An East German alliance of parties partnered with the West German Green Party to form Bündnis 90/Die...",
-          "State whose lack of international recognition contributed to the Soviet bloc’s non‑attendance at the..."
+          "The former socialist German state whose alliance of parties merged with the West German Green Party ...",
+          "State whose lack of international recognition led to the Soviet bloc’s refusal to attend the confere..."
         ],
         "years": []
       }
@@ -3637,32 +4126,12 @@
       "cluster_size": 2,
       "source_chunks": [
         7,
-        48
+        50
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Legislative body where European green parties have a strong presence....",
-          "The legislative body of the EU to which Prince Charles delivered his first speech on climate‑change ..."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "UNESCO",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        7,
-        15
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "UN Educational, Scientific and Cultural Organization; its first Director General was Sir Julian Huxl...",
-          "Organized the 1968 Biosphere Conference that examined rational use and conservation of biosphere res..."
+          "The legislative body of the European Union where green parties now have a strong presence....",
+          "Venue of Prince Charles’ first speech on climate leadership in 2008...."
         ],
         "years": []
       }
@@ -3676,13 +4145,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        7,
-        25
+        8,
+        27
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Canadian city from which Greenpeace’s precursor chartered a ship to protest nuclear testing....",
-          "Canadian city where 1969 billboard adverts promoted ecology as a revolutionary idea...."
+          "Canadian city from which the early Greenpeace activists chartered a ship to protest nuclear tests....",
+          "City where billboard adverts promoting ecology appeared in 1969...."
         ],
         "years": []
       }
@@ -3696,13 +4165,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        12,
-        21
+        13,
+        23
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country where HSBC was accused of financing palm‑oil sector loans and credit guarantees....",
-          "Host country of COP 13, the 2007 climate conference held in Bali...."
+          "Indonesia is mentioned in relation to large loans and credit guarantees to the palm‑oil sector that ...",
+          "Host country for COP 13, where the conference was held in Bali...."
         ],
         "years": []
       }
@@ -3716,13 +4185,33 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        12,
-        39
+        13,
+        41
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country whose government co‑funded the Noel Kampff Climate Action Project, a protected forest area....",
-          "Country referenced as the location of Cochabamba and the water‑privatization conflict...."
+          "Bolivia is cited as the nation whose government co‑founded the Noel Kempff Climate Action Project, a...",
+          "Country referenced as the location of the town of Cochabamba where water‑privatization protests occu..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Scotland",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        14,
+        37
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "One of the European sub‑national entities where climate‑law proposals were submitted following the U...",
+          "Region identified as the origin of Alexander King, a Scottish scientist involved in the 1968 villa m..."
         ],
         "years": []
       }
@@ -3736,13 +4225,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        12,
-        49
+        14,
+        52
       ],
       "supporting_evidence": {
         "descriptions": [
-          "European country where climate‑law proposals were submitted following the UK’s 2008 Climate Change A...",
-          "Country where the public felt well‑informed about climate change and willing to act...."
+          "European country that received a climate‑law proposal inspired by the UK Big Ask campaign....",
+          "Public felt well informed about climate change and were willing to take personal action...."
         ],
         "years": []
       }
@@ -3756,13 +4245,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        15,
-        17
+        17,
+        19
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Adopted the resolution convening the UN Conference on the Human Environment and supported the Swedis...",
-          "The main deliberative body of the United Nations that passed Resolution 38/161 establishing the WCED..."
+          "UN body that adopted resolution 2398 (XXIII) convening the UN Conference on the Human Environment....",
+          "UN body that passed Resolution 38/161 establishing the World Commission on Environment and Developme..."
         ],
         "years": []
       }
@@ -3776,35 +4265,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        16,
-        49
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "The only Soviet‑bloc state mentioned as an exception to the bloc’s refusal to attend the conference....",
-          "One of the countries where citizens felt not well‑informed about climate‑change causes and effects...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Developing world",
-      "variations": [
-        "developing world"
-      ],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
         17,
-        44
+        52
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Refers to the group of low‑ and middle‑income countries that were heavily affected by the debt crisi...",
-          "Broad global region referenced in Nestlé’s adoption of an international code for marketing baby‑milk..."
+          "The only Soviet‑bloc country that did not refuse to attend the conference....",
+          "Citizens felt they were not well informed about the causes and effects of climate change...."
         ],
         "years": []
       }
@@ -3818,73 +4285,33 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        17,
-        26
+        19,
+        27
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Norway is identified through its Prime Minister, who chaired the World Commission on Environment and...",
-          "Country of origin of philosopher Arne Naess, who introduced the term “deep ecology”...."
+          "Country of the Prime Minister who chaired the World Commission on Environment and Development....",
+          "Country of origin of philosopher Arne Naess, who introduced the term 'deep ecology' in the early 197..."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "Vienna",
+      "canonical_name": "Montreal",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        19,
-        20
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "City after which the Vienna Convention (1985) on ozone‑depleting substances is named....",
-          "City where the Vienna Convention for the Protection of the Ozone Layer was signed in 1985...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Antarctica",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        19,
+        21,
         47
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Region referenced in relation to global‑commons conventions on its conservation....",
-          "Location of a special broadcast event during the 2007 Live Earth concerts...."
-        ],
-        "years": []
-      }
-    },
-    {
-      "type": "location",
-      "canonical_name": "Antarctic",
-      "variations": [],
-      "manual_mappings": [],
-      "confidence": 1.0,
-      "average_similarity": 1.0,
-      "cluster_size": 2,
-      "source_chunks": [
-        20,
-        45
-      ],
-      "supporting_evidence": {
-        "descriptions": [
-          "Region where the British Antarctic Survey observed a 40 % drop in springtime atmospheric ozone conce...",
-          "The discovery of the Antarctic ozone hole in 1985 spurred an international effort to sign the Montre..."
+          "City where the 1987 Montreal Protocol on Substances that Deplete the Ozone Layer was negotiated....",
+          "The Montreal Protocol, named after the Canadian city, was the target of the 1985 international effor..."
         ],
         "years": []
       }
@@ -3898,20 +4325,20 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        20,
-        47
+        24,
+        50
       ],
       "supporting_evidence": {
         "descriptions": [
-          "City referenced in the term “Kyoto process,” denoting the negotiations that led to the Kyoto Protoco...",
-          "Location of a special broadcast event during the 2007 Live Earth concerts...."
+          "Referenced as the city after which a post‑Kyoto climate treaty is being negotiated....",
+          "Location of a special broadcast event for Live Earth 2007...."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "UK",
+      "canonical_name": "UNEP",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
@@ -3919,32 +4346,32 @@
       "cluster_size": 2,
       "source_chunks": [
         24,
-        42
+        41
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Country where large‑scale bird and fox deaths were raised in the House of Lords, highlighting early ...",
-          "Country experiencing a post‑war rise in car ownership and rapid traffic growth, prompting the constr..."
+          "The United Nations Environment Programme, described as a global‑level advocate for the environment....",
+          "United Nations Environment Programme that launched the Global Green New Deal (GGND) initiative in De..."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "Clear Lake",
+      "canonical_name": "Environmental Protection Agency (EPA)",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        24,
-        25
+        28,
+        39
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Recreational lake north of San Francisco studied for the effects of DDD pesticide on wildlife and fo...",
-          "Lake studied in the Clear Lake study that influenced UK toxic‑chemical research priorities...."
+          "U.S. federal agency created to address growing public concern about harmful environmental pollution....",
+          "U.S. federal agency responsible for environmental regulations, noted for its use of cost‑benefit ana..."
         ],
         "years": []
       }
@@ -3958,33 +4385,53 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        31,
-        32
+        33,
+        34
       ],
       "supporting_evidence": {
         "descriptions": [
-          "The world’s oldest scientific academy that was involved in a public exchange of letters with Exxon M...",
-          "The UK‑based learned society that attempted to produce a plain‑English guide to climate change but w..."
+          "World's oldest scientific academy that was involved in a public exchange of letters with Exxon Mobil...",
+          "Scientific academy that attempted to write a plain‑English guide to climate change but was forced to..."
         ],
         "years": []
       }
     },
     {
       "type": "location",
-      "canonical_name": "Earth",
+      "canonical_name": "United Nations Environment Programme",
       "variations": [],
       "manual_mappings": [],
       "confidence": 1.0,
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        34,
-        43
+        40,
+        42
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Planet used as a metaphor for a closed, finite system in Boulding’s “Spaceship Earth” essay....",
-          "The planet whose first full‑view images from space (e.g., the “Earthrise” photograph) helped shift p..."
+          "UNEP produced a 2010 report estimating the environmental damage costs of listed companies worldwide....",
+          "UN agency that published the report “Towards a Green Economy” in February 2011...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Antarctica",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        47,
+        50
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The discovery of the Antarctic ozone hole in 1985 triggered an international effort to sign the Mont...",
+          "Location of a special broadcast event for Live Earth 2007...."
         ],
         "years": []
       }
@@ -3998,13 +4445,13 @@
       "average_similarity": 1.0,
       "cluster_size": 2,
       "source_chunks": [
-        46,
-        47
+        49,
+        50
       ],
       "supporting_evidence": {
         "descriptions": [
-          "Venue where folk singer Pete Seeger performed at an Earth Day‑related event....",
-          "Location of a special broadcast event during the 2007 Live Earth concerts...."
+          "City where folk singer Pete Seeger performed at an Earth Day‑related event....",
+          "Location of a special broadcast event for Live Earth 2007...."
         ],
         "years": []
       }
