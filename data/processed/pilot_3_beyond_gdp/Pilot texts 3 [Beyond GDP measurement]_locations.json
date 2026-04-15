@@ -1,0 +1,1427 @@
+{
+  "locations": [
+    {
+      "name": "United States",
+      "type": "Country",
+      "country": "United States",
+      "description": "Country referenced as the jurisdiction of the two states that have introduced official GPI measures. Country that coordinated with Richard Stone and the Department of Commerce on the Keynes‑Stone accounting structure. Country where environmental accounts were discontinued in the 1990s by the US Congress. Country where the Massachusetts Institute of Technology (MIT) developed advanced computer simulation techniques used in early environmental modelling. Country whose GDP growth is calculated by BEA officials and frequently cited in media headlines. Major economic power whose financial troubles were linked to the Vietnam War. The United States generated its first national income estimate in 1843 and later became a major centre for national accounts research. The United States hosted the first post‑World War II survey used to measure subjective well‑being, marking the emergence of this questionnaire type. The nation whose economic activity is measured by GDP and whose institutions (BEA, CEA) are discussed. The primary nation discussed in relation to the 2008 financial crisis, sub‑prime mortgage market, and various economic debates.",
+      "supporting_text": "At the same time as the BEA officials in Maryland are calculating quarterly GDP growth for the United States",
+      "id": "77135874-22df-4f67-9101-b477322299c3",
+      "variations": [
+        "United States"
+      ],
+      "source_chunks": [
+        0,
+        1,
+        11,
+        12,
+        14,
+        15,
+        19,
+        20,
+        21,
+        25
+      ],
+      "supporting_texts": [
+        "At the same time as the BEA officials in Maryland are calculating quarterly GDP growth for the United States",
+        "the report includes a key indicator called Gross Domestic Product (GDP), which is a measure of the economic activity of the United States",
+        "United States (1843)",
+        "the United States' financial troubles, which stemmed from the Vietnam War",
+        "In 2007 there was a big problem in the \"subprime mortgage market\" in the United States.",
+        "Stone coordinated with the United States: not with Kuznets but rather with the Department of Commerce.",
+        "the most advanced computer simulation techniques at the time, which had been developed by a Massachusetts Institute of Technology (MIT) professor, Forrester.",
+        "This type of questionnaire emerged after the Second World War, starting with the first survey in the United States in 1946.",
+        "Two US states, Maryland and Vermont, have introduced official GPI measures and there are more that are exploring them.",
+        "The environmental accounts of the United States were discontinued in the 1990s by the US Congress."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Discontinuation of environmental accounts by Congress weakened green accounting efforts.",
+        "supporting_text": "environmental accounts of the United States were discontinued in the 1990s by the US Congress."
+      }
+    },
+    {
+      "name": "Maryland",
+      "type": "Region",
+      "country": "United States",
+      "description": "One of the two U. S. U. state where BEA officials calculate quarterly GDP growth for the United States. state where the lock‑up procedure takes place at 4600 Silver Hill Road. states that have introduced an official Genuine Progress Indicator (GPI) measure.",
+      "supporting_text": "At the same time as the BEA officials in Maryland are calculating quarterly GDP growth for the United States",
+      "id": "469fe0c0-e809-4bbd-9cb6-54d8192224a0",
+      "variations": [
+        "Maryland"
+      ],
+      "source_chunks": [
+        0,
+        1,
+        21
+      ],
+      "supporting_texts": [
+        "At the same time as the BEA officials in Maryland are calculating quarterly GDP growth for the United States",
+        "a group of civil servants go into the \"lock-up\" procedure in a secure room at 4600 Silver Hill Road, Maryland, USA.",
+        "Two US states, Maryland and Vermont, have introduced official GPI measures and there are more that are exploring them."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned only as the site of a state‑level adoption, without explicit significance beyond that.",
+        "supporting_text": "Two US states, Maryland and Vermont, have introduced official GPI measures..."
+      }
+    },
+    {
+      "name": "4600 Silver Hill Road, Maryland, USA",
+      "type": "Other",
+      "country": "United States",
+      "description": "Specific address where the lock‑up procedure for statisticians is conducted.",
+      "supporting_text": "a group of civil servants go into the \"lock-up\" procedure in a secure room at 4600 Silver Hill Road, Maryland, USA.",
+      "source_chunk": 0,
+      "id": "031e56d7-9e10-44f5-9a76-957e806a6cef",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The address identifies where GDP data are secured, but its relevance to ecological goals is not stated.",
+        "supporting_text": "a group of civil servants go into the “lock-up” procedure … at 4600 Silver Hill Road, Maryland, USA."
+      }
+    },
+    {
+      "name": "Bureau of Economic Analysis (BEA)",
+      "type": "Institution",
+      "country": "United States",
+      "description": "U.S. federal agency that produces the quarterly GDP report.",
+      "supporting_text": "They work for the Bureau of Economic Analysis (BEA).",
+      "source_chunk": 0,
+      "id": "928af9d0-bd34-4c22-9a59-b0d747beba3a",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "BEA conducts the quarterly lock‑up that produces the GDP indicator, sustaining its centrality.",
+        "supporting_text": "They work for the Bureau of Economic Analysis (BEA)."
+      }
+    },
+    {
+      "name": "Council of Economic Advisers (CEA)",
+      "type": "Institution",
+      "country": "United States",
+      "description": "U.S. presidential advisory body whose chairman receives the GDP report.",
+      "supporting_text": "The adviser to the President is the Chairman of the Council of Economic Advisers (CEA).",
+      "source_chunk": 0,
+      "id": "c971e97b-222c-49f0-8da8-cd72c18ebd17",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Listed as a location but the text treats CEA as an actor; no distinct location relevance is given.",
+        "supporting_text": "Council of Economic Advisers (CEA) appears only as an institutional name."
+      }
+    },
+    {
+      "name": "European Union",
+      "type": "Region",
+      "country": "",
+      "description": "Supranational organization to which EU member states make contributions based on GNI. Supranational political and economic union whose member states release quarterly GDP figures within 30‑45 days after the quarter’s end. Supranational region whose statistical office Eurostat began work on Sustainable Development Indicators in 2005. The European Union incorporated subjective well‑being questions into its Eurobarometer survey beginning in 1973, reflecting the region’s role in expanding SWB measurement.",
+      "supporting_text": "The countries of the European Union ... all release their quarterly GDP figures within a period of around 30-45 days after the end of the quarter.",
+      "id": "efe8128e-7920-4b67-a954-927aa3c60894",
+      "variations": [
+        "European Union"
+      ],
+      "source_chunks": [
+        0,
+        1,
+        19,
+        20
+      ],
+      "supporting_texts": [
+        "The countries of the European Union ... all release their quarterly GDP figures within a period of around 30-45 days after the end of the quarter.",
+        "the contributions which EU member states have to pay to the European Union.",
+        "Eurostat (the statistical office of the European Union) started work on Sustainable Development Indicators in 2005.",
+        "From 1973, SWB questions started to be asked in the European Union's Eurobarometer survey."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Geographic context for EU‑driven inclusion of SWB items in Eurobarometer surveys.",
+        "supporting_text": "From 1973, SWB questions started to be asked in the European Union’s Eurobarometer survey."
+      }
+    },
+    {
+      "name": "China",
+      "type": "Country",
+      "country": "China",
+      "description": "Country cited as an example of slowing growth after decades of rapid expansion. Country where a green accounting initiative was put on hold after results caused controversy. One of the major economies frequently mentioned in projected GDP growth headlines.",
+      "supporting_text": "New growth figures for the US (or China, Germany, France or the UK) show economy is growing/stabilizing/in recession.",
+      "id": "1798d4d2-3445-4bee-a12e-44b94add64f6",
+      "variations": [
+        "China"
+      ],
+      "source_chunks": [
+        1,
+        14,
+        25
+      ],
+      "supporting_texts": [
+        "New growth figures for the US (or China, Germany, France or the UK) show economy is growing/stabilizing/in recession.",
+        "Even countries such as China, which saw spectacular growth rates from the 1990s, is seeing a slowing down.",
+        "A decade later a green accounting initiative in China was put on hold when the results were published and led to controversy."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "The green accounting initiative was halted after controversy, delaying progress.",
+        "supporting_text": "a green accounting initiative in China was put on hold when the results were published and led to controversy."
+      }
+    },
+    {
+      "name": "Germany",
+      "type": "Country",
+      "country": "Germany",
+      "description": "Germany’s national income accounting started between 1863 and 1899. One of the major economies frequently mentioned in projected GDP growth headlines.",
+      "supporting_text": "New growth figures for the US (or China, Germany, France or the UK) show economy is growing/stabilizing/in recession.",
+      "id": "a9c54c33-4002-4879-a5df-3b8110c4a518",
+      "variations": [
+        "Germany"
+      ],
+      "source_chunks": [
+        1,
+        11
+      ],
+      "supporting_texts": [
+        "New growth figures for the US (or China, Germany, France or the UK) show economy is growing/stabilizing/in recession.",
+        "Germany (1863-1899)"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Germany’s participation reinforced the international standardisation of GDP.",
+        "supporting_text": "After England and France came Russia (1790s), the Netherlands (1798), United States (1843), Austria (1861), Germany (1863–1899), Australia (1886) and Norway (1893)."
+      }
+    },
+    {
+      "name": "France",
+      "type": "Country",
+      "country": "France",
+      "description": "Country where President Nicolas Sarkozy established the Commission on the Measurement of Economic Performance and Social Progress (the Stiglitz Report) in 2009. France quickly took its first steps in national income measurement shortly after the United Kingdom. One of the early countries where environmental accounts were initiated in the 1970s. One of the major economies frequently mentioned in projected GDP growth headlines.",
+      "supporting_text": "New growth figures for the US (or China, Germany, France or the UK) show economy is growing/stabilizing/in recession.",
+      "id": "b0097a86-175f-4012-9c71-a857baa637d4",
+      "variations": [
+        "France"
+      ],
+      "source_chunks": [
+        1,
+        11,
+        19,
+        24
+      ],
+      "supporting_texts": [
+        "New growth figures for the US (or China, Germany, France or the UK) show economy is growing/stabilizing/in recession.",
+        "On the opposite side of the English Channel the French also quickly took their first steps in national income measurement.",
+        "In 2009, Nicolas Sarkozy, President of France, set up the Commission on the Measurement of Economic Performance and Social Progress.",
+        "The idea of environmental accounts had already started in the 1970s in Norway and France and in the 1990s in the Netherlands."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Cited as an origin point without explicit impact on the initiative’s advancement.",
+        "supporting_text": "The idea of environmental accounts had already started in the 1970s in Norway and France."
+      }
+    },
+    {
+      "name": "United Kingdom",
+      "type": "Country",
+      "country": "United Kingdom",
+      "description": "Country where Prime Minister David Cameron launched a national programme to measure subjective well‑being and develop a “Wheel of Well‑being”. Country where tensions over national accounts were less evident. Country whose Wheel of Well‑being is cited as an example of a Type 3 indicator set. Early national income estimates were published for the United Kingdom by William Petty (1665) and William King (1696). One of the major economies frequently mentioned in projected GDP growth headlines (referred to as the UK).",
+      "supporting_text": "New growth figures for the US (or China, Germany, France or the UK) show economy is growing/stabilizing/in recession.",
+      "id": "2aa4f18a-9008-4a6e-8596-d7e7dd47787a",
+      "variations": [
+        "United Kingdom"
+      ],
+      "source_chunks": [
+        1,
+        11,
+        15,
+        19,
+        23
+      ],
+      "supporting_texts": [
+        "New growth figures for the US (or China, Germany, France or the UK) show economy is growing/stabilizing/in recession.",
+        "the first national income estimates were published by William Petty in 1665 and William King in 1696 for the United Kingdom.",
+        "In the UK such tensions were far less evident.",
+        "David Cameron, Prime Minister of the UK, started a process to measure subjective well-being, including a programme to measure SWB on a quarterly basis and to create a Wheel of Well-being.",
+        "Eurostat's Well-being Report has a range of indicators and the UK's Wheel of Well-being is another example of a Type 3 indicator set."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The UK’s Wheel of Well‑being exemplifies a national experiment with beyond‑GDP metrics.",
+        "supporting_text": "the UK’s Wheel of Well‑being is another example of a Type 3 indicator set."
+      }
+    },
+    {
+      "name": "Bhutan",
+      "type": "Country",
+      "country": "Bhutan",
+      "description": "Country where the Gross National Happiness programme was initiated by the King in the early 1970s, an early Beyond‑GDP initiative. Small, isolated country cited as an example of a nation that has challenged the dominance of GDP as a metric.",
+      "supporting_text": "it is only fringe political parties or small isolated countries (e.g., Bhutan5 ) that have challenged the GDP multinational.",
+      "id": "e80bfef5-af53-4658-88f1-8fbbe71adaa9",
+      "variations": [
+        "Bhutan"
+      ],
+      "source_chunks": [
+        1,
+        23
+      ],
+      "supporting_texts": [
+        "it is only fringe political parties or small isolated countries (e.g., Bhutan5 ) that have challenged the GDP multinational.",
+        "One of the earliest and most cited Beyond-GDP initiatives is the programme on Gross National Happiness which was initiated by the King of Bhutan in the early 1970s."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Bhutan is only the geographic origin of GNH; the text gives no explicit role for the location itself.",
+        "supporting_text": "initiated by the King of Bhutan"
+      }
+    },
+    {
+      "name": "United Nations",
+      "type": "Institution",
+      "country": null,
+      "description": "International organization that created the United Nations Environmental Programme (UNEP) after the Stockholm conference. International organization that published the first official System of National Accounts handbook in 1953. International organization that publishes the Human Development Report and coordinates the Sustainable Development Goals, both referenced as key Beyond‑GDP indicator sets. International organization under whose Statistical Commission the SEEA 2012 framework was adopted. The UN started collecting national accounts data in 1952, becoming a key international data source.",
+      "supporting_text": "HDI is one of the most visible Beyond-GDP alternatives and is featured every year in the United Nations' Human Development Report.",
+      "id": "b47f9ad8-f736-4e91-893c-7ff214f81d90",
+      "variations": [
+        "United Nations"
+      ],
+      "source_chunks": [
+        2,
+        11,
+        15,
+        19,
+        24
+      ],
+      "supporting_texts": [
+        "HDI is one of the most visible Beyond-GDP alternatives and is featured every year in the United Nations' Human Development Report.",
+        "the United Nations, which started to collect national accounts data in 1952.",
+        "Then, in 1953, Stone was the principal author of the first ever UN handbook, which is considered the first \"official\" SNA.",
+        "It created the United Nations Environmental Programme, which stimulated governments all over the world to set up environmental ministries.",
+        "After a lengthy deliberation process the System of Environmental Economic Accounting 2012 - Central Framework was adopted by the Statistical Commission of the United Nations."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The location label is not used in the passage to convey a specific significance.",
+        "supporting_text": "—"
+      }
+    },
+    {
+      "name": "World Wildlife Fund",
+      "type": "Institution",
+      "country": null,
+      "description": "International conservation NGO whose Living Planet Report frequently cites the ecological footprint as a Beyond‑GDP metric.",
+      "supporting_text": "the ecological footprint is cited frequently, including in the Living Planet Report of the World Wildlife Fund.",
+      "source_chunk": 2,
+      "id": "18830d95-5942-4d4f-80d2-8a6fda4545c0",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The location label is not tied to a distinct role beyond the organisational mention.",
+        "supporting_text": ""
+      }
+    },
+    {
+      "name": "United Nations (UN)",
+      "type": "Institution",
+      "country": null,
+      "description": "An international institution that rose in the post‑World War II era and became a key venue for economists to advise governments. International organization whose member states adopted the Sustainable Development Goals in 2015; referenced as a potential political process for community formation.",
+      "supporting_text": "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+      "id": "6edce139-0bff-435f-8986-29ffad311d47",
+      "variations": [
+        "United Nations (UN)"
+      ],
+      "source_chunks": [
+        4,
+        8
+      ],
+      "supporting_texts": [
+        "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+        "a prime candidate would be the Sustainable Development Goals, a list of 169 targets that were adopted by all member states of the UN in 2015."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text does not discuss the UN as a geographic location, only as an organization.",
+        "supporting_text": ""
+      }
+    },
+    {
+      "name": "International Monetary Fund (IMF)",
+      "type": "Institution",
+      "country": null,
+      "description": "An international financial institution established after World War II that relied on economists for policy advice. One of the major international institutes tasked with overseeing the post‑Bretton Woods economic agreement.",
+      "supporting_text": "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+      "id": "bfb2c42b-2bcd-45fd-b3ce-92620af64fec",
+      "variations": [
+        "International Monetary Fund (IMF)"
+      ],
+      "source_chunks": [
+        4,
+        11
+      ],
+      "supporting_texts": [
+        "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+        "Major international institutes such as the International Monetary Fund (IMF) and World Bank were tasked to oversee this new economic agreement."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "IMF is listed as an institution overseeing the new economic system, but the passage gives no indication of its role in shifting metrics toward nature‑based accounting.",
+        "supporting_text": "Major international institutes such as the International Monetary Fund (IMF) and World Bank were tasked to oversee this new economic agreement."
+      }
+    },
+    {
+      "name": "World Bank",
+      "type": "Institution",
+      "country": null,
+      "description": "A post‑World War II international development institution that incorporated economic expertise into global governance. International development bank created alongside the IMF to supervise the new post‑Bretton Woods system. International financial institution that published the “Wealth of Nations” reports (2006, 2011, 2018) on alternative wealth measurement. International financial institution where wealth accounting gained prominence in the 1990s.",
+      "supporting_text": "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+      "id": "15877720-ef73-49ef-a883-5e2acd8286a5",
+      "variations": [
+        "World Bank"
+      ],
+      "source_chunks": [
+        4,
+        11,
+        19,
+        23
+      ],
+      "supporting_texts": [
+        "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+        "Major international institutes such as the International Monetary Fund (IMF) and World Bank were tasked to oversee this new economic agreement.",
+        "The World Bank published the \"Wealth of Nations\" reports in 2006, 2011 and 2018.",
+        "which had gained prominence in the 1990s and is also popular at the World Bank."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "World Bank’s interest in wealth accounting signals a shift toward monetised capital‑stock approaches.",
+        "supporting_text": "the idea of wealth accounting, which had gained prominence in the 1990s and is also popular at the World Bank."
+      }
+    },
+    {
+      "name": "Organisation for Economic Co‑operation and Development (OECD)",
+      "type": "Institution",
+      "country": null,
+      "description": "An international organization founded in the post‑war period that coordinated economic policy and statistical standards. The OECD played an important role in stimulating research on national income.",
+      "supporting_text": "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+      "id": "2290de52-3986-494b-8072-71a12603f626",
+      "variations": [
+        "Organisation for Economic Co‑operation and Development (OECD)"
+      ],
+      "source_chunks": [
+        4,
+        11
+      ],
+      "supporting_texts": [
+        "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+        "the important role of the UN and OECD in stimulating research on national income."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The passage describes OECD’s historical role in economic statistics, but does not link it to valuing nature or replacing GDP, so its relevance to the harmony‑with‑nature initiative is unclear.",
+        "supporting_text": "Another important institute, which will play a significant part in this book, is the Organisation for Economic Co‑operation and Development (OECD)."
+      }
+    },
+    {
+      "name": "Intergovernmental Panel on Climate Change (IPCC)",
+      "type": "Institution",
+      "country": null,
+      "description": "Global scientific body established in the early 1990s that created a coherent climate‑science community through formal institutionalisation.",
+      "supporting_text": "The Intergovernmental Panel on Climate Change (IPCC), which started in the early 1990s, has resulted in a coherent climate science community.",
+      "source_chunk": 8,
+      "id": "f2998c56-ec70-4f35-98d3-f3acd22fbedc",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "No geographic location details are provided for the IPCC in the text.",
+        "supporting_text": ""
+      }
+    },
+    {
+      "name": "Russia",
+      "type": "Country",
+      "country": null,
+      "description": "Russia began national income accounting in the 1790s, one of the earliest non‑Western European adopters.",
+      "supporting_text": "After England and France came Russia (1790s)",
+      "source_chunk": 11,
+      "id": "8392368e-19f0-4302-88a2-d0962ccacf29",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Russia’s early but sporadic estimates illustrate the historical diffusion of GDP metrics.",
+        "supporting_text": "After England and France came Russia (1790s), the Netherlands (1798), United States (1843), Austria (1861), Germany (1863–1899), Australia (1886) and Norway (1893)."
+      }
+    },
+    {
+      "name": "Netherlands",
+      "type": "Country",
+      "country": null,
+      "description": "Country where environmental accounts began in the 1990s. Later adopter of a Type 4 conceptual indicator set. One of the member countries of the 1945 subcommittee on national income accounting. The Life Situation Index (LSI) was produced in the Netherlands in the early 1970s, representing an early composite indicator in the Beyond‑GDP discussion. The Netherlands produced its first national income estimate in 1798.",
+      "supporting_text": "the Netherlands (1798)",
+      "id": "f9d0ccab-0013-4c7d-b66c-5f0c54188ab1",
+      "variations": [
+        "Netherlands"
+      ],
+      "source_chunks": [
+        11,
+        15,
+        22,
+        23,
+        24
+      ],
+      "supporting_texts": [
+        "the Netherlands (1798)",
+        "Members of the subcommittee hailed from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland.",
+        "in the early 1970s the Life Situation Index (LSI) was produced in the Netherlands.",
+        "Later the Netherlands and Belgium also introduced Type 4 indicator sets.",
+        "The idea of environmental accounts had already started in the 1970s in Norway and France and in the 1990s in the Netherlands."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Only noted as a later adopter; the text does not link it to further change.",
+        "supporting_text": "and in the 1990s in the Netherlands."
+      }
+    },
+    {
+      "name": "Austria",
+      "type": "Country",
+      "country": null,
+      "description": "Austria produced national income estimates beginning in 1861.",
+      "supporting_text": "Austria (1861)",
+      "source_chunk": 11,
+      "id": "949cc3b7-9c2c-4a69-8c6d-9529355caa55",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Austria’s early adoption of national accounts added to the diffusion of GDP‑centric measurement.",
+        "supporting_text": "After England and France came Russia (1790s), the Netherlands (1798), United States (1843), Austria (1861), Germany (1863–1899), Australia (1886) and Norway (1893)."
+      }
+    },
+    {
+      "name": "Australia",
+      "type": "Country",
+      "country": null,
+      "description": "Australia began national income accounting in 1886. One of the member countries of the 1945 subcommittee on national income accounting.",
+      "supporting_text": "Australia (1886)",
+      "id": "e3e2d6c4-3943-4cfc-aefc-7a57d50b0cc9",
+      "variations": [
+        "Australia"
+      ],
+      "source_chunks": [
+        11,
+        15
+      ],
+      "supporting_texts": [
+        "Australia (1886)",
+        "Members of the subcommittee hailed from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Australia was represented on the subcommittee that drafted the first harmonised SNA.",
+        "supporting_text": "Members of the subcommittee hailed from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland."
+      }
+    },
+    {
+      "name": "Norway",
+      "type": "Country",
+      "country": null,
+      "description": "Norway produced its first national income estimate in 1893. One of the early countries where environmental accounts were initiated in the 1970s. One of the first countries in the mid‑2000s to create a conceptual (Type 4) indicator set. One of the member countries of the 1945 subcommittee on national income accounting.",
+      "supporting_text": "Norway (1893)",
+      "id": "624b1f25-16ad-48d1-8b8f-5aab446be61f",
+      "variations": [
+        "Norway"
+      ],
+      "source_chunks": [
+        11,
+        15,
+        23,
+        24
+      ],
+      "supporting_texts": [
+        "Norway (1893)",
+        "Members of the subcommittee hailed from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland.",
+        "In the mid-2000s a couple of countries started to create indicator sets based on conceptual frameworks: Switzerland, Norway and New Zealand.",
+        "The idea of environmental accounts had already started in the 1970s in Norway and France and in the 1990s in the Netherlands."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned only as an early site of concept development; no direct link to progress shown.",
+        "supporting_text": "The idea of environmental accounts had already started in the 1970s in Norway and France."
+      }
+    },
+    {
+      "name": "English Channel",
+      "type": "Region",
+      "country": null,
+      "description": "Geographic waterway separating England and France, referenced when describing early French national income work.",
+      "supporting_text": "On the opposite side of the English Channel the French also quickly took their first steps in national income measurement.",
+      "source_chunk": 11,
+      "id": "a777afe3-d2ff-4039-a351-6b3e8b7a2e48",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The English Channel is mentioned only as a geographic reference for early French accounting efforts; no connection to nature‑valuing or metric change is provided.",
+        "supporting_text": "On the opposite side of the English Channel the French also quickly took their first steps in national income measurement."
+      }
+    },
+    {
+      "name": "Bretton Woods",
+      "type": "Other",
+      "country": "United States",
+      "description": "Site of the 1944 conference that created a new international economic order and led to the IMF and World Bank. Site of the 1944 international monetary agreements that created the Bretton Woods system.",
+      "supporting_text": "the international economic order changed significantly at the Bretton Woods meeting in 1944",
+      "id": "ad9e47c7-020d-44b0-867f-ebc27fe3c798",
+      "variations": [
+        "Bretton Woods"
+      ],
+      "source_chunks": [
+        11,
+        12
+      ],
+      "supporting_texts": [
+        "the international economic order changed significantly at the Bretton Woods meeting in 1944",
+        "the international agreements which had been agreed in Bretton Woods in 1944"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The breakdown of the Bretton Woods system signals the fragility of the post‑war growth order.",
+        "supporting_text": "The system began to run into trouble at the end of the 1960s because of the United States’ financial troubles."
+      }
+    },
+    {
+      "name": "Organisation for European Economic Co‑operation (OEEC)",
+      "type": "Institution",
+      "country": null,
+      "description": "Founded in 1948, it coordinated post‑war economic recovery in Europe and later became the OECD.",
+      "supporting_text": "Initially called the Organisation for European Economic Co‑operation (OEEC), it was founded in 1948 and played an important role in the post‑war economic recovery of Europe.",
+      "source_chunk": 11,
+      "id": "fb456589-46e8-4efb-9744-e6ee8c4b3ad5",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "OEEC’s historical role in post‑war recovery is described, but the text does not connect it to incorporating ecological values or alternative metrics.",
+        "supporting_text": "Initially called the Organisation for European Economic Co‑operation (OEEC), it was founded in 1948 and played an important role in the post‑war economic recovery of Europe."
+      }
+    },
+    {
+      "name": "North Atlantic Treaty Organization (NATO)",
+      "type": "Institution",
+      "country": null,
+      "description": "Military alliance agreed in 1949 as part of the post‑war security architecture.",
+      "supporting_text": "In 1949, the North Atlantic Treaty Organization (NATO) was agreed.",
+      "source_chunk": 11,
+      "id": "c6a8ceae-681e-49d2-88bf-105a7ec51319",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "NATO is noted as a post‑war alliance; no relevance to nature‑centric economic decision‑making is provided.",
+        "supporting_text": "In 1949, the North Atlantic Treaty Organization (NATO) was agreed."
+      }
+    },
+    {
+      "name": "European Economic Community",
+      "type": "Institution",
+      "country": null,
+      "description": "Founded in 1957 as a forerunner of the European Community, promoting economic integration in Europe.",
+      "supporting_text": "The European Economic Community, a forerunner of the European Community, was founded in 1957.",
+      "source_chunk": 11,
+      "id": "86f84fd0-7314-4afa-abe8-713c87a97d2f",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The European Economic Community is mentioned as a predecessor of the EU, without any discussion of ecological metrics or nature valuation.",
+        "supporting_text": "The European Economic Community, a forerunner of the European Community, was founded in 1957."
+      }
+    },
+    {
+      "name": "League of Nations",
+      "type": "Institution",
+      "country": null,
+      "description": "International organization whose Committee of Statistical Experts included measurement of national income in its 1939 programme. The ineffective inter‑war organization that was replaced by the United Nations in 1945.",
+      "supporting_text": "The ineffective League of Nations was replaced by the United Nations in 1945.",
+      "id": "27b87194-1523-4a37-a50d-203cb45f10df",
+      "variations": [
+        "League of Nations"
+      ],
+      "source_chunks": [
+        11,
+        15
+      ],
+      "supporting_texts": [
+        "The ineffective League of Nations was replaced by the United Nations in 1945.",
+        "In April 1939, the Committee of Statistical Experts of the League of Nations included in its programme the measurement of national income."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The League’s committee first embedded national income measurement in its programme, seeding the SNA project.",
+        "supporting_text": "In April 1939, the Committee of Statistical Experts of the League of Nations included in its programme the measurement of national income."
+      }
+    },
+    {
+      "name": "National Bureau of Economic Research (NBER)",
+      "type": "Institution",
+      "country": "United States",
+      "description": "Founded in 1920 in the United States to promote statistics for economic decision‑making; employed Simon Kuznets in the 1930s.",
+      "supporting_text": "The National Bureau of Economic Research (NBER) had been founded in 1920 with the precise aim of promoting statistics in economic decision making.",
+      "source_chunk": 11,
+      "id": "b813fa78-0f16-4ad4-8295-52c31ab5c3d4",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "NBER is highlighted for its role in statistical development, yet the text does not associate it with ecological accounting or replacing GDP.",
+        "supporting_text": "The National Bureau of Economic Research (NBER) had been founded in 1920 with the precise aim of promoting statistics in economic decision making."
+      }
+    },
+    {
+      "name": "Department of Commerce (United States)",
+      "type": "Institution",
+      "country": "United States",
+      "description": "U.S. federal agency asked to provide national income statistics under Resolution 220 in 1932.",
+      "supporting_text": "Resolution 220 was a request to the Department of Commerce, but they did not have the expertise or staff for the job.",
+      "source_chunk": 11,
+      "id": "f377b78a-df4b-449d-8740-748e4a7bc2e4",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The Department of Commerce is mentioned in the context of a 1930s data request; no link to nature‑centric policy or metric reform is made.",
+        "supporting_text": "Resolution 220 was a request to the Department of Commerce, but they did not have the expertise or staff for the job."
+      }
+    },
+    {
+      "name": "Eastern Asia",
+      "type": "Region",
+      "country": null,
+      "description": "Region described as being in ruins after World War II.",
+      "supporting_text": "Large parts of Europe and Eastern Asia were in ruins",
+      "source_chunk": 11,
+      "id": "2d4c1008-5f72-4041-b1a5-5e386411f418",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Eastern Asia appears only as a geographic note about post‑war devastation; the passage does not discuss its role in ecological metric transformation.",
+        "supporting_text": "Large parts of Europe and Eastern Asia were in ruins and the United States decided that economic development was vital to stabilise Europe."
+      }
+    },
+    {
+      "name": "Europe",
+      "type": "Region",
+      "country": null,
+      "description": "Continent heavily damaged after World War II and central to post‑war recovery programmes. Region where populist parties have been gaining electoral ground, influencing trust in statistics and economics. Region whose countries together abandoned the Bretton Woods fixed‑exchange system in the 1970s. Region whose statistical systems became entrenched with the British/American system. The continent where the acid‑rain problem emerged in the 1970s, prompting regional negotiations and the development of the RAINS model.",
+      "supporting_text": "Large parts of Europe and Eastern Asia were in ruins",
+      "id": "712b50e0-a800-4df6-b0e3-933adaa8af80",
+      "variations": [
+        "Europe"
+      ],
+      "source_chunks": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "supporting_texts": [
+        "Large parts of Europe and Eastern Asia were in ruins",
+        "Japan and European countries effectively stopped using the Bretton Woods framework",
+        "In the 1970s the problem of acid rain in Europe started;",
+        "In Europe, these parties have started overtaking the traditional parties in terms of electoral appeal.",
+        "The British/American system thereby became entrenched in European statistics."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The British/American system became entrenched in European statistics, expanding the SNA’s reach.",
+        "supporting_text": "The British/American system thereby became entrenched in European statistics."
+      }
+    },
+    {
+      "name": "Vietnam",
+      "type": "Country",
+      "country": null,
+      "description": "Country whose war contributed to the United States' financial difficulties in the 1960s‑70s.",
+      "supporting_text": "the United States' financial troubles, which stemmed from the Vietnam War",
+      "source_chunk": 12,
+      "id": "5fb1f872-6a16-4af9-8e8e-540c615d5826",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The Vietnam War is cited as a source of U.S. financial strain that undermined the existing economic order.",
+        "supporting_text": "The system began to run into trouble ... because of the United States’ financial troubles, which stemmed from the Vietnam War."
+      }
+    },
+    {
+      "name": "Japan",
+      "type": "Country",
+      "country": null,
+      "description": "One of the nations that abandoned the fixed‑exchange Bretton Woods framework in the early 1970s.",
+      "supporting_text": "Japan and European countries effectively stopped using the Bretton Woods framework",
+      "source_chunk": 12,
+      "id": "2b924d53-7c9a-4a18-94ff-6b533adc08da",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Japan’s abandonment of fixed exchange rates demonstrates a possible shift in global monetary architecture.",
+        "supporting_text": "By 1973 Japan and European countries effectively stopped using the Bretton Woods framework."
+      }
+    },
+    {
+      "name": "Berlin Wall",
+      "type": "Other",
+      "country": "Germany",
+      "description": "Symbol of the Cold War; its fall marked a shift in global political and economic dynamics.",
+      "supporting_text": "the fall of the Berlin Wall",
+      "source_chunk": 12,
+      "id": "7d3abeac-a2f6-4d4f-9030-538310a645d4",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The fall of the Berlin Wall boosted the legitimacy of capitalist growth models.",
+        "supporting_text": "The fall of the Berlin Wall ... bolstered the idea that capitalist democracies were the superior system of governance."
+      }
+    },
+    {
+      "name": "Western world",
+      "type": "Region",
+      "country": null,
+      "description": "Broad cultural‑political region where student protests erupted in 1968 and which later experienced high growth and low inflation.",
+      "supporting_text": "student protests across the western world in 1968",
+      "source_chunk": 12,
+      "id": "169bc08d-5169-4d59-89a3-99af7b9a44ac",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Student protests across the Western world in 1968 illustrate collective dissent against prevailing growth narratives.",
+        "supporting_text": "The 1960s were also marred by social unrest, culminating in student protests across the western world in 1968."
+      }
+    },
+    {
+      "name": "London",
+      "type": "City",
+      "country": "United Kingdom",
+      "description": "The capital city where a severe smog event in December 1952 caused thousands of excess deaths, marking an early milestone in the modern environmental movement.",
+      "supporting_text": "As far back as December 1952, London was confronted by a smog which is estimated to have caused thousands of extra deaths.",
+      "source_chunk": 13,
+      "id": "6c75845d-b42c-4ce5-958c-70aab78876ef",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Site of a historic smog event that exemplifies urban air‑quality failure.",
+        "supporting_text": "London was confronted by a smog which is estimated to have caused thousands of extra deaths."
+      }
+    },
+    {
+      "name": "Lehman Brothers",
+      "type": "Institution",
+      "country": "United States",
+      "description": "The investment bank whose 2008 bankruptcy triggered a global financial shockwave.",
+      "supporting_text": "A real shock wave went through society when Lehman Brothers filed for bankruptcy on 15 September 2008.",
+      "source_chunk": 14,
+      "id": "245923fc-927f-4e51-8a77-81162ba79cf6",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The bankruptcy triggered the 2008 financial shock, exposing systemic fragilities in the prevailing economic system.",
+        "supporting_text": "Lehman Brothers filed for bankruptcy… shock wave went through society."
+      }
+    },
+    {
+      "name": "Great Lakes",
+      "type": "Region",
+      "country": "United States/Canada",
+      "description": "Geographic reference used to distinguish “freshwater” economists from “saltwater” economists.",
+      "supporting_text": "Krugman terms this rift freshwater versus saltwater economists, referring to the proximity of the universities of the two factions to the Great Lakes versus the East/West coasts of the United States.",
+      "source_chunk": 14,
+      "id": "148ec353-dc6a-4e07-9299-4f17d60afc68",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Used to label “freshwater” economists, illustrating the academic divide that underpins differing policy approaches.",
+        "supporting_text": "freshwater versus saltwater economists… proximity of the universities… Great Lakes."
+      }
+    },
+    {
+      "name": "East/West coasts of the United States",
+      "type": "Region",
+      "country": "United States",
+      "description": "Geographic reference contrasting with the Great Lakes region in the freshwater‑vs‑saltwater economist divide.",
+      "supporting_text": "Krugman terms this rift freshwater versus saltwater economists, referring to the proximity of the universities of the two factions to the Great Lakes versus the East/West coasts of the United States.",
+      "source_chunk": 14,
+      "id": "07c24500-b2e6-4e60-a5ae-a1ade4bfaf69",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Reference to “saltwater” economists highlights the ideological split influencing economic policy.",
+        "supporting_text": "freshwater versus saltwater economists… East/West coasts of the United States."
+      }
+    },
+    {
+      "name": "New York Times",
+      "type": "Institution",
+      "country": "United States",
+      "description": "U.S. newspaper that published Paul Krugman's op‑ed analyzing the post‑crisis rift among economists.",
+      "supporting_text": "In the New York Times, a year after the Lehmann Brothers' collapse, Paul Krugman explained the rift in his op‑ed \"How Did Economists Get It So Wrong?\"",
+      "source_chunk": 14,
+      "id": "74ad96d2-f424-47ff-96cd-4a1801114d2a",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Published Krugman’s op‑ed, amplifying critique of mainstream economics and influencing public debate.",
+        "supporting_text": "In the New York Times… Paul Krugman explained the rift."
+      }
+    },
+    {
+      "name": "MIT",
+      "type": "Institution",
+      "country": "United States",
+      "description": "Massachusetts Institute of Technology, home of the “billion prices project” that gathers daily inflation data.",
+      "supporting_text": "The \"billion prices project\" of MIT collects data from websites using webcrawlers to calculate daily inflation rates for many countries.",
+      "source_chunk": 14,
+      "id": "f5fec934-1ba7-43bc-a74f-4bf3ca294523",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Host of the Billion Prices Project, showcasing how big‑data can reshape economic indicators.",
+        "supporting_text": "Development of the Billion Prices Project at MIT… big data."
+      }
+    },
+    {
+      "name": "Financial Times",
+      "type": "Institution",
+      "country": "United Kingdom",
+      "description": "British newspaper where Nicolas Sarkozy discussed the Stiglitz Report and public distrust of statistics.",
+      "supporting_text": "Nicolas Sarkozy was interviewed about the Stiglitz Report and addressed the lack of faith in statistics. He linked this scepticism to the dominance of economic (\"market\") thinking in an interview with the Financial Times.",
+      "source_chunk": 14,
+      "id": "af683b32-f93c-417e-b809-a2bced5cb22c",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Provides a platform for commentary on economic trust and statistics, affecting societal perception.",
+        "supporting_text": "Sarkozy … Financial Times."
+      }
+    },
+    {
+      "name": "Princeton",
+      "type": "City",
+      "country": "United States",
+      "description": "City where the subcommittee met in December 1945 to discuss a memorandum written by Richard Stone.",
+      "supporting_text": "They met at Princeton in December 1945 to discuss a memorandum written by Richard Stone.",
+      "source_chunk": 15,
+      "id": "939cc11d-c669-45bd-9284-9e69f70fc6eb",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Venue of the 1945 subcommittee meeting that launched the harmonisation process.",
+        "supporting_text": "They met at Princeton in December 1945 to discuss a memorandum written by Richard Stone."
+      }
+    },
+    {
+      "name": "Department of Commerce",
+      "type": "Institution",
+      "country": "United States",
+      "description": "U.S. government agency that met with Richard Stone and Milton Gilbert in September 1944.",
+      "supporting_text": "During a meeting in September 1944, Richard Stone and Milton Gilbert of the Department of Commerce met, also in the presence of the Canadian George Luxton.",
+      "source_chunk": 15,
+      "id": "28b38878-4f4f-4a46-91fd-761122aa2da8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Hosted the tripartite meeting that aligned U.S. accounting with the Keynes‑Stone model.",
+        "supporting_text": "During a meeting in September 1944, Richard Stone and Milton Gilbert of the Department of Commerce met..."
+      }
+    },
+    {
+      "name": "OEEC",
+      "type": "Institution",
+      "country": null,
+      "description": "Organization for European Economic Cooperation that published handbooks on national income accounting used in the Marshall Plan.",
+      "supporting_text": "Stone led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan.",
+      "source_chunk": 15,
+      "id": "b01d9b7c-ce52-42f6-a75f-e5469b9bea6b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Institutional partner for the 1951‑1952 handbooks that disseminated the SNA framework.",
+        "supporting_text": "He led the work on two OEEC handbooks on national income accounting (1951 and 1952)..."
+      }
+    },
+    {
+      "name": "Scandinavia",
+      "type": "Region",
+      "country": null,
+      "description": "Region mentioned as having its own national accounts systems before being replaced by the SNA.",
+      "supporting_text": "For example, various Scandinavian countries and countries such as the Netherlands had their own systems which were, in the end, replaced by the SNA.",
+      "source_chunk": 15,
+      "id": "8bdf4676-2534-4c30-be56-dae405377432",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows how local accounting traditions were overridden by the SNA.",
+        "supporting_text": "various Scandinavian countries ... had their own systems which were, in the end, replaced by the SNA."
+      }
+    },
+    {
+      "name": "Berlin",
+      "type": "City",
+      "country": "Germany",
+      "description": "City referenced through the fall of the Berlin Wall in 1989, marking the end of the MPS process.",
+      "supporting_text": "The fall of the Berlin Wall in 1989 put an end to this process.",
+      "source_chunk": 15,
+      "id": "2dca2374-041d-4f0d-8a72-a3a7f6e5bba8",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The fall of the Berlin Wall ended the MPS revision process, affecting accounting pluralism.",
+        "supporting_text": "The fall of the Berlin Wall in 1989 put an end to this process."
+      }
+    },
+    {
+      "name": "Great Britain",
+      "type": "Country",
+      "country": null,
+      "description": "Country where Richard Stone worked on national income accounts together with James Meade.",
+      "supporting_text": "Stone had worked in Great Britain on national income accounts together with James Meade and was supported by John Maynard Keynes.",
+      "source_chunk": 15,
+      "id": "278e1934-2a06-47e7-9f53-60e0e7148457",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Great Britain provided the intellectual base (Keynes) that shaped the SNA, enabling a coordinated global accounting system.",
+        "supporting_text": "Stone had worked in Great Britain on national income accounts together with James Meade and was supported by John Maynard Keynes."
+      }
+    },
+    {
+      "name": "Canada",
+      "type": "Country",
+      "country": null,
+      "description": "Country examined for the disappointing uptake of Beyond‑GDP indicators. One of the member countries of the 1945 subcommittee on national income accounting.",
+      "supporting_text": "Members of the subcommittee hailed from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland.",
+      "id": "2b95ae44-4d6b-46d8-881b-acb22e196a70",
+      "variations": [
+        "Canada"
+      ],
+      "source_chunks": [
+        15,
+        25
+      ],
+      "supporting_texts": [
+        "Members of the subcommittee hailed from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland.",
+        "Hayden and Wilson (2016) investigate the \"disappointing\" uptake of Beyond-GDP indicators in Canada."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The Canadian case illustrates limited impact of Beyond‑GDP indicators.",
+        "supporting_text": "Hayden and Wilson (2016) investigate the “disappointing” uptake of Beyond‑GDP indicators in Canada."
+      }
+    },
+    {
+      "name": "Mexico",
+      "type": "Country",
+      "country": null,
+      "description": "One of the member countries of the 1945 subcommittee on national income accounting.",
+      "supporting_text": "Members of the subcommittee hailed from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland.",
+      "source_chunk": 15,
+      "id": "439a7a71-a0ba-49d0-8d33-de2fd38f4ad9",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Mexican representation on the subcommittee helped build the international consensus for SNA.",
+        "supporting_text": "Members of the subcommittee hailed from … Mexico …"
+      }
+    },
+    {
+      "name": "Switzerland",
+      "type": "Country",
+      "country": null,
+      "description": "One of the first countries in the mid‑2000s to create a conceptual (Type 4) indicator set. One of the member countries of the 1945 subcommittee on national income accounting.",
+      "supporting_text": "Members of the subcommittee hailed from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland.",
+      "id": "e21c9abe-1e60-435e-8b6b-f24203a6bd13",
+      "variations": [
+        "Switzerland"
+      ],
+      "source_chunks": [
+        15,
+        23
+      ],
+      "supporting_texts": [
+        "Members of the subcommittee hailed from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland.",
+        "In the mid-2000s a couple of countries started to create indicator sets based on conceptual frameworks: Switzerland, Norway and New Zealand."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Switzerland’s early adoption of a conceptual indicator set illustrates the emergence of new systemic approaches.",
+        "supporting_text": "In the mid‑2000s a couple of countries started to create indicator sets based on conceptual frameworks: Switzerland, Norway and New Zealand."
+      }
+    },
+    {
+      "name": "Statistical Office of the UN",
+      "type": "Institution",
+      "country": null,
+      "description": "UN statistical office that began work on survey sampling theory and national income accounting after World War II.",
+      "supporting_text": "Work was delayed by the war, but afterwards the newly founded Statistical Office of the UN started to work on two initial tasks: survey sampling theory and national income accounting.",
+      "source_chunk": 15,
+      "id": "75089561-dcc0-4804-a6c7-14ae5400dbd5",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The UN office initiated work on national income accounting, laying groundwork for the SNA.",
+        "supporting_text": "the newly founded Statistical Office of the UN started to work on two initial tasks: survey sampling theory and national income accounting."
+      }
+    },
+    {
+      "name": "United States of America",
+      "type": "Country",
+      "country": null,
+      "description": "Cited in Robert Kennedy's 1968 speech criticizing GDP for ignoring health, education, environmental quality, and other aspects of wellbeing within the United States of America.",
+      "supporting_text": "if we judge the United States of America by that - that Gross National Product counts air pollution and cigarette advertising, and ambulances to clear our highways of carnage.",
+      "source_chunk": 16,
+      "id": "0615a732-9ecb-46fa-a3f7-84059019c7e3",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The location is mentioned only as the context of the speech; no direct significance to the initiative is provided.",
+        "supporting_text": "\"if we judge the United States of America by that – that Gross National Product...\""
+      }
+    },
+    {
+      "name": "Stockholm",
+      "type": "City",
+      "country": "Sweden",
+      "description": "Host city of the 1972 United Nations Conference on the Human Environment, which institutionalised environmental concerns.",
+      "supporting_text": "the Conference on the Human Environment in Stockholm institutionalised environmental concerns.",
+      "source_chunk": 19,
+      "id": "1ad6b60f-ce15-492b-afb9-e5f82438d70b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Venue of the first UN environmental conference that created UNEP and environmental ministries.",
+        "supporting_text": "The Conference on the Human Environment in Stockholm ... created the United Nations Environmental Programme, which stimulated governments ... to set up environmental ministries."
+      }
+    },
+    {
+      "name": "Rio de Janeiro",
+      "type": "City",
+      "country": "Brazil",
+      "description": "Host city of the 1992 Earth Summit that further institutionalised the term “sustainable development”.",
+      "supporting_text": "the term \"sustainable development\" was further institutionalised due to the \"Earth Summit\" in Rio de Janeiro in 1992.",
+      "source_chunk": 19,
+      "id": "972a0ec9-e00b-4ae9-9132-27c306a034d2",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Hosted the 1992 Earth Summit that institutionalised sustainable development and Agenda 21.",
+        "supporting_text": "The term “sustainable development” was further institutionalised due to the “Earth Summit” in Rio de Janeiro in 1992."
+      }
+    },
+    {
+      "name": "Massachusetts Institute of Technology",
+      "type": "Institution",
+      "country": "United States",
+      "description": "U.S. research university whose professor Forrester created the computer simulation techniques cited as a milestone in environmental modelling.",
+      "supporting_text": "the most advanced computer simulation techniques at the time, which had been developed by a Massachusetts Institute of Technology (MIT) professor, Forrester.",
+      "source_chunk": 19,
+      "id": "17e75fc6-af69-4f22-9a5e-9f7a419470f3",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provided advanced modelling tools that expanded environmental analysis capabilities.",
+        "supporting_text": "The models ... were developed by a Massachusetts Institute of Technology (MIT) professor, Forrester."
+      }
+    },
+    {
+      "name": "United Nations Environmental Programme",
+      "type": "Institution",
+      "country": null,
+      "description": "UN agency established following the 1972 Stockholm conference to coordinate global environmental policy.",
+      "supporting_text": "It created the United Nations Environmental Programme, which stimulated governments all over the world to set up environmental ministries.",
+      "source_chunk": 19,
+      "id": "966c565b-f73a-401b-996b-8fd66a43955f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UNEP was created to stimulate governments worldwide to establish dedicated environmental ministries.",
+        "supporting_text": "It created the United Nations Environmental Programme, which stimulated governments all over the world to set up environmental ministries."
+      }
+    },
+    {
+      "name": "United Nations World Commission on Environment and Development",
+      "type": "Institution",
+      "country": null,
+      "description": "UN commission that published the 1987 Brundtland Report (“Our Common Future”), popularising the concept of sustainable development.",
+      "supporting_text": "The real game-changer in Beyond-GDP measurement was the seminal publication by the United NationsWorld Commission on Environment and Development (WCED) in 1987.",
+      "source_chunk": 19,
+      "id": "b58a2774-ef58-4769-bb2d-0a1c4bb4b0d2",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The commission’s Brundtland Report introduced and popularised the concept of sustainable development, reshaping global discourse.",
+        "supporting_text": "The commission’s report… led to the popularisation of the term “sustainable development”."
+      }
+    },
+    {
+      "name": "OECD",
+      "type": "Institution",
+      "country": null,
+      "description": "Organisation for Economic Co‑operation and Development that launched a programme on “The problems of modern society” (1968‑1974) and later convened well‑being forums. Organisation for Economic Co‑operation and Development; co‑creator of WGSSD and later the Task Force on Measuring Sustainable Development (TFSD).",
+      "supporting_text": "It is no wonder that the OECD, the bastion of economic growth after the Second World War, set up a programme to solve \"The problems of modern society\", which ran from 1968 to 1974.",
+      "id": "b5f3f88a-5616-4c1a-9a53-ffb1f0a11498",
+      "variations": [
+        "OECD"
+      ],
+      "source_chunks": [
+        19,
+        23
+      ],
+      "supporting_texts": [
+        "It is no wonder that the OECD, the bastion of economic growth after the Second World War, set up a programme to solve \"The problems of modern society\", which ran from 1968 to 1974.",
+        "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "OECD’s participation in WGSSD and TFSD shows institutional collaboration to shape sustainability metrics.",
+        "supporting_text": "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD)."
+      }
+    },
+    {
+      "name": "Eurostat",
+      "type": "Institution",
+      "country": null,
+      "description": "European statistical office that produced a European SDI and a Well‑being Report with indicator sets. Statistical office of the European Union that began work on Sustainable Development Indicators in 2005 and co‑led harmonisation efforts.",
+      "supporting_text": "Eurostat (the statistical office of the European Union) started work on Sustainable Development Indicators in 2005.",
+      "id": "fc67977a-47a9-4f06-8dcd-210f722d55c4",
+      "variations": [
+        "Eurostat"
+      ],
+      "source_chunks": [
+        19,
+        23
+      ],
+      "supporting_texts": [
+        "Eurostat (the statistical office of the European Union) started work on Sustainable Development Indicators in 2005.",
+        "and there was also a European SDI which was produced by Eurostat."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Eurostat produces indicator reports and co‑creates statistical working groups, enabling collective measurement efforts.",
+        "supporting_text": "Eurostat’s Well-being Report has a range of indicators and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD)."
+      }
+    },
+    {
+      "name": "European Commission",
+      "type": "Institution",
+      "country": null,
+      "description": "EU body that made SEEA accounts legally binding for all European countries. European Union executive body; co‑creator of WGSSD and later the TFSD. Executive body of the EU that organised a major 2007 conference on “Beyond‑GDP: Measuring progress, true wealth, and the well‑being of nations”.",
+      "supporting_text": "The European Commission held a large-scale conference on \"Beyond-GDP: Measuring progress, true wealth, and the well-being of nations\" in 2007.",
+      "id": "d1981647-7cb9-4243-8777-9bd080e9ffa6",
+      "variations": [
+        "European Commission"
+      ],
+      "source_chunks": [
+        19,
+        23,
+        24
+      ],
+      "supporting_texts": [
+        "The European Commission held a large-scale conference on \"Beyond-GDP: Measuring progress, true wealth, and the well-being of nations\" in 2007.",
+        "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD).",
+        "The European Commission made it legally binding for all European countries to produce six of the SEEA accounts."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "By legally binding European countries to produce SEEA accounts, it creates a policy lever for collective implementation.",
+        "supporting_text": "The European Commission made it legally binding for all European countries to produce six of the SEEA accounts."
+      }
+    },
+    {
+      "name": "UN‑ECE",
+      "type": "Institution",
+      "country": null,
+      "description": "United Nations Economic Commission for Europe that co‑led the Working Group for Statistics of Sustainable Development and the Task Force for Sustainable Development.",
+      "supporting_text": "the Working Group for Statistics of Sustainable Development (WGSSD) (2004-2009) and the Task Force for Sustainable Development (TFSD) (2009-2014), which were led by the UN-ECE, OECD and Eurostat.",
+      "source_chunk": 19,
+      "id": "5b915962-0e4f-42e0-8083-9aa0c79ae57e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UN‑ECE led international harmonisation groups that coordinated statistical standards for sustainable‑development measurement.",
+        "supporting_text": "…harmonisation efforts… which were led by the UN‑ECE, OECD and Eurostat."
+      }
+    },
+    {
+      "name": "Working Group for Statistics of Sustainable Development",
+      "type": "Institution",
+      "country": null,
+      "description": "UN‑ECE‑led group (2004‑2009) that worked on harmonising sustainable‑development statistics.",
+      "supporting_text": "the Working Group for Statistics of Sustainable Development (WGSSD) (2004-2009) and the Task Force for Sustainable Development (TFSD) (2009-2014), which were led by the UN-ECE, OECD and Eurostat.",
+      "source_chunk": 19,
+      "id": "f085ad86-b4de-4569-a902-6d8779115f3c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The Working Group coordinated cross‑agency work to align sustainable‑development statistics, enabling coherent Beyond‑GDP metrics.",
+        "supporting_text": "…Working Group for Statistics of Sustainable Development (WGSSD) (2004–2009)… led by the UN‑ECE, OECD and Eurostat."
+      }
+    },
+    {
+      "name": "Task Force for Sustainable Development",
+      "type": "Institution",
+      "country": null,
+      "description": "UN‑ECE‑led task force (2009‑2014) that continued the harmonisation of sustainable‑development indicators.",
+      "supporting_text": "the Working Group for Statistics of Sustainable Development (WGSSD) (2004-2009) and the Task Force for Sustainable Development (TFSD) (2009-2014), which were led by the UN-ECE, OECD and Eurostat.",
+      "source_chunk": 19,
+      "id": "1c44c19e-b6e4-483b-8303-7a9c177bf38e"
+    },
+    {
+      "name": "Vermont",
+      "type": "Region",
+      "country": "United States",
+      "description": "One of the two U.S. states that have introduced an official Genuine Progress Indicator (GPI) measure.",
+      "supporting_text": "Two US states, Maryland and Vermont, have introduced official GPI measures and there are more that are exploring them.",
+      "source_chunk": 21,
+      "id": "0e1b8827-af48-4b31-8c1b-d613466343a5",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned only as the site of a state‑level adoption, without explicit significance beyond that.",
+        "supporting_text": "Two US states, Maryland and Vermont, have introduced official GPI measures..."
+      }
+    },
+    {
+      "name": "New Zealand",
+      "type": "Country",
+      "country": null,
+      "description": "One of the first countries in the mid‑2000s to create a conceptual (Type 4) indicator set.",
+      "supporting_text": "In the mid-2000s a couple of countries started to create indicator sets based on conceptual frameworks: Switzerland, Norway and New Zealand.",
+      "source_chunk": 23,
+      "id": "bbeea074-a3fc-4cc7-96b4-881fe3ebb1d5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "New Zealand’s early use of Type 4 sets shows the diffusion of conceptual approaches.",
+        "supporting_text": "In the mid‑2000s a couple of countries started to create indicator sets based on conceptual frameworks: Switzerland, Norway and New Zealand."
+      }
+    },
+    {
+      "name": "Belgium",
+      "type": "Country",
+      "country": null,
+      "description": "Later adopter of a Type 4 conceptual indicator set.",
+      "supporting_text": "Later the Netherlands and Belgium also introduced Type 4 indicator sets.",
+      "source_chunk": 23,
+      "id": "572e79c8-51b8-4595-93d3-9c65f898566e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Belgium’s adoption of a Type 4 (conceptual) indicator set shows a move toward system‑level change in measurement.",
+        "supporting_text": "Later the Netherlands and Belgium also introduced Type 4 indicator sets."
+      }
+    },
+    {
+      "name": "EU28",
+      "type": "Region",
+      "country": null,
+      "description": "Group of 28 European Union member states that each created its own indicator set.",
+      "supporting_text": "All EU28 countries created their own indicator set, and there was also a European SDI which was produced by Eurostat.",
+      "source_chunk": 23,
+      "id": "a975c456-222a-47d7-8728-6dcb1465c74a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "All EU28 members created their own SDI dashboards, indicating coordinated national action on alternative metrics.",
+        "supporting_text": "All EU28 countries created their own indicator set, but there was also a European SDI which was produced by Eurostat."
+      }
+    },
+    {
+      "name": "Commission for Sustainable Development (CSD)",
+      "type": "Institution",
+      "country": null,
+      "description": "UN commission that proposed a non‑conceptual indicator set in 1995.",
+      "supporting_text": "In 1995 the Commission for Sustainable Development (CSD) proposed such an indicator set.",
+      "source_chunk": 23,
+      "id": "d2de76ee-5524-4929-b2a4-8600db87ca0b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CSD’s stakeholder‑driven indicator proposal provided a collaborative framework for measuring sustainable development.",
+        "supporting_text": "The CSD indicators were based on stakeholder deliberations between the various countries of the UN."
+      }
+    },
+    {
+      "name": "UNECE",
+      "type": "Institution",
+      "country": null,
+      "description": "United Nations Economic Commission for Europe; co‑creator of the Working Group for Statistics on Sustainable Development (WGSSD) in 2004.",
+      "supporting_text": "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD).",
+      "source_chunk": 23,
+      "id": "6ba21f3a-3e54-45b0-b15e-8c8562d25a5b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UNECE co‑created the WGSSD and later the TFSD, coordinating international statistical work.",
+        "supporting_text": "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD)."
+      }
+    },
+    {
+      "name": "Task Force on Measuring Sustainable Development (TFSD)",
+      "type": "Institution",
+      "country": null,
+      "description": "Joint UNECE/OECD/Eurostat task force created in 2009 to build on the Stiglitz Report’s conceptual framework.",
+      "supporting_text": "In 2009, just after the publication of the Stiglitz Report, the joint UNECE/OECD/Eurostat Task Force on Measuring Sustainable Development (TFSD) was created.",
+      "source_chunk": 23,
+      "id": "690dfd79-4a27-4243-ae0f-9a21bf5da06d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "TFSD institutionalised the conceptual framework of the Stiglitz Report, influencing future indicator design.",
+        "supporting_text": "In 2009, ... the joint UNECE/OECD/Eurostat Task Force on Measuring Sustainable Development (TFSD) was created."
+      }
+    },
+    {
+      "name": "Statistical Commission of the United Nations",
+      "type": "Institution",
+      "country": null,
+      "description": "UN body that adopted the SEEA 2012 Central Framework.",
+      "supporting_text": "After a lengthy deliberation process the System of Environmental Economic Accounting 2012 - Central Framework was adopted by the Statistical Commission of the United Nations.",
+      "source_chunk": 24,
+      "id": "9b506f88-67cb-4be9-8111-bfd09191bf1d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Its adoption of the SEEA 2012 framework institutionalised the accounting system, enabling coordinated implementation across nations.",
+        "supporting_text": "After a lengthy deliberation process the System of Environmental Economic Accounting 2012 – Central Framework was adopted by the Statistical Commission of the United Nations."
+      }
+    },
+    {
+      "name": "UN Statistical Division",
+      "type": "Institution",
+      "country": null,
+      "description": "UN division that set a target for a hundred countries to start producing SEEA accounts by 2020.",
+      "supporting_text": "The UN Statistical Division has made it its explicit aim to have a hundred countries start producing SEEA account by 2020.",
+      "source_chunk": 24,
+      "id": "8170a118-61e1-4b3e-8397-0fefa9c6f070",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "It set a concrete target for widespread production of SEEA accounts, mobilising many countries toward the new metrics.",
+        "supporting_text": "The UN Statistical Division has made it its explicit aim to have a hundred countries start producing SEEA account by 2020."
+      }
+    },
+    {
+      "name": "European countries",
+      "type": "Region",
+      "country": null,
+      "description": "European nations required by the European Commission to produce six SEEA accounts.",
+      "supporting_text": "The European Commission made it legally binding for all European countries to produce six of the SEEA accounts.",
+      "source_chunk": 24,
+      "id": "d695a46a-950c-431a-8d82-71dc7ef33e71",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "They are required to generate SEEA accounts, turning the framework into an operational tool across the region.",
+        "supporting_text": "The European Commission made it legally binding for all European countries to produce six of the SEEA accounts."
+      }
+    },
+    {
+      "name": "UN member states",
+      "type": "Region",
+      "country": null,
+      "description": "All member states of the United Nations whose statistical offices agreed to the SEEA handbook.",
+      "supporting_text": "Getting this handbook agreed by six international institutes and all the statistical offices of the UN member states is a major achievement.",
+      "source_chunk": 24,
+      "id": "cd9b9319-4fcf-4b6c-8cfd-4b25b164b420",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Agreement of all member‑state statistical offices gave the SEEA broad institutional legitimacy and uptake potential.",
+        "supporting_text": "Getting this handbook agreed by six international institutes and all the statistical offices of the UN member states is a major achievement."
+      }
+    }
+  ]
+}

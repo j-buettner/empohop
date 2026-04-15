@@ -1,0 +1,353 @@
+{
+  "summary": {
+    "total_merges": 17,
+    "merges_by_type": {
+      "actor": 5,
+      "concept": 3,
+      "location": 9
+    },
+    "manual_mapping_count": 0,
+    "low_confidence_merges": 0,
+    "timestamp": "2026-04-14 19:14:13"
+  },
+  "merges": [
+    {
+      "type": "actor",
+      "canonical_name": "The Farm",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        4,
+        6,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Intentional community established in 1971 in Tennessee, United States....",
+          "Intentional community near Nashville, Tennessee, USA, known for sustainability activism and partners...",
+          "An ecovillage in Tennessee, USA, known for protecting indigenous cultures of the Americas...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Robert Gilman",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Co‑author of the influential paper “In Context” on co‑housing and eco‑village models....",
+          "Author of the most widely‑used definition of an ecovillage...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Findhorn Foundation",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Eco‑village and intentional community founded in Scotland in 1962....",
+          "Ecological intentional community in the north of Scotland...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Global Ecovillage Network (GEN)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International network linking eco‑villages worldwide....",
+          "Worldwide network that connects ecovillages and facilitates alliances across the movement...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Sarvodaya",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Sri Lankan non‑governmental organization working with almost two thousand primarily rural communitie...",
+          "A Sri Lankan community‑based organization that works on post‑disaster recovery and sustainable devel..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Eco‑village",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        1,
+        2,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Eco‑village movement",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Intentional community",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Hungary",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        0,
+        1,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The nation whose history of ecovillages is discussed, indicated by the adjective “Hungarian”....",
+          "Mentioned as the national context for eco‑villages, noting that only about 500 people live in eco‑vi...",
+          "Country whose Gyűrűfű project was an early funding member of the Global Ecovillage Network (GEN)...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "The Farm",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        4,
+        6,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Well‑known intentional community in the United States referenced as an example of an eco‑village....",
+          "A prominent ecovillage in Tennessee that collaborates with government, NGOs and international charit...",
+          "An ecovillage located in Tennessee, USA, involved in post‑disaster recovery work...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "India",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Country of origin of sociologist Ramachandra Guha mentioned in the background of the eco‑village mov...",
+          "Country of Auroville and the Bija Satyagraha Movement, both cited as examples of ecological activism..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Denmark",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Country where the University of Copenhagen is located, mentioned in the story of student protest in ...",
+          "Country where the co‑housing movement blossomed in the 1970s and where the first eco‑village meeting..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Scotland",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Country where the Findhorn Foundation, a leading eco‑village, was established in 1962....",
+          "Country within the UK where the Findhorn Foundation is based and where several partnership programme..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Auroville",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "South‑Indian eco‑village cited as an example of a community that lives in harmony with nature....",
+          "An ecovillage in India that participated in post‑tsunami and Haiti reconstruction activities...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Tennessee",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "U.S. state that contains The Farm ecovillage near Nashville....",
+          "U.S. state where The Farm ecovillage is situated...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "ZEGG",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "German ecovillage that runs technology‑dissemination programmes and community projects in its bioreg...",
+          "German ecovillage that chose to source food from local organic suppliers to strengthen regional sust..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Wales",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Welsh region where the Ecodyfi initiative is implemented in the Dyfi valley....",
+          "Region where the EcoDyfi initiative operates as a hub for sustainability networks...."
+        ],
+        "years": []
+      }
+    }
+  ]
+}

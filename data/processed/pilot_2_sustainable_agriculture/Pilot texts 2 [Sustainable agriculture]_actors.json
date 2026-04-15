@@ -1,0 +1,1043 @@
+{
+  "actors": [
+    {
+      "name": "FAO",
+      "type": "Organization",
+      "description": "Food and Agriculture Organization of the United Nations, a specialised UN agency. Food and Agriculture Organization of the United Nations, a specialized UN agency dealing with agriculture, forestry, and nutrition. Food and Agriculture Organization of the United Nations, an international agency that develops definitions, terminology and conducts assessments of community‑based forestry. The Food and Agriculture Organization of the United Nations, an international agency that supports sustainable forest management and community‑based forestry worldwide.",
+      "role": "Maintains community‑based forestry as a priority area, supports capacity‑building and policy reform.",
+      "country": "International",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "id": "ae939d73-ed2f-41bf-b7de-bc300f2e9222",
+      "variations": [
+        "FAO"
+      ],
+      "source_chunks": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+        "FAO FORESTRY PAPER Don Gilmour",
+        "FAO (1978, p. 1) originally adopted the term \"community forestry\"… FAO (2012b) has defined participatory forestry… Both FAO and the Rights and Resources Initiative (RRI) have carried out regional and global assessments to chart these changes.",
+        "FAO, through its new Strategic Framework, is revamping its programme on community-based forestry to contribute to its five Strategic Objectives, in particular to rural poverty alleviation, food security and nutrition and the sustainable provision of goods and services from natural resources."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "FAO revamps its community‑based forestry programme to advance rural poverty alleviation and sustainable resource use.",
+        "supporting_text": "FAO, through its new Strategic Framework, is revamping its programme on community‑based forestry to contribute to its five Strategic Objectives ..."
+      }
+    },
+    {
+      "name": "Don Gilmour",
+      "type": "Individual",
+      "description": "Author of the FAO Forestry Paper titled “Forty years of community‑based forestry: A review of its extent and effectiveness.”",
+      "role": "Researcher and author who compiled and analyzed evidence on community‑based forestry, contributing scholarly insight that supports the shift toward production and consumption practices aligned with ecological regeneration.",
+      "country": null,
+      "supporting_text": "FAO FORESTRY PAPER Don Gilmour",
+      "source_chunk": 0,
+      "id": "88322f0e-8b24-432d-9b02-e52e7cf2998a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The author contributes expertise that supports the collective understanding of the practice.",
+        "supporting_text": "Don Gilmour"
+      }
+    },
+    {
+      "name": "Rights and Resources Initiative (RRI)",
+      "type": "NGO",
+      "description": "An international non‑governmental organization that researches and advocates for secure rights to natural resources.",
+      "role": "Conducted regional and global assessments of community‑based forestry to track changes in forest tenure and management.",
+      "country": null,
+      "supporting_text": "Both FAO and the Rights and Resources Initiative (RRI) have carried out regional and global assessments to chart these changes.",
+      "source_chunk": 1,
+      "id": "3c0fcdc6-728c-4b99-a349-298b515cae1e",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "RRI conducts global reviews that raise the profile of community forestry.",
+        "supporting_text": "\"FAO and the Rights and Resources Initiative (RRI) have carried out regional and global assessments to chart these changes\""
+      }
+    },
+    {
+      "name": "Center for People and Forests (RECOFTC)",
+      "type": "Organization",
+      "description": "Formerly the Regional Community Forestry Training Center, a research and capacity‑building organization focused on community forestry.",
+      "role": "Provided the definition of community‑based forestry used as the umbrella description in the report.",
+      "country": null,
+      "supporting_text": "Box 1 provides a more complete definition of CBF as it is presented in this report, based on the definition used by the Center for People and Forests (RECOFTC, formerly the Regional Community Forestry Training Center).",
+      "source_chunk": 1,
+      "id": "d71b136b-a05a-4dc0-8b6d-f2dac2abb4b1",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "RECOFTC’s definition is used as the basis for the report’s CBF description.",
+        "supporting_text": "\"Box 1 provides a more complete definition of CBF as it is presented in this report, based on the definition used by the Center for People and Forests (RECOFTC)\""
+      }
+    },
+    {
+      "name": "IUCN",
+      "type": "Organization",
+      "description": "International Union for Conservation of Nature, a global authority on conservation and sustainable use of natural resources.",
+      "role": "Contributed to the technical definition of Sustainable Forest Management referenced in the report.",
+      "country": null,
+      "supporting_text": "SFM refers to the stewardship and use of forests… (IUCN, PROFOR and World Bank, 2004).",
+      "source_chunk": 1,
+      "id": "081a716f-54c0-4d4d-8294-d8f7e25f8b19",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "IUCN is part of the authoritative definition of SFM cited in the text.",
+        "supporting_text": "\"SFM refers to … (IUCN, PROFOR and World Bank, 2004)\""
+      }
+    },
+    {
+      "name": "PROFOR",
+      "type": "Organization",
+      "description": "Program on Forests, a research programme that works on forest policy and management.",
+      "role": "Co‑authored the technical definition of Sustainable Forest Management cited in the report.",
+      "country": null,
+      "supporting_text": "SFM refers to the stewardship and use of forests… (IUCN, PROFOR and World Bank, 2004).",
+      "source_chunk": 1,
+      "id": "c189fe79-e5ad-4773-be97-8e3e4c4f928a",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "PROFOR contributes to the widely‑cited SFM definition.",
+        "supporting_text": "\"SFM refers to … (IUCN, PROFOR and World Bank, 2004)\""
+      }
+    },
+    {
+      "name": "World Bank",
+      "type": "Organization",
+      "description": "International development bank that offers conditional loans to governments. International financial institution that provides loans and technical assistance to developing countries. International financial institution that supports development projects, including forest management initiatives.",
+      "role": "Developed the Forest Carbon Partnership Facility to broker carbon‑offset transactions and fund capacity‑building for REDD+ and related projects.",
+      "country": "International",
+      "supporting_text": "The World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market for forestry projects.",
+      "id": "24969504-9d1c-44a0-885f-f72128705f8f",
+      "variations": [
+        "World Bank"
+      ],
+      "source_chunks": [
+        1,
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "The World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market for forestry projects.",
+        "SFM refers to the stewardship and use of forests… (IUCN, PROFOR and World Bank, 2004).",
+        "fit squarely within the larger economy wide and institutional reforms that many governments have been pursuing under IMF [International Monetary Fund] and World Bank conditionality lending since the 1990s."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "World Bank created the Forest Carbon Partnership Facility to fund and build capacity for carbon‑offset projects involving communities.",
+        "supporting_text": "The World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market for forestry projects."
+      }
+    },
+    {
+      "name": "Menton",
+      "type": "Individual",
+      "description": "Researcher co‑author of a study reviewing CBF initiatives in the Peruvian Amazon.",
+      "role": "Analyzed CBF initiatives and highlighted the lack of comprehensive assessments of their effectiveness.",
+      "country": null,
+      "supporting_text": "Menton and Cronkleton (2014, p. 1), following a review of CBF initiatives in the Peruvian Amazon, reached the conclusion that \"even though there has been a great deal of research documenting forest use by rural people ... We couldn't find any comprehensive assessments of the effectiveness of existing programmes to promote community forestry or benefit local people.\"",
+      "source_chunk": 1,
+      "id": "43ec5d36-2094-4ca6-b790-ad19075252f9",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Menton’s review points out the lack of comprehensive assessments of CBF effectiveness.",
+        "supporting_text": "\"Menton and Cronkleton … reached the conclusion that … We couldn’t find any comprehensive assessments of the effectiveness of existing programmes\""
+      }
+    },
+    {
+      "name": "Cronkleton",
+      "type": "Individual",
+      "description": "Researcher co‑author of a study reviewing CBF initiatives in the Peruvian Amazon.",
+      "role": "Analyzed CBF initiatives and highlighted the lack of comprehensive assessments of their effectiveness.",
+      "country": null,
+      "supporting_text": "Menton and Cronkleton (2014, p. 1), following a review of CBF initiatives in the Peruvian Amazon, reached the conclusion that \"even though there has been a great deal of research documenting forest use by rural people ... We couldn't find any comprehensive assessments of the effectiveness of existing programmes to promote community forestry or benefit local people.\"",
+      "source_chunk": 1,
+      "id": "5b2cd8b2-43b9-42c6-aab3-3ad043f4fbaf",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Cronkleton co‑authored the same critique highlighting assessment gaps.",
+        "supporting_text": "\"Menton and Cronkleton … reached the conclusion that … We couldn’t find any comprehensive assessments\""
+      }
+    },
+    {
+      "name": "Food and Agriculture Organization (FAO)",
+      "type": "Organization",
+      "description": "United Nations agency focused on food security and sustainable agriculture. United Nations agency that collects and analyses data on forests and issues policy guidance on community‑based forestry.",
+      "role": "Provides research, statistics and policy recommendations that document the emergence of community‑based forestry and advocate for people’s participation in forest management.",
+      "country": "International",
+      "supporting_text": "FAO (2010a, pp. 236−237) recorded them as being forests where \"communities\" are the \"holder(s) of management rights of public forests\".",
+      "id": "2a9c5b42-a7f6-445d-94cd-cf3a34a15c73",
+      "variations": [
+        "Food and Agriculture Organization (FAO)"
+      ],
+      "source_chunks": [
+        2,
+        4
+      ],
+      "supporting_texts": [
+        "FAO (2010a, pp. 236−237) recorded them as being forests where \"communities\" are the \"holder(s) of management rights of public forests\".",
+        "FAO's Forests, Trees and People Programme (FTPP), with its regional hubs, was an important platform for developing and supporting networks to exchange information and share experiences."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "FAO’s FTPP is described as a platform that builds networks and supports information exchange for CBF.",
+        "supporting_text": "FAO’s Forests, Trees and People Programme (FTPP), with its regional hubs, was an important platform for developing and supporting networks"
+      }
+    },
+    {
+      "name": "France",
+      "type": "Government",
+      "description": "European nation whose public forests are managed by local government authorities rather than discrete community groups.",
+      "role": "Manages communal forest estates as public forests, illustrating a form of communal management that is noted but excluded from CBF regimes in the report.",
+      "country": "France",
+      "supporting_text": "France and Switzerland remain the only two countries in Europe in which significant areas of the forest estate are managed through some form of communal management rights (FAO, 2010a). However, in both these countries the commune forests are public forests managed by local government authorities and not by discrete community groups.",
+      "source_chunk": 2,
+      "id": "e8b08a97-cb3f-46cf-b533-d9c5338cefe9"
+    },
+    {
+      "name": "Switzerland",
+      "type": "Government",
+      "description": "European nation whose public forests are managed by local government authorities rather than discrete community groups.",
+      "role": "Manages communal forest estates as public forests, illustrating a form of communal management that is noted but excluded from CBF regimes in the report.",
+      "country": "Switzerland",
+      "supporting_text": "France and Switzerland remain the only two countries in Europe in which significant areas of the forest estate are managed through some form of communal management rights (FAO, 2010a). However, in both these countries the commune forests are public forests managed by local government authorities and not by discrete community groups.",
+      "source_chunk": 2,
+      "id": "3a16b11c-13cc-45fa-9d77-0a599d60d948",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows that even where communal rights exist, forests are public and not true CBF, highlighting limited community control.",
+        "supporting_text": "France and Switzerland remain the only two countries … managed through some form of communal management rights … not included as CBF regimes."
+      }
+    },
+    {
+      "name": "International Union for Conservation of Nature (IUCN)",
+      "type": "NGO",
+      "description": "A global union of government and civil society organisations working on nature conservation and sustainable use. Global conservation organization that compiles information on forest management regimes worldwide.",
+      "role": "Provides regional data on indigenous and pre‑modern forest management regimes, informing the historical context of community‑based forestry.",
+      "country": "International",
+      "supporting_text": "IUCN, 2000 for Mesoamerica",
+      "id": "3b7c0b74-cc67-410f-992d-16fafad41e39",
+      "variations": [
+        "International Union for Conservation of Nature (IUCN)"
+      ],
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_texts": [
+        "IUCN, 2000 for Mesoamerica",
+        "Commencing in 1996, the International Union for Conservation of Nature (IUCN) established a Working Group on Community Involvement in Forest Management and produced a series of five regional reports..."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IUCN created a working group and produced reports that were used to advocate CBF internationally.",
+        "supporting_text": "IUCN established a Working Group on Community Involvement in Forest Management and produced a series of five regional reports... used between 1996 and 2000 to advocate for CBF in international discussions."
+      }
+    },
+    {
+      "name": "Rackham",
+      "type": "Individual",
+      "description": "Scholar who authored a 1986 study on European forest commons.",
+      "role": "Documented functional local management systems that are retrospectively identified as community‑based forestry.",
+      "country": null,
+      "supporting_text": "Functional local management systems were in place to govern how these common forests were used, systems that would currently be considered community-based forestry (Rackham, 1986; Gilmour and Fisher, 1991; Jeanrenaud, 2001; Wiersum, Singhal and Benneker, 2004).",
+      "source_chunk": 2,
+      "id": "175e43b0-5a3a-4b9f-aabd-7203376e29a3",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Cited to document historic community‑based forestry that was later eroded.",
+        "supporting_text": "Functional local management systems … would currently be considered community‑based forestry (Rackham, 1986 …)."
+      }
+    },
+    {
+      "name": "Gilmour",
+      "type": "Individual",
+      "description": "Scholar co‑author of works on community‑based forestry in the late 20th century.",
+      "role": "Co‑authored research that identified and described community‑based forestry practices.",
+      "country": null,
+      "supporting_text": "Functional local management systems were in place to govern how these common forests were used, systems that would currently be considered community-based forestry (Rackham, 1986; Gilmour and Fisher, 1991; Jeanrenaud, 2001; Wiersum, Singhal and Benneker, 2004).",
+      "source_chunk": 2,
+      "id": "afcb896f-5e97-435d-8491-d1e6bcde56ac",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Co‑author of key research linking emergence of CBF to socio‑environmental crises, supporting mobilization.",
+        "supporting_text": "smallholder and community‑based forestry emerged … (Gilmour, King and Hobley, 1989)."
+      }
+    },
+    {
+      "name": "Fisher",
+      "type": "Individual",
+      "description": "Scholar co‑author of works on community‑based forestry in the late 20th century.",
+      "role": "Co‑authored research that identified and described community‑based forestry practices.",
+      "country": null,
+      "supporting_text": "Functional local management systems were in place to govern how these common forests were used, systems that would currently be considered community-based forestry (Rackham, 1986; Gilmour and Fisher, 1991; Jeanrenaud, 2001; Wiersum, Singhal and Benneker, 2004).",
+      "source_chunk": 2,
+      "id": "634a5f9f-43bc-4100-b2a8-a802553126b8",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned only in citation; no direct contribution described.",
+        "supporting_text": "Wiersum, Singhal and Benneker, 2004"
+      }
+    },
+    {
+      "name": "Jeanrenaud",
+      "type": "Individual",
+      "description": "Scholar who published a 2001 study on forest commons and community management.",
+      "role": "Provided academic evidence of historic communal forest management that underpins modern community‑based forestry concepts.",
+      "country": null,
+      "supporting_text": "Functional local management systems were in place to govern how these common forests were used, systems that would currently be considered community-based forestry (Rackham, 1986; Gilmour and Fisher, 1991; Jeanrenaud, 2001; Wiersum, Singhal and Benneker, 2004).",
+      "source_chunk": 2,
+      "id": "3657747e-e443-4b49-96d8-7407d6d48b3b",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Reference used to illustrate historic communal forest use that was later lost.",
+        "supporting_text": "Functional local management systems … would currently be considered community‑based forestry (… Jeanrenaud, 2001)."
+      }
+    },
+    {
+      "name": "Wiersum",
+      "type": "Individual",
+      "description": "Scholar co‑author of a 2004 publication on community forestry.",
+      "role": "Contributed research documenting historic communal forest governance relevant to community‑based forestry.",
+      "country": null,
+      "supporting_text": "Functional local management systems were in place to govern how these common forests were used, systems that would currently be considered community-based forestry (Rackham, 1986; Gilmour and Fisher, 1991; Jeanrenaud, 2001; Wiersum, Singhal and Benneker, 2004).",
+      "source_chunk": 2,
+      "id": "895ea14a-7e19-4a3a-98aa-bbdca8f88cd1",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Cited to support description of pre‑industrial communal forest governance.",
+        "supporting_text": "Functional local management systems … would currently be considered community‑based forestry (… Wiersum, 2004)."
+      }
+    },
+    {
+      "name": "Singhal",
+      "type": "Individual",
+      "description": "Scholar co‑author of a 2004 publication on community forestry.",
+      "role": "Contributed research documenting historic communal forest governance relevant to community‑based forestry.",
+      "country": null,
+      "supporting_text": "Functional local management systems were in place to govern how these common forests were used, systems that would currently be considered community-based forestry (Rackham, 1986; Gilmour and Fisher, 1991; Jeanrenaud, 2001; Wiersum, Singhal and Benneker, 2004).",
+      "source_chunk": 2,
+      "id": "4a5cd925-67b1-41f1-84b3-5bcfd65c8a8b",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Citation that underlines historic community forest practices later eroded.",
+        "supporting_text": "Functional local management systems … would currently be considered community‑based forestry (… Singhal, 2004)."
+      }
+    },
+    {
+      "name": "Benneker",
+      "type": "Individual",
+      "description": "Scholar co‑author of a 2004 publication on community forestry.",
+      "role": "Contributed research documenting historic communal forest governance relevant to community‑based forestry.",
+      "country": null,
+      "supporting_text": "Functional local management systems were in place to govern how these common forests were used, systems that would currently be considered community-based forestry (Rackham, 1986; Gilmour and Fisher, 1991; Jeanrenaud, 2001; Wiersum, Singhal and Benneker, 2004).",
+      "source_chunk": 2,
+      "id": "a1617624-c4f1-4b3b-b94d-66a07d587b6e",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Reference used to document historic communal forest management.",
+        "supporting_text": "Functional local management systems … would currently be considered community‑based forestry (… Benneker, 2004)."
+      }
+    },
+    {
+      "name": "Odera",
+      "type": "Individual",
+      "description": "Scholar cited for work on African forest management and the imposition of scientific forestry.",
+      "role": "Analyzed the shift to scientific forestry that displaced indigenous regimes, providing context for later community‑based forestry movements.",
+      "country": null,
+      "supporting_text": "These pre‑modern management regimes, which include those within tribal and post‑feudal societies, were highly variable but also dynamic (e.g. Odera, 2004 and Couillard et al., 2009 for Africa; …).",
+      "source_chunk": 2,
+      "id": "c670561b-8d90-4667-afa6-0c75668790f1",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Cited for describing colonial “scientific forestry” that displaced local rights.",
+        "supporting_text": "Forest management … became characterized by the imposition of “scientific forestry” (Odera, 2004)."
+      }
+    },
+    {
+      "name": "Couillard",
+      "type": "Individual",
+      "description": "Scholar cited for work on African forest management.",
+      "role": "Analyzed the shift to scientific forestry that displaced indigenous regimes, providing context for later community‑based forestry movements.",
+      "country": null,
+      "supporting_text": "These pre‑modern management regimes, which include those within tribal and post‑feudal societies, were highly variable but also dynamic (e.g. Odera, 2004 and Couillard et al., 2009 for Africa; …).",
+      "source_chunk": 2,
+      "id": "20ddf319-2a8f-4568-bedf-23e039010736",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Only appears in a citation list; no explicit role described.",
+        "supporting_text": "Couillard et al., 2009 for Africa"
+      }
+    },
+    {
+      "name": "Poffenberger",
+      "type": "Individual",
+      "description": "Scholar cited for work on South and Southeast Asian forest management histories.",
+      "role": "Provided historical analysis of indigenous forest regimes that were later replaced by scientific forestry, informing the need for community‑based approaches.",
+      "country": null,
+      "supporting_text": "These pre‑modern management regimes, which include those within tribal and post‑feudal societies, were highly variable but also dynamic (e.g. … Poffenberger, 2000 for South Asia; Poffenberger, n.d. for Southeast Asia; …).",
+      "source_chunk": 2,
+      "id": "509ecc2c-68d6-4584-a1e3-3b63b3796fc3",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned as a source for regional case studies without further context.",
+        "supporting_text": "Poffenberger, 2000 for South Asia"
+      }
+    },
+    {
+      "name": "Elinor Ostrom",
+      "type": "Individual",
+      "description": "Political economist who popularized the narrative that local communities can autonomously manage forest commons.",
+      "role": "Provided the foundational narrative that legitimized community‑based forestry as a sustainable management approach.",
+      "country": null,
+      "supporting_text": "The popularity of community-based forestry as a formal type of forestry rests primarily on a narrative popularized by Ostrom (1990) that local communities, when granted sufficient property rights over local forest commons, can organize autonomously and develop local institutions to regulate the use of natural resources and manage them sustainably.",
+      "source_chunk": 4,
+      "id": "1273f288-ac35-428c-92c5-96907581cb65",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Ostrom’s 1990 narrative is cited as the intellectual foundation that encourages autonomous community organization.",
+        "supporting_text": "popularity ... rests primarily on a narrative popularized by Ostrom (1990) that local communities ... can organize autonomously"
+      }
+    },
+    {
+      "name": "Tole",
+      "type": "Individual",
+      "description": "Scholar who analyzed the macro‑economic reforms influencing community‑based forestry.",
+      "role": "Highlighted how IMF and World Bank conditionality lending encouraged governments to adopt CBF as a policy solution.",
+      "country": null,
+      "supporting_text": "Tole (2010, p. 1312) noted that CBF initiatives \"fit squarely within the larger economy wide and institutional reforms that many governments have been pursuing under IMF [International Monetary Fund] and World Bank conditionality lending since the 1990s.",
+      "source_chunk": 4,
+      "id": "96d72dfb-6dbe-4e49-8a37-ce51aae6df26",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Tole links CBF to IMF/World Bank conditionality, highlighting macro‑economic reforms that shape forest governance.",
+        "supporting_text": "Tole (2010 ...) noted that CBF initiatives “fit squarely within ... IMF ... and World Bank conditionality lending"
+      }
+    },
+    {
+      "name": "International Monetary Fund (IMF)",
+      "type": "Organization",
+      "description": "International financial institution that provides conditionality lending to governments.",
+      "role": "Its lending conditions have pushed governments toward decentralised forest management such as community‑based forestry.",
+      "country": null,
+      "supporting_text": "fit squarely within the larger economy wide and institutional reforms that many governments have been pursuing under IMF [International Monetary Fund] and World Bank conditionality lending since the 1990s.",
+      "source_chunk": 4,
+      "id": "78aebfc5-1a9d-4f47-822f-e97b6b7bec71",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "IMF conditionality is described as a driver of the policy environment in which CBF is promoted.",
+        "supporting_text": "CBF initiatives ... fit squarely within ... IMF ... conditionality lending since the 1990s"
+      }
+    },
+    {
+      "name": "International Forestry Resources and Institutions (IFRI)",
+      "type": "Organization",
+      "description": "Research network that documents forest governance and policy trends.",
+      "role": "Reported on policy emphasis for decentralized forest management and community participation in CBF.",
+      "country": null,
+      "supporting_text": "as reported by International Forestry Resources and Institutions [IFRI] and FAO, in preparation) have noted that the policy emphasis on promoting decentralized forest management is also a response to factors that include community demands...",
+      "source_chunk": 4,
+      "id": "162f1321-f1cf-4b5a-aeb3-ac9a285e7835",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "IFRI’s reporting highlights the policy shift toward decentralised forest management and community demand.",
+        "supporting_text": "Several authors (as reported by International Forestry Resources and Institutions [IFRI] ... have noted that the policy emphasis on promoting decentralized forest management"
+      }
+    },
+    {
+      "name": "United Nations (UN)",
+      "type": "Organization",
+      "description": "International intergovernmental organization.",
+      "role": "Adopted the Declaration on the Rights of Indigenous Peoples, giving additional impetus to community‑based forestry movements.",
+      "country": null,
+      "supporting_text": "The United Nations (UN) Declaration on the Rights of Indigenous Peoples (adopted by the UN in 2007) has given additional impetus to this movement.",
+      "source_chunk": 4,
+      "id": "9a121162-bd66-4405-a89c-b06aa3409360",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "UN adoption of the Indigenous Rights Declaration is portrayed as a legitimacy‑enhancing catalyst for CBF.",
+        "supporting_text": "The United Nations (UN) Declaration on the Rights of Indigenous Peoples ... has given additional impetus to this movement"
+      }
+    },
+    {
+      "name": "Forests, Trees and People Programme (FTPP)",
+      "type": "Organization",
+      "description": "FAO programme that supports forest‑related research, policy, and networking.",
+      "role": "Served as a platform for developing and supporting networks that exchange information on community‑based forestry.",
+      "country": null,
+      "supporting_text": "FAO's Forests, Trees and People Programme (FTPP), with its regional hubs, was an important platform for developing and supporting networks to exchange information and share experiences.",
+      "source_chunk": 4,
+      "id": "5c3b6b39-09d5-40b1-8426-c98f6552f6b8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "FTPP is highlighted as a conduit for capacity‑building and knowledge sharing among CBF practitioners.",
+        "supporting_text": "FAO’s Forests, Trees and People Programme (FTPP), with its regional hubs, was an important platform for developing and supporting networks"
+      }
+    },
+    {
+      "name": "Social Forestry Network / Rural Development Forestry Network (Overseas Development Institute)",
+      "type": "Organization",
+      "description": "Network within the UK‑based Overseas Development Institute that disseminates social forestry knowledge.",
+      "role": "Influential in spreading ideas and experiences of community‑based forestry to practitioners and policy‑makers worldwide.",
+      "country": "United Kingdom",
+      "supporting_text": "Similarly, the Social Forestry Network (subsequently the Rural Development Forestry Network) of the Overseas Development Institute in the United Kingdom was influential in spreading ideas and experiences to practitioners and policy‑makers around the world.",
+      "source_chunk": 4,
+      "id": "283a2859-0f55-4e99-a56b-31aac984e37f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The network is credited with spreading ideas and experiences to practitioners and policy‑makers worldwide.",
+        "supporting_text": "Social Forestry Network ... was influential in spreading ideas and experiences to practitioners and policy‑makers around the world"
+      }
+    },
+    {
+      "name": "RECOFTC (Regional Center for Research on Forestry and Agroforestry)",
+      "type": "Organization",
+      "description": "Research centre based in Bangkok focusing on forestry and agroforestry in Asia and the Pacific.",
+      "role": "Provides capacity‑building support for community‑based forestry in the Asia‑Pacific region.",
+      "country": "Thailand",
+      "supporting_text": "RECOFTC was established in 1987 in Bangkok to provide a focus on capacity building for CBF in Asia and the Pacific.",
+      "source_chunk": 4,
+      "id": "a7efb82a-0804-4435-a815-f5984bd282d0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "RECOFTC’s establishment is presented as a capacity‑building initiative for CBF in Asia‑Pacific.",
+        "supporting_text": "RECOFTC was established in 1987 in Bangkok to provide a focus on capacity building for CBF in Asia and the Pacific"
+      }
+    },
+    {
+      "name": "Arnold",
+      "type": "Individual",
+      "description": "Researcher who reviewed progress of community‑based forestry up to 2001.",
+      "role": "Called for a period of consolidation and critical analysis of CBF programmes.",
+      "country": null,
+      "supporting_text": "Arnold (2001), in reviewing progress with CBF over the previous 25 years, noted that \"it could be desirable if there were now to be a period of consolidation, moving from promotion to critical analysis, with increased consideration of how best to address weaknesses and problems that have arisen\".",
+      "source_chunk": 4,
+      "id": "98e521e1-863d-4945-ad47-c087daa0f77c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Arnold calls for a shift from promotion to critical analysis, indicating a need for systemic reflection.",
+        "supporting_text": "Arnold (2001) ... noted that “it could be desirable if there were now to be a period of consolidation, moving from promotion to critical analysis"
+      }
+    },
+    {
+      "name": "Lawrence",
+      "type": "Individual",
+      "description": "Scholar who discussed the evolving nature of community‑based forestry.",
+      "role": "Described CBF as a dynamic process moving from reductionist to systemic approaches.",
+      "country": null,
+      "supporting_text": "Lawrence (2007, p.  9) emphasized that CBF is not static. She argued that the evolutionary path of CBF \"follows a trend from reductionist to systemic, from simple to complex and from planned to adaptive.",
+      "source_chunk": 4,
+      "id": "22c05794-c4b8-48ff-9809-e701ab9abc3f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Lawrence describes CBF’s evolution from reductionist to systemic, highlighting adaptive pathways.",
+        "supporting_text": "Lawrence (2007) emphasized that CBF ... follows a trend from reductionist to systemic, from simple to complex and from planned to adaptive"
+      }
+    },
+    {
+      "name": "McDermott",
+      "type": "Individual",
+      "description": "Researcher who compared collaborative CBF regimes in the global North and South.",
+      "role": "Identified distinct evolutionary pathways of CBF across regions.",
+      "country": null,
+      "supporting_text": "McDermott and Schreckenberg (2009) noted distinct differences in the way that collaborative forms of CBF regimes have evolved in the global North and South.",
+      "source_chunk": 4,
+      "id": "97386cd6-eacd-41dd-90c7-1c90769e94a9",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "McDermott notes distinct North‑South trajectories, revealing cross‑scale dynamics in CBF development.",
+        "supporting_text": "McDermott and Schreckenberg (2009) noted distinct differences in the way that collaborative forms of CBF regimes have evolved in the global North and South"
+      }
+    },
+    {
+      "name": "Schreckenberg",
+      "type": "Individual",
+      "description": "Researcher who co‑authored analysis of CBF evolution across regions.",
+      "role": "Co‑identified regional differences in collaborative CBF development.",
+      "country": null,
+      "supporting_text": "McDermott and Schreckenberg (2009) noted distinct differences in the way that collaborative forms of CBF regimes have evolved in the global North and South.",
+      "source_chunk": 4,
+      "id": "f3575f1f-b2ff-4d5c-a971-9fb5e0fb687f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Highlights comparative analysis of CBF evolution between North and South, indicating systemic shift possibilities.",
+        "supporting_text": "McDermott and Schreckenberg (2009) noted distinct differences in the way that collaborative forms of CBF regimes have evolved in the global North and South."
+      }
+    },
+    {
+      "name": "Pokharel",
+      "type": "Individual",
+      "description": "Researcher who documented the historical trajectory of community forestry in Nepal.",
+      "role": "Highlighted how Nepal’s community forestry expanded from environmental goals to broader social and governance objectives.",
+      "country": null,
+      "supporting_text": "As noted by Pokharel et al. (2008, p. 81), community forestry in Nepal \"was initiated as part of an environmental movement, which aimed to conserve forests ... Later, it encompassed issues of gender, livelihoods and local institutional sustainability ... Most recently, governance, democracy and social inclusion have been brought into the ... agenda ...\"",
+      "source_chunk": 4,
+      "id": "060a04c9-839c-4d75-9c01-99d6eed30130",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows how CBF objectives have expanded over time, revealing pathways for broader systemic change.",
+        "supporting_text": "As noted by Pokharel et al. (2008, p. 81), community forestry in Nepal “was initiated as part of an environmental movement… Most recently, governance, democracy and social inclusion have been brought into the … agenda …”"
+      }
+    },
+    {
+      "name": "Cheng",
+      "type": "Individual",
+      "description": "Researcher cited for examples of grassroots CBF projects in the global North.",
+      "role": "Provided case studies of small‑scale, pilot community‑based forestry initiatives.",
+      "country": null,
+      "supporting_text": "in the North CBF has emerged on a smaller scale, in the form of diverse pilot projects and local innovations sprouting from the grassroots (see e.g. Cheng and Fernandez‑Gimenez, 2006a).",
+      "source_chunk": 4,
+      "id": "641a0abc-a649-49c3-ac86-57465ec19d91",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Cites grassroots pilot projects that illustrate alternative, adaptive pathways for CBF.",
+        "supporting_text": "in the North CBF has emerged on a smaller scale, in the form of diverse pilot projects and local innovations sprouting from the grassroots (see e.g. Cheng and Fernandez‑Gimenez, 2006a)."
+      }
+    },
+    {
+      "name": "Fernandez‑Gimenez",
+      "type": "Individual",
+      "description": "Researcher cited alongside Cheng for grassroots CBF examples in the North.",
+      "role": "Co‑authored case studies of pilot community‑based forestry projects.",
+      "country": null,
+      "supporting_text": "in the North CBF has emerged on a smaller scale, in the form of diverse pilot projects and local innovations sprouting from the grassroots (see e.g. Cheng and Fernandez‑Gimenez, 2006a).",
+      "source_chunk": 4,
+      "id": "3bde5e0e-aefa-4ae3-a755-c3301b4f8fe5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Illustrates grassroots innovation that can drive systemic transformation of forest governance.",
+        "supporting_text": "in the North CBF has emerged on a smaller scale, in the form of diverse pilot projects and local innovations sprouting from the grassroots (see e.g. Cheng and Fernandez‑Gimenez, 2006a)."
+      }
+    },
+    {
+      "name": "Agrawal",
+      "type": "Individual",
+      "description": "Scholar who examined community demands and capacity for sustainable resource governance.",
+      "role": "Provided evidence that community demands and capacities influence policy emphasis on decentralized forest management.",
+      "country": null,
+      "supporting_text": "community demands for a greater say in natural resource governance and recognition by many decision‑makers that communities have the capacity to manage resources sustainably (e.g. Agrawal and Ostrom, 2001;...",
+      "source_chunk": 4,
+      "id": "f8e0522c-5e18-4017-bf5e-ecf11327de99",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides scholarly evidence that communities can manage resources sustainably, supporting collective action.",
+        "supporting_text": "recognition … that communities have the capacity to manage resources sustainably (e.g. Agrawal and Ostrom, 2001; …"
+      }
+    },
+    {
+      "name": "Gautam",
+      "type": "Individual",
+      "description": "Researcher who co‑authored work on community participation in forest governance.",
+      "role": "Contributed to the literature linking community participation to policy shifts toward decentralized management.",
+      "country": null,
+      "supporting_text": "community demands for a greater say in natural resource governance and recognition by many decision‑makers that communities have the capacity to manage resources sustainably (e.g. ... Gautam and Shivakoti, 2004;...",
+      "source_chunk": 4,
+      "id": "fc7abff3-54f5-416e-8eef-60002eed8bc7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Cited as evidence of community capacity, reinforcing collective agency for sustainable management.",
+        "supporting_text": "recognition … that communities have the capacity to manage resources sustainably (e.g. … Gautam and Shivakoti, 2004; …"
+      }
+    },
+    {
+      "name": "Shivakoti",
+      "type": "Individual",
+      "description": "Researcher who co‑authored work on community participation in forest governance.",
+      "role": "Co‑authored studies supporting the role of community agency in forest management reforms.",
+      "country": null,
+      "supporting_text": "community demands for a greater say in natural resource governance and recognition by many decision‑makers that communities have the capacity to manage resources sustainably (e.g. ... Gautam and Shivakoti, 2004;...",
+      "source_chunk": 4,
+      "id": "5da5928e-241f-4e02-8769-6a2f3009b508",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Co‑author of work highlighting community competence, bolstering collective action narratives.",
+        "supporting_text": "recognition … that communities have the capacity to manage resources sustainably (e.g. … Gautam and Shivakoti, 2004; …"
+      }
+    },
+    {
+      "name": "Ghate",
+      "type": "Individual",
+      "description": "Researcher who examined collaborative community‑based forestry regimes.",
+      "role": "Provided empirical evidence of CBF’s evolution and effectiveness.",
+      "country": null,
+      "supporting_text": "community demands for a greater say in natural resource governance and recognition by many decision‑makers that communities have the capacity to manage resources sustainably (e.g. ... Ghate, Ghate and Ostrom, 2013).",
+      "source_chunk": 4,
+      "id": "5cfc0862-4d5c-4cf2-8f57-ff12fd265402",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Research cited to support community‑based management, encouraging collective implementation.",
+        "supporting_text": "recognition … that communities have the capacity to manage resources sustainably (e.g. … Ghate, Ghate and Ostrom, 2013)."
+      }
+    },
+    {
+      "name": "Commission on Sustainable Development (CSD)",
+      "type": "Organization",
+      "description": "A United Nations commission that coordinates sustainable development policies.",
+      "role": "Endorsed the role of local communities and indigenous peoples in sustainable forest management and initiated the Intergovernmental Panel on Forests.",
+      "country": "International",
+      "supporting_text": "Following the United Nations Conference on the Environment and Development in 1992, the Commission on Sustainable Development (CSD) endorsed the role of local communities, indigenous peoples and other stakeholders in pursuing SFM.",
+      "source_chunk": 6,
+      "id": "53701a63-0c43-4745-81d4-be98289e3bed",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CSD endorsed community roles and launched IPF, creating institutional support for participatory forest management.",
+        "supporting_text": "CSD endorsed the role of local communities... CSD initiated the Intergovernmental Panel on Forests (IPF) in 1995 to seek a global consensus for action supportive of participatory and sustainable forest management."
+      }
+    },
+    {
+      "name": "Intergovernmental Panel on Forests (IPF)",
+      "type": "Organization",
+      "description": "A UN‑mandated intergovernmental panel created to build global consensus on participatory and sustainable forest management.",
+      "role": "Sought a global consensus for action supportive of participatory and sustainable forest management and served as a conduit for community‑based forestry inputs.",
+      "country": "International",
+      "supporting_text": "CSD initiated the Intergovernmental Panel on Forests (IPF) in 1995 to seek a global consensus for action supportive of participatory and sustainable forest management.",
+      "source_chunk": 6,
+      "id": "55d30ad0-477d-40fa-8b06-a09b54e4dab2",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "IPF sought global consensus for participatory and sustainable forest management, indicating a system‑wide shift.",
+        "supporting_text": "CSD initiated the Intergovernmental Panel on Forests (IPF) in 1995 to seek a global consensus for action supportive of participatory and sustainable forest management."
+      }
+    },
+    {
+      "name": "IUCN Working Group on Community Involvement in Forest Management",
+      "type": "Organization",
+      "description": "A specialised working group within IUCN focused on promoting community participation in forest governance.",
+      "role": "Generated regional reports (Southeast Asia, South Asia, MesoAmerica, Western Europe, Canada/USA) used to advocate for community‑based forestry in international fora.",
+      "country": "International",
+      "supporting_text": "Commencing in 1996, the International Union for Conservation of Nature (IUCN) established a Working Group on Community Involvement in Forest Management and produced a series of five regional reports...",
+      "source_chunk": 6,
+      "id": "445525bb-70b0-4acc-bd2f-f4d34163216f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The working group generated knowledge that fed into global policy advocacy for CBF.",
+        "supporting_text": "IUCN established a Working Group on Community Involvement in Forest Management and produced a series of five regional reports... used ... to advocate for CBF in international discussions."
+      }
+    },
+    {
+      "name": "Intergovernmental Forum on Forests (IFF)",
+      "type": "Organization",
+      "description": "Successor body to the IPF that continued UN‑wide forest policy dialogue.",
+      "role": "Provided a platform for channeling lessons from community‑based forestry into global policy discussions.",
+      "country": "International",
+      "supporting_text": "...used between 1996 and 2000 to advocate for CBF in international discussions on forests through input to IPF and its successor, the Intergovernmental Forum on Forests (IFF).",
+      "source_chunk": 6,
+      "id": "09b8ece4-5bf5-4b0e-8724-1b984427c245",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "IFF continued the IPF process, channeling lessons into global forest policy, indicating a pathway for systemic change.",
+        "supporting_text": "These were used ... to advocate for CBF in international discussions on forests through input to IPF and its successor, the Intergovernmental Forum on Forests (IFF)."
+      }
+    },
+    {
+      "name": "United Nations Forum on Forests (UNFF)",
+      "type": "Organization",
+      "description": "A UN intergovernmental forum that coordinates forest policy and programmes worldwide.",
+      "role": "Incorporated IPF/IFF proposals on community‑based forest management into its Multi‑Year Programme of Work (2007‑2015).",
+      "country": "International",
+      "supporting_text": "The successor to IPF and IFF, the United Nations Forum on Forests (UNFF), incorporated the IPF/IFF Proposals for Action into its Multi-Year Programme of Work.",
+      "source_chunk": 6,
+      "id": "ff9a1028-24a0-421e-9b6f-59996f4d2626",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "UNFF incorporated CBF proposals into its Multi‑Year Programme, raising the profile of community forestry at the UN level.",
+        "supporting_text": "The successor to IPF and IFF, the United Nations Forum on Forests (UNFF), incorporated the IPF/IFF Proposals for Action into its Multi-Year Programme of Work. Among the major themes... community-based forest management."
+      }
+    },
+    {
+      "name": "Forest Carbon Partnership Facility",
+      "type": "Organization",
+      "description": "A World Bank‑run facility that acts as a broker for forest‑related carbon offsets and provides project financing.",
+      "role": "Facilitates buying and selling of forest carbon credits and supplies funding to countries to build capacity for REDD+ and other carbon‑focused initiatives.",
+      "country": "International",
+      "supporting_text": "The facility is designed to act as a broker between buyers and sellers of forest-related carbon offsets and will also provide funding to countries to build their capacity to develop projects.",
+      "source_chunk": 6,
+      "id": "c2aa428c-a647-43a8-8313-5c057cb27ef7",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The facility introduces market mechanisms that could transform how community forests generate revenue and climate benefits.",
+        "supporting_text": "The World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market for forestry projects."
+      }
+    },
+    {
+      "name": "Forest Stewardship Council (FSC)",
+      "type": "Organization",
+      "description": "International, multi‑stakeholder certification system for responsibly managed forests.",
+      "role": "Provides group forest‑management certification for community forests, enabling market access and price premiums for sustainably produced timber and non‑wood products.",
+      "country": "International",
+      "supporting_text": "By 2010, 4.2 million hectares of community forests worldwide were certified by the Forest Stewardship Council (FSC).",
+      "source_chunk": 6,
+      "id": "92aad09e-9e43-4466-ab39-f25c58f744c7",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "FSC certification raises the legitimacy of CBF products and promotes market access, even if price premiums are limited.",
+        "supporting_text": "Certification has not led to price premiums but has helped to foster a more comprehensive understanding of SFM and is seen as important in ensuring access to important markets."
+      }
+    },
+    {
+      "name": "Programme for the Endorsement of Forest Certification (PEFC)",
+      "type": "Organization",
+      "description": "International umbrella organisation that endorses national forest‑certification systems, with a focus on small‑holder and community forests.",
+      "role": "Offers group certification and has launched an online system to help small and medium‑sized private forest owners obtain certification at low cost.",
+      "country": "International",
+      "supporting_text": "The Programme for the Endorsement of Forest Certification (PEFC) was founded in 1999... It has recently launched an online forest certification system in the United Kingdom to help small and medium-sized private forest owners obtain PEFC certification simply and at low cost.",
+      "source_chunk": 6,
+      "id": "b148fba0-d5fc-4089-b291-5d841efb85d6",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "PEFC provides certification pathways tailored to small and community forests, enhancing their visibility and credibility.",
+        "supporting_text": "PEFC was founded ... to overcome some of the difficulties faced by smallholders and community groups in complying with FSC certification requirements."
+      }
+    },
+    {
+      "name": "European Union (EU)",
+      "type": "Government",
+      "description": "Political and economic union of European member states.",
+      "role": "Adopted the Forest Law Enforcement, Governance and Trade (FLEGT) Action Plan and negotiates Voluntary Partnership Agreements to ensure legally sourced timber.",
+      "country": "Europe",
+      "supporting_text": "Concerns about the impact of illegal logging and associated trade led the European Union (EU) to adopt the Forest Law Enforcement, Governance and Trade (FLEGT) Action Plan in 2003.",
+      "source_chunk": 6,
+      "id": "02ae60e7-06b0-4188-9cdf-47d512882e84",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "EU’s FLEGT Action Plan highlights the problem of illegal logging and the need for legal timber trade.",
+        "supporting_text": "Concerns about the impact of illegal logging and associated trade led the European Union (EU) to adopt the Forest Law Enforcement, Governance and Trade (FLEGT) Action Plan in 2003."
+      }
+    },
+    {
+      "name": "International Land Coalition (ILC)",
+      "type": "Coalition",
+      "description": "A global coalition of NGOs and social movements working to secure land rights for poor peoples.",
+      "role": "Reported on the scale of large‑scale timber concessions and highlighted the risks they pose to community‑managed forests.",
+      "country": "International",
+      "supporting_text": "ILC (2011) reported that the area of land allocated to large-scale timber concessions is much larger than the forest land under community ownership or administration in many parts of Africa and Asia.",
+      "source_chunk": 6,
+      "id": "d3732143-b4ac-411b-9329-c078e3a0163b",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "ILC reports large‑scale timber concessions overwhelming community forest lands, exposing a threat to CBF.",
+        "supporting_text": "ILC (2011) reported that the area of land allocated to large‑scale timber concessions is much larger than the forest land under community ownership... communities likely to be the losers."
+      }
+    },
+    {
+      "name": "Oxfam",
+      "type": "NGO",
+      "description": "International confederation of charitable organizations focused on alleviating poverty and injustice.",
+      "role": "Co‑estimated that more than 200 million hectares had been bought or leased by agribusinesses since 2001, drawing attention to large‑scale land acquisitions.",
+      "country": "International",
+      "supporting_text": "RRI (2012c) reported that in 2011, Oxfam and the International Land Coalition (ILC) estimated that more than 200 million hectares had been bought or leased by agribusinesses since 2001.",
+      "source_chunk": 6,
+      "id": "9438ee6a-d09a-4f06-a4b5-d617d3d5b60b",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Oxfam’s estimate of 200 million hectares acquired by agribusinesses reveals the scale of land grabs affecting communities.",
+        "supporting_text": "RRI (2012c) reported that in 2011, Oxfam and the International Land Coalition (ILC) estimated that more than 200 million hectares had been bought or leased by agribusinesses since 2001."
+      }
+    },
+    {
+      "name": "CIFOR",
+      "type": "Organization",
+      "description": "Center for International Forestry Research, a global research partnership dedicated to forest‑related issues.",
+      "role": "Keeps community‑based forestry high on its agenda, uses convening power to raise awareness and inform policy dialogues.",
+      "country": "International",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "source_chunk": 6,
+      "id": "ee5ebb56-a2f2-4de8-87e4-3a024034990b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CIFOR keeps CBF on its agenda and uses convening power to raise awareness and support policy dialogue.",
+        "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC ... have kept CBF high on their agendas. This is important, as they can use their convening power to raise awareness of key issues."
+      }
+    },
+    {
+      "name": "ITTO",
+      "type": "Organization",
+      "description": "International Tropical Timber Organization, an intergovernmental body promoting sustainable management of tropical forests.",
+      "role": "Keeps community‑based forestry on its agenda and facilitates knowledge exchange among members.",
+      "country": "International",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "source_chunk": 6,
+      "id": "1aff3130-dfa1-49bd-a347-8d8e9be767df",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "ITTO is listed among international bodies that keep CBF on their agenda and provide technical support and capacity‑building for stakeholders.",
+        "supporting_text": "many international organizations, such as ... ITTO ... have kept CBF high on their agendas... they can use their convening power... provide technical support... support capacity building of all CBF stakeholders"
+      }
+    },
+    {
+      "name": "RECOFTC",
+      "type": "Organization",
+      "description": "Center for People and Forests, an intergovernmental organization supporting forest‑related research and policy.",
+      "role": "Promotes community‑based forestry within its programme portfolio and supports stakeholder dialogue.",
+      "country": "International",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "source_chunk": 6,
+      "id": "25b54588-a678-40b1-be0f-f12851517dca",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "RECOFTC is cited as an international organization that promotes CBF, raises awareness and offers technical assistance.",
+        "supporting_text": "many international organizations, such as ... RECOFTC ... have kept CBF high on their agendas... they can use their convening power... provide technical support... support capacity building of all CBF stakeholders"
+      }
+    },
+    {
+      "name": "CATIE",
+      "type": "Organization",
+      "description": "Tropical Agricultural Research and Higher Education Center, a regional research and education institution based in Costa Rica.",
+      "role": "Supports research and capacity‑building for community‑based forest management across the Americas.",
+      "country": "Costa Rica",
+      "supporting_text": "many international organizations, such as CIFOR, FAO, ITTO, RECOFTC and the Tropical Agricultural Research and Higher Education Center (CATIE), have kept CBF high on their agendas.",
+      "source_chunk": 6,
+      "id": "626a9939-2d0f-4097-b217-e6c84605633a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CATIE is named as a key international actor that sustains CBF on its agenda and contributes technical and capacity‑building support.",
+        "supporting_text": "many international organizations, such as ... CATIE ... have kept CBF high on their agendas... they can use their convening power... provide technical support... support capacity building of all CBF stakeholders"
+      }
+    },
+    {
+      "name": "IFRI",
+      "type": "Organization",
+      "description": "Institute of Forest Research, a UK‑based research institute focusing on forest policy and practice.",
+      "role": "Announced the creation of the FLARE network to advance knowledge on forest‑based livelihoods.",
+      "country": "United Kingdom",
+      "supporting_text": "In early 2015 IFRI announced the establishment of the Forests and Livelihoods: Assessment, Research and Engagement (FLARE) network...",
+      "source_chunk": 6,
+      "id": "68cc1550-6691-480a-9561-b8b24daac776",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IFRI created the FLARE network to bring stakeholders together, share knowledge and improve forest‑livelihood interventions.",
+        "supporting_text": "In early 2015 IFRI announced the establishment of the FLARE network, a community of practice to share and advance knowledge and improve monitoring efforts and efficacy of forest‑dependent livelihood interventions"
+      }
+    },
+    {
+      "name": "FLARE network",
+      "type": "Network",
+      "description": "A community of practice that brings together stakeholders to share and develop knowledge on forest‑based livelihoods.",
+      "role": "Facilitates knowledge exchange, methodological development, and monitoring improvements for forest‑dependent livelihood interventions worldwide.",
+      "country": "International",
+      "supporting_text": "FLARE network, a community of practice with the aim of advancing the state of knowledge regarding forest-based livelihoods.",
+      "source_chunk": 6,
+      "id": "2fe80205-0157-46c6-a131-8382a90bc10e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The FLARE network is a community of practice designed to coordinate stakeholders, generate usable knowledge and enhance monitoring of forest‑based livelihoods.",
+        "supporting_text": "In early 2015 IFRI announced the establishment of the FLARE network, a community of practice to share and advance knowledge and improve monitoring efforts and efficacy of forest‑dependent livelihood interventions"
+      }
+    },
+    {
+      "name": "United Nations",
+      "type": "Organization",
+      "description": "The global intergovernmental organization comprising 193 member states.",
+      "role": "Adopted the 2030 Agenda and the Sustainable Development Goals, providing a policy framework that highlights the role of community‑based forestry in achieving SDG 15.2.",
+      "country": "International",
+      "supporting_text": "In September 2015 the United Nations adopted a set of 17 Sustainable Development Goals (SDGs) which provide an overarching policy framework to guide the world's development agenda until 2030.",
+      "source_chunk": 6,
+      "id": "0bd245df-915f-4f08-b0f2-daa252be6c72",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The UN’s adoption of the SDGs and the 2030 Agenda creates a global framework that can scale‑up CBF and integrate it into development policies.",
+        "supporting_text": "The United Nations adopted the Sustainable Development Goals, and the 2030 Agenda offers a real opportunity to support the scaling‑up of CBF worldwide"
+      }
+    },
+    {
+      "name": "United States of America",
+      "type": "Government",
+      "description": "Federal government of the United States.",
+      "role": "Amended the Lacey Act of 1900 to prohibit the import of illegally harvested timber, influencing global timber trade standards.",
+      "country": "United States",
+      "supporting_text": "For example, the United States of America has added provisions to the Lacey Act of 1900 (which regulates trade in wildlife, fish and plants) to ban commerce in illegally sourced timber and wood products.",
+      "source_chunk": 6,
+      "id": "9bf46189-d256-414d-b4a2-465a39d07f51",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "U.S. legislation (Lacey Act) bans illegal timber, raising the legitimacy and market acceptance of legally sourced forest products.",
+        "supporting_text": "The United States of America has added provisions to the Lacey Act of 1900 ... to ban commerce in illegally sourced timber and wood products"
+      }
+    },
+    {
+      "name": "UNFF",
+      "type": "Organization",
+      "description": "United Nations Forum on Forests, an intergovernmental policy forum on forest issues.",
+      "role": "Recognized the importance of collective action by indigenous and local communities in advancing sustainable forest management, thereby promoting community‑based approaches to forest stewardship.",
+      "country": null,
+      "supporting_text": "UNFF (2015) recognized the importance of collective action by indigenous and local communities in advancing sustainable forest management.",
+      "source_chunk": 7,
+      "id": "0eecf93b-971b-44c1-b184-8ecf7b9ce0b7",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UNFF led the adoption of a declaration that promotes collective forest action.",
+        "supporting_text": "UNFF (2015) recognized the importance of collective action ..."
+      }
+    },
+    {
+      "name": "Collaborative Partnership on Forests (CPF)",
+      "type": "Coalition",
+      "description": "A global partnership of forest‑related organizations and governments that works to promote sustainable forest management.",
+      "role": "Called for governments worldwide to increase the role of communities in forest management, advocating for community‑based forestry as a core element of sustainable production.",
+      "country": null,
+      "supporting_text": "Collaborative Partnership on Forests (CPF, 2011) called for governments across the globe to increase the role of communities in forest management.",
+      "source_chunk": 7,
+      "id": "350e397c-3189-4520-9ff9-5ce8d5ebed03",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CPF issued a call that mobilises governments to empower community forest roles.",
+        "supporting_text": "The Collaborative Partnership on Forests (CPF, 2011) called for governments ..."
+      }
+    },
+    {
+      "name": "Center for International Forestry Research (CIFOR)",
+      "type": "Organization",
+      "description": "An international research institute focused on forest science and policy.",
+      "role": "Included \"Improving livelihoods through smallholder and community forestry\" in its 2008‑2018 strategic plan, directing research toward community‑based forest enterprises that respect nature’s regenerative capacity.",
+      "country": null,
+      "supporting_text": "Center for International Forestry Research (CIFOR, 2008) has included \"Improving livelihoods through smallholder and community forestry\" as one of the six research domains in its 2008−2018 strategic plan.",
+      "source_chunk": 7,
+      "id": "6e9d00c0-8cff-486b-917d-d273b19df74a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CIFOR leads a research domain that promotes smallholder and community forestry.",
+        "supporting_text": "The Center for International Forestry Research (CIFOR, 2008) has included “Improving livelihoods through smallholder and community forestry” as one of the six research domains..."
+      }
+    },
+    {
+      "name": "International Tropical Timber Organization (ITTO)",
+      "type": "Organization",
+      "description": "A specialized intergovernmental organization that promotes the sustainable management of tropical forests.",
+      "role": "Integrated Community Forest Management and Enterprises into its thematic programmes, supporting community‑led forest use and regeneration.",
+      "country": null,
+      "supporting_text": "International Tropical Timber Organization (ITTO, 2014) has included Community Forest Management and Enterprises as one of its five thematic programmes.",
+      "source_chunk": 7,
+      "id": "d871f75f-3926-44f8-8521-03321805e12d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "ITTO incorporates community forest management into its thematic programme, enabling action.",
+        "supporting_text": "The International Tropical Timber Organization (ITTO, 2014) has included Community Forest Management and Enterprises as one of its five thematic programmes."
+      }
+    },
+    {
+      "name": "Conference of the Parties of the Convention on Biological Diversity (COP of CBD)",
+      "type": "Organization",
+      "description": "The decision‑making body of the Convention on Biological Diversity, comprising parties to the treaty.",
+      "role": "Adopted a target to respect and fully integrate traditional knowledge and practices of indigenous and local communities into biodiversity use, thereby embedding community‑based stewardship in global policy.",
+      "country": null,
+      "supporting_text": "Conference of the Parties of the Convention on Biological Diversity has adopted a target under one of the five goals of its 2011−2020 strategic plan involving respecting and fully integrating traditional knowledge and practices of indigenous and local communities related to sustainable use of biodiversity into the implementation of the Convention.",
+      "source_chunk": 7,
+      "id": "2f3510c4-3181-43d7-bc04-8672ead154fc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "COP of CBD adopts a target that integrates traditional knowledge, steering collective effort.",
+        "supporting_text": "The Conference of the Parties of the Convention on Biological Diversity has adopted a target ... respecting and fully integrating traditional knowledge and practices of indigenous and local communities ..."
+      }
+    }
+  ]
+}

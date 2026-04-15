@@ -1,0 +1,2339 @@
+{
+  "concepts": [
+    {
+      "name": "National income",
+      "definition": "The term most commonly used before the 1950s to refer to the headline indicator of the national accounts; also used generically for the periods around the Second World War.",
+      "key_proponents": [],
+      "supporting_text": "\"Before the 1950s the term most commonly used was \\\"national income\\\"... I sometimes also use the generic term \\\"national income\\\" for the periods around the Second World War.\"",
+      "source_chunk": 0,
+      "id": "b55a54a8-bd08-4998-b32f-e36b03868da8",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Mentioned only as a generic historical term, with no explicit link to nature‑harmonising initiatives.",
+        "supporting_text": "I sometimes also use the generic term “national income” for the periods around the Second World War."
+      }
+    },
+    {
+      "name": "Gross National Product (GNP)",
+      "definition": "An indicator that was used in the first two official versions of the System of National Accounts (1953 and 1968) before being sidelined in later versions.",
+      "key_proponents": [],
+      "supporting_text": "\"The first two official versions of the System of National Accounts (1953 and 1968) used the indicator Gross National Product (GNP). Later on, in the SNA 1993, GDP was adopted and GNP was sidelined.\"",
+      "source_chunk": 0,
+      "id": "e713b5ac-f443-4878-9a4a-ae0679ddce76",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Historical indicator cited without a clear role in advancing harmony with nature.",
+        "supporting_text": "The first two official versions of the System of National Accounts (1953 and 1968) used the indicator Gross National Product (GNP)."
+      }
+    },
+    {
+      "name": "Gross Domestic Product (GDP)",
+      "definition": "A statistical indicator that measures the size of an economy, but is popularly perceived as a measure of whether a society is doing well or not; it serves as the dominant global ‘brand’ for economic success.",
+      "key_proponents": [
+        "World Bank",
+        "International Monetary Fund (IMF)",
+        "Organisation for Economic Co‑operation and Development (OECD)",
+        "European Commission",
+        "Bureau of Economic Analysis (BEA)",
+        "Council of Economic Advisers (CEA)",
+        "Paul Samuelson",
+        "Joseph Schumpeter",
+        "Economists",
+        "Macro‑economists"
+      ],
+      "supporting_text": "GDP measures the size of the economy yet the perception is that it measures whether a society is doing well or not. ... GDP figures are collected and disseminated by all the major international institutions, such as the World Bank, International Monetary Fund, OECD and the European Commission.",
+      "id": "16942175-73aa-4fb6-b72f-65a011485504",
+      "variations": [
+        "Gross Domestic Product (GDP)"
+      ],
+      "source_chunks": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "supporting_texts": [
+        "GDP measures the size of the economy yet the perception is that it measures whether a society is doing well or not. ... GDP figures are collected and disseminated by all the major international institutions, such as the World Bank, International Monetary Fund, OECD and the European Commission.",
+        "\"The report includes a key indicator called Gross Domestic Product (GDP), which is a measure of the economic activity of the United States...\"",
+        "\"While the GDP and the rest of the national income accounts may seem to be arcane concepts, they are truly among the great inventions of the twentieth century.\" … \"The blue line shows the ascendance of GDP, which started in the 1930s and has since made a spectacular move up this innovation curve. GDP innovation is now at its peak, or very close to it.\"",
+        "Why Is GDP so Successful? ... The history of national income estimates starts way back in 1665, yet it was only in the 1930s that they started to become influential. ... Using their national income statistics, economists were able to provide clarity about the crises and also offer policy advice to governments about how to overcome them."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "GDP’s historic success is presented as a dominant metric that shapes policy and discourse.",
+        "supporting_text": "The success of GDP is a by‑product of the success of macroeconomists."
+      }
+    },
+    {
+      "name": "System of National Accounts (SNA)",
+      "definition": "An international handbook that provides methodological guidelines for recording economic transactions and resources of a society; it defines how GDP and related aggregates are calculated.",
+      "key_proponents": [
+        "United Nations",
+        "All member states of the European Union",
+        "International statistical institutes",
+        "United Nations (UN)",
+        "Richard Stone",
+        "John Maynard Keynes",
+        "James Meade",
+        "Milton Gilbert",
+        "George Luxton"
+      ],
+      "supporting_text": "These are recorded in an international handbook called the System of National Accounts (SNA), which was last updated in 2008. It is a 722‑page manual on how to record the economic transactions and resources of a society.",
+      "id": "b285edc6-b943-4311-9fce-fb095d6a7341",
+      "variations": [
+        "System of National Accounts (SNA)"
+      ],
+      "source_chunks": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8,
+        11,
+        15,
+        16
+      ],
+      "supporting_texts": [
+        "These are recorded in an international handbook called the System of National Accounts (SNA), which was last updated in 2008. It is a 722‑page manual on how to record the economic transactions and resources of a society.",
+        "\"In this book, the term GDP is used to refer to the headline indicator of the national accounts... The first two official versions of the System of National Accounts (1953 and 1968) used the indicator Gross National Product (GNP). Later on, in the SNA 1993, GDP was adopted... The SNA includes other macroeconomic aggregates such as Gross National Income (GNI).\"",
+        "The System of National Accounts is the foundation upon which modern empirical macroeconomics is built. The SNA has, since 1953, prescribed what concepts to use when measuring the economy. After the adoption and implementation of the SNA, worldwide national income accounting was harmonised rapidly. ... it can be seen as a \"language\" because it contains the definitions of macroeconomic terms (dictionary) and also their relationships (grammar).",
+        "The SNA provides a common language which (macro)economists all over the world speak. Whether the native language of a macroeconomist is Swahili, Urdu or Portuguese, they can \"speak\" to their fellow (macro)economists using their SNA language. In fact, many of the terms have gradually percolated into society and media. Consumption, investment, productivity and capital are just a few terms which have society-wide use.",
+        "The SNA itself phrases this as follows: \"Per capita volumes of major aggregates are often used as a measure of the relative standard of living in countries...\"",
+        "It should not be implemented in rich developed countries first and then slowly permeate towards developing countries, as was the case for the SNA.",
+        "Macroeconomic statistics started to harmonise into the System of National Accounts, with the first edition being published in 1953 (more on the SNA later in this chapter).",
+        "In 1953, Stone was the principal author of the first ever UN handbook, which is considered the first \"official\" SNA. This document provided a global harmonised system of national accounts... The SNA is thus the formalisation of the \"language of macroeconomics\".",
+        "Thirdly, macroeconomists have agreed on a formal macroeconomic language: the System of National Accounts. The language has proven to be versatile and has survived shifts in macroeconomic theory."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "SNA is the statistical framework that institutionalises GDP measurement.",
+        "supporting_text": "\"structured around a science (macroeconomics), a statistical framework (SNA) and a key indicator (GDP).\""
+      }
+    },
+    {
+      "name": "Gross National Income (GNI)",
+      "definition": "A macro‑economic aggregate used as the basis for calculating contributions to Official Development Assistance and EU member‑state payments to the European Union.",
+      "key_proponents": [],
+      "supporting_text": "\"The SNA includes other macroeconomic aggregates such as Gross National Income (GNI). For Official Development Assistance (ODA), for example, country contributions are based on GNI.\"",
+      "source_chunk": 0,
+      "id": "09944c22-de08-4c49-95f3-62de1d9076d4",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Referenced only as part of the SNA and ODA calculations, without explicit relevance to nature‑centric goals.",
+        "supporting_text": "The SNA includes other macroeconomic aggregates such as Gross National Income (GNI)."
+      }
+    },
+    {
+      "name": "Official Development Assistance (ODA)",
+      "definition": "A form of international financial contribution made by countries, calculated on the basis of macro‑economic figures such as GDP.",
+      "key_proponents": [],
+      "supporting_text": "International agreements such as the contributions to Official Development Assistance (ODA) or the contribution to the United Nations are made on the basis of macroeconomic figures.",
+      "id": "5cc28ebb-6900-41bf-9a44-41ac6535256b",
+      "variations": [
+        "Official Development Assistance (ODA)"
+      ],
+      "source_chunks": [
+        0,
+        1
+      ],
+      "supporting_texts": [
+        "International agreements such as the contributions to Official Development Assistance (ODA) or the contribution to the United Nations are made on the basis of macroeconomic figures.",
+        "\"For Official Development Assistance (ODA), for example, country contributions are based on GNI.\""
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows that aid allocations are based on GDP‑derived macro figures, reinforcing GDP’s primacy.",
+        "supporting_text": "International agreements such as the contributions to Official Development Assistance (ODA) ... are made on the basis of macroeconomic figures."
+      }
+    },
+    {
+      "name": "Economic growth",
+      "definition": "The central goal of macro‑economic policy, measured primarily by increases in Gross Domestic Product.",
+      "key_proponents": [],
+      "supporting_text": "Most importantly, the central goal of policy remained economic growth. Despite their different perspectives, both Keynesian and new classical economics are based on achieving economic growth.",
+      "id": "1b3abb54-ee1a-46ca-aeb2-08b00e2a43a7",
+      "variations": [
+        "Economic growth"
+      ],
+      "source_chunks": [
+        0,
+        12
+      ],
+      "supporting_texts": [
+        "Most importantly, the central goal of policy remained economic growth. Despite their different perspectives, both Keynesian and new classical economics are based on achieving economic growth.",
+        "\"If the economic growth is high, the media will qualify the developments as \\\"healthy\\\", \\\"buoyant\\\" or \\\"strong\\\". If the figure is stable, the economy is said to be \\\"anaemic\\\" or \\\"sluggish\\\". If GDP diminishes significantly, words such as \\\"slowdown\\\" and \\\"recession\\\" start to be used.\""
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Identifies economic growth as the central policy goal throughout the period.",
+        "supporting_text": "central goal of policy remained economic growth."
+      }
+    },
+    {
+      "name": "Well‑being and Sustainability Community",
+      "definition": "A collective of actors seeking a common language for well‑being and sustainability, exemplified by the goal of replacing GDP by 2030.",
+      "key_proponents": [
+        "Rutger Hoekstra"
+      ],
+      "supporting_text": "\"Replacing GDP by 2030 Towards a Common Language for the Well‑being and Sustainability Community\"",
+      "id": "7fa7feba-01f3-4d95-bc26-f1ca6ee9881b",
+      "variations": [
+        "Well‑being and Sustainability Community",
+        "well‑being and sustainability community"
+      ],
+      "source_chunks": [
+        0,
+        25
+      ],
+      "supporting_texts": [
+        "\"Replacing GDP by 2030 Towards a Common Language for the Well‑being and Sustainability Community\"",
+        "The well‑being and sustainability community is a loosely connected group of initiatives. ... There is no coherent and authoritative initiative that provides an overall community for well‑being and sustainability science."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Identified as the target audience for the new metric, enabling coordinated action toward sustainability.",
+        "supporting_text": "Replacing GDP by 2030 Towards a Common Language for the Well‑being and Sustainability Community"
+      }
+    },
+    {
+      "name": "GDP multinational (metaphor)",
+      "definition": "A metaphorical framing that likens GDP to a multinational corporation, emphasizing its worldwide presence, standardized product specifications, and strong brand perception.",
+      "key_proponents": [],
+      "supporting_text": "It is easy to argue that GDP has a lot in common with a multinational company. It has a worldwide presence and vast logistical infrastructure.",
+      "source_chunk": 1,
+      "id": "bf987cea-d125-4ab6-a098-82021f513d1c",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The metaphor highlights GDP’s entrenched, corporate‑like global dominance that resists change.",
+        "supporting_text": "It is only fringe political parties or small isolated countries (e.g., Bhutan) that have challenged the GDP multinational."
+      }
+    },
+    {
+      "name": "GDP brand",
+      "definition": "The perception of GDP as a recognizable ‘brand’ that serves as a proxy indicator for a country’s success, influencing public opinion and political discourse.",
+      "key_proponents": [],
+      "supporting_text": "People all over the world recognise the GDP \"brand\", which has become the proxy indicator for the \"success\" of a country.",
+      "source_chunk": 1,
+      "id": "4bec427a-b13b-4dfa-ae7c-833828e4e4a3",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The brand perception that “high GDP is good” sustains the status‑quo of growth‑centric policy.",
+        "supporting_text": "People all over the world recognise the GDP “brand”, which has become the proxy indicator for the “success” of a country."
+      }
+    },
+    {
+      "name": "Beyond‑GDP",
+      "definition": "A set of measurement methodologies that aim to incorporate the value of nature and wellbeing into economic decision‑making, moving beyond Gross Domestic Product as the sole metric of progress.",
+      "key_proponents": [
+        "Organisation for Economic Co‑operation and Development (OECD)",
+        "United Nations",
+        "World Bank",
+        "Bleys and Whitby (2015)",
+        "Hayden and Wilson (2016)",
+        "Costanza et al. (2017)"
+      ],
+      "supporting_text": "Beyond‑GDP started after the Second World War.",
+      "id": "18839ffa-3a91-4ef2-97ce-7e9e87105dd1",
+      "variations": [
+        "Beyond‑GDP"
+      ],
+      "source_chunks": [
+        2,
+        3,
+        6,
+        14,
+        16,
+        17,
+        19,
+        25
+      ],
+      "supporting_texts": [
+        "Beyond‑GDP started after the Second World War.",
+        "These are known under the collective term \"Beyond‑GDP\" but defining the boundaries of this field are difficult.",
+        "\"The Beyond‑GDP cottage industry… Beyond‑GDP initiatives have existed for several decades and are definitely on the upward curve of the innovation cycle. However, it is open for debate how high up the curve Beyond‑GDP currently is. There can be no doubt however that it is still far from its peak.\"",
+        "Since national income started in the 1930s, there has been criticism from economists and non‑economists. As a result, hundreds of alternatives have been proposed which would do a better job as the \"compass\" for society. They come from an eclectic set of theoretical and philosophical traditions (green accounting, subjective well‑being, indicator sets, composite indicators, etc.).",
+        "The final reasons that interest in GDP might diminish is because of \"Beyond‑GDP\" alternatives.",
+        "Chapter 4: Why Is Beyond‑GDP Not Successful?",
+        "The realisation that GDP does not measure crucial aspects of society has inspired many researchers and institutions to create alternative metrics. Their aim is to create a better \"compass\" for society than GDP which signals whether society is travelling in a right or wrong direction. The term \"Beyond‑GDP\" immediately reveals a problem: it is a negatively defined term which only makes clear what should not be measured.",
+        "Why have none of these Beyond-GDP initiatives managed to overcome the dominance of GDP?... The Beyond-GDP cottage industry cannot compete with this GDP multinational."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Represents the alternative metric framework aimed at re‑orienting economic decision‑making.",
+        "supporting_text": "Why have none of these Beyond‑GDP initiatives managed to overcome the dominance of GDP?"
+      }
+    },
+    {
+      "name": "green accounting",
+      "definition": "A family of indicators that adjust conventional GDP (or other SNA aggregates) by subtracting welfare‑reducing impacts such as environmental damage and adding monetary values for welfare‑enhancing dimensions like leisure time.",
+      "key_proponents": [
+        "economists",
+        "environmental economists",
+        "Stiglitz Report",
+        "green accounting movement"
+      ],
+      "supporting_text": "Among economists, the best known are \"green accounting\" indicators.",
+      "id": "2699828b-40c5-4e0b-a22f-147a8b579320",
+      "variations": [
+        "green accounting",
+        "Green accounting"
+      ],
+      "source_chunks": [
+        2,
+        6,
+        9,
+        19,
+        21,
+        23,
+        24
+      ],
+      "supporting_texts": [
+        "Among economists, the best known are \"green accounting\" indicators.",
+        "They come from an eclectic set of theoretical and philosophical traditions (green accounting, subjective well‑being, indicator sets, composite indicators, etc.).",
+        "\"there are many environmental economists that support green accounting.\"",
+        "the green accounting initiatives remained mostly academic.",
+        "This type of index takes a macroeconomic aggregate as the foundation but a number of additions and subtractions are made... This is referred to as \"green\" accounting, although usually it does more than correct for environmental damage.",
+        "At the same time the Stiglitz Report is highly critical of creating monetary indexes (i.e. Type 1). Methodologically speaking, the Stiglitz Report can be seen as a compromise between Type 1 and Type 3: the green accounting demand for a single indicator is dropped...",
+        "The idea of environmental accounts had already started in the 1970s… It was an opportunity for green accounting to be included in the SNA… The SEEA 1993 includes a green accounting indicator called the eco‑domestic product (EDP)… The SEEA is therefore a modular accounting framework with both a physical and monetary dimension."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The movement succeeded in elevating an index to a statistical standard.",
+        "supporting_text": "The green accounting movement has managed to get an index elevated to a statistical standard – the highest rung in the statistical pantheon."
+      }
+    },
+    {
+      "name": "Measure of Economic Well‑being (MEW)",
+      "definition": "A green‑accounting indicator that adjusts GDP to reflect economic well‑being by accounting for environmental and social factors.",
+      "key_proponents": [],
+      "supporting_text": "This approach includes indicators such as the Measure of Economic Well‑being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index.",
+      "source_chunk": 2,
+      "id": "5a0cf4dd-cc2e-4cc2-92fe-ac124cb628f4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "As a concept, MEW embodies the idea of re‑valuing economic activity for welfare.",
+        "supporting_text": "“This approach includes indicators such as the Measure of Economic Well‑being (MEW) …”"
+      }
+    },
+    {
+      "name": "Sustainable National Income (SNI)",
+      "definition": "A green‑accounting approach that treats environmental limits as the foundation of the methodology, quantifying the level of national income that could be achieved while staying within sustainability limits.",
+      "key_proponents": [
+        "Roefie Hueting"
+      ],
+      "supporting_text": "A different, rather unique, approach was proposed in 1974 by Roefie Hueting: Sustainable National Income. Instead of adding benefits and subtracting damages from existing macroeconomics indicators, the SNI approach took environmental limits as the foundation of the methodology.",
+      "id": "834bca28-b9cc-4273-8a43-cbccf1e1bafc",
+      "variations": [
+        "Sustainable National Income (SNI)"
+      ],
+      "source_chunks": [
+        2,
+        21
+      ],
+      "supporting_texts": [
+        "A different, rather unique, approach was proposed in 1974 by Roefie Hueting: Sustainable National Income. Instead of adding benefits and subtracting damages from existing macroeconomics indicators, the SNI approach took environmental limits as the foundation of the methodology.",
+        "This approach includes indicators such as the Measure of Economic Well‑being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Presents a novel, limit‑based approach to national income, expanding the conceptual toolkit for sustainable metrics.",
+        "supporting_text": "A different, rather unique, approach was proposed in 1974 by Roefie Hueting: Sustainable National Income… the indicator quantifies the question “how high would national income be if the current technology were used to stay within sustainability limits?”"
+      }
+    },
+    {
+      "name": "Index of Sustainable Economic Welfare (ISEW)",
+      "definition": "A green‑accounting composite that adjusts GDP by adding positive social factors and subtracting negative environmental impacts.",
+      "key_proponents": [],
+      "supporting_text": "This approach includes indicators such as the Measure of Economic Well‑being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index.",
+      "source_chunk": 2,
+      "id": "e481938a-2f33-4127-989d-d43b4ed1e930",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "ISEW concept signals a shift toward welfare‑oriented accounting.",
+        "supporting_text": "“… Index of Sustainable Economic Welfare (ISEW) … are adjusted by subtracting welfare‑reducing impacts …”"
+      }
+    },
+    {
+      "name": "Genuine Progress Indicator (GPI)",
+      "definition": "A green‑accounting metric that seeks to measure true economic progress by accounting for environmental degradation and social welfare.",
+      "key_proponents": [],
+      "supporting_text": "This approach includes indicators such as the Measure of Economic Well‑being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index.",
+      "id": "3db4d790-e254-4a7e-bdc7-058aa61910cd",
+      "variations": [
+        "Genuine Progress Indicator (GPI)"
+      ],
+      "source_chunks": [
+        2,
+        21
+      ],
+      "supporting_texts": [
+        "This approach includes indicators such as the Measure of Economic Well‑being (MEW), Sustainable National Income (SNI), Index of Sustainable Economic Welfare (ISEW), Genuine Progress Indicator (GPI), Genuine/Adjusted Net Savings or Wealth Index.",
+        "The ISEW later evolved into the Genuine Progress Indicator (GPI). The ISEW/GPI is used regularly in the economics literature and there have also been successes at the policy level. Two US states, Maryland and Vermont, have introduced official GPI measures..."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Adopted by state governments, demonstrating concrete policy implementation of alternative welfare metrics.",
+        "supporting_text": "Two US states, Maryland and Vermont, have introduced official GPI measures."
+      }
+    },
+    {
+      "name": "Genuine/Adjusted Net Savings",
+      "definition": "A green‑accounting indicator that adjusts net national savings for environmental depletion and investment in human capital.",
+      "key_proponents": [],
+      "supporting_text": "This approach includes indicators ... Genuine/Adjusted Net Savings or Wealth Index.",
+      "source_chunk": 2,
+      "id": "86a44973-38b9-432d-9afd-4a8fedcf76f4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Offers a green‑accounting aggregate that subtracts environmental damage, indicating a systemic alternative to conventional GDP.",
+        "supporting_text": "Genuine/Adjusted Net Savings"
+      }
+    },
+    {
+      "name": "Wealth Index",
+      "definition": "A green‑accounting measure that incorporates the value of natural and social capital into national wealth calculations.",
+      "key_proponents": [],
+      "supporting_text": "This approach includes indicators ... Genuine/Adjusted Net Savings or Wealth Index.",
+      "source_chunk": 2,
+      "id": "cbfbc9f7-1695-48dd-96dc-b30483a9c713",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Acts as a monetary proxy for welfare‑enhancing dimensions, suggesting a shift in how progress can be measured.",
+        "supporting_text": "Wealth Index"
+      }
+    },
+    {
+      "name": "subjective wellbeing (SWB)",
+      "definition": "A field of measurement that captures individuals’ self‑reported life satisfaction or happiness, typically using survey scales.",
+      "key_proponents": [],
+      "supporting_text": "The field of subjective wellbeing (SWB) includes approaches which provide data on the \"life satisfaction\" or \"happiness\" of a population.",
+      "source_chunk": 2,
+      "id": "5952b5c8-8b6b-4b46-85f9-730ac84618f6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces direct measures of life satisfaction, expanding the metric space beyond economic output.",
+        "supporting_text": "The field of subjective wellbeing (SWB) includes approaches which provide data on the “life satisfaction”"
+      }
+    },
+    {
+      "name": "ecological footprint",
+      "definition": "An indicator that quantifies the amount of biologically productive land and water area required to sustain a population’s consumption and absorb its wastes.",
+      "key_proponents": [
+        "World Wildlife Fund",
+        "Global Footprint Network"
+      ],
+      "supporting_text": "For example, the ecological footprint is cited frequently, including in the Living Planet Report of the World Wildlife Fund.",
+      "id": "102ffc9d-04e5-4de9-98b5-3cc9ca6d4a1e",
+      "variations": [
+        "ecological footprint",
+        "Ecological Footprint",
+        "Ecological footprint"
+      ],
+      "source_chunks": [
+        2,
+        17,
+        22
+      ],
+      "supporting_texts": [
+        "For example, the ecological footprint is cited frequently, including in the Living Planet Report of the World Wildlife Fund.",
+        "the ecological footprint is calculated for 186 countries by the Global Footprint Network",
+        "The ecological footprint also starts off with macroeconomic data, namely the consumption of a country. It then converts all the goods and services into the land area that is required to produce them… The ecological footprint is therefore equal to the biologically productive area needed to provide all the products that people use… In fact the World Wildlife Fund, which promotes the use of the ecological footprint, states that humanity needs 1.6 Earths to maintain its current consumption patterns."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights the current overshoot of planetary boundaries, exposing unsustainable consumption patterns.",
+        "supporting_text": "the ecological footprint is cited frequently, including in the Living Planet Report of the World Wildlife Fund"
+      }
+    },
+    {
+      "name": "Human Development Index (HDI)",
+      "definition": "A composite indicator that aggregates economic, health, and education dimensions into a single index, loosely based on Sen’s capability approach.",
+      "key_proponents": [
+        "United Nations"
+      ],
+      "supporting_text": "By far the most famous composite indicator is the Human Development Index. In 1990, the United Nations' Human Development Report used HDI for the first time.",
+      "id": "cf77bff8-b1e7-4a4e-aef4-49b048cd5e5f",
+      "variations": [
+        "Human Development Index (HDI)"
+      ],
+      "source_chunks": [
+        2,
+        17,
+        22
+      ],
+      "supporting_texts": [
+        "By far the most famous composite indicator is the Human Development Index. In 1990, the United Nations' Human Development Report used HDI for the first time.",
+        "There are \"composite indicators\" such as the Human Development Index (HDI), which aggregates health, education and GDP into a single index.",
+        "For example, the Human Development Index (HDI) is available for 188 countries at data.un.org."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "HDI provides a single, communicable metric that enables policy makers and the public to compare wellbeing beyond GDP.",
+        "supporting_text": "The HDI is probably one the most successful Beyond‑GDP initiatives… country rankings… capture media attention."
+      }
+    },
+    {
+      "name": "dashboard (set of indicators)",
+      "definition": "A collection of multiple, separately measured indicators—often called a \"dashboard\" or \"suite\"—used to capture the multidimensional nature of societal change rather than aggregating everything into a single figure.",
+      "key_proponents": [],
+      "supporting_text": "A popular approach in the grey literature is the use of a \"set of indicators\". This is also known as a \"dashboard\" or a \"suite\" of indicators.",
+      "source_chunk": 2,
+      "id": "bed4cc13-eb02-4cc0-aaab-20686c13232a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a practical tool for governments to monitor multiple sustainability dimensions simultaneously.",
+        "supporting_text": "This is also known as a “dashboard” or a “suite” of indicators"
+      }
+    },
+    {
+      "name": "indicator sets",
+      "definition": "A coordinated group of metrics that together track progress across several dimensions such as economy, health, education, environment, and social cohesion.",
+      "key_proponents": [],
+      "supporting_text": "Rather than providing a single index, these approaches assume that the multidimensional nature of societal change requires a multidimensional set of indicators.",
+      "id": "d52e05fe-8a29-433d-9715-96325ee8bb3d",
+      "variations": [
+        "indicator sets"
+      ],
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_texts": [
+        "Rather than providing a single index, these approaches assume that the multidimensional nature of societal change requires a multidimensional set of indicators.",
+        "They come from an eclectic set of theoretical and philosophical traditions (green accounting, subjective well‑being, indicator sets, composite indicators, etc.)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Indicator sets are mentioned as part of the diverse approaches that can operationalise Beyond‑GDP.",
+        "supporting_text": "They come from an eclectic set of theoretical and philosophical traditions (green accounting, subjective well‑being, indicator sets, composite indicators, etc.)."
+      }
+    },
+    {
+      "name": "Sustainable Development Goals (SDG)",
+      "definition": "A globally agreed set of 17 targets for sustainable development that functions as an indicator set for measuring progress on economic, social, and environmental dimensions.",
+      "key_proponents": [
+        "United Nations"
+      ],
+      "supporting_text": "The United Nations' Sustainable Development Goals (SDG), which are a global agreed set of targets for sustainable development, are probably the most famous example of an indicator set.",
+      "source_chunk": 2,
+      "id": "de36dbee-b4c0-43d2-8cbd-ac98a064594c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "A globally agreed target framework that mobilises collective effort toward sustainable outcomes.",
+        "supporting_text": "The United Nations’ Sustainable Development Goals (SDG), which are a global agreed set of targets for sustainable development"
+      }
+    },
+    {
+      "name": "Creative destruction",
+      "definition": "A process in Schumpeterian innovation theory where a new innovation emerges and replaces an older one, leading the older innovation into a phase of decline.",
+      "key_proponents": [
+        "Joseph Schumpeter"
+      ],
+      "supporting_text": "\"In Schumpeter's theory, a new innovation emerges and replaces the old innovation in a process called \\\"creative destruction\\\".\"",
+      "source_chunk": 3,
+      "id": "72dcc1bb-0d4e-4ef6-88b0-8bd0052ea8f8",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Describes the mechanism by which a new innovation can replace the old, enabling systemic transformation.",
+        "supporting_text": "In Schumpeter’s theory, a new innovation emerges and replaces the old innovation in a process called “creative destruction”."
+      }
+    },
+    {
+      "name": "Schumpeterian dream",
+      "definition": "The aspiration, held by many researchers, that Beyond‑GDP will eventually trigger the creative destruction of GDP, supplanting it as the dominant metric of economic performance.",
+      "key_proponents": [],
+      "supporting_text": "\"The Schumpeterian dream for many researchers is that Beyond‑GDP will one day lead to the creative destruction of GDP, as depicted on the right side of Figure 1.2.\"",
+      "source_chunk": 3,
+      "id": "59d87682-ca09-44c6-98ad-16719b14886d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Envisions the replacement of GDP by Beyond‑GDP, highlighting a possible future shift.",
+        "supporting_text": "The Schumpeterian dream for many researchers is that Beyond‑GDP will one day lead to the creative destruction of GDP."
+      }
+    },
+    {
+      "name": "Innovation stages (early adoption, take‑off, saturation, decline)",
+      "definition": "A sequence of phases that innovations typically pass through, as defined by Joseph Schumpeter: early adoption, take‑off, saturation, and decline.",
+      "key_proponents": [
+        "Joseph Schumpeter"
+      ],
+      "supporting_text": "\"Joseph Schumpeter, one of the pillars of thinking on innovation, defined the stages that innovations go through: early adoption, take‑off, saturation and decline.\"",
+      "source_chunk": 3,
+      "id": "b1ed20c7-3c4a-4576-8ab9-b98e101ae62c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Frames both GDP and Beyond‑GDP within a dynamic cycle, showing where change can occur.",
+        "supporting_text": "Joseph Schumpeter … defined the stages that innovations go through: early adoption, take‑off, saturation and decline."
+      }
+    },
+    {
+      "name": "Economic imperialism",
+      "definition": "A term used by other social sciences to describe the perceived encroachment of economics into fields traditionally studied by those disciplines.",
+      "key_proponents": [
+        "Social scientists (as critics)"
+      ],
+      "supporting_text": "This is sometimes referred to as \"economic imperialism\" by other social sciences that feel that economics is encroaching on their field.",
+      "source_chunk": 4,
+      "id": "6dc3c846-8a3c-42ba-91f1-83602d989384",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights criticism that economics is encroaching on other social‑science domains.",
+        "supporting_text": "This is sometimes referred to as “economic imperialism” by other social sciences that feel that economics is encroaching on their field."
+      }
+    },
+    {
+      "name": "austerity versus stimulation",
+      "definition": "A policy framing that represents the debate over whether fiscal austerity or fiscal stimulus should be employed in response to economic crises such as the 2008 financial crisis.",
+      "key_proponents": [],
+      "supporting_text": "This has been most visible to the general public in the debate over \"austerity versus stimulation\" in the wake of the financial crisis.",
+      "source_chunk": 5,
+      "id": "68a488e9-09a9-44a2-914f-3fd32eac40ef",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The debate frames public and policy discussions on post‑crisis recovery.",
+        "supporting_text": "debate over “austerity versus stimulation” in the wake of the financial crisis."
+      }
+    },
+    {
+      "name": "Subjective well‑being",
+      "definition": "Good mental states, including all of the various evaluations, positive and negative, that people make of their lives, and the affective reactions of people to their experiences.",
+      "key_proponents": [
+        "OECD"
+      ],
+      "supporting_text": "The OECD defines Subjective well‑being as: \"Good mental states, including all of the various evaluations, positive and negative, that people make of their lives, and the affective reactions of people to their experiences.\"",
+      "id": "73de9d35-522c-476f-8bde-79214bbac066",
+      "variations": [
+        "subjective well‑being",
+        "Subjective well‑being"
+      ],
+      "source_chunks": [
+        6,
+        20
+      ],
+      "supporting_texts": [
+        "The OECD defines Subjective well‑being as: \"Good mental states, including all of the various evaluations, positive and negative, that people make of their lives, and the affective reactions of people to their experiences.\"",
+        "They come from an eclectic set of theoretical and philosophical traditions (green accounting, subjective well‑being, indicator sets, composite indicators, etc.)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Core construct that underpins alternative wellbeing metrics.",
+        "supporting_text": "Subjective well‑being as: “Good mental states…"
+      }
+    },
+    {
+      "name": "composite indicators",
+      "definition": "A type of aggregated metric suggested within the Beyond‑GDP literature to combine multiple dimensions of societal progress.",
+      "key_proponents": [],
+      "supporting_text": "They come from an eclectic set of theoretical and philosophical traditions (green accounting, subjective well‑being, indicator sets, composite indicators, etc.).",
+      "source_chunk": 6,
+      "id": "aa3884ee-1d1c-4d0e-b350-c8f896caadc9",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Composite indicators are highlighted as another methodological strand supporting alternative wellbeing metrics.",
+        "supporting_text": "They come from an eclectic set of theoretical and philosophical traditions (green accounting, subjective well‑being, indicator sets, composite indicators, etc.)."
+      }
+    },
+    {
+      "name": "GDP multinational",
+      "definition": "The entrenched, institutionalised community built around GDP, characterized by a clear objective, a three‑layer structure (SNA, GDP indicator, macroeconomic policy), a common language, and deep formal and informal integration into governance and society.",
+      "key_proponents": [],
+      "supporting_text": "The GDP multinational, despite incessant criticism, has stood the test of time and has become deeply institutionalised.",
+      "id": "3462448d-104f-47f9-9361-4a21a9288079",
+      "variations": [
+        "GDP multinational"
+      ],
+      "source_chunks": [
+        6,
+        16
+      ],
+      "supporting_texts": [
+        "The GDP multinational, despite incessant criticism, has stood the test of time and has become deeply institutionalised.",
+        "The bottom line is that in the period after the war, the GDP multinational was created. The GDP multinational is a scientific community which has four important features. Firstly, it has a clear goal, which is to understand the sources of economic growth and to create policies to stimulate growth. Second, the community is structured around a science (macroeconomics), a statistical framework (SNA) and a key indicator (GDP)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Described as a powerful scientific community that sustains GDP’s dominance.",
+        "supporting_text": "\"The GDP multinational is a scientific community which has four important features.\""
+      }
+    },
+    {
+      "name": "Beyond-GDP",
+      "definition": "A field of research and policy that seeks to develop alternatives to Gross Domestic Product as the primary metric of economic performance, emphasizing well‑being and sustainability.",
+      "key_proponents": [],
+      "supporting_text": "Without a coherent community it is unlikely that the field of Beyond-GDP will ever be able to compete in terms of influence on society.",
+      "id": "665f4265-9d81-464e-8c88-6fe0deaa6432",
+      "variations": [
+        "Beyond-GDP"
+      ],
+      "source_chunks": [
+        8,
+        9
+      ],
+      "supporting_texts": [
+        "Without a coherent community it is unlikely that the field of Beyond-GDP will ever be able to compete in terms of influence on society.",
+        "\"Why is Beyond-GDP not successful?\" ... \"the current Beyond‑GDP situation will not lead to a positive outcome and why a new strategy is needed.\""
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The book argues that Beyond‑GDP is failing, diagnosing a key obstacle to a new wellbeing‑based economy.",
+        "supporting_text": "Why is Beyond‑GDP not successful? ... my aim is to present my view on why Beyond‑GDP is failing."
+      }
+    },
+    {
+      "name": "well‑being",
+      "definition": "The state of individuals and societies in terms of health, happiness, and overall quality of life, used as a central goal for measuring progress beyond economic output.",
+      "key_proponents": [],
+      "supporting_text": "Goal The WSS community's goal is to understand well‑being and sustainability and to create policies to enhance them.",
+      "source_chunk": 8,
+      "id": "47fd85e8-5cb1-4040-bc2f-f999082444b5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Positioned as a core dimension that the new accounting system seeks to capture.",
+        "supporting_text": "The WSS community’s goal is to understand well‑being and sustainability and to create policies to enhance them."
+      }
+    },
+    {
+      "name": "sustainability",
+      "definition": "The capacity of present generations to meet their needs without compromising the ability of future generations to meet theirs, forming a temporal dimension of progress measurement.",
+      "key_proponents": [],
+      "supporting_text": "Goal The WSS community's goal is to understand well‑being and sustainability and to create policies to enhance them.",
+      "source_chunk": 8,
+      "id": "cdfc0b7a-667e-4eda-a52d-3092886444fc",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Identified as a fundamental temporal dimension for the proposed metrics.",
+        "supporting_text": "The WSS community’s goal is to understand well‑being and sustainability and to create policies to enhance them."
+      }
+    },
+    {
+      "name": "sustainable development",
+      "definition": "A concept linking economic, environmental, and social issues, popularised by the Brundtland Report and widely adopted thereafter.",
+      "key_proponents": [
+        "Brundtland Report",
+        "United Nations World Commission on Environment and Development (WCED)",
+        "Gro Harlem Brundtland"
+      ],
+      "supporting_text": "By the end of the 1980s a new concept which linked economic, environmental and social issues emerged. The term \"sustainable development\", which was popularised by the Brundtland Report, has become ubiquitous ever since.",
+      "id": "6e012f82-07e3-4dd3-862a-687b66a1da98",
+      "variations": [
+        "sustainable development",
+        "Sustainable development"
+      ],
+      "source_chunks": [
+        8,
+        13,
+        19
+      ],
+      "supporting_texts": [
+        "By the end of the 1980s a new concept which linked economic, environmental and social issues emerged. The term \"sustainable development\", which was popularised by the Brundtland Report, has become ubiquitous ever since.",
+        "the institutionalisation of the term sustainable development as \"development that meets the needs of the present without compromising the ability of future generations to meet their own needs\".",
+        "Ever since then, sustainable development has been a catch‑all term which defines societal progress as the balanced development of the economic, environmental and social dimensions of society."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Integrates economic, environmental and social goals, indicating a shift toward holistic system design.",
+        "supporting_text": "a new concept which linked economic, environmental and social issues emerged. The term “sustainable development” ..."
+      }
+    },
+    {
+      "name": "Well‑being and Sustainability Science",
+      "definition": "A multidisciplinary scientific field that studies the determinants and measurement of human well‑being and ecological/economic sustainability.",
+      "key_proponents": [],
+      "supporting_text": "the scientific community requires three elements: a science (Well‑being and Sustainability Science), accounting framework (System of Global and National Accounts) and indicators (Quality and System Indicators).",
+      "source_chunk": 8,
+      "id": "e7fe25f6-f2c1-4e3e-bcc8-0fcd1fc59852",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Identified as a core scientific element needed to assess well‑being and sustainability.",
+        "supporting_text": "a science (Well‑being and Sustainability Science), accounting framework (System of Global and National Accounts) and indicators..."
+      }
+    },
+    {
+      "name": "System of Global and National Accounts (SGNA)",
+      "definition": "A neutral multidisciplinary measurement framework that provides a common language for accounting global environmental, societal, economic, distributional, and quality dimensions.",
+      "key_proponents": [],
+      "supporting_text": "the System of Global and National Accounts (SGNA).",
+      "id": "396ad6b1-eb0f-4a57-8a73-97e3f4b08d09",
+      "variations": [
+        "System of Global and National Accounts (SGNA)"
+      ],
+      "source_chunks": [
+        8,
+        9
+      ],
+      "supporting_texts": [
+        "the System of Global and National Accounts (SGNA).",
+        "\"the five sub-accounts of the System of Global and National Accounts (SGNA)\" and \"quality accounts and the (quality) indicators of the SGNA which will replace GDP by 2030.\""
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Repeated reference to SGNA underscores its role as the cornerstone of a post‑GDP accounting system.",
+        "supporting_text": "Chapter 10 ... indicators of the SGNA which will replace GDP by 2030."
+      }
+    },
+    {
+      "name": "Global Environmental Accounts (GENA)",
+      "definition": "One of the four system accounts within the SGNA that records and describes the state and flows of the global environment.",
+      "key_proponents": [],
+      "supporting_text": "The SGNA is subdivided into four \"system accounts\": 1. Global Environmental Accounts (GENA) ...",
+      "source_chunk": 8,
+      "id": "b393ee96-921c-4e25-9abb-0133653f20b8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Component of SGNA that enables systematic description of environmental systems worldwide.",
+        "supporting_text": "1. Global Environmental Accounts (GENA) ..."
+      }
+    },
+    {
+      "name": "Global Societal Accounts (GSA)",
+      "definition": "A system account in the SGNA that captures data on global societal structures and changes.",
+      "key_proponents": [],
+      "supporting_text": "... 2. Global Societal Accounts (GSA) ...",
+      "source_chunk": 8,
+      "id": "8bb64f85-2a42-4b8d-be5c-605f0ff537d8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Part of the SGNA structure that records societal system data globally.",
+        "supporting_text": "2. Global Societal Accounts (GSA) ..."
+      }
+    },
+    {
+      "name": "Global Economic Accounts (GECA)",
+      "definition": "A system account in the SGNA that records global economic activity and flows.",
+      "key_proponents": [],
+      "supporting_text": "... 3. Global Economic Accounts (GECA) ...",
+      "source_chunk": 8,
+      "id": "8352fda2-137c-41e7-9234-9d0b3804cdc9",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides a global accounting layer for economic activity, supporting coordinated measurement.",
+        "supporting_text": "3. Global Economic Accounts (GECA) ..."
+      }
+    },
+    {
+      "name": "Global Distribution Accounts (GDA)",
+      "definition": "A system account in the SGNA that tracks the distribution of resources and outcomes across the global population.",
+      "key_proponents": [],
+      "supporting_text": "... 4. Global Distribution Accounts (GDA) ...",
+      "source_chunk": 8,
+      "id": "673ee6e4-6fc6-43da-a489-9fdf36042185",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Captures distributional information within the SGNA, enabling equity analysis.",
+        "supporting_text": "4. Global Distribution Accounts (GDA) ..."
+      }
+    },
+    {
+      "name": "Global Quality Accounts (GQA)",
+      "definition": "A quality‑assessment account within the SGNA that evaluates whether environmental, societal and economic systems are improving or deteriorating.",
+      "key_proponents": [],
+      "supporting_text": "In addition, there is a fifth \"quality account\": 5. Global Quality Accounts (GQA)",
+      "source_chunk": 8,
+      "id": "87f69f68-5308-4bdc-8d9c-0a0891ceff24",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Supplies quality‑assessment criteria that can serve as alternatives to GDP.",
+        "supporting_text": "5. Global Quality Accounts (GQA) ..."
+      }
+    },
+    {
+      "name": "stock‑flow accounting",
+      "definition": "A neutral concept used in the system accounts to describe the levels (stocks) and changes (flows) of resources within environmental, societal and economic systems.",
+      "key_proponents": [],
+      "supporting_text": "The system accounts are based on neutral concepts which exist in many scientific disciplines: stock‑flow accounting, networks and limits.",
+      "source_chunk": 8,
+      "id": "e7c4aef6-58b5-4994-b2a7-a4c42a36640c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Neutral concept underpinning SGNA system accounts, enabling consistent measurement.",
+        "supporting_text": "The system accounts are based on neutral concepts ... stock‑flow accounting, networks and limits."
+      }
+    },
+    {
+      "name": "networks and limits",
+      "definition": "Concepts that capture the interconnections among system components and the boundaries within which they operate, used across scientific disciplines in the SGNA.",
+      "key_proponents": [],
+      "supporting_text": "The system accounts are based on neutral concepts which exist in many scientific disciplines: stock‑flow accounting, networks and limits.",
+      "source_chunk": 8,
+      "id": "612e4020-64ed-41fc-b008-6ada25442ec8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Another foundational concept for SGNA, supporting cross‑disciplinary description of systems.",
+        "supporting_text": "The system accounts are based on neutral concepts ... stock‑flow accounting, networks and limits."
+      }
+    },
+    {
+      "name": "welfare economics",
+      "definition": "A quality‑assessment approach that evaluates societal well‑being based on economic welfare criteria.",
+      "key_proponents": [],
+      "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, exergy, resilience, etc.)",
+      "source_chunk": 8,
+      "id": "82fa8b3d-fda9-4d48-83fa-d19900576812",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "One of several quality‑assessment approaches that can shift how system performance is judged.",
+        "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, ... ) provide vital criteria..."
+      }
+    },
+    {
+      "name": "capital approach",
+      "definition": "A quality‑assessment perspective that treats natural, social and economic assets as capital stocks to be maintained over time.",
+      "key_proponents": [],
+      "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, exergy, resilience, etc.)",
+      "source_chunk": 8,
+      "id": "8057da68-db66-41d2-ab6e-be5d5d33e80c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Offers an alternative lens for evaluating natural and social capital, expanding assessment possibilities.",
+        "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, ... ) provide vital criteria..."
+      }
+    },
+    {
+      "name": "Hedonic psychology",
+      "definition": "A field of research that focuses on measuring affective experiences (positive and negative emotions) to assess wellbeing, often using moment‑to‑moment emotional evaluations.",
+      "key_proponents": [
+        "Daniel Kahneman"
+      ],
+      "supporting_text": "This type of well‑being research is advocated by a field called hedonic psychology, the proponents of which include Daniel Kahneman, a psychologist, one of the founders of behavioural economics and winner of the Nobel Prize in economics in 2002.",
+      "id": "3c6a7a53-1997-4734-b253-6dd3538a0821",
+      "variations": [
+        "hedonic psychology",
+        "Hedonic psychology"
+      ],
+      "source_chunks": [
+        8,
+        20
+      ],
+      "supporting_texts": [
+        "This type of well‑being research is advocated by a field called hedonic psychology, the proponents of which include Daniel Kahneman, a psychologist, one of the founders of behavioural economics and winner of the Nobel Prize in economics in 2002.",
+        "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, exergy, resilience, etc.)"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a conceptual basis for measuring emotions, enabling alternative well‑being metrics beyond GDP.",
+        "supporting_text": "This type of approach is advocated by a field called hedonic psychology, the proponents of which include Daniel Kahneman..."
+      }
+    },
+    {
+      "name": "happiness economics",
+      "definition": "An economic sub‑field that incorporates measures of happiness and life satisfaction into assessments of societal progress.",
+      "key_proponents": [],
+      "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, exergy, resilience, etc.)",
+      "source_chunk": 8,
+      "id": "7c22a439-11db-43c9-8c9e-400ddd4fe4b6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a non‑monetary dimension for evaluating well‑being within the SGNA framework.",
+        "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, ... ) provide vital criteria..."
+      }
+    },
+    {
+      "name": "behavioural economics",
+      "definition": "A discipline that integrates insights from psychology about human decision‑making into economic analysis of well‑being.",
+      "key_proponents": [],
+      "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, exergy, resilience, etc.)",
+      "source_chunk": 8,
+      "id": "b11dddd2-3820-4b5e-99da-4424e3379c04",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adds behavioural insights to quality metrics, expanding the analytical toolkit.",
+        "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, ... ) provide vital criteria..."
+      }
+    },
+    {
+      "name": "neuro‑economics",
+      "definition": "A field that combines neuroscience, psychology and economics to understand the brain mechanisms underlying economic choices and well‑being.",
+      "key_proponents": [],
+      "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, exergy, resilience, etc.)",
+      "source_chunk": 8,
+      "id": "546b67cd-3de2-4fda-b735-79a9a297ade2",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Mentioned as part of quality‑assessment approaches that help judge system changes.",
+        "supporting_text": "behavioural/neuro‑economics, exergy, resilience, etc.) provide vital criteria"
+      }
+    },
+    {
+      "name": "exergy",
+      "definition": "A thermodynamic concept used as a quality indicator to assess the useful energy available in natural and economic systems.",
+      "key_proponents": [],
+      "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, exergy, resilience, etc.)",
+      "source_chunk": 8,
+      "id": "e637305b-4b50-4c3d-ae87-af73bc5ac097",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Cited as a quality‑assessment method to evaluate whether systems improve or deteriorate.",
+        "supporting_text": "behavioural/neuro‑economics, exergy, resilience, etc.) provide vital criteria"
+      }
+    },
+    {
+      "name": "resilience",
+      "definition": "A quality‑assessment perspective that evaluates the capacity of systems to absorb disturbances and retain essential functions.",
+      "key_proponents": [],
+      "supporting_text": "Each of the quality assessment approaches (welfare economics, capital approach, methods from hedonic psychology/happiness economics/ behavioural/neuro‑economics, exergy, resilience, etc.)",
+      "source_chunk": 8,
+      "id": "c7ced301-f724-46d6-aac3-a3350e86af45",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Listed among indicators that reveal system dynamics and potential shifts.",
+        "supporting_text": "behavioural/neuro‑economics, exergy, resilience, etc.) provide vital criteria"
+      }
+    },
+    {
+      "name": "Sustainable Development Goals (SDGs)",
+      "definition": "A universal set of 17 goals adopted by United Nations member states to guide global sustainable development efforts, conceived at the Rio+20 conference.",
+      "key_proponents": [
+        "United Nations",
+        "Governments of the world",
+        "Rio+20 Conference"
+      ],
+      "supporting_text": "The main legacy of that conference is that the Sustainable Development Goals were conceived at that conference.",
+      "id": "c49faa2f-c544-4566-bf69-59f2beb8e322",
+      "variations": [
+        "Sustainable Development Goals (SDGs)"
+      ],
+      "source_chunks": [
+        8,
+        9,
+        19,
+        22,
+        23
+      ],
+      "supporting_texts": [
+        "The main legacy of that conference is that the Sustainable Development Goals were conceived at that conference.",
+        "a prime candidate would be the Sustainable Development Goals, a list of 169 targets that were adopted by all member states of the UN in 2015.",
+        "\"The SDG process also has a lot of institutional support.\"",
+        "Non-conceptual Indicator Sets (e.g., Sustainable Development Goals)",
+        "By far the most influential initiative is the Sustainable Development Goals, introduced in 2015. This was a worldwide process where the governments of the world agreed to define 17 goals and 169 targets for sustainable development."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Global agenda that achieved unprecedented harmonisation of sustainability targets.",
+        "supporting_text": "By far the most influential initiative is the Sustainable Development Goals, introduced in 2015."
+      }
+    },
+    {
+      "name": "Subjective Well‑Being (SWB) measures",
+      "definition": "Metrics that assess individuals' self‑reported wellbeing, which have attracted a large following as a possible replacement for GDP.",
+      "key_proponents": [],
+      "supporting_text": "\"some might prefer SWB measures, which have garnered a large following.\"",
+      "source_chunk": 9,
+      "id": "ab3d9d8d-f4c0-4cc0-a1e9-9bc932fb80aa",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "SWB measures are cited as a popular but distinct approach, reflecting the current plurality of metrics.",
+        "supporting_text": "some might prefer SWB measures, which have garnered a large following."
+      }
+    },
+    {
+      "name": "post‑GDP world",
+      "definition": "A envisioned future in which economic decision‑making is no longer centered on GDP but on broader wellbeing and sustainability criteria.",
+      "key_proponents": [],
+      "supporting_text": "\"shift the conversation towards the process of creating a post‑GDP world\"",
+      "source_chunk": 9,
+      "id": "3a72a7be-f727-44fd-8aab-6c4051e29092",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The vision of a post‑GDP world is presented as the desired future state, indicating a systemic shift.",
+        "supporting_text": "my hope is that this will shift the conversation towards the process of creating a post‑GDP world."
+      }
+    },
+    {
+      "name": "well‑being and sustainability",
+      "definition": "A guiding principle calling for new policies and a new compass that prioritize human wellbeing and ecological sustainability over traditional GDP growth.",
+      "key_proponents": [],
+      "supporting_text": "\"new compass and policies which are based on well‑being and sustainability\"",
+      "source_chunk": 9,
+      "id": "cadde855-2599-4cac-97bf-2c5e76a44514",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The text calls for policies based on well‑being and sustainability, aiming to re‑frame public discourse.",
+        "supporting_text": "people ... require a new compass and policies which are based on well‑being and sustainability."
+      }
+    },
+    {
+      "name": "hegemony of growth",
+      "definition": "An era in which economic growth, measured primarily by GDP, dominates societal values and policy priorities.",
+      "key_proponents": [],
+      "supporting_text": "To understand how society has come to live an era of \"hegemony of growth\"",
+      "source_chunk": 11,
+      "id": "ecbd586d-1249-4159-a67b-e662cdc4f161",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The concept is used to label the prevailing dominance of growth‑centric metrics in society.",
+        "supporting_text": "To understand how society has come to live an era of “hegemony of growth”."
+      }
+    },
+    {
+      "name": "comprehensive production system",
+      "definition": "A national income accounting approach that includes all goods and services in the measurement of economic activity.",
+      "key_proponents": [
+        "William Petty",
+        "William King"
+      ],
+      "supporting_text": "Petty and King's systems included all goods and services, which is known as the comprehensive production system.",
+      "source_chunk": 11,
+      "id": "55830262-6471-4144-bb15-7004567a0284",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Highlights an alternative definition of economic output that could enable a shift away from narrow growth measures.",
+        "supporting_text": "Petty and King’s systems ... known as the comprehensive production system."
+      }
+    },
+    {
+      "name": "physiocratic productive sector view",
+      "definition": "The belief, held by the Physiocrats, that only agriculture should be considered a productive sector of the economy.",
+      "key_proponents": [],
+      "supporting_text": "Later on, the Physiocrats believed that only agriculture was to be seen as a productive sector.",
+      "source_chunk": 11,
+      "id": "e9a5e238-3cb2-4462-9357-856646270b35",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows a historic narrow definition of productivity limited to agriculture, excluding broader natural values.",
+        "supporting_text": "Physiocrats believed that only agriculture was to be seen as a productive sector."
+      }
+    },
+    {
+      "name": "production boundary",
+      "definition": "The conceptual limit that determines which economic activities are counted as productive in national accounts.",
+      "key_proponents": [],
+      "supporting_text": "The current national accounts are also based on this production boundary.",
+      "source_chunk": 11,
+      "id": "43e37159-4998-4b99-93e9-7c62b13026cf",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Defines what economic activity counts, shaping exclusion of many ecosystem services from GDP.",
+        "supporting_text": "The current national accounts are also based on this production boundary."
+      }
+    },
+    {
+      "name": "Studenski's Paradox",
+      "definition": "The observation that the development of national income estimates accelerates during periods of political and economic stress and slows down during tranquil periods.",
+      "key_proponents": [
+        "Studenski"
+      ],
+      "supporting_text": "Studenski does however make an intriguing observation: \"It is noteworthy that the development of national income estimates has been particularly rapid during periods of political and economic stress and, on the other hand, has been sluggish during periods of tranquillity.\"",
+      "source_chunk": 11,
+      "id": "c987b8d1-a6d8-4ffe-a671-1f5de3bfc2d3",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Identifies the conditions under which national accounting expands, suggesting leverage points for new nature‑centric metrics.",
+        "supporting_text": "Studenski’s Paradox: development of national income estimates has been particularly rapid during periods of political and economic stress and ... sluggish during periods of tranquillity."
+      }
+    },
+    {
+      "name": "Harrod‑Domar model",
+      "definition": "An economic growth model that stresses the importance of investment and capital accumulation for achieving full employment.",
+      "key_proponents": [],
+      "supporting_text": "The Harrod-Domar model stressed the importance of economic growth for full employment.",
+      "source_chunk": 11,
+      "id": "e4a23fc1-fb1a-47de-9748-a1c50e328af5",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Emphasises growth as a policy goal, reinforcing a paradigm that can sideline ecological wellbeing.",
+        "supporting_text": "The Harrod–Domar model stressed the importance of economic growth for full employment."
+      }
+    },
+    {
+      "name": "Solow‑Swan growth model",
+      "definition": "A neoclassical model of economic growth that explains long‑run output growth through capital accumulation, labour, and technological progress.",
+      "key_proponents": [
+        "Robert Solow"
+      ],
+      "supporting_text": "Another classic is the Solow‑Swan growth model, which followed a couple of years later.",
+      "source_chunk": 11,
+      "id": "7dd18e07-4c7e-48e7-9d00-bfac2d265111",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Provides a theoretical foundation for perpetual growth, which can conflict with planetary limits.",
+        "supporting_text": "Another classic is the Solow–Swan growth model, which followed a couple of years later."
+      }
+    },
+    {
+      "name": "Golden Age (post‑war economic boom)",
+      "definition": "The period of extraordinary economic growth in the 1950s‑60s, referred to as the Golden Age (or Trente Glorieuses, Wirtschaftswunder).",
+      "key_proponents": [],
+      "supporting_text": "This period is so extraordinary in terms of economic growth that the French refer to it as the Trente Glorieuses, the Germans call it the Wirtshaftswunder and English speakers refer to it as the Golden Age.",
+      "source_chunk": 11,
+      "id": "df8c5816-017b-4d59-898d-1012b5af1023",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights an era where rapid growth became the normative benchmark, marginalising alternative wellbeing measures.",
+        "supporting_text": "This period is so extraordinary in terms of economic growth that the French refer to it as the Trente Glorieuses… the Golden Age."
+      }
+    },
+    {
+      "name": "big government",
+      "definition": "The post‑World War II expansion of state authority and involvement in economic planning, social welfare, and international governance.",
+      "key_proponents": [],
+      "supporting_text": "Government, at both national and international level, turned into \"big government\".",
+      "source_chunk": 11,
+      "id": "b15ba0df-2048-4793-aa8d-176709c7d864",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Expansion of state capacity enabled systematic data collection and policy coordination, a prerequisite for new sustainability metrics.",
+        "supporting_text": "Government, at both national and international level, turned into “big government”."
+      }
+    },
+    {
+      "name": "human capital",
+      "definition": "A framing of education and skills development as an economic asset that contributes to growth and productivity.",
+      "key_proponents": [
+        "Gary Becker"
+      ],
+      "supporting_text": "Education policy became \"human capital\" policy.",
+      "source_chunk": 11,
+      "id": "3ef3a977-53e3-4204-9eec-5425ed4826f7",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Reframes education and social domains purely in economic terms, sidelining intrinsic ecological values.",
+        "supporting_text": "Education policy became “human capital” policy."
+      }
+    },
+    {
+      "name": "Expand or Die",
+      "definition": "A slogan encapsulating the Cold‑War imperative that economies must continuously grow to survive geopolitical competition.",
+      "key_proponents": [],
+      "supporting_text": "This was symbolised by the term \"Expand or Die\".",
+      "source_chunk": 11,
+      "id": "2560f979-2f3b-4223-b306-31d3291bc634",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Captures the Cold‑War growth imperative that entrenches GDP‑centric thinking over ecological limits.",
+        "supporting_text": "It was symbolised by the term “Expand or Die”. Economic growth became imperative."
+      }
+    },
+    {
+      "name": "post‑truth era",
+      "definition": "A cultural context in which objective facts are less influential in shaping public opinion than appeals to emotion and personal belief, often exemplified by the spread of \"alternative facts\".",
+      "key_proponents": [],
+      "supporting_text": "some might argue that populist movements are also threatening this type of reasoning by pointing to \"alternative facts\", indicative of the \"post-truth era\".",
+      "source_chunk": 11,
+      "id": "62235224-9c0a-4232-ae4a-7d640bf68607",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Erodes trust in statistical evidence needed for credible nature‑based accounting reforms.",
+        "supporting_text": "populist movements are also threatening this type of reasoning by pointing to “alternative facts”, indicative of the “post‑truth era”."
+      }
+    },
+    {
+      "name": "Keynesian policy",
+      "definition": "A macro‑economic approach that was dominant after World War II, focused on using government intervention to achieve economic growth and manage the economy.",
+      "key_proponents": [],
+      "supporting_text": "This dented the confidence of the economists in Keynesian policy and invigorated different schools of economic thought...",
+      "source_chunk": 12,
+      "id": "a36f5de2-5c56-4d1c-a64d-ba73c40b8932",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The passage does not explicitly discuss Keynesian policy, so its significance cannot be determined.",
+        "supporting_text": ""
+      }
+    },
+    {
+      "name": "New classical school",
+      "definition": "A school of economic thought that emerged in the 1970s, emphasizing supply‑side factors, smaller government, and rational expectations.",
+      "key_proponents": [
+        "Milton Friedman",
+        "Robert Lucas"
+      ],
+      "supporting_text": "This dented the confidence of the economists in Keynesian policy and invigorated different schools of economic thought, such as the new classical school or the monetarists. Names like Milton Friedman (Nobel Prize 1976) and Robert Lucas (Nobel Prize 1995) spring to mind.",
+      "source_chunk": 12,
+      "id": "521f2d82-b507-4236-b363-f31790ea9405",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Mentioned as a dominant school that shifted focus away from growth‑centric Keynesianism.",
+        "supporting_text": "invigorated different schools of economic thought, such as the new classical school or the monetarists."
+      }
+    },
+    {
+      "name": "Monetarists",
+      "definition": "An economic paradigm that stresses the role of money supply management in controlling inflation and stabilising the economy.",
+      "key_proponents": [
+        "Milton Friedman"
+      ],
+      "supporting_text": "This dented the confidence of the economists in Keynesian policy and invigorated different schools of economic thought, such as the new classical school or the monetarists.",
+      "source_chunk": 12,
+      "id": "3403767a-0dc4-4c37-9ea7-8fed81d1ae47",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Their rise signals a move toward supply‑side, growth‑first policies.",
+        "supporting_text": "invigorated different schools of economic thought, such as the new classical school or the monetarists."
+      }
+    },
+    {
+      "name": "Mixed economy",
+      "definition": "The post‑war economic model that combined state intervention with market mechanisms to drive growth.",
+      "key_proponents": [],
+      "supporting_text": "The post‑war \"mixed economy\" growth machine started to look fragile.",
+      "source_chunk": 12,
+      "id": "efd21ffa-8094-4001-88f4-f59b3241bc8f",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Described as becoming fragile, highlighting weaknesses in the prevailing system.",
+        "supporting_text": "post‑war “mixed economy” growth machine started to look fragile."
+      }
+    },
+    {
+      "name": "Supply‑side economics",
+      "definition": "A policy orientation that focuses on increasing the productive capacity of the economy, often through smaller government and deregulation.",
+      "key_proponents": [],
+      "supporting_text": "This led to different economic policies that looked more at the supply side of the economy and smaller government, increasing deregulation and privatisation.",
+      "source_chunk": 12,
+      "id": "b2733f4c-b0fd-4d06-b739-2442ebcf4458",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Identified as the policy direction that reduced emphasis on welfare and environmental concerns.",
+        "supporting_text": "different economic policies that looked more at the supply side of the economy"
+      }
+    },
+    {
+      "name": "Deregulation",
+      "definition": "The reduction or removal of government rules and controls over economic activity, promoted as a way to boost efficiency.",
+      "key_proponents": [],
+      "supporting_text": "This led to different economic policies that looked more at the supply side of the economy and smaller government, increasing deregulation and privatisation.",
+      "source_chunk": 12,
+      "id": "fa329633-0c6d-4655-a72a-19246fb72a7b",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Associated with political moves that weakened regulatory safeguards for nature.",
+        "supporting_text": "smaller government, increasing deregulation and privatisation."
+      }
+    },
+    {
+      "name": "Privatisation",
+      "definition": "The transfer of ownership of state‑owned enterprises to the private sector, presented as a means to improve performance.",
+      "key_proponents": [],
+      "supporting_text": "This led to different economic policies that looked more at the supply side of the economy and smaller government, increasing deregulation and privatisation.",
+      "source_chunk": 12,
+      "id": "0187973f-a9b5-4c5b-849e-0b5615becba7",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows the shift toward deregulation and privatisation as a dominant economic approach.",
+        "supporting_text": "increasing deregulation and privatisation."
+      }
+    },
+    {
+      "name": "GDP (Gross Domestic Product)",
+      "definition": "A monetary measure of the total value of all goods and services produced within a country, traditionally used as the main indicator of economic performance.",
+      "key_proponents": [],
+      "supporting_text": "The importance of GDP did not diminish.",
+      "source_chunk": 12,
+      "id": "dc676219-1e38-4ab8-a1aa-9fd463a5f0fb",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Emphasises the continued dominance of GDP as a metric of welfare.",
+        "supporting_text": "importance of GDP did not diminish."
+      }
+    },
+    {
+      "name": "Contested hegemony",
+      "definition": "A period in which the dominance of GDP‑centric growth thinking was increasingly challenged by criticism from other academic fields and social movements.",
+      "key_proponents": [],
+      "supporting_text": "Aside from economic factors, other fields were also undermining trust in economics and GDP. The criticism from other domains grew significantly in the period of \"contested hegemony\".",
+      "source_chunk": 12,
+      "id": "22878ba6-d942-429c-8822-99c80a03d5a4",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Labels the era as one where economic dominance was being questioned.",
+        "supporting_text": "period of “contested hegemony”."
+      }
+    },
+    {
+      "name": "Great Moderation",
+      "definition": "A period beginning in the mid‑1980s during which key macro‑economic variables such as GDP growth, industrial production, unemployment and inflation showed reduced volatility.",
+      "key_proponents": [
+        "Alan Greenspan"
+      ],
+      "supporting_text": "One other prominent voice of that period was Alan Greenspan, the Chairman of the Federal Reserve Bank, who was credited with the \"Great Moderation\", a period which started in the mid‑1980s when economic variables such as GDP growth, industrial production, unemployment and inflation began to decline in volatility.",
+      "source_chunk": 12,
+      "id": "e68bf7e0-aed4-4a06-86cb-699dc25919a4",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Describes a macro‑economic condition of reduced volatility.",
+        "supporting_text": "credited with the “Great Moderation”, a period ... began to decline in volatility."
+      }
+    },
+    {
+      "name": "Affluent Society",
+      "definition": "A critique of post‑war prosperity that highlighted the gap between private wealth and public squalor and argued that GDP was an inadequate measure of welfare.",
+      "key_proponents": [
+        "John Kenneth Galbraith"
+      ],
+      "supporting_text": "Influential was the Affluent Society by John Kenneth Galbraith, which addressed the inequality of \"private wealth and public squalor\" and the inadequacy of GDP as a measure of welfare.",
+      "source_chunk": 12,
+      "id": "e8e6279e-3970-4306-8db1-983f563687d9",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Critiques GDP and highlights alternative welfare considerations.",
+        "supporting_text": "Affluent Society by John Kenneth Galbraith ... the inadequacy of GDP as a measure of welfare."
+      }
+    },
+    {
+      "name": "environmental movement",
+      "definition": "A collective mobilization that began gaining prominence in the 1950s‑1960s, raising awareness of environmental problems and advocating for action.",
+      "key_proponents": [],
+      "supporting_text": "The environmental movement started to gain prominence in the 1950s-1960s.",
+      "source_chunk": 13,
+      "id": "c99cc626-2aba-4e2a-8072-3ef96321ad26",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Serves as the organisational backbone for coordinated environmental advocacy.",
+        "supporting_text": "The environmental movement started to gain prominence in the 1950s–1960s."
+      }
+    },
+    {
+      "name": "environmental economics",
+      "definition": "An academic field that emerged in the 1970s as a separate branch of economics, focusing on the analysis of environmental policies, modelling, and scenario studies.",
+      "key_proponents": [],
+      "supporting_text": "There were also scientific advances such as the emergence of environmental economics as a separate field in economics in the 1970s.",
+      "id": "cf109505-9cce-479d-afe7-28a303d083fb",
+      "variations": [
+        "environmental economics",
+        "Environmental economics"
+      ],
+      "source_chunks": [
+        13,
+        19
+      ],
+      "supporting_texts": [
+        "There were also scientific advances such as the emergence of environmental economics as a separate field in economics in the 1970s.",
+        "The report also stimulated attention to the relationship between growth, resources and environment in the young field of environmental economics."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Links economic analysis with ecological outcomes, opening pathways for systemic policy reform.",
+        "supporting_text": "the emergence of environmental economics as a separate field in economics in the 1970s."
+      }
+    },
+    {
+      "name": "RAINS model",
+      "definition": "The Regional Acidification Information and Simulation model, used to facilitate acid‑rain negotiations in Europe.",
+      "key_proponents": [],
+      "supporting_text": "For example, the RAINS (Regional Acidification Information and Simulation) model played an integral part in facilitating the acid rain negotiations in Europe.",
+      "source_chunk": 13,
+      "id": "fdb46ddc-7570-401a-8af7-241fcbf6e9ad",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided a technical tool that enabled coordinated negotiations on acid‑rain mitigation.",
+        "supporting_text": "the RAINS (Regional Acidification Information and Simulation) model played an integral part in facilitating the acid rain negotiations in Europe."
+      }
+    },
+    {
+      "name": "post‑Keynesians",
+      "definition": "A school of economists who favoured a return to demand stimulation in the aftermath of the 2008 financial crisis.",
+      "key_proponents": [],
+      "supporting_text": "Some economists favoured a return to demand stimulation (post‑Keynesians) while the new classical economics supported austerity measures.",
+      "source_chunk": 14,
+      "id": "34535e03-743f-4094-9f30-3fca02c08c74",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights the demand‑stimulus camp in the post‑crisis macroeconomic divide.",
+        "supporting_text": "Some economists favoured a return to demand stimulation (post‑Keynesians) while the new classical economics supported austerity measures."
+      }
+    },
+    {
+      "name": "new classical economics",
+      "definition": "A school of economists that supported austerity measures following the 2008 financial crisis.",
+      "key_proponents": [],
+      "supporting_text": "Some economists favoured a return to demand stimulation (post‑Keynesians) while the new classical economics supported austerity measures.",
+      "source_chunk": 14,
+      "id": "d42bd315-87b5-4ba6-bf3e-f7ac81697487",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows the austerity‑focused side of the macroeconomic rift after the crisis.",
+        "supporting_text": "Some economists favoured a return to demand stimulation (post‑Keynesians) while the new classical economics supported austerity measures."
+      }
+    },
+    {
+      "name": "freshwater versus saltwater economists",
+      "definition": "A rift in macroeconomics described as a divide between economists located near the Great Lakes (freshwater) and those on the East/West coasts (saltwater).",
+      "key_proponents": [
+        "Paul Krugman"
+      ],
+      "supporting_text": "Krugman terms this rift freshwater versus saltwater economists, referring to the proximity of the universities of the two factions to the Great Lakes versus the East/West coasts of the United States.",
+      "source_chunk": 14,
+      "id": "8cc6671c-c15c-4a6d-8bba-cef431f96607",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Uses a geographic metaphor to expose the deep split among economists.",
+        "supporting_text": "Krugman terms this rift freshwater versus saltwater economists, referring to the proximity of the universities of the two factions to the Great Lakes versus the East/West coasts of the United States."
+      }
+    },
+    {
+      "name": "free trade",
+      "definition": "The idea that free trade is automatically good for society, often treated as a natural law in economic policy.",
+      "key_proponents": [],
+      "supporting_text": "It is seen almost as a natural law that free trade is automatically good for society.",
+      "source_chunk": 14,
+      "id": "f2e7b42e-1210-45c0-866e-675f332a4fb1",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Public protest against TTIP shows shifting societal acceptance of free‑trade assumptions.",
+        "supporting_text": "Popular protest against the Transatlantic Trade and Investment Partnership (TTIP) ... shows that society’s trust in this economic rationale is no longer automatic."
+      }
+    },
+    {
+      "name": "globalisation",
+      "definition": "The process of increasing economic integration and deregulation, which has faced growing popular discontent after the 2008 crisis.",
+      "key_proponents": [],
+      "supporting_text": "Popular discontent with policies such as deregulation and globalisation is growing in the wake of the 2008 crisis.",
+      "source_chunk": 14,
+      "id": "98e6d771-a662-4614-91a7-c76e767ac8a0",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Notes growing discontent with globalisation after the 2008 crisis.",
+        "supporting_text": "Popular discontent with policies such as deregulation and globalisation is growing in the wake of the 2008 crisis."
+      }
+    },
+    {
+      "name": "big data",
+      "definition": "A generic term for the widespread availability of electronic data generated by automation and the internet, which may transform the speed and granularity of economic statistics like GDP.",
+      "key_proponents": [],
+      "supporting_text": "By far the biggest unknown for GDP is the emergence of \"big data\". This is a generic term which refers to the widespread availability of electronic data which has come about because of automation of registers and the internet.",
+      "source_chunk": 14,
+      "id": "f9dd54e0-52d8-4467-98ab-aa1a899ad7c6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Identifies big data as a major unknown that could transform GDP measurement.",
+        "supporting_text": "By far the biggest unknown for GDP is the emergence of “big data”. This is a generic term which refers to the widespread availability of electronic data."
+      }
+    },
+    {
+      "name": "populism",
+      "definition": "A political movement characterized by anti‑establishment, anti‑expert, and anti‑statistics sentiment that has been rising in many developed countries since the mid‑2000s.",
+      "key_proponents": [
+        "Donald Trump"
+      ],
+      "supporting_text": "At the moment, the rise of populism in many developed countries is often coupled with a disdain for science, experts and statistics. In the United States, the Republican Donald Trump ran on an anti‑establishment and populist platform.",
+      "source_chunk": 14,
+      "id": "5e51b077-871d-46b7-a8e2-d6bdf13210bc",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Links populist rise to disdain for science and statistics, threatening data‑driven policy.",
+        "supporting_text": "the rise of populism in many developed countries is often coupled with a disdain for science, experts and statistics."
+      }
+    },
+    {
+      "name": "post‑truth",
+      "definition": "A narrative in which objective facts become less influential in shaping public opinion, exemplified by the use of \"alternative facts\".",
+      "key_proponents": [
+        "Donald Trump"
+      ],
+      "supporting_text": "Trump has taken this \"post‑truth\" narrative to new levels. An adviser to the president famously referred to the existence of \"alternative facts\".",
+      "source_chunk": 14,
+      "id": "7ed92a4f-fab8-47b8-bba1-007749dab58d",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Describes a narrative that erodes factual consensus, impeding evidence‑based decisions.",
+        "supporting_text": "Trump has taken this “post‑truth” narrative to new levels."
+      }
+    },
+    {
+      "name": "cult of figures",
+      "definition": "The perception that statistical and accounting figures are manipulated, linked to a broader belief in the infallibility of market logic.",
+      "key_proponents": [
+        "Nicolas Sarkozy"
+      ],
+      "supporting_text": "Nicolas Sarkozy was interviewed about the Stiglitz Report and addressed the lack of faith in statistics. He linked this scepticism to the dominance of economic (\"market\") thinking... \"Behind the cult of figures, behind all these statistical and accounting structures, there is also the cult of the market that is always right.\"",
+      "source_chunk": 14,
+      "id": "298d1069-5308-4283-a818-76d868dbcc45",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Critiques overreliance on quantitative figures that mask market‑centric ideology.",
+        "supporting_text": "Behind the cult of figures, behind all these statistical and accounting structures, there is also the cult of the market that is always right."
+      }
+    },
+    {
+      "name": "low growth",
+      "definition": "The expectation that economic growth rates could approach zero in the coming decades, reducing the relevance of GDP as a media and policy focus.",
+      "key_proponents": [
+        "Robert Gordon"
+      ],
+      "supporting_text": "Quite a few economists have warned that society needs to start getting used to the idea that growth rates could be close to zero in the coming decades. Economists such as Robert Gordon in his book The Rise and Fall of American Growth argue that high growth rates are behind us for the foreseeable future.",
+      "source_chunk": 14,
+      "id": "13407943-683a-4321-82ab-3959e51049d5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Projects a future of near‑zero growth that would diminish GDP’s relevance.",
+        "supporting_text": "Economists such as Robert Gordon ... argue that high growth rates are behind us for the foreseeable future."
+      }
+    },
+    {
+      "name": "Material Product System (MPS)",
+      "definition": "An alternative national accounting framework used by centrally planned communist countries, distinct from the SNA, that measured economic output primarily in terms of material production.",
+      "key_proponents": [],
+      "supporting_text": "Even within the UN there was an alternative accounting framework, the Material Product System (MPS), which was used in over a dozen centrally planned communist countries.",
+      "source_chunk": 15,
+      "id": "602d5913-bbf7-49a6-9fff-b866065f444c",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The concept of MPS reveals the existence of competing measurement systems that reflected non‑market economic structures.",
+        "supporting_text": "Even within the UN there was an alternative accounting framework, the Material Product System (MPS), which was used in over a dozen centrally planned communist countries."
+      }
+    },
+    {
+      "name": "National income accounting",
+      "definition": "The methodological practice of estimating a nation’s total income, production, consumption, depreciation, and capital formation, forming the basis for macro‑economic statistics such as GDP.",
+      "key_proponents": [
+        "Richard Stone",
+        "Simon Kuznets",
+        "John Maynard Keynes",
+        "James Meade"
+      ],
+      "supporting_text": "Stone led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan.",
+      "source_chunk": 15,
+      "id": "ecf89716-8079-4cc5-b024-3044336a5b30",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "National income accounting underpins the ability to assess economic activity, a prerequisite for integrating ecological values.",
+        "supporting_text": "The SNA is important because it makes macroeconomic figures comparable between countries."
+      }
+    },
+    {
+      "name": "Keynes‑Stone accounting structure",
+      "definition": "An accounting approach, derived from Keynesian theory and refined by Richard Stone, that incorporates all government expenditures into the national accounts.",
+      "key_proponents": [
+        "John Maynard Keynes",
+        "Richard Stone",
+        "James Meade"
+      ],
+      "supporting_text": "Based on the conceptual work of Keynes, and with his significant public support, his protégés Meade and Stone produced a system which included all government expenditures.",
+      "source_chunk": 15,
+      "id": "0aa4dd2a-8823-42a7-8c6b-ca29f97b8d32",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The structure formed the theoretical basis of the SNA, enabling a shift toward more inclusive accounting of government expenditures.",
+        "supporting_text": "The British/American system... included all government expenditures... the United States shifted position towards the Keynes–Stone accounting structure."
+      }
+    },
+    {
+      "name": "Language of macroeconomics",
+      "definition": "The standardized set of terms, definitions, and relational rules (e.g., consumption, domestic product, gross/net) codified by the SNA that enables clear communication among economists, policymakers, and statisticians worldwide.",
+      "key_proponents": [],
+      "supporting_text": "It created a \"language\" with which to discuss macroeconomic matters. It contains a dictionary of the definitions of the words that are used in macroeconomics... The SNA is thus the formalisation of the \"language of macroeconomics\".",
+      "source_chunk": 15,
+      "id": "a58b463b-3e18-46f4-976e-f2c29401f552",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "By formalising a shared language, the SNA increased the discourse’s reach and legitimacy across societies.",
+        "supporting_text": "The SNA is thus the formalisation of the “language of macroeconomics”."
+      }
+    },
+    {
+      "name": "Studenski paradox",
+      "definition": "The observed, persistent expansion of the use of national income aggregates (like GDP) despite wars, crises, and criticism, explained as a paradox of continual growth in reliance on these metrics.",
+      "key_proponents": [],
+      "supporting_text": "The second era (1930‑now) displayed a different pattern: there has been an unrelenting expansion of the use of national income aggregates. This chapter has referred to this as the \"Studenski paradox\".",
+      "source_chunk": 16,
+      "id": "f46257c8-b19a-4224-914c-24527da2b234",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The paradox describes the persistent expansion of GDP despite criticism, highlighting entrenched conditions.",
+        "supporting_text": "\"This chapter has referred to this as the “Studenski paradox”.\""
+      }
+    },
+    {
+      "name": "Subjective well‑being (SWB)",
+      "definition": "A set of measures that capture individuals’ self‑reported happiness, life satisfaction and overall psychological welfare, used as an alternative indicator of societal progress.",
+      "key_proponents": [
+        "Organisation for Economic Co‑operation and Development (OECD)",
+        "David Cameron"
+      ],
+      "supporting_text": "The main result was a major boost in the measurement of subjective well‑being.",
+      "id": "1723d342-0244-4227-8051-da2fe0ebb389",
+      "variations": [
+        "Subjective Well‑being (SWB)",
+        "Subjective well‑being (SWB)"
+      ],
+      "source_chunks": [
+        17,
+        19
+      ],
+      "supporting_texts": [
+        "The main result was a major boost in the measurement of subjective well‑being.",
+        "Figure 4.1 provides a partial view of the development of three areas of Beyond‑GDP: namely Subjective Well‑being (SWB), the System of Environmental and Economics Accounts (SEEA) and Sustainable Development Indicators (SDI). For SWB two sources have been used (World Happiness Database and the European/World Values Survey)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces a new dimension for assessing societal progress beyond economic output.",
+        "supporting_text": "The importance of subjective well‑being measures was further bolstered by the academic discussion about the Easterlin paradox in the early 1970s."
+      }
+    },
+    {
+      "name": "System of Environmental and Economic Accounts (SEEA)",
+      "definition": "A framework for integrating environmental data with economic accounts, used to produce environmental‑economic statistics at the national level.",
+      "key_proponents": [
+        "United Nations Statistics Division",
+        "Edens (2013)"
+      ],
+      "supporting_text": "For the SEEA, estimates by Edens (2013) are used as well as responses to the Global Assessment of Environmental‑Economic Accounting which is carried out by the United Nations Statistics Division.",
+      "id": "2269a6f8-ea6e-49ee-9aa2-019947973d61",
+      "variations": [
+        "System of Environmental and Economic Accounts (SEEA)"
+      ],
+      "source_chunks": [
+        17,
+        21
+      ],
+      "supporting_texts": [
+        "For the SEEA, estimates by Edens (2013) are used as well as responses to the Global Assessment of Environmental‑Economic Accounting which is carried out by the United Nations Statistics Division.",
+        "The System of Environmental and Economic Accounts, which will be discussed later on, also includes a couple of indexes which follow this theoretical approach."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a systematic framework linking environmental and economic data for integrated accounting.",
+        "supporting_text": "The System of Environmental and Economic Accounts … also includes a couple of indexes which follow this theoretical approach."
+      }
+    },
+    {
+      "name": "Sustainable Development Indicators (SDI)",
+      "definition": "Indicator sets promoted to measure sustainable development; they were championed by the Brundtland Report (1987) and the Rio Earth Summit (1992) and later formalised by the Commission for Sustainable Development.",
+      "key_proponents": [
+        "Brundtland Report",
+        "Rio Earth Summit",
+        "Commission for Sustainable Development (CSD)"
+      ],
+      "supporting_text": "The Brundtland Report in 1987 and the Rio Earth Summit in 1992 were instrumental in promoting Type 3 Sustainable Development Indicators (SDI).",
+      "id": "8b77e1ae-6edf-4639-b0f9-1a35734b8b35",
+      "variations": [
+        "Sustainable Development Indicators (SDI)"
+      ],
+      "source_chunks": [
+        17,
+        23
+      ],
+      "supporting_texts": [
+        "The Brundtland Report in 1987 and the Rio Earth Summit in 1992 were instrumental in promoting Type 3 Sustainable Development Indicators (SDI).",
+        "Figure 4.1 provides a partial view of the development of three areas of Beyond‑GDP: namely Subjective Well‑being (SWB), the System of Environmental and Economics Accounts (SEEA) and Sustainable Development Indicators (SDI)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Promoted by major reports and summits, offering a systematic alternative to GDP.",
+        "supporting_text": "The Brundtland Report in 1987 and the Rio Earth Summit in 1992 were instrumental in promoting Type 3 Sustainable Development Indicators (SDI)."
+      }
+    },
+    {
+      "name": "Sustainable Society Index",
+      "definition": "An index that assesses the sustainability performance of nations across environmental, social, and economic dimensions, with data for 154 countries.",
+      "key_proponents": [],
+      "supporting_text": "the Sustainable Society Index has data for 154 countries.",
+      "source_chunk": 17,
+      "id": "77d3d9bb-64b0-4fd3-af15-fb83bb38667a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Offers a comprehensive sustainability metric covering many nations, indicating system‑change potential.",
+        "supporting_text": "the Sustainable Society Index has data for 154 countries"
+      }
+    },
+    {
+      "name": "Limits to Growth",
+      "definition": "A seminal 1972 report of the Club of Rome that presented scenario projections showing that resources would run out within several decades and argued that exponential economic growth could not continue indefinitely.",
+      "key_proponents": [
+        "Club of Rome"
+      ],
+      "supporting_text": "1972 was also the year that the seminal Limits to Growth report of the Club of Rome was published. This report played a major role in raising environmental awareness.",
+      "source_chunk": 19,
+      "id": "da548917-4b25-4f90-9c7d-567b485132f0",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights the unsustainable trajectory of exponential economic growth.",
+        "supporting_text": "1972 ... Limits to Growth report ... played a major role in raising environmental awareness."
+      }
+    },
+    {
+      "name": "Green Movement",
+      "definition": "An environmental movement that emerged in the 1950s‑1960s, raising public concern for ecological issues before they were institutionalised at the UN Conference on the Human Environment in Stockholm.",
+      "key_proponents": [],
+      "supporting_text": "First, the Green Movement had emerged in the 1950s/1960s but the Conference on the Human Environment in Stockholm institutionalised environmental concerns.",
+      "source_chunk": 19,
+      "id": "4ccd8d7a-b744-4194-a70f-8f6fbe24a9b9",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided a social base that later enabled institutional environmental action.",
+        "supporting_text": "First, the Green Movement had emerged in the 1950s/1960s but the Conference on the Human Environment in Stockholm institutionalised environmental concerns."
+      }
+    },
+    {
+      "name": "Social indicator movement",
+      "definition": "An eclectic movement that aimed to overcome the dominance of purely economic indicators by promoting the measurement of broader social dimensions such as subjective well‑being.",
+      "key_proponents": [
+        "Organisation for Economic Co‑operation and Development (OECD)"
+      ],
+      "supporting_text": "The social indicator movement was an eclectic movement that aimed to overcome the dominance of economic indicators.",
+      "source_chunk": 19,
+      "id": "e93dc0dc-f78c-4cd8-88b5-d1ec42579a9b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Created alternative metrics that challenged GDP dominance.",
+        "supporting_text": "The social indicator movement ... aimed to overcome the dominance of economic indicators. The main result was a major boost in the measurement of subjective well‑being."
+      }
+    },
+    {
+      "name": "Easterlin paradox",
+      "definition": "The observed empirical finding that higher income levels do not necessarily translate into higher levels of happiness or subjective well‑being.",
+      "key_proponents": [],
+      "supporting_text": "The importance of subjective well‑being measures was further bolstered by the academic discussion about the Easterlin paradox in the early 1970s.",
+      "source_chunk": 19,
+      "id": "2eca629d-77d9-4825-a0fa-e4ae28b1f08f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows that higher income does not automatically increase happiness, questioning GDP as a welfare metric.",
+        "supporting_text": "The importance of subjective well‑being measures was further bolstered by the academic discussion about the Easterlin paradox in the early 1970s."
+      }
+    },
+    {
+      "name": "Beyond‑GDP initiatives",
+      "definition": "Collective efforts and alternative measurement systems that aim to assess societal progress and wellbeing beyond the traditional Gross Domestic Product metric.",
+      "key_proponents": [],
+      "supporting_text": "The next couple of sections will provide a more detailed overview of the various Beyond‑GDP initiatives.",
+      "source_chunk": 20,
+      "id": "bc3ca3cf-98c8-4976-a0de-384d4b4f85c5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Collectively represent a systemic shift away from GDP‑centric accounting.",
+        "supporting_text": "Typology of Beyond GDP Methodologies"
+      }
+    },
+    {
+      "name": "Social indicators movement",
+      "definition": "A historical movement in the early 1970s that promoted the development and use of social measures, such as subjective well‑being surveys, to complement economic statistics.",
+      "key_proponents": [],
+      "supporting_text": "SWB survey life evaluations got a boost from the \"social indicators movement\" in the early 1970s.",
+      "source_chunk": 20,
+      "id": "f2e30986-d3ca-4e24-b285-e12010cd23c8",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights earlier attempts that fell short of establishing a full alternative framework.",
+        "supporting_text": "the “social indicators movement” in the early 1970s."
+      }
+    },
+    {
+      "name": "U‑index",
+      "definition": "A metric that records the percentage of time an individual spends on unpleasant activities, quantifying wellbeing by measuring the proportion of negative experiences.",
+      "key_proponents": [
+        "Daniel Kahneman",
+        "Andrew Krueger"
+      ],
+      "supporting_text": "Kahneman and Krueger (2006) suggest that any episode can be quantified as positive or negative. Based on this, they propose the \"U-index\", which records the percentage of time spent on unpleasant activities.",
+      "source_chunk": 20,
+      "id": "ed3fd7f3-b5d9-42e0-b8e1-ee4e4f80cc0b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces a quantifiable indicator of unpleasant time, expanding the toolkit for well‑being measurement.",
+        "supporting_text": "Based on this, they propose the “U-index”, which records the percentage of time spent on unpleasant activities."
+      }
+    },
+    {
+      "name": "Eudaimonia (well‑being dimension)",
+      "definition": "A deeper psychological dimension of wellbeing that refers to motivations such as competence, engagement, meaning, optimism, positive relationships, resilience, self‑esteem, emotional stability and vitality.",
+      "key_proponents": [],
+      "supporting_text": "The third SWB approach, Eudaimonia, refers to deeper psychological motivations such as Competence, Engagement, Meaning, Optimism, Positive relationships, Resilience, Self‑esteem, Emotional stability and Vitality.",
+      "source_chunk": 20,
+      "id": "78d574cc-dd8b-4444-b820-c88d61628f8f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adds deeper psychological dimensions to well‑being, broadening the scope of alternative metrics.",
+        "supporting_text": "The third SWB approach, Eudaimonia, refers to deeper psychological motivations such as Competence, Engagement, Meaning..."
+      }
+    },
+    {
+      "name": "Measure of Economic Welfare (MEW)",
+      "definition": "The first prominent green‑accounting aggregate, created in 1972, that adds the value of leisure time and home production to a macro‑economic aggregate and subtracts monetary estimates of environmental damage to provide a better estimate of economic welfare.",
+      "key_proponents": [
+        "William Nordhaus",
+        "James Tobin"
+      ],
+      "supporting_text": "That was the year the Measure of Economic Welfare was created by Yale economists Nordhaus and Tobin. This was the first prominent example of a \"green accounting\" aggregate.",
+      "source_chunk": 21,
+      "id": "3d4885e3-b672-4eda-9e24-0b3565b43dcf",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces a new aggregate that adjusts GDP to better reflect welfare, showing a pathway to systemic metric change.",
+        "supporting_text": "This was the first prominent example of a “green accounting” aggregate… The idea is that the aggregate index provides a better estimate of economic welfare."
+      }
+    },
+    {
+      "name": "Index for Sustainable Economic Welfare (ISEW)",
+      "definition": "A green‑accounting indicator inspired by the MEW, proposed in 1989, that adjusts traditional economic aggregates for environmental and social factors to estimate sustainable economic welfare.",
+      "key_proponents": [
+        "Herman Daly",
+        "John Cobb"
+      ],
+      "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW), which was proposed in 1989 by Daly and Cobb.",
+      "source_chunk": 21,
+      "id": "7a4c64e7-666b-4ec7-888f-d795b1634bf3",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows the evolution of green accounting concepts beyond MEW toward more comprehensive welfare measures.",
+        "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW), which was proposed in 1989 by Daly and Cobb."
+      }
+    },
+    {
+      "name": "genuine savings indicator",
+      "definition": "A capital‑approach metric, suggested in 1993, that records the net additions to the various stocks of capital (produced, financial, human, natural, social), treating investments in education as increases in human capital and depletion of natural resources as reductions in capital stock.",
+      "key_proponents": [],
+      "supporting_text": "Based on this capital theory, the genuine savings indicator was suggested in 1993. This indicator shows the additions to the various stocks of capital. For example, an investment in education is recorded as an increase in human capital while depletion of natural resources is a reduction in a capital stock.",
+      "source_chunk": 21,
+      "id": "e07dbd3d-ac9e-4435-beec-08e766494294",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Quantifies changes in capital stocks, linking economic activity to natural and human capital preservation.",
+        "supporting_text": "Based on this capital theory, the genuine savings indicator was suggested in 1993. This indicator shows the additions to the various stocks of capital."
+      }
+    },
+    {
+      "name": "Wealth accounting",
+      "definition": "A conceptual approach that treats sustainability as the summation of monetised capital stocks; it gained prominence in the 1990s and is popular at the World Bank.",
+      "key_proponents": [
+        "World Bank",
+        "Working Group for Statistics on Sustainable Development (WGSSD)"
+      ],
+      "supporting_text": "The group built on the idea of wealth accounting, which had gained prominence in the 1990s and is also popular at the World Bank.",
+      "id": "e42cf696-de7a-49f2-9157-a6f5f4641755",
+      "variations": [
+        "wealth accounting",
+        "Wealth accounting"
+      ],
+      "source_chunks": [
+        21,
+        23
+      ],
+      "supporting_texts": [
+        "The group built on the idea of wealth accounting, which had gained prominence in the 1990s and is also popular at the World Bank.",
+        "One can also measure the total value of each stock, which is known as wealth accounting."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Serves as a conceptual foundation for the WGSSD and later reports.",
+        "supporting_text": "The group built on the idea of wealth accounting, which had gained prominence in the 1990s."
+      }
+    },
+    {
+      "name": "adjusted net savings",
+      "definition": "A World Bank‑published indicator that adjusts traditional net savings for investments in human capital, depletion of natural resources, and other environmental factors, reflecting a more comprehensive view of wealth creation.",
+      "key_proponents": [
+        "World Bank"
+      ],
+      "supporting_text": "This variety of green accounting is influential because the World Bank has adopted this approach and publishes \"adjusted net savings\" and \"total (or comprehensive) wealth\" indicators.",
+      "source_chunk": 21,
+      "id": "4bab5f83-404f-4804-a1d9-cda78a741252",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Published by the World Bank, institutionalising a green‑accounting metric for global use.",
+        "supporting_text": "The World Bank has adopted this approach and publishes “adjusted net savings” … indicators."
+      }
+    },
+    {
+      "name": "total (or comprehensive) wealth",
+      "definition": "A World Bank indicator that aggregates the value of all forms of capital—produced, financial, human, natural, and social—into a single measure of a nation's comprehensive wealth.",
+      "key_proponents": [
+        "World Bank"
+      ],
+      "supporting_text": "This variety of green accounting is influential because the World Bank has adopted this approach and publishes \"adjusted net savings\" and \"total (or comprehensive) wealth\" indicators.",
+      "source_chunk": 21,
+      "id": "d39d0462-16f9-4ebb-9127-d90250d4d195",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "World Bank publication spreads a comprehensive wealth measure, supporting systemic adoption.",
+        "supporting_text": "The World Bank has adopted this approach and publishes … “total (or comprehensive) wealth” indicators."
+      }
+    },
+    {
+      "name": "Inclusive Wealth Index (IWI)",
+      "definition": "An index that aggregates the value of produced, human, natural, and social capital to assess a country's inclusive wealth and sustainability over time.",
+      "key_proponents": [
+        "Partha Dasgupta"
+      ],
+      "supporting_text": "The United Nations University, under the leadership of Partha Dasgupta, proposed the Inclusive Wealth Index (IWI).",
+      "source_chunk": 21,
+      "id": "46625083-8849-4c62-8e9d-13e7a8c8f732",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces an integrated wealth metric that captures natural, human, and produced capital.",
+        "supporting_text": "The United Nations University, under the leadership of Partha Dasgupta, proposed the Inclusive Wealth Index (IWI)."
+      }
+    },
+    {
+      "name": "sustainable development (conceptual equivalent)",
+      "definition": "A conceptual framing that equates the maintenance of a non‑declining stock of capital (including natural capital) with the broader notion of sustainable development.",
+      "key_proponents": [],
+      "supporting_text": "This is sometimes seen by economists as the conceptual equivalent of the term \"sustainable development\".",
+      "source_chunk": 21,
+      "id": "d9e5e599-9907-4d3d-982d-898c9b5e3c5b",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights how the capital approach is framed within the prevailing discourse of sustainable development.",
+        "supporting_text": "This is sometimes seen by economists as the conceptual equivalent of the term “sustainable development”."
+      }
+    },
+    {
+      "name": "capital approach (green accounting)",
+      "definition": "A methodological approach that starts from the premise that society possesses various assets—produced, financial, human, natural, and social capital—and assesses welfare by ensuring these capital stocks are maintained or enhanced over time.",
+      "key_proponents": [],
+      "supporting_text": "This method starts from the premise that society has certain assets (produced, financial, human, natural and social capital).",
+      "source_chunk": 21,
+      "id": "14978250-91a1-4c42-806d-3be104d90b50",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces a distinct methodological strand that treats assets as capital, expanding green‑accounting theory.",
+        "supporting_text": "A third variety of green accounts emerged … based on a different economic method, the capital approach."
+      }
+    },
+    {
+      "name": "Carbon footprint",
+      "definition": "An indicator derived from the ecological footprint that quantifies the amount of land (or forest) required to absorb the carbon dioxide emissions generated by fossil‑fuel use.",
+      "key_proponents": [],
+      "supporting_text": "It has also led to the development of other related indicators, such as the carbon footprint, water footprint and material footprint.",
+      "source_chunk": 22,
+      "id": "db7f8f06-5728-4565-b6df-467cf773084e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Adds a climate‑dimension to the ecological footprint framework.",
+        "supporting_text": "It has also led to the development of other related indicators, such as the carbon footprint"
+      }
+    },
+    {
+      "name": "Water footprint",
+      "definition": "A related indicator that translates water consumption into the amount of water‑related bioproductive area needed to sustain that use.",
+      "key_proponents": [],
+      "supporting_text": "It has also led to the development of other related indicators, such as the carbon footprint, water footprint and material footprint.",
+      "source_chunk": 22,
+      "id": "448ebff5-a69a-4024-9835-b3f0a3061943",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Extends the footprint approach to water use, highlighting resource interdependencies.",
+        "supporting_text": "water footprint"
+      }
+    },
+    {
+      "name": "Material footprint",
+      "definition": "A related indicator that expresses the total material extraction required to satisfy a country’s consumption, expressed as an area of productive land.",
+      "key_proponents": [],
+      "supporting_text": "It has also led to the development of other related indicators, such as the carbon footprint, water footprint and material footprint.",
+      "source_chunk": 22,
+      "id": "abe63e13-f03a-4406-8488-d704e99b7548",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Broadens the accounting to material extraction and use.",
+        "supporting_text": "material footprint"
+      }
+    },
+    {
+      "name": "Biocapacity",
+      "definition": "The total biologically productive area available within a region or the world, used as a reference against which the ecological footprint is compared.",
+      "key_proponents": [],
+      "supporting_text": "Communicatively, the ecological footprint works very well because it can be contrasted to the biologically productive area available within a region or the world (biocapacity).",
+      "source_chunk": 22,
+      "id": "82b242e0-5425-498b-8745-3f5a1fc7da53",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides the ecological ceiling against which footprints are compared.",
+        "supporting_text": "contrasted to the biologically productive area available within a region or the world (biocapacity)"
+      }
+    },
+    {
+      "name": "Life Situation Index (LSI)",
+      "definition": "An early composite index produced in the 1970s that aggregates multiple sub‑components to provide a single measure of societal well‑being, though it is not based on a conceptual framework.",
+      "key_proponents": [],
+      "supporting_text": "For example, in the early 1970s the Life Situation Index (LSI) was produced in the Netherlands.",
+      "source_chunk": 22,
+      "id": "8c5e6921-dcce-47fa-b3dc-d3e92d226524",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Early composite indicator that attempted to capture wellbeing beyond income.",
+        "supporting_text": "Life Situation Index (LSI)"
+      }
+    },
+    {
+      "name": "Capability approach",
+      "definition": "A philosophical framework that argues welfare should be measured not only by achieved functionings but also by the capabilities people have to lead the lives they value.",
+      "key_proponents": [
+        "Amartya Sen"
+      ],
+      "supporting_text": "It is loosely based on Sen's capability approach. This framework argues that welfare should not only be measured according to realisations of people's lives (functionings) but also the potential people have to live the life that they want (capabilities).",
+      "source_chunk": 22,
+      "id": "a539e610-e0ae-4a9c-bc39-2f63806a358b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "It offers a theoretical foundation that can shift welfare measurement from purely economic to multidimensional wellbeing.",
+        "supporting_text": "The capability approach… critiques welfare economics… argues that welfare should be measured by functionings and capabilities."
+      }
+    },
+    {
+      "name": "Gross National Happiness",
+      "definition": "A Beyond‑GDP initiative that measures multiple dimensions of wellbeing through a population survey; it was initiated by the King of Bhutan in the early 1970s.",
+      "key_proponents": [
+        "King of Bhutan"
+      ],
+      "supporting_text": "One of the earliest and most cited Beyond‑GDP initiatives is the programme on Gross National Happiness which was initiated by the King of Bhutan in the early 1970s.",
+      "source_chunk": 23,
+      "id": "bd25e0a9-dd2c-4c1a-8147-7232cabb7942",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Early, high‑profile alternative to GDP that inspired later beyond‑GDP initiatives.",
+        "supporting_text": "One of the earliest and most cited Beyond‑GDP initiatives is the programme on Gross National Happiness which was initiated by the King of Bhutan in the early 1970s."
+      }
+    },
+    {
+      "name": "Millennium Development Goals (MDGs)",
+      "definition": "A set of development targets that ran from 2000 to 2015 and were replaced by the Sustainable Development Goals.",
+      "key_proponents": [],
+      "supporting_text": "At that conference, it was decided that the Millennium Development Goals (MDGs), which ran from 2000 to 2015, would be replaced by the SDGs.",
+      "source_chunk": 23,
+      "id": "7e60be66-9a61-4a9e-aeb7-0bf51df2d28a",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Identifies the prior global framework that was later superseded by the SDGs.",
+        "supporting_text": "At that conference, it was decided that the Millennium Development Goals (MDGs), which ran from 2000 to 2015, would be replaced by the SDGs."
+      }
+    },
+    {
+      "name": "Better Life Index (BLI)",
+      "definition": "An OECD‑launched indicator set that can be aggregated into a single index; it starts with equal weights for each indicator but allows users to customise weights via a web‑based application.",
+      "key_proponents": [
+        "Organisation for Economic Co‑operation and Development (OECD)"
+      ],
+      "supporting_text": "An influential indicator set is the Better Life Index (BLI), which was launched by the OECD at its fiftieth anniversary.",
+      "source_chunk": 23,
+      "id": "d63fe9fe-26a7-4542-8703-8cf95d18fb9b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Allows users to set their own weights, encouraging participatory measurement.",
+        "supporting_text": "An influential indicator set is the Better Life Index (BLI), which was launched by the OECD at its fiftieth anniversary."
+      }
+    },
+    {
+      "name": "Conceptual Indicator Sets (Type 4)",
+      "definition": "Indicator sets built on explicit conceptual frameworks rather than purely stakeholder‑driven processes; early adopters include Switzerland, Norway, New Zealand, the Netherlands and Belgium.",
+      "key_proponents": [
+        "Switzerland",
+        "Norway",
+        "New Zealand",
+        "Netherlands",
+        "Belgium"
+      ],
+      "supporting_text": "In the mid‑2000s a couple of countries started to create indicator sets based on conceptual frameworks: Switzerland, Norway and New Zealand. Later the Netherlands and Belgium also introduced Type 4 indicator sets.",
+      "source_chunk": 23,
+      "id": "c9873fe7-4ba8-4ea6-8f49-c753ebf25735",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Limited adoption but noted as influential for harmonisation efforts.",
+        "supporting_text": "Although the number of countries which have adopted these indicator sets is limited, Type 4 has been influential in the various harmonisation efforts."
+      }
+    },
+    {
+      "name": "System of Environmental and Economic Accounting (SEEA)",
+      "definition": "A modular accounting framework that produces both physical and monetary environmental indicators, originally developed as a “satellite” account for the environment and now regarded as a statistical standard on an equal footing with the System of National Accounts (SNA).",
+      "key_proponents": [
+        "Six major international institutes",
+        "United Nations Statistical Commission",
+        "UN Statistical Division",
+        "European Commission"
+      ],
+      "supporting_text": "The final Beyond‑GDP initiative that will be discussed in this chapter is the SEEA. This is a successful initiative which is hard to classify because it is an accounting framework that produces both Type 1 and Type 4 indicators… The SEEA 2012 – Central Framework was adopted by the Statistical Commission of the United Nations… The SEEA has the same standing as the SNA since they are both \"statistical standards\"… The European Commission made it legally binding for all European countries to produce six of the SEEA accounts.",
+      "source_chunk": 24,
+      "id": "f754fb0f-2a3e-45f6-868b-a49b0227a63e",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Recognised as a statistical standard, giving it legitimacy.",
+        "supporting_text": "The SEEA has the same standing as the SNA since they are both “statistical standards”."
+      }
+    },
+    {
+      "name": "eco‑domestic product (EDP)",
+      "definition": "A green accounting indicator obtained by subtracting environmental costs from Net Domestic Product.",
+      "key_proponents": [],
+      "supporting_text": "The SEEA 1993 includes a green accounting indicator called the eco‑domestic product (EDP) which is obtained by subtracting environmental costs from the Net Domestic Product.",
+      "source_chunk": 24,
+      "id": "12689721-c891-493d-938d-d52af5332ffb",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a concrete alternative to GDP that accounts for environmental costs.",
+        "supporting_text": "The SEEA 1993 includes a green accounting indicator called the eco‑domestic product (EDP) which is obtained by subtracting environmental costs from the Net Domestic Product."
+      }
+    },
+    {
+      "name": "physical accounts",
+      "definition": "Components of the SEEA that record the flows and stocks of an economy in mass and energy units, including resource use and emissions by industry.",
+      "key_proponents": [],
+      "supporting_text": "The largest part of the SEEA handbook deals with the physical accounts which record the flows and stocks of an economy. This includes physical flows in terms of mass and energy units as well as resource use or emissions by industry.",
+      "source_chunk": 24,
+      "id": "90593b57-ef3f-4242-b7b0-8a1d7fd667ca",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Physical accounts provide the data needed to understand and manage resource flows, enabling systemic shifts toward environmental limits.",
+        "supporting_text": "The largest part of the SEEA handbook deals with the physical accounts which record the flows and stocks of an economy."
+      }
+    },
+    {
+      "name": "depletion‑adjusted net value added",
+      "definition": "A green accounting aggregate proposed by the SEEA that deducts consumption of fixed capital and depletion from gross value added.",
+      "key_proponents": [],
+      "supporting_text": "The SEEA also proposed green accounting aggregates called \"depletion‑adjusted net value added\" … which are obtained by deducting consumption of fixed capital and depletion from gross value added.",
+      "source_chunk": 24,
+      "id": "6e5338f9-471f-4829-8dff-f43774d79557",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces a new aggregate that internalises resource depletion, opening a pathway to change accounting practice.",
+        "supporting_text": "The SEEA also proposed green accounting aggregates called “depletion‑adjusted net value added”..."
+      }
+    },
+    {
+      "name": "depletion‑adjusted net domestic product",
+      "definition": "A green accounting aggregate proposed by the SEEA that deducts consumption of fixed capital and depletion from GDP.",
+      "key_proponents": [],
+      "supporting_text": "The SEEA also proposed green accounting aggregates called … \"depletion adjusted net domestic product\", which are obtained by deducting consumption of fixed capital and depletion from gross value added and GDP.",
+      "source_chunk": 24,
+      "id": "4f62f0b2-9ded-4436-ba7f-b72bf2b810f5",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides an adjusted GDP metric that can shift economic evaluation toward sustainability.",
+        "supporting_text": "… “depletion adjusted net domestic product”, which are obtained by deducting consumption of fixed capital and depletion..."
+      }
+    },
+    {
+      "name": "environmental macroeconomics",
+      "definition": "A community and emerging field that seeks to manage the economy within environmental limits, using a common language such as the SEEA framework.",
+      "key_proponents": [],
+      "supporting_text": "The goal of this community is to manage the economy within environmental limits… The SEEA is in a good position to become the \"common language\" for environmental macroeconomics.",
+      "source_chunk": 24,
+      "id": "9f2868a8-8430-44d8-9699-2ade132f62eb",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Positions the SEEA as a common language for a discipline aimed at managing economies within environmental limits.",
+        "supporting_text": "The SEEA is in a good position to become the “common language” for environmental macroeconomics."
+      }
+    },
+    {
+      "name": "satellite account",
+      "definition": "A methodological approach that treats environmental accounts as a separate, supplementary set of accounts linked to the core System of National Accounts rather than integrating them directly into the core framework.",
+      "key_proponents": [],
+      "supporting_text": "It was decided that rather than put environmental aspects and social issues into the \"core\" SNA framework, it was better to allow for a \"satellite\" account for the environment.",
+      "source_chunk": 24,
+      "id": "beac0ac0-0637-4b8f-b424-4ae59cb65743",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows the compromise of keeping environmental data peripheral to the core SNA, limiting integration.",
+        "supporting_text": "it was decided ... better to allow for a “satellite” account for the environment."
+      }
+    },
+    {
+      "name": "macroeconomic community",
+      "definition": "The established economic community centred on GDP, described as more powerful than the well‑being and sustainability community.",
+      "key_proponents": [],
+      "supporting_text": "the macroeconomic community is more powerful than the well‑being and sustainability community.",
+      "source_chunk": 25,
+      "id": "3426c83a-5c24-4ee3-b1e8-d98b3a0ccd60",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Identified as a powerful, dominant bloc that overshadows alternative efforts.",
+        "supporting_text": "The macroeconomic community is more powerful than the well‑being and sustainability community."
+      }
+    },
+    {
+      "name": "System of Environmental‑Economic Accounting (SEEA)",
+      "definition": "An accounting framework that provides a clear goal, structure and common language for integrating environmental and economic information; highlighted as the most successful example in the Beyond‑GDP scene.",
+      "key_proponents": [],
+      "supporting_text": "The SEEA is probably the most successful example in the Beyond‑GDP scene. It has a clear goal, structure and common language (SEEA), and the harmonisation process took less than twenty years.",
+      "source_chunk": 25,
+      "id": "00153407-0f0c-4484-94a8-3af18e39d3a9",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Serves as a structured, standardized accounting system that can replace GDP‑centric metrics.",
+        "supporting_text": "The SEEA is probably the most successful example in the Beyond‑GDP scene."
+      }
+    },
+    {
+      "name": "Sustainable Development Goals (SDG) process",
+      "definition": "An international, goal‑oriented process that has demonstrated the ability of global institutes to foster agreement on sustainability and wellbeing metrics.",
+      "key_proponents": [],
+      "supporting_text": "The SDG process also proved that international institutes can be very effective in fostering a global agreement.",
+      "source_chunk": 25,
+      "id": "0ed5b6e8-0e56-416c-ba3b-cea9b2ab1cc9",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Demonstrates how international institutions can mobilise agreement around alternative goals.",
+        "supporting_text": "The SDG process also proved that international institutes can be very effective in fostering a global agreement."
+      }
+    },
+    {
+      "name": "Motivational Interviewing (MI)",
+      "definition": "A therapeutic approach that engages addicts in a positive discussion of their goals, motives and futures; proposed by Costanza et al. as a model for addressing society’s ‘addiction’ to GDP.",
+      "key_proponents": [
+        "Costanza et al. (2017)"
+      ],
+      "supporting_text": "For example, Motivational Interviewing (MI) is based on engaging addicts in a positive discussion of their goals, motives and futures. Costanza and colleagues explore what the MI therapy might look like if applied to society's addiction to GDP.",
+      "source_chunk": 25,
+      "id": "2cd81972-12e9-4916-b45e-f65b2ee48318",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Suggested as a novel therapeutic approach to change societal attachment to GDP.",
+        "supporting_text": "Costanza and colleagues explore what the MI therapy might look like if applied to society’s addiction to GDP."
+      }
+    },
+    {
+      "name": "addiction to GDP",
+      "definition": "A metaphorical framing that likens society’s focus on economic growth to a real addiction, suggesting that the same methods used to treat addicts could be applied at the societal level.",
+      "key_proponents": [
+        "Costanza et al. (2017)"
+      ],
+      "supporting_text": "Costanza et al. (2017) liken society's focus on economic growth to a real addiction.",
+      "source_chunk": 25,
+      "id": "72df15c9-f624-4137-a549-aaa4173a6630",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Frames GDP dominance as a pathological condition that needs to be addressed.",
+        "supporting_text": "Costanza et al. (2017) liken society’s focus on economic growth to a real addiction."
+      }
+    }
+  ]
+}

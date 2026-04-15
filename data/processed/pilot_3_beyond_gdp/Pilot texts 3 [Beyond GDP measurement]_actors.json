@@ -1,0 +1,1834 @@
+{
+  "actors": [
+    {
+      "name": "Rutger Hoekstra",
+      "type": "Individual",
+      "description": "Author of the book discussing the replacement of GDP with wellbeing‑oriented metrics.",
+      "role": "Advocates and frames the intellectual argument for moving beyond GDP as the primary economic indicator.",
+      "country": "USA",
+      "supporting_text": "Rutger Hoekstra",
+      "source_chunk": 0,
+      "id": "d419186c-4366-472a-a6c8-35331cac76b9",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "As author, he frames the discourse that can shift public and policy acceptance of alternative metrics.",
+        "supporting_text": "Rutger Hoekstra"
+      }
+    },
+    {
+      "name": "Bureau of Economic Analysis (BEA)",
+      "type": "Government",
+      "description": "S. U. federal agency that compiles and publishes the official Gross Domestic Product figures. government agency that calculates quarterly GDP growth for the United States.",
+      "role": "Calculates and reports quarterly GDP figures for the United States, forming part of the global GDP data infrastructure.",
+      "country": "United States",
+      "supporting_text": "At the same time as the BEA officials in Maryland are calculating quarterly GDP growth for the United States",
+      "id": "8cce733f-03c3-435a-83ec-e2e973186975",
+      "variations": [
+        "Bureau of Economic Analysis (BEA)"
+      ],
+      "source_chunks": [
+        0,
+        1
+      ],
+      "supporting_texts": [
+        "At the same time as the BEA officials in Maryland are calculating quarterly GDP growth for the United States",
+        "They work for the Bureau of Economic Analysis (BEA)."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "BEA’s routine GDP calculations exemplify the institutional perpetuation of growth‑focused metrics.",
+        "supporting_text": "BEA officials in Maryland are calculating quarterly GDP growth for the United States."
+      }
+    },
+    {
+      "name": "Council of Economic Advisers (CEA)",
+      "type": "Government",
+      "description": "President’s advisory body on economic policy, headed by a Chairman.",
+      "role": "Provides expert advice to the President on economic indicators, including GDP, influencing whether alternative metrics are adopted.",
+      "country": "USA",
+      "supporting_text": "The adviser to the President is the Chairman of the Council of Economic Advisers (CEA).",
+      "source_chunk": 0,
+      "id": "02978b29-bb25-4e77-b125-348087a1a693",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "CEA receives the GDP report and advises the President, reinforcing GDP as the dominant economic metric.",
+        "supporting_text": "The report is transmitted to the adviser of the President of the United States, who may brief the President..."
+      }
+    },
+    {
+      "name": "President of the United States",
+      "type": "Government",
+      "description": "Head of the executive branch of the United States government.",
+      "role": "Ultimate decision‑maker who could endorse or reject the adoption of wellbeing‑based economic metrics in place of GDP.",
+      "country": "USA",
+      "supporting_text": "The report is transmitted to the adviser of the President of the United States, who may brief the President before the general public is notified.",
+      "source_chunk": 0,
+      "id": "bcf9ac2e-100a-4921-af58-eb961c060075",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The President is briefed on GDP data before public release, giving the indicator high political salience.",
+        "supporting_text": "The report is transmitted to the adviser of the President of the United States, who may brief the President before the general public is notified."
+      }
+    },
+    {
+      "name": "George Bush",
+      "type": "Individual",
+      "description": "Former President of the United States (served 1989‑1993).",
+      "role": "Illustrates how GDP performance historically affected political fortunes, underscoring the need for broader wellbeing indicators.",
+      "country": "USA",
+      "supporting_text": "George Bush enjoyed good approval ratings in 1991 but was still defeated a year later.",
+      "source_chunk": 0,
+      "id": "05d2afa5-d6c3-4923-9f3f-2c3771c82e00",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Bush’s approval is linked to GDP performance, illustrating how the metric shapes political outcomes.",
+        "supporting_text": "George Bush enjoyed good approval ratings in 1991 but was still defeated a year later."
+      }
+    },
+    {
+      "name": "Bill Clinton",
+      "type": "Individual",
+      "description": "Former President of the United States (served 1993‑2001).",
+      "role": "Demonstrates how alternative political narratives leveraged economic data, highlighting the influence of GDP on electoral outcomes and the potential for new metrics.",
+      "country": "USA",
+      "supporting_text": "His opponent, Bill Clinton, capitalised on the poor economic figures and his campaign team famously used the phrase \"It's the economy, stupid\" to keep on-message.",
+      "source_chunk": 0,
+      "id": "2ee21f50-e4e3-4f1d-b5d8-0fb2e094552b",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Clinton’s campaign leveraged poor GDP figures, showing the metric’s power over electoral narratives.",
+        "supporting_text": "Bill Clinton, capitalised on the poor economic figures and his campaign team famously used the phrase “It’s the economy, stupid”."
+      }
+    },
+    {
+      "name": "European Union",
+      "type": "Government",
+      "description": "Supranational political and economic union of European member states. Supranational political entity of European member states that conducts the Eurobarometer survey.",
+      "role": "Releases quarterly GDP figures for its member states and imposes legal requirements for data delivery according to the System of National Accounts.",
+      "country": "European Union",
+      "supporting_text": "The countries of the European Union ... all release their quarterly GDP figures within a period of around 30-45 days after the end of the quarter.",
+      "id": "3e296347-a24e-4afd-b53e-69fd3e6bbe67",
+      "variations": [
+        "European Union"
+      ],
+      "source_chunks": [
+        1,
+        20
+      ],
+      "supporting_texts": [
+        "The countries of the European Union ... all release their quarterly GDP figures within a period of around 30-45 days after the end of the quarter.",
+        "From 1973, SWB questions started to be asked in the European Union's Eurobarometer survey."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Integrated SWB questions into the Eurobarometer, operationalising well‑being measurement at a supranational level.",
+        "supporting_text": "From 1973, SWB questions started to be asked in the European Union’s Eurobarometer survey."
+      }
+    },
+    {
+      "name": "Organisation for Economic Co-operation and Development (OECD)",
+      "type": "Organization",
+      "description": "International organization that provides economic analysis and statistics for its member countries.",
+      "role": "Publishes quarterly GDP figures and produces growth projections for major economies, contributing to the global GDP reporting system.",
+      "country": "France",
+      "supporting_text": "the Organisation for Economic Co-operation and Development (OECD) all release their quarterly GDP figures",
+      "source_chunk": 1,
+      "id": "81d93ae8-2a1d-4874-b34c-ba4abde2ab6e",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "OECD’s involvement in GDP dissemination sustains the global GDP infrastructure.",
+        "supporting_text": "GDP figures are collected and disseminated by all the major international institutions, such as the World Bank, International Monetary Fund, OECD and the European Commission."
+      }
+    },
+    {
+      "name": "World Bank",
+      "type": "Organization",
+      "description": "An international development bank that offers financial and technical assistance to developing countries for development projects. International development bank established alongside the IMF after World War II. International financial institution that provides loans and technical assistance to developing countries. International financial institution that supports development projects worldwide.",
+      "role": "Collects and disseminates GDP data and uses the figures to inform development assistance and economic analysis.",
+      "country": "United States",
+      "supporting_text": "GDP figures are collected and disseminated by all the major international institutions, such as the World Bank, International Monetary Fund, OECD and the European Commission.",
+      "id": "f2cabc0d-a254-431c-aed9-0425968a39c0",
+      "variations": [
+        "World Bank"
+      ],
+      "source_chunks": [
+        1,
+        4,
+        11,
+        21
+      ],
+      "supporting_texts": [
+        "GDP figures are collected and disseminated by all the major international institutions, such as the World Bank, International Monetary Fund, OECD and the European Commission.",
+        "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+        "Major international institutes such as the International Monetary Fund (IMF) and World Bank were tasked to oversee this new economic agreement",
+        "This variety of green accounting is influential because the World Bank has adopted this approach and publishes \"adjusted net savings\" and \"total (or comprehensive) wealth\" indicators."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Publishes adjusted net savings and total wealth indicators, operationalising green‑accounting at the global level.",
+        "supporting_text": "This variety of green accounting is influential because the World Bank has adopted this approach and publishes “adjusted net savings” and “total (or comprehensive) wealth” indicators."
+      }
+    },
+    {
+      "name": "International Monetary Fund (IMF)",
+      "type": "Organization",
+      "description": "International financial institution created at the 1944 Bretton Woods Conference. International organization that monitors global monetary cooperation and provides financial stability advice.",
+      "role": "Collects and disseminates GDP data and produces growth projections for major economies, shaping economic discourse.",
+      "country": "United States",
+      "supporting_text": "GDP figures are collected and disseminated by all the major international institutions, such as the World Bank, International Monetary Fund, OECD and the European Commission.",
+      "id": "50cd871e-9372-4c67-baf2-63df10ae968f",
+      "variations": [
+        "International Monetary Fund (IMF)"
+      ],
+      "source_chunks": [
+        1,
+        11
+      ],
+      "supporting_texts": [
+        "GDP figures are collected and disseminated by all the major international institutions, such as the World Bank, International Monetary Fund, OECD and the European Commission.",
+        "Major international institutes such as the International Monetary Fund (IMF) and World Bank were tasked to oversee this new economic agreement"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The IMF’s mandate to oversee the post‑war economic order institutionalised the collection and use of national‑account data across nations.",
+        "supporting_text": "Major international institutes such as the International Monetary Fund (IMF) … were tasked to oversee this new economic agreement."
+      }
+    },
+    {
+      "name": "European Commission",
+      "type": "Organization",
+      "description": "Executive body of the European Union, overseeing agencies such as Eurostat. Executive branch of the European Union responsible for proposing legislation and implementing decisions. The executive branch of the European Union responsible for proposing legislation and ensuring its implementation across member states.",
+      "role": "Uses GDP data for policy making and contributes to the international statistical infrastructure that underpins GDP reporting.",
+      "country": "European Union",
+      "supporting_text": "GDP figures are collected and disseminated by all the major international institutions, such as the World Bank, International Monetary Fund, OECD and the European Commission.",
+      "id": "55008301-1dac-4f5b-ad29-a0aa0dded5d6",
+      "variations": [
+        "European Commission"
+      ],
+      "source_chunks": [
+        1,
+        23,
+        24
+      ],
+      "supporting_texts": [
+        "GDP figures are collected and disseminated by all the major international institutions, such as the World Bank, International Monetary Fund, OECD and the European Commission.",
+        "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD)... In 2009, ... the joint UNECE/OECD/Eurostat Task Force on Measuring Sustainable Development (TFSD) was created.",
+        "The European Commission made it legally binding for all European countries to produce six of the SEEA accounts."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Legally bound EU members to produce SEEA accounts, mobilising implementation.",
+        "supporting_text": "The European Commission made it legally binding for all European countries to produce six of the SEEA accounts."
+      }
+    },
+    {
+      "name": "United Nations",
+      "type": "Organization",
+      "description": "An intergovernmental organization of member states that addresses global issues, including development and sustainability. An intergovernmental organization that facilitates international cooperation on a wide range of issues, including statistical standards. An international intergovernmental organization founded after World War II to promote peace, security, and cooperation among member states. International intergovernmental organization that coordinates global policies and initiatives. International organization founded to promote peace, security, and development worldwide.",
+      "role": "Hosts the United Nations statistical database containing GDP figures for 200 countries and regions, and bases ODA contributions on macro‑economic data.",
+      "country": "United States",
+      "supporting_text": "there are annual GDP figures for 200 countries and regions in the United Nations statistical database.",
+      "id": "e5279732-26c0-4c81-9310-bea8b1f85a65",
+      "variations": [
+        "United Nations"
+      ],
+      "source_chunks": [
+        1,
+        2,
+        4,
+        22,
+        24
+      ],
+      "supporting_texts": [
+        "there are annual GDP figures for 200 countries and regions in the United Nations statistical database.",
+        "The United Nations' Sustainable Development Goals (SDG), which are a global agreed set of targets for sustainable development, are probably the most famous example of an indicator set.",
+        "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+        "In 1990, the United Nations' Human Development Report used HDI for the first time.",
+        "The SEEA has the same standing as the SNA since they are both \"statistical standards\"."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Elevates SEEA to the status of a statistical standard alongside the SNA.",
+        "supporting_text": "The SEEA has the same standing as the SNA since they are both “statistical standards”."
+      }
+    },
+    {
+      "name": "G7",
+      "type": "Coalition",
+      "description": "Group of seven major advanced economies.",
+      "role": "Organised on the basis of GDP ranking, using GDP as a primary criterion for membership and coordination.",
+      "country": "International",
+      "supporting_text": "Geopolitical bodies such as the G7 or G20 are organised on the basis of GDP ranking.",
+      "source_chunk": 1,
+      "id": "d158cf14-c016-47b3-85f6-bd17764580b2",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "G7 membership is organized on GDP ranking, reinforcing GDP‑based hierarchies.",
+        "supporting_text": "Geopolitical bodies such as the G7 ... are organised on the basis of GDP ranking."
+      }
+    },
+    {
+      "name": "G20",
+      "type": "Coalition",
+      "description": "Group of twenty major economies representing the bulk of global GDP.",
+      "role": "Organised on the basis of GDP ranking, using GDP as a primary criterion for membership and coordination.",
+      "country": "International",
+      "supporting_text": "Geopolitical bodies such as the G7 or G20 are organised on the basis of GDP ranking.",
+      "source_chunk": 1,
+      "id": "06682a5b-5ae2-4083-be35-978bebcbf788",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "G20 also bases its composition on GDP, perpetuating the metric’s dominance.",
+        "supporting_text": "Geopolitical bodies such as the G7 or G20 are organised on the basis of GDP ranking."
+      }
+    },
+    {
+      "name": "Bhutan",
+      "type": "Government",
+      "description": "Small Himalayan kingdom that has experimented with alternative development metrics.",
+      "role": "One of the few isolated countries that have challenged the dominance of GDP as the primary measure of societal wellbeing.",
+      "country": "Bhutan",
+      "supporting_text": "It is only fringe political parties or small isolated countries (e.g., Bhutan) that have challenged the GDP multinational.",
+      "source_chunk": 1,
+      "id": "5fb5acf9-700b-4412-9e10-09cddb2b364c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Bhutan is cited as a rare challenger to the GDP‑centric paradigm.",
+        "supporting_text": "It is only fringe political parties or small isolated countries (e.g., Bhutan) that have challenged the GDP multinational."
+      }
+    },
+    {
+      "name": "Simon Kuznets",
+      "type": "Individual",
+      "description": "American economist and one of the pioneers of national accounting. American economist known for early work on national income accounting and later for research on inequality. Congress. Economist known for the Kuznets curve and critique of national accounts. Economist who developed the concept of national income accounting (GDP) and later critiqued its welfare relevance. Economist who produced the 1934 report on national income for the U. S.",
+      "role": "Early critic of using GDP as a proxy for welfare, highlighting the need for alternative measures of societal success.",
+      "country": "USA",
+      "supporting_text": "Simon Kuznets, one of the pioneers of national accounting, famously wrote in 1934 that \"the welfare of a nation ... can scarcely be inferred from a measurement of national income\".",
+      "id": "7767007f-2285-4871-9d3a-a691c1f7a787",
+      "variations": [
+        "Simon Kuznets"
+      ],
+      "source_chunks": [
+        2,
+        11,
+        12,
+        15,
+        21
+      ],
+      "supporting_texts": [
+        "Simon Kuznets, one of the pioneers of national accounting, famously wrote in 1934 that \"the welfare of a nation ... can scarcely be inferred from a measurement of national income\".",
+        "a report by Simon Kuznets on 4 January 1934",
+        "Simon Kuznets himself had been critical of national accounting back in the 1930s.",
+        "many ideas of Simon Kuznets on national income were ignored in the SNA",
+        "The MEW can be seen in the tradition of Simon Kuznets's critique of national accounts."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The text notes Kuznets’s ideas were ignored, highlighting a dominant accounting paradigm.",
+        "supporting_text": "Notably, many ideas of Simon Kuznets on national income were ignored in the SNA."
+      }
+    },
+    {
+      "name": "World Wildlife Fund",
+      "type": "NGO",
+      "description": "Global non‑governmental organization focused on wildlife conservation and environmental sustainability. International non‑governmental organization that promotes conservation and sustainable use of natural resources.",
+      "role": "Cites the ecological footprint in its Living Planet Report, helping to popularise ecological‑impact metrics as alternatives to GDP.",
+      "country": "International",
+      "supporting_text": "including in the Living Planet Report of the World Wildlife Fund.",
+      "id": "689c18e0-c1e3-4114-9f03-da759d51c55e",
+      "variations": [
+        "World Wildlife Fund"
+      ],
+      "source_chunks": [
+        2,
+        22
+      ],
+      "supporting_texts": [
+        "including in the Living Planet Report of the World Wildlife Fund.",
+        "the World Wildlife Fund, which promotes the use of the ecological footprint, states that humanity needs 1.6 Earths to maintain its current consumption patterns."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "WWF’s promotion of the ecological footprint frames the message that humanity lives beyond planetary means.",
+        "supporting_text": "The World Wildlife Fund, which promotes the use of the ecological footprint, states that humanity needs 1.6 Earths."
+      }
+    },
+    {
+      "name": "Paul Samuelson",
+      "type": "Individual",
+      "description": "American economist and 1970 Nobel laureate, author of influential textbooks. Nobel Prize‑winning economist known for his work on national income accounting.",
+      "role": "Provided a seminal endorsement of GDP as a major twentieth‑century invention, framing GDP as an innovation that influences how societies measure wellbeing and economic performance.",
+      "country": "United States",
+      "supporting_text": "In fact it was Nobel Prize winner Paul Samuelson who famously said: \"While the GDP and the rest of the national income accounts may seem to be arcane concepts, they are truly among the great inventions of the twentieth century.\"",
+      "id": "79a78c46-8cd6-47cd-835b-8a73ec10fbd4",
+      "variations": [
+        "Paul Samuelson"
+      ],
+      "source_chunks": [
+        3,
+        11
+      ],
+      "supporting_texts": [
+        "In fact it was Nobel Prize winner Paul Samuelson who famously said: \"While the GDP and the rest of the national income accounts may seem to be arcane concepts, they are truly among the great inventions of the twentieth century.\"",
+        "Prominent economists such as Robert Solow and Paul Samuelson also thought that the instability in capitalist societies had come to an end"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "His view that economic instability was largely eliminated supported the dominant growth‑centric paradigm.",
+        "supporting_text": "Prominent economists such as Robert Solow and Paul Samuelson also thought that the instability in capitalist societies had come to an end."
+      }
+    },
+    {
+      "name": "Joseph Schumpeter",
+      "type": "Individual",
+      "description": "Economist and theorist of innovation and creative destruction.",
+      "role": "Formulated the stages of innovation (early adoption, take‑off, saturation, decline) that the text uses to analyse the rise of GDP and the prospective emergence of Beyond‑GDP metrics.",
+      "country": "Austria",
+      "supporting_text": "Joseph Schumpeter, one of the pillars of thinking on innovation, defined the stages that innovations go through: early adoption, take-off, saturation and decline.",
+      "source_chunk": 3,
+      "id": "adebcd99-612b-45bd-bfdb-7b093a29b950",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides the theoretical basis (innovation stages, creative destruction) for systemic transition.",
+        "supporting_text": "Joseph Schumpeter … defined the stages that innovations go through: early adoption, take‑off, saturation and decline."
+      }
+    },
+    {
+      "name": "International Monetary Fund",
+      "type": "Organization",
+      "description": "A global financial institution that provides monetary cooperation and financial stability, and offers policy advice to its member countries. Global financial institution that provides policy advice and financial assistance to its member countries.",
+      "role": "Mentioned as an international institution that, together with others, institutionalised the use of GDP and macro‑economic statistics in policy making.",
+      "country": "International",
+      "supporting_text": "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+      "id": "3ad4cb23-ca82-4789-bfb0-f573eebd51e4",
+      "variations": [
+        "International Monetary Fund"
+      ],
+      "source_chunks": [
+        4,
+        12
+      ],
+      "supporting_texts": [
+        "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+        "In a 2008 paper titled \"The State of Macro\" Olivier Blanchard, who later was the chief economist at the IMF, declared that \"the state of macro is good\"..."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The IMF is linked to macro‑economic confidence that reinforces GDP‑centric growth.",
+        "supporting_text": "Olivier Blanchard, who later was the chief economist at the IMF, declared that “the state of macro is good”."
+      }
+    },
+    {
+      "name": "Organisation for Economic Co‑operation and Development",
+      "type": "Organization",
+      "description": "An intergovernmental economic organization that promotes policies to improve the economic and social well‑being of people around the world.",
+      "role": "Cited as one of the key post‑war institutions that institutionalised GDP and macro‑economic measurement in global governance.",
+      "country": "International",
+      "supporting_text": "the rise of international institutions such as the UN, IMF, World Bank and OECD.",
+      "source_chunk": 4,
+      "id": "482af066-ade0-4c0f-aae2-3d2a33ddef57",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "OECD is mentioned as another pillar of the global governance that promoted GDP.",
+        "supporting_text": "the rise of international institutions such as the UN, IMF, World Bank and OECD."
+      }
+    },
+    {
+      "name": "Queen Elizabeth II",
+      "type": "Individual",
+      "description": "The late monarch of the United Kingdom who reigned from 1952 to 2022.",
+      "role": "Expressed public mistrust toward economists by asking them why the 2008 crisis was not anticipated, highlighting societal criticism of GDP‑centric economic advice.",
+      "country": "United Kingdom",
+      "supporting_text": "Perhaps the mistrust was best expressed by Queen Elizabeth II when she asked a group of economists \"why did no one see it coming?\"",
+      "source_chunk": 4,
+      "id": "7788218c-e865-4b80-ad86-804c75c30890",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Her public question amplified mistrust toward economists after the crisis.",
+        "supporting_text": "Perhaps the mistrust was best expressed by Queen Elizabeth II when she asked a group of economists “why did no one see it coming?”"
+      }
+    },
+    {
+      "name": "John Maynard Keynes",
+      "type": "Individual",
+      "description": "British economist whose 1936 *General Theory* founded modern macroeconomics. British economist whose ideas fundamentally shaped modern macroeconomics and national income accounting. Prominent British economist whose ideas underpinned the Keynes‑Stone accounting system.",
+      "role": "Provided the seminal national‑income identity (Y = C + I + G + X − M) that underpins the System of National Accounts and the calculation of GDP.",
+      "country": "United Kingdom",
+      "supporting_text": "The most famous example is John Maynard Keynes' famous formula for national income (Y) which is Y=C+I+G+X-M.",
+      "id": "ded13ead-d238-4b85-83f8-0e180d0bfdc6",
+      "variations": [
+        "John Maynard Keynes"
+      ],
+      "source_chunks": [
+        4,
+        11,
+        15
+      ],
+      "supporting_texts": [
+        "The most famous example is John Maynard Keynes' famous formula for national income (Y) which is Y=C+I+G+X-M.",
+        "A hugely influential publication of 1936 was by John Maynard Keynes, one of the defining figures in twentieth‑century economics",
+        "Stone had worked in Great Britain on national income accounts together with James Meade and was supported by John Maynard Keynes"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Keynes’s conceptual work underpinned the Keynes‑Stone accounting structure that shaped the SNA.",
+        "supporting_text": "Based on the conceptual work of Keynes, and with his significant public support, his protégés Meade and Stone produced a system..."
+      }
+    },
+    {
+      "name": "WSS community",
+      "type": "Coalition",
+      "description": "A proposed institutionalised community focused on well‑being and sustainability, aiming to develop policies and a common language for measuring societal progress beyond GDP.",
+      "role": "Serves as the central collective that defines goals, structures, and a shared multidisciplinary language (e.g., the SGNA) for integrating the value of nature and wellbeing into economic decision‑making.",
+      "country": null,
+      "supporting_text": "The WSS community's goal is to understand well-being and sustainability and to create policies to enhance them.",
+      "source_chunk": 8,
+      "id": "6cd40d97-3d14-4a90-8c79-fae3601b6a1e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The community is proposed as the institutionalised body needed to coordinate well‑being and sustainability work.",
+        "supporting_text": "Without a coherent community it is unlikely… The WSS community’s goal is to understand well‑being and sustainability"
+      }
+    },
+    {
+      "name": "United Nations (UN)",
+      "type": "Organization",
+      "description": "An intergovernmental organization comprising all member states, responsible for adopting global agendas such as the Sustainable Development Goals. Global intergovernmental organization comprising member states. Global intergovernmental organization established in 1945. International organization that coordinates global policy and statistical standards.",
+      "role": "Started systematic collection of national accounts data in 1952, providing a worldwide reference for GDP statistics.",
+      "country": "International",
+      "supporting_text": "The second source is the United Nations, which started to collect national accounts data in 1952",
+      "id": "86467432-e4fa-42e5-bb98-6bb8883e4641",
+      "variations": [
+        "United Nations (UN)"
+      ],
+      "source_chunks": [
+        8,
+        11,
+        15,
+        23
+      ],
+      "supporting_texts": [
+        "The second source is the United Nations, which started to collect national accounts data in 1952",
+        "a prime candidate would be the Sustainable Development Goals, a list of 169 targets that were adopted by all member states of the UN in 2015.",
+        "Stone was the principal author of the first ever UN handbook, which is considered the first \"official\" SNA",
+        "The CSD indicators were based on stakeholder deliberations between the various countries of the UN."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text mentions UN‑linked conferences but does not specify direct UN actions relevant to the initiative.",
+        "supporting_text": "The process started at the Rio+20 Conference in 2012..."
+      }
+    },
+    {
+      "name": "Intergovernmental Panel on Climate Change (IPCC)",
+      "type": "Organization",
+      "description": "An intergovernmental body established in the early 1990s to assess scientific information related to climate change.",
+      "role": "Illustrates a successful model of building a coherent scientific community with a common language, which the text proposes to emulate for well‑being and sustainability measurement beyond GDP.",
+      "country": null,
+      "supporting_text": "The Intergovernmental Panel on Climate Change (IPCC), which started in the early 1990s, has resulted in a coherent climate science community.",
+      "source_chunk": 8,
+      "id": "5751fc11-3b27-4e6d-ab5c-cae6f848a83c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "IPCC is used as a successful model of building a coherent scientific community.",
+        "supporting_text": "The Intergovernmental Panel on Climate Change (IPCC)… has resulted in a coherent climate science community"
+      }
+    },
+    {
+      "name": "William Petty",
+      "type": "Individual",
+      "description": "English economist who produced one of the earliest national income estimates in 1665.",
+      "role": "Pioneered early national income accounting, laying groundwork for later GDP metrics.",
+      "country": "United Kingdom",
+      "supporting_text": "the first national income estimates were published by William Petty in 1665",
+      "source_chunk": 11,
+      "id": "940e38d7-3601-4d6d-8790-93e76216e92a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "His early national‑income estimate shows that alternative accounting foundations existed centuries ago.",
+        "supporting_text": "first national income estimates were published by William Petty in 1665"
+      }
+    },
+    {
+      "name": "William King",
+      "type": "Individual",
+      "description": "English economist who produced a national income estimate in 1696 for the United Kingdom.",
+      "role": "Early contributor to national income accounting, a precursor to modern GDP measurement.",
+      "country": "United Kingdom",
+      "supporting_text": "William King in 1696 for the United Kingdom",
+      "source_chunk": 11,
+      "id": "213333b9-d0f4-467f-a4ea-2953141394c2",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Early work demonstrates historic precedent for systematic valuation beyond market output.",
+        "supporting_text": "William King in 1696 for the United Kingdom."
+      }
+    },
+    {
+      "name": "Studenski",
+      "type": "Individual",
+      "description": "Scholar who authored a seminal 1958 work on the history of national income accounting.",
+      "role": "Identified key drivers of the development of national accounts, influencing how GDP became a central metric.",
+      "country": null,
+      "supporting_text": "Studenski (1958) ... gave individual scholars a lot of credit for their \"interest and initiative\"",
+      "source_chunk": 11,
+      "id": "8dca905e-bfcc-4f88-be44-aa969006423a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Identified drivers of national‑account adoption, offering insight for steering future nature‑centric metrics.",
+        "supporting_text": "Studenski gave thought to the “forces that influenced the development of the past three hundred years”."
+      }
+    },
+    {
+      "name": "Herbert Hoover",
+      "type": "Individual",
+      "description": "President of the United States (1929‑1933) with a laissez‑faire stance toward government statistics.",
+      "role": "His resistance to extensive statistical measurement delayed early GDP data collection, shaping the early trajectory of national accounting.",
+      "country": "United States",
+      "supporting_text": "The Republican President at the time, Herbert Hoover, who had been elected on a laissez‑faire platform, had great faith in the economic system's ability to correct itself",
+      "source_chunk": 11,
+      "id": "f108ffd2-3c28-40cc-9778-e860b7bfa387",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Hoover’s laissez‑faire stance discouraged the collection of macro‑economic statistics, delaying the development of national accounts needed for better environmental and social decision‑making.",
+        "supporting_text": "Herbert Hoover … had great faith in the economic system’s ability to correct itself… why spend valuable government resources measuring a problem that will solve itself?"
+      }
+    },
+    {
+      "name": "John D. Rockefeller",
+      "type": "Individual",
+      "description": "American business magnate who commented on the Great Depression.",
+      "role": "Represented private‑sector attitudes toward economic crises that influenced public demand for macro‑economic metrics like GDP.",
+      "country": "United States",
+      "supporting_text": "The famous business magnate John D. Rockefeller is reputed to have said during the Great Depression",
+      "source_chunk": 11,
+      "id": "dd51a243-a274-4fc7-a3f8-e283eb2319b1",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Rockefeller’s dismissive comment about depressions reinforced complacency, undermining urgency for systematic economic measurement that could inform nature‑valuing policies.",
+        "supporting_text": "John D. Rockefeller … ‘Prosperity has always returned and will again.’"
+      }
+    },
+    {
+      "name": "Robert La Follette Jr.",
+      "type": "Individual",
+      "description": "Progressive Republican congressman who advocated for measuring the economy and unemployment in the 1920s‑1930s.",
+      "role": "Pushed Congress to adopt national income statistics, directly contributing to the institutionalisation of GDP‑type measures.",
+      "country": "United States",
+      "supporting_text": "efforts of a progressive Republican congressman, Robert La Follette Jr., who throughout the 1920s had tried to convince his colleagues in Congress to start measuring the economy and unemployment",
+      "source_chunk": 11,
+      "id": "8ec7108a-0d9e-4d46-8a61-3521743644dd",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "He repeatedly advocated for national‑income statistics, mobilising legislative support that enabled data collection essential for informed policy.",
+        "supporting_text": "progressive Republican congressman, Robert La Follette Jr., … tried to convince his colleagues … to start measuring the economy and unemployment."
+      }
+    },
+    {
+      "name": "National Bureau of Economic Research (NBER)",
+      "type": "Organization",
+      "description": "U.S. research institute founded in 1920 to promote economic statistics and research.",
+      "role": "Provided the institutional platform where early national income work, including Kuznets' report, was conducted.",
+      "country": "United States",
+      "supporting_text": "The National Bureau of Economic Research (NBER) had been founded in 1920 with the precise aim of promoting statistics in economic decision making",
+      "source_chunk": 11,
+      "id": "111ddca5-b994-40f7-a814-0723c5f02812",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "NBER was created to promote statistics in economic decision‑making, providing institutional capacity for national‑account development.",
+        "supporting_text": "The National Bureau of Economic Research (NBER) … was founded … with the precise aim of promoting statistics in economic decision making."
+      }
+    },
+    {
+      "name": "Wesley Mitchell",
+      "type": "Individual",
+      "description": "Economist who led NBER during the 1930s and oversaw early national income research.",
+      "role": "Directed empirical work that underpinned the first systematic national income estimates used for GDP.",
+      "country": "United States",
+      "supporting_text": "Under the leadership of Wesley Mitchell a lot of empirical experience had been amassed by the institute",
+      "source_chunk": 11,
+      "id": "2fe2ef84-81ad-4d86-b6bc-123fc7bb0842",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Mitchell’s leadership at NBER generated empirical experience that underpinned early national‑account work.",
+        "supporting_text": "under the leadership of Wesley Mitchell a lot of empirical experience had been amassed by the institute."
+      }
+    },
+    {
+      "name": "Wassily Leontief",
+      "type": "Individual",
+      "description": "Economist who introduced input‑output analysis in 1936.",
+      "role": "Developed methodological tools that enriched national accounts and the measurement of economic activity.",
+      "country": "United States",
+      "supporting_text": "Wassily Leontief published his first paper on input‑output economics, in which a model that linked the economic input to the outputs was created for the United States for the year 1919",
+      "source_chunk": 11,
+      "id": "566891da-95f1-4615-96e9-65c3e7e54b41",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Leontief’s input‑output model introduced systemic interdependencies that later supported broader accounting of ecological flows.",
+        "supporting_text": "Wassily Leontief published his first paper on input–output economics, in which a model that linked the economic input to the outputs was created."
+      }
+    },
+    {
+      "name": "Jan Tinbergen",
+      "type": "Individual",
+      "description": "Dutch economist who created early econometric models of business cycles.",
+      "role": "Advanced quantitative techniques that became integral to national accounting and GDP estimation.",
+      "country": "Netherlands",
+      "supporting_text": "Jan Tinbergen also published his first work, in which he produced an econometric model for business cycle analysis",
+      "source_chunk": 11,
+      "id": "15d34bbb-60ef-4867-888b-bb2a9b973f58",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Tinbergen’s econometric business‑cycle models expanded quantitative tools, opening pathways for integrated economic‑environmental assessments.",
+        "supporting_text": "Jan Tinbergen also published his first work, in which he produced an econometric model for business cycle analysis."
+      }
+    },
+    {
+      "name": "Ragnar Frisch",
+      "type": "Individual",
+      "description": "Norwegian economist, co‑recipient of the first Nobel Memorial Prize in Economic Sciences (1969).",
+      "role": "Contributed to econometric foundations that support modern GDP calculations.",
+      "country": "Norway",
+      "supporting_text": "Tinbergen shared the first economics Nobel Prize with Ragnar Frisch in 1969 (for econometrics)",
+      "source_chunk": 11,
+      "id": "f26c0e15-d270-4608-b2c2-cdc8ef925593",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Frisch’s contributions to econometrics provided methodological foundations for complex system modelling, essential for systemic change analyses.",
+        "supporting_text": "Ragnar Frisch … shared the first economics Nobel Prize … for econometrics."
+      }
+    },
+    {
+      "name": "Robert Nathan",
+      "type": "Individual",
+      "description": "Assistant to Simon Kuznets who participated in wartime economic planning.",
+      "role": "Applied national income data to war‑economy decisions, demonstrating the policy relevance of GDP‑type metrics.",
+      "country": "United States",
+      "supporting_text": "Kuznets and Robert Nathan (who had been Kuznets's assistant for the 1934 Congress report) also joined the war planning effort",
+      "source_chunk": 11,
+      "id": "45d1637e-a11c-446e-9f32-a91eba9977d0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Nathan assisted Kuznets in war‑time economic planning, helping enforce limits on military spending and demonstrating the policy relevance of national accounts.",
+        "supporting_text": "Kuznets and Robert Nathan … also joined the war planning effort."
+      }
+    },
+    {
+      "name": "Organisation for Economic Co‑operation and Development (OECD)",
+      "type": "Organization",
+      "description": "International intergovernmental economic organization that develops policy recommendations and statistical tools. International organization founded in 1948 (originally OEEC) to coordinate economic policy among member states.",
+      "role": "Co‑ordinated, collected, and harmonised national accounts, cementing GDP as a standard metric for policy making.",
+      "country": "International",
+      "supporting_text": "Another important institute, which will play a significant part in this book, is the Organisation for Economic Co‑operation and Development (OECD)",
+      "id": "baf9d9a5-7c75-4273-a36f-8085e70864c7",
+      "variations": [
+        "Organisation for Economic Co‑operation and Development (OECD)"
+      ],
+      "source_chunks": [
+        11,
+        23
+      ],
+      "supporting_texts": [
+        "Another important institute, which will play a significant part in this book, is the Organisation for Economic Co‑operation and Development (OECD)",
+        "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD)... An influential indicator set is the Better Life Index (BLI), which was launched by the OECD at its fiftieth anniversary."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "OECD co‑created statistical working groups and launched the Better Life Index, supporting institutional capacity.",
+        "supporting_text": "In 2004, the UNECE, OECD and Eurostat ... created the Working Group ... The Better Life Index (BLI), which was launched by the OECD ..."
+      }
+    },
+    {
+      "name": "OEEC (Organisation for European Economic Co‑operation)",
+      "type": "Organization",
+      "description": "Predecessor to the OECD, created in 1948 to administer Marshall Aid.",
+      "role": "Monitored aid distribution and required regular national accounts from recipient countries, encouraging GDP‑type reporting.",
+      "country": "International",
+      "supporting_text": "The OEEC was set up to monitor and distribute Marshall Aid. In order to assess where the aid was needed it was important to have information about economic conditions and so the aid recipients had to start producing national accounts on a regular basis",
+      "source_chunk": 11,
+      "id": "4148754f-c3b7-4901-b979-e4a4d2a06a00",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "OEEC’s post‑war coordination of aid required regular national‑account reporting, spurring data production in Europe.",
+        "supporting_text": "Initially called the Organisation for European Economic Co‑operation (OEEC), it was founded in 1948 and played an important role in the post‑war economic recovery."
+      }
+    },
+    {
+      "name": "Van Lennep",
+      "type": "Individual",
+      "description": "Secretary‑General of the OECD in the early 1970s.",
+      "role": "Publicly warned that major recessions would stem from policy miscalculations, underscoring the importance of accurate macro‑economic statistics such as GDP.",
+      "country": "Netherlands",
+      "supporting_text": "Van Lennep, the Secretary‑General of the OECD, reported that \"A major recession would no longer be a deus ex machina, but could only result from miscalculation or a deliberate act of government\"",
+      "source_chunk": 11,
+      "id": "88440cc8-698c-4a07-aa8f-d506f4026617",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "His OECD statement highlighted the importance of accurate economic measurement, shaping public and policy discourse about economic health.",
+        "supporting_text": "In 1970, Van Lennep, the Secretary-General of the OECD, reported that “A major recession would no longer be a deus ex machina, but could only result from miscalculation or a deliberate act of government”."
+      }
+    },
+    {
+      "name": "Robert Solow",
+      "type": "Individual",
+      "description": "American economist and 1987 Nobel laureate known for the Solow‑Swan growth model.",
+      "role": "Developed growth theory that made GDP growth a central policy objective worldwide.",
+      "country": "United States",
+      "supporting_text": "Prominent economists such as Robert Solow and Paul Samuelson also thought that the instability in capitalist societies had come to an end",
+      "source_chunk": 11,
+      "id": "33d0da74-e865-4835-a002-a85bd5cf80f1",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "His confidence that recessions were preventable reinforced the prevailing focus on GDP growth as the primary policy goal.",
+        "supporting_text": "Prominent economists such as Robert Solow and Paul Samuelson also thought that the instability in capitalist societies had come to an end."
+      }
+    },
+    {
+      "name": "United States Congress",
+      "type": "Government",
+      "description": "Legislative body of the United States federal government.",
+      "role": "Requested national income statistics in 1934, prompting the production of early GDP‑type data.",
+      "country": "United States",
+      "supporting_text": "a report by Simon Kuznets on 4 January 1934. This report contained estimates for economic activity which the US Congress requested as a result of the Great Depression",
+      "source_chunk": 11,
+      "id": "75d21dd1-7d3c-45bc-87e6-ed530e099b8e",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The Congress’s request for national‑income statistics during the Depression illustrates reliance on GDP‑type metrics.",
+        "supporting_text": "The report contained estimates for economic activity which the US Congress requested as a result of the Great Depression."
+      }
+    },
+    {
+      "name": "Department of Commerce (United States)",
+      "type": "Government",
+      "description": "Federal agency responsible for promoting economic growth and gathering statistical data.",
+      "role": "Tasked (via Resolution 220) with producing national income statistics, a precursor to modern GDP reporting.",
+      "country": "United States",
+      "supporting_text": "Resolution 220 was a request to the Department of Commerce, but they did not have the expertise or staff for the job",
+      "source_chunk": 11,
+      "id": "871a3101-9293-4fe1-aab7-82774d61b2a8",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Its inability to produce the requested data shows institutional dependence on GDP‑focused statistics.",
+        "supporting_text": "Resolution 220 was a request to the Department of Commerce, but they did not have the expertise or staff for the job."
+      }
+    },
+    {
+      "name": "Milton Friedman",
+      "type": "Individual",
+      "description": "American economist, Nobel laureate (1976), leading figure of the monetarist school.",
+      "role": "Promoted monetarist policies that emphasized market efficiency and GDP growth, reinforcing the dominance of GDP as the primary economic metric and limiting the incorporation of nature’s value into decision‑making.",
+      "country": "United States",
+      "supporting_text": "Names like Milton Friedman (Nobel Prize 1976) and Robert Lucas (Nobel Prize 1995) spring to mind.",
+      "source_chunk": 12,
+      "id": "22e98d14-0fe6-48a0-9551-0d528b8bf901",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Represents the neoliberal shift that reinforced deregulation.",
+        "supporting_text": "Names like Milton Friedman (Nobel Prize 1976) ... spring to mind."
+      }
+    },
+    {
+      "name": "Robert Lucas",
+      "type": "Individual",
+      "description": "American economist, Nobel laureate (1995), founder of the new classical school of macroeconomics.",
+      "role": "Advanced the new classical approach that focused on supply‑side policies and GDP growth, shaping policy discourse that kept GDP at the centre of economic evaluation.",
+      "country": "United States",
+      "supporting_text": "Robert Lucas, Nobel Prize winner and founder of the new classical school, said during his presidential address to the American Economic Association in 2003: \"My thesis in this lecture is that macroeconomics in this original sense has succeeded...\"",
+      "source_chunk": 12,
+      "id": "b18dfb2f-d984-4bab-a148-7988b2620b30",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "His presidential address signals confidence in macro‑economics and growth focus.",
+        "supporting_text": "Robert Lucas ... said during his presidential address to the American Economic Association in 2003."
+      }
+    },
+    {
+      "name": "Ronald Reagan",
+      "type": "Individual",
+      "description": "40th President of the United States (1981‑1989).",
+      "role": "Implemented a political agenda of smaller government and deregulation that prioritized economic growth measured by GDP, thereby marginalising alternative valuations of nature.",
+      "country": "United States",
+      "supporting_text": "This economic vision was also adopted by a new generation of politicians such as Ronald Reagan and Margaret Thatcher, who ran on platforms of smaller government and deregulation.",
+      "source_chunk": 12,
+      "id": "72ab7078-fa75-42e0-a794-8b29d56ce691",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Embodied the political push for smaller government and deregulation.",
+        "supporting_text": "Ronald Reagan ... ran on platforms of smaller government and deregulation."
+      }
+    },
+    {
+      "name": "Margaret Thatcher",
+      "type": "Individual",
+      "description": "Prime Minister of the United Kingdom (1979‑1990).",
+      "role": "Advanced policies of deregulation and market‑oriented growth that reinforced GDP as the chief indicator of national wellbeing, limiting space for nature‑centric metrics.",
+      "country": "United Kingdom",
+      "supporting_text": "This economic vision was also adopted by a new generation of politicians such as Ronald Reagan and Margaret Thatcher, who ran on platforms of smaller government and deregulation.",
+      "source_chunk": 12,
+      "id": "1a790156-c14a-482b-857d-cb7658885b24",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Similarly promoted deregulation and reduced state intervention.",
+        "supporting_text": "Margaret Thatcher ... ran on platforms of smaller government and deregulation."
+      }
+    },
+    {
+      "name": "Alan Greenspan",
+      "type": "Individual",
+      "description": "Chairman of the Federal Reserve Bank (1987‑2006), credited with the \"Great Moderation\".",
+      "role": "Steered monetary policy that stabilised GDP growth and inflation, reinforcing confidence in GDP as the primary macro‑economic yardstick.",
+      "country": "United States",
+      "supporting_text": "One other prominent voice of that period was Alan Greenspan, the Chairman of the Federal Reserve Bank, who was credited with the \"Great Moderation\"...",
+      "source_chunk": 12,
+      "id": "7b1131c0-7597-4b72-965d-c85cfee3a20d",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Linked to the Great Moderation, a hallmark of the prevailing macro environment.",
+        "supporting_text": "Alan Greenspan ... credited with the “Great Moderation”."
+      }
+    },
+    {
+      "name": "Bob Woodward",
+      "type": "Individual",
+      "description": "American investigative journalist, author of a biography of Alan Greenspan.",
+      "role": "Documented the life of a key GDP‑focused policymaker, shaping public perception of the era’s economic priorities.",
+      "country": "United States",
+      "supporting_text": "When Bob Woodward, famous journalist of Watergate repute, wrote a biography about Alan Greenspan his book was titled Maestro.",
+      "source_chunk": 12,
+      "id": "a7bf6845-e1b4-44db-8aaf-41dafdff1ca4",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "His biography amplified Greenspan’s image, affecting public perception of macro policy.",
+        "supporting_text": "Bob Woodward ... his book was titled Maestro."
+      }
+    },
+    {
+      "name": "John Kenneth Galbraith",
+      "type": "Individual",
+      "description": "Canadian‑American economist, author of *The Affluent Society* (1958).",
+      "role": "Critiqued the reliance on GDP by highlighting the gap between private wealth and public squalor, thereby supporting the search for broader wellbeing metrics that include nature.",
+      "country": "United States",
+      "supporting_text": "Influential was the Affluent Society by John Kenneth Galbraith, which addressed the inequality of \"private wealth and public squalor\" and the inadequacy of GDP as a measure of welfare.",
+      "source_chunk": 12,
+      "id": "f18416f5-b91d-4691-ad86-15fd309fe15f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Authored a work that questioned GDP’s adequacy for welfare measurement.",
+        "supporting_text": "Affluent Society by John Kenneth Galbraith ... the inadequacy of GDP as a measure of welfare."
+      }
+    },
+    {
+      "name": "OECD",
+      "type": "Organization",
+      "description": "Organisation for Economic Co‑operation and Development, an intergovernmental economic body. Organisation for Economic Co‑operation and Development, an intergovernmental economic organization that defines subjective well‑being metrics. Organisation for Economic Co‑operation and Development, an international intergovernmental organization that produces economic statistics and policy recommendations. The Organisation for Economic Co‑operation and Development, an intergovernmental organization that promotes economic cooperation and provides data platforms.",
+      "role": "Started programmes in the 1970s to address \"problems of modern society,\" opening institutional space for discussions about alternative metrics beyond GDP.",
+      "country": "France",
+      "supporting_text": "By the 1970s, organisations such as the OECD, the bastion of post‑war economic growth, started programmes to address the \"problems of modern society\".",
+      "id": "b1055053-e300-42ff-b6f8-982bbe9fdced",
+      "variations": [
+        "OECD"
+      ],
+      "source_chunks": [
+        12,
+        16,
+        17,
+        20
+      ],
+      "supporting_texts": [
+        "By the 1970s, organisations such as the OECD, the bastion of post‑war economic growth, started programmes to address the \"problems of modern society\".",
+        "John F. Kennedy was instrumental in convincing the OECD to set a growth target for all OECD countries in 1961.",
+        "the largest active repository of Beyond-GDP initiatives is wikiprogress.org, which is an OECD initiative that provides information about well‑being and sustainability projects from around the world.",
+        "The OECD defines Subjective well‑being as: \"Good mental states, including all of the various evaluations, positive and negative, that people make of their lives, and the affective reactions of people to their experiences.\""
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Its definition of Subjective well‑being gives legitimacy and visibility to well‑being metrics.",
+        "supporting_text": "The OECD defines Subjective well‑being as: “Good mental states, including all of the various evaluations…"
+      }
+    },
+    {
+      "name": "American Economic Association",
+      "type": "Organization",
+      "description": "Professional association of economists in the United States.",
+      "role": "Hosted Robert Lucas’s presidential address, providing a platform for the dissemination of growth‑centric macro‑economic ideas that kept GDP central.",
+      "country": "United States",
+      "supporting_text": "Robert Lucas, Nobel Prize winner and founder of the new classical school, said during his presidential address to the American Economic Association in 2003...",
+      "source_chunk": 12,
+      "id": "f7e1dd1b-1a1c-43fd-a76c-fa2afdccf4b9",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The AEA hosts presidential addresses that affirm the dominance of growth‑focused macroeconomics.",
+        "supporting_text": "Robert Lucas ... said during his presidential address to the American Economic Association in 2003."
+      }
+    },
+    {
+      "name": "Federal Reserve Bank",
+      "type": "Organization",
+      "description": "Central banking system of the United States.",
+      "role": "Under Alan Greenspan’s chairmanship, managed monetary policy that stabilised GDP growth, thereby cementing GDP’s status as the chief economic metric.",
+      "country": "United States",
+      "supporting_text": "One other prominent voice of that period was Alan Greenspan, the Chairman of the Federal Reserve Bank, who was credited with the \"Great Moderation\"...",
+      "source_chunk": 12,
+      "id": "38687487-691b-4a00-90ec-a0fa212724d2",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The Fed, through Greenspan, promoted the “Great Moderation”, sustaining the growth‑centric paradigm.",
+        "supporting_text": "Alan Greenspan, the Chairman of the Federal Reserve Bank, who was credited with the “Great Moderation”."
+      }
+    },
+    {
+      "name": "United States",
+      "type": "Government",
+      "description": "Federal government of the United States of America.",
+      "role": "Faced financial troubles in the 1960s‑70s, abandoned the Bretton Woods fixed‑exchange system, and pursued deregulation and supply‑side policies that reinforced GDP‑centric growth models.",
+      "country": "United States",
+      "supporting_text": "The system began to run into trouble at the end of the 1960s because of the United States' financial troubles, which stemmed from the Vietnam War.",
+      "source_chunk": 12,
+      "id": "302a0e80-0de3-4a84-af9c-15c01267d4df",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "U.S. financial troubles and policy choices (Vietnam War, deregulation) exemplify the prevailing growth‑first condition.",
+        "supporting_text": "The system began to run into trouble ... because of the United States’ financial troubles, which stemmed from the Vietnam War."
+      }
+    },
+    {
+      "name": "Japan",
+      "type": "Government",
+      "description": "National government of Japan.",
+      "role": "In 1973, together with European countries, abandoned the Bretton Woods framework, moving to floating exchange rates that facilitated market‑oriented growth measured by GDP.",
+      "country": "Japan",
+      "supporting_text": "By 1973 Japan and European countries effectively stopped using the Bretton Woods framework, replacing exchange rates fixed to the dollar with floating currencies.",
+      "source_chunk": 12,
+      "id": "193f1b42-c439-4ace-866d-8fbafa22b430",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Japan’s shift away from Bretton Woods illustrates an alternative monetary regime with systemic implications.",
+        "supporting_text": "By 1973 Japan and European countries effectively stopped using the Bretton Woods framework."
+      }
+    },
+    {
+      "name": "Lehman Brothers",
+      "type": "Organization",
+      "description": "A major U.S. investment bank that filed for bankruptcy in September 2008, triggering a global financial crisis.",
+      "role": "Its collapse exposed the fragility of conventional financial metrics and spurred debate about the need for broader wellbeing‑oriented indicators beyond GDP.",
+      "country": "United States",
+      "supporting_text": "Lehman Brothers filed for bankruptcy on 15 September 2008.",
+      "source_chunk": 14,
+      "id": "7fe2fc23-c977-467e-a708-32e584512c6d",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Its bankruptcy marked the shock that triggered the 2008 financial crisis.",
+        "supporting_text": "Lehman Brothers filed for bankruptcy on 15 September 2008."
+      }
+    },
+    {
+      "name": "Paul Krugman",
+      "type": "Individual",
+      "description": "Nobel‑winning economist and New York Times columnist.",
+      "role": "Authored a high‑profile op‑ed critiquing economists’ failures, helping to frame the discussion on re‑thinking economic indicators such as GDP.",
+      "country": "United States",
+      "supporting_text": "In the New York Times, a year after the Lehmann Brothers' collapse, Paul Krugman explained the rift in his op-ed \"How Did Economists Get It So Wrong?\"",
+      "source_chunk": 14,
+      "id": "30ad1ef6-247b-42bc-a921-e3acd93be32f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Used a high‑profile op‑ed to publicise the economists’ rift.",
+        "supporting_text": "In the New York Times, a year after the Lehmann Brothers’ collapse, Paul Krugman explained the rift."
+      }
+    },
+    {
+      "name": "The New York Times",
+      "type": "Organization",
+      "description": "Leading U.S. newspaper that publishes commentary on economics and public policy.",
+      "role": "Provided a platform for Krugman's critique, disseminating ideas about the limits of GDP and the need for alternative wellbeing metrics.",
+      "country": "United States",
+      "supporting_text": "In the New York Times, a year after the Lehmann Brothers' collapse, Paul Krugman explained the rift in his op-ed \"How Did Economists Get It So Wrong?\"",
+      "source_chunk": 14,
+      "id": "096ac8fa-2609-4cbe-95a7-1836996e2964",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Published Krugman’s op‑ed, amplifying the debate on economic theory.",
+        "supporting_text": "In the New York Times, a year after the Lehmann Brothers’ collapse, Paul Krugman explained the rift."
+      }
+    },
+    {
+      "name": "Donald Trump",
+      "type": "Individual",
+      "description": "45th President of the United States (2017‑2021).",
+      "role": "Implemented isolationist trade policies and challenged mainstream economic narratives, influencing public debate on the relevance of traditional growth metrics like GDP.",
+      "country": "United States",
+      "supporting_text": "Donald Trump ran on an isolationist platform that wants to limit trade (\"America first\") and won. He withdrew from the Trans‑Pacific Partnership (TPP) soon after he was elected, which was a major break in US policy.",
+      "source_chunk": 14,
+      "id": "31dc0ce8-0f4a-4d05-af51-e56af189d644",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Promoted isolationist policies and a post‑truth narrative that challenge statistical and trade norms.",
+        "supporting_text": "Donald Trump ran on an isolationist platform that wants to limit trade (“America first”) and won."
+      }
+    },
+    {
+      "name": "Dani Rodrik",
+      "type": "Individual",
+      "description": "Economist and author of *The Globalisation Paradox*.",
+      "role": "Critiques the assumption that free trade always benefits society, arguing for more democratic and wellbeing‑focused measures beyond GDP.",
+      "country": "United States",
+      "supporting_text": "Dani Rodrik, in The Globalisation Paradox, shows that although additional free trade might boost the economy a little, it also leads to less democratic control and societal disenchantment.",
+      "source_chunk": 14,
+      "id": "e23080a8-51e7-4eea-b12f-3b60d8a308f2",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "His critique links free‑trade to reduced democratic control and societal disenchantment, highlighting a prevailing economic paradigm that hinders harmony with nature.",
+        "supporting_text": "free trade ... also leads to less democratic control and societal disenchantment."
+      }
+    },
+    {
+      "name": "Nicolas Sarkozy",
+      "type": "Individual",
+      "description": "Former President of France (2007‑2012).",
+      "role": "Publicly questioned trust in statistical indicators, thereby supporting calls for alternative ways to assess societal wellbeing beyond GDP.",
+      "country": "France",
+      "supporting_text": "Nicolas Sarkozy was interviewed about the Stiglitz Report and addressed the lack of faith in statistics.",
+      "source_chunk": 14,
+      "id": "0673c96a-8f6d-423f-962f-61a0c0a647c0",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "He points out public distrust in statistics and the “cult of the market,” exposing a condition that can impede evidence‑based sustainability policies.",
+        "supporting_text": "citizens think we are lying to them… behind the cult of the market that is always right."
+      }
+    },
+    {
+      "name": "Robert Gordon",
+      "type": "Individual",
+      "description": "Economist and author of *The Rise and Fall of American Growth*.",
+      "role": "Forecasts a prolonged period of low growth, suggesting that GDP will become a less useful gauge of prosperity and encouraging exploration of other wellbeing metrics.",
+      "country": "United States",
+      "supporting_text": "Economists such as Robert Gordon in his book The Rise and Fall of American Growth argue that high growth rates are behind us for the foreseeable future.",
+      "source_chunk": 14,
+      "id": "db10d573-aeee-4a98-90f8-d8a100ea3e40",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "His forecast of prolonged low growth suggests GDP will lose relevance, opening space for alternative wellbeing metrics.",
+        "supporting_text": "high growth rates are behind us… low growth… GDP would lose its status."
+      }
+    },
+    {
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "type": "Organization",
+      "description": "Renowned U.S. research university known for its work in technology and data science.",
+      "role": "Develops big‑data projects like the \"billion prices project\" that could provide high‑frequency alternatives to traditional GDP estimates.",
+      "country": "United States",
+      "supporting_text": "The \"billion prices project\" of MIT collects data from websites using webcrawlers to calculate daily inflation rates for many countries.",
+      "source_chunk": 14,
+      "id": "47804c25-0ded-4248-8838-43b03aa89b17",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "MIT’s Billion Prices Project demonstrates how big‑data can transform economic measurement, enabling new indicators beyond GDP.",
+        "supporting_text": "Development of the Billion Prices Project at MIT… big data."
+      }
+    },
+    {
+      "name": "Financial Times",
+      "type": "Organization",
+      "description": "International business newspaper headquartered in the United Kingdom.",
+      "role": "Served as a venue for political leaders to discuss skepticism toward economic statistics, contributing to the broader conversation about alternative wellbeing indicators.",
+      "country": "United Kingdom",
+      "supporting_text": "He linked this scepticism to the dominance of economic (\"market\") thinking in an interview with the Financial Times: \"The world over, citizens think we are lying to them, that the figures are wrong, that they are manipulated...\"",
+      "source_chunk": 14,
+      "id": "1ac385d4-2ef8-4712-a854-d3116a270bf1",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "As a media outlet it disseminates critiques of economic orthodoxies, shaping public discourse on alternative metrics.",
+        "supporting_text": "Sarkozy was interviewed… Financial Times."
+      }
+    },
+    {
+      "name": "Committee of Statistical Experts of the League of Nations",
+      "type": "Organization",
+      "description": "A committee within the League of Nations tasked with statistical matters, including the measurement of national income.",
+      "role": "Initiated early work on national income measurement that later fed into the development of the System of National Accounts (SNA).",
+      "country": "Switzerland",
+      "supporting_text": "the Committee of Statistical Experts of the League of Nations included in its programme the measurement of national income",
+      "source_chunk": 15,
+      "id": "eb9b1a94-6e61-4d3f-b0b8-4ba803eaa5a0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The committee’s inclusion of national income measurement initiated coordinated statistical work across nations.",
+        "supporting_text": "In April 1939, the Committee of Statistical Experts of the League of Nations included in its programme the measurement of national income."
+      }
+    },
+    {
+      "name": "Statistical Office of the United Nations",
+      "type": "Organization",
+      "description": "The newly founded statistical branch of the United Nations after World War II.",
+      "role": "Carried out foundational tasks for national income accounting, contributing to the early formulation of the SNA.",
+      "country": "United States",
+      "supporting_text": "the newly founded Statistical Office of the UN started to work on two initial tasks: survey sampling theory and national income accounting",
+      "source_chunk": 15,
+      "id": "f4ed9e08-80a6-4781-b6d1-f090a068a080",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The office began systematic work on national income accounting, providing institutional capacity for global data collection.",
+        "supporting_text": "the newly founded Statistical Office of the UN started to work on two initial tasks: survey sampling theory and national income accounting."
+      }
+    },
+    {
+      "name": "Richard Stone",
+      "type": "Individual",
+      "description": "British economist who chaired the 1945 subcommittee on national income and later authored key SNA handbooks.",
+      "role": "Led the subcommittee that produced the 1947 report, authored the first UN SNA handbook (1953), and coordinated international adoption of the SNA framework.",
+      "country": "United Kingdom",
+      "supporting_text": "a subcommittee was initiated under the chairmanship of Richard Stone",
+      "source_chunk": 15,
+      "id": "6646d2e9-0887-4307-84fb-9214c4c98487",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Stone’s leadership and networking secured political and institutional support that made the SNA a worldwide standard.",
+        "supporting_text": "Stone operated well in the political and institutional setting while Kuznets was not cut out for these types of processes."
+      }
+    },
+    {
+      "name": "James Meade",
+      "type": "Individual",
+      "description": "British economist who collaborated with Richard Stone on national income accounts.",
+      "role": "Contributed scholarly expertise that shaped the early design of the SNA.",
+      "country": "United Kingdom",
+      "supporting_text": "Stone had worked in Great Britain on national income accounts together with James Meade",
+      "source_chunk": 15,
+      "id": "11e89c61-d474-4da9-bb81-26b1095bdd43",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Collaborated with Stone on national income accounts, helping build the SNA system.",
+        "supporting_text": "Stone had worked in Great Britain on national income accounts together with James Meade and was supported by John Maynard Keynes."
+      }
+    },
+    {
+      "name": "United States Department of Commerce",
+      "type": "Government",
+      "description": "U.S. federal agency responsible for economic statistics and trade.",
+      "role": "Collaborated with Richard Stone and other experts, influencing the U.S. shift toward the Keynes‑Stone accounting structure that became central to the SNA.",
+      "country": "United States",
+      "supporting_text": "During a meeting in September 1944, Richard Stone and Milton Gilbert of the Department of Commerce met",
+      "source_chunk": 15,
+      "id": "dcdc030a-844a-48a3-8c92-308127db805a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided institutional venue for the tripartite meeting that shifted U.S. accounting stance.",
+        "supporting_text": "During a meeting in September 1944, Richard Stone and Milton Gilbert of the Department of Commerce met..."
+      }
+    },
+    {
+      "name": "Milton Gilbert",
+      "type": "Individual",
+      "description": "American economist and official of the U.S. Department of Commerce.",
+      "role": "Participated in the 1944 tripartite meeting that helped align U.S. policy with the Keynes‑Stone accounting framework.",
+      "country": "United States",
+      "supporting_text": "Richard Stone and Milton Gilbert of the Department of Commerce met",
+      "source_chunk": 15,
+      "id": "7c5aeb93-8af7-4e54-8aa5-96dc57c05ff0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Participated in the tripartite meeting that aligned U.S. policy with the Keynes‑Stone structure.",
+        "supporting_text": "During a meeting in September 1944, Richard Stone and Milton Gilbert of the Department of Commerce met..."
+      }
+    },
+    {
+      "name": "George Luxton",
+      "type": "Individual",
+      "description": "Canadian statistician who attended the 1944 meeting on national income accounting.",
+      "role": "Represented Canadian interests in the discussions that shaped the emerging SNA.",
+      "country": "Canada",
+      "supporting_text": "also in the presence of the Canadian George Luxton",
+      "source_chunk": 15,
+      "id": "5c24cbd5-41e1-4b9c-945c-944e4f4fef72",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "His presence at the tripartite meeting contributed to the coordinated shift in accounting approach.",
+        "supporting_text": "also in the presence of the Canadian George Luxton."
+      }
+    },
+    {
+      "name": "Organisation for European Economic Co‑operation (OEEC)",
+      "type": "Organization",
+      "description": "European intergovernmental organization that administered the Marshall Plan and produced statistical handbooks.",
+      "role": "Published handbooks on national income accounting (1951, 1952) that disseminated the SNA methodology across Europe.",
+      "country": "France",
+      "supporting_text": "He led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan",
+      "source_chunk": 15,
+      "id": "f9b7a561-20e8-4b18-a134-fa76e84b3f39",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Supported the production of handbooks that spread the British/American system across Europe.",
+        "supporting_text": "He led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan."
+      }
+    },
+    {
+      "name": "Robert Kennedy",
+      "type": "Individual",
+      "description": "U.S. Senator and brother of President John F. Kennedy; delivered a 1968 speech criticizing GDP as a measure of societal wellbeing.",
+      "role": "Advocated against using GDP/GNP as the sole metric, emphasizing the need to incorporate health, education, nature and other aspects of wellbeing into economic decision‑making.",
+      "country": "United States",
+      "supporting_text": "In 1968, Robert Kennedy gave one of the most eloquent of speeches to argue against GDP (or rather GNP at the time): Too much and for too long, we seemed to have surrendered personal excellence and community values in the mere accumulation of material things…",
+      "source_chunk": 16,
+      "id": "489573d5-aeae-4b21-94ef-7c9bd88c755f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "His public critique helped shift discourse on the adequacy of GDP.",
+        "supporting_text": "\"Robert Kennedy gave one of the most eloquent of speeches to argue against GDP (or rather GNP at the time).\""
+      }
+    },
+    {
+      "name": "John F. Kennedy",
+      "type": "Individual",
+      "description": "President of the United States (1961‑1963) who promoted economic growth targets based on GDP.",
+      "role": "Instrumental in convincing the OECD to adopt a growth target for GDP, thereby reinforcing GDP as the dominant metric for national economic performance.",
+      "country": "United States",
+      "supporting_text": "John F. Kennedy was instrumental in convincing the OECD to set a growth target for all OECD countries in 1961.",
+      "source_chunk": 16,
+      "id": "63026a32-f5a9-455b-8702-92a5c1794294",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "His advocacy for GDP growth targets reinforced the prevailing GDP‑centric agenda.",
+        "supporting_text": "\"John F. Kennedy was instrumental in convincing the OECD to set a growth target...\""
+      }
+    },
+    {
+      "name": "Kennedy family",
+      "type": "Other",
+      "description": "Prominent American political family spanning multiple generations, including John F. Kennedy and Robert Kennedy.",
+      "role": "Serves as a case study of shifting attitudes toward GDP, illustrating a move from pro‑GDP policies to criticism of GDP’s exclusion of wellbeing and nature.",
+      "country": "United States",
+      "supporting_text": "The change in attitude towards GDP in the Kennedy family.",
+      "source_chunk": 16,
+      "id": "bd14302f-2414-40d3-b2a4-47b3a9927b84",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The family’s shift in stance illustrates a broader change in values that can influence public opinion.",
+        "supporting_text": "\"The change in attitude towards GDP in the Kennedy family...\""
+      }
+    },
+    {
+      "name": "United Nations Statistics Division",
+      "type": "Organization",
+      "description": "The statistical branch of the United Nations responsible for collecting and disseminating global statistical data.",
+      "role": "Carries out the Global Assessment of Environmental‑Economic Accounting, contributing essential data for alternative accounting frameworks that incorporate the value of nature.",
+      "country": null,
+      "supporting_text": "responses to the Global Assessment of Environmental‑Economic Accounting which is carried out by the United Nations Statistics Division.",
+      "source_chunk": 17,
+      "id": "10f6aee5-adc1-489c-ad2b-91d3d035c072",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides methodological input for SEEA, enabling a systemic shift in accounting for environment‑economy links.",
+        "supporting_text": "responses to the Global Assessment of Environmental‑Economic Accounting which is carried out by the United Nations Statistics Division"
+      }
+    },
+    {
+      "name": "Global Footprint Network",
+      "type": "NGO",
+      "description": "A global non‑profit organization that develops and harmonises ecological footprint data and tools. A non‑profit organization that develops and promotes ecological footprint accounting and related sustainability metrics.",
+      "role": "Coordinates the standardisation and dissemination of ecological footprint indicators, providing an alternative to GDP for measuring human demand on nature.",
+      "country": "International",
+      "supporting_text": "The harmonisation of ecological footprint data is done by the Global Footprint Network, which currently has a database of more than 200 countries.",
+      "id": "041dc25f-fb38-4341-b97f-9581fa2c62be",
+      "variations": [
+        "Global Footprint Network"
+      ],
+      "source_chunks": [
+        17,
+        22
+      ],
+      "supporting_texts": [
+        "The harmonisation of ecological footprint data is done by the Global Footprint Network, which currently has a database of more than 200 countries.",
+        "the ecological footprint is calculated for 186 countries by the Global Footprint Network"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "It coordinates data harmonisation and maintains a large country‑level footprint database, enabling comparative analysis.",
+        "supporting_text": "The harmonisation of ecological footprint data is done by the Global Footprint Network, which currently has a database of more than 200 countries."
+      }
+    },
+    {
+      "name": "Gallup",
+      "type": "Organization",
+      "description": ", a US‑based analytics and advisory company that runs the Gallup World Poll. A US‑based analytics and advisory company known for its public‑opinion polling and research on well‑being. Gallup, Inc.",
+      "role": "Collects worldwide subjective well‑being data through the Gallup World Poll, providing indicators for metrics that go beyond GDP.",
+      "country": "United States",
+      "supporting_text": "The Gallup World Poll started in 2005 with 26 countries and had expanded to around 140 countries by 2018.",
+      "id": "0fe47918-c6e2-4ec5-a5b1-67c3a1c96a8f",
+      "variations": [
+        "Gallup"
+      ],
+      "source_chunks": [
+        17,
+        20
+      ],
+      "supporting_texts": [
+        "The Gallup World Poll started in 2005 with 26 countries and had expanded to around 140 countries by 2018.",
+        "the most recent Gallup polls on SWB cover around 140 countries."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Created a globally expanding World Poll that supplies comparable well‑being data across many countries.",
+        "supporting_text": "The Gallup World Poll started in 2005 with 26 countries and had expanded to around 140 countries by 2018."
+      }
+    },
+    {
+      "name": "Daniel Kahneman",
+      "type": "Individual",
+      "description": "Psychologist, Nobel laureate in economics, and one of the founders of behavioural economics.",
+      "role": "Advocates hedonic‑psychology approaches to measuring well‑being, influencing the conceptual foundations of Beyond‑GDP frameworks.",
+      "country": "United States",
+      "supporting_text": "The proponents of which include Daniel Kahneman, a psychologist, one of the founders of behavioural economics and winner of the Nobel Prize in economics in 2002.",
+      "source_chunk": 20,
+      "id": "0a553530-a3b3-414e-a973-9f15bb769bea",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "His prominence and Nobel laureateship lend authority to hedonic‑psychology approaches.",
+        "supporting_text": "The proponents of which include Daniel Kahneman, a psychologist, one of the founders of behavioural economics and winner of the Nobel Prize..."
+      }
+    },
+    {
+      "name": "Alan Krueger",
+      "type": "Individual",
+      "description": "Economist known for research on happiness economics and well‑being measurement.",
+      "role": "Co‑author of research proposing the U‑index for quantifying positive and negative episodes, contributing to well‑being metrics used in Beyond‑GDP initiatives.",
+      "country": "United States",
+      "supporting_text": "Kahneman and Krueger (2006) suggest that any episode can be quantified as positive or negative.",
+      "source_chunk": 20,
+      "id": "031f9e5f-675f-4649-8ec4-ccbd78f2ea8e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Co‑author of the U‑index, contributing to a novel well‑being metric.",
+        "supporting_text": "Kahneman and Krueger (2006) suggest that any episode can be quantified as positive or negative."
+      }
+    },
+    {
+      "name": "William Nordhaus",
+      "type": "Individual",
+      "description": "Yale economist and co‑creator of the Measure of Economic Welfare (MEW).",
+      "role": "Co‑author of an early green‑accounting aggregate (MEW) that added leisure and home production and subtracted environmental damage, pioneering the incorporation of nature’s value into macro‑economic metrics.",
+      "country": "USA",
+      "supporting_text": "the Measure of Economic Welfare was created by Yale economists Nordhaus and Tobin.",
+      "source_chunk": 21,
+      "id": "de054a56-6df1-4f43-aed2-a99a5d74ab0b"
+    },
+    {
+      "name": "James Tobin",
+      "type": "Individual",
+      "description": "Yale economist and co‑creator of the Measure of Economic Welfare (MEW).",
+      "role": "Co‑author of an early green‑accounting aggregate (MEW) that added leisure and home production and subtracted environmental damage, pioneering the incorporation of nature’s value into macro‑economic metrics.",
+      "country": "USA",
+      "supporting_text": "the Measure of Economic Welfare was created by Yale economists Nordhaus and Tobin.",
+      "source_chunk": 21,
+      "id": "973d86fa-0960-478b-a9c7-fa11cf0900ab"
+    },
+    {
+      "name": "Herman Daly",
+      "type": "Individual",
+      "description": "Ecological economist and co‑author of the Index of Sustainable Economic Welfare (ISEW).",
+      "role": "Co‑developed the ISEW, an early green‑accounting metric that later evolved into the Genuine Progress Indicator (GPI), integrating environmental limits into economic measurement.",
+      "country": "USA",
+      "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW), which was proposed in 1989 by Daly and Cobb.",
+      "source_chunk": 21,
+      "id": "94aaf8d8-5fcf-4829-8bbe-a4410b1afd08",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Co‑author of the ISEW, a key alternative to GDP that opened pathways for new welfare metrics.",
+        "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW), which was proposed in 1989 by Daly and Cobb."
+      }
+    },
+    {
+      "name": "John Cobb",
+      "type": "Individual",
+      "description": "Ecological economist and co‑author of the Index of Sustainable Economic Welfare (ISEW).",
+      "role": "Co‑developed the ISEW, an early green‑accounting metric that later evolved into the Genuine Progress Indicator (GPI), integrating environmental limits into economic measurement.",
+      "country": "USA",
+      "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW), which was proposed in 1989 by Daly and Cobb.",
+      "source_chunk": 21,
+      "id": "9d94d7c9-ed79-4fd8-9152-93466e2a5a17",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Co‑author of the ISEW, contributing to the development of greener welfare indicators.",
+        "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW), which was proposed in 1989 by Daly and Cobb."
+      }
+    },
+    {
+      "name": "Roefie Hueting",
+      "type": "Individual",
+      "description": "Dutch economist who proposed the Sustainable National Income (SNI).",
+      "role": "Introduced a green‑accounting approach that uses environmental limits as the baseline for national income, directly valuing nature’s capacity in economic calculations.",
+      "country": "Netherlands",
+      "supporting_text": "A different, rather unique, approach was proposed in 1974 by Roefie Hueting: Sustainable National Income.",
+      "source_chunk": 21,
+      "id": "0514d774-781b-4ade-940d-f822a6c2fb19",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced Sustainable National Income, a novel green‑accounting approach based on environmental limits.",
+        "supporting_text": "A different, rather unique, approach was proposed in 1974 by Roefie Hueting: Sustainable National Income."
+      }
+    },
+    {
+      "name": "John Hicks",
+      "type": "Individual",
+      "description": "British economist known for the concept of Hicksian income and real income.",
+      "role": "Provided the theoretical basis for the capital‑approach to green accounting, linking the maintenance of capital stocks (including natural capital) to sustainable income measurement.",
+      "country": "United Kingdom",
+      "supporting_text": "John Hicks, back in 1939, defined real income as the maximum amount that could be spent on consumption without reducing the capacity to maintain the same consumption stream over time.",
+      "source_chunk": 21,
+      "id": "7aa77b5d-257f-4c65-a77c-848ccda953c8",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provided the theoretical basis (Hicksian income) for the capital‑approach to green accounting.",
+        "supporting_text": "John Hicks, back in 1939, defined real income as the maximum amount that could be spent on consumption without reducing the capacity..."
+      }
+    },
+    {
+      "name": "United Nations University",
+      "type": "Organization",
+      "description": "Global research and postgraduate teaching organization of the United Nations system.",
+      "role": "Developed the Inclusive Wealth Index (IWI), a green‑accounting metric that aggregates produced, human, natural, and social capital to reflect the true wealth of nations.",
+      "country": "International",
+      "supporting_text": "The United Nations University, under the leadership of Partha Dasgupta, proposed the Inclusive Wealth Index (IWI).",
+      "source_chunk": 21,
+      "id": "c6709059-af62-4553-8151-535819ce0fce",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Led the development of the Inclusive Wealth Index, expanding the suite of green‑accounting metrics.",
+        "supporting_text": "The United Nations University, under the leadership of Partha Dasgupta, proposed the Inclusive Wealth Index (IWI)."
+      }
+    },
+    {
+      "name": "Partha Dasgupta",
+      "type": "Individual",
+      "description": "Economist and lead of the United Nations University’s research on inclusive wealth.",
+      "role": "Led the creation of the Inclusive Wealth Index, integrating the value of natural capital into a comprehensive measure of national wellbeing.",
+      "country": "United Kingdom / India",
+      "supporting_text": "The United Nations University, under the leadership of Partha Dasgupta, proposed the Inclusive Wealth Index (IWI).",
+      "source_chunk": 21,
+      "id": "70192259-2e02-4160-993a-31e5ec30f045",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Co‑leader of the IWI project, contributing a comprehensive wealth‑based welfare metric.",
+        "supporting_text": "The United Nations University, under the leadership of Partha Dasgupta, proposed the Inclusive Wealth Index (IWI)."
+      }
+    },
+    {
+      "name": "Maryland state government",
+      "type": "Government",
+      "description": "U.S. state government of Maryland.",
+      "role": "Implemented an official Genuine Progress Indicator (GPI) measure, applying green‑accounting concepts at the sub‑national level.",
+      "country": "USA",
+      "supporting_text": "Two US states, Maryland and Vermont, have introduced official GPI measures and there are more that are exploring them.",
+      "source_chunk": 21,
+      "id": "587bcde1-eb99-4029-8d53-78d015ed24ec",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Officially adopted the GPI, turning a green metric into policy practice.",
+        "supporting_text": "Two US states, Maryland and Vermont, have introduced official GPI measures..."
+      }
+    },
+    {
+      "name": "Vermont state government",
+      "type": "Government",
+      "description": "U.S. state government of Vermont.",
+      "role": "Implemented an official Genuine Progress Indicator (GPI) measure, applying green‑accounting concepts at the sub‑national level.",
+      "country": "USA",
+      "supporting_text": "Two US states, Maryland and Vermont, have introduced official GPI measures and there are more that are exploring them.",
+      "source_chunk": 21,
+      "id": "00173ad2-8f94-4eb9-ac5a-b25abd841cc4",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Officially adopted the GPI, demonstrating policy uptake of alternative welfare indicators.",
+        "supporting_text": "Two US states, Maryland and Vermont, have introduced official GPI measures..."
+      }
+    },
+    {
+      "name": "World Economic Forum",
+      "type": "Organization",
+      "description": "A Swiss‑based international organization that engages political, business and academic leaders to shape global, regional and industry agendas.",
+      "role": "Publishes the Competitiveness Index, a composite indicator that, while not explicitly environmental, demonstrates the broader use of alternative metrics to GDP in policy discourse.",
+      "country": "Switzerland",
+      "supporting_text": "Examples include the Competitiveness Index published by the World Economic Forum and the Global Innovation Index.",
+      "source_chunk": 22,
+      "id": "231e9368-5456-4cbb-8c64-b5265e508cee",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Its Competitiveness Index gains media attention, raising the profile of composite indicators beyond GDP debates.",
+        "supporting_text": "Examples include the Competitiveness Index published by the World Economic Forum."
+      }
+    },
+    {
+      "name": "Amartya Sen",
+      "type": "Individual",
+      "description": "Indian economist and philosopher, known for the capability approach to welfare and development.",
+      "role": "His capability approach underpins the Human Development Index, providing a theoretical foundation for measuring wellbeing beyond monetary output.",
+      "country": "India",
+      "supporting_text": "Sen was not in fact in favour of capturing the many dimensions of society in one index.",
+      "source_chunk": 22,
+      "id": "321536ce-b058-43b0-b390-620ca16bb4e4",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Sen’s capability approach provides a philosophical basis for re‑thinking welfare measurement.",
+        "supporting_text": "The capability approach… critiques welfare economics… Sen was convinced by the UN representatives to go ahead with a simplified version."
+      }
+    },
+    {
+      "name": "King of Bhutan",
+      "type": "Individual",
+      "description": "Monarch of Bhutan who launched the Gross National Happiness programme in the early 1970s.",
+      "role": "Initiated one of the earliest and most cited Beyond‑GDP initiatives, providing a national framework that values wellbeing and nature over GDP.",
+      "country": "Bhutan",
+      "supporting_text": "One of the earliest and most cited Beyond-GDP initiatives is the programme on Gross National Happiness which was initiated by the King of Bhutan in the early 1970s.",
+      "source_chunk": 23,
+      "id": "4dcfbcf5-4d9e-47e1-98bf-d9b185c19ae6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "His initiation of Gross National Happiness introduced an alternative to GDP, showing a new pathway for valuing nature.",
+        "supporting_text": "One of the earliest and most cited Beyond‑GDP initiatives is the programme on Gross National Happiness which was initiated by the King of Bhutan in the early 1970s."
+      }
+    },
+    {
+      "name": "Commission for Sustainable Development (CSD)",
+      "type": "Organization",
+      "description": "A United Nations body that, in 1995, proposed a set of Sustainable Development Indicators.",
+      "role": "Proposed a benchmark indicator set for measuring progress beyond GDP, based on stakeholder deliberations among UN member states.",
+      "country": "International",
+      "supporting_text": "In 1995 the Commission for Sustainable Development (CSD) proposed such an indicator set. The CSD indicators were based on stakeholder deliberations between the various countries of the UN.",
+      "source_chunk": 23,
+      "id": "6cea324a-321d-4cac-883d-b017e0c5d76b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "CSD proposed a benchmark indicator set and mobilised stakeholder deliberations, advancing collective measurement efforts.",
+        "supporting_text": "In 1995 the Commission for Sustainable Development (CSD) proposed such an indicator set. They were a major boost to the measurement of Beyond‑GDP."
+      }
+    },
+    {
+      "name": "Eurostat",
+      "type": "Organization",
+      "description": "Statistical office of the European Union that produces European-wide statistical reports.",
+      "role": "Produced the European Sustainable Development Indicator set and the Well‑being Report, providing alternative metrics to GDP for EU member states.",
+      "country": "European Union",
+      "supporting_text": "All EU28 countries created their own indicator set, and there was also a European SDI which was produced by Eurostat. Indicator sets also became popular for other topics outside of sustainable development. For example, Eurostat's Well-being Report has a range of indicators...",
+      "source_chunk": 23,
+      "id": "c03eede7-eb52-4e44-ac16-bbd11cd08988",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Eurostat produced European SDI and Well‑being Report, raising visibility of alternative wellbeing metrics.",
+        "supporting_text": "Eurostat’s Well‑being Report has a range of indicators and the European SDI which was produced by Eurostat."
+      }
+    },
+    {
+      "name": "United Nations Economic Commission for Europe (UNECE)",
+      "type": "Organization",
+      "description": "UN regional commission that works on economic integration and sustainable development in Europe.",
+      "role": "Co‑created the Working Group for Statistics on Sustainable Development and later the Task Force on Measuring Sustainable Development, shaping conceptual indicator frameworks.",
+      "country": "International",
+      "supporting_text": "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD)... In 2009, just after the publication of the Stiglitz Report, the joint UNECE/OECD/Eurostat Task Force on Measuring Sustainable Development (TFSD) was created.",
+      "source_chunk": 23,
+      "id": "dfee85e7-c323-48e8-afdb-0741445772df",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UNECE helped establish WGSSD and TFSD, providing institutional frameworks for sustainable‑development statistics.",
+        "supporting_text": "In 2004, the UNECE, OECD and Eurostat ... created the Working Group for Statistics on Sustainable Development (WGSSD)."
+      }
+    },
+    {
+      "name": "Working Group for Statistics on Sustainable Development (WGSSD)",
+      "type": "Coalition",
+      "description": "A joint task‑force of UNECE, OECD and Eurostat established to develop sustainable‑development statistics.",
+      "role": "Produced a report that influenced the Stiglitz Report and laid groundwork for conceptual (Type 4) indicator sets.",
+      "country": "International",
+      "supporting_text": "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD). The group built on the idea of wealth accounting...",
+      "source_chunk": 23,
+      "id": "2394aaa2-6159-4bb6-a655-0b26cd8b2d93",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "WGSSD’s report introduced wealth‑accounting concepts that shaped later conceptual indicator frameworks.",
+        "supporting_text": "The group built on the idea of wealth accounting... WGSSD Report ... had a significant influence on the Stiglitz Report."
+      }
+    },
+    {
+      "name": "Task Force on Measuring Sustainable Development (TFSD)",
+      "type": "Coalition",
+      "description": "Successor to the WGSSD, a joint UNECE/OECD/Eurostat task‑force created in 2009.",
+      "role": "Developed a set of Type 4 (conceptual) indicators and built on the Stiglitz Report’s framework.",
+      "country": "International",
+      "supporting_text": "In 2009, just after the publication of the Stiglitz Report, the joint UNECE/OECD/Eurostat Task Force on Measuring Sustainable Development (TFSD) was created. The TFSD built on the conceptual framework of the Stiglitz Report...",
+      "source_chunk": 23,
+      "id": "77bbd30b-4cff-4092-af78-d48295cb6af9",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "TFSD continued the conceptual approach of the Stiglitz Report, creating Type 4 indicators.",
+        "supporting_text": "The TFSD built on the conceptual framework of the Stiglitz Report and also created a set of (Type 4) indicators."
+      }
+    },
+    {
+      "name": "EU28 countries",
+      "type": "Government",
+      "description": "The 28 member states of the European Union (as of the time of writing).",
+      "role": "Each created its own Sustainable Development Indicator dashboard, illustrating national adoption of Beyond‑GDP metrics.",
+      "country": "European Union",
+      "supporting_text": "All EU28 countries created their own indicator set, and there was also a European SDI which was produced by Eurostat.",
+      "source_chunk": 23,
+      "id": "c5b0d12b-f065-4074-b210-6fcdbc3e43db",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "All EU28 nations developed their own SDI dashboards, demonstrating coordinated national action.",
+        "supporting_text": "All EU28 countries created their own indicator set, and there was also a European SDI which was produced by Eurostat."
+      }
+    },
+    {
+      "name": "Statistical Commission of the United Nations",
+      "type": "Organization",
+      "description": "The highest‑level statistical body of the United Nations that oversees the development of global statistical standards.",
+      "role": "Adopted the System of Environmental Economic Accounting 2012 – Central Framework, formalising the SEEA as an official statistical standard.",
+      "country": null,
+      "supporting_text": "After a lengthy deliberation process the System of Environmental Economic Accounting 2012 - Central Framework was adopted by the Statistical Commission of the United Nations.",
+      "source_chunk": 24,
+      "id": "618c94d4-70fc-41e9-b260-05e69edcbaf6",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Adopted the 2012 SEEA framework, institutionalising the standard.",
+        "supporting_text": "… was adopted by the Statistical Commission of the United Nations."
+      }
+    },
+    {
+      "name": "UN Statistical Division",
+      "type": "Organization",
+      "description": "A division of the United Nations Statistics Division that coordinates global statistical activities and standards.",
+      "role": "Set an explicit target for a hundred countries to start producing SEEA accounts by 2020, promoting widespread implementation.",
+      "country": null,
+      "supporting_text": "The UN Statistical Division has made it its explicit aim to have a hundred countries start producing SEEA account by 2020.",
+      "source_chunk": 24,
+      "id": "304e26f8-58ba-4dd8-8553-5dcaa2265ed9",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Sets a target for widespread production of SEEA accounts, encouraging global uptake.",
+        "supporting_text": "The UN Statistical Division has made it its explicit aim to have a hundred countries start producing SEEA account by 2020."
+      }
+    },
+    {
+      "name": "Six major international institutes",
+      "type": "Coalition",
+      "description": "A group of six leading international statistical and economic institutes that collaborated on the SEEA.",
+      "role": "Co‑authored and prepared the SEEA 2003 edition under their auspices, providing essential institutional backing.",
+      "country": null,
+      "supporting_text": "The SEEA was prepared under the auspices of the six major international institutes.",
+      "source_chunk": 24,
+      "id": "ece7939b-5583-4a7d-9b48-307f6be800a1",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Co‑authored and prepared the SEEA, demonstrating coordinated institutional effort.",
+        "supporting_text": "The SEEA was prepared under the auspices of the six major international institutes."
+      }
+    },
+    {
+      "name": "Statistical offices of the UN member states",
+      "type": "Government",
+      "description": "National statistical agencies of United Nations member countries.",
+      "role": "Agreed to the SEEA handbook, contributing to its institutional legitimacy and global uptake.",
+      "country": null,
+      "supporting_text": "Getting this handbook agreed by six international institutes and all the statistical offices of the UN member states is a major achievement.",
+      "source_chunk": 24,
+      "id": "c2153cb5-f460-4fe5-aa90-03d1953c0823",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Their agreement was essential for the SEEA’s institutional legitimacy.",
+        "supporting_text": "Getting this handbook agreed by six international institutes and all the statistical offices of the UN member states is a major achievement."
+      }
+    },
+    {
+      "name": "U.S. Congress",
+      "type": "Government",
+      "description": "The legislative body of the United States that discontinued the country’s environmental accounts in the 1990s.",
+      "role": "By ending the environmental accounts program, it created a major institutional barrier to the adoption of Beyond‑GDP indicators in the United States.",
+      "country": "United States",
+      "supporting_text": "The environmental accounts of the United States were discontinued in the 1990s by the US Congress.",
+      "source_chunk": 25,
+      "id": "40c9ad54-b038-4c09-bd49-7c50d2e8c480",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Discontinued US environmental accounts, directly blocking progress toward alternative metrics.",
+        "supporting_text": "The environmental accounts of the United States were discontinued in the 1990s by the US Congress."
+      }
+    },
+    {
+      "name": "Bleys and Whitby",
+      "type": "Individual",
+      "description": "Scholars who authored a 2015 assessment of Beyond‑GDP initiatives.",
+      "role": "Provided a comprehensive analysis of the requirements (timeliness, robustness, communication, standardised methodology) for successful adoption of alternative wellbeing and sustainability indicators.",
+      "country": null,
+      "supporting_text": "Bleys and Whitby (2015) probably provide the most comprehensive assessment in this direction. It names timeliness, robustness and communication as well as a standardised methodology as important requirements for success.",
+      "source_chunk": 25,
+      "id": "8e731387-c898-4d91-afb1-2fd8eb3e5ad7",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Their comprehensive assessment identifies key requirements that could shift the system toward effective Beyond‑GDP adoption.",
+        "supporting_text": "Bleys and Whitby (2015) probably provide the most comprehensive assessment… It names timeliness, robustness and communication… as important requirements for success."
+      }
+    },
+    {
+      "name": "Hayden and Wilson",
+      "type": "Individual",
+      "description": "Researchers who examined the uptake of Beyond‑GDP indicators in Canada in a 2016 study.",
+      "role": "Investigated why the adoption of alternative indicators has been disappointing in Canada and concluded that merely producing an indicator does not automatically change society.",
+      "country": "Canada",
+      "supporting_text": "Hayden and Wilson (2016) investigate the \"disappointing\" uptake of Beyond‑GDP indicators in Canada. They conclude euphemistically that the idea that simply producing an indicator will suddenly change society \"is certainly not borne out by the Canadian experience to date\".",
+      "source_chunk": 25,
+      "id": "a4d27f54-eb33-4551-8340-f637e9ffe9df",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Their study highlights the disappointing uptake of Beyond‑GDP indicators, exposing a barrier to progress.",
+        "supporting_text": "Hayden and Wilson (2016) investigate the “disappointing” uptake of Beyond‑GDP indicators in Canada."
+      }
+    },
+    {
+      "name": "Costanza et al.",
+      "type": "Individual",
+      "description": "A research team led by Robert Costanza that published a 2017 paper linking society’s focus on GDP to addiction theory.",
+      "role": "Introduced the analogy of GDP addiction and suggested that motivational‑interviewing techniques could be adapted to shift societal values toward wellbeing and sustainability.",
+      "country": null,
+      "supporting_text": "In a novel paper, Costanza et al. (2017) liken society's focus on economic growth to a real addiction. They explore how methods that are used for addicts might be adopted at the societal level. For example, Motivational Interviewing (MI) is based on engaging addicts in a positive discussion of their goals, motives and futures.",
+      "source_chunk": 25,
+      "id": "a25b4d63-ee1a-467c-bff8-96f510bdb82d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "They propose a novel addiction‑framework and MI approach, suggesting a non‑linear shift in societal attitudes toward GDP.",
+        "supporting_text": "Costanza et al. (2017) liken society’s focus on economic growth to a real addiction… explore how methods used for addicts might be adopted."
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "summary": {
+    "total_merges": 17,
+    "merges_by_type": {
+      "actor": 5,
+      "location": 12
+    },
+    "manual_mapping_count": 0,
+    "low_confidence_merges": 0,
+    "timestamp": "2026-04-14 11:58:50"
+  },
+  "merges": [
+    {
+      "type": "actor",
+      "canonical_name": "IUCN",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International Union for Conservation of Nature, which first categorised protected areas in 1978 and ...",
+          "International Union for Conservation of Nature, the global authority on protected‑area categorisatio...",
+          "International Union for Conservation of Nature, a global authority on conservation and protected‑are...",
+          "International Union for Conservation of Nature, a global authority on protected‑area classification ..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "International Union for Conservation of Nature (IUCN)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        1,
+        5,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "A global network of volunteer experts and the leading international authority on protected areas....",
+          "Global authority on conservation that publishes guidelines and promotes the protected‑area categoris...",
+          "A global authority on the status of the natural world and the measures needed to safeguard it...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "World Commission on Protected Areas (WCPA)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        5
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Current IUCN commission responsible for protected‑area policy and guidance....",
+          "A commission of IUCN that focuses on protected‑area policy and management...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "CNPPA",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        3
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Committee on National Parks and Protected Areas (a committee within IUCN that coordinated the develo...",
+          "Commission on National Parks and Protected Areas, an IUCN commission responsible for protected‑area ..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Convention on Biological Diversity (CBD)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        5,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International treaty and its governing body that aims to conserve biological diversity worldwide....",
+          "International treaty and governing body under the United Nations that aims to conserve biological di..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Australia",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        0,
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Early pioneer of protected‑area legislation, establishing Blue Mountains and Royal National Parks in...",
+          "Country where national‑level workshops were organised to explore how to apply the 1994 Guidelines in...",
+          "One of the major states whose protected‑area legislation has been strongly influenced by the IUCN ca..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "India",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Areas were set aside by royal decree over 2,000 years ago for the protection of natural resources....",
+          "Country whose protected‑area policy uses IUCN categories (Level 1/2) but not yet incorporated into l..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Europe",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Hunting grounds were protected for the rich and powerful for a thousand years....",
+          "Geographic region for which a publication (EUROPARC and IUCN, 1999) discussed applying the 1994 Guid..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Africa",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Home to sacred groves and, later, a number of large game parks created during the 20th‑century expan...",
+          "Region referenced in the Revised African Convention on the Conservation of Nature and Natural Resour..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "New South Wales",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "British colony that took the first steps toward creating the modern Blue Mountains National Park in ...",
+          "Australian state that hosted a national‑level workshop on applying the 1994 Guidelines...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Canada",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Protected hot springs in the Bow Valley (1885), leading to the creation of Banff National Park....",
+          "Country where a national‑level workshop was held to explore the use of the 1994 Guidelines...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "United Kingdom",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        0,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Has about 12 different national names for protected areas....",
+          "Country where a national‑level workshop was held to explore the application of the 1994 Guidelines...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "New Delhi",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        2
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Location of the IUCN General Assembly in 1969 that defined the term “national park”....",
+          "The city where the 1969 definition of national park was agreed, referenced in the IUCN report on pro..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "United Nations",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        5
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International organization whose Economic and Social Council (ECOSOC) and General Assembly adopted r...",
+          "Publisher of the United Nations List of Protected Areas (1997 and 2003 versions)...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "IUCN",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        5
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International Union for Conservation of Nature, the leading network of volunteer experts that drove ...",
+          "International Union for Conservation of Nature, co‑author of the protected‑area categorisation syste..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Caracas",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        3,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Host city of the three‑day workshop at the Fourth World Congress on National Parks and Protected Are...",
+          "City where the Congress was held that prompted the introduction of Category VI, reflecting concerns ..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Kuala Lumpur",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        5,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Host city of the 7th Conference of the Parties to the Convention on Biological Diversity where the C...",
+          "Host city of the 7th Conference of the Parties to the Convention on Biological Diversity (CBD/CoP7) ..."
+        ],
+        "years": []
+      }
+    }
+  ]
+}

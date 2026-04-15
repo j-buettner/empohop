@@ -1,0 +1,989 @@
+{
+  "locations": [
+    {
+      "name": "University of Pécs",
+      "type": "Institution",
+      "country": "Hungary",
+      "description": "The academic institution where the author, Judit Farkas, is affiliated.",
+      "supporting_text": "Judit Farkas University of Pécs, Institute of Human Relations, Department of European Ethnology and Cultural Anthropology",
+      "source_chunk": 0,
+      "id": "94a76ed2-4932-4df1-8c1f-f9cc33d4ed8e",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Location mentioned only as institutional address; no direct link to initiative impact.",
+        "supporting_text": "University of Pécs"
+      }
+    },
+    {
+      "name": "Pécs",
+      "type": "City",
+      "country": "Hungary",
+      "description": "The city in Hungary that hosts the University of Pécs, mentioned in the author’s affiliation.",
+      "supporting_text": "Judit Farkas University of Pécs, Institute of Human Relations, Department of European Ethnology and Cultural Anthropology",
+      "source_chunk": 0,
+      "id": "023b9ede-e358-4b09-a5b3-aea6cf54e369",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Geographic reference without explicit relevance to the movement’s effectiveness.",
+        "supporting_text": "Pécs"
+      }
+    },
+    {
+      "name": "Hungary",
+      "type": "Country",
+      "country": null,
+      "description": "Country whose Gyűrűfű project was an early funding member of the Global Ecovillage Network (GEN). Mentioned as the national context for eco‑villages, noting that only about 500 people live in eco‑villages there, making the phenomenon marginal in Hungarian society. The nation whose history of ecovillages is discussed, indicated by the adjective “Hungarian”.",
+      "supporting_text": "the number of persons living in eco-villages in Hungary (who actually do not count more than 500 people)",
+      "id": "035e4513-27ed-4d8b-bee6-0f2025843a30",
+      "variations": [
+        "Hungary"
+      ],
+      "source_chunks": [
+        0,
+        1,
+        4
+      ],
+      "supporting_texts": [
+        "the number of persons living in eco-villages in Hungary (who actually do not count more than 500 people)",
+        "the international and Hungarian history of the ecovillage-movement",
+        "the Hungarian Gyűrűfű project has already been involved as one of the funding members"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The low number of residents illustrates the marginal presence of eco‑villages in the national context.",
+        "supporting_text": "“If you take a look at the number of persons living in eco‑villages in Hungary … you can state with confidence that it was a marginal feature in society.”"
+      }
+    },
+    {
+      "name": "India",
+      "type": "Country",
+      "country": "India",
+      "description": "Country of Auroville and the Bija Satyagraha Movement, both cited as examples of ecological activism. Country of origin of sociologist Ramachandra Guha mentioned in the background of the eco‑village movement.",
+      "supporting_text": "Auroville in India",
+      "id": "9277fc72-163b-41f5-85c1-2aa16015e3d9",
+      "variations": [
+        "India"
+      ],
+      "source_chunks": [
+        2,
+        7
+      ],
+      "supporting_texts": [
+        "Auroville in India",
+        "Ramachandra Guha, a sociologist from India differentiates two major waves of environmentally sound thinking and movements"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Auroville in India actively participated in post‑tsunami clean‑up, demonstrating ecovillage‑driven collective response.",
+        "supporting_text": "Three ecovillages—Auroville in India ... were active players ... in the clean‑up and reconstruction activities"
+      }
+    },
+    {
+      "name": "England",
+      "type": "Country",
+      "country": null,
+      "description": "Referenced as the rural English landscape that was being spoiled by industrialisation in the 18th‑19th centuries.",
+      "supporting_text": "railways (and tourists) spoiling the rural English landscape",
+      "source_chunk": 2,
+      "id": "d563861e-f86d-4ff3-9ff7-82392bcc18fa",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Describes industrial‑age pollution and landscape degradation, highlighting the harmful status quo.",
+        "supporting_text": "the factories destroying the Earth, ... spoiling the rural English landscape, environmental and pollution related causes of diseases"
+      }
+    },
+    {
+      "name": "Denmark",
+      "type": "Country",
+      "country": null,
+      "description": "Country where the University of Copenhagen is located, mentioned in the story of student protest in 1969. Country where the co‑housing movement blossomed in the 1970s and where the first eco‑village meeting was held in 1991.",
+      "supporting_text": "in the Spring of 1969 a couple of students interrupted the class on natural sciences at the University of Copenhagen",
+      "id": "b087e783-4293-4529-b8b1-5f6f1e30ff6a",
+      "variations": [
+        "Denmark"
+      ],
+      "source_chunks": [
+        2,
+        4
+      ],
+      "supporting_texts": [
+        "in the Spring of 1969 a couple of students interrupted the class on natural sciences at the University of Copenhagen",
+        "the co-housing movement started to blossom in Denmark"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "Denmark is only mentioned as the country of the university; no explicit relevance to the harmony initiative is given.",
+        "supporting_text": "University of Copenhagen, ... Denmark"
+      }
+    },
+    {
+      "name": "Copenhagen",
+      "type": "City",
+      "country": "Denmark",
+      "description": "Capital city of Denmark, host of the University of Copenhagen where a 1969 student protest took place.",
+      "supporting_text": "in the Spring of 1969 a couple of students interrupted the class on natural sciences at the University of Copenhagen",
+      "source_chunk": 2,
+      "id": "525c4a1a-20fa-4590-b8d5-b2c8ba543ff3",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The protest occurring in Copenhagen signals public mobilisation and raises the issue’s visibility.",
+        "supporting_text": "students interrupted the class on natural sciences at the University of Copenhagen ... in Copenhagen"
+      }
+    },
+    {
+      "name": "University of Copenhagen",
+      "type": "Institution",
+      "country": "Denmark",
+      "description": "Higher‑education institution where students staged a protest in 1969, illustrating the radicalisation of the environmental movement.",
+      "supporting_text": "in the Spring of 1969 a couple of students interrupted the class on natural sciences at the University of Copenhagen",
+      "source_chunk": 2,
+      "id": "5e6398fb-659c-43e4-8b7f-e841501e52fc",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Serves as the physical setting for the student‑led environmental action.",
+        "supporting_text": "students interrupted the class on natural sciences at the University of Copenhagen"
+      }
+    },
+    {
+      "name": "Sheffield",
+      "type": "City",
+      "country": "United Kingdom",
+      "description": "City in England where Edward Carpenter created a self‑sustaining community that grew vegetables and baked bread, an early example of eco‑village practice.",
+      "supporting_text": "Carpenter ... created a community in the environs of the city of Sheffield, where they started to grow vegetables, baked their own bread",
+      "source_chunk": 2,
+      "id": "971fa64d-0bcc-4d62-9382-f3258b665f72",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Sheffield hosts an early self‑sustaining community, illustrating a concrete model for systemic transformation.",
+        "supporting_text": "Carpenter … created a community in the environs of the city of Sheffield, where they started to grow vegetables"
+      }
+    },
+    {
+      "name": "Palestine",
+      "type": "Region",
+      "country": null,
+      "description": "Region where the Essenes, a religious group, operated in the first century before Christ.",
+      "supporting_text": "the Essenes, a religious group operating in Palestine in the first century before Christ",
+      "source_chunk": 4,
+      "id": "537d8c2b-0384-4c3b-9e05-a6802bd1edc4",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Provides the geographic setting for the earliest cited intentional community (Essenes).",
+        "supporting_text": "the Essenes, a religious group operating in Palestine in the first century before Christ"
+      }
+    },
+    {
+      "name": "Western Europe",
+      "type": "Region",
+      "country": null,
+      "description": "Region where the lay Christian movement of the Brotherhood of the Free Spirit emerged.",
+      "supporting_text": "the lay Christian movement of the Brotherhood of the Free Spirit in Western Europe",
+      "source_chunk": 4,
+      "id": "deb1e222-598e-486b-9f36-c875cf2d480b",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Identifies the region where the Brotherhood of the Free Spirit emerged, contextualising historical patterns.",
+        "supporting_text": "the Brotherhood of the Free Spirit in Western Europe"
+      }
+    },
+    {
+      "name": "North America",
+      "type": "Region",
+      "country": null,
+      "description": "Continent where intentional communities began to appear as it was colonised.",
+      "supporting_text": "as North America is colonised, the intentional communities started to appear on this continent as well",
+      "source_chunk": 4,
+      "id": "a4bfa050-e7de-48d5-b1e3-40c7a0076df4",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Notes the spread of intentional communities to this continent during colonisation, showing geographic diffusion.",
+        "supporting_text": "as North America is colonised, the intentional communities started to appear on this continent as well"
+      }
+    },
+    {
+      "name": "New World",
+      "type": "Region",
+      "country": null,
+      "description": "Historical term for the Americas, described as a great force of attraction for intentional communities seeking religious freedom and opportunities.",
+      "supporting_text": "The New World represented a great force of attraction for these communities",
+      "source_chunk": 4,
+      "id": "1c957446-3d4c-4563-957c-2d4c67f4c826",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Described as a major attraction for early intentional groups, highlighting socio‑political pull factors.",
+        "supporting_text": "The New World represented a great force of attraction for these communities"
+      }
+    },
+    {
+      "name": "Boston",
+      "type": "City",
+      "country": "United States",
+      "description": "City whose surroundings hosted Brook Farm, an intentional community created by Transcendentalists in the 1840s.",
+      "supporting_text": "Brook Farm ... created by Transcendentalists in the surroundings of Boston during the 1840s",
+      "source_chunk": 4,
+      "id": "8d61e70d-f1a2-4cef-99c4-57f40858d664",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Cited as the site of Brook Farm, an early 19th‑century intentional community, providing historical context.",
+        "supporting_text": "Brook Farm ... in the surroundings of Boston during the 1840s"
+      }
+    },
+    {
+      "name": "United States of America",
+      "type": "Country",
+      "country": null,
+      "description": "Country where a massive wave of intentional communities (over 2,000) was founded in the 1960s, and where The Farm eco‑village is located.",
+      "supporting_text": "in the United States of America alone, more than 2000 communities were founded at this time",
+      "source_chunk": 4,
+      "id": "d99f5d8f-3f8e-48d8-ad57-70c4cf418805"
+    },
+    {
+      "name": "Israel",
+      "type": "Country",
+      "country": null,
+      "description": "Country mentioned in relation to the Israeli Kibbutz movement, an important form of intentional community.",
+      "supporting_text": "touched upon the Israeli Kibbutzes only shortly as significant intentional communities",
+      "source_chunk": 4,
+      "id": "e7fc4bfa-6f57-492f-b0f0-d6d5071d1a6d"
+    },
+    {
+      "name": "Scotland",
+      "type": "Region",
+      "country": "United Kingdom",
+      "description": "Country where the Findhorn Foundation, a leading eco‑village, was established in 1962. Country within the UK where the Findhorn Foundation is based and where several partnership programmes operate.",
+      "supporting_text": "In Scotland, the Findhorn Foundation's growing alliances with local organizations began with two studies.",
+      "id": "602b081c-4e21-4005-873c-417acab85c08",
+      "variations": [
+        "Scotland"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "In Scotland, the Findhorn Foundation's growing alliances with local organizations began with two studies.",
+        "Findhorn Foundation established in 1962 Scotland"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Scotland’s support enables Findhorn to deliver jobs, training, and low‑footprint living, mobilising local actors.",
+        "supporting_text": "Findhorn... contributed four hundred jobs and £5 million to the economy of the north of Scotland... hosts a UN CIFAL training centre... political and financial support from the Scottish government."
+      }
+    },
+    {
+      "name": "Auroville",
+      "type": "City",
+      "country": "India",
+      "description": "An ecovillage in India that participated in post‑tsunami and Haiti reconstruction activities. South‑Indian eco‑village cited as an example of a community that lives in harmony with nature.",
+      "supporting_text": "the South-Indian Auroville",
+      "id": "0f67b397-26ec-426c-86af-f667add94571",
+      "variations": [
+        "Auroville"
+      ],
+      "source_chunks": [
+        4,
+        7
+      ],
+      "supporting_texts": [
+        "the South-Indian Auroville",
+        "Auroville in India"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0
+    },
+    {
+      "name": "The Farm",
+      "type": "Other",
+      "country": "United States",
+      "description": "A prominent ecovillage in Tennessee that collaborates with government, NGOs and international charities. An ecovillage located in Tennessee, USA, involved in post‑disaster recovery work. Well‑known intentional community in the United States referenced as an example of an eco‑village.",
+      "supporting_text": "The Farm in the United States",
+      "id": "e27efad1-a94e-4421-8c39-51b2065517e0",
+      "variations": [
+        "The Farm"
+      ],
+      "source_chunks": [
+        4,
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "The Farm in the United States",
+        "The Farm, near Nashville, Tennessee, in the southeastern United States, works with a variety of government and NGO partners on an array of initiatives.",
+        "The Farm in Tennessee"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The Farm coordinates multiple campaigns, networks, and partnerships that mobilise communities and institutions toward ecological goals.",
+        "supporting_text": "The Farm... works with a variety of government and NGO partners on an array of initiatives... building social networks of youth... anti‑war network..."
+      }
+    },
+    {
+      "name": "Hendersonville, North-California",
+      "type": "City",
+      "country": "United States",
+      "description": "Location of the Mother Earth News office that set up organic gardens and energy‑saving houses in 1975.",
+      "supporting_text": "the magazine called Mother Earth News (Hendersonville, North-California) started to set up organic gardens",
+      "source_chunk": 4,
+      "id": "627ce7cb-a890-4918-864c-80da5e3d986c"
+    },
+    {
+      "name": "Gorleben",
+      "type": "City",
+      "country": "Germany",
+      "description": "German city where a protest movement against a proposed nuclear waste landfill led to the creation of an early eco‑village (ökodorf).",
+      "supporting_text": "a protest movement was launched in the city of Gorleben, Germany against the proposed nuclear waste landfill site",
+      "source_chunk": 4,
+      "id": "0ac5e4a8-b081-422d-8081-e7ae3e1dd2ce"
+    },
+    {
+      "name": "Seattle",
+      "type": "City",
+      "country": "United States",
+      "description": "City mentioned as the location indicated in the citation of the paper \"In Context\" by Robert and Diane Gilman.",
+      "supporting_text": "Robert and Diane Gilman in their paper called In Context (Seattle) commenced to report",
+      "source_chunk": 4,
+      "id": "3b91108e-f79e-454a-bc84-a4d1a09008bf"
+    },
+    {
+      "name": "Gyűrűfű",
+      "type": "Town",
+      "country": "Hungary",
+      "description": "Village project in Hungary that participated as a funding member of the Global Ecovillage Network.",
+      "supporting_text": "the Hungarian Gyűrűfű project has already been involved as one of the funding members",
+      "source_chunk": 4,
+      "id": "3d00256c-30b9-423f-9342-1fdcda543c88"
+    },
+    {
+      "name": "Findhorn",
+      "type": "Town",
+      "country": "Scotland",
+      "description": "Scottish town that hosted the first international eco‑village meeting in 1995, organized by the Gaia Trust and the Findhorn Foundation.",
+      "supporting_text": "The first international eco-village meeting took place in 1995 in Findhorn, Scotland",
+      "source_chunk": 4,
+      "id": "37a68db7-8bb9-4284-a8b0-66de2326e4e2"
+    },
+    {
+      "name": "Iceland",
+      "type": "Country",
+      "country": null,
+      "description": "Country of the early ecovillage Solheimar mentioned as the \"Icelandic ecovillage of Solheimar\".",
+      "supporting_text": "the Icelandic ecovillage of Solheimar, which was created in 1931",
+      "source_chunk": 6,
+      "id": "18564544-66bd-4574-bdfa-bb4cce8b6cf3"
+    },
+    {
+      "name": "Solheimar",
+      "type": "Other",
+      "country": "Iceland",
+      "description": "An early ecovillage in Iceland referenced as an example of a pre‑1960s GEN member.",
+      "supporting_text": "the Icelandic ecovillage of Solheimar, which was created in 1931",
+      "source_chunk": 6,
+      "id": "70680215-7de9-4599-9e07-50616819ae4d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Early ecovillage (1931) illustrates the historic roots and long‑term viability of the model.",
+        "supporting_text": "\"including the Icelandic ecovillage of Solheimar, which was created in 1931\""
+      }
+    },
+    {
+      "name": "Sri Lanka",
+      "type": "Country",
+      "country": null,
+      "description": "Country where the Sarvodaya network works with almost two thousand rural communities.",
+      "supporting_text": "Sarvodaya, a group that works with almost two thousand primarily rural communities across Sri Lanka",
+      "source_chunk": 6,
+      "id": "4283ccd9-1225-4db9-8de1-9aa067afe96f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Home to the large Sarvodaya network that mobilises thousands of rural communities.",
+        "supporting_text": "\"Sarvodaya, a group that works with almost two thousand primarily rural communities across Sri Lanka\""
+      }
+    },
+    {
+      "name": "Guinea",
+      "type": "Country",
+      "country": null,
+      "description": "One of the countries included in the COLUFIFA network of rural communities.",
+      "supporting_text": "COLUFIFA ... a network of two hundred and fifty communities spanning Guinea, Guinea-Bissau, Senegal, and Gambia",
+      "source_chunk": 6,
+      "id": "2fe2e61f-d6fc-486a-b2e4-46fac820ce4b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Part of the COLUFIFA network linking many villages for joint ecological action.",
+        "supporting_text": "\"COLUFIFA ... a network of two hundred and fifty communities spanning Guinea, Guinea‑Bissau, Senegal, and Gambia\""
+      }
+    },
+    {
+      "name": "Guinea‑Bissau",
+      "type": "Country",
+      "country": null,
+      "description": "One of the countries included in the COLUFIFA network of rural communities.",
+      "supporting_text": "COLUFIFA ... a network of two hundred and fifty communities spanning Guinea, Guinea-Bissau, Senegal, and Gambia",
+      "source_chunk": 6,
+      "id": "7fa1ba93-0dc5-4d07-ac90-0b4034c4a1fe",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Included in the trans‑national COLUFIFA community network.",
+        "supporting_text": "\"COLUFIFA ... a network of two hundred and fifty communities spanning Guinea, Guinea‑Bissau, Senegal, and Gambia\""
+      }
+    },
+    {
+      "name": "Senegal",
+      "type": "Country",
+      "country": null,
+      "description": "Country mentioned as part of the COLUFIFA network and as the location of a national agency for ecovillages.",
+      "supporting_text": "COLUFIFA ... a network of two hundred and fifty communities spanning Guinea, Guinea-Bissau, Senegal, and Gambia",
+      "source_chunk": 6,
+      "id": "bc4c5d84-e145-4267-b559-3cede2482573",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Government creation of a National Agency for Ecovillages gives the movement high policy legitimacy.",
+        "supporting_text": "\"the decision by the government of Senegal to create a National Agency for Ecovillages\""
+      }
+    },
+    {
+      "name": "Gambia",
+      "type": "Country",
+      "country": null,
+      "description": "One of the countries included in the COLUFIFA network of rural communities.",
+      "supporting_text": "COLUFIFA ... a network of two hundred and fifty communities spanning Guinea, Guinea-Bissau, Senegal, and Gambia",
+      "source_chunk": 6,
+      "id": "eab4fcdd-f9d3-4a78-8d04-83b8c5982181",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Member of the COLUFIFA network that coordinates community‑level sustainability work.",
+        "supporting_text": "\"COLUFIFA ... a network of two hundred and fifty communities spanning Guinea, Guinea‑Bissau, Senegal, and Gambia\""
+      }
+    },
+    {
+      "name": "United States",
+      "type": "Country",
+      "country": null,
+      "description": "Country where The Farm ecovillage is located, specifically in the southeastern United States.",
+      "supporting_text": "The Farm, near Nashville, Tennessee, in the southeastern United States",
+      "source_chunk": 6,
+      "id": "a37bfabb-a893-4614-bc80-68a118b2e3ee",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Hosts The Farm, a hub for multiple outreach, advocacy, and partnership initiatives.",
+        "supporting_text": "\"The Farm, near Nashville, Tennessee, in the southeastern United States, works with a variety of government and NGO partners\""
+      }
+    },
+    {
+      "name": "Tennessee",
+      "type": "Region",
+      "country": "United States",
+      "description": "S. U. state that contains The Farm ecovillage near Nashville. state where The Farm ecovillage is situated.",
+      "supporting_text": "The Farm, near Nashville, Tennessee, in the southeastern United States",
+      "id": "cd5c9019-10ec-4202-989e-b9705849f32b",
+      "variations": [
+        "Tennessee"
+      ],
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "The Farm, near Nashville, Tennessee, in the southeastern United States",
+        "The Farm in Tennessee"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Site of The Farm’s extensive community‑building and environmental campaigns.",
+        "supporting_text": "\"The Farm, near Nashville, Tennessee, in the southeastern United States, works with a variety of government and NGO partners\""
+      }
+    },
+    {
+      "name": "Nashville",
+      "type": "City",
+      "country": "United States",
+      "description": "City in Tennessee referenced as the nearest urban centre to The Farm ecovillage.",
+      "supporting_text": "The Farm, near Nashville, Tennessee, in the southeastern United States",
+      "source_chunk": 6,
+      "id": "68162a23-cbcb-449d-8781-d5511c2b12eb",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Proximity to Nashville enables The Farm to mobilise local youth and civic groups.",
+        "supporting_text": "\"The Farm, near Nashville, Tennessee, in the southeastern United States, works with a variety of government and NGO partners\""
+      }
+    },
+    {
+      "name": "Berlin",
+      "type": "City",
+      "country": null,
+      "description": "German capital mentioned as the nearby city to the ZEGG ecovillage.",
+      "supporting_text": "The German ecovillage ZEGG (Zentrum für experimentelle Gesellschaftsgestaltung, or Center for Experimental Cultural Design), located just outside Berlin",
+      "source_chunk": 6,
+      "id": "8e206797-146b-49cf-a9af-c074c9afae9e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Berlin is the regional anchor for ZEGG, which disseminates technologies and runs community programmes that enable collective ecological practice.",
+        "supporting_text": "ZEGG... located just outside Berlin, developed an active program to disseminate appropriate technologies throughout its bioregion."
+      }
+    },
+    {
+      "name": "ZEGG",
+      "type": "Other",
+      "country": "Germany",
+      "description": "German ecovillage that chose to source food from local organic suppliers to strengthen regional sustainability networks. German ecovillage that runs technology‑dissemination programmes and community projects in its bioregion.",
+      "supporting_text": "German ecovillage ZEGG",
+      "id": "a56c0c1b-d68a-4503-9f68-8f91ae3b5acb",
+      "variations": [
+        "ZEGG"
+      ],
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "German ecovillage ZEGG",
+        "The German ecovillage ZEGG (Zentrum für experimentelle Gesellschaftsgestaltung, or Center for Experimental Cultural Design), located just outside Berlin, has in recent years developed an active program to disseminate appropriate technologies throughout its bioregion"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "ZEGG’s decision to source food locally strengthens regional sustainability networks.",
+        "supporting_text": "ZEGG ... chose to buy more from local organic suppliers ... to strengthen the web of interconnected sustainability initiatives in their bioregion"
+      }
+    },
+    {
+      "name": "Belzig",
+      "type": "City",
+      "country": null,
+      "description": "Neighbouring town where ZEGG helped create a free school.",
+      "supporting_text": "ZEGG has been an active partner in local initiatives to create a free school in the neighboring town of Belzig",
+      "source_chunk": 6,
+      "id": "4f0500ed-961e-4c2f-a280-f693eb07bce0",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Belzig hosts community projects (free school, info‑café, currency, kindergarten) that embody collective ecological action.",
+        "supporting_text": "ZEGG... partner in local initiatives to create a free school in the neighboring town of Belzig, an info‑café... community currency system, nature‑based kindergarten."
+      }
+    },
+    {
+      "name": "Potsdam‑Mittelmark",
+      "type": "Region",
+      "country": null,
+      "description": "Regional administration that awarded ZEGG the \"Local Agenda 21\" prize.",
+      "supporting_text": "In 2004, ZEGG won the \"Local Agenda 21\" award set up by the regional administration of Potsdam‑Mittelmark in the state of Brandenburg",
+      "source_chunk": 6,
+      "id": "66d33289-8ef1-4cb5-879f-1dc52a40dd4f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The regional award recognises ZEGG’s ecological work, raising its public legitimacy.",
+        "supporting_text": "In 2004, ZEGG won the “Local Agenda 21” award set up by the regional administration of Potsdam‑Mittelmark."
+      }
+    },
+    {
+      "name": "Brandenburg",
+      "type": "Region",
+      "country": null,
+      "description": "German state that contains the Potsdam‑Mittelmark region where ZEGG received an award.",
+      "supporting_text": "In 2004, ZEGG won the \"Local Agenda 21\" award set up by the regional administration of Potsdam‑Mittelmark in the state of Brandenburg",
+      "source_chunk": 6,
+      "id": "0f3d32d8-d585-4eab-a969-82f41bf725c4",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The award from the state of Brandenburg signals official endorsement of ZEGG’s sustainability efforts.",
+        "supporting_text": "award set up by the regional administration of Potsdam‑Mittelmark in the state of Brandenburg."
+      }
+    },
+    {
+      "name": "Findhorn Foundation",
+      "type": "Institution",
+      "country": "United Kingdom",
+      "description": "Ecovillage in Scotland that hosts a UN CIFAL training centre and collaborates with universities and local agencies.",
+      "supporting_text": "Today, the ecovillage hosts a UN CIFAL training center (one of eleven such centers worldwide), which provides sustainability‑related training for local governments and other local actors.",
+      "source_chunk": 6,
+      "id": "819dd936-ef8f-4e53-8e8d-abb8dce99ae5",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Findhorn coordinates research, training, and consultancy that empower local communities and institutions.",
+        "supporting_text": "Findhorn... hosts a UN CIFAL training centre... teaches courses jointly with Scottish universities... provides consultancy services for local organisations."
+      }
+    },
+    {
+      "name": "UN CIFAL training centre",
+      "type": "Institution",
+      "country": null,
+      "description": "United Nations‑run training centre located at the Findhorn ecovillage.",
+      "supporting_text": "Today, the ecovillage hosts a UN CIFAL training center (one of eleven such centers worldwide), which provides sustainability‑related training for local governments and other local actors.",
+      "source_chunk": 6,
+      "id": "120bb6d3-4a7f-4e67-8d1b-75a3080b10dc",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The UN‑affiliated centre confers international credibility to the ecovillage’s sustainability training.",
+        "supporting_text": "hosts a UN CIFAL training centre (one of eleven such centres worldwide), which provides sustainability‑related training for local governments and other local actors."
+      }
+    },
+    {
+      "name": "United Nations",
+      "type": "Institution",
+      "country": null,
+      "description": "International body that is forming partnerships with ecovillages worldwide.",
+      "supporting_text": "Even at the highest level, international bodies--including the United Nations (UN)--are entering into partnerships with ecovillages.",
+      "source_chunk": 6,
+      "id": "63417d44-3ace-4451-8c26-a8dce16656b9",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "UN partnership signals high‑level legitimacy for ecovillage initiatives.",
+        "supporting_text": "Even at the highest level, international bodies—including the United Nations (UN)—are entering into partnerships with ecovillages."
+      }
+    },
+    {
+      "name": "Gaia University",
+      "type": "Institution",
+      "country": null,
+      "description": "Recently organised university offering degrees through ecovillage‑based institutes.",
+      "supporting_text": "degrees from ecovillage‑based institutes through the recently organized Gaia University",
+      "source_chunk": 6,
+      "id": "d81d9aed-e975-4b84-b2ea-cf165f9d71d1",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Gaia University formalises education pathways that equip participants to implement sustainable practices.",
+        "supporting_text": "degrees from ecovillage‑based institutes through the recently organized Gaia University."
+      }
+    },
+    {
+      "name": "Centre for Alternative Technology",
+      "type": "Institution",
+      "country": null,
+      "description": "Founding member of GEN that leads the Ecodyfi initiative in Wales.",
+      "supporting_text": "The Centre for Alternative Technology, a founding member of the GEN, is a leading player in the Ecodyfi initiative in Wales",
+      "source_chunk": 6,
+      "id": "c7294a37-5866-4caf-930b-628ab6ab908e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The centre drives the Ecodyfi programme, coordinating renewable energy, agriculture, and community projects.",
+        "supporting_text": "The Centre for Alternative Technology... is a leading player in the Ecodyfi initiative in Wales, an effort that brings together local authorities, the Welsh Assembly, various community groups..."
+      }
+    },
+    {
+      "name": "Wales",
+      "type": "Region",
+      "country": "United Kingdom",
+      "description": "Region where the EcoDyfi initiative operates as a hub for sustainability networks. Welsh region where the Ecodyfi initiative is implemented in the Dyfi valley.",
+      "supporting_text": "Ecodyfi initiative in Wales, an effort that brings together local authorities, the Welsh Assembly, various community groups, and specialist organizations with the mission \"to foster sustainable community regeneration in the Dyfi valley\"",
+      "id": "5aa801eb-7aed-4c2f-a29e-9b2f07c2387f",
+      "variations": [
+        "Wales"
+      ],
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "Ecodyfi initiative in Wales, an effort that brings together local authorities, the Welsh Assembly, various community groups, and specialist organizations with the mission \"to foster sustainable community regeneration in the Dyfi valley\"",
+        "EcoDyfi initiative in Wales"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Wales hosts the EcoDyfi initiative, which acts as a regional hub for sustainability networks.",
+        "supporting_text": "EcoDyfi initiative in Wales"
+      }
+    },
+    {
+      "name": "Dyfi valley",
+      "type": "Region",
+      "country": "United Kingdom",
+      "description": "Valley in Wales targeted by the Ecodyfi sustainable‑community regeneration programme.",
+      "supporting_text": "Ecodyfi initiative in Wales, an effort that brings together local authorities, the Welsh Assembly, various community groups, and specialist organizations with the mission \"to foster sustainable community regeneration in the Dyfi valley\"",
+      "source_chunk": 6,
+      "id": "fe2b4407-2cba-4a85-9580-7786b381391f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The Dyfi valley is the focal area where Ecodyfi implements community‑level sustainability actions.",
+        "supporting_text": "Ecodyfi initiative... to foster sustainable community regeneration in the Dyfi valley."
+      }
+    },
+    {
+      "name": "Welsh Assembly",
+      "type": "Institution",
+      "country": "United Kingdom",
+      "description": "Welsh devolved legislature that participates in the Ecodyfi partnership.",
+      "supporting_text": "Ecodyfi initiative in Wales, an effort that brings together local authorities, the Welsh Assembly, various community groups, and specialist organizations",
+      "source_chunk": 6,
+      "id": "ac8c7d0e-2a28-4c51-aa72-710d438ea2af",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The Assembly’s involvement lends policy legitimacy and resources to the Ecodyfi programme.",
+        "supporting_text": "Ecodyfi initiative... brings together local authorities, the Welsh Assembly, various community groups..."
+      }
+    },
+    {
+      "name": "Highlands and Islands",
+      "type": "Region",
+      "country": "United Kingdom",
+      "description": "Scottish region for which Findhorn provides training and consultancy through the Highlands and Islands Food Network.",
+      "supporting_text": "Findhorn teaches courses jointly with Scottish universities, is a training and demonstration center for the Highlands and Islands Food Network's community‑supported agriculture (CSA) program",
+      "source_chunk": 6,
+      "id": "dc493cf6-cf43-4cf3-a5a1-010cffb1220d"
+    },
+    {
+      "name": "Cairngorm National Park",
+      "type": "Institution",
+      "country": "United Kingdom",
+      "description": "Scottish national park that receives consultancy services from Findhorn members.",
+      "supporting_text": "members who provide consultancy services for local organizations as diverse as the Cairngorm National Park and the Development Trusts Association of Scotland",
+      "source_chunk": 6,
+      "id": "64610afd-66ce-4df4-bf16-6641d4311a25",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Consultancy from Findhorn helps the park integrate sustainability into its management.",
+        "supporting_text": "Findhorn… provides consultancy services for local organizations such as the Cairngorm National Park."
+      }
+    },
+    {
+      "name": "Development Trusts Association of Scotland",
+      "type": "Institution",
+      "country": "United Kingdom",
+      "description": "Scottish association that works with Findhorn on community‑development projects.",
+      "supporting_text": "members who provide consultancy services for local organizations as diverse as the Cairngorm National Park and the Development Trusts Association of Scotland",
+      "source_chunk": 6,
+      "id": "bec56db9-f91d-456c-94c8-9193109c2db5",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Findhorn provides consultancy that supports the association’s community‑development missions.",
+        "supporting_text": "Findhorn… provides consultancy services for local organizations as diverse as … the Development Trusts Association of Scotland."
+      }
+    },
+    {
+      "name": "Brazil",
+      "type": "Country",
+      "country": null,
+      "description": "Country that commissioned La Caravana Arcoiris por la Paz to develop community‑based cultural centres.",
+      "supporting_text": "Between 2005 and 2008, La Caravana was commissioned by the Brazilian government to help develop fifty community‑based cultural centers in Brazilian towns and villages",
+      "source_chunk": 6,
+      "id": "989a73b9-9ff5-451e-9360-46a6e45db165",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Government commission enabled large‑scale creation of community cultural centres that embed sustainability practices.",
+        "supporting_text": "La Caravana… was commissioned by the Brazilian government to help develop fifty community‑based cultural centers in Brazilian towns and villages."
+      }
+    },
+    {
+      "name": "La Caravana Arcoiris por la Paz",
+      "type": "Institution",
+      "country": null,
+      "description": "Mobile community of artists and ecological activists that tours Latin America and works with the Brazilian and Mexican governments.",
+      "supporting_text": "La Caravana Arcoiris por la Paz (the Rainbow Caravan of Peace), a community of artists and ecological activists that have toured Latin America for the last ten years in a caravan of buses teaching sustainability through the arts",
+      "source_chunk": 6,
+      "id": "fa441a2a-d609-43b6-9536-95a4e0f93110",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The group mobilises artists and activists to teach sustainability across Latin America.",
+        "supporting_text": "La Caravana… a community of artists and ecological activists that have toured Latin America… teaching sustainability through the arts."
+      }
+    },
+    {
+      "name": "Coyoacán district",
+      "type": "Region",
+      "country": "Mexico",
+      "description": "District of Mexico City where La Caravana collaborates with the local Secretariat of Culture.",
+      "supporting_text": "La Caravana is doing similar work in cooperation with the Secretariat of Culture in the Coyoacán district of Mexico City",
+      "source_chunk": 6,
+      "id": "6357db9a-6a3c-4795-9cf9-21f3ee264b1f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Partnership with the district allows community‑based sustainability activities to be carried out locally.",
+        "supporting_text": "La Caravana… is doing similar work in cooperation with the Secretariat of Culture in the Coyoacán district of Mexico City."
+      }
+    },
+    {
+      "name": "Mexico City",
+      "type": "City",
+      "country": "Mexico",
+      "description": "Capital of Mexico mentioned as the location of the Coyoacán district partnership.",
+      "supporting_text": "La Caravana is doing similar work in cooperation with the Secretariat of Culture in the Coyoacán district of Mexico City",
+      "source_chunk": 6,
+      "id": "2823e84f-b4c0-4271-b212-746e5310a411",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Findhorn hosts a UN CIFAL training centre that delivers sustainability training to local actors in the region.",
+        "supporting_text": "Findhorn… hosts a UN CIFAL training center… provides sustainability‑related training for local governments and other local actors."
+      }
+    },
+    {
+      "name": "Mexico",
+      "type": "Country",
+      "country": null,
+      "description": "Country whose capital city (Mexico City) hosts a cultural partnership with La Caravana.",
+      "supporting_text": "La Caravana is doing similar work in cooperation with the Secretariat of Culture in the Coyoacán district of Mexico City",
+      "source_chunk": 6,
+      "id": "412df283-5345-41e8-bdc6-bbc945458327",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "La Caravana’s activities across Mexico spread sustainability education and cultural engagement.",
+        "supporting_text": "La Caravana… toured Latin America for the last ten years… doing similar work in cooperation with the Secretariat of Culture in the Coyoacán district of Mexico City."
+      }
+    },
+    {
+      "name": "United Kingdom",
+      "type": "Country",
+      "country": null,
+      "description": "Country referenced when comparing ecological footprints to the national average.",
+      "supporting_text": "community residents have a per capita ecological footprint that is one‑half of the UK national average",
+      "source_chunk": 6,
+      "id": "27abd95e-6512-456f-af83-4b7b4a6fe638",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Studies showing economic and ecological benefits gave Findhorn credibility, raising public and policy acceptance of ecovillage models.",
+        "supporting_text": "Findhorn’s initiatives contributed four hundred jobs and £5 million… per‑capita ecological footprint… one‑half of the UK national average… these studies won the community a level of credibility."
+      }
+    },
+    {
+      "name": "Sarvodaya",
+      "type": "Other",
+      "country": "Sri Lanka",
+      "description": "A Sri Lankan organization that was an active player in clean‑up and reconstruction after the South Asian tsunami.",
+      "supporting_text": "Sarvodaya in Sri Lanka",
+      "source_chunk": 7,
+      "id": "9f99c341-d0cc-423f-8098-8c61d7a81aad"
+    },
+    {
+      "name": "Port‑au‑Prince",
+      "type": "City",
+      "country": "Haiti",
+      "description": "Capital city of Haiti, site of the 2009 earthquake reconstruction efforts.",
+      "supporting_text": "Port‑au‑Prince, Haiti",
+      "source_chunk": 7,
+      "id": "c1762d5e-c9c0-4953-a6ca-484bf3cc3ade"
+    },
+    {
+      "name": "Swedish parliament",
+      "type": "Institution",
+      "country": "Sweden",
+      "description": "Legislative body where the Right Livelihood Award was presented to The Farm.",
+      "supporting_text": "Swedish parliament in Stockholm",
+      "source_chunk": 7,
+      "id": "1db56e64-4190-49ac-851b-fc09fad946c4"
+    },
+    {
+      "name": "Stockholm",
+      "type": "City",
+      "country": "Sweden",
+      "description": "Capital city of Sweden, location of the Swedish parliament.",
+      "supporting_text": "Swedish parliament in Stockholm",
+      "source_chunk": 7,
+      "id": "7a5c8140-facd-4631-992a-0bd29d9ba018",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The award ceremony in Stockholm gives high‑profile visibility to The Farm’s work, raising public and institutional acceptance.",
+        "supporting_text": "presented in the Swedish parliament in Stockholm."
+      }
+    },
+    {
+      "name": "United Nations Institute for Training and Research (UNITAR)",
+      "type": "Institution",
+      "country": null,
+      "description": "UN agency that endorsed the ecovillage curriculum.",
+      "supporting_text": "United Nations Institute for Training and Research (UNITAR)",
+      "source_chunk": 7,
+      "id": "efa518e1-187a-4d70-802f-5b7bff2d9713",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "UNITAR’s endorsement confers legitimacy on the Gaia Education curriculum, increasing its acceptance.",
+        "supporting_text": "endorsed by the United Nations Institute for Training and Research (UNITAR)"
+      }
+    },
+    {
+      "name": "United Nations Educational, Scientific and Cultural Organisation (UNESCO)",
+      "type": "Institution",
+      "country": null,
+      "description": "UN agency that welcomed the ecovillage curriculum as a contribution to its Decade of Education for Sustainable Development.",
+      "supporting_text": "United Nations Educational, Scientific and Cultural Organisation (UNESCO)",
+      "source_chunk": 7,
+      "id": "abd5528d-96fe-4bb7-a95f-d83068999f94",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "UNESCO’s welcome further raises the curriculum’s credibility and global reach.",
+        "supporting_text": "welcomed by the United Nations Educational, Scientific and Cultural Organisation (UNESCO)"
+      }
+    },
+    {
+      "name": "Open University of Catalunya",
+      "type": "Institution",
+      "country": "Spain",
+      "description": "Spanish university that offers the ecovillage curriculum as a master’s program.",
+      "supporting_text": "Open University of Catalunya in Spain",
+      "source_chunk": 7,
+      "id": "d41b4247-10af-4657-b482-36816e60a452",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The university publishes the master’s program, enabling widespread education and capacity‑building.",
+        "supporting_text": "taught virtually ... through the Open University of Catalunya in Spain, where it is now offered as a master’s program"
+      }
+    },
+    {
+      "name": "EcoDyfi initiative",
+      "type": "Other",
+      "country": "United Kingdom",
+      "description": "Regional hub for sustainability‑related initiatives based in Wales.",
+      "supporting_text": "EcoDyfi initiative in Wales",
+      "source_chunk": 7,
+      "id": "6bc65efc-b9da-41e1-8a92-23dcf6201865",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "EcoDyfi exemplifies how ecovillages can become hubs that spread sustainability practices across regions.",
+        "supporting_text": "existing ecovillages ... become regional hubs for networks of sustainability‑related initiatives. This path is best exemplified by the EcoDyfi initiative in Wales"
+      }
+    },
+    {
+      "name": "Germany",
+      "type": "Country",
+      "country": "Germany",
+      "description": "Country of the ZEGG ecovillage mentioned in the text.",
+      "supporting_text": "German ecovillage ZEGG",
+      "source_chunk": 7,
+      "id": "5af7b85e-d4d0-4ccc-835d-b56be47b8490",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text mentions Germany only as the country of ZEGG; no direct impact on harmony with nature is described.",
+        "supporting_text": "German ecovillage ZEGG"
+      }
+    },
+    {
+      "name": "Kenya",
+      "type": "Country",
+      "country": "Kenya",
+      "description": "Country where the Green Belt Movement (GBM) mobilizes communities for tree‑planting and environmental conservation.",
+      "supporting_text": "The Green Belt Movement (GBM) in Kenya",
+      "source_chunk": 7,
+      "id": "86ec3a94-0cc9-47de-88c7-1a1d6f986767",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Kenya is the arena where the Green Belt Movement mobilises massive tree‑planting networks, showing large‑scale systemic impact.",
+        "supporting_text": "The Green Belt Movement (GBM) in Kenya ... currently has over six hundred community networks across Kenya that manages six thousand tree nurseries"
+      }
+    },
+    {
+      "name": "Green Belt Movement (GBM)",
+      "type": "Institution",
+      "country": "Kenya",
+      "description": "Kenyan movement that manages community networks and tree nurseries, recognized with the Nobel Peace Prize.",
+      "supporting_text": "The Green Belt Movement (GBM) in Kenya",
+      "source_chunk": 7,
+      "id": "6ac6ae3f-951e-4d90-bc84-28e337144b19",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "GBM mobilises communities for tree planting, poverty reduction and environmental conservation.",
+        "supporting_text": "GBM ... sees its mission as mobilizing communities for self‑determination, justice, equity, poverty reduction, and environmental conservation"
+      }
+    }
+  ]
+}

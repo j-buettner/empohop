@@ -1,0 +1,1221 @@
+{
+  "actors": [
+    {
+      "name": "Judit Farkas",
+      "type": "Individual",
+      "description": "Cultural anthropologist and author of the article analyzing the history and roots of the ecovillage movement.",
+      "role": "Conducts research on ecovillages, providing historical and socio‑cultural analysis of intentional communities for ecological regeneration.",
+      "country": "Hungary",
+      "supporting_text": "Judit Farkas University of Pécs, Institute of Human Relations, Department of European Ethnology and Cultural Anthropology",
+      "source_chunk": 0,
+      "id": "c9c45197-124c-42d8-bd81-2379ed968a20",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Conducts research that informs and mobilises ecovillage initiatives.",
+        "supporting_text": "author of this article studies ecovillages since 2008"
+      }
+    },
+    {
+      "name": "University of Pécs",
+      "type": "Organization",
+      "description": "Higher‑education institution in Hungary where the research was conducted.",
+      "role": "Provides the academic setting and institutional support for the study of ecovillages and intentional communities.",
+      "country": "Hungary",
+      "supporting_text": "Judit Farkas University of Pécs, Institute of Human Relations, Department of European Ethnology and Cultural Anthropology",
+      "source_chunk": 0,
+      "id": "8571b2e4-3b82-4603-94e9-560efdd8a496",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides institutional support for the research and dissemination of ecovillage knowledge.",
+        "supporting_text": "University of Pécs, Institute of Human Relations"
+      }
+    },
+    {
+      "name": "Institute of Human Relations",
+      "type": "Organization",
+      "description": "Research institute within the University of Pécs focusing on interdisciplinary human‑relations studies.",
+      "role": "Hosts the author’s affiliation, facilitating research on the socio‑cultural dimensions of the ecovillage movement.",
+      "country": "Hungary",
+      "supporting_text": "Judit Farkas University of Pécs, Institute of Human Relations, Department of European Ethnology and Cultural Anthropology",
+      "source_chunk": 0,
+      "id": "03e7a084-f89c-4aaf-adaa-335f1ebe13a3",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Hosts the research unit that produced the study, enabling scholarly work.",
+        "supporting_text": "Institute of Human Relations"
+      }
+    },
+    {
+      "name": "Department of European Ethnology and Cultural Anthropology",
+      "type": "Organization",
+      "description": "Academic department at the University of Pécs specializing in ethnology and cultural anthropology.",
+      "role": "Provides the disciplinary framework and academic environment for the author’s investigation of intentional communities.",
+      "country": "Hungary",
+      "supporting_text": "Judit Farkas University of Pécs, Institute of Human Relations, Department of European Ethnology and Cultural Anthropology",
+      "source_chunk": 0,
+      "id": "0181ecc2-beea-4413-b44a-221c8bfaeb1f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Academic department that supports the cultural‑anthropological analysis of ecovillages.",
+        "supporting_text": "Department of European Ethnology and Cultural Anthropology"
+      }
+    },
+    {
+      "name": "Karen Litfin",
+      "type": "Individual",
+      "description": "Political scientist and researcher of the international eco‑village movement.",
+      "role": "Authored the quoted statement and conducts scholarly analysis of eco‑villages, contributing to the understanding of intentional communities for ecological regeneration and environmental sustainability.",
+      "country": null,
+      "supporting_text": "This sentence was written by Karen Litfin, a political scientist, researcher of the international eco-village movement (Litfin 2011:139).",
+      "source_chunk": 1,
+      "id": "8fe3bfa9-f11c-482e-8967-d54c35a5f258",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Litfin’s scholarship publicizes eco‑village ideas, raising their visibility and legitimacy.",
+        "supporting_text": "“This sentence was written by Karen Litfin, a political scientist, researcher of the international eco‑village movement (Litfin 2011:139).”"
+      }
+    },
+    {
+      "name": "Ramachandra Guha",
+      "type": "Individual",
+      "description": "Indian sociologist who analyses the historical waves of environmental thinking and links them to the emergence of eco‑villages.",
+      "role": "Provides scholarly framing of the eco‑village movement and highlights the shift toward self‑sustaining intentional communities.",
+      "country": "India",
+      "supporting_text": "Ramachandra Guha, a sociologist from India differentiates two major waves of environmentally sound thinking and movements (environmentalism) in one of his works on the history of the environment (Guha 2000):",
+      "source_chunk": 2,
+      "id": "ebb0747f-8437-4d91-9450-cdab551bd953",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a synthesis that points to future bottom‑up grassroots dominance.",
+        "supporting_text": "He points out that the period to come will be dominated by bottom up grassroots initiatives"
+      }
+    },
+    {
+      "name": "William Blake",
+      "type": "Individual",
+      "description": "18th‑century English poet and artist who critiqued industrialisation’s environmental impacts.",
+      "role": "Early literary figure warning about industrial hazards, contributing to the intellectual roots of ecological regeneration ideas.",
+      "country": "United Kingdom",
+      "supporting_text": "You can see with surprise as some authors of the 18th and 19th century discuss the satanic mills of the industrial age, the factories destroying the Earth, poisons, air pollution, railways (and tourists) spoiling the rural English landscape, environmental and pollution related causes of diseases, etc. (William Blake, William Wordsworth, John Ruskin, Edward Carpenter, William Morris, Thoreau).",
+      "source_chunk": 2,
+      "id": "6f2f736d-b7d0-4fe7-9f81-dc98288de36c",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Early literary critique of industrial pollution and its health impacts.",
+        "supporting_text": "authors ... discuss the satanic mills of the industrial age, the factories destroying the Earth, poisons, air pollution (William Blake …)"
+      }
+    },
+    {
+      "name": "William Wordsworth",
+      "type": "Individual",
+      "description": "English Romantic poet (1770‑1850) noted for his love of nature and extensive walking.",
+      "role": "Advocated rural, nature‑centred living, influencing later ideas of self‑sufficient communities.",
+      "country": "United Kingdom",
+      "supporting_text": "Wordsworth, the poet (1770 -1850) was an ardent hiker, according to the data of Guha he walked 175 thousand miles in his life, and in the meantime he had hands on experiences of the dark side of the industrial revolution and the devastation of the natural environment.",
+      "source_chunk": 2,
+      "id": "47f6d380-9821-4cf0-af47-89ce7ae97b03",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Personal observations of industrial devastation underscore the environmental crisis.",
+        "supporting_text": "Wordsworth ... had hands on experiences of the dark side of the industrial revolution and the devastation of the natural environment"
+      }
+    },
+    {
+      "name": "John Ruskin",
+      "type": "Individual",
+      "description": "English painter, art writer and aesthetician (1809‑1900) who linked air pollution to nature’s desecration.",
+      "role": "Created an association, a farm and a crafts shop aimed at self‑sufficiency, embodying early intentional‑community practice.",
+      "country": "United Kingdom",
+      "supporting_text": "John Ruskin (1809- 1900), painter, art writer, aesthetician maintained that air pollution was the consequence of desecration of nature, seeing correlation between environmental pollution and human diseases. He opposed the penetration of the railway because he thought it was an important cause of destruction of nature, for instance, because with the help of the railway industrialisation is facilitated. He supported the sustenance of handicrafts, created an association, a farm, a crafts shop, and found the preservation of subsistence was important.",
+      "source_chunk": 2,
+      "id": "d15d4373-4cc1-4bc0-a96d-f68e062b85ec",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Created a farm, association and crafts shop to model self‑sufficiency.",
+        "supporting_text": "He supported the sustenance of handicrafts, created an association, a farm, a crafts shop"
+      }
+    },
+    {
+      "name": "Edward Carpenter",
+      "type": "Individual",
+      "description": "English socialist poet and philosopher (1844‑1929) whose work inspired early communal experiments.",
+      "role": "Founded a community near Sheffield that grew vegetables, baked bread and pursued a self‑sustaining, nature‑based lifestyle.",
+      "country": "United Kingdom",
+      "supporting_text": "His influence was felt in the oeuvre of the Socialist poet and philosopher, Edward Carpenter (1844-1929), whose work Civilisation, Its Cause and Cure (1889) has become the Bible of the social movements.",
+      "source_chunk": 2,
+      "id": "22f87b94-c02c-4e51-ab4e-960339346dfe",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Established a community that grew food and baked bread, embodying self‑sustainability.",
+        "supporting_text": "Carpenter ... created a community ... they started to grow vegetables, baked their own bread"
+      }
+    },
+    {
+      "name": "William Morris",
+      "type": "Individual",
+      "description": "English industrial designer, author and socialist activist (1834‑1896) known for the ‘back to nature’ ethos.",
+      "role": "Propagated the back‑to‑nature idea that underpins many eco‑village and intentional‑community projects.",
+      "country": "United Kingdom",
+      "supporting_text": "William Morris (1834 -1896) industrial designer, author, Socialist activist was one of the great prophets of the 'back to nature' idea in this period, a thinker of great influence who is considered as the father of a number of art and social movements.",
+      "source_chunk": 2,
+      "id": "a1d9ea47-bb0e-4f63-9bfe-d157e3cb9469",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Advocated the ‘back to nature’ ethos that inspired communal experiments.",
+        "supporting_text": "William Morris ... was one of the great prophets of the ‘back to nature’ idea"
+      }
+    },
+    {
+      "name": "Henry David Thoreau",
+      "type": "Individual",
+      "description": "American naturalist and philosopher (1817‑1862) celebrated for his reflections on simple, self‑reliant living.",
+      "role": "Provided philosophical foundations for ecological regeneration and intentional community living.",
+      "country": "United States",
+      "supporting_text": "Walt Whitman and Henry David Thoreau",
+      "source_chunk": 2,
+      "id": "7ef32640-e1bf-4eff-82fb-032be667c855",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Philosophical influence that motivated Carpenter’s community building.",
+        "supporting_text": "Carpenter – inspired by William Morris, Walt Whitman and Henry David Thoreau – created a community"
+      }
+    },
+    {
+      "name": "Octavia Hill",
+      "type": "Individual",
+      "description": "English social reformer (1838‑1912) recognized as the first female environmental activist.",
+      "role": "Linked environmental concerns with social reform, influencing early community‑based sustainability initiatives.",
+      "country": "United Kingdom",
+      "supporting_text": "Octavia Hill (1838-1912), presented by Ramachandra Guha as the first female environmental activist, may also be included here.",
+      "source_chunk": 2,
+      "id": "5f0d1052-4b79-4256-8f85-f5a320b624ff",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "She combined environmental activism with social reform, mobilising collective efforts for sustainability.",
+        "supporting_text": "Octavia Hill ... was a social activist who had the idea to tackle environmental issues, the struggle for the poor and the social reforms jointly."
+      }
+    },
+    {
+      "name": "University of Copenhagen",
+      "type": "Organization",
+      "description": "Danish university where a 1969 student protest highlighted rising anti‑pollution activism.",
+      "role": "Venue for a landmark student action that signaled the growing grassroots momentum behind ecological movements and later intentional‑community projects.",
+      "country": "Denmark",
+      "supporting_text": "in the Spring of 1969 a couple of students interrupted the class on natural sciences at the University of Copenhagen, rushing in, carrying a mallard soaked in a marine oil spill and reciting anti-pollution slogans.",
+      "source_chunk": 2,
+      "id": "7a76cf05-efa3-4f9e-ad79-d2a21bd66375",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The campus became the site of a student protest that illustrated grassroots mobilisation for environmental concerns.",
+        "supporting_text": "a couple of students interrupted the class on natural sciences at the University of Copenhagen, rushing in, carrying a mallard soaked in a marine oil spill"
+      }
+    },
+    {
+      "name": "Louise Meijering",
+      "type": "Individual",
+      "description": "Scholar who researched and documented the history of rural intentional communities.",
+      "role": "Provides historical analysis and classification of intentional communities, informing contemporary eco‑village initiatives.",
+      "country": null,
+      "supporting_text": "Louise Meijering pointed out in her work on rural intentional communities (Meijering 2006).",
+      "source_chunk": 4,
+      "id": "318f376e-8300-4482-ab7e-7d136078a71d",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Meijering’s historical analysis highlights how religious versus secular bases affect community longevity.",
+        "supporting_text": "\"Meijering notes it seems religion based communities tend to survive longer than those with secular basis...\""
+      }
+    },
+    {
+      "name": "Robert Owen",
+      "type": "Individual",
+      "description": "19th‑century social reformer and industrialist.",
+      "role": "Founded New Harmony, an early intentional community that served as a model for later ecological and cooperative settlements.",
+      "country": null,
+      "supporting_text": "Owen himself created a community called New Harmony",
+      "source_chunk": 4,
+      "id": "c56b2abd-c8ab-4d16-84e2-302b0f2edadb",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Owen created New Harmony and inspired other communities, directly initiating collective experiments.",
+        "supporting_text": "\"Owen himself created a community called New Harmony, and a number of others … were inspired by the example shown by Owen.\""
+      }
+    },
+    {
+      "name": "Charles Fourier",
+      "type": "Individual",
+      "description": "French utopian socialist thinker.",
+      "role": "His ideas inspired 19th‑century socialist intentional communities that emphasized collective living and ecological harmony.",
+      "country": null,
+      "supporting_text": "ideas of Robert Owen, Charles Fourier and Étienne Cabet.",
+      "source_chunk": 4,
+      "id": "71b44c8e-bbdb-420f-aede-95d2895ea122",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Fourier’s ideas underpinned several intentional communities, indicating ideological pathways for systemic change.",
+        "supporting_text": "\"... showed the influence of the doctrine of Charles Fourier as well (Blouin 2007).\""
+      }
+    },
+    {
+      "name": "Étienne Cabet",
+      "type": "Individual",
+      "description": "French utopian socialist and author of communal experiments.",
+      "role": "Provided ideological foundations for socialist‑oriented intentional communities in the 19th century.",
+      "country": null,
+      "supporting_text": "ideas of Robert Owen, Charles Fourier and Étienne Cabet.",
+      "source_chunk": 4,
+      "id": "1869422b-6a5b-402b-a229-4a1f8c185002",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Cabet’s socialist ideas inspired 19th‑century intentional communities, suggesting alternative social structures.",
+        "supporting_text": "\"... inspired by the ideas of Robert Owen, Charles Fourier and Étienne Cabet.\""
+      }
+    },
+    {
+      "name": "Peter Kropotkin",
+      "type": "Individual",
+      "description": "Russian anarchist theorist.",
+      "role": "His anarchist philosophy influenced late‑19th‑century intentional communities that sought egalitarian, self‑sufficient living.",
+      "country": null,
+      "supporting_text": "the works of the Anarchists, in particular Peter Kropotkin and Lev Tolstoy.",
+      "source_chunk": 4,
+      "id": "e2808000-806b-4a3b-82fe-aa99d0f983e1",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Kropotkin’s anarchist influence is noted as failing to reconcile ideas with practical challenges, exposing limits of such approaches.",
+        "supporting_text": "\"These communities also existed for a short period of time only, not being able to compromise between ideas and the real world and practical challenges.\""
+      }
+    },
+    {
+      "name": "Lev Tolstoy",
+      "type": "Individual",
+      "description": "Russian writer and moral philosopher.",
+      "role": "Contributed anarchist‑inspired ideas that shaped some short‑lived intentional communities.",
+      "country": null,
+      "supporting_text": "the works of the Anarchists, in particular Peter Kropotkin and Lev Tolstoy.",
+      "source_chunk": 4,
+      "id": "a7bb2368-3766-4a98-8fc4-43057a0a29d6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "His ideas helped shape left‑ist intentional communities, showing an alternative systemic model.",
+        "supporting_text": "with ideological foundations provided ... in particular Peter Kropotkin and Lev Tolstoy."
+      }
+    },
+    {
+      "name": "Michael Blouin",
+      "type": "Individual",
+      "description": "Researcher who studies the roots of intentional communities.",
+      "role": "Identified historic communities such as Brook Farm, linking past experiments to modern eco‑village movements.",
+      "country": null,
+      "supporting_text": "Michael Blouin picked out Brook Farm",
+      "source_chunk": 4,
+      "id": "f4a8d3a2-8f07-417b-b062-3c62488f2dbe",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "He diagnoses why religious communities survive longer, highlighting structural challenges for secular groups.",
+        "supporting_text": "Blouin goes even further, arguing with the example of the Shakers …"
+      }
+    },
+    {
+      "name": "Robert Gilman",
+      "type": "Individual",
+      "description": "Author of the most widely‑used definition of an ecovillage. Co‑author of the influential paper “In Context” on co‑housing and eco‑village models.",
+      "role": "Advocated for co‑housing as a sustainable way of life, influencing later intentional community designs.",
+      "country": "United States",
+      "supporting_text": "Robert and Diane Gilman in their paper called In Context (Seattle) commenced to report on this and similar initiatives at the turn of the 1980s-1990s.",
+      "id": "64341006-da15-4a57-87ff-75da973647a1",
+      "variations": [
+        "Robert Gilman"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "Robert and Diane Gilman in their paper called In Context (Seattle) commenced to report on this and similar initiatives at the turn of the 1980s-1990s.",
+        "The first attempt at a definition, and still the one most commonly used, is Robert Gilman's:"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "His definition frames an aspirational model that guides future ecovillage development.",
+        "supporting_text": "Gilman’s: “A human‑scale, full‑featured settlement …”"
+      }
+    },
+    {
+      "name": "Diane Gilman",
+      "type": "Individual",
+      "description": "Co‑author of the influential paper “In Context” on co‑housing and eco‑village models.",
+      "role": "Advocated for co‑housing as a sustainable way of life, influencing later intentional community designs.",
+      "country": "United States",
+      "supporting_text": "Robert and Diane Gilman in their paper called In Context (Seattle) commenced to report on this and similar initiatives at the turn of the 1980s-1990s.",
+      "source_chunk": 4,
+      "id": "604d787b-c3b5-4c98-9c42-b89b9b9f7e4c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Co‑author of the influential “In Context” paper that promotes sustainable community models.",
+        "supporting_text": "Robert and Diane Gilman ... believed such initiatives may serve as a model for sustainable ways of life."
+      }
+    },
+    {
+      "name": "Ross Jackson",
+      "type": "Individual",
+      "description": "Co‑operator of the organisation Gaia Trust.",
+      "role": "Helped launch cooperation between Gaia Trust and eco‑village projects, supporting community development.",
+      "country": null,
+      "supporting_text": "Ross and Hildur Jackson who operated the organisation called Gaia Trust",
+      "source_chunk": 4,
+      "id": "61aaa32f-7861-4101-9f6a-b0dbd217c07a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Helped launch cooperation between the “In Context” paper, Gaia Trust and eco‑village projects.",
+        "supporting_text": "The paper was soon discovered by a couple, Ross and Hildur Jackson who operated the organisation called Gaia Trust, and a cooperation was launched ..."
+      }
+    },
+    {
+      "name": "Hildur Jackson",
+      "type": "Individual",
+      "description": "Co‑operator of the organisation Gaia Trust.",
+      "role": "Helped launch cooperation between Gaia Trust and eco‑village projects, supporting community development.",
+      "country": null,
+      "supporting_text": "Ross and Hildur Jackson who operated the organisation called Gaia Trust",
+      "source_chunk": 4,
+      "id": "69ae9a76-7298-46eb-9247-4c5c413b7cd5",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Co‑operated with Gaia Trust to connect research and eco‑village initiatives.",
+        "supporting_text": "The paper was soon discovered by a couple, Ross and Hildur Jackson who operated the organisation called Gaia Trust, and a cooperation was launched ..."
+      }
+    },
+    {
+      "name": "Findhorn Foundation",
+      "type": "Organization",
+      "description": "Ecological intentional community in the north of Scotland. Eco‑village and intentional community founded in Scotland in 1962.",
+      "role": "Serves as a flagship eco‑village, demonstrating ecological living and inspiring the global eco‑village movement.",
+      "country": "United Kingdom",
+      "supporting_text": "the Findhorn Foundation established in 1962 Scotland",
+      "id": "4d4187f3-519b-47f3-b144-6fe728cb6ca4",
+      "variations": [
+        "Findhorn Foundation"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "the Findhorn Foundation established in 1962 Scotland",
+        "In Scotland, the Findhorn Foundation's growing alliances"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Economic and ecological impact studies gave Findhorn credibility, opening doors to wider institutional partnerships.",
+        "supporting_text": "Findhorn’s initiatives contributed four hundred jobs ... studies won the community a level of credibility that opened doors ..."
+      }
+    },
+    {
+      "name": "United Kibbutz Movement",
+      "type": "Organization",
+      "description": "Israeli collective movement that coordinates kibbutz communities.",
+      "role": "Organises and supports kibbutz‑style intentional communities that practice cooperative agriculture and sustainability.",
+      "country": "Israel",
+      "supporting_text": "the related movement (United Kibbutz Movement) was formed in 1927.",
+      "source_chunk": 4,
+      "id": "e939c7f4-1d67-46e2-a39f-1fd8a8b2e57c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided an organized network for kibbutz communities, enabling collective agricultural practice.",
+        "supporting_text": "The first Kibbutz was founded in 1909 and the related movement (United Kibbutz Movement) was formed in 1927."
+      }
+    },
+    {
+      "name": "Mother Earth News",
+      "type": "Organization",
+      "description": "Magazine based in Hendersonville, Northern California.",
+      "role": "Pioneered organic gardening and energy‑saving houses on its own premises, branding itself as an early eco‑village and spreading sustainable practices.",
+      "country": "United States",
+      "supporting_text": "the magazine called Mother Earth News (Hendersonville, North-California) started to set up organic gardens and energy saving houses next to their offices in 1975, which also functioned as education centres, and they started to call themselves eco-village from 1979 on.",
+      "source_chunk": 4,
+      "id": "13246e6c-6533-45f4-80be-aa310a9dcf13",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Demonstrated eco‑village practices through organic gardens and energy‑saving houses.",
+        "supporting_text": "Mother Earth News ... started to set up organic gardens and energy saving houses ... they started to call themselves eco‑village from 1979 on."
+      }
+    },
+    {
+      "name": "Gaia Trust",
+      "type": "Organization",
+      "description": "Non‑profit organisation that supports eco‑village projects.",
+      "role": "Operated and sponsored eco‑village initiatives, including the 1995 international meeting in Findhorn.",
+      "country": null,
+      "supporting_text": "organised and sponsored by the Gaia Trust and the Findhorn Foundation.",
+      "source_chunk": 4,
+      "id": "4cbd77c5-b5cb-48ab-9fee-eb5026401090",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Coordinated collaborations between research, NGOs and eco‑village projects.",
+        "supporting_text": "The paper was soon discovered by a couple, Ross and Hildur Jackson who operated the organisation called Gaia Trust, and a cooperation was launched ..."
+      }
+    },
+    {
+      "name": "Global Ecovillage Network (GEN)",
+      "type": "Coalition",
+      "description": "International network linking eco‑villages worldwide. Worldwide network that connects ecovillages and facilitates alliances across the movement.",
+      "role": "Facilitates communication, knowledge exchange, and funding among eco‑villages, accelerating the global movement.",
+      "country": null,
+      "supporting_text": "Global Ecovillage Network (GEN) was launched in 1994, in which the Hungarian Gyűrűfű project has already been involved as one of the funding members.",
+      "id": "99c06fef-fe07-4d86-bc72-7dbb13843db5",
+      "variations": [
+        "Global Ecovillage Network (GEN)"
+      ],
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_texts": [
+        "Global Ecovillage Network (GEN) was launched in 1994, in which the Hungarian Gyűrűfű project has already been involved as one of the funding members.",
+        "former president of the Global Ecovillage Net work (GEN)"
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Serves as a coordinating body linking northern and southern ecovillage initiatives.",
+        "supporting_text": "former president of the Global Ecovillage Network (GEN) ... largest members of the GEN are networks of Southern communities."
+      }
+    },
+    {
+      "name": "Hungarian Gyűrűfű project",
+      "type": "Organization",
+      "description": "Eco‑village project in Hungary.",
+      "role": "Participated as a funding member of GEN, contributing to the international eco‑village network.",
+      "country": "Hungary",
+      "supporting_text": "the Hungarian Gyűrűfű project has already been involved as one of the funding members.",
+      "source_chunk": 4,
+      "id": "3b239322-8a68-4704-a868-e7f16a63890c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provided early funding and participation in the launch of GEN.",
+        "supporting_text": "the Hungarian Gyűrűfű project has already been involved as one of the funding members."
+      }
+    },
+    {
+      "name": "Danish eco‑village network",
+      "type": "Coalition",
+      "description": "National network of eco‑villages in Denmark.",
+      "role": "Co‑ordinated Danish eco‑village initiatives and served as a model for later international networks.",
+      "country": "Denmark",
+      "supporting_text": "the Danish eco-village network was set up, the first of this kind",
+      "source_chunk": 4,
+      "id": "3eb1e1d2-cc19-48b3-b0a6-eafe77b41f77",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Served as a prototype that inspired later international eco‑village coordination.",
+        "supporting_text": "the Danish eco‑village network was set up, the first of this kind, which later served as a model for the later launched international eco‑village movement."
+      }
+    },
+    {
+      "name": "Essenes",
+      "type": "Other",
+      "description": "Religious group that lived in Palestine during the 1st century BCE/CE.",
+      "role": "Early example of an intentional community that withdrew from dominant culture to live by shared principles.",
+      "country": "Palestine",
+      "supporting_text": "the Essenes, a religious group operating in Palestine in the first century before Christ",
+      "source_chunk": 4,
+      "id": "99e0ee66-e0d3-41f1-b0bf-4a436910f522",
+      "significance": {
+        "primary_category": "unclear",
+        "justification": "The text mentions them as an early intentional community but does not link them to ecological harmony.",
+        "supporting_text": "with an example of the Essenes, a religious group operating in Palestine in the first century before Christ"
+      }
+    },
+    {
+      "name": "Franciscans",
+      "type": "Other",
+      "description": "Catholic monastic order founded in the 13th century.",
+      "role": "Provided a model of communal, spiritually‑motivated living that influenced later intentional communities.",
+      "country": null,
+      "supporting_text": "examples like the Franciscans, the Dominicans, the Carmelites and the Benedictines.",
+      "source_chunk": 4,
+      "id": "758f467c-ead9-4e32-a3b2-04aa1eeb18fa",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Illustrates a historic monastic model that later informed communal sustainability practices.",
+        "supporting_text": "examples like the Franciscans, the Dominicans, the Carmelites and the Benedictines."
+      }
+    },
+    {
+      "name": "Dominicans",
+      "type": "Other",
+      "description": "Catholic monastic order founded in the 13th century.",
+      "role": "Provided a model of communal, spiritually‑motivated living that influenced later intentional communities.",
+      "country": null,
+      "supporting_text": "examples like the Franciscans, the Dominicans, the Carmelites and the Benedictines.",
+      "source_chunk": 4,
+      "id": "86fb35a8-6b11-4871-baad-a7b1fadeead0",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows early monastic intentional communities that set historical context for later ecological groups.",
+        "supporting_text": "examples like the Franciscans, the Dominicans, the Carmelites and the Benedictines."
+      }
+    },
+    {
+      "name": "Carmelites",
+      "type": "Other",
+      "description": "Catholic monastic order founded in the 13th century.",
+      "role": "Provided a model of communal, spiritually‑motivated living that influenced later intentional communities.",
+      "country": null,
+      "supporting_text": "examples like the Franciscans, the Dominicans, the Carmelites and the Benedictines.",
+      "source_chunk": 4,
+      "id": "b51a74cd-96b9-4c6b-bdf4-1da7cf9dd4a8",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Part of the 13th‑century monastic stage that illustrates the historical roots of intentional communities.",
+        "supporting_text": "examples like the Franciscans, the Dominicans, the Carmelites and the Benedictines."
+      }
+    },
+    {
+      "name": "Benedictines",
+      "type": "Other",
+      "description": "Catholic monastic order founded in the 6th century, flourishing in the medieval period.",
+      "role": "Provided a model of communal, spiritually‑motivated living that influenced later intentional communities.",
+      "country": null,
+      "supporting_text": "examples like the Franciscans, the Dominicans, the Carmelites and the Benedictines.",
+      "source_chunk": 4,
+      "id": "eeec43aa-7ee8-4ae0-88c1-c2599c6b1e30",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Represents the Catholic monastic tradition that contributed to the early intentional‑community lineage.",
+        "supporting_text": "examples like the Franciscans, the Dominicans, the Carmelites and the Benedictines."
+      }
+    },
+    {
+      "name": "Brotherhood of the Free Spirit",
+      "type": "Other",
+      "description": "Lay Christian heretical movement in Western Europe during the late medieval period.",
+      "role": "Early heretical intentional community that pursued alternative spiritual and social organization.",
+      "country": null,
+      "supporting_text": "the lay Christian movement of the Brotherhood of the Free Spirit",
+      "source_chunk": 4,
+      "id": "be7a8552-938b-44cf-92ff-7987bebae240",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Illustrates the heretical intentional communities of the third historical stage.",
+        "supporting_text": "The most important of those is considered the lay Christian movement of the Brotherhood of the Free Spirit in Western Europe."
+      }
+    },
+    {
+      "name": "Shakers",
+      "type": "Other",
+      "description": "Religious communal group that migrated from Europe to North America (18th–19th c.).",
+      "role": "One of the longest‑standing intentional communities, exemplifying durability of faith‑based ecological living.",
+      "country": null,
+      "supporting_text": "Shakers, Hutterites, Mennonites",
+      "source_chunk": 4,
+      "id": "d0d6e337-985e-452c-a7de-d6524ebe5a9f",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Cited as a long‑standing successful intentional community, showing effective collective organization for sustainable living.",
+        "supporting_text": "the Shakers ‒ as one of the longest standing successful intentional community"
+      }
+    },
+    {
+      "name": "Hutterites",
+      "type": "Other",
+      "description": "Anabaptist communal group established in Central Europe and later North America.",
+      "role": "Historical intentional community that practiced collective agriculture and shared resources.",
+      "country": null,
+      "supporting_text": "Shakers, Hutterites, Mennonites",
+      "source_chunk": 4,
+      "id": "fc1998b3-a6b4-41fc-9097-e3305c21feb4",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Listed among 16th‑18th‑century Protestant intentional groups, providing historical background.",
+        "supporting_text": "A great part of the intentional communities of the 16th to the 18th centuries are Protestant (Shakers, Hutterites, Mennonites)"
+      }
+    },
+    {
+      "name": "Mennonites",
+      "type": "Other",
+      "description": "Anabaptist Christian group with a tradition of communal settlements.",
+      "role": "Historical intentional community that contributed to early eco‑village practices through collective farming.",
+      "country": null,
+      "supporting_text": "Shakers, Hutterites, Mennonites",
+      "source_chunk": 4,
+      "id": "6a3159b5-2f7b-405d-aab4-fe885ad7bb95",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Part of the Protestant intentional‑community tradition that precedes later ecological experiments.",
+        "supporting_text": "A great part of the intentional communities of the 16th to the 18th centuries are Protestant (Shakers, Hutterites, Mennonites)"
+      }
+    },
+    {
+      "name": "Israeli Kibbutzes",
+      "type": "Other",
+      "description": "Collective agricultural settlements in Israel, beginning in the early 20th century.",
+      "role": "Pioneered large‑scale cooperative living and sustainable agriculture, influencing later eco‑village models.",
+      "country": "Israel",
+      "supporting_text": "touched upon the Israeli Kibbutzes only shortly as significant intentional communities",
+      "source_chunk": 4,
+      "id": "59b8b4f4-c832-4fcf-a885-5ddde2daeb2f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Described as “significant intentional communities with a great impact,” indicating their role as models for systemic ecological change.",
+        "supporting_text": "the Israeli Kibbutzes only shortly as significant intentional communities with a great impact."
+      }
+    },
+    {
+      "name": "South‑Indian Auroville",
+      "type": "Other",
+      "description": "International intentional community founded in 1968 in Tamil Nadu, India.",
+      "role": "Serves as a model of spiritually‑guided ecological living and global cooperation.",
+      "country": "India",
+      "supporting_text": "the South-Indian Auroville",
+      "source_chunk": 4,
+      "id": "d9f91123-9c2c-4aa5-8e4b-4ccfc57f057f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Cited as a role model for the international eco‑village movement, showing transformative potential.",
+        "supporting_text": "Such a community is ... the South‑Indian Auroville, and The Farm in the United States."
+      }
+    },
+    {
+      "name": "The Farm",
+      "type": "Other",
+      "description": "An ecovillage in Tennessee, USA, known for protecting indigenous cultures of the Americas. Intentional community established in 1971 in Tennessee, United States. Intentional community near Nashville, Tennessee, USA, known for sustainability activism and partnerships.",
+      "role": "Early American eco‑village that practices sustainable agriculture and communal governance.",
+      "country": "United States",
+      "supporting_text": "The Farm in the United States",
+      "id": "4c890ada-9c4a-4c3c-b07c-899a9632bf3f",
+      "variations": [
+        "The Farm"
+      ],
+      "source_chunks": [
+        4,
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "The Farm in the United States",
+        "The Farm, near Nashville, Tennessee, in the southeastern United States",
+        "Three ecovillages--Auroville in India, Sarvodaya in Sri Lanka, and The Farm in Tennessee--were active players... For its work in protecting indigenous cultures of the Americas through Plenty, The Farm received the first Right Livelihood Award..."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Acts as a hub for multiple collaborative initiatives, campaigns, and consultancy services that mobilize diverse stakeholders.",
+        "supporting_text": "The Farm ... works with a variety of government and NGO partners on an array of initiatives."
+      }
+    },
+    {
+      "name": "Jonathan Dawson",
+      "type": "Individual",
+      "description": "Author of the chapter discussing the history and future of the ecovillage movement.",
+      "role": "Provides scholarly analysis and narrative on intentional ecovillage communities for ecological regeneration and environmental sustainability.",
+      "country": null,
+      "supporting_text": "Jonathan Dawson",
+      "source_chunk": 5,
+      "id": "ac21e1ab-9a90-4e03-b86c-62bcb1e8d5c5",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "As the author, Dawson contributes to the discourse that can legitimize and popularize ecovillage concepts.",
+        "supporting_text": "Jonathan Dawson"
+      }
+    },
+    {
+      "name": "Sarvodaya",
+      "type": "NGO",
+      "description": "A Sri Lankan community‑based organization that works on post‑disaster recovery and sustainable development. Sri Lankan non‑governmental organization working with almost two thousand primarily rural communities.",
+      "role": "Networks Southern communities, partners with the Global Ecovillage Network and promotes ecological regeneration at the village level.",
+      "country": "Sri Lanka",
+      "supporting_text": "Examples include Sarvodaya, a group that works with almost two thousand primarily rural communities across Sri Lanka",
+      "id": "26fdcbe6-5b96-4c40-984c-068e81798559",
+      "variations": [
+        "Sarvodaya"
+      ],
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_texts": [
+        "Examples include Sarvodaya, a group that works with almost two thousand primarily rural communities across Sri Lanka",
+        "Three ecovillages--Auroville in India, Sarvodaya in Sri Lanka, and The Farm in Tennessee--were active players... In 2009, Sarvodaya was awarded the United Nations' prestigious UN Habitat Scroll of Honor in special recognition of its achievements in helping communities recover from the effects of the tsunami."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Operates a large network of rural communities, mobilising collective resources for sustainability.",
+        "supporting_text": "Sarvodaya, a group that works with almost two thousand primarily rural communities across Sri Lanka"
+      }
+    },
+    {
+      "name": "COLUFIFA",
+      "type": "Coalition",
+      "description": "Transnational network of about 250 rural communities across Guinea, Guinea‑Bissau, Senegal and Gambia.",
+      "role": "Links West African villages into a collaborative platform for ecological and social initiatives, and participates in GEN alliances.",
+      "country": "Guinea, Guinea-Bissau, Senegal, Gambia",
+      "supporting_text": "COLUFIFA (a French acronym meaning Committee for the Struggle to End Hunger), a network of two hundred and fifty communities spanning Guinea, Guinea-Bissau, Senegal, and Gambia",
+      "source_chunk": 6,
+      "id": "0208555b-a25d-4cc1-b24b-58e414b6b611",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Coordinates hundreds of communities across West Africa toward shared ecological goals.",
+        "supporting_text": "COLUFIFA ... network of two hundred and fifty communities spanning Guinea, Guinea‑Bissau, Senegal, and Gambia"
+      }
+    },
+    {
+      "name": "GEN Senegal",
+      "type": "Organization",
+      "description": "Senegalese member of the Global Ecovillage Network that networks over thirty villages.",
+      "role": "Acts as the primary GEN liaison in Senegal, supporting community‑level ecological regeneration and empowerment.",
+      "country": "Senegal",
+      "supporting_text": "GEN Senegal, an organization that networks over thirty communities in the west African state",
+      "source_chunk": 6,
+      "id": "8fa1e066-5133-4952-9ba1-f3b9e4e874b8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Networks dozens of villages and engages in policy dialogue to promote ecovillage principles.",
+        "supporting_text": "GEN Senegal, an organization that networks over thirty communities in the west African state."
+      }
+    },
+    {
+      "name": "Ari Ariayaratne",
+      "type": "Individual",
+      "description": "Founder of the Sarvodaya movement in Sri Lanka.",
+      "role": "Established a large‑scale community network that collaborates with GEN and promotes sustainable livelihoods.",
+      "country": "Sri Lanka",
+      "supporting_text": "the Sarvodaya movement created by Ari Ariayaratne in Sri Lanka",
+      "source_chunk": 6,
+      "id": "986796e5-ab17-427e-aa22-ed2f0d263b0b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Founder of Sarvodaya, catalysing large‑scale community mobilisation.",
+        "supporting_text": "Sarvodaya ... created by Ari Ariayaratne"
+      }
+    },
+    {
+      "name": "Demba Mansare",
+      "type": "Individual",
+      "description": "Founder of the COLUFIFA network of rural communities in West Africa.",
+      "role": "Created a coalition that connects hundreds of villages for joint ecological and social action.",
+      "country": null,
+      "supporting_text": "COLUFIFA, the transnational network of rural communities created by Demba Mansare in west Africa",
+      "source_chunk": 6,
+      "id": "d067e070-e721-4408-8d71-c367278a80c8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Founder of a large network of community groups that coordinates collective action across West Africa.",
+        "supporting_text": "COLUFIFA ... a network of two hundred and fifty communities ... Demba Mansare ... in west Africa."
+      }
+    },
+    {
+      "name": "Nature Conservancy",
+      "type": "NGO",
+      "description": "International conservation charity.",
+      "role": "Partnered with The Farm in the Big Swan Headwaters Preserve to protect thousands of acres from development.",
+      "country": "International",
+      "supporting_text": "inter national charities like Nature Conservancy",
+      "source_chunk": 6,
+      "id": "8a3fa0da-20af-483b-b1cd-95b95b07237e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Partnered with The Farm to protect land, illustrating joint action between conservation NGOs and ecovillages.",
+        "supporting_text": "The Farm's Big Swan Headwaters Preserve ... drew together ... international charities like Nature Conservancy to protect..."
+      }
+    },
+    {
+      "name": "Plenty",
+      "type": "NGO",
+      "description": "International charity based at The Farm that provides emergency relief and long‑term community support.",
+      "role": "Delivers disaster response (e.g., post‑hurricane New Orleans, Haiti, Gulf Coast) and incubates community‑based enterprises.",
+      "country": "International",
+      "supporting_text": "An international charity based at the Farm--Plenty--works in emergency relief arenas",
+      "source_chunk": 6,
+      "id": "f14d2b6a-ac05-4896-81a3-94559f286cab",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides emergency relief and long‑term community‑based enterprise incubation, extending collective impact beyond the ecovillage.",
+        "supporting_text": "An international charity based at the Farm—Plenty—works in emergency relief arenas ..."
+      }
+    },
+    {
+      "name": "ZEGG (Zentrum für experimentelle Gesellschaftsgestaltung)",
+      "type": "Organization",
+      "description": "German ecovillage located just outside Berlin.",
+      "role": "Develops and disseminates appropriate technologies, runs local sustainability projects, and engages in cultural and social initiatives.",
+      "country": "Germany",
+      "supporting_text": "The German ecovillage ZEGG (Zentrum für experimentelle Gesellschaftsgestaltung, or Center for Experimental Cultural Design), located just outside Berlin",
+      "source_chunk": 6,
+      "id": "82c0c422-093f-4fcd-8c3e-5346d3ccfc23",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Runs technology‑dissemination programs, workshops and community projects that mobilize regional actors.",
+        "supporting_text": "ZEGG ... developed an active program to disseminate appropriate technologies ... seminars, workshops, visitor days ..."
+      }
+    },
+    {
+      "name": "UN CIFAL training centre",
+      "type": "Organization",
+      "description": "United Nations sustainability‑training programme, one of eleven worldwide.",
+      "role": "Delivers sustainability‑related training for local governments and other actors at Findhorn.",
+      "country": "International",
+      "supporting_text": "the ecovillage hosts a UN CIFAL training center (one of eleven such centers worldwide)",
+      "source_chunk": 6,
+      "id": "a21631dc-68c7-45bc-a3a7-5271c0d337c3",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides sustainability training for local governments, building capacity for collective implementation.",
+        "supporting_text": "Findhorn hosts a UN CIFAL training centre ... which provides sustainability‑related training for local governments ..."
+      }
+    },
+    {
+      "name": "Scottish government",
+      "type": "Government",
+      "description": "Devolved government of Scotland.",
+      "role": "Provides political and financial support that enables Findhorn’s training and partnership activities.",
+      "country": "United Kingdom (Scotland)",
+      "supporting_text": "This is made possible by political and financial support from the Scottish government and local govern ment authorities",
+      "source_chunk": 6,
+      "id": "2351ea6b-295c-4968-8630-bc0839fffa4c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Supplies political and financial support that enables Findhorn’s collaborative programmes.",
+        "supporting_text": "political and financial support from the Scottish government and local government authorities."
+      }
+    },
+    {
+      "name": "Cairngorm National Park",
+      "type": "Organization",
+      "description": "National park authority in the Scottish Highlands.",
+      "role": "Receives consultancy services from Findhorn members for ecological and community projects.",
+      "country": "Scotland",
+      "supporting_text": "consultancy services for local organizations as diverse as the Cairngorm National Park",
+      "source_chunk": 6,
+      "id": "1134b22a-3685-47e5-aca7-e658d112c385",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Receives consultancy from Findhorn members, integrating ecovillage expertise into regional conservation work.",
+        "supporting_text": "consultancy services for local organizations as diverse as the Cairngorm National Park ..."
+      }
+    },
+    {
+      "name": "Development Trusts Association of Scotland",
+      "type": "Organization",
+      "description": "Scottish umbrella body supporting community‑led development.",
+      "role": "Works with Findhorn consultants on economic, ecological and community‑development initiatives.",
+      "country": "Scotland",
+      "supporting_text": "the Development Trusts Association of Scotland",
+      "source_chunk": 6,
+      "id": "3f82f213-d59a-4567-8bcc-c48860b1bc5b",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Partners with Findhorn for community‑development projects, extending collective action networks.",
+        "supporting_text": "consultancy services for local organizations ... Development Trusts Association of Scotland ..."
+      }
+    },
+    {
+      "name": "Centre for Alternative Technology",
+      "type": "Organization",
+      "description": "Sustainability centre in Wales and founding member of the GEN.",
+      "role": "Leads the Ecodyfi initiative that brings together local authorities, the Welsh Assembly and community groups for regional regeneration.",
+      "country": "Wales",
+      "supporting_text": "The Centre for Alternative Technology, a founding member of the GEN",
+      "source_chunk": 6,
+      "id": "f1b04015-7b4c-495d-8706-b04f2c27a22c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Leads the Ecodyfi initiative, coordinating multiple actors to regenerate a valley sustainably.",
+        "supporting_text": "The Centre for Alternative Technology ... is a leading player in the Ecodyfi initiative in Wales ..."
+      }
+    },
+    {
+      "name": "Welsh Assembly",
+      "type": "Government",
+      "description": "Devolved legislature of Wales.",
+      "role": "Participates in the Ecodyfi initiative alongside local authorities and specialist organisations.",
+      "country": "United Kingdom (Wales)",
+      "supporting_text": "local authorities, the Welsh Assembly",
+      "source_chunk": 6,
+      "id": "70589b2a-c3b7-4e96-a7cd-01b44dfcaee3",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Participates in the Ecodyfi partnership, helping to align policy with community‑level sustainability actions.",
+        "supporting_text": "Ecodyfi initiative ... brings together local authorities, the Welsh Assembly, various community groups ..."
+      }
+    },
+    {
+      "name": "National Agency for Ecovillages",
+      "type": "Government",
+      "description": "Senegalese state agency created to transform villages into ecovillages.",
+      "role": "Coordinates a national programme to upgrade water, energy and agroforestry infrastructure across Senegal’s villages.",
+      "country": "Senegal",
+      "supporting_text": "the decision by the government of Senegal to create a National Agency for Ecovillages",
+      "source_chunk": 6,
+      "id": "e24b19b3-2c28-4882-8086-ccd6bebc1abe",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "State‑level agency aims to transform all 14,000 Senegalese villages, indicating a systemic shift toward ecovillage models.",
+        "supporting_text": "decision by the government of Senegal to create a National Agency for Ecovillages ... aim ... transform all of Senegal’s fourteen thousand villages into ecovillages."
+      }
+    },
+    {
+      "name": "La Caravana Arcoiris por la Paz (Rainbow Caravan of Peace)",
+      "type": "Organization",
+      "description": "Mobile community of artists and ecological activists touring Latin America.",
+      "role": "Teaches sustainability through the arts and has developed community‑based cultural centres in partnership with governments.",
+      "country": "Latin America",
+      "supporting_text": "La Caravana Arcoiris por la Paz (the Rainbow Caravan of Peace), a community of artists and ecological activists that have toured Latin America",
+      "source_chunk": 6,
+      "id": "4d4b44f2-570b-456a-acf1-0d72e5e64d5d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Travels across Latin America delivering sustainability education and cultural projects, mobilising artistic communities.",
+        "supporting_text": "La Caravana Arcoiris por la Paz ... toured Latin America ... teaching sustainability through the arts."
+      }
+    },
+    {
+      "name": "Brazilian government",
+      "type": "Government",
+      "description": "Federal government of Brazil.",
+      "role": "Commissioned La Caravana to develop fifty community‑based cultural centres in Brazilian towns and villages.",
+      "country": "Brazil",
+      "supporting_text": "Between 2005 and 2008, La Caravana was commissioned by the Brazilian government",
+      "source_chunk": 6,
+      "id": "b484f271-8818-4568-8192-9a39e27e7501",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Commissioned La Caravana to develop fifty community‑based cultural centres, supporting grassroots sustainability initiatives.",
+        "supporting_text": "La Caravana ... commissioned by the Brazilian government to help develop fifty community‑based cultural centers ..."
+      }
+    },
+    {
+      "name": "Gilberto Gill",
+      "type": "Individual",
+      "description": "Brazilian singer who served as Minister of Culture.",
+      "role": "Inspired the alliance between the Brazilian government and La Caravana.",
+      "country": "Brazil",
+      "supporting_text": "the legendary Brazilian singer Gilberto Gill, who as Brazil's Minister of Culture inspired this alliance",
+      "source_chunk": 6,
+      "id": "96579869-f297-4f27-9ee6-bca7ff62456c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Reference to Icelandic ecovillage shows early geographic diffusion of the concept.",
+        "supporting_text": "\"including the Icelandic ecovillage of Solheimar, which was created in 1931\""
+      }
+    },
+    {
+      "name": "Secretariat of Culture in the Coyoacán district of Mexico City",
+      "type": "Government",
+      "description": "Local cultural authority in the Coyoacán district of Mexico City.",
+      "role": "Cooperates with La Caravana on cultural‑sustainability projects.",
+      "country": "Mexico",
+      "supporting_text": "cooperation with the Secretariat of Culture in the Coyoacán district of Mexico City",
+      "source_chunk": 6,
+      "id": "a0671c6d-85c2-4060-84e8-1521673c8c14",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Collaboration with this local cultural body enables La Caravana’s activities in Mexico City.",
+        "supporting_text": "\"La Caravana ... is doing similar work in cooperation with the Secretariat of Culture in the Coyoacán district of Mexico City\""
+      }
+    },
+    {
+      "name": "Oxfam",
+      "type": "NGO",
+      "description": "International development and humanitarian NGO.",
+      "role": "Recognises ecovillages as valuable partners in grassroots development and sustainability work.",
+      "country": "International",
+      "supporting_text": "more grassroots-focused organizations like Oxfam and Save the Children",
+      "source_chunk": 6,
+      "id": "58c0899b-915e-43a6-a70a-b9a9b1f49e94",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Mentioned as a respected Northern aid organization that recognises ecovillages, raising their credibility.",
+        "supporting_text": "\"their activities are broadly recognized within the Northern aid community—particularly more grassroots‑focused organizations like Oxfam and Save the Children\""
+      }
+    },
+    {
+      "name": "Save the Children",
+      "type": "NGO",
+      "description": "International NGO focused on children's rights and development.",
+      "role": "Recognises ecovillages as valuable partners in grassroots development and sustainability work.",
+      "country": "International",
+      "supporting_text": "more grassroots-focused organizations like Oxfam and Save the Children",
+      "source_chunk": 6,
+      "id": "f49c9117-aed1-4a88-a700-d76564eed0da",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Cited alongside Oxfam as a reputable partner that validates ecovillage work.",
+        "supporting_text": "\"their activities are broadly recognized within the Northern aid community—particularly more grassroots‑focused organizations like Oxfam and Save the Children\""
+      }
+    },
+    {
+      "name": "Gaia University",
+      "type": "Organization",
+      "description": "Educational institution offering degrees from ecovillage‑based institutes.",
+      "role": "Provides accredited academic programmes for students studying in ecovillages.",
+      "country": null,
+      "supporting_text": "degrees from ecovillagebased institutes through the recently organized Gaia University",
+      "source_chunk": 6,
+      "id": "d7c13dc8-4c45-4ae8-9515-188aceda6c00",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides formal education pathways that build capacity for ecovillage participants.",
+        "supporting_text": "\"university students are gaining credits ... and degrees from ecovillage‑based institutes through the recently organized Gaia University\""
+      }
+    },
+    {
+      "name": "Auroville",
+      "type": "Organization",
+      "description": "An intentional ecovillage in India that participates in post‑disaster clean‑up and reconstruction activities.",
+      "role": "Active player in clean‑up and reconstruction after the South Asian tsunami.",
+      "country": "India",
+      "supporting_text": "Three ecovillages--Auroville in India, Sarvodaya in Sri Lanka, and The Farm in Tennessee--were active players alongside government and local community-based organizations in the clean-up and reconstruction activities following the south Asian tsunami...",
+      "source_chunk": 7,
+      "id": "68786ded-5aaa-4aa4-8bdc-9a1af7308401"
+    },
+    {
+      "name": "United Nations",
+      "type": "Organization",
+      "description": "International intergovernmental organization that recognizes and supports sustainability initiatives.",
+      "role": "Awarded Sarvodaya the UN Habitat Scroll of Honor and endorsed the Gaia Education curriculum through its agencies.",
+      "country": "International",
+      "supporting_text": "In 2009, Sarvodaya was awarded the United Nations' prestigious UN Habitat Scroll of Honor... The curriculum, developed by educators... has been endorsed by the United Nations Institute for Training and Research (UNITAR) and welcomed by the United Nations Educational, Scientific and Cultural Organisation (UNESCO)...",
+      "source_chunk": 7,
+      "id": "3f0b5f81-fb09-48af-a389-64b1cdeadda9"
+    },
+    {
+      "name": "UN Habitat",
+      "type": "Organization",
+      "description": "United Nations Human Settlements Programme, part of the UN system.",
+      "role": "Issued the Scroll of Honor recognizing Sarvodaya’s post‑disaster recovery work.",
+      "country": "International",
+      "supporting_text": "In 2009, Sarvodaya was awarded the United Nations' prestigious UN Habitat Scroll of Honor...",
+      "source_chunk": 7,
+      "id": "c0fe2209-9eeb-4716-a780-609dac48710c"
+    },
+    {
+      "name": "Gaia Education",
+      "type": "Organization",
+      "description": "A network that develops educational curricula based on best practices from ecovillages worldwide.",
+      "role": "Created a sustainability curriculum endorsed by UN agencies and taught globally.",
+      "country": null,
+      "supporting_text": "linking ecovillage initiatives North and South, Gaia Education has developed an educational curriculum drawn from best practice within ecovillages globally.",
+      "source_chunk": 7,
+      "id": "9428db55-5144-4445-bb8d-aa42b26972f3"
+    },
+    {
+      "name": "UNITAR",
+      "type": "Organization",
+      "description": "United Nations Institute for Training and Research, supporting capacity‑building for sustainable development.",
+      "role": "Endorsed the Gaia Education curriculum as a valuable contribution to the UN Decade of Education for Sustainable Development.",
+      "country": "International",
+      "supporting_text": "The curriculum... has been endorsed by the United Nations Institute for Training and Research (UNITAR) and welcomed by the United Nations Educational, Scientific and Cultural Organisation (UNESCO)...",
+      "source_chunk": 7,
+      "id": "d81a4975-8c64-402f-a43a-6e6fd0e4043d"
+    },
+    {
+      "name": "UNESCO",
+      "type": "Organization",
+      "description": "United Nations Educational, Scientific and Cultural Organization, promoting education for sustainable development.",
+      "role": "Welcomed the Gaia Education curriculum as a contribution to the UN Decade of Education for Sustainable Development.",
+      "country": "International",
+      "supporting_text": "The curriculum... has been endorsed by ... UNESCO as a valuable contribution to its UN Decade of Education for Sustainable Development.",
+      "source_chunk": 7,
+      "id": "758c9e10-a6b6-4158-b92a-a29e19a6a6c4"
+    },
+    {
+      "name": "Open University of Catalunya",
+      "type": "Organization",
+      "description": "A Spanish university offering distance education and a master's program on the Gaia Education curriculum.",
+      "role": "Delivers the ecovillage sustainability curriculum virtually as a master's program.",
+      "country": "Spain",
+      "supporting_text": "the course is now being taught ... through the Open University of Catalunya in Spain, where it is now offered as a master's program.",
+      "source_chunk": 7,
+      "id": "627f3ce4-6754-41bf-8606-d3ad6410d8b7"
+    },
+    {
+      "name": "David Holmgren",
+      "type": "Individual",
+      "description": "Co‑originator of the permaculture concept and author of \"Future Scenarios\" on peak oil and climate change.",
+      "role": "Provides scenario analysis that frames the potential future relevance of ecovillages.",
+      "country": null,
+      "supporting_text": "David Holmgren's Future Scenarios provides some insights into how the near- to medium-term future may unfold and the likely relevance of initiatives that are based on ecological design principles, such as ecovillages...",
+      "source_chunk": 7,
+      "id": "2a913ff1-7624-49fd-8c62-32f931b0d281"
+    },
+    {
+      "name": "Vandana Shiva",
+      "type": "Individual",
+      "description": "Indian scholar‑activist and founder of the Bija Satyagraha Movement, defending seed sovereignty.",
+      "role": "Leads a movement that supports small‑scale farmers and seed banks, aligning with ecovillage goals of ecological regeneration.",
+      "country": "India",
+      "supporting_text": "Vandana Shiva's Bija Satyagraha Movement, for example, is on the forefront of the battle between smallscale Indian farmers and multinational corporations over control of the production and use of seeds in the country.",
+      "source_chunk": 7,
+      "id": "44c97145-3b4e-44d6-8fae-04b9c174becc"
+    },
+    {
+      "name": "Bija Satyagraha Movement",
+      "type": "Coalition",
+      "description": "A grassroots movement in India advocating for seed sovereignty and farmer rights.",
+      "role": "Works to protect indigenous seed varieties and supports ecological regeneration aligned with ecovillage principles.",
+      "country": "India",
+      "supporting_text": "Vandana Shiva's Bija Satyagraha Movement, for example, is on the forefront of the battle between smallscale Indian farmers and multinational corporations over control of the production and use of seeds in the country.",
+      "source_chunk": 7,
+      "id": "6d252993-5550-4a07-bf4d-afd26d350bd4"
+    },
+    {
+      "name": "Green Belt Movement (GBM)",
+      "type": "NGO",
+      "description": "Kenyan environmental organization founded by Wangari Maathai, focusing on tree planting and community empowerment.",
+      "role": "Mobilizes communities for environmental conservation, tree planting, and sustainable livelihoods.",
+      "country": "Kenya",
+      "supporting_text": "The Green Belt Movement (GBM) in Kenya, meanwhile, sees its mission as mobilizing communities for self-determination, justice, equity, poverty reduction, and environmental conservation... The work of the GBM was recognized by the awarding of the Nobel Peace Prize to its founder, Wangari Maathai...",
+      "source_chunk": 7,
+      "id": "eecb267e-c7de-4d79-966d-340df85f5bf2"
+    },
+    {
+      "name": "Wangari Maathai",
+      "type": "Individual",
+      "description": "Kenyan environmentalist and Nobel Peace Prize laureate, founder of the Green Belt Movement.",
+      "role": "Founded and led GBM, championing tree‑planting and community‑based environmental stewardship.",
+      "country": "Kenya",
+      "supporting_text": "The work of the GBM was recognized by the awarding of the Nobel Peace Prize to its founder, Wangari Maathai, in 2004.",
+      "source_chunk": 7,
+      "id": "45f1ed2b-ddc9-441b-b2aa-2c3ec7feec0f"
+    },
+    {
+      "name": "EcoDyfi initiative",
+      "type": "Organization",
+      "description": "A regional ecovillage network in Wales that serves as a hub for sustainability initiatives.",
+      "role": "Acts as a regional hub linking ecovillages with broader sustainability networks.",
+      "country": "United Kingdom",
+      "supporting_text": "An emerging trend is for existing ecovillages in the industrialized world to become regional hubs for networks of sustainability-related initiatives. This path is best exemplified by the EcoDyfi initiative in Wales described above...",
+      "source_chunk": 7,
+      "id": "3e037aae-016e-4911-bdfd-c5d431ed6fab"
+    },
+    {
+      "name": "ZEGG",
+      "type": "Organization",
+      "description": "A German ecovillage that offers educational courses and has adapted its food procurement strategy to support local organic suppliers.",
+      "role": "Demonstrates a model of ecovillage resilience by integrating local food networks into its sustainability practices.",
+      "country": "Germany",
+      "supporting_text": "Several years ago, the German ecovillage ZEGG was faced with a decision on how to meet increased demands for food... the community chose to buy more from local organic suppliers outside the ecovillage...",
+      "source_chunk": 7,
+      "id": "081bc69c-301d-4fac-b19d-cdc28a2f3bf0"
+    },
+    {
+      "name": "Transition Movement",
+      "type": "Coalition",
+      "description": "A global network of community‑based initiatives that aim to build resilience and reduce dependence on fossil fuels.",
+      "role": "Mobilizes existing communities to develop resilience projects, complementing ecovillage efforts.",
+      "country": null,
+      "supporting_text": "The Transition Movement, in which existing communities are mobilizing their resources with the aim of building resilience and reducing their dependence on fossil fuels, is but one of a number of similar movements across the industrialized world.",
+      "source_chunk": 7,
+      "id": "0cedd3f2-7591-4897-ba39-683cf32b6441"
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "expressions": [
+    {
+      "title": "Forty years of community-based forestry: A review of its extent and effectiveness",
+      "type": "Report",
+      "year": null,
+      "actors": [
+        "Food and Agriculture Organization (FAO)",
+        "Don Gilmour"
+      ],
+      "supporting_text": "Forty years of community-based forestry A review of its extent and effectiveness\n\nFAO FORESTRY PAPER Don Gilmour",
+      "source_chunk": 0,
+      "id": "7f03aa4a-f3a2-4fbb-af04-d2e172dbe1cc",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The title draws attention to a long‑term review, raising public and policy awareness of community‑based forestry.",
+        "supporting_text": "Forty years of community-based forestry: A review of its extent and effectiveness"
+      }
+    },
+    {
+      "title": "Review of 25 years of community forestry",
+      "type": "Report",
+      "year": 2001,
+      "actors": [
+        "Food and Agriculture Organization (FAO)",
+        "Arnold"
+      ],
+      "supporting_text": "This follows the approach taken in FAO's 2001 review of 25 years of community forestry (Arnold, 2001).",
+      "source_chunk": 1,
+      "id": "10460786-7179-4da8-b3ba-e5065717b5ca",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The expression denotes a synthesis that can inform future systemic shifts.",
+        "supporting_text": "This publication looks back over the past 40 years of CBF implementation, reviewing the extent to which it has become a major forest management modality"
+      }
+    },
+    {
+      "title": "Forestry for local community development",
+      "type": "Report",
+      "year": 1978,
+      "actors": [
+        "Food and Agriculture Organization (FAO)"
+      ],
+      "supporting_text": "The emergence, growth and evolution of community-based forestry as a formally recognizable modality of forest management can be traced back to the seminal paper Forestry for local community development (FAO, 1978).",
+      "source_chunk": 2,
+      "id": "8028a8e1-8a1d-411f-b498-85a333bec77a"
+    },
+    {
+      "title": "UN Declaration on the Rights of Indigenous Peoples",
+      "type": "Declaration",
+      "year": 2007,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "The United Nations (UN) Declaration on the Rights of Indigenous Peoples (adopted by the UN in 2007) has given additional impetus to this movement.",
+      "source_chunk": 4,
+      "id": "bfdd39be-8f15-4ed3-965d-8956e698207f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The declaration raises the profile of indigenous forest rights, increasing social acceptance of CBF.",
+        "supporting_text": "The United Nations (UN) Declaration ... has given additional impetus to this movement."
+      }
+    },
+    {
+      "title": "FAO's Forests, Trees and People Programme (FTPP)",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "FAO"
+      ],
+      "supporting_text": "FAO's Forests, Trees and People Programme (FTPP), with its regional hubs, was an important platform for developing and supporting networks to exchange information and share experiences.",
+      "source_chunk": 4,
+      "id": "34a69e54-50d6-40b9-89cb-12b011808ce2",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "FTPP supports networks and information exchange, enabling collective implementation of CBF.",
+        "supporting_text": "FAO’s Forests, Trees and People Programme (FTPP), with its regional hubs, was an important platform for developing and supporting networks"
+      }
+    },
+    {
+      "title": "Social Forestry Network (subsequently the Rural Development Forestry Network)",
+      "type": "Other",
+      "year": null,
+      "actors": [
+        "Overseas Development Institute"
+      ],
+      "supporting_text": "Similarly, the Social Forestry Network (subsequently  the Rural Development Forestry Network) of the Overseas Development Institute in the United Kingdom was influential in spreading ideas and experiences to practitioners and policy-makers around the world.",
+      "source_chunk": 4,
+      "id": "db4d84ce-e886-422e-bc66-3a98c3d821ef",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The network spreads ideas and experiences to practitioners and policy‑makers worldwide.",
+        "supporting_text": "Social Forestry Network ... was influential in spreading ideas and experiences to practitioners and policy‑makers around the world"
+      }
+    },
+    {
+      "title": "UNFF Multi-Year Programme of Work 2007‑2015",
+      "type": "Programme",
+      "year": 2007,
+      "actors": [
+        "United Nations Forum on Forests (UNFF)"
+      ],
+      "supporting_text": "Among the major themes of the 2007−2015 Programme of Work were community-based forest management; social development and indigenous and other local and forest‑dependent communities, including forest land tenure; and social and cultural aspects (UNFF, 2007).",
+      "source_chunk": 6,
+      "id": "4046efe6-1d1e-4bb5-98c3-98d63058999f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The programme explicitly lists community‑based forest management as a major theme, raising its policy salience.",
+        "supporting_text": "Among the major themes of the 2007−2015 Programme of Work were community-based forest management; social development..."
+      }
+    },
+    {
+      "title": "UNFF Strategic Plan 2017‑2030",
+      "type": "Strategic Plan",
+      "year": 2017,
+      "actors": [
+        "United Nations Forum on Forests (UNFF)"
+      ],
+      "supporting_text": "A new Strategic Plan and associated work plan for 2017−2030 is currently under consideration.",
+      "source_chunk": 6,
+      "id": "1d761cda-f294-4ff0-9929-3aa72e97b2a1",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The upcoming strategic plan signals continued institutional focus on CBF, indicating future system‑level shifts.",
+        "supporting_text": "A new Strategic Plan and associated work plan for 2017‑2030 is currently under consideration."
+      }
+    },
+    {
+      "title": "2030 Agenda for Sustainable Development",
+      "type": "Agenda",
+      "year": 2015,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "In September 2015 the United Nations adopted a set of 17 Sustainable Development Goals (SDGs) which provide an overarching policy framework to guide the world's development agenda until 2030 (UN, 2015).",
+      "source_chunk": 6,
+      "id": "590bea50-c85d-46a7-a090-be2c52978d45",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The agenda provides a global framework that can integrate CBF into broader development objectives.",
+        "supporting_text": "In September 2015 the United Nations adopted a set of 17 Sustainable Development Goals (SDGs) which provide an overarching policy framework..."
+      }
+    },
+    {
+      "title": "Sustainable Development Goals",
+      "type": "Goals",
+      "year": 2015,
+      "actors": [
+        "United Nations"
+      ],
+      "supporting_text": "In September 2015 the United Nations adopted a set of 17 Sustainable Development Goals (SDGs) which provide an overarching policy framework to guide the world's development agenda until 2030 (UN, 2015).",
+      "source_chunk": 6,
+      "id": "e4a96d77-3fa8-4b0c-8f48-3c67cb474a84",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "SDG 15.2 directly references sustainable forest management, offering a target for CBF contributions.",
+        "supporting_text": "CBF can contribute most directly to SDG 15.2, which states: “By 2020, promote the implementation of sustainable management of all types of forests..."
+      }
+    },
+    {
+      "title": "Forest Carbon Partnership Facility",
+      "type": "Programme",
+      "year": null,
+      "actors": [
+        "World Bank"
+      ],
+      "supporting_text": "The World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market for forestry projects.",
+      "source_chunk": 6,
+      "id": "626df681-7993-435c-ada9-789b5a9a2359",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provides a broker and funding mechanism that can shift forest governance toward market‑based climate finance.",
+        "supporting_text": "The World Bank has developed a Forest Carbon Partnership Facility to prepare developing countries to participate in a carbon offset market for forestry projects."
+      }
+    },
+    {
+      "title": "Lacey Act of 1900",
+      "type": "Law",
+      "year": 1900,
+      "actors": [
+        "United States of America"
+      ],
+      "supporting_text": "The United States of America has added provisions to the Lacey Act of 1900 (which regulates trade in wildlife, fish and plants) to ban commerce in illegally sourced timber and wood products.",
+      "source_chunk": 6,
+      "id": "00ff797c-183e-4151-89cc-332045cb69c1",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights the problem of illegal timber trade that undermines sustainable forest management.",
+        "supporting_text": "The United States of America has added provisions to the Lacey Act of 1900 ... to ban commerce in illegally sourced timber."
+      }
+    },
+    {
+      "title": "Forest Law Enforcement, Governance and Trade (FLEGT) Action Plan",
+      "type": "Action Plan",
+      "year": 2003,
+      "actors": [
+        "European Union"
+      ],
+      "supporting_text": "Concerns about the impact of illegal logging and associated trade led the European Union (EU) to adopt the Forest Law Enforcement, Governance and Trade (FLEGT) Action Plan in 2003.",
+      "source_chunk": 6,
+      "id": "940d0f6d-3253-4071-ac3e-055846b67869",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Creates new governance structures (VPAs) that can transform how timber legality is ensured.",
+        "supporting_text": "The EU’s FLEGT process is centred on Voluntary Partnership Agreements (VPAs) ... to ensure that any exports of timber ... are accompanied by a licence demonstrating that the timber has been legally harvested."
+      }
+    },
+    {
+      "title": "Asia‑Pacific Forestry Sector Outlook Study",
+      "type": "Report",
+      "year": 2010,
+      "actors": [
+        "Food and Agriculture Organization (FAO)"
+      ],
+      "supporting_text": "The sentiment is endorsed in the report of the second Asia‑Pacific Forestry Sector Outlook Study (FAO, 2010b, p. 192).",
+      "source_chunk": 6,
+      "id": "990f0f39-74a4-4d1c-8788-16d848efa5f7",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Points out that enthusiasm for high‑level policy can overwhelm on‑the‑ground forestry work.",
+        "supporting_text": "The enthusiasm for various topical issues in forestry – poverty alleviation, devolution, climate change, FLEGT – can overwhelm the importance of on‑the‑ground forestry activities."
+      }
+    },
+    {
+      "title": "Forests and Livelihoods: Assessment, Research and Engagement (FLARE) network",
+      "type": "Programme",
+      "year": 2015,
+      "actors": [
+        "International Forestry Research Institute (IFRI)"
+      ],
+      "supporting_text": "In early 2015 IFRI announced the establishment of the Forests and Livelihoods: Assessment, Research and Engagement (FLARE) network, a community of practice with the aim of advancing the state of knowledge regarding forest‑based livelihoods.",
+      "source_chunk": 6,
+      "id": "f07c9830-aef6-4281-b3f8-3b57d65ad34a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Establishes a community of practice to share knowledge and improve livelihood interventions.",
+        "supporting_text": "In early 2015 IFRI announced the establishment of the Forests and Livelihoods: Assessment, Research and Engagement (FLARE) network, a community of practice ... to improve monitoring efforts and, ultimately, the efficacy of forest‑dependent livelihood interventions."
+      }
+    },
+    {
+      "title": "Programme for the Endorsement of Forest Certification (PEFC)",
+      "type": "Programme",
+      "year": 1999,
+      "actors": [
+        "Programme for the Endorsement of Forest Certification (PEFC)"
+      ],
+      "supporting_text": "The Programme for the Endorsement of Forest Certification (PEFC) was founded in 1999 in response to the specific requirements of small, family‑owned and community forests as an international umbrella organization providing independent assessment, endorsement and recognition of national forest certification systems.",
+      "source_chunk": 6,
+      "id": "c2ff6e44-6687-461c-8339-a0b9ec108269",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Offers group certification and low‑cost pathways that enable small communities to access markets.",
+        "supporting_text": "The Programme for the Endorsement of Forest Certification (PEFC) was founded in 1999 ... providing independent assessment, endorsement and recognition of national forest certification systems."
+      }
+    },
+    {
+      "title": "ANSAB toolkit for FSC group forest management certification",
+      "type": "Toolkit",
+      "year": 2010,
+      "actors": [
+        "ANSAB",
+        "Forest Stewardship Council (FSC)"
+      ],
+      "supporting_text": "ANSAB (2010) has developed a toolkit to aid community groups in obtaining FSC's group forest management certification.",
+      "source_chunk": 6,
+      "id": "011eef1e-2ba1-41da-8328-a27b9976ecda",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Provides practical tools that help community groups obtain certification collectively.",
+        "supporting_text": "ANSAB (2010) has developed a toolkit to aid community groups in obtaining FSC’s group forest management certification."
+      }
+    },
+    {
+      "title": "Multi-point declaration",
+      "type": "Declaration",
+      "year": 2015,
+      "actors": [
+        "UNFF"
+      ],
+      "supporting_text": "In the multi-point declaration adopted at its eleventh session, UNFF (2015) recognized the importance of collective action by indigenous and local communities in advancing sustainable forest management.",
+      "source_chunk": 7,
+      "id": "70294cd4-4a68-49fd-b543-8f22388c79de",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The declaration serves as a visible policy statement that raises awareness of collective forest action.",
+        "supporting_text": "In the multi-point declaration adopted at its eleventh session, UNFF (2015) recognized the importance of collective action..."
+      }
+    },
+    {
+      "title": "Strategic Framework",
+      "type": "Policy",
+      "year": 2013,
+      "actors": [
+        "FAO"
+      ],
+      "supporting_text": "FAO, through its new Strategic Framework, is revamping its programme on community-based forestry to contribute to its five Strategic Objectives, in particular to rural poverty alleviation, food security and nutrition and the sustainable provision of goods and services from natural resources (FAO, 2013).",
+      "source_chunk": 7,
+      "id": "e78a6887-c19f-47b3-83e3-d19331d114b2",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The framework outlines strategic directions that can reshape forest governance and outcomes.",
+        "supporting_text": "FAO, through its new Strategic Framework, is revamping its programme on community‑based forestry..."
+      }
+    }
+  ]
+}

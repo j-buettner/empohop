@@ -1,0 +1,501 @@
+{
+  "summary": {
+    "total_merges": 24,
+    "merges_by_type": {
+      "actor": 4,
+      "concept": 6,
+      "location": 14
+    },
+    "manual_mapping_count": 0,
+    "low_confidence_merges": 0,
+    "timestamp": "2026-04-14 12:42:15"
+  },
+  "merges": [
+    {
+      "type": "actor",
+      "canonical_name": "FAO",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 4,
+      "source_chunks": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "The Food and Agriculture Organization of the United Nations, an international agency that supports s...",
+          "Food and Agriculture Organization of the United Nations, an international agency that develops defin...",
+          "Food and Agriculture Organization of the United Nations, a specialised UN agency....",
+          "Food and Agriculture Organization of the United Nations, a specialized UN agency dealing with agricu..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "World Bank",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        1,
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "International financial institution that supports development projects, including forest management ...",
+          "International development bank that offers conditional loans to governments....",
+          "International financial institution that provides loans and technical assistance to developing count..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "Food and Agriculture Organization (FAO)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "United Nations agency that collects and analyses data on forests and issues policy guidance on commu...",
+          "United Nations agency focused on food security and sustainable agriculture...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "actor",
+      "canonical_name": "International Union for Conservation of Nature (IUCN)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Global conservation organization that compiles information on forest management regimes worldwide....",
+          "A global union of government and civil society organisations working on nature conservation and sust..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Community-based forestry",
+      "variations": [
+        "community-based forestry"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        0,
+        2,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Sustainable forest management (SFM)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        1,
+        3,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Payment for environmental services (PES)",
+      "variations": [
+        "Payment for Environmental Services (PES)"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        3,
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Community‑based forestry (CBF)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "Smallholder forestry",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        4
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "concept",
+      "canonical_name": "People's participation",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        3
+      ],
+      "supporting_evidence": {
+        "descriptions": [],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Africa",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        1,
+        2,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Geographic region covered by FAO’s 2008 assessment of community‑based forestry and forest tenure tra...",
+          "Cited as a region where pre‑modern forest management regimes have been documented....",
+          "Region highlighted for large‑scale land acquisitions, FLEGT negotiations, and PEFC expansion activit..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Europe",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        2,
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Pre‑industrial Europe where rural dwellers depended on adjacent forest commons and had functional lo...",
+          "Region where smallholder forestry is a well‑established forest management modality....",
+          "Region mentioned as a target for PEFC group‑certification and other community‑forest initiatives...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "global South",
+      "variations": [
+        "Global South",
+        "Global South"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 3,
+      "source_chunks": [
+        2,
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Refers to most countries in the developing world that were colonized and experienced annexation of f...",
+          "Broad region where many developing countries have adopted community‑based forestry to reverse degrad...",
+          "Broad geographic term used to describe the locations of many large‑scale land acquisitions...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Asia",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        1,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Geographic region covered by FAO’s 2006 assessment of community‑based forestry and forest tenure tra...",
+          "Region referenced when discussing the extent of large‑scale timber concessions compared with communi..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "South Asia",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Cited as a region where pre‑modern forest management regimes have been documented....",
+          "Region covered by an IUCN regional report on community involvement in forest management...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Southeast Asia",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Cited as a region where pre‑modern forest management regimes have been documented....",
+          "Region covered by an IUCN regional report on community involvement in forest management...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Mesoamerica",
+      "variations": [
+        "MesoAmerica"
+      ],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        2,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Cited as a region where pre‑modern forest management regimes have been documented....",
+          "Region covered by an IUCN regional report on community involvement in forest management...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Canada",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "A settler society noted for past extinguishment of indigenous forest rights and subsequent legal rec...",
+          "Country included in the IUCN series of regional reports on community forest management...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "United States of America",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "A settler society referenced for its history of indigenous displacement and recent court successes o...",
+          "Country included in the IUCN series of regional reports on community forest management and mentioned..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "United Kingdom",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Country where the Overseas Development Institute’s Social Forestry Network (later Rural Development ...",
+          "Country where the PEFC launched an online forest certification system for small and medium‑sized pri..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Latin America",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Region noted as an exception to the typical large‑scale national rollout of community‑based forestry...",
+          "Region noted as an exception where large‑scale timber concessions are less prevalent...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "Global North",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Region where collaborative forms of community‑based forestry have tended to emerge as smaller‑scale ...",
+          "Broad geographic term used to describe countries showing growing interest in legal timber harvesting..."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "North America",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        4,
+        6
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "Region where smallholder forestry is a well‑established forest management modality....",
+          "Region used as a benchmark for carbon stock comparisons with community forests worldwide...."
+        ],
+        "years": []
+      }
+    },
+    {
+      "type": "location",
+      "canonical_name": "United Nations Forum on Forests (UNFF)",
+      "variations": [],
+      "manual_mappings": [],
+      "confidence": 1.0,
+      "average_similarity": 1.0,
+      "cluster_size": 2,
+      "source_chunks": [
+        6,
+        7
+      ],
+      "supporting_evidence": {
+        "descriptions": [
+          "UN body that incorporated IPF/IFF proposals into its Multi‑Year Programme of Work....",
+          "International forum that adopted a multi‑point declaration recognizing collective action by indigeno..."
+        ],
+        "years": []
+      }
+    }
+  ]
+}

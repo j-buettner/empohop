@@ -5,7 +5,11 @@ from typing import Dict, List, Optional, Any, Union, Tuple
 import re
 
 # Handle import errors gracefully
+# Set DOCLING_SKIP=1 to bypass docling entirely and use the python-docx fallback
+# (useful on machines where docling's ONNX models cause import deadlocks)
 try:
+    if os.environ.get("DOCLING_SKIP") == "1":
+        raise ImportError("DOCLING_SKIP=1 set — using fallback extraction")
     from pathlib import Path as _Path
     from docling.document_converter import DocumentConverter
     from docling.chunking import HybridChunker
@@ -67,11 +71,12 @@ class DoclingExtractor:
             return
         
         try:
-            # Configure OCR settings through pipeline options
+            # Configure pipeline options — disable GPU/ONNX-heavy features for CPU-only envs
             pipeline_options = PdfPipelineOptions()
             pipeline_options.do_ocr = use_ocr
-            pipeline_options.do_table_structure = True
-            
+            pipeline_options.do_table_structure = False  # avoids loading TableFormer model
+            pipeline_options.accelerator_options = None  # CPU only, no GPU/MPS
+
             # Initialize Docling converter — explicitly allow PDF and DOCX
             self.converter = DocumentConverter(
                 allowed_formats=[InputFormat.PDF, InputFormat.DOCX],
@@ -184,13 +189,28 @@ class DoclingExtractor:
                         text += page.extract_text() + "\n"
             except ImportError:
                 raise ImportError("PyPDF2 not available for PDF extraction. Please install it or fix Docling setup.")
+        elif source.lower().endswith('.docx'):
+            try:
+                from docx import Document as DocxDocument  # python-docx
+                doc = DocxDocument(source)
+                paragraphs = [p.text for p in doc.paragraphs if p.text.strip()]
+                text = "\n\n".join(paragraphs)
+                try:
+                    doc_title = doc.core_properties.title or os.path.basename(source)
+                except Exception:
+                    doc_title = os.path.basename(source)
+            except ImportError:
+                raise ImportError("python-docx not available for DOCX extraction.")
         else:
             raise ValueError(f"Unsupported file type for fallback extraction: {source}")
-        
+
+        if 'doc_title' not in dir():
+            doc_title = os.path.basename(source)
+
         # Create basic metadata
         metadata = {
             "source": source,
-            "title": os.path.basename(source),
+            "title": doc_title,
             "type": self._get_file_type(source),
             "text_length": len(text),
             "word_count": len(text.split())

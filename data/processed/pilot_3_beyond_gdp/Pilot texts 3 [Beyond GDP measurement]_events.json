@@ -1,0 +1,3510 @@
+{
+  "events": [
+    {
+      "title": "Release of the first System of National Accounts (SNA 1953)",
+      "year": 1953,
+      "description": "The first official version of the System of National Accounts was published, using Gross National Product (GNP) as the headline indicator.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts",
+        "Gross National Product (GNP)"
+      ],
+      "supporting_text": "The first two official versions of the System of National Accounts (1953 and 1968) used the indicator Gross National Product (GNP).",
+      "source_chunk": 0,
+      "id": "d20a074f-8280-44ff-85f1-21ef8445c75c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows the early accounting framework using GNP, indicating that national‑account metrics can evolve.",
+        "supporting_text": "The first two official versions of the System of National Accounts (1953 and 1968) used the indicator Gross National Product (GNP)."
+      }
+    },
+    {
+      "title": "Release of the second System of National Accounts (SNA 1968)",
+      "year": 1968,
+      "description": "The second official version of the System of National Accounts was published, continuing to use Gross National Product (GNP) as the headline indicator.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts",
+        "Gross National Product (GNP)"
+      ],
+      "supporting_text": "The first two official versions of the System of National Accounts (1953 and 1968) used the indicator Gross National Product (GNP).",
+      "source_chunk": 0,
+      "id": "eb3516a4-ad73-4d60-b34b-f8325c8a0e34",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Reinforces that the SNA framework is mutable and can adopt different headline indicators.",
+        "supporting_text": "The first two official versions of the System of National Accounts (1953 and 1968) used the indicator Gross National Product (GNP)."
+      }
+    },
+    {
+      "title": "Adoption of GDP as the headline indicator in the System of National Accounts (SNA 1993)",
+      "year": 1993,
+      "description": "In the 1993 edition of the System of National Accounts, Gross Domestic Product (GDP) replaced GNP as the primary headline indicator.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts",
+        "Gross Domestic Product (GDP)",
+        "Gross National Product (GNP)"
+      ],
+      "supporting_text": "Later on, in the SNA 1993, GDP was adopted and GNP was sidelined.",
+      "source_chunk": 0,
+      "id": "9c7686f5-f84f-47b6-9a29-e5bfc0013b76",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Marks the institutional shift that entrenched GDP as the dominant economic metric.",
+        "supporting_text": "Later on, in the SNA 1993, GDP was adopted and GNP was sidelined."
+      }
+    },
+    {
+      "title": "Quarterly lock‑up procedure for BEA GDP reporting",
+      "year": null,
+      "description": "A recurring, quarterly lock‑up process in which Bureau of Economic Analysis statisticians work in a secure room to compile and approve the United States GDP report before it is released to the public.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "4600 Silver Hill Road, Maryland, USA"
+      ],
+      "actors": [
+        "Bureau of Economic Analysis (BEA) statisticians",
+        "Council of Economic Advisers (CEA) Chairman",
+        "President’s adviser"
+      ],
+      "concepts": [
+        "Gross Domestic Product (GDP)",
+        "Lock‑up procedure"
+      ],
+      "supporting_text": "a group of civil servants go into the \"lock-up\" procedure in a secure room at 4600 Silver Hill Road, Maryland, USA... This procedure is followed every quarter.",
+      "source_chunk": 0,
+      "id": "7b6ccb66-0f70-4509-943a-2f8e299a6298",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "The highly restrictive, opaque process sustains GDP dominance and limits transparency needed for metric reform.",
+        "supporting_text": "They are not allowed to leave... All computers have been disabled for outside communication... The report includes a key indicator called Gross Domestic Product (GDP)."
+      }
+    },
+    {
+      "title": "First edition of the System of National Accounts (SNA) released",
+      "year": 1953,
+      "description": "The inaugural edition of the international handbook System of National Accounts (SNA) was published, led only by the United Nations with a small number of active countries and experts.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "United Nations"
+      ],
+      "concepts": [
+        "System of National Accounts (SNA)"
+      ],
+      "supporting_text": "The SNA has only been revised four times in the last seventy years (1953, 1968, 1993, 2008)... For the first two editions of the SNA the number of active countries/experts was small and was led only by the UN.",
+      "source_chunk": 1,
+      "id": "97213476-95da-41e6-9e25-74be17d865b4",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows the early, limited governance of the SNA, highlighting the baseline infrastructure that underpins GDP‑centric measurement.",
+        "supporting_text": "For the first two editions of the SNA the number of active countries/experts was small and was led only by the UN."
+      }
+    },
+    {
+      "title": "Second edition of the System of National Accounts (SNA) released",
+      "year": 1968,
+      "description": "The second edition of the System of National Accounts (SNA) was published, still under the leadership of the United Nations with limited participation from member states.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "United Nations"
+      ],
+      "concepts": [
+        "System of National Accounts (SNA)"
+      ],
+      "supporting_text": "The SNA has only been revised four times in the last seventy years (1953, 1968, 1993, 2008)... For the first two editions of the SNA the number of active countries/experts was small and was led only by the UN.",
+      "source_chunk": 1,
+      "id": "b0697356-0383-44ea-8f7e-76c34624dff1",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Reinforces the early, narrowly‑participated SNA framework that continues to shape GDP measurement.",
+        "supporting_text": "For the first two editions of the SNA the number of active countries/experts was small and was led only by the UN."
+      }
+    },
+    {
+      "title": "Third edition of the System of National Accounts (SNA) released",
+      "year": 1993,
+      "description": "The third revision of the System of National Accounts (SNA) was issued, marking a later update to the international methodology for measuring economic activity.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts (SNA)"
+      ],
+      "supporting_text": "The SNA has only been revised four times in the last seventy years (1953, 1968, 1993, 2008).",
+      "source_chunk": 1,
+      "id": "6090cfeb-506a-4200-919f-7bd4a4651d21",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Illustrates the slow, incremental evolution of the SNA, maintaining the status‑quo of GDP‑based accounting.",
+        "supporting_text": "The SNA has only been revised four times in the last seventy years (1953, 1968, 1993, 2008)."
+      }
+    },
+    {
+      "title": "Fourth edition (2008 update) of the System of National Accounts (SNA) released",
+      "year": 2008,
+      "description": "The most recent revision of the System of National Accounts (SNA) was completed in 2008, involving participation from all countries and international institutes, and updating the 722‑page manual on recording economic transactions and resources.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "All countries",
+        "International institutes"
+      ],
+      "concepts": [
+        "System of National Accounts (SNA)"
+      ],
+      "supporting_text": "The System of National Accounts (SNA), which was last updated in 2008... In the last revision, the SNA 2008, all countries and all the international institutes were involved.",
+      "source_chunk": 1,
+      "id": "01c1e308-a6ac-4100-b1a1-af84b4f84f47",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Marks a broader, more inclusive revision that could enable future shifts away from GDP‑centric metrics.",
+        "supporting_text": "In the last revision, the SNA 2008, all countries and all the international institutes were involved."
+      }
+    },
+    {
+      "title": "Simon Kuznets' 1934 statement on the limits of GDP as a welfare measure",
+      "year": 1934,
+      "description": "Simon Kuznets, a pioneer of national accounting, publicly noted that national income (GDP) does not reliably indicate a nation's welfare, highlighting early recognition of GDP's limitations for measuring societal success.",
+      "type": "Publication",
+      "dates": {
+        "start": "1934-01-01",
+        "end": "1934-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "Simon Kuznets"
+      ],
+      "concepts": [
+        "GDP",
+        "national income",
+        "welfare",
+        "System of National Accounts (SNA)"
+      ],
+      "supporting_text": "Simon Kuznets, one of the pioneers of national accounting, famously wrote in 1934 that \"the welfare of a nation ... can scarcely be inferred from a measurement of national income\".",
+      "source_chunk": 2,
+      "id": "893e8787-2749-4232-9fd7-c545aa5a90d7",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Kuznets’ quote directly critiques the prevailing use of GDP as a proxy for welfare.",
+        "supporting_text": "“the welfare of a nation ... can scarcely be inferred from a measurement of national income” (1934)."
+      }
+    },
+    {
+      "title": "Ascendance of GDP as a national income metric",
+      "year": 1930,
+      "description": "GDP began to be used as an innovative economic indicator in the 1930s, rapidly increasing its market share and reaching a peak in the innovation curve, illustrating the classic Schumpeterian stages of early adoption, take‑off, saturation and decline.",
+      "type": "Process",
+      "dates": {
+        "start": "1930-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "countries",
+        "academics"
+      ],
+      "concepts": [
+        "GDP",
+        "innovation theory",
+        "creative destruction",
+        "Schumpeterian stages"
+      ],
+      "supporting_text": "The blue line shows the ascendance of GDP, which started in the 1930s and has since made a spectacular move up this innovation curve.",
+      "source_chunk": 3,
+      "id": "5b10149a-4efa-41ca-afae-716aa339a03c",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows how GDP has become the dominant metric, a condition that sustains current economic focus away from nature.",
+        "supporting_text": "The blue line shows the ascendance of GDP, which started in the 1930s and has since made a spectacular move up this innovation curve."
+      }
+    },
+    {
+      "title": "Development of Beyond‑GDP initiatives",
+      "year": null,
+      "description": "Initiatives that seek to move economic decision‑making beyond GDP have been active for several decades, currently situated on the upward portion of the innovation cycle but still far from their peak.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "researchers"
+      ],
+      "concepts": [
+        "Beyond‑GDP",
+        "creative destruction",
+        "innovation cycle"
+      ],
+      "supporting_text": "Beyond‑GDP initiatives have existed for several decades and are definitely on the upward curve of the innovation cycle.",
+      "source_chunk": 3,
+      "id": "5362084d-429a-4c1a-9058-1021ab726791",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Indicates an emerging alternative metric that could shift the system toward harmony with nature.",
+        "supporting_text": "Beyond‑GDP initiatives have existed for several decades and are definitely on the upward curve of the innovation cycle."
+      }
+    },
+    {
+      "title": "Adoption of the System of National Accounts (SNA)",
+      "year": 1953,
+      "description": "The System of National Accounts was adopted in 1953, providing a standardized set of concepts and rules for measuring national economies and leading to rapid harmonisation of national income accounting worldwide.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts",
+        "national income accounting",
+        "GDP measurement"
+      ],
+      "supporting_text": "The SNA has, since 1953, prescribed what concepts to use when measuring the economy. ... After the adoption and implementation of the SNA, worldwide national income accounting was harmonised rapidly.",
+      "source_chunk": 4,
+      "id": "ed4944de-71b5-4962-be94-e0f732eb951a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Standardising accounting opened space for new macro‑economic metrics beyond GDP.",
+        "supporting_text": "After the adoption and implementation of the SNA, worldwide national income accounting was harmonised rapidly."
+      }
+    },
+    {
+      "title": "2008 Financial Crisis",
+      "year": 2008,
+      "description": "A global financial crisis that triggered widespread mistrust among citizens toward economic models, policies, and data advocated by economists.",
+      "type": "Other",
+      "dates": {
+        "start": "2008-09-15",
+        "end": "2009-12-31"
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "financial crisis",
+        "economic modelling",
+        "public trust"
+      ],
+      "supporting_text": "Similarly, in the wake of the 2008 crisis citizens' mistrust in the models, policies and data advocated by economists started to grow again.",
+      "source_chunk": 4,
+      "id": "ef504c61-aa4a-4cfe-a4f6-dbecbcf7015d",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The crisis triggered growing public mistrust in economists and their models.",
+        "supporting_text": "in the wake of the 2008 crisis citizens’ mistrust in the models, policies and data advocated by economists started to grow again."
+      }
+    },
+    {
+      "title": "Development of the System of National Accounts (SNA) common language",
+      "year": null,
+      "description": "The creation and diffusion of a shared macro‑economic language (the SNA) that enabled greater institutionalisation of economic thought and the formation of a global macroeconomic community.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts (SNA)",
+        "common language",
+        "institutionalisation of economic thought"
+      ],
+      "supporting_text": "The development of a common language was crucial in the increased institutionalisation of economic thought and for creating a macroeconomic community.",
+      "source_chunk": 5,
+      "id": "51b2fb7b-c870-44f8-ab9d-ea730b7d9659",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The common language enabled a macroeconomic community and institutionalised economic thought.",
+        "supporting_text": "The development of a common language was crucial in the increased institutionalisation of economic thought and for creating a macroeconomic community."
+      }
+    },
+    {
+      "title": "Global Financial Crisis 2008",
+      "year": 2008,
+      "description": "The financial crisis of 2008 triggered a crisis in macroeconomic theorising and sparked public debate over austerity versus stimulation.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "austerity versus stimulation",
+        "macroeconomic theorising"
+      ],
+      "supporting_text": "The economic crises of the 1970s and financial crisis of 2008 have led to crises in macroeconomic theorising.",
+      "source_chunk": 5,
+      "id": "00109b56-446e-4d33-a356-e9c3e829aa88",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The crisis highlighted systemic failures and sparked debate on policy responses.",
+        "supporting_text": "financial crisis of 2008 have led to crises in macroeconomic theorising."
+      }
+    },
+    {
+      "title": "Ongoing criticism of GDP as an economic indicator",
+      "year": 1930,
+      "description": "A continuous process of criticism of GDP's adequacy that has been present since the 1930s, raised by economists and non‑economists who argue that GDP does not measure well‑being, inequality, sustainability or environmental impacts.",
+      "type": "Process",
+      "dates": {
+        "start": "1930-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "economists",
+        "non‑economists"
+      ],
+      "concepts": [
+        "GDP",
+        "well‑being",
+        "inequality",
+        "sustainability",
+        "System of National Accounts (SNA)"
+      ],
+      "supporting_text": "Since national income started in the 1930s, there has been criticism from economists and non‑economists.",
+      "source_chunk": 6,
+      "id": "8ebad5f5-cbc9-4687-852a-6c318987d0ae",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The text foregrounds persistent scholarly and professional critique of GDP, revealing the current dominance of a flawed metric.",
+        "supporting_text": "there are three lines of argument... economists are amongst the most vocal critics."
+      }
+    },
+    {
+      "title": "Publication of the Brundtland Report (Our Common Future)",
+      "year": 1987,
+      "description": "Seminal publication that introduced and institutionalised the term “sustainable development”, defining it as development that meets present needs without compromising future generations.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "sustainable development",
+        "well‑being",
+        "sustainability"
+      ],
+      "supporting_text": "This is the underlying philosophy of the Brundtland Report which was the seminal publication that led to the institutionalisation of the term sustainable development as \"development that meets the needs of the present without compromising the ability of future generations to meet their own needs\".",
+      "source_chunk": 8,
+      "id": "313cfd74-55c5-4616-a3a5-c8bc9df74e6c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The report introduced and institutionalised the concept of sustainable development, opening a pathway for systemic change.",
+        "supporting_text": "The underlying philosophy of the Brundtland Report which was the seminal publication that led to the institutionalisation of the term sustainable development"
+      }
+    },
+    {
+      "title": "Adoption of the Sustainable Development Goals (SDGs)",
+      "year": 2015,
+      "description": "All United Nations member states formally adopted a list of 169 targets (the SDGs), providing a worldwide, politically‑backed framework that could be leveraged by the Beyond‑GDP community. In 2015 the Sustainable Development Goals were introduced, defining 17 goals and 169 targets for sustainable development, representing a worldwide agreement.",
+      "type": "Policy",
+      "dates": {
+        "start": "2015-09-25",
+        "end": null
+      },
+      "locations": [
+        "United Nations"
+      ],
+      "actors": [
+        "UN member states",
+        "United Nations"
+      ],
+      "concepts": [
+        "Sustainable Development Goals",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "If so, a prime candidate would be the Sustainable Development Goals, a list of 169 targets that were adopted by all member states of the UN in 2015.",
+      "id": "3c77dd7f-0004-44ec-a29e-3673eae40cea",
+      "variations": [
+        "Adoption of the Sustainable Development Goals (SDGs)"
+      ],
+      "source_chunks": [
+        8,
+        23
+      ],
+      "supporting_texts": [
+        "If so, a prime candidate would be the Sustainable Development Goals, a list of 169 targets that were adopted by all member states of the UN in 2015.",
+        "By far the most influential initiative is the Sustainable Development Goals, introduced in 2015."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "World‑wide agreement on 17 goals created unprecedented harmonisation of sustainability metrics.",
+        "supporting_text": "By far the most influential initiative is the Sustainable Development Goals, introduced in 2015."
+      }
+    },
+    {
+      "title": "Publication of a Nature comment on the successor to GDP",
+      "year": 2014,
+      "description": "A comment in the journal Nature by prominent voices in the Beyond‑GDP movement argued that the hunt for a successor to GDP could be completed by 2015.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Nature (journal)"
+      ],
+      "actors": [
+        "prominent voices in the Beyond‑GDP movement"
+      ],
+      "concepts": [
+        "Beyond‑GDP",
+        "successor to GDP"
+      ],
+      "supporting_text": "A comment in Nature by some prominent voices in the Beyond‑GDP movement argued in 2014 that \"If undertaken with sufficiently broad participation, the hunt for the successor to GDP might be completed by 2015.\"",
+      "source_chunk": 8,
+      "id": "e92a84de-b722-4f32-a3ec-7d1d4bc165e4",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The comment highlights the optimistic but perhaps unrealistic expectation for rapid replacement of GDP.",
+        "supporting_text": "A comment in Nature by some prominent voices in the Beyond‑GDP movement argued in 2014 that “If undertaken with sufficiently broad participation, the hunt for the successor to GDP might be completed by 2015.”"
+      }
+    },
+    {
+      "title": "Long‑term process to develop and implement the System of Global and National Accounts (SGNA) as a replacement for GDP",
+      "year": null,
+      "description": "A multi‑year effort described in the book to design, pilot, and institutionalise a new accounting framework (the SGNA) that will replace GDP by the target year 2030. The process includes drafting the architecture, defining sub‑accounts, creating quality indicators, and planning implementation and institutionalisation.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of Global and National Accounts (SGNA)",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "Part II provides the overall architecture of the strategy but, by design, this is a long‑term process that will only be fully completed by 2030.",
+      "source_chunk": 9,
+      "id": "38be1d09-6542-4b10-b357-4c67a8bbd638",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The text frames the process as a multi‑year effort that will reshape accounting by 2030, indicating a systemic shift.",
+        "supporting_text": "Part II ... this is a long‑term process that will only be fully completed by 2030."
+      }
+    },
+    {
+      "title": "Publication of \"The Income of Nations\" by Studenski",
+      "year": 1958,
+      "description": "Studenski’s 1958 book provides a near‑encyclopaedic overview of national income accounting from 1665‑1958, marking a key scholarly output on the history of GDP.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Simon Studenski"
+      ],
+      "concepts": [
+        "National income accounting",
+        "GDP history"
+      ],
+      "supporting_text": "The first, covering the years 1900 to 1958, is derived from The Income of Nations by Studenski (1958), which provides a nearly encyclopaedic overview of national income accounting for the period 1665-1958.",
+      "source_chunk": 11,
+      "id": "b3457978-3025-4c0c-91f9-0ab8357d775c",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The work documents the historical dominance of GDP, helping to reveal how entrenched the metric is.",
+        "supporting_text": "The first, covering the years 1900 to 1958, is derived from The Income of Nations by Studenski (1958), which provides a nearly encyclopaedic overview of national income accounting for the period 1665–1958."
+      }
+    },
+    {
+      "title": "United Nations begins collection of national accounts data",
+      "year": 1952,
+      "description": "The UN started systematically gathering national accounts statistics from member states, initiating a global data‑collection effort that expanded the availability of GDP‑related information.",
+      "type": "Process",
+      "dates": {
+        "start": "1952-01-01",
+        "end": null
+      },
+      "locations": [
+        "United Nations (global)"
+      ],
+      "actors": [
+        "United Nations"
+      ],
+      "concepts": [
+        "National accounts",
+        "Statistical data collection"
+      ],
+      "supporting_text": "The second source is the United Nations, which started to collect national accounts data in 1952.",
+      "source_chunk": 11,
+      "id": "b7f22b43-7ded-4404-96f4-973e095acd5a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UN data collection created a coordinated mechanism for gathering economic information across countries.",
+        "supporting_text": "The second source is the United Nations, which started to collect national accounts data in 1952."
+      }
+    },
+    {
+      "title": "Passage of U.S. Congressional Resolution 220 requesting national income statistics",
+      "year": 1932,
+      "description": "On 8 June 1932, Representative Robert La Follette Jr. secured a majority vote for Resolution 220, which formally requested the Department of Commerce to compile national income statistics for the period 1922‑1932.",
+      "type": "Policy",
+      "dates": {
+        "start": "1932-06-08",
+        "end": null
+      },
+      "locations": [
+        "United States (Congress)"
+      ],
+      "actors": [
+        "Robert La Follette Jr.",
+        "U.S. Congress"
+      ],
+      "concepts": [
+        "National income statistics",
+        "Resolution 220"
+      ],
+      "supporting_text": "It took until 8 June 1932 before La Follette could get a majority to vote for resolution 220 which requested national income statistics for the period 1992-1932.",
+      "source_chunk": 11,
+      "id": "5d3500ba-e4b1-46bd-9d59-a80188d16f16",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The resolution mandated government‑led statistical work, enabling systematic national‑income measurement.",
+        "supporting_text": "it took until 8 June 1932 before La Follette could get a majority to vote for resolution 220 which requested national income statistics."
+      }
+    },
+    {
+      "title": "Publication of Simon Kuznets’ report to the U.S. Congress",
+      "year": 1934,
+      "description": "Kuznets delivered a landmark report on national income estimates to Congress on 4 January 1934, providing the first comprehensive macro‑economic data requested during the Great Depression.",
+      "type": "Publication",
+      "dates": {
+        "start": "1934-01-04",
+        "end": null
+      },
+      "locations": [
+        "United States (Congress)"
+      ],
+      "actors": [
+        "Simon Kuznets"
+      ],
+      "concepts": [
+        "National income",
+        "Macroeconomic statistics"
+      ],
+      "supporting_text": "A case in point is one of the landmark publications in the history of national accounting: a report by Simon Kuznets on 4 January 1934.",
+      "source_chunk": 11,
+      "id": "cf786aee-abc8-49ca-ac93-0964113b3f2c",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The widely read report raised public awareness of macro‑economic indicators.",
+        "supporting_text": "The report was definitively noticed by the press and the public. It sold 4,500 copies at $0.20 a copy."
+      }
+    },
+    {
+      "title": "Bretton Woods Conference",
+      "year": 1944,
+      "description": "The 1944 Bretton Woods meeting established a new international monetary system, replacing the gold standard with dollar‑pegged currencies and creating the IMF and World Bank.",
+      "type": "Conference",
+      "dates": {
+        "start": "1944-07-01",
+        "end": "1944-07-22"
+      },
+      "locations": [
+        "Bretton Woods, New Hampshire, USA"
+      ],
+      "actors": [
+        "International delegates",
+        "United States",
+        "United Kingdom"
+      ],
+      "concepts": [
+        "International monetary order",
+        "IMF",
+        "World Bank",
+        "Gold standard replacement"
+      ],
+      "supporting_text": "The international economic order changed significantly at the Bretton Woods meeting in 1944, ushering in a new economic era with the gold standard being replaced by a system in which currencies were pegged to the US dollar.",
+      "source_chunk": 11,
+      "id": "d617eeb7-fdf0-4680-8f7c-053c2780c712",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The conference reshaped the global economic order, creating institutions that could alter how growth is measured and pursued.",
+        "supporting_text": "The international economic order changed significantly at the Bretton Woods meeting in 1944, ushering in a new economic era..."
+      }
+    },
+    {
+      "title": "Founding of the Organisation for European Economic Co‑operation (OEEC)",
+      "year": 1948,
+      "description": "The OEEC was established in 1948 to coordinate the distribution of Marshall Aid and to foster economic recovery in post‑war Europe.",
+      "type": "Organization founding",
+      "dates": {
+        "start": "1948-01-01",
+        "end": null
+      },
+      "locations": [
+        "Europe"
+      ],
+      "actors": [
+        "OEEC"
+      ],
+      "concepts": [
+        "Post‑war reconstruction",
+        "Marshall Aid",
+        "Economic cooperation"
+      ],
+      "supporting_text": "Initially called the Organisation for European Economic Co‑operation (OEEC), it was founded in 1948 and played an important role in the post‑war economic recovery of Europe.",
+      "source_chunk": 11,
+      "id": "1aac8f3d-7e03-4e55-b52e-b808c731f286",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "OEEC coordinated post‑war economic recovery and data collection across Europe.",
+        "supporting_text": "Initially called the Organisation for European Economic Co‑operation (OEEC), it was founded in 1948 and played an important role in the post‑war economic recovery of Europe."
+      }
+    },
+    {
+      "title": "Establishment of the United Nations",
+      "year": 1945,
+      "description": "The United Nations replaced the League of Nations in 1945, becoming the primary global intergovernmental organization for peace, security, and international cooperation.",
+      "type": "Organization founding",
+      "dates": {
+        "start": "1945-10-24",
+        "end": null
+      },
+      "locations": [
+        "International"
+      ],
+      "actors": [
+        "United Nations"
+      ],
+      "concepts": [
+        "International governance",
+        "League of Nations replacement"
+      ],
+      "supporting_text": "The ineffective League of Nations was replaced by the United Nations in 1945.",
+      "source_chunk": 11,
+      "id": "4b145544-94af-4710-b237-92b31acc7eba",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Replacing the League of Nations created a new platform for global coordination, including statistical cooperation.",
+        "supporting_text": "the ineffective League of Nations was replaced by the United Nations in 1945."
+      }
+    },
+    {
+      "title": "Signing of the North Atlantic Treaty (NATO)",
+      "year": 1949,
+      "description": "In 1949, the North Atlantic Treaty Organization was formally agreed, establishing a collective defence alliance among North American and European states.",
+      "type": "Treaty",
+      "dates": {
+        "start": "1949-04-04",
+        "end": null
+      },
+      "locations": [
+        "Washington, D.C., USA"
+      ],
+      "actors": [
+        "NATO member states"
+      ],
+      "concepts": [
+        "Collective defence",
+        "Cold War security"
+      ],
+      "supporting_text": "In 1949, the North Atlantic Treaty Organization (NATO) was agreed.",
+      "source_chunk": 11,
+      "id": "471abef4-31bd-46fe-88ba-8c7b81de1796",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "NATO exemplifies Cold‑War rivalry that drove the “expand or die” growth imperative.",
+        "supporting_text": "In 1949, the North Atlantic Treaty Organization (NATO) was agreed."
+      }
+    },
+    {
+      "title": "Founding of the European Economic Community",
+      "year": 1957,
+      "description": "The European Economic Community, a precursor to the European Community, was created in 1957 to promote economic integration among its member states.",
+      "type": "Organization founding",
+      "dates": {
+        "start": "1957-03-25",
+        "end": null
+      },
+      "locations": [
+        "Europe"
+      ],
+      "actors": [
+        "European Economic Community"
+      ],
+      "concepts": [
+        "European integration",
+        "Economic cooperation"
+      ],
+      "supporting_text": "The European Economic Community, a forerunner of the European Community, was founded in 1957.",
+      "source_chunk": 11,
+      "id": "eab982e8-1c5e-436b-9485-4c28c701d94e",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The EEC created a supranational framework for economic integration and shared statistical standards.",
+        "supporting_text": "The European Economic Community, a forerunner of the European Community, was founded in 1957."
+      }
+    },
+    {
+      "title": "Marshall Plan economic aid programme",
+      "year": null,
+      "description": "The United States’ Marshall Plan (1948‑1952) provided large‑scale financial assistance to rebuild European economies, spurring the production of regular national accounts for aid allocation.",
+      "type": "Process",
+      "dates": {
+        "start": "1948-01-01",
+        "end": "1952-12-31"
+      },
+      "locations": [
+        "Western Europe",
+        "United States"
+      ],
+      "actors": [
+        "United States",
+        "OEEC"
+      ],
+      "concepts": [
+        "Post‑war reconstruction",
+        "National accounts",
+        "Economic aid"
+      ],
+      "supporting_text": "The Marshall Plan, which ran from 1948 to 1952, was a large‑scale economic programme designed to put Europe on the road to economic prosperity and peace.",
+      "source_chunk": 11,
+      "id": "d6fba08a-c32c-45ec-83e4-a1a8b3b2a097",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The aid programme spurred reconstruction and the need for systematic national‑account data.",
+        "supporting_text": "The Marshall Plan, which ran from 1948 to 1952, was a large‑scale economic programme designed to put Europe on the road to economic prosperity and peace."
+      }
+    },
+    {
+      "title": "Publication of the first System of National Accounts (SNA) edition",
+      "year": 1953,
+      "description": "The inaugural edition of the System of National Accounts was released in 1953, standardising macro‑economic statistics across countries.",
+      "type": "Publication",
+      "dates": {
+        "start": "1953-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts",
+        "Statistical harmonisation"
+      ],
+      "supporting_text": "Macroeconomic statistics started to harmonise into the System of National Accounts, with the first edition being published in 1953.",
+      "source_chunk": 11,
+      "id": "3a0b69ad-1e91-4688-bc33-f0b0dc18d97a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The SNA standardized macro‑economic measurement, enabling cross‑country comparison and alternative policy metrics.",
+        "supporting_text": "Macroeconomic statistics started to harmonise into the System of National Accounts, with the first edition being published in 1953."
+      }
+    },
+    {
+      "title": "OECD pledges 50 % GDP increase for member countries by 1970",
+      "year": 1961,
+      "description": "In 1961 the OECD set an international growth target, committing its members to raise aggregate GDP by 50 % by the year 1970.",
+      "type": "Policy",
+      "dates": {
+        "start": "1961-01-01",
+        "end": null
+      },
+      "locations": [
+        "OECD member states"
+      ],
+      "actors": [
+        "OECD"
+      ],
+      "concepts": [
+        "GDP growth target",
+        "Economic policy"
+      ],
+      "supporting_text": "In 1961, this target setting was elevated to an international goal: the OECD pledged a 50 per cent increase in GDP of OECD countries by 1970.",
+      "source_chunk": 11,
+      "id": "3cd2c40d-4f31-4d20-bd25-0df9e8a17528",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The pledge cemented GDP growth as a central policy target, shaping public and political discourse.",
+        "supporting_text": "In 1961, this target setting was elevated to an international goal: the OECD pledged a 50 per cent increase in GDP of OECD countries by 1970."
+      }
+    },
+    {
+      "title": "Van Lennep’s 1970 statement on recession risk",
+      "year": 1970,
+      "description": "OECD Secretary‑General Van Lennep publicly asserted that major recessions were no longer inevitable, emphasizing the role of policy miscalculation.",
+      "type": "Statement",
+      "dates": {
+        "start": "1970-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Van Lennep",
+        "OECD"
+      ],
+      "concepts": [
+        "Recession risk",
+        "Economic policy"
+      ],
+      "supporting_text": "In 1970, Van Lennep, the Secretary‑General of the OECD, reported that \"A major recession would no longer be a deus ex machina, but could only result from miscalculation or a deliberate act of government\".",
+      "source_chunk": 11,
+      "id": "f87503f9-2af5-4ccb-b827-f34e211e19fd",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The statement framed recessions as preventable, reinforcing the primacy of growth‑oriented policy.",
+        "supporting_text": "In 1970, Van Lennep, the Secretary‑General of the OECD, reported that “A major recession would no longer be a deus ex machina, but could only result from miscalculation or a deliberate act of government”."
+      }
+    },
+    {
+      "title": "Simon Kuznets begins work on national income project",
+      "year": 1933,
+      "description": "Kuznets started his seminal national‑income research in January 1933 while at the National Bureau of Economic Research, leading to the 1934 report to Congress.",
+      "type": "Process",
+      "dates": {
+        "start": "1933-01-01",
+        "end": "1934-01-04"
+      },
+      "locations": [
+        "United States"
+      ],
+      "actors": [
+        "Simon Kuznets",
+        "National Bureau of Economic Research (NBER)"
+      ],
+      "concepts": [
+        "National income estimation",
+        "Economic statistics"
+      ],
+      "supporting_text": "He began working on this iconic project in January 1933.",
+      "source_chunk": 11,
+      "id": "1dbc7054-072b-402c-b41b-e1fdea1a2eac",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Kuznets’ early work laid the empirical foundation for modern national‑account systems.",
+        "supporting_text": "He began working on this iconic project in January 1933."
+      }
+    },
+    {
+      "title": "Presidential address to the American Economic Association by Robert Lucas",
+      "year": 2003,
+      "description": "Robert Lucas, Nobel Prize winner and founder of the new classical school, delivered his presidential address to the American Economic Association, stating that macroeconomics had solved the problem of depression prevention.",
+      "type": "Meeting",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Robert Lucas",
+        "American Economic Association"
+      ],
+      "concepts": [
+        "macroeconomics",
+        "depression prevention"
+      ],
+      "supporting_text": "Robert Lucas, Nobel Prize winner and founder of the new classical school, said during his presidential address to the American Economic Association in 2003: \"My thesis in this lecture is that macroeconomics in this original sense has succeeded: Its central problem of depression prevention has been solved, for all practical purposes, and has in fact been solved for many decades.\"",
+      "source_chunk": 12,
+      "id": "2d743b91-81df-4732-9b65-a49aea737747",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Lucas’s address declares macroeconomics solved depression, reinforcing the prevailing focus on growth and GDP.",
+        "supporting_text": "Robert Lucas ... said during his presidential address to the American Economic Association in 2003: “My thesis ... macroeconomics ... succeeded ...”"
+      }
+    },
+    {
+      "title": "Publication of \"The State of Macro\" paper",
+      "year": 2008,
+      "description": "Olivier Blanchard published a paper titled \"The State of Macro\" declaring that the state of macroeconomics was good and that there was a broad convergence of vision.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Olivier Blanchard"
+      ],
+      "concepts": [
+        "macroeconomics",
+        "convergence of vision"
+      ],
+      "supporting_text": "In a 2008 paper titled \"The State of Macro\" Olivier Blanchard, who later was the chief economist at the IMF, declared that \"the state of macro is good\" and that there was a \"broad convergence of vision\".",
+      "source_chunk": 12,
+      "id": "4754e920-5788-45aa-81a9-756b72a5f2d0",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The paper’s optimistic assessment sustains confidence in the existing macro‑economic paradigm.",
+        "supporting_text": "In a 2008 paper titled “The State of Macro” ... declared that “the state of macro is good” and that there was a “broad convergence of vision”."
+      }
+    },
+    {
+      "title": "Fall of the Berlin Wall",
+      "year": 1989,
+      "description": "The fall of the Berlin Wall and the collapse of the communist system bolstered the idea that capitalist democracies were the superior system of governance.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Berlin"
+      ],
+      "actors": [],
+      "concepts": [
+        "capitalist democracies"
+      ],
+      "supporting_text": "The fall of the Berlin Wall and communist system bolstered the idea that capitalist democracies were the superior system of governance.",
+      "source_chunk": 12,
+      "id": "e1f7aa3a-52d0-4116-a484-27bd584ba6d2",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The fall is presented as reinforcing the dominance of capitalist growth models.",
+        "supporting_text": "The fall of the Berlin Wall ... bolstered the idea that capitalist democracies were the superior system of governance."
+      }
+    },
+    {
+      "title": "Great Moderation",
+      "year": null,
+      "description": "A period starting in the mid‑1980s during which economic variables such as GDP growth, industrial production, unemployment and inflation began to decline in volatility, credited to Alan Greenspan.",
+      "type": "Process",
+      "dates": {
+        "start": "1985-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Alan Greenspan"
+      ],
+      "concepts": [
+        "Great Moderation",
+        "macroeconomic volatility"
+      ],
+      "supporting_text": "Alan Greenspan, the Chairman of the Federal Reserve Bank, who was credited with the \"Great Moderation\", a period which started in the mid‑1980s when economic variables such as GDP growth, industrial production, unemployment and inflation began to decline in volatility.",
+      "source_chunk": 12,
+      "id": "58ba48be-d098-4102-993c-91974fd57836",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Crediting Greenspan with reduced volatility underlines confidence in the prevailing economic order.",
+        "supporting_text": "Alan Greenspan ... credited with the “Great Moderation”, a period ... when economic variables ... began to decline in volatility."
+      }
+    },
+    {
+      "title": "Contested hegemony",
+      "year": null,
+      "description": "A period of contested hegemony from 1973 to 2008 marked by growing criticism of GDP and of economic growth as the central policy goal.",
+      "type": "Process",
+      "dates": {
+        "start": "1973-01-01",
+        "end": "2008-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "economists"
+      ],
+      "concepts": [
+        "GDP criticism",
+        "economic growth"
+      ],
+      "supporting_text": "Contested Hegemony (1973 - 2008) ... The criticism from other domains grew significantly in the period of \"contested hegemony\".",
+      "source_chunk": 12,
+      "id": "45f9ce9c-0b75-49b2-a047-df2d8b5a0781",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The term describes a period where existing economic hegemony faced growing criticism.",
+        "supporting_text": "the criticism from other domains grew significantly in the period of “contested hegemony”."
+      }
+    },
+    {
+      "title": "OECD programmes addressing modern society problems",
+      "year": null,
+      "description": "In the 1970s, the OECD started programmes to address the \"problems of modern society\", reflecting a shift in attitudes towards GDP.",
+      "type": "Process",
+      "dates": {
+        "start": "1970-01-01",
+        "end": "1979-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "OECD"
+      ],
+      "concepts": [
+        "modern society problems",
+        "GDP"
+      ],
+      "supporting_text": "By the 1970s, organisations such as the OECD, the bastion of post‑war economic growth, started programmes to address the \"problems of modern society\".",
+      "source_chunk": 12,
+      "id": "4a9d6dcf-be41-4c82-b006-7c55c278a502",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "OECD programmes represent coordinated institutional action to tackle societal and environmental issues.",
+        "supporting_text": "organisations such as the OECD ... started programmes to address the “problems of modern society”."
+      }
+    },
+    {
+      "title": "London smog of December 1952",
+      "year": 1952,
+      "description": "A severe smog event in London in December 1952 that caused thousands of excess deaths, marking an early public health crisis linked to air pollution.",
+      "type": "Other",
+      "dates": {
+        "start": "1952-12-01",
+        "end": "1952-12-31"
+      },
+      "locations": [
+        "London, United Kingdom"
+      ],
+      "actors": [],
+      "concepts": [
+        "smog",
+        "air pollution",
+        "public health"
+      ],
+      "supporting_text": "As far back as December 1952, London was confronted by a smog which is estimated to have caused thousands of extra deaths.",
+      "source_chunk": 13,
+      "id": "9ba025ba-4b45-4274-a87c-691059a2d139",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows a severe pollution episode that harmed public health, highlighting a disharmonious condition.",
+        "supporting_text": "London was confronted by a smog which is estimated to have caused thousands of extra deaths."
+      }
+    },
+    {
+      "title": "Rise of the environmental movement (1950s‑1960s)",
+      "year": null,
+      "description": "The environmental movement began to gain prominence during the 1950s and 1960s, laying the groundwork for later institutional and policy developments.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "environmental movement"
+      ],
+      "supporting_text": "The environmental movement started to gain prominence in the 1950s-1960s.",
+      "source_chunk": 13,
+      "id": "866f4fd3-bd70-4dcb-b228-8b928cba5705",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Marks the emergence of a coordinated social force that could drive environmental change.",
+        "supporting_text": "The environmental movement started to gain prominence in the 1950s–1960s."
+      }
+    },
+    {
+      "title": "Emergence of acid‑rain problem in Europe (1970s)",
+      "year": null,
+      "description": "During the 1970s, acid rain was identified as a growing environmental problem across Europe, prompting scientific modelling and later negotiations.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Europe"
+      ],
+      "actors": [],
+      "concepts": [
+        "acid rain"
+      ],
+      "supporting_text": "In the 1970s the problem of acid rain in Europe started;",
+      "source_chunk": 13,
+      "id": "3994cb4a-ee28-4d29-a621-7993782f4b5e",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Identifies a widespread ecological threat that signaled ongoing environmental degradation.",
+        "supporting_text": "In the 1970s the problem of acid rain in Europe started;"
+      }
+    },
+    {
+      "title": "Emergence of ozone‑layer problem (1980s)",
+      "year": null,
+      "description": "The 1980s saw the recognition of ozone‑layer depletion as a major environmental issue, leading to scientific research and policy responses.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "ozone layer",
+        "ozone depletion"
+      ],
+      "supporting_text": "in the 1980s the problem of the ozone layer;",
+      "source_chunk": 13,
+      "id": "d0d8469d-0eff-439a-9cc6-4fd4e86feaf9",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights a global atmospheric issue that undermines ecological balance.",
+        "supporting_text": "in the 1980s the problem of the ozone layer;"
+      }
+    },
+    {
+      "title": "Emergence of climate‑change and biodiversity‑loss concerns (1990s)",
+      "year": null,
+      "description": "In the 1990s, climate change and biodiversity loss were identified as major global environmental challenges, shaping subsequent international agendas.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "climate change",
+        "biodiversity loss"
+      ],
+      "supporting_text": "in the 1990s the emergence of climate change and biodiversity loss were seen as the major problems.",
+      "source_chunk": 13,
+      "id": "a539d2b2-a6de-4910-b104-597e7df5851f",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Points to major 1990s environmental challenges that threaten planetary health.",
+        "supporting_text": "in the 1990s the emergence of climate change and biodiversity loss were seen as the major problems."
+      }
+    },
+    {
+      "title": "Emergence of environmental economics as a distinct field (1970s)",
+      "year": null,
+      "description": "Environmental economics became recognized as a separate sub‑discipline of economics in the 1970s, focusing on the economic analysis of environmental policies.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "environmental economics"
+      ],
+      "supporting_text": "There were also scientific advances such as the emergence of environmental economics as a separate field in economics in the 1970s.",
+      "source_chunk": 13,
+      "id": "c0d0aa12-5f2e-4c3f-ac70-df6ec46bbede",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces a new interdisciplinary field that can reshape policy and economic incentives.",
+        "supporting_text": "There were also scientific advances such as the emergence of environmental economics as a separate field in economics in the 1970s."
+      }
+    },
+    {
+      "title": "Lehman Brothers bankruptcy filing",
+      "year": 2008,
+      "description": "Lehman Brothers filed for bankruptcy on 15 September 2008, triggering a shock wave through the global financial system and prompting massive government bail‑outs worldwide.",
+      "type": "Other",
+      "dates": {
+        "start": "2008-09-15",
+        "end": null
+      },
+      "locations": [
+        "United States"
+      ],
+      "actors": [
+        "Lehman Brothers"
+      ],
+      "concepts": [
+        "Financial crisis",
+        "Bankruptcy"
+      ],
+      "supporting_text": "Lehman Brothers filed for bankruptcy on 15 September 2008.",
+      "source_chunk": 14,
+      "id": "d5116d17-08aa-474a-8a5d-e218375cc95e",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The bankruptcy was a shock that dented confidence in economists and highlighted systemic fragility.",
+        "supporting_text": "A real shock wave went through society when Lehman Brothers filed for bankruptcy on 15 September 2008."
+      }
+    },
+    {
+      "title": "Global financial crisis of 2008",
+      "year": 2008,
+      "description": "The 2008 financial crisis, the worst recession since the Great Depression, caused stock‑market and housing‑market collapses, massive bail‑outs, and a sharp drop in economic growth across many countries.",
+      "type": "Event",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Global"
+      ],
+      "actors": [
+        "Governments",
+        "Financial institutions"
+      ],
+      "concepts": [
+        "Financial crisis",
+        "Recession"
+      ],
+      "supporting_text": "The financial crisis of 2008 had a major impact on the faith of society in economists. This event was the single worst recession since the Great Depression.",
+      "source_chunk": 14,
+      "id": "3a6aa230-3810-490c-b51f-5bba96b62996",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The crisis dramatically reduced public trust in economists and mainstream economic metrics.",
+        "supporting_text": "the financial crisis of 2008 had a major impact on the faith of society in economists."
+      }
+    },
+    {
+      "title": "Publication of Paul Krugman's op‑ed “How Did Economists Get It So Wrong?”",
+      "year": 2009,
+      "description": "A year after the Lehman Brothers collapse, Paul Krugman wrote an op‑ed in The New York Times explaining the rift between freshwater and saltwater macro‑economists.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "United States"
+      ],
+      "actors": [
+        "Paul Krugman"
+      ],
+      "concepts": [
+        "Macro‑economics divide",
+        "Freshwater vs. saltwater economists"
+      ],
+      "supporting_text": "In the New York Times, a year after the Lehmann Brothers' collapse, Paul Krugman explained the rift in his op-ed \"How Did Economists Get It So Wrong?\"",
+      "source_chunk": 14,
+      "id": "d55f119b-b2a1-4c17-9068-5859845927b3",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The op‑ed brought the rift in macro‑economics to public attention, shifting discourse about economic authority.",
+        "supporting_text": "In the New York Times, a year after the Lehmann Brothers’ collapse, Paul Krugman explained the rift in his op‑ed “How Did Economists Get It So Wrong?”"
+      }
+    },
+    {
+      "title": "Election of Donald Trump as President of the United States",
+      "year": 2016,
+      "description": "Donald Trump won the U.S. presidential election on an isolationist, “America first” platform, signalling a shift toward populist, anti‑establishment politics.",
+      "type": "Election",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "United States"
+      ],
+      "actors": [
+        "Donald Trump"
+      ],
+      "concepts": [
+        "Isolationism",
+        "Populism"
+      ],
+      "supporting_text": "Donald Trump ran on an isolationist platform that wants to limit trade (\"America first\") and won.",
+      "source_chunk": 14,
+      "id": "267f88d0-0a4d-4a4f-8ad7-3ae2c03815b8",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Trump’s “post‑truth” rhetoric fostered distrust of experts and statistics, hindering evidence‑based policy.",
+        "supporting_text": "Donald Trump ran on an isolationist platform... took this “post‑truth” narrative to new levels."
+      }
+    },
+    {
+      "title": "United States withdrawal from the Trans‑Pacific Partnership (TPP)",
+      "year": 2017,
+      "description": "Soon after his election, President Trump withdrew the United States from the TPP, marking a major break in U.S. trade policy.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "United States"
+      ],
+      "actors": [
+        "Donald Trump",
+        "United States government"
+      ],
+      "concepts": [
+        "Free trade",
+        "TPP"
+      ],
+      "supporting_text": "He withdrew from the Trans‑Pacific Partnership (TPP) soon after he was elected, which was a major break in US policy.",
+      "source_chunk": 14,
+      "id": "77a70e02-6840-4ee6-9764-16f9f20d3422",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The withdrawal illustrates a political shift away from multilateral trade, reflecting prevailing anti‑globalisation sentiment.",
+        "supporting_text": "He withdrew from the Trans‑Pacific Partnership (TPP) soon after he was elected, which was a major break in US policy."
+      }
+    },
+    {
+      "title": "Rise of populist parties in developed countries since the mid‑2000s",
+      "year": null,
+      "description": "Since the middle of the 2000s, populist parties have been gaining electoral appeal in Europe and the United States, reflecting growing scepticism toward experts, statistics and established parties.",
+      "type": "Process",
+      "dates": {
+        "start": "2005-01-01",
+        "end": null
+      },
+      "locations": [
+        "Europe",
+        "United States"
+      ],
+      "actors": [
+        "Populist parties",
+        "Voters"
+      ],
+      "concepts": [
+        "Populism",
+        "Anti‑establishment sentiment"
+      ],
+      "supporting_text": "Since the middle of the 2000s, populist parties have been gaining ground in many nations. In Europe, these parties have started overtaking the traditional parties in terms of electoral appeal. In the United States, the Republican Donald Trump ran on an anti‑establishment and populist platform.",
+      "source_chunk": 14,
+      "id": "45e3587d-b7a9-4e1e-944a-bf58577f109e",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "Populist growth is linked to a disdain for science and statistics, eroding the legitimacy of data‑driven metrics.",
+        "supporting_text": "the rise of populist parties... is often coupled with a disdain for science, experts and statistics."
+      }
+    },
+    {
+      "title": "Popular protest against the Transatlantic Trade and Investment Partnership (TTIP)",
+      "year": null,
+      "description": "Public protests emerged against TTIP and other free‑trade agreements, indicating a decline in societal trust in the assumption that free trade is automatically beneficial.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Europe",
+        "United States"
+      ],
+      "actors": [
+        "Protesters",
+        "Civil‑society groups"
+      ],
+      "concepts": [
+        "TTIP",
+        "Free‑trade skepticism"
+      ],
+      "supporting_text": "Popular protest against the Transatlantic Trade and Investment Partnership (TTIP) and other free trade agreements shows that society's trust in this economic rationale is no longer automatic.",
+      "source_chunk": 14,
+      "id": "a46efcff-594a-4fe3-a934-e56b0a8d6309",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The protest demonstrates organized public resistance to a trade agreement, mobilising collective agency.",
+        "supporting_text": "popular protest against the Transatlantic Trade and Investment Partnership (TTIP) ... shows that society’s trust ... is no longer automatic."
+      }
+    },
+    {
+      "title": "Development of the Billion Prices Project at MIT",
+      "year": null,
+      "description": "MIT’s Billion Prices Project continuously collects price data from websites using web crawlers to calculate daily inflation rates for many countries, exemplifying the growing role of big data in economic measurement.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "United States"
+      ],
+      "actors": [
+        "MIT",
+        "Researchers"
+      ],
+      "concepts": [
+        "Big data",
+        "Daily inflation measurement"
+      ],
+      "supporting_text": "The \"billion prices project\" of MIT collects data from websites using webcrawlers to calculate daily inflation rates for many countries.",
+      "source_chunk": 14,
+      "id": "0e82b6f8-3c03-4f4a-ac57-f3ac334c60b1",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The project showcases how big‑data methods can transform economic measurement, hinting at new systemic indicators.",
+        "supporting_text": "The “billion prices project” of MIT collects data from websites using webcrawlers to calculate daily inflation rates for many countries."
+      }
+    },
+    {
+      "title": "Inclusion of national income measurement in League of Nations programme",
+      "year": 1939,
+      "description": "In April 1939 the Committee of Statistical Experts of the League of Nations added the measurement of national income to its programme, marking an early institutional step toward systematic national accounting.",
+      "type": "Policy",
+      "dates": {
+        "start": "1939-04-01",
+        "end": null
+      },
+      "locations": [
+        "League of Nations"
+      ],
+      "actors": [
+        "Committee of Statistical Experts of the League of Nations"
+      ],
+      "concepts": [
+        "national income measurement",
+        "System of National Accounts"
+      ],
+      "supporting_text": "In April 1939, the Committee of Statistical Experts of the League of Nations included in its programme the measurement of national income.",
+      "source_chunk": 15,
+      "id": "b69333b0-9bc0-4464-ba92-4bf65a149592",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows early institutional move toward systematic economic measurement, opening the way for later unified accounts.",
+        "supporting_text": "In April 1939, the Committee of Statistical Experts of the League of Nations included in its programme the measurement of national income."
+      }
+    },
+    {
+      "title": "Initiation of subcommittee on national income accounting",
+      "year": 1945,
+      "description": "In the autumn of 1945 a subcommittee chaired by Richard Stone was created, bringing together experts from Australia, the Netherlands, Canada, the United States, Mexico, Norway and Switzerland to work on national income accounting.",
+      "type": "Organization",
+      "dates": {
+        "start": "1945-09-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Richard Stone",
+        "Members from Australia, the Netherlands, Canada, United States, Mexico, Norway, Switzerland"
+      ],
+      "concepts": [
+        "System of National Accounts"
+      ],
+      "supporting_text": "In the autumn of 1945, a subcommittee was initiated under the chairmanship of Richard Stone.",
+      "source_chunk": 15,
+      "id": "995819d5-dbbb-4197-9564-501f39925da1",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Creates a dedicated group to coordinate international accounting standards.",
+        "supporting_text": "In the autumn of 1945, a subcommittee was initiated under the chairmanship of Richard Stone."
+      }
+    },
+    {
+      "title": "Princeton meeting of subcommittee members",
+      "year": 1945,
+      "description": "The newly formed subcommittee met at Princeton in December 1945 to discuss a memorandum prepared by Richard Stone.",
+      "type": "Meeting",
+      "dates": {
+        "start": "1945-12-01",
+        "end": null
+      },
+      "locations": [
+        "Princeton"
+      ],
+      "actors": [
+        "Richard Stone",
+        "Subcommittee members"
+      ],
+      "concepts": [
+        "national income accounting"
+      ],
+      "supporting_text": "They met at Princeton in December 1945 to discuss a memorandum written by Richard Stone.",
+      "source_chunk": 15,
+      "id": "5b2cfa9c-7232-41e6-bab5-722479ecdfa5",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Physical gathering of international experts to align on accounting concepts.",
+        "supporting_text": "They met at Princeton in December 1945 to discuss a memorandum written by Richard Stone."
+      }
+    },
+    {
+      "title": "Publication of 1947 subcommittee report initiating SNA harmonisation",
+      "year": 1947,
+      "description": "The subcommittee produced a report in 1947 that is regarded as the starting point of the harmonisation process for the System of National Accounts.",
+      "type": "Publication",
+      "dates": {
+        "start": "1947-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Richard Stone",
+        "Subcommittee members"
+      ],
+      "concepts": [
+        "harmonisation process",
+        "System of National Accounts"
+      ],
+      "supporting_text": "The subcommittee produced a report two years later which can be seen as the start of the harmonisation process of the system of national accounts.",
+      "source_chunk": 15,
+      "id": "76531dda-4c15-462f-8d22-e38e9379b57c",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Marks the first formal step toward a globally harmonised accounting system.",
+        "supporting_text": "The subcommittee produced a report two years later which can be seen as the start of the harmonisation process of the system of national accounts."
+      }
+    },
+    {
+      "title": "Publication of Richard Stone's 1942 paper estimating US national account",
+      "year": 1942,
+      "description": "Stone published a paper in 1942 that estimated a United States national account based on the British system of national accounts.",
+      "type": "Publication",
+      "dates": {
+        "start": "1942-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Richard Stone"
+      ],
+      "concepts": [
+        "national income accounting"
+      ],
+      "supporting_text": "In 1942, Stone published a paper in which he estimated a US national account based on the British system.",
+      "source_chunk": 15,
+      "id": "2d27ea23-1ffc-4423-a955-1187cbc850a8",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduces a new accounting approach that later underpins the SNA.",
+        "supporting_text": "In 1942, Stone published a paper in which he estimated a US national account based on the British system."
+      }
+    },
+    {
+      "title": "Tripartite meeting shifting US position to Keynes‑Stone accounting",
+      "year": 1944,
+      "description": "In September 1944 Richard Stone, Milton Gilbert of the U.S. Department of Commerce, and Canadian George Luxton met, leading the United States to adopt the Keynes‑Stone accounting structure.",
+      "type": "Meeting",
+      "dates": {
+        "start": "1944-09-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Richard Stone",
+        "Milton Gilbert",
+        "George Luxton"
+      ],
+      "concepts": [
+        "Keynes‑Stone accounting",
+        "System of National Accounts"
+      ],
+      "supporting_text": "During a meeting in September 1944, Richard Stone and Milton Gilbert of the Department of Commerce met, also in the presence of the Canadian George Luxton. It was at this \"tripartite meeting\" that the United States shifted position towards the Keynes-Stone accounting structure.",
+      "source_chunk": 15,
+      "id": "e9f2294e-32c8-4276-8b1b-931c08be289e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Political meeting that altered a major country's accounting stance, enabling broader adoption.",
+        "supporting_text": "It was at this “tripartite meeting” that the United States shifted position towards the Keynes–Stone accounting structure."
+      }
+    },
+    {
+      "title": "Publication of OEEC Handbook on National Income Accounting (1951)",
+      "year": 1951,
+      "description": "Stone led the preparation of an OEEC handbook on national income accounting, which was later used in the administration of the Marshall Plan.",
+      "type": "Publication",
+      "dates": {
+        "start": "1951-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Richard Stone"
+      ],
+      "concepts": [
+        "OEEC",
+        "national income accounting",
+        "Marshall Plan"
+      ],
+      "supporting_text": "He led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan.",
+      "source_chunk": 15,
+      "id": "513c8c9b-2f58-4891-9498-f4b5dd200008",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Disseminates the emerging standard to European economies, encouraging coordinated use.",
+        "supporting_text": "Stone led the work on two OEEC handbooks on national income accounting (1951 and 1952)."
+      }
+    },
+    {
+      "title": "Publication of OEEC Handbook on National Income Accounting (1952)",
+      "year": 1952,
+      "description": "Second OEEC handbook on national income accounting, also employed in the Marshall Plan administration.",
+      "type": "Publication",
+      "dates": {
+        "start": "1952-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Richard Stone"
+      ],
+      "concepts": [
+        "OEEC",
+        "national income accounting",
+        "Marshall Plan"
+      ],
+      "supporting_text": "He led the work on two OEEC handbooks on national income accounting (1951 and 1952) which were used in the administration of the Marshall Plan.",
+      "source_chunk": 15,
+      "id": "28bf589a-27b0-4a48-adbf-8ede7fa611ea",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Continues the spread of a common accounting framework across nations.",
+        "supporting_text": "Stone led the work on two OEEC handbooks on national income accounting (1951 and 1952)."
+      }
+    },
+    {
+      "title": "Publication of first UN Handbook of the System of National Accounts",
+      "year": 1953,
+      "description": "Stone was the principal author of the first official UN handbook, providing a globally harmonised system of national accounts.",
+      "type": "Publication",
+      "dates": {
+        "start": "1953-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Richard Stone"
+      ],
+      "concepts": [
+        "System of National Accounts",
+        "UN handbook"
+      ],
+      "supporting_text": "Then, in 1953, Stone was the principal author of the first ever UN handbook, which is considered the first \"official\" SNA.",
+      "source_chunk": 15,
+      "id": "ff5b3ecf-d1c2-4b05-b643-1e4adebfc9de",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Creates the first official, globally‑recognised SNA, enabling worldwide standardisation.",
+        "supporting_text": "In 1953, Stone was the principal author of the first ever UN handbook, which is considered the first “official” SNA."
+      }
+    },
+    {
+      "title": "Update of SNA Handbook (1968)",
+      "year": 1968,
+      "description": "The System of National Accounts handbook was revised and updated in 1968.",
+      "type": "Publication",
+      "dates": {
+        "start": "1968-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts"
+      ],
+      "supporting_text": "The SNA handbook was subsequently updated in 1968, 1993 and 2008.",
+      "source_chunk": 15,
+      "id": "eea495ad-92cc-4520-a0e0-c958c673aa63",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows the system’s capacity to evolve with new knowledge and needs.",
+        "supporting_text": "The SNA handbook was subsequently updated in 1968, 1993 and 2008."
+      }
+    },
+    {
+      "title": "Update of SNA Handbook (1993) and worldwide agreement on a single system",
+      "year": 1993,
+      "description": "The 1993 revision of the SNA handbook marked the first occasion when all major international institutes and all countries fully agreed to a single system of national accounts.",
+      "type": "Publication",
+      "dates": {
+        "start": "1993-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts",
+        "global agreement"
+      ],
+      "supporting_text": "The SNA handbook was subsequently updated in 1968, 1993 and 2008. The SNA 1993 was the first time that all major international institutes and all countries of the world fully agreed to a single system.",
+      "source_chunk": 15,
+      "id": "0c26b598-69d5-45f7-9a38-6f4f33a0df3e",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Achieves global consensus, raising the SNA’s legitimacy and visibility.",
+        "supporting_text": "The SNA 1993 was the first time that all major international institutes and all countries of the world fully agreed to a single system."
+      }
+    },
+    {
+      "title": "Update of SNA Handbook (2008)",
+      "year": 2008,
+      "description": "The most recent revision of the System of National Accounts handbook was released in 2008.",
+      "type": "Publication",
+      "dates": {
+        "start": "2008-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of National Accounts"
+      ],
+      "supporting_text": "The SNA handbook was subsequently updated in 1968, 1993 and 2008.",
+      "source_chunk": 15,
+      "id": "242e0d1c-8659-46c8-bc3d-a5a948d17067",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Continues refinement, keeping the framework relevant for contemporary policy.",
+        "supporting_text": "The SNA handbook was subsequently updated in 1968, 1993 and 2008."
+      }
+    },
+    {
+      "title": "Fall of the Berlin Wall ending MPS revision process",
+      "year": 1989,
+      "description": "The collapse of the Berlin Wall in 1989 terminated the parallel revision of the Material Product System (MPS) used by centrally planned economies.",
+      "type": "Other",
+      "dates": {
+        "start": "1989-11-09",
+        "end": null
+      },
+      "locations": [
+        "Berlin"
+      ],
+      "actors": [],
+      "concepts": [
+        "Material Product System",
+        "SNA harmonisation"
+      ],
+      "supporting_text": "The fall of the Berlin Wall in 1989 put an end to this process.",
+      "source_chunk": 15,
+      "id": "4a21ee9f-d144-45dc-a745-e458260ab6b0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Political shift eliminated an alternative system, consolidating SNA dominance.",
+        "supporting_text": "The fall of the Berlin Wall in 1989 put an end to this process. De facto, the SNA 1993 was then the only internationally agreed method."
+      }
+    },
+    {
+      "title": "Harmonisation process of the System of National Accounts (SNA)",
+      "year": null,
+      "description": "A multi‑year effort that began with the 1947 subcommittee report and culminated in the 1993 worldwide agreement, spanning 46 years of international coordination, revisions, and updates to achieve a single global system of national accounts.",
+      "type": "Process",
+      "dates": {
+        "start": "1947-01-01",
+        "end": "1993-12-31"
+      },
+      "locations": [
+        "Global"
+      ],
+      "actors": [
+        "International statistical community",
+        "UN",
+        "OEEC",
+        "National statistical offices",
+        "Richard Stone and collaborators"
+      ],
+      "concepts": [
+        "System of National Accounts",
+        "harmonisation",
+        "global standardisation"
+      ],
+      "supporting_text": "Taking the report of the 1947 subcommittee as the starting point of the harmonisation process, it took forty-six years to reach full worldwide harmonisation.",
+      "source_chunk": 15,
+      "id": "9b4f8f2d-beb2-4887-a8a6-357677f6b98a",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Describes the long‑term systemic alignment that enables comparable macro‑data worldwide.",
+        "supporting_text": "It took forty‑six years to reach full worldwide harmonisation."
+      }
+    },
+    {
+      "title": "Robert Kennedy speech criticizing GDP (GNP)",
+      "year": 1968,
+      "description": "Robert Kennedy delivered a powerful speech in 1968 arguing that Gross National Product (then GNP) fails to account for health, education, environmental quality, and other aspects that make life worthwhile.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Robert Kennedy"
+      ],
+      "concepts": [
+        "GDP",
+        "GNP"
+      ],
+      "supporting_text": "In 1968, Robert Kennedy gave one of the most eloquent of speeches to argue against GDP (or rather GNP at the time): Too much and for too long, we seemed to have surrendered personal excellence and community values in the mere accumulation of material things…",
+      "source_chunk": 16,
+      "id": "5643cb8b-7d63-4dca-ba23-2a37e8750fc7",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The speech publicly challenges GDP as a measure of wellbeing, raising awareness of its shortcomings.",
+        "supporting_text": "\"Our Gross National Product... counts air pollution... It does not allow for the health of our children...\""
+      }
+    },
+    {
+      "title": "John F. Kennedy persuades OECD to set growth target",
+      "year": 1961,
+      "description": "President John F. Kennedy played a key role in convincing the Organisation for Economic Co‑operation and Development (OECD) to adopt a growth target for all member countries.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "John F. Kennedy",
+        "OECD"
+      ],
+      "concepts": [
+        "GDP",
+        "OECD growth target"
+      ],
+      "supporting_text": "John F. Kennedy was instrumental in convincing the OECD to set a growth target for all OECD countries in 1961.",
+      "source_chunk": 16,
+      "id": "32af3adf-1972-469f-8d58-a3858b9009c1",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "It illustrates a policy push that entrenches GDP‑focused growth targets.",
+        "supporting_text": "\"John F. Kennedy was instrumental in convincing the OECD to set a growth target for all OECD countries in 1961.\""
+      }
+    },
+    {
+      "title": "OECD pledges 50 % GDP increase by 1970",
+      "year": 1961,
+      "description": "Following the 1961 decision, the OECD formally pledged to raise the Gross Domestic Product of its member economies by 50 % by the year 1970.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "OECD"
+      ],
+      "concepts": [
+        "GDP",
+        "growth target"
+      ],
+      "supporting_text": "In that year, the OECD pledged to increase GDP in OECD countries by 50 per cent in 1970.",
+      "source_chunk": 16,
+      "id": "94a8c7a3-5742-4036-b97d-f105f619d6c2",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The pledge reinforces the dominance of GDP as the primary economic goal.",
+        "supporting_text": "\"In that year, the OECD pledged to increase GDP in OECD countries by 50 per cent in 1970.\""
+      }
+    },
+    {
+      "title": "Final update of the Compendium of Sustainable Development Indicator Initiatives",
+      "year": 2011,
+      "description": "The Compendium of Sustainable Development Indicator Initiatives, the largest database of Beyond‑GDP initiatives, was updated to include data up to 2011 and was subsequently taken offline.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Beyond‑GDP",
+        "Sustainable Development Indicators"
+      ],
+      "supporting_text": "Note that the Compendium was updated up to 2011 and has since been taken offline.",
+      "source_chunk": 17,
+      "id": "826cc859-79c4-4000-9e10-f0ee658ed8ef",
+      "significance": {
+        "primary_category": "undermining_changes_and_progress",
+        "justification": "The database was taken offline after its last update, limiting visibility of alternatives to GDP.",
+        "supporting_text": "The Compendium was updated up to 2011 and has since been taken offline."
+      }
+    },
+    {
+      "title": "Conference on the Human Environment (Stockholm)",
+      "year": 1972,
+      "description": "The first global United Nations conference on the environment that institutionalised environmental concerns and produced a joint declaration signed by all countries.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Stockholm, Sweden"
+      ],
+      "actors": [
+        "United Nations",
+        "Member States"
+      ],
+      "concepts": [
+        "environmental concerns",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "the Conference on the Human Environment in Stockholm institutionalised environmental concerns. It was the first global UN conference on the environment ... the conference was nearly boycotted by third‑world countries and the communist bloc but in the end all countries signed the joint declaration.",
+      "source_chunk": 19,
+      "id": "309e5259-0694-45f1-a681-55b9a83c9a64",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The conference institutionalised environmental concerns, marking a systemic shift toward integrating nature in policy.",
+        "supporting_text": "Conference on the Human Environment in Stockholm institutionalised environmental concerns… The conference had a significant effect on the institutionalisation of environmental issues."
+      }
+    },
+    {
+      "title": "Establishment of the United Nations Environmental Programme (UNEP)",
+      "year": 1972,
+      "description": "Creation of UNEP following the Stockholm conference, stimulating governments worldwide to set up environmental ministries.",
+      "type": "Organization",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "United Nations Headquarters, New York, USA"
+      ],
+      "actors": [
+        "United Nations",
+        "Member States"
+      ],
+      "concepts": [
+        "environmental governance",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "It created the United Nations Environmental Programme, which stimulated governments all over the world to set up environmental ministries.",
+      "source_chunk": 19,
+      "id": "77130d9c-8e70-4e60-99c7-90da7ae3a986",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "UNEP created a global agency that enabled governments to form environmental ministries.",
+        "supporting_text": "It created the United Nations Environmental Programme, which stimulated governments all over the world to set up environmental ministries."
+      }
+    },
+    {
+      "title": "Publication of Limits to Growth",
+      "year": 1972,
+      "description": "Seminal report of the Club of Rome presenting scenario projections that resources would run out within several decades, raising environmental awareness.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Club of Rome"
+      ],
+      "concepts": [
+        "limits to growth",
+        "environmental economics"
+      ],
+      "supporting_text": "1972 was also the year that the seminal Limits to Growth report of the Club of Rome was published.",
+      "source_chunk": 19,
+      "id": "be890210-8678-4597-9135-af33c4a71ea6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced scenario modelling that exposed limits of exponential growth, shaping future system thinking.",
+        "supporting_text": "Limits to Growth report… played a major role in raising environmental awareness… provided scenario projections… did a lot to raise public awareness of environmental problems."
+      }
+    },
+    {
+      "title": "OECD programme \"The problems of modern society\"",
+      "year": null,
+      "description": "OECD programme aimed at solving \"The problems of modern society\" that ran from 1968 to 1974, supporting the early social indicator movement.",
+      "type": "Process",
+      "dates": {
+        "start": "1968-01-01",
+        "end": "1974-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "Organisation for Economic Co‑operation and Development (OECD)"
+      ],
+      "concepts": [
+        "social indicator movement",
+        "subjective well‑being"
+      ],
+      "supporting_text": "the OECD ... set up a programme to solve \"The problems of modern society\", which ran from 1968 to 1974.",
+      "source_chunk": 19,
+      "id": "42fd68c6-6fee-41cc-8eef-e510756f3a49",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Highlights OECD’s traditional focus on GDP growth and its later re‑turn to that mandate.",
+        "supporting_text": "OECD, the bastion of economic growth… set up a programme… The economic turmoil… reduced attention… OECD sidelined the programme after member countries urged the organisation to get back to its original mandate of GDP growth policies."
+      }
+    },
+    {
+      "title": "Publication of Our Common Future (Brundtland Report)",
+      "year": 1987,
+      "description": "UN World Commission on Environment and Development report that popularised the term \"sustainable development\".",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "United Nations World Commission on Environment and Development (WCED)"
+      ],
+      "concepts": [
+        "sustainable development"
+      ],
+      "supporting_text": "the real game‑changer in Beyond‑GDP measurement was the seminal publication by the United Nations World Commission on Environment and Development (WCED) in 1987. The commission's report, Our Common Future, is often referred to as the \"Brundtland Report\".",
+      "source_chunk": 19,
+      "id": "a03e88a6-deb7-4051-bdd6-be8e89cbd064",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provided the seminal narrative of sustainable development, enabling cross‑scale policy integration.",
+        "supporting_text": "The real game‑changer… Our Common Future… led to the popularisation of the term “sustainable development”… provided a narrative to speak about global environmental issues."
+      }
+    },
+    {
+      "title": "United Nations Earth Summit (Rio de Janeiro)",
+      "year": 1992,
+      "description": "Major UN conference that institutionalised the term \"sustainable development\" and led to the adoption of Agenda 21.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Rio de Janeiro, Brazil"
+      ],
+      "actors": [
+        "United Nations",
+        "Member States"
+      ],
+      "concepts": [
+        "sustainable development",
+        "Agenda 21"
+      ],
+      "supporting_text": "The term \"sustainable development\" was further institutionalised due to the \"Earth Summit\" in Rio de Janeiro in 1992.",
+      "source_chunk": 19,
+      "id": "5ababa4e-6252-494a-b105-4729efd2ae79",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Institutionalised sustainable development at the global level, creating a new systemic framework.",
+        "supporting_text": "The term “sustainable development” was further institutionalised due to the “Earth Summit” in Rio de Janeiro in 1992."
+      }
+    },
+    {
+      "title": "Adoption of Agenda 21",
+      "year": 1992,
+      "description": "Agenda 21 was adopted at the Rio Earth Summit, recommending that countries monitor progress towards sustainable development.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Rio de Janeiro, Brazil"
+      ],
+      "actors": [
+        "United Nations",
+        "Member States"
+      ],
+      "concepts": [
+        "Agenda 21",
+        "sustainable development"
+      ],
+      "supporting_text": "At this conference, Agenda 21 was adopted which included a recommendation for countries to monitor their progress towards sustainable development.",
+      "source_chunk": 19,
+      "id": "2ebddab2-9db3-45fb-813f-fd44c16b7381",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Mandated countries to monitor progress, establishing coordinated action on sustainability.",
+        "supporting_text": "Agenda 21 was adopted which included a recommendation for countries to monitor their progress towards sustainable development."
+      }
+    },
+    {
+      "title": "Rio+10 Conference (Johannesburg)",
+      "year": 2002,
+      "description": "Conference held ten years after Rio that renewed momentum for Agenda 21 implementation.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Johannesburg, South Africa"
+      ],
+      "actors": [
+        "United Nations",
+        "Member States"
+      ],
+      "concepts": [
+        "Agenda 21",
+        "sustainable development"
+      ],
+      "supporting_text": "Ten years later, the \"Rio+10\" conference led to renewed momentum of Agenda 21.",
+      "source_chunk": 19,
+      "id": "b5392e77-aed8-4ed9-848c-db39ac78df98",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Re‑energised implementation of Agenda 21, sustaining collective momentum.",
+        "supporting_text": "The “Rio+10” conference led to renewed momentum of Agenda 21."
+      }
+    },
+    {
+      "title": "OECD World Forum on Measuring Well‑Being and Societal Progress",
+      "year": null,
+      "description": "Recurring OECD forum convened every 2–4 years from 2004 to discuss and advance measurement of well‑being and societal progress.",
+      "type": "Process",
+      "dates": {
+        "start": "2004-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Organisation for Economic Co‑operation and Development (OECD)"
+      ],
+      "concepts": [
+        "well‑being measurement",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "the OECD started convening the World Forum's \"measuring well‑being and societal progress\" once every 2‑4 years from 2004.",
+      "source_chunk": 19,
+      "id": "49d943f4-4522-4325-ab5c-9eeddc853ec8",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Creates a regular platform for sharing and advancing beyond‑GDP metrics.",
+        "supporting_text": "The OECD started convening the World Forum’s “measuring well‑being and societal progress” once every 2–4 years from 2004."
+      }
+    },
+    {
+      "title": "Eurostat begins work on Sustainable Development Indicators",
+      "year": 2005,
+      "description": "Eurostat started developing a set of Sustainable Development Indicators for the European Union.",
+      "type": "Process",
+      "dates": {
+        "start": "2005-01-01",
+        "end": null
+      },
+      "locations": [
+        "European Union"
+      ],
+      "actors": [
+        "Eurostat"
+      ],
+      "concepts": [
+        "Sustainable Development Indicators"
+      ],
+      "supporting_text": "Eurostat (the statistical office of the European Union) started work on Sustainable Development Indicators in 2005.",
+      "source_chunk": 19,
+      "id": "2d4ccf64-4762-4631-998e-816548d59543",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Develops standardized data that enable coordinated policy across Europe.",
+        "supporting_text": "Eurostat … started work on Sustainable Development Indicators in 2005."
+      }
+    },
+    {
+      "title": "European Commission Conference \"Beyond‑GDP: Measuring progress, true wealth, and the well‑being of nations\"",
+      "year": 2007,
+      "description": "Large‑scale conference organized by the European Commission to discuss alternative indicators beyond GDP.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Brussels, Belgium"
+      ],
+      "actors": [
+        "European Commission"
+      ],
+      "concepts": [
+        "Beyond‑GDP",
+        "well‑being measurement"
+      ],
+      "supporting_text": "The European Commission held a large‑scale conference on \"Beyond‑GDP: Measuring progress, true wealth, and the well‑being of nations\" in 2007.",
+      "source_chunk": 19,
+      "id": "88b31bea-881a-4267-9ef9-fd9cac563a17",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Funded projects and convened stakeholders to develop alternative indicators.",
+        "supporting_text": "The European Commission held a large‑scale conference on “Beyond‑GDP… ” in 2007 and funded projects such as e‑Frame and BRAINPOoL."
+      }
+    },
+    {
+      "title": "World Bank \"Wealth of Nations\" Report (2006)",
+      "year": 2006,
+      "description": "World Bank report presenting a comprehensive assessment of national wealth beyond traditional economic metrics.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "World Bank"
+      ],
+      "concepts": [
+        "wealth measurement",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "The World Bank published the \"Wealth of Nations\" reports in 2006, 2011 and 2018.",
+      "source_chunk": 19,
+      "id": "e47298b4-fed2-4d40-8712-bceb6c3c831f",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Introduced a wealth‑based perspective that broadened public discourse beyond GDP.",
+        "supporting_text": "The World Bank published the “Wealth of Nations” reports in 2006, 2011 and 2018."
+      }
+    },
+    {
+      "title": "World Bank \"Wealth of Nations\" Report (2011)",
+      "year": 2011,
+      "description": "Second edition of the World Bank’s comprehensive wealth assessment.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "World Bank"
+      ],
+      "concepts": [
+        "wealth measurement",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "The World Bank published the \"Wealth of Nations\" reports in 2006, 2011 and 2018.",
+      "source_chunk": 19,
+      "id": "0d87ce67-ad23-410c-a7ee-6277aaf00808",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Continued to shape global conversation on alternative wealth metrics.",
+        "supporting_text": "The World Bank published the “Wealth of Nations” reports in 2006, 2011 and 2018."
+      }
+    },
+    {
+      "title": "World Bank \"Wealth of Nations\" Report (2018)",
+      "year": 2018,
+      "description": "Third edition of the World Bank’s comprehensive wealth assessment.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "World Bank"
+      ],
+      "concepts": [
+        "wealth measurement",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "The World Bank published the \"Wealth of Nations\" reports in 2006, 2011 and 2018.",
+      "source_chunk": 19,
+      "id": "1c476e28-5c88-4136-8d4f-f0c0f625347b",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Sustained visibility of beyond‑GDP approaches in international policy circles.",
+        "supporting_text": "The World Bank published the “Wealth of Nations” reports in 2006, 2011 and 2018."
+      }
+    },
+    {
+      "title": "Establishment of the Commission on the Measurement of Economic Performance and Social Progress (CMEPSP)",
+      "year": 2009,
+      "description": "French President Nicolas Sarkozy created a commission to develop new metrics of economic performance and social progress.",
+      "type": "Organization",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "France"
+      ],
+      "actors": [
+        "Nicolas Sarkozy",
+        "French Government"
+      ],
+      "concepts": [
+        "Beyond‑GDP",
+        "economic performance measurement"
+      ],
+      "supporting_text": "In 2009, Nicolas Sarkozy, President of France, set up the Commission on the Measurement of Economic Performance and Social Progress.",
+      "source_chunk": 19,
+      "id": "a145b609-ef97-4dce-a307-746b624b9a68",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provided a major impulse for conceptual harmonisation of beyond‑GDP metrics.",
+        "supporting_text": "In 2009… set up the Commission on the Measurement of Economic Performance and Social Progress… the biggest impulse to conceptual harmonisation was probably provided by the Stiglitz Report."
+      }
+    },
+    {
+      "title": "Publication of the Stiglitz Report",
+      "year": 2009,
+      "description": "Report produced by the CMEPSP, commonly known as the Stiglitz Report, offering a new framework for measuring economic performance and social progress. The Stiglitz Report, published in 2009, presented a conceptual approach to sustainability and was critical of monetary indexes.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Joseph Stiglitz",
+        "CMEPSP"
+      ],
+      "concepts": [
+        "Beyond‑GDP",
+        "well‑being metrics",
+        "Stiglitz Report",
+        "Sustainability",
+        "Monetary indexes"
+      ],
+      "supporting_text": "This report, which was produced by the CMEPSP, is commonly referred to as the Stiglitz Report.",
+      "id": "9a2c1b33-347c-4703-b3f7-d9d42d4b4211",
+      "variations": [
+        "Publication of the Stiglitz Report"
+      ],
+      "source_chunks": [
+        19,
+        23
+      ],
+      "supporting_texts": [
+        "This report, which was produced by the CMEPSP, is commonly referred to as the Stiglitz Report.",
+        "The WGSSD Report was published in 2009 and had a significant influence on the Stiglitz Report, which was also published in that same year."
+      ],
+      "confidence": 1.0,
+      "merge_confidence": 1.0,
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Provided a critical, concept‑based alternative to purely monetary indexes.",
+        "supporting_text": "The Stiglitz Report ... was also published in that same year. The Stiglitz chapter on “sustainability” leans heavily on the WGSSD report."
+      }
+    },
+    {
+      "title": "Rio+20 Conference (United Nations Conference on Sustainable Development)",
+      "year": 2012,
+      "description": "UN conference that renewed momentum for sustainable development and led to the conception of the Sustainable Development Goals.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Rio de Janeiro, Brazil"
+      ],
+      "actors": [
+        "United Nations",
+        "Member States"
+      ],
+      "concepts": [
+        "Sustainable Development Goals",
+        "sustainable development"
+      ],
+      "supporting_text": "The Rio+20 Conference in 2012 led to renewed momentum. The main legacy of that conference is that the Sustainable Development Goals were conceived at that conference.",
+      "source_chunk": 19,
+      "id": "e68965c9-5550-4a46-8133-b55ca17f5807",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "By spawning the SDGs, the conference opened pathways for systemic transformation toward sustainable development.",
+        "supporting_text": "The Rio+20 Conference in 2012 led to renewed momentum. The main legacy of that conference is that the Sustainable Development Goals were conceived at that conference."
+      }
+    },
+    {
+      "title": "Conception of the Sustainable Development Goals (SDGs)",
+      "year": 2012,
+      "description": "Formulation of the 17 Sustainable Development Goals as the principal outcome of the Rio+20 Conference.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Rio de Janeiro, Brazil"
+      ],
+      "actors": [
+        "United Nations"
+      ],
+      "concepts": [
+        "Sustainable Development Goals"
+      ],
+      "supporting_text": "The main legacy of that conference is that the Sustainable Development Goals were conceived at that conference.",
+      "source_chunk": 19,
+      "id": "0d1159dc-b9f0-48d5-990b-a5d10102f6bd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The creation of the SDGs provided a globally coordinated agenda, representing a major potential shift in development paradigms.",
+        "supporting_text": "The main legacy of that conference is that the Sustainable Development Goals were conceived at that conference."
+      }
+    },
+    {
+      "title": "OECD Guidelines on Measuring Subjective Well‑Being",
+      "year": 2013,
+      "description": "OECD published guidelines to standardise the measurement of subjective well‑being across countries.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Organisation for Economic Co‑operation and Development (OECD)"
+      ],
+      "concepts": [
+        "subjective well‑being",
+        "well‑being measurement"
+      ],
+      "supporting_text": "The OECD's Guidelines on Measuring Subjective Well‑being was published in 2013.",
+      "source_chunk": 19,
+      "id": "d43c68ad-06ce-4f28-80c1-d8523cec07b6",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The guidelines supplied a standardized method for measuring subjective well‑being, enabling coordinated policy action.",
+        "supporting_text": "The OECD’s Guidelines on Measuring Subjective Well‑being was published in 2013."
+      }
+    },
+    {
+      "title": "Working Group for Statistics of Sustainable Development (WGSSD)",
+      "year": null,
+      "description": "International working group (2004‑2009) coordinating statistical work on sustainable development, led by UN‑ECE, OECD and Eurostat.",
+      "type": "Process",
+      "dates": {
+        "start": "2004-01-01",
+        "end": "2009-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "UN‑European Cooperation for Energy and Environment (UN‑ECE)",
+        "OECD",
+        "Eurostat"
+      ],
+      "concepts": [
+        "harmonisation",
+        "sustainable development statistics"
+      ],
+      "supporting_text": "the Working Group for Statistics of Sustainable Development (WGSSD) (2004‑2009) ... were led by the UN‑ECE, OECD and Eurostat.",
+      "source_chunk": 19,
+      "id": "0c3db24a-0951-4043-baa2-6dd864f1743a",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The working group coordinated statistical harmonisation among agencies, facilitating collective implementation of sustainable development metrics.",
+        "supporting_text": "The period 2002–2015 also saw a number of harmonisation efforts such as the Working Group for Statistics of Sustainable Development (WGSSD) (2004–2009)..."
+      }
+    },
+    {
+      "title": "Task Force for Sustainable Development (TFSD)",
+      "year": null,
+      "description": "Task force (2009‑2014) advancing sustainable development statistical standards, led by UN‑ECE, OECD and Eurostat.",
+      "type": "Process",
+      "dates": {
+        "start": "2009-01-01",
+        "end": "2014-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "UN‑European Cooperation for Energy and Environment (UN‑ECE)",
+        "OECD",
+        "Eurostat"
+      ],
+      "concepts": [
+        "harmonisation",
+        "sustainable development statistics"
+      ],
+      "supporting_text": "the Task Force for Sustainable Development (TFSD) (2009‑2014), which were led by the UN‑ECE, OECD and Eurostat.",
+      "source_chunk": 19,
+      "id": "d5fc3de6-1379-4976-92c0-1cec8053e822",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The task force similarly organised cross‑institutional efforts, supporting collective advancement of sustainability statistics.",
+        "supporting_text": "Task Force for Sustainable Development (TFSD) (2009–2014), which were led by the UN‑ECE, OECD and Eurostat."
+      }
+    },
+    {
+      "title": "Global Financial Crisis",
+      "year": 2008,
+      "description": "Severe worldwide financial downturn that increased support for Beyond‑GDP approaches by highlighting the limits of growth‑centric metrics.",
+      "type": "Event",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Beyond‑GDP",
+        "economic resilience"
+      ],
+      "supporting_text": "the financial crisis of 2008 also bolstered support for Beyond‑GDP.",
+      "source_chunk": 19,
+      "id": "9ae58e27-301e-4a88-bc62-9af1cecc337d",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The crisis exposed the fragility of growth‑centric economies, highlighting the need to reconsider dominant economic metrics.",
+        "supporting_text": "The financial crisis of 2008 also bolstered support for Beyond‑GDP. The crisis has strengthened the narrative that a world ... led by economic figures ... is susceptible to this type of implosion."
+      }
+    },
+    {
+      "title": "First Subjective Well‑Being survey in the United States",
+      "year": 1946,
+      "description": "The inaugural questionnaire measuring subjective well‑being was conducted in the United States, marking the start of SWB surveys after World War II.",
+      "type": "Research",
+      "dates": {
+        "start": "1946-01-01",
+        "end": "1946-12-31"
+      },
+      "locations": [
+        "United States"
+      ],
+      "actors": [],
+      "concepts": [
+        "Subjective well‑being",
+        "SWB survey"
+      ],
+      "supporting_text": "This type of questionnaire emerged after the Second World War, starting with the first survey in the United States in 1946.",
+      "source_chunk": 20,
+      "id": "ffa03cd6-7b70-4adb-a4a5-3d923bd6dcd0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced a new wellbeing metric that could shift measurement away from GDP.",
+        "supporting_text": "starting with the first survey in the United States in 1946."
+      }
+    },
+    {
+      "title": "Inclusion of SWB questions in the European Union Eurobarometer",
+      "year": 1973,
+      "description": "Subjective well‑being questions were added to the EU’s Eurobarometer survey, introducing SWB measurement at the pan‑European level.",
+      "type": "Research",
+      "dates": {
+        "start": "1973-01-01",
+        "end": "1973-12-31"
+      },
+      "locations": [
+        "European Union"
+      ],
+      "actors": [],
+      "concepts": [
+        "Subjective well‑being",
+        "Eurobarometer"
+      ],
+      "supporting_text": "From 1973, SWB questions started to be asked in the European Union's Eurobarometer survey.",
+      "source_chunk": 20,
+      "id": "47f7f48e-fe6d-44a8-b1c6-155d6642babd",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "Embedded wellbeing questions in a widely‑used EU survey, raising public and policy visibility.",
+        "supporting_text": "From 1973, SWB questions started to be asked in the European Union’s Eurobarometer survey."
+      }
+    },
+    {
+      "title": "Launch of the European Value Survey and World Value Survey",
+      "year": 1981,
+      "description": "Academic groups initiated two major cross‑national surveys – the European Value Survey (EVS) and the World Value Survey (WVS) – to compare subjective well‑being and other attitudes across many countries.",
+      "type": "Research",
+      "dates": {
+        "start": "1981-01-01",
+        "end": "1981-12-31"
+      },
+      "locations": [
+        "Europe",
+        "Global"
+      ],
+      "actors": [],
+      "concepts": [
+        "Subjective well‑being",
+        "European Value Survey",
+        "World Value Survey"
+      ],
+      "supporting_text": "From 1981, academic groups started to work on the European Value Survey and World Value Survey in order to compare various SWB and other attitudes over multiple countries.",
+      "source_chunk": 20,
+      "id": "b1eb8c5e-f8d3-40fc-a63a-4ed49b4b2056",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Created cross‑national data infrastructure for comparing subjective wellbeing.",
+        "supporting_text": "From 1981, academic groups started to work on the European Value Survey and World Value Survey."
+      }
+    },
+    {
+      "title": "Launch of the Gallup World Poll",
+      "year": 2005,
+      "description": "Gallup began its World Poll covering 26 countries, later expanding to about 140 countries by 2018, providing a large‑scale source of subjective well‑being data.",
+      "type": "Research",
+      "dates": {
+        "start": "2005-01-01",
+        "end": "2005-12-31"
+      },
+      "locations": [
+        "Global"
+      ],
+      "actors": [
+        "Gallup"
+      ],
+      "concepts": [
+        "Subjective well‑being",
+        "Gallup World Poll"
+      ],
+      "supporting_text": "The Gallup World Poll started in 2005 with 26 countries and had expanded to around 140 countries by 2018.",
+      "source_chunk": 20,
+      "id": "083c735b-3b20-400c-88e0-e9e8682027b8",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Established a global platform for wellbeing data across many countries.",
+        "supporting_text": "The Gallup World Poll started in 2005 with 26 countries and had expanded to around 140 countries by 2018."
+      }
+    },
+    {
+      "title": "Boost of SWB surveys from the Social Indicators Movement",
+      "year": null,
+      "description": "During the early 1970s, the broader social indicators movement gave increased visibility and momentum to subjective well‑being survey work.",
+      "type": "Process",
+      "dates": {
+        "start": "early 1970s",
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Social indicators movement",
+        "Subjective well‑being"
+      ],
+      "supporting_text": "SWB survey life evaluations got a boost from the \"social indicators movement\" in the early 1970s.",
+      "source_chunk": 20,
+      "id": "3c17623e-537d-45f9-ae66-005d27dfa2c6",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows earlier attempts to broaden measurement beyond purely economic indicators.",
+        "supporting_text": "SWB survey life evaluations got a boost from the “social indicators movement” in the early 1970s."
+      }
+    },
+    {
+      "title": "Expansion of the Gallup World Poll (2005‑2018)",
+      "year": null,
+      "description": "After its launch in 2005, the Gallup World Poll grew from 26 participating countries to roughly 140 countries by 2018, illustrating a multi‑year diffusion of SWB measurement.",
+      "type": "Process",
+      "dates": {
+        "start": "2005-01-01",
+        "end": "2018-12-31"
+      },
+      "locations": [
+        "Global"
+      ],
+      "actors": [
+        "Gallup"
+      ],
+      "concepts": [
+        "Gallup World Poll",
+        "Subjective well‑being"
+      ],
+      "supporting_text": "The Gallup World Poll started in 2005 with 26 countries and had expanded to around 140 countries by 2018.",
+      "source_chunk": 20,
+      "id": "642dd396-5f70-4e2a-a802-6ccf660cfdb6",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Scale‑up demonstrates growing capacity to monitor wellbeing globally.",
+        "supporting_text": "expanded to around 140 countries by 2018."
+      }
+    },
+    {
+      "title": "Growth of the European Value Survey / World Value Survey network (1981‑2019)",
+      "year": null,
+      "description": "The EVS/WVS programme expanded from about 20 countries in 1981 to an anticipated 70‑80 countries by 2019, representing a long‑term scaling‑up of cross‑national well‑being data collection.",
+      "type": "Process",
+      "dates": {
+        "start": "1981-01-01",
+        "end": "2019-12-31"
+      },
+      "locations": [
+        "Europe",
+        "Global"
+      ],
+      "actors": [],
+      "concepts": [
+        "European Value Survey",
+        "World Value Survey",
+        "Subjective well‑being"
+      ],
+      "supporting_text": "Most data that is collected is about life evaluation but the availability of other SWB measures has increased through programmes such as EVS/WVS, which has grown from around 20 countries in 1981 and is expected to have around 70-80 countries by 2019.",
+      "source_chunk": 20,
+      "id": "18f03c1c-e219-4e8e-8743-ebea3c03790b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Network expansion increases comparative insight for alternative wellbeing metrics.",
+        "supporting_text": "has grown from around 20 countries in 1981 and is expected to have around 70–80 countries by 2019."
+      }
+    },
+    {
+      "title": "Creation of the Measure of Economic Welfare (MEW)",
+      "year": 1972,
+      "description": "The Measure of Economic Welfare (MEW) was created by Yale economists William Nordhaus and James Tobin as the first prominent example of a \"green accounting\" aggregate, adding leisure and home production and subtracting environmental damage from GDP.",
+      "type": "Research",
+      "dates": {
+        "start": "1972-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "William Nordhaus",
+        "James Tobin"
+      ],
+      "concepts": [
+        "Measure of Economic Welfare",
+        "green accounting"
+      ],
+      "supporting_text": "Although SWB surveys started earlier, many economists take the year 1972 as the starting point for Beyond-GDP. That was the year the Measure of Economic Welfare was created by Yale economists Nordhaus and Tobin.",
+      "source_chunk": 21,
+      "id": "dfb538a4-3ba8-4c53-ac74-2f73a635b92f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced a green‑accounting metric that adds welfare benefits and subtracts environmental damage, showing an alternative to GDP.",
+        "supporting_text": "That was the year the Measure of Economic Welfare was created by Yale economists Nordhaus and Tobin."
+      }
+    },
+    {
+      "title": "Proposal of Sustainable National Income (SNI)",
+      "year": 1974,
+      "description": "Roefie Hueting proposed the Sustainable National Income approach, which bases the indicator on environmental limits rather than adding/subtracting items from existing macro‑economic aggregates.",
+      "type": "Research",
+      "dates": {
+        "start": "1974-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Roefie Hueting"
+      ],
+      "concepts": [
+        "Sustainable National Income",
+        "green accounting"
+      ],
+      "supporting_text": "A different, rather unique, approach was proposed in 1974 by Roefie Hueting: Sustainable National Income.",
+      "source_chunk": 21,
+      "id": "5313bdf2-a72b-4d0f-a157-518e8dba8bdb",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Offered a novel approach that bases national income on staying within sustainability limits.",
+        "supporting_text": "A different, rather unique, approach was proposed in 1974 by Roefie Hueting: Sustainable National Income."
+      }
+    },
+    {
+      "title": "Proposal of the Index for Sustainable Economic Welfare (ISEW)",
+      "year": 1989,
+      "description": "Daly and Cobb introduced the Index for Sustainable Economic Welfare (ISEW), which later evolved into the Genuine Progress Indicator (GPI).",
+      "type": "Research",
+      "dates": {
+        "start": "1989-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Herman Daly",
+        "John Cobb"
+      ],
+      "concepts": [
+        "Index for Sustainable Economic Welfare",
+        "Genuine Progress Indicator",
+        "green accounting"
+      ],
+      "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW), which was proposed in 1989 by Daly and Cobb.",
+      "source_chunk": 21,
+      "id": "17891f89-63c0-490b-a96e-42f26e9378dd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Extended the MEW concept, creating a new green‑accounting indicator for welfare.",
+        "supporting_text": "The MEW methodology inspired the Index for Sustainable Economic Welfare (ISEW), which was proposed in 1989 by Daly and Cobb."
+      }
+    },
+    {
+      "title": "Suggestion of the Genuine Savings Indicator",
+      "year": 1993,
+      "description": "Based on capital theory, the genuine savings indicator was suggested, measuring additions to various capital stocks and serving as a basis for wealth accounting.",
+      "type": "Research",
+      "dates": {
+        "start": "1993-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Genuine Savings",
+        "capital approach",
+        "wealth accounting",
+        "green accounting"
+      ],
+      "supporting_text": "Based on this capital theory, the genuine savings indicator was suggested in 1993.",
+      "source_chunk": 21,
+      "id": "7ff665b3-75d7-4dea-91ac-fdf8f43bb934",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Introduced a capital‑based metric that tracks changes in all capital stocks, including natural capital.",
+        "supporting_text": "Based on this capital theory, the genuine savings indicator was suggested in 1993."
+      }
+    },
+    {
+      "title": "Ongoing development of green‑accounting aggregates",
+      "year": null,
+      "description": "Since the early 1970s, new proposals for green‑accounting aggregates have been published regularly in the economic literature, leading to a proliferation of indices such as MEW, ISEW/GPI, SNI, genuine savings, and wealth accounting.",
+      "type": "Process",
+      "dates": {
+        "start": "1970-01-01",
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "green accounting",
+        "Measure of Economic Welfare",
+        "Index for Sustainable Economic Welfare",
+        "Genuine Progress Indicator",
+        "Sustainable National Income",
+        "Genuine Savings",
+        "Inclusive Wealth Index"
+      ],
+      "supporting_text": "Ever since the early 1970s, new proposals have been published in the economic literature on a regular basis.",
+      "source_chunk": 21,
+      "id": "60fbdb6f-c74a-4973-9c7f-b6fafab78b3f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Continuous emergence of new proposals signals evolving capacity to reshape economic measurement.",
+        "supporting_text": "Ever since the early 1970s, new proposals have been published in the economic literature on a regular basis."
+      }
+    },
+    {
+      "title": "Production of the Life Situation Index (LSI) in the Netherlands",
+      "year": "1970s",
+      "description": "The Life Situation Index (LSI) was produced in the early 1970s in the Netherlands as an early composite indicator within the Beyond‑GDP discussion.",
+      "type": "Event",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Netherlands"
+      ],
+      "actors": [],
+      "concepts": [
+        "Life Situation Index",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "For example, in the early 1970s the Life Situation Index (LSI) was produced in the Netherlands.",
+      "source_chunk": 22,
+      "id": "01347b8f-3f78-430a-9213-909ee7b04001",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Shows an early attempt to create a composite welfare metric beyond GDP.",
+        "supporting_text": "in the early 1970s the Life Situation Index (LSI) was produced in the Netherlands"
+      }
+    },
+    {
+      "title": "First inclusion of the Human Development Index in the UN Human Development Report",
+      "year": 1990,
+      "description": "The United Nations' Human Development Report used the Human Development Index (HDI) for the first time, marking a major step in the adoption of a composite Beyond‑GDP indicator.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "United Nations"
+      ],
+      "concepts": [
+        "Human Development Index",
+        "Capability approach"
+      ],
+      "supporting_text": "In 1990, the United Nations' Human Development Report used HDI for the first time.",
+      "source_chunk": 22,
+      "id": "94109331-4cd6-4269-a0f8-20dfdfc741fd",
+      "significance": {
+        "primary_category": "impacting_salience_and_social_acceptance",
+        "justification": "The report gave the HDI global visibility and legitimacy.",
+        "supporting_text": "In 1990, the United Nations’ Human Development Report used HDI for the first time"
+      }
+    },
+    {
+      "title": "Harmonisation of ecological footprint data by the Global Footprint Network",
+      "year": null,
+      "description": "An ongoing process in which the Global Footprint Network standardises ecological footprint data and maintains a database covering more than 200 countries.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Global Footprint Network"
+      ],
+      "concepts": [
+        "Ecological footprint",
+        "Data harmonisation"
+      ],
+      "supporting_text": "The harmonisation of ecological footprint data is done by the Global Footprint Network, which currently has a database of more than 200 countries.",
+      "source_chunk": 22,
+      "id": "f6249d92-ec6a-427f-a568-cbe7218e44bd",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Standardised data across >200 countries enables system‑wide assessment of consumption vs. biocapacity.",
+        "supporting_text": "The harmonisation of ecological footprint data is done by the Global Footprint Network, which currently has a database of more than 200 countries"
+      }
+    },
+    {
+      "title": "Initiation of the Gross National Happiness programme",
+      "year": null,
+      "description": "The programme on Gross National Happiness was initiated by the King of Bhutan in the early 1970s, marking one of the earliest Beyond‑GDP initiatives.",
+      "type": "Other",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Bhutan"
+      ],
+      "actors": [
+        "King of Bhutan"
+      ],
+      "concepts": [
+        "Gross National Happiness"
+      ],
+      "supporting_text": "One of the earliest and most cited Beyond‑GDP initiatives is the programme on Gross National Happiness which was initiated by the King of Bhutan in the early 1970s.",
+      "source_chunk": 23,
+      "id": "707d4b34-ccc0-4298-bf13-04e7fd84a342",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Early Beyond‑GDP initiative that introduced a new value‑based metric for wellbeing.",
+        "supporting_text": "One of the earliest and most cited Beyond‑GDP initiatives is the programme on Gross National Happiness which was initiated by the King of Bhutan in the early 1970s."
+      }
+    },
+    {
+      "title": "Publication of the Brundtland Report",
+      "year": 1987,
+      "description": "The Brundtland Report (World Commission on Environment and Development) was published in 1987 and promoted Type 3 Sustainable Development Indicators.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "Sustainable Development Indicators"
+      ],
+      "supporting_text": "The Brundtland Report in 1987 ... were instrumental in promoting Type 3 Sustainable Development Indicators (SDI).",
+      "source_chunk": 23,
+      "id": "8efe0e18-2451-4b5d-bfbf-9b3a824e5310",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The report promoted Sustainable Development Indicators, opening pathways for alternative metrics.",
+        "supporting_text": "The Brundtland Report in 1987 ... were instrumental in promoting Type 3 Sustainable Development Indicators (SDI)."
+      }
+    },
+    {
+      "title": "Rio Earth Summit",
+      "year": 1992,
+      "description": "The United Nations Conference on Environment and Development (Rio Earth Summit) took place in 1992, advancing the use of Sustainable Development Indicators.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Rio de Janeiro, Brazil"
+      ],
+      "actors": [
+        "United Nations"
+      ],
+      "concepts": [
+        "Sustainable Development Indicators"
+      ],
+      "supporting_text": "the Rio Earth Summit in 1992 were instrumental in promoting Type 3 Sustainable Development Indicators (SDI).",
+      "source_chunk": 23,
+      "id": "6be1bc1e-0b9f-437d-8a2f-1eee1f5f7c5f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Catalyzed global attention to SDI, showing systemic shift potential.",
+        "supporting_text": "The Brundtland Report in 1987 and the Rio Earth Summit in 1992 were instrumental in promoting Type 3 Sustainable Development Indicators (SDI)."
+      }
+    },
+    {
+      "title": "Proposal of the Commission for Sustainable Development (CSD) indicator set",
+      "year": 1995,
+      "description": "In 1995 the Commission for Sustainable Development proposed an indicator set based on stakeholder deliberations, providing a benchmark for Beyond‑GDP measurement.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Commission for Sustainable Development (CSD)"
+      ],
+      "concepts": [
+        "Sustainable Development Indicators"
+      ],
+      "supporting_text": "In 1995 the Commission for Sustainable Development (CSD) proposed such an indicator set.",
+      "source_chunk": 23,
+      "id": "3d2ff3fb-38be-4633-bab8-c3035c3ada4d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Stakeholder‑driven benchmark that coordinated international measurement efforts.",
+        "supporting_text": "In 1995 the Commission for Sustainable Development (CSD) proposed such an indicator set. ... They were a major boost to the measurement of Beyond‑GDP."
+      }
+    },
+    {
+      "title": "Rio+10 Conference",
+      "year": 2002,
+      "description": "The Rio+10 Conference in 2002 stimulated many countries that had not yet done so to create a Sustainable Development Indicator (SDI) set.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Rio de Janeiro, Brazil"
+      ],
+      "actors": [],
+      "concepts": [
+        "Sustainable Development Indicators"
+      ],
+      "supporting_text": "The Rio+10 Conference in 2002 stimulated many countries that had not yet done so to create an SDI set.",
+      "source_chunk": 23,
+      "id": "62cc6875-59d0-4ad9-bf02-3352dad6a096",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Stimulated many countries to create their own SDI dashboards.",
+        "supporting_text": "The Rio+10 Conference in 2002 stimulated many countries that had not yet done so to create an SDI set."
+      }
+    },
+    {
+      "title": "Rio+20 Conference",
+      "year": 2012,
+      "description": "The Rio+20 Conference launched the process that led to the adoption of the Sustainable Development Goals, deciding to replace the Millennium Development Goals.",
+      "type": "Conference",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [
+        "Rio de Janeiro, Brazil"
+      ],
+      "actors": [
+        "United Nations"
+      ],
+      "concepts": [
+        "Sustainable Development Goals",
+        "Millennium Development Goals"
+      ],
+      "supporting_text": "The process started at the Rio+20 Conference in 2012. At that conference, it was decided that the Millennium Development Goals (MDGs), which ran from 2000 to 2015, would be replaced by the SDGs.",
+      "source_chunk": 23,
+      "id": "be4740ac-39eb-4490-aa2e-39dd3cf8621f",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Set the stage for replacing MDGs with the SDGs, a global systemic shift.",
+        "supporting_text": "The process started at the Rio+20 Conference in 2012. At that conference, it was decided that the Millennium Development Goals (MDGs) ... would be replaced by the SDGs."
+      }
+    },
+    {
+      "title": "Creation of the Working Group for Statistics on Sustainable Development (WGSSD)",
+      "year": 2004,
+      "description": "In 2004 UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD).",
+      "type": "Organization",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "UNECE",
+        "OECD",
+        "Eurostat",
+        "European Commission"
+      ],
+      "concepts": [
+        "Wealth accounting"
+      ],
+      "supporting_text": "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD).",
+      "source_chunk": 23,
+      "id": "d9238b94-0b33-474f-a56d-d11aef157972",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Institutionalised a conceptual framework (wealth accounting) for sustainable statistics.",
+        "supporting_text": "In 2004, the UNECE, OECD and Eurostat (European Commission) created the Working Group for Statistics on Sustainable Development (WGSSD)."
+      }
+    },
+    {
+      "title": "Publication of the WGSSD Report",
+      "year": 2009,
+      "description": "The WGSSD Report was published in 2009 and had a significant influence on the Stiglitz Report.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "WGSSD"
+      ],
+      "concepts": [
+        "Wealth accounting",
+        "Sustainable Development Indicators"
+      ],
+      "supporting_text": "The WGSSD Report was published in 2009 and had a significant influence on the Stiglitz Report, which was also published in that same year.",
+      "source_chunk": 23,
+      "id": "f44c67e5-a991-4f3b-9700-e99c8c56d7d0",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Influenced later conceptual reports, shaping future measurement approaches.",
+        "supporting_text": "The WGSSD Report was published in 2009 and had a significant influence on the Stiglitz Report."
+      }
+    },
+    {
+      "title": "Creation of the Task Force on Measuring Sustainable Development (TFSD)",
+      "year": 2009,
+      "description": "In 2009, just after the publication of the Stiglitz Report, the joint UNECE/OECD/Eurostat Task Force on Measuring Sustainable Development (TFSD) was created as the institutional successor to the WGSSD.",
+      "type": "Organization",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "UNECE",
+        "OECD",
+        "Eurostat"
+      ],
+      "concepts": [
+        "Sustainable Development Measurement"
+      ],
+      "supporting_text": "In 2009, just after the publication of the Stiglitz Report, the joint UNECE/OECD/Eurostat Task Force on Measuring Sustainable Development (TFSD) was created.",
+      "source_chunk": 23,
+      "id": "a442ca31-d701-4fc2-8671-20d6e335c918",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Succeeded WGSSD, extending the conceptual framework into policy‑relevant indicators.",
+        "supporting_text": "In 2009, just after the publication of the Stiglitz Report, the joint UNECE/OECD/Eurostat Task Force on Measuring Sustainable Development (TFSD) was created."
+      }
+    },
+    {
+      "title": "Sustainable Development Goals development process",
+      "year": null,
+      "description": "A multi‑year negotiation process that began at the Rio+20 Conference in 2012 and culminated in the adoption of the Sustainable Development Goals in 2015, achieving unprecedented harmonisation of beyond‑GDP indicators.",
+      "type": "Process",
+      "dates": {
+        "start": "2012-01-01",
+        "end": "2015-12-31"
+      },
+      "locations": [
+        "Rio de Janeiro, Brazil"
+      ],
+      "actors": [
+        "United Nations",
+        "Member States"
+      ],
+      "concepts": [
+        "Sustainable Development Goals",
+        "Millennium Development Goals"
+      ],
+      "supporting_text": "The process started at the Rio+20 Conference in 2012. At that conference, it was decided that the Millennium Development Goals (MDGs), which ran from 2000 to 2015, would be replaced by the SDGs. ... By far the most influential initiative is the Sustainable Development Goals, introduced in 2015.",
+      "source_chunk": 23,
+      "id": "2d62b6f9-1cf4-441e-ace3-d067446b1c7c",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Three years of negotiations coordinated governments to define common targets.",
+        "supporting_text": "The process started at the Rio+20 Conference in 2012."
+      }
+    },
+    {
+      "title": "Publication of the first SEEA handbook",
+      "year": 1993,
+      "description": "The harmonisation process for environmental accounts of the early 1990s led to the first handbook in 1993.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "System of Environmental and Economic Accounting (SEEA)",
+        "environmental accounting",
+        "harmonisation"
+      ],
+      "supporting_text": "The harmonisation process for environmental accounts of the early 1990s led to the first handbook in 1993.",
+      "source_chunk": 24,
+      "id": "1b0f4662-4c07-489a-901d-64c798993847",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The handbook created a concrete tool for harmonising environmental accounting.",
+        "supporting_text": "The harmonisation process for environmental accounts of the early 1990s led to the first handbook in 1993."
+      }
+    },
+    {
+      "title": "Publication of SEEA 2003 second edition",
+      "year": 2003,
+      "description": "By the time the second edition (SEEA 2003) was published the other international institutes had joined the UN as co‑authors.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "International institutes",
+        "United Nations"
+      ],
+      "concepts": [
+        "System of Environmental and Economic Accounting (SEEA)",
+        "environmental accounting"
+      ],
+      "supporting_text": "By the time the second edition (SEEA 2003) was published the other international institutes had joined the UN as co‑authors.",
+      "source_chunk": 24,
+      "id": "d3640332-c217-4944-8658-7acbe65c7221",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "The expanded edition further institutionalised the framework despite limited prescriptiveness.",
+        "supporting_text": "The SEEA 2003 had also grown to a 598‑page document. Yet on many crucial issues it was not prescriptive."
+      }
+    },
+    {
+      "title": "Adoption of SEEA 2012 Central Framework by UN Statistical Commission",
+      "year": 2012,
+      "description": "After a lengthy deliberation process the System of Environmental Economic Accounting 2012 – Central Framework was adopted by the Statistical Commission of the United Nations.",
+      "type": "Policy",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Statistical Commission of the United Nations"
+      ],
+      "concepts": [
+        "SEEA 2012",
+        "Central Framework",
+        "environmental accounting"
+      ],
+      "supporting_text": "After a lengthy deliberation process the System of Environmental Economic Accounting 2012 - Central Framework was adopted by the Statistical Commission of the United Nations.",
+      "source_chunk": 24,
+      "id": "038f5091-4294-42d9-9af5-f8d2871c792d",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Formal adoption gave the framework status equal to the SNA, opening pathways for systemic shift.",
+        "supporting_text": "After a lengthy deliberation process the System of Environmental Economic Accounting 2012 – Central Framework was adopted by the Statistical Commission of the United Nations."
+      }
+    },
+    {
+      "title": "Development of environmental accounts concept (1970s)",
+      "year": null,
+      "description": "The idea of environmental accounts had already started in the 1970s in Norway and France.",
+      "type": "Process",
+      "dates": {
+        "start": "1970-01-01",
+        "end": "1979-12-31"
+      },
+      "locations": [
+        "Norway",
+        "France"
+      ],
+      "actors": [
+        "Norway",
+        "France"
+      ],
+      "concepts": [
+        "environmental accounts"
+      ],
+      "supporting_text": "The idea of environmental accounts had already started in the 1970s in Norway and France.",
+      "source_chunk": 24,
+      "id": "f8f733aa-9737-4e72-aa74-0c0e96506e2e",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Early conceptual work seeded the idea of accounting for environmental flows.",
+        "supporting_text": "The idea of environmental accounts had already started in the 1970s in Norway and France and in the 1990s in the Netherlands."
+      }
+    },
+    {
+      "title": "Harmonisation process for environmental accounts (early 1990s)",
+      "year": null,
+      "description": "The harmonisation process for environmental accounts of the early 1990s led to the first handbook in 1993.",
+      "type": "Process",
+      "dates": {
+        "start": "1990-01-01",
+        "end": "1993-12-31"
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "harmonisation",
+        "environmental accounts"
+      ],
+      "supporting_text": "The harmonisation process for environmental accounts of the early 1990s led to the first handbook in 1993.",
+      "source_chunk": 24,
+      "id": "19184df7-4d7e-4b1d-a9b8-cb0d94874798",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Coordinated effort produced the first SEEA handbook, enabling later use.",
+        "supporting_text": "The harmonisation process for environmental accounts of the early 1990s led to the first handbook in 1993."
+      }
+    },
+    {
+      "title": "Two‑decade development of the SEEA common language",
+      "year": null,
+      "description": "The common language (the SEEA framework) took two decades to complete.",
+      "type": "Process",
+      "dates": {
+        "start": "1993-01-01",
+        "end": "2012-12-31"
+      },
+      "locations": [],
+      "actors": [
+        "Six major international institutes",
+        "UN member states"
+      ],
+      "concepts": [
+        "SEEA framework",
+        "environmental macroeconomics"
+      ],
+      "supporting_text": "The common language (the SEEA framework) took two decades to complete.",
+      "source_chunk": 24,
+      "id": "73f1a874-3845-49e0-9fe3-68a06181ba8b",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "Two decades of work created a shared framework for environmental macro‑economics.",
+        "supporting_text": "The common language (the SEEA framework) took two decades to complete."
+      }
+    },
+    {
+      "title": "Publication of Bleys and Whitby assessment of Beyond‑GDP indicators",
+      "year": 2015,
+      "description": "Bleys and Whitby provided a comprehensive assessment of requirements for successful Beyond‑GDP initiatives, naming timeliness, robustness, communication and a standardised methodology as important for success.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Bleys",
+        "Whitby"
+      ],
+      "concepts": [
+        "Beyond‑GDP",
+        "alternative indicators"
+      ],
+      "supporting_text": "Bleys and Whitby (2015) probably provide the most comprehensive assessment in this direction.",
+      "source_chunk": 25,
+      "id": "d504a393-20bf-4aa0-8959-84c9d8dce008",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "The assessment identifies key requirements (timeliness, robustness, communication) needed for successful system change.",
+        "supporting_text": "It names timeliness, robustness and communication as well as a standardised methodology as important requirements for success."
+      }
+    },
+    {
+      "title": "Publication of Hayden and Wilson study on Beyond‑GDP uptake in Canada",
+      "year": 2016,
+      "description": "Hayden and Wilson investigated the disappointing uptake of Beyond‑GDP indicators in Canada, concluding that merely producing an indicator does not automatically change society.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Hayden",
+        "Wilson"
+      ],
+      "concepts": [
+        "Beyond‑GDP",
+        "Canada"
+      ],
+      "supporting_text": "Hayden and Wilson (2016) investigate the \"disappointing\" uptake of Beyond‑GDP indicators in Canada.",
+      "source_chunk": 25,
+      "id": "32badbf5-23a9-46d0-8de8-01fa5335bf02",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "The study highlights the limited impact of indicators alone, exposing a barrier to change.",
+        "supporting_text": "They conclude ... simply producing an indicator will suddenly change society ... is certainly not borne out by the Canadian experience to date."
+      }
+    },
+    {
+      "title": "Publication of Costanza et al. paper linking GDP addiction to societal behavior",
+      "year": 2017,
+      "description": "Costanza and colleagues likened society’s focus on economic growth to an addiction and explored applying Motivational Interviewing methods to address the GDP addiction at a societal level.",
+      "type": "Publication",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [
+        "Costanza",
+        "et al."
+      ],
+      "concepts": [
+        "GDP addiction",
+        "Motivational Interviewing",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "In a novel paper, Costanza et al. (2017) liken society's focus on economic growth to a real addiction.",
+      "source_chunk": 25,
+      "id": "eb5efd3d-338d-4b83-8258-8bf3672d7eb9",
+      "significance": {
+        "primary_category": "revealing_potential_for_system_change",
+        "justification": "It proposes applying addiction‑treatment methods (MI) to shift societal reliance on GDP.",
+        "supporting_text": "Costanza et al. (2017) liken society’s focus on economic growth to a real addiction... explore how methods that are used for addicts might be adopted at the societal level."
+      }
+    },
+    {
+      "title": "Institutionalisation of the macroeconomic community",
+      "year": null,
+      "description": "A scientific community with a clear goal, structure and common language was formed and institutionalised during the 1950s and 1960s, establishing a dominant macro‑economic paradigm that later outcompeted well‑being and sustainability initiatives.",
+      "type": "Process",
+      "dates": {
+        "start": "1950-01-01",
+        "end": "1969-12-31"
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "macroeconomic community",
+        "institutionalisation"
+      ],
+      "supporting_text": "A scientific community was formed with a clear goal, structure and common language which institutionalised in the 1950s and 1960s.",
+      "source_chunk": 25,
+      "id": "5344fadf-1645-45c8-8298-de524639976a",
+      "significance": {
+        "primary_category": "exposing_prevailing_condition",
+        "justification": "Shows the entrenched power of the macroeconomic community that hinders alternative initiatives.",
+        "supporting_text": "The macroeconomic community is more powerful than the well‑being and sustainability community."
+      }
+    },
+    {
+      "title": "Harmonisation process of the System of Environmental‑Economic Accounting (SEEA)",
+      "year": null,
+      "description": "The SEEA underwent a harmonisation process that took less than twenty years, becoming the most successful example of a Beyond‑GDP initiative and demonstrating rapid institutionalisation.",
+      "type": "Process",
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "locations": [],
+      "actors": [],
+      "concepts": [
+        "SEEA",
+        "harmonisation",
+        "Beyond‑GDP"
+      ],
+      "supporting_text": "The SEEA is probably the most successful example in the Beyond‑GDP scene. ... the harmonisation process took less than twenty years.",
+      "source_chunk": 25,
+      "id": "a607bd40-294c-4c4e-a99d-26b6900b2e9d",
+      "significance": {
+        "primary_category": "fostering_collective_action",
+        "justification": "Demonstrates a successful, coordinated effort that built a clear, institutionalised framework.",
+        "supporting_text": "The SEEA is probably the most successful example... harmonisation process took less than twenty years. Institutionalisation is happening fast."
+      }
+    }
+  ]
+}

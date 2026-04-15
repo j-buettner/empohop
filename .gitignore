@@ -54,10 +54,12 @@ data/extracted_old/*
 data/archive/
 data/pilot_texts/
 
-# Large files — keep processed KG output and manifest, exclude raw inputs
+# Large files — exclude raw source inputs
 *.pdf
 *.docx
 *.xlsx
+
+# Keep all processed outputs and manifest
 *.csv
 *.json
 !requirements.txt
@@ -66,7 +68,9 @@ data/pilot_texts/
 !ui/visualization/timeline/sample-data.json
 !data/extracted/sample-data.json
 !data/manifest.json
-!data/processed/**/*_knowledge_graph.json
+!data/processed/**/*.json
+!data/processed/**/*.csv
+!data/extracted/**/*.json
 
 # API keys and sensitive information
 .env
